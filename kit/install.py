@@ -17,6 +17,20 @@ import tempfile
 
 KIT = Path(__file__).resolve().parent
 MANIFEST = Path(".maguire/kit/manifest.json")
+REQUIRED_TEMPLATES = (
+    "application/drafts/cv.md",
+    "application/drafts/statement.md",
+    "application/fit.md",
+    "application/job.md",
+    "application/notes.md",
+    "application/submitted/manifest.md",
+    "cv-index.md",
+    "data/applications.md",
+    "data/experience.md",
+    "data/preferences.md",
+    "story.md",
+    "workspace-map.md",
+)
 
 
 def digest(data: bytes) -> str:
@@ -31,8 +45,8 @@ def managed_files() -> dict[Path, Path]:
         Path(".agents/skills/maguire-career-pilot/SKILL.md"):
             KIT / "skills/maguire-career-pilot/SKILL.md",
     }
-    for source in sorted((KIT / "templates").rglob("*.md")):
-        files[Path(".maguire/kit/templates") / source.relative_to(KIT / "templates")] = source
+    for relative in REQUIRED_TEMPLATES:
+        files[Path(".maguire/kit/templates") / relative] = KIT / "templates" / relative
     return files
 
 
@@ -75,6 +89,20 @@ def main() -> int:
         parser.error("Candidate workspace must be outside the kit's source repository")
     if workspace.exists() and not workspace.is_dir():
         parser.error("Workspace path is not a directory")
+
+    # Read the complete required payload before creating or changing a workspace.
+    # A missing directory must not turn into a successful zero-template install.
+    sources = managed_files()
+    source_data = {}
+    try:
+        for relative, source in sources.items():
+            source = safe_path(KIT, source.relative_to(KIT))
+            data = source.read_bytes()
+            if not data.strip():
+                raise ValueError(f"Required kit file is empty: {source.relative_to(KIT)}")
+            source_data[relative] = data
+    except (OSError, ValueError) as error:
+        parser.error(f"Incomplete kit; no workspace files updated: {error}")
     workspace.mkdir(parents=True, exist_ok=True)
 
     try:
@@ -92,7 +120,6 @@ def main() -> int:
     else:
         old_hashes = {}
 
-    sources = managed_files()
     # Validate all managed paths before the first write.
     try:
         for relative in sources:
@@ -104,9 +131,8 @@ def main() -> int:
 
     new_hashes = dict(old_hashes)
     counts = {"installed": 0, "updated": 0, "unchanged": 0, "preserved": 0}
-    for relative, source in sources.items():
+    for relative, data in source_data.items():
         target = workspace / relative
-        data = source.read_bytes()
         wanted = digest(data)
         key = relative.as_posix()
         if not target.exists():
@@ -150,7 +176,7 @@ def main() -> int:
     manifest = {"format": 1, "files": new_hashes}
     atomic_write(manifest_path, (json.dumps(manifest, indent=2, sort_keys=True) + "\n").encode())
     print(f"Result: {counts}")
-    if (workspace / "AGENTS.md").read_bytes() != (KIT / "AGENTS.md").read_bytes():
+    if (workspace / "AGENTS.md").read_bytes() != source_data[Path("AGENTS.md")]:
         print("Root AGENTS.md differs. Add a reference to .maguire/kit/README.md manually.")
     print("User CVs, bank, preferences, applications, and submitted records were not visited.")
     return 0

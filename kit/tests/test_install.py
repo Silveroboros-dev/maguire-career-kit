@@ -17,6 +17,64 @@ def sha(path):
 
 
 class InstallTest(unittest.TestCase):
+    def test_incomplete_kit_never_creates_or_changes_a_workspace(self):
+        # Entire directories, individual templates and core instructions must
+        # all fail before any write, including when updating an existing install.
+        for missing in ("templates", "templates/workspace-map.md", "README.md",
+                        "AGENTS.md", "skills/maguire-career-pilot/SKILL.md"):
+            for existing in (False, True):
+                with self.subTest(missing=missing, existing=existing):
+                    with tempfile.TemporaryDirectory(prefix="maguire-kit-test-") as root:
+                        root = Path(root)
+                        source = root / "source"
+                        workspace = root / "candidate"
+                        shutil.copytree(KIT, source, ignore=shutil.ignore_patterns(".DS_Store", "__pycache__"))
+                        if existing:
+                            subprocess.run([sys.executable, str(source / "install.py"), str(workspace)],
+                                           check=True, capture_output=True)
+                            (workspace / "data").mkdir()
+                            (workspace / "data/experience.md").write_text("Candidate-owned bank\n")
+                        before = {p.relative_to(workspace): p.read_bytes()
+                                  for p in workspace.rglob("*") if p.is_file()}
+                        before_paths = {p.relative_to(workspace) for p in workspace.rglob("*")}
+                        removed = source / missing
+                        if removed.is_dir():
+                            shutil.rmtree(removed)
+                        else:
+                            removed.unlink()
+                        result = subprocess.run([sys.executable, str(source / "install.py"), str(workspace)],
+                                                capture_output=True, text=True)
+                        self.assertNotEqual(result.returncode, 0)
+                        self.assertIn("Incomplete kit", result.stderr)
+                        self.assertIn(missing, result.stderr)
+                        after = {p.relative_to(workspace): p.read_bytes()
+                                 for p in workspace.rglob("*") if p.is_file()}
+                        self.assertEqual(after, before)
+                        self.assertEqual({p.relative_to(workspace) for p in workspace.rglob("*")}, before_paths)
+                        self.assertEqual(workspace.exists(), existing)
+
+    def test_empty_or_nonfile_last_template_fails_before_writes(self):
+        for invalid in ("empty", "directory", "symlink"):
+            with self.subTest(invalid=invalid):
+                with tempfile.TemporaryDirectory(prefix="maguire-kit-test-") as root:
+                    root = Path(root)
+                    source = root / "source"
+                    workspace = root / "candidate"
+                    shutil.copytree(KIT, source, ignore=shutil.ignore_patterns(".DS_Store", "__pycache__"))
+                    template = source / "templates/workspace-map.md"
+                    template.unlink()
+                    if invalid == "empty":
+                        template.write_bytes(b"")
+                    elif invalid == "directory":
+                        template.mkdir()
+                    else:
+                        template.symlink_to(source / "README.md")
+                    result = subprocess.run([sys.executable, str(source / "install.py"), str(workspace)],
+                                            capture_output=True, text=True)
+                    self.assertNotEqual(result.returncode, 0)
+                    self.assertIn("Incomplete kit", result.stderr)
+                    self.assertFalse(workspace.exists())
+
     def test_update_preserves_candidate_files_and_local_changes(self):
         with tempfile.TemporaryDirectory(prefix="maguire-kit-test-") as root:
             root = Path(root)

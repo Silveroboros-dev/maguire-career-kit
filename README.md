@@ -4,7 +4,7 @@ Turn your career experience into a reusable evidence bank. Assess a job against 
 
 This is a small, file-based kit for your own agent and private workspace: instructions, blank templates, synthetic examples, and an optional Python installer. You review the claims and decide what to send.
 
-[Maguire Agent](https://maguire-agent.silveroboros.chatgpt.site/) · [Full setup guide](kit/README.md) · [Worked example](kit/examples/end-to-end/README.md)
+[Maguire Agent](https://maguire-agent.silveroboros.chatgpt.site/) · [Download v0.1.1](https://github.com/Silveroboros-dev/maguire-career-kit/releases/tag/v0.1.1) · [Full setup guide](kit/README.md) · [Worked example](kit/examples/end-to-end/README.md)
 
 ## Start on a computer
 
@@ -43,9 +43,19 @@ Run the installer checks from the repository root:
 python3 -m unittest discover -s kit/tests -v
 ```
 
-This repository packages the file-based v0.1 kit with repository documentation. The original v0.1 download remains unchanged. There is no hosted job-search API, payment service, automatic update channel, or published installable plugin in this package.
+The current release is v0.1.1. It fixes incomplete installations, includes the license in the ZIP, and binds each download to a source commit and tag. The installer reads all required instructions and templates before creating or changing a workspace. The original v0.1 download is historical and superseded; its bytes remain unchanged.
 
-This repository is currently a release mirror of the existing Maguire development kit, which remains the editable source until an explicit handover. Report improvements through GitHub issues or pull requests. Accepted changes must be reconciled with that source before the next release; the two copies are not developed independently.
+From v0.1.1 onward, this repository is the authoritative kit source. The former Commerce copy is a historical baseline. The Maguire website is a separate project: it hosts the customer journey and copies of released artifacts. Its page sources are not included here. Report improvements through GitHub issues or pull requests.
+
+Release ZIPs include the kit README and installer at the top level, plus `LICENSE` and `CREDITS.md`. GitHub Releases and the Site distribute the same ZIP and detached manifest. The manifest records the full source commit, tag, original path and hash of each file, and archive hash. Compare the commit and assets on GitHub; a checksum hosted beside a ZIP proves matching bytes, not an independent signature of origin.
+
+To reproduce a release from its committed tag:
+
+```sh
+python3 scripts/build_release.py v0.1.1 /absolute/path/to/release-output --release-date 2026-10-05
+```
+
+The build requires Git and a clean source checkout. It reads committed files, writes outside this repository, and never packages the Site pages or candidate records. There is no hosted job-search API, payment service, automatic update channel, or published installable plugin in this package.
 
 ## License and credits
 
