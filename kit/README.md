@@ -1,17 +1,35 @@
-# Maguire Career Kit — file-based v0.1.1
+# Maguire Career Kit — file-based v0.1.2
 
 This kit helps a candidate maintain a private career workspace and prepare truthful, reviewable applications. It includes the `maguire-career-pilot` skill; there is no second CV master or application ledger. The kit contains instructions and blank templates. Your career documents and records belong in **your own workspace**, outside the kit source and outside the kit source repository.
 
 The current version uses Markdown files and Python's standard library for the optional local installer. It needs no account connection, API, model integration, database, or paid service. The agent helps draft and organize; the candidate decides what is true, what can be shared, and what to send.
 
-Release v0.1.1 includes `LICENSE` and `CREDITS.md` at the extracted archive root. The [GitHub repository](https://github.com/Silveroboros-dev/maguire-career-kit) is the kit source from this release onward; the website is a separate project distributing released copies. The [GitHub release](https://github.com/Silveroboros-dev/maguire-career-kit/releases/tag/v0.1.1) includes the ZIP, checksum and detached manifest binding each file to its source commit. The original v0.1 is historical and superseded.
+Release v0.1.2 includes `LICENSE` and `CREDITS.md` at the extracted archive root. The [GitHub repository](https://github.com/Silveroboros-dev/maguire-career-kit) owns the kit source from v0.1.1 onward; the website is a separate project distributing released copies. The [GitHub release](https://github.com/Silveroboros-dev/maguire-career-kit/releases/tag/v0.1.2) includes the ZIP, checksum and detached manifest binding each file to its source commit. Older releases are retained as historical versions.
+
+## How your career workspace fits together
+
+Your private career workspace has three connected parts: CVs, a story and evidence bank, and records for individual roles. This is separate from the downloaded kit and its public source repository. Reuse existing records and paths; the names below are defaults for a new local workspace.
+
+| Part | Record | Purpose |
+| --- | --- | --- |
+| CVs | Original files or cloud masters; `cv-index.md` | Identify each variant's editable master, exports and tailored versions. Preserve existing sources and record their relationships. |
+| Story and evidence bank | `data/experience.md` | Keep reusable stories and claims, your contribution, evidence links, review status and permission to use them. This bank is distinct from a CV master. |
+| Role records | `applications/<role-id>/` | Keep the JD snapshot and source/date in `job.md`, assessment in `fit.md`, dated events in `notes.md`, drafts in `drafts/`, and exact sent material or a linked manifest in `submitted/`. |
+
+`data/preferences.md` holds your interests and constraints. One `data/applications.md` register links each role to its status and next action. `workspace-map.md`, or your existing README, names the authoritative paths. Evidence may stay in its original location and be linked from the bank.
+
+A role folder can start at `considering`, before any application. `Submitted` requires a confirmed send; otherwise the materials remain drafts or reviewed versions. A general inbox of every job that crosses your radar is not part of the current kit.
+
+The installer copies only instructions and blank reference templates. During first use, your agent creates or updates the career records from material you supply; it does not move CV originals or create a Git repository automatically. In Work Cloud, provide and explicitly save equivalent records in your own project or another private location you control.
+
+Keeping these records together gives your agent career evidence and preferences to use when assessing a role, including one with an unfamiliar title. It can show strengths and gaps, draft from approved claims, and reuse the bank for the next application. This supports context-based assessment and less repeated explanation; greater search coverage or better outcomes have not been demonstrated. The current kit works with roles you supply and has no hosted job-search service.
 
 ## Choose an installation path
 
 ### Codex with a local folder — locally tested path
 
 1. Download and extract the complete release ZIP, or clone the source repository, separate from your private career folder. Keep your existing CVs where they are. Choose the folder that will be your private career workspace. If it already has `AGENTS.md`, a CV index, or an application register, keep them.
-2. In a terminal, change to the directory containing `install.py`: `maguire-career-kit-v0.1.1/` for the extracted release, or `maguire-career-kit/kit/` for a repository clone. Run `python3 install.py /absolute/path/to/your-career-folder`. This installs instructions and templates only. The script refuses to use the kit source or its source repository as the workspace. It reads all required instructions and the 12 reference templates before creating or changing your workspace; an incomplete or unreadable kit fails without writing workspace files.
+2. In a terminal, change to the directory containing `install.py`: `maguire-career-kit-v0.1.2/` for the extracted release, or `maguire-career-kit/kit/` for a repository clone. Run `python3 install.py /absolute/path/to/your-career-folder`. This installs instructions and templates only. The script refuses to use the kit source or its source repository as the workspace. It reads all required instructions and the 12 reference templates before creating or changing your workspace; an incomplete or unreadable kit fails without writing workspace files.
 3. Open your career folder as the **primary** Codex project. Codex discovers root `AGENTS.md` and `.agents/skills/` in a primary project, according to [OpenAI's project](https://learn.chatgpt.com/docs/projects?surface=app) and [skills](https://learn.chatgpt.com/docs/build-skills) documentation. If you already had a root `AGENTS.md`, the installer preserves it: add `For career work, read .maguire/kit/README.md and .maguire/kit/AGENTS.md; use .agents/skills/maguire-career-pilot/SKILL.md.` to that file after reviewing it. You can also explicitly ask Codex to read those files in the first prompt.
 4. Use the first-run prompt below. Review the resulting source choices and every personal claim before drafting for an employer.
 
