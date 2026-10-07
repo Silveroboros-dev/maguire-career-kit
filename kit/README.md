@@ -1,10 +1,10 @@
-# Maguire Career Kit — file-based v0.1.2
+# Maguire Career Kit — file-based v0.1.3
 
 This kit helps a candidate maintain a private career workspace and prepare truthful, reviewable applications. It includes the `maguire-career-pilot` skill; there is no second CV master or application ledger. The kit contains instructions and blank templates. Your career documents and records belong in **your own workspace**, outside the kit source and outside the kit source repository.
 
 The current version uses Markdown files and Python's standard library for the optional local installer. It needs no account connection, API, model integration, database, or paid service. The agent helps draft and organize; the candidate decides what is true, what can be shared, and what to send.
 
-Release v0.1.2 includes `LICENSE` and `CREDITS.md` at the extracted archive root. The [GitHub repository](https://github.com/Silveroboros-dev/maguire-career-kit) owns the kit source from v0.1.1 onward; the website is a separate project distributing released copies. The [GitHub release](https://github.com/Silveroboros-dev/maguire-career-kit/releases/tag/v0.1.2) includes the ZIP, checksum and detached manifest binding each file to its source commit. Older releases are retained as historical versions.
+Release v0.1.3 includes `LICENSE` and `CREDITS.md` at the extracted archive root. The [GitHub repository](https://github.com/Silveroboros-dev/maguire-career-kit) owns the kit source from v0.1.1 onward; the website is a separate project distributing released copies. The [GitHub release](https://github.com/Silveroboros-dev/maguire-career-kit/releases/tag/v0.1.3) includes the ZIP, checksum and detached manifest binding each file to its source commit. Older releases are retained as historical versions.
 
 ## How your career workspace fits together
 
@@ -29,7 +29,7 @@ Keeping these records together gives your agent career evidence and preferences 
 ### Codex with a local folder — locally tested path
 
 1. Download and extract the complete release ZIP, or clone the source repository, separate from your private career folder. Keep your existing CVs where they are. Choose the folder that will be your private career workspace. If it already has `AGENTS.md`, a CV index, or an application register, keep them.
-2. In a terminal, change to the directory containing `install.py`: `maguire-career-kit-v0.1.2/` for the extracted release, or `maguire-career-kit/kit/` for a repository clone. Run `python3 install.py /absolute/path/to/your-career-folder`. This installs instructions and templates only. The script refuses to use the kit source or its source repository as the workspace. It reads all required instructions and the 12 reference templates before creating or changing your workspace; an incomplete or unreadable kit fails without writing workspace files.
+2. In a terminal, change to the directory containing `install.py`: `maguire-career-kit-v0.1.3/` for the extracted release, or `maguire-career-kit/kit/` for a repository clone. Run `python3 install.py /absolute/path/to/your-career-folder`. This installs instructions and templates only. The script refuses to use the kit source or its source repository as the workspace. It reads all required instructions and the 12 reference templates before creating or changing your workspace; an incomplete or unreadable kit fails without writing workspace files.
 3. Open your career folder as the **primary** Codex project. Codex discovers root `AGENTS.md` and `.agents/skills/` in a primary project, according to [OpenAI's project](https://learn.chatgpt.com/docs/projects?surface=app) and [skills](https://learn.chatgpt.com/docs/build-skills) documentation. If you already had a root `AGENTS.md`, the installer preserves it: add `For career work, read .maguire/kit/README.md and .maguire/kit/AGENTS.md; use .agents/skills/maguire-career-pilot/SKILL.md.` to that file after reviewing it. You can also explicitly ask Codex to read those files in the first prompt.
 4. Use the first-run prompt below. Review the resulting source choices and every personal claim before drafting for an employer.
 
@@ -43,6 +43,27 @@ If Python is unavailable, manually copy this `README.md` to `<workspace>/.maguir
 For a Work-only start, provide `README.md`, `AGENTS.md`, `skills/maguire-career-pilot/SKILL.md`, and the needed blank templates as explicit project sources or attachments. Paste the first-run prompt below and ask for outputs with the template filenames and stable IDs. Save the outputs in your own project or folder before starting a new chat. For an update, provide the new kit instructions, keep the previously saved data as the authority, and request a comparison of changed instructions; do not replace filled-in bank or application files with blank templates. Verify the stored outputs yourself because this path has not been exercised here.
 
 The local installer and complete synthetic scenario have been exercised with filesystem tools in the original development environment. Work installation, persistence, and independent human self-service have not been tested. For Work, use the same source/claim rules below and explicitly verify where each output is saved.
+
+### Other agents
+
+The kit is also usable as reference material with an agent that can read Markdown. The Python installer is optional and places files in a Codex-oriented layout; running it does **not** prove that another client will discover or follow those files. Do not run it merely to use a cloud chat. First choose which career files the candidate permits the agent to read and where the candidate wants durable records saved.
+
+- **Local agent with access to the chosen career folder:** give it this README, `AGENTS.md`, the `maguire-career-pilot` skill, and only the templates needed for the task. If you use the installer after inspecting it, explicitly ask the agent to read `.maguire/kit/README.md`, `.maguire/kit/AGENTS.md`, and `.agents/skills/maguire-career-pilot/SKILL.md`. Check its actual file access and output paths. Preserve an existing project instruction file rather than replacing it.
+- **Cloud agent without access to that folder:** provide those same instructions and candidate-approved CV/JD material by direct link or attachment. Have the agent return named Markdown records. Save reviewed records in a location the candidate controls, such as a private local folder, approved cloud storage, or downloaded files. Record the exact path or URL and check that a fresh session can read the saved records. If the agent cannot save there, download the files yourself and provide them again next time. A chat transcript or temporary runtime is not the career bank.
+
+For local coding agents, project-instruction discovery varies. These are optional pointers to the **same** kit rules, not new career masters or files that the installer promises to create:
+
+| Client | Current project-instruction route | What to check |
+| --- | --- | --- |
+| Claude Code | Version 2.1.277 or later can read root `AGENTS.md` when no `CLAUDE.md` or `CLAUDE.local.md` takes precedence; otherwise a short `CLAUDE.md` can import `@AGENTS.md`. [Claude Code instructions](https://code.claude.com/docs/en/memory) | Verify the running version and ask it to read the skill explicitly; its documented skill directory is `.claude/skills/`, not this kit's installed `.agents/skills/`. [Claude Code skills](https://code.claude.com/docs/en/skills) |
+| Cursor Agent | Supports root `AGENTS.md` and `.agents/skills/`; a `.cursor/rules/` copy is not required for this route. [Cursor rules](https://cursor.com/docs/rules) · [skills](https://cursor.com/help/customization/skills) | Verify the instructions in Agent Chat; this does not establish behavior in every Cursor surface. |
+| Gemini CLI | Defaults to `GEMINI.md`; a short existing or new `GEMINI.md` can import `@./AGENTS.md`, or its context filename can be configured. [Gemini CLI context](https://geminicli.com/docs/cli/gemini-md/) | Verify the workspace is trusted and the instructions are loaded; skill discovery does not mean the skill was used. [Gemini CLI skills](https://geminicli.com/docs/cli/tutorials/skills-getting-started/) |
+
+These local-client examples do not describe Claude, Gemini, or another agent running in a browser or cloud container. For any such client, use the manual cloud path above and verify storage in that client. None of these other-agent paths has passed independent candidate onboarding.
+
+Neutral first request for a cloud agent, after providing the kit instructions and chosen source files:
+
+> I am using a cloud agent without access to my local career folder. Read the Maguire Career Kit README, workspace rules, skill, and only the blank templates needed for this task. Use only the career files and job posting I supply. Use the durable storage location I name; if I have not named one, ask before saving records. Do not assume this chat or a temporary folder is my archive. Identify existing records and the supported editable CV master, or mark the master `Unknown` if I have none. Build or extend one experience bank and preferences record, then assess the one JD I provide with evidence, gaps, and questions. Show me unresolved claims for review before any employer-facing draft. Save approved records only where I have authorized and tell me exactly what was saved; if you cannot save them, return named Markdown files for me to keep and provide again. Do not send or publish anything.
 
 ## What the installer owns
 
