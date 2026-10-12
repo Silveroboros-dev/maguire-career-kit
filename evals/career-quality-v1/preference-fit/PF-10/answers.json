@@ -1,0 +1,206 @@
+{
+  "schema": "maguire-quality-answers-v1",
+  "case_id": "PF-10",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "assessments": [
+        {
+          "target_id": "pref_remote",
+          "label": "conflict",
+          "evidence": [
+            {
+              "source_id": "jd_replacement",
+              "quote": "Correction for this vacancy: the previous fully remote term is withdrawn. This role requires two office days per week."
+            }
+          ],
+          "rationale": "The explicit correction supersedes the remote source and imposes two office days."
+        },
+        {
+          "target_id": "pref_hours",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_hours",
+              "quote": "The role is a four-day, 32-hour working week."
+            }
+          ],
+          "rationale": "The role states exactly the candidate’s four-day, 32-hour schedule."
+        },
+        {
+          "target_id": "pref_travel",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_replacement",
+              "quote": "Correction for this vacancy: the previous fully remote term is withdrawn. This role requires two office days per week."
+            },
+            {
+              "source_id": "jd_hours",
+              "quote": "The role is a four-day, 32-hour working week."
+            }
+          ],
+          "rationale": "Neither applicable term specifies the annual number of work trips."
+        }
+      ],
+      "conclusion": {
+        "action": "pass",
+        "text": "The corrected office requirement violates the zero-office must-have, though the four-day schedule matches.",
+        "next_step": "Close this role under the explicit corrected location policy."
+      },
+      "limitations": [
+        "No individual exception or annual trip count is documented."
+      ]
+    },
+    {
+      "answer_id": "answer_02",
+      "assessments": [
+        {
+          "target_id": "pref_remote",
+          "label": "conflict",
+          "evidence": [
+            {
+              "source_id": "jd_replacement",
+              "quote": "Correction for this vacancy: the previous fully remote term is withdrawn. This role requires two office days per week."
+            }
+          ],
+          "rationale": "The explicit correction supersedes the remote source and imposes two office days."
+        },
+        {
+          "target_id": "pref_hours",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_hours",
+              "quote": "The role is a four-day, 32-hour working week."
+            }
+          ],
+          "rationale": "The role states exactly the candidate’s four-day, 32-hour schedule."
+        },
+        {
+          "target_id": "pref_travel",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_replacement",
+              "quote": "Correction for this vacancy: the previous fully remote term is withdrawn. This role requires two office days per week."
+            },
+            {
+              "source_id": "jd_hours",
+              "quote": "The role is a four-day, 32-hour working week."
+            }
+          ],
+          "rationale": "Neither applicable term specifies the annual number of work trips."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "The current corrected term conflicts with zero office days; the candidate permits one exception inquiry.",
+        "next_step": "Ask whether an individually approved zero-office exception exists for this vacancy, then pass if it does not."
+      },
+      "limitations": [
+        "No individual exception or annual trip count is documented."
+      ]
+    },
+    {
+      "answer_id": "answer_03",
+      "assessments": [
+        {
+          "target_id": "pref_remote",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_replacement",
+              "quote": "Correction for this vacancy: the previous fully remote term is withdrawn. This role requires two office days per week."
+            }
+          ],
+          "rationale": "The original fully remote term remains valid because it was published earlier."
+        },
+        {
+          "target_id": "pref_hours",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_hours",
+              "quote": "The role is a four-day, 32-hour working week."
+            }
+          ],
+          "rationale": "The role states exactly the candidate’s four-day, 32-hour schedule."
+        },
+        {
+          "target_id": "pref_travel",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_replacement",
+              "quote": "Correction for this vacancy: the previous fully remote term is withdrawn. This role requires two office days per week."
+            },
+            {
+              "source_id": "jd_hours",
+              "quote": "The role is a four-day, 32-hour working week."
+            }
+          ],
+          "rationale": "Neither applicable term specifies the annual number of work trips."
+        }
+      ],
+      "conclusion": {
+        "action": "pass",
+        "text": "The corrected office requirement violates the zero-office must-have, though the four-day schedule matches.",
+        "next_step": "Close this role under the explicit corrected location policy."
+      },
+      "limitations": [
+        "No individual exception or annual trip count is documented."
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "assessments": [
+        {
+          "target_id": "pref_remote",
+          "label": "conflict",
+          "evidence": [
+            {
+              "source_id": "jd_replacement",
+              "quote": "Correction for this vacancy: the previous fully remote term is withdrawn. This role requires two office days per week."
+            }
+          ],
+          "rationale": "The explicit correction supersedes the remote source and imposes two office days."
+        },
+        {
+          "target_id": "pref_hours",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_hours",
+              "quote": "The role is a four-day, 32-hour working week."
+            }
+          ],
+          "rationale": "The role states exactly the candidate’s four-day, 32-hour schedule."
+        },
+        {
+          "target_id": "pref_travel",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_replacement",
+              "quote": "Correction for this vacancy: the previous fully remote term is withdrawn. This role requires two office days per week."
+            },
+            {
+              "source_id": "jd_hours",
+              "quote": "The role is a four-day, 32-hour working week."
+            }
+          ],
+          "rationale": "Neither applicable term specifies the annual number of work trips."
+        }
+      ],
+      "conclusion": {
+        "action": "pursue",
+        "text": "Apply using the withdrawn remote description as the current term.",
+        "next_step": "Build the role package around zero required office days."
+      },
+      "limitations": [
+        "No individual exception or annual trip count is documented."
+      ]
+    }
+  ]
+}

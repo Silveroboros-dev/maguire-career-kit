@@ -1,0 +1,601 @@
+{
+  "schema": "maguire-v4-saved-results-independent-review-v1",
+  "created_at_utc": "2026-10-12T17:45:16.646622+00:00",
+  "status": "complete",
+  "human_approved": false,
+  "reviewer": "separate Codex review agent; exposed to previous v3 cases and results",
+  "scope": "Frozen known-case regression only; review of saved 40 packet outcomes, raw/normalized/gold and checker code. No rerun, no blind-holdout claim, no extractor or complete-advice assessment.",
+  "files": {
+    "FREEZE.json": {
+      "sha256": "3b965b1e54745be5b693046eae253f862ae842e226e7d0c290c53d7a5178aaa3",
+      "bytes": 13069
+    },
+    "START.json": {
+      "sha256": "e69bb5bf336c1e19bba4bdb45b87a8f7816456a81c77f37c5c691549e77d6c19",
+      "bytes": 3634
+    },
+    "runs/v4-regression/RECEIPT.json": {
+      "sha256": "f4097ed5824083b90cf6b603bb6fdaf0654ba3ea1e9ca936e777d5d2ffcc2644",
+      "bytes": 1330
+    },
+    "runs/v4-regression/measurement.json": {
+      "sha256": "f471f313bfa150ff21af04c35549febae106db9c84346f109694754fae7ff37c",
+      "bytes": 105818
+    },
+    "runs/v4-regression/comparison.json": {
+      "sha256": "d9c1ee05c78053cde26c3554dab1176369984c68bcd640b58a7e898c5e83c9f8",
+      "bytes": 11458
+    },
+    "runs/v4-regression/packets.jsonl": {
+      "sha256": "e342996cc588f18d8b397217a46891f9b4f55e5eafe9975eec5b2e14aa3eee18",
+      "bytes": 108705
+    },
+    "runs/v4-regression/predictions.jsonl": {
+      "sha256": "ec2bc4bed0115ce4cc788216d70066d4133262ccdd169c23ceb5c3e6809ccb2b",
+      "bytes": 69811
+    },
+    "review/annotation_review_v1.json": {
+      "sha256": "0ee842a1f4de49d2c91f044fbada61001a135e6a8ed592b6a694b5219dc9f87a",
+      "bytes": 14661
+    },
+    "review/challenge_packet_v1.json": {
+      "sha256": "099794287efcbb954dba3bd684505eaed15645e1aaab97584dbf56120cf199da",
+      "bytes": 10431
+    },
+    "review/challenge_receipt_v1.json": {
+      "sha256": "a485d08acfb2534b2ab3d67ffd12da1f22849e8012ac1fcc609d130c880cc96e",
+      "bytes": 364
+    },
+    "normalized/candidate-fit.json": {
+      "sha256": "8f758714e2bbe783944e067ce55e96d3c335e3077fbc2a3234711dc779802ba3",
+      "bytes": 57666
+    },
+    "normalized/preference-fit.json": {
+      "sha256": "86bb594fa8361a7fe82dde7f043aefe2e0181f41ba86be860e2f822c8f381c4f",
+      "bytes": 61558
+    },
+    "raw/candidate-fit.json": {
+      "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+      "bytes": 14213
+    },
+    "raw/preference-fit.json": {
+      "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+      "bytes": 16476
+    },
+    "gold/candidate-fit.json": {
+      "sha256": "c7123fc3e6f459a27fbd2198359458983b1baefb777799b3be142c3e2f18f985",
+      "bytes": 7132
+    },
+    "gold/preference-fit.json": {
+      "sha256": "05e7cdf2ab5af57f610dcaa404a2c615e51d64ca584d5aaf59b9c69d667d7963",
+      "bytes": 6474
+    },
+    "checker.py": {
+      "sha256": "c5b70905631c91ddd6ed049598bea65c5a87a94a13b45f09999b65397b7a4398",
+      "bytes": 35955
+    },
+    "v3_core.py": {
+      "sha256": "e4b2699f543e4260128ebfabd61547c92b5c1dba3497acd07ca2f7007f225e33",
+      "bytes": 29184
+    },
+    "SCHEMA.md": {
+      "sha256": "a490f15cdd56e6e358aa7838289bdaf36acc3437bc064dfe3476524593720dd0",
+      "bytes": 9203
+    },
+    "CONTRACT.md": {
+      "sha256": "5043a472c7ddf91040c1bbfe738f726c5a65ade103de042021a12a55132ebe18",
+      "bytes": 3494
+    },
+    "NORMALIZATION_CHANGES.md": {
+      "sha256": "80d1e23e73a02e3598a039b631a8a1ce091171104ae51d602288e9397965c550",
+      "bytes": 10783
+    }
+  },
+  "verification": {
+    "command": "python3 -B evals/career-quality-v4/pipeline.py verify",
+    "verified_packets": 40,
+    "predecessor_files": 311,
+    "reran_checker": false
+  },
+  "counts_checked": {
+    "total": 40,
+    "gold_pass": 24,
+    "gold_fail": 12,
+    "gold_needs_review": 4,
+    "gold_pass_actual_pass": 14,
+    "gold_pass_actual_fail": 1,
+    "gold_pass_actual_needs_review": 9,
+    "gold_fail_actual_fail": 12,
+    "gold_needs_review_actual_needs_review": 4,
+    "missed_errors": 0,
+    "false_rejections": 1,
+    "needs_review_fragments": 13,
+    "automatic_decisions": 27,
+    "intended_faulty_claims": 14,
+    "intended_faulty_claims_flagged": 13,
+    "bad_fragments_rejected_only_on_other_claims": 0,
+    "extra_failures_in_bad_fragments": 0,
+    "invalid": 0,
+    "execution_errors": 0
+  },
+  "comparison_to_v3": {
+    "v3_false_rejections": 13,
+    "v4_false_rejections": 1,
+    "v3_intended_faulty_claims_flagged": 14,
+    "v4_intended_faulty_claims_flagged": 13,
+    "v3_automatic_decisions": 33,
+    "v4_automatic_decisions": 27,
+    "interpretation": "Fewer pass-label false rejections, with more abstention and one lost claim-level localization. Same exposed cohort, not an independent generalization estimate."
+  },
+  "false_rejections": [
+    {
+      "case_id": "PF3N-04",
+      "gold": "pass",
+      "actual": "fail",
+      "claim_id": "A",
+      "rule": "evidence_gap",
+      "category": "raw_gold_interpretation_tension",
+      "assessment": "Answer says Saturday-only. J04 explicitly assigns one Saturday shift per calendar month and excludes weekdays, but does not explicitly exclude Sunday; normalized claim retains only=true while source has no Sunday-exclusion fact. Original pass label appears to read the rota statement as exhaustive. Strict checker fails the exclusivity claim. Count as false rejection against unchanged gold, not proven checker defect. Claim B passed."
+    }
+  ],
+  "needs_review": [
+    {
+      "case_id": "CF3N-03",
+      "gold": "pass",
+      "actual": "needs_review",
+      "review_claim_ids": [
+        "c3"
+      ],
+      "rules": {
+        "c3": "unknown_predicate"
+      },
+      "category": "honest_semantic_abstention",
+      "assessment": "fit_relevance has no registered rule; direct factual claims passed."
+    },
+    {
+      "case_id": "CF3N-04",
+      "gold": "pass",
+      "actual": "needs_review",
+      "review_claim_ids": [
+        "c3"
+      ],
+      "rules": {
+        "c3": "unknown_predicate"
+      },
+      "category": "honest_semantic_abstention",
+      "assessment": "subset_of has no registered rule; direct factual claims passed."
+    },
+    {
+      "case_id": "CF3N-08",
+      "gold": "pass",
+      "actual": "needs_review",
+      "review_claim_ids": [
+        "c3",
+        "c4"
+      ],
+      "rules": {
+        "c3": "unknown_predicate",
+        "c4": "unknown_predicate"
+      },
+      "category": "honest_semantic_abstention",
+      "assessment": "fit_relevance and verification_needed are unimplemented qualitative judgments; historical attendance and role requirement passed."
+    },
+    {
+      "case_id": "CF3N-11",
+      "gold": "pass",
+      "actual": "needs_review",
+      "review_claim_ids": [
+        "c1"
+      ],
+      "rules": {
+        "c1": "unknown_predicate"
+      },
+      "category": "honest_semantic_abstention",
+      "assessment": "evidence_sufficiency has no registered rule; narrower occurrence and role requirement passed."
+    },
+    {
+      "case_id": "PF3N-01",
+      "gold": "pass",
+      "actual": "needs_review",
+      "review_claim_ids": [
+        "A"
+      ],
+      "rules": {
+        "A": "unknown_predicate"
+      },
+      "category": "checker_predicate_registry_gap",
+      "assessment": "Canonical stipend fact is present in J01 and claim A, but stipend is absent from the base and wrapper direct-predicate registries. Constraint claim B passed."
+    },
+    {
+      "case_id": "PF3N-02",
+      "gold": "pass",
+      "actual": "needs_review",
+      "review_claim_ids": [
+        "A"
+      ],
+      "rules": {
+        "A": "unknown_predicate"
+      },
+      "category": "checker_predicate_registry_gap",
+      "assessment": "Canonical stipend fact is present in J02 and claim A, but stipend is absent from the base and wrapper direct-predicate registries. Constraint claim B passed."
+    },
+    {
+      "case_id": "PF3N-06",
+      "gold": "pass",
+      "actual": "needs_review",
+      "review_claim_ids": [
+        "A"
+      ],
+      "rules": {
+        "A": "onboarding_operands"
+      },
+      "category": "normalization_operator_unit_mismatch",
+      "assessment": "J06 and P06 encode count unit days; onboarding operator requires singular day. Both express 30 days, and remote-after claim B passed."
+    },
+    {
+      "case_id": "PF3N-08",
+      "gold": "pass",
+      "actual": "needs_review",
+      "review_claim_ids": [
+        "A",
+        "B"
+      ],
+      "rules": {
+        "A": "conditional_semantics",
+        "B": "conditional_semantics"
+      },
+      "category": "honest_conditional_abstention",
+      "assessment": "Both claims require conditional semantics outside the frozen operator slice."
+    },
+    {
+      "case_id": "PF3N-09",
+      "gold": "pass",
+      "actual": "needs_review",
+      "review_claim_ids": [
+        "B"
+      ],
+      "rules": {
+        "B": "competing_terms"
+      },
+      "category": "normalization_operator_context_mismatch",
+      "assessment": "J09 says captions are pending procurement and not yet available. Its negative current-unavailability fact has empty scope; pending guard recognizes only explicit status=available_now, so it treats the consistent fact as a competing term. Pending fact claim A passed."
+    },
+    {
+      "case_id": "CF3N-19",
+      "gold": "needs_review",
+      "actual": "needs_review",
+      "review_claim_ids": [
+        "c1"
+      ],
+      "rules": {
+        "c1": "alternative_readings"
+      },
+      "category": "preannotated_ambiguity",
+      "assessment": "Multiple readings were supplied in the frozen annotation; checker abstained."
+    },
+    {
+      "case_id": "CF3N-20",
+      "gold": "needs_review",
+      "actual": "needs_review",
+      "review_claim_ids": [
+        "c1"
+      ],
+      "rules": {
+        "c1": "alternative_readings"
+      },
+      "category": "preannotated_ambiguity",
+      "assessment": "Multiple readings were supplied in the frozen annotation; checker abstained."
+    },
+    {
+      "case_id": "PF3N-19",
+      "gold": "needs_review",
+      "actual": "needs_review",
+      "review_claim_ids": [
+        "A"
+      ],
+      "rules": {
+        "A": "alternative_readings"
+      },
+      "category": "preannotated_ambiguity",
+      "assessment": "Multiple readings were supplied in the frozen annotation; checker abstained."
+    },
+    {
+      "case_id": "PF3N-20",
+      "gold": "needs_review",
+      "actual": "needs_review",
+      "review_claim_ids": [
+        "A"
+      ],
+      "rules": {
+        "A": "alternative_readings"
+      },
+      "category": "preannotated_ambiguity",
+      "assessment": "Multiple readings were supplied in the frozen annotation; checker abstained."
+    }
+  ],
+  "faulty_claim_reviews": [
+    {
+      "case_id": "CF3N-13",
+      "claim_id": "c2",
+      "claim_verdict": "fail",
+      "fragment_verdict": "fail",
+      "flagged": true,
+      "rule": "evidence_gap",
+      "evidence_relation": "not_established",
+      "support_evidence_ids": [],
+      "counter_evidence_ids": [],
+      "limited_evidence_ids": [],
+      "category": "sound_evidence_gap",
+      "assessment": "Vendor certificate is unsupported by demo attendance; the source says no assessment. Trace does not explicitly cite that negative fact."
+    },
+    {
+      "case_id": "CF3N-14",
+      "claim_id": "c2",
+      "claim_verdict": "fail",
+      "fragment_verdict": "fail",
+      "flagged": true,
+      "rule": "evidence_gap",
+      "evidence_relation": "not_established",
+      "support_evidence_ids": [],
+      "counter_evidence_ids": [],
+      "limited_evidence_ids": [
+        "CF3N-14-S1"
+      ],
+      "category": "sound_evidence_gap",
+      "assessment": "Claimed processing of 240 forms exceeds a 14-form trial; scope and measure mismatch are localized, but explanation stays generic."
+    },
+    {
+      "case_id": "CF3N-15",
+      "claim_id": "c2",
+      "claim_verdict": "fail",
+      "fragment_verdict": "fail",
+      "flagged": true,
+      "rule": "evidence_gap",
+      "evidence_relation": "not_established",
+      "support_evidence_ids": [],
+      "counter_evidence_ids": [],
+      "limited_evidence_ids": [
+        "CF3N-15-S1"
+      ],
+      "category": "sound_evidence_gap",
+      "assessment": "Candidate claims team archive work as personal work. Subject/scope/measure axes localize it, but explanation does not spell out team versus candidate."
+    },
+    {
+      "case_id": "CF3N-16",
+      "claim_id": "c2",
+      "claim_verdict": "fail",
+      "fragment_verdict": "fail",
+      "flagged": true,
+      "rule": "evidence_gap",
+      "evidence_relation": "not_established",
+      "support_evidence_ids": [],
+      "counter_evidence_ids": [],
+      "limited_evidence_ids": [
+        "CF3N-16-S1"
+      ],
+      "category": "sound_evidence_gap",
+      "assessment": "Past 2021 rota does not establish a current on-call duty; time axis is localized."
+    },
+    {
+      "case_id": "CF3N-17",
+      "claim_id": "c2",
+      "claim_verdict": "fail",
+      "fragment_verdict": "fail",
+      "flagged": true,
+      "rule": "evidence_gap",
+      "evidence_relation": "not_established",
+      "support_evidence_ids": [],
+      "counter_evidence_ids": [],
+      "limited_evidence_ids": [
+        "CF3N-17-S1"
+      ],
+      "category": "sound_evidence_gap",
+      "assessment": "Unimplemented estimate does not establish a guaranteed saving; scope/measure/modality axes expose the evidence-strength gap."
+    },
+    {
+      "case_id": "CF3N-18",
+      "claim_id": "c2",
+      "claim_verdict": "fail",
+      "fragment_verdict": "fail",
+      "flagged": true,
+      "rule": "compatibility_gap",
+      "evidence_relation": "not_established",
+      "support_evidence_ids": [],
+      "counter_evidence_ids": [],
+      "limited_evidence_ids": [
+        "CF3N-18-JD"
+      ],
+      "category": "wrong_causal_mechanism",
+      "assessment": "Compatibility claim fails, but trace limits evidence to JD requirement. It does not use candidate negative live-caption ability or missing service, so the real cross-entity contradiction is not proved by this result."
+    },
+    {
+      "case_id": "PF3N-13",
+      "claim_id": "B",
+      "claim_verdict": "fail",
+      "fragment_verdict": "fail",
+      "flagged": true,
+      "rule": "evidence_gap",
+      "evidence_relation": "not_established",
+      "support_evidence_ids": [],
+      "counter_evidence_ids": [],
+      "limited_evidence_ids": [
+        "J13"
+      ],
+      "category": "sound_evidence_gap",
+      "assessment": "Conditional remote permission cannot support a guaranteed three-day allowance; output gives a generic evidence gap."
+    },
+    {
+      "case_id": "PF3N-14",
+      "claim_id": "A",
+      "claim_verdict": "fail",
+      "fragment_verdict": "fail",
+      "flagged": true,
+      "rule": "opposite_polarity",
+      "evidence_relation": "contradicted",
+      "support_evidence_ids": [],
+      "counter_evidence_ids": [
+        "J14N"
+      ],
+      "limited_evidence_ids": [],
+      "category": "sound_opposite_polarity",
+      "assessment": "J14N explicitly says it does not amend J14; positive supersession claim contradicts a negative supersedes fact."
+    },
+    {
+      "case_id": "PF3N-14",
+      "claim_id": "B",
+      "claim_verdict": "needs_review",
+      "fragment_verdict": "fail",
+      "flagged": false,
+      "rule": "supersession_unresolved",
+      "evidence_relation": null,
+      "support_evidence_ids": [],
+      "counter_evidence_ids": [],
+      "limited_evidence_ids": [
+        "J14",
+        "P14",
+        "J14N"
+      ],
+      "category": "checker_supersession_guard_error",
+      "assessment": "Two station days per week exceed the one-day cap. Explicit negative supersedes in J14N means J14 remains authoritative, but _uncertain_supersession treats that denial as uncertainty and returns review before interval comparison."
+    },
+    {
+      "case_id": "PF3N-15",
+      "claim_id": "A",
+      "claim_verdict": "fail",
+      "fragment_verdict": "fail",
+      "flagged": true,
+      "rule": "evidence_gap",
+      "evidence_relation": "not_established",
+      "support_evidence_ids": [],
+      "counter_evidence_ids": [],
+      "limited_evidence_ids": [
+        "J15",
+        "P15"
+      ],
+      "category": "sound_evidence_gap_weak_explanation",
+      "assessment": "Mandatory overnight shift cannot establish no overnight duty. Failed claim is localized, but trace gives generic gap rather than the explicit contradiction."
+    },
+    {
+      "case_id": "PF3N-15",
+      "claim_id": "B",
+      "claim_verdict": "fail",
+      "fragment_verdict": "fail",
+      "flagged": true,
+      "rule": "additional_restriction",
+      "evidence_relation": "contradicted",
+      "support_evidence_ids": [],
+      "counter_evidence_ids": [
+        "J15",
+        "P15"
+      ],
+      "limited_evidence_ids": [],
+      "category": "sound_additional_restriction",
+      "assessment": "Active overnight term conflicts with the preference; both sources are cited, though explanation is generic."
+    },
+    {
+      "case_id": "PF3N-16",
+      "claim_id": "B",
+      "claim_verdict": "fail",
+      "fragment_verdict": "fail",
+      "flagged": true,
+      "rule": "evidence_gap",
+      "evidence_relation": "not_established",
+      "support_evidence_ids": [],
+      "counter_evidence_ids": [],
+      "limited_evidence_ids": [],
+      "category": "sound_evidence_gap",
+      "assessment": "Optional platform captions do not establish an employer commitment to enable live captions; no positive commitment fact exists."
+    },
+    {
+      "case_id": "PF3N-17",
+      "claim_id": "B",
+      "claim_verdict": "fail",
+      "fragment_verdict": "fail",
+      "flagged": true,
+      "rule": "constraint_interval",
+      "evidence_relation": "contradicted",
+      "support_evidence_ids": [],
+      "counter_evidence_ids": [
+        "J17",
+        "P17"
+      ],
+      "limited_evidence_ids": [],
+      "category": "sound_period_arithmetic",
+      "assessment": "J17 is USD 900 per calendar year, equivalent to USD 75 per month, below P17 USD 200 monthly floor. Constraint interval correctly contradicts; trace explanation omits numbers. Claim A separately reviews on missing stipend predicate."
+    },
+    {
+      "case_id": "PF3N-18",
+      "claim_id": "B",
+      "claim_verdict": "fail",
+      "fragment_verdict": "fail",
+      "flagged": true,
+      "rule": "opposite_polarity",
+      "evidence_relation": "contradicted",
+      "support_evidence_ids": [],
+      "counter_evidence_ids": [
+        "J18"
+      ],
+      "limited_evidence_ids": [
+        "J18",
+        "P18"
+      ],
+      "category": "sound_opposite_polarity",
+      "assessment": "J18 explicitly excludes conference travel; claim of included travel is contradicted."
+    }
+  ],
+  "cross_cutting_limitations": [
+    {
+      "category": "checker_registry",
+      "case_claims": [
+        "PF3N-01/A",
+        "PF3N-02/A",
+        "PF3N-17/A"
+      ],
+      "assessment": "The source/claim predicate stipend is valid in normalized rows yet absent from direct comparison predicate registration; produces avoidable unknown_predicate review. PF3N-17 fragment still fails on B."
+    },
+    {
+      "category": "normalization_operator_contract",
+      "case_claims": [
+        "PF3N-06/A",
+        "PF3N-09/B"
+      ],
+      "assessment": "Plural days versus singular day and unscoped negative current availability versus status=available_now yield avoidable reviews. Raw statements are aligned; frozen input and checker convention disagree."
+    },
+    {
+      "category": "checker_supersession",
+      "case_claims": [
+        "PF3N-14/B"
+      ],
+      "assessment": "Explicit negative supersedes means the update does not replace the posting. The uncertainty guard currently classifies negative supersedes as uncertain and masks a 2/week versus 1/week violation."
+    },
+    {
+      "category": "causal_trace",
+      "case_claims": [
+        "CF3N-18/c2",
+        "CF3N-13/c2",
+        "CF3N-15/c2",
+        "PF3N-15/A",
+        "PF3N-17/B"
+      ],
+      "assessment": "Correct fail verdicts do not always expose decisive source contradictions or arithmetic. CF3N-18 in particular fails for a weaker compatibility gap without inspecting candidate incapacity. Do not interpret verdict match as proof of correct causal reasoning."
+    },
+    {
+      "category": "coverage",
+      "case_claims": [
+        "CF3N-03/c3",
+        "CF3N-04/c3",
+        "CF3N-08/c3",
+        "CF3N-08/c4",
+        "CF3N-11/c1",
+        "PF3N-08/A",
+        "PF3N-08/B",
+        "CF3N-19/c1",
+        "CF3N-20/c1",
+        "PF3N-19/A",
+        "PF3N-20/A"
+      ],
+      "assessment": "Qualitative relevance, subset/evidence sufficiency, conditional reasoning, and supplied alternative readings remain review. Ambiguity route only demonstrates response to preauthored readings, not autonomous ambiguity detection."
+    }
+  ],
+  "decision": "Saved run is lineage-valid and achieves zero accepted faulty fragments and one gold-relative false rejection on this cohort. Do not claim complete checker correctness: 13 review fragments include avoidable contract mismatches, one faulty claim is not localized, and some fail traces use weak causal mechanisms."
+}

@@ -1,0 +1,69 @@
+{
+  "schema": "maguire-quality-annotations-v1",
+  "case_id": "PF-05",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The explicit travel exception covers the 20% requirement with four weeks notice, and the role has no office days.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_02",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "Both hard conditions are supported; the remaining learning preference needs a concrete answer.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_03",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "jd_growth specifies no protected learning time; generic growth opportunities do not meet pref_learning's monthly protected-time request. The correct label is unknown and the benefit should be clarified.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "preference_interpretation",
+        "description": "Misinterprets the learning preference in Travel exception is explicitly satisfied.",
+        "changed_paths": [
+          "/assessments/2/label",
+          "/assessments/2/rationale"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "PF-INTERPRETATION",
+          "severity": "major",
+          "target_id": "pref_learning",
+          "explanation": "jd_growth specifies no protected learning time; generic growth opportunities do not meet pref_learning's monthly protected-time request. The correct label is unknown and the benefit should be clarified."
+        }
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "pref_travel expressly accepts up to 20% travel when every trip has four weeks notice, and jd_travel promises that notice. The two hard preferences align, so passing on a blanket 10% ceiling ignores the candidate's exception; pursue or clarify the soft learning term.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "incompatible_action",
+        "description": "Ignores the assessed learning preference in the Travel exception is explicitly satisfied conclusion.",
+        "changed_paths": [
+          "/conclusion/action",
+          "/conclusion/text",
+          "/conclusion/next_step"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "PF-ACTION",
+          "severity": "major",
+          "target_id": "pref_travel",
+          "explanation": "pref_travel expressly accepts up to 20% travel when every trip has four weeks notice, and jd_travel promises that notice. The two hard preferences align, so passing on a blanket 10% ceiling ignores the candidate's exception; pursue or clarify the soft learning term."
+        }
+      ]
+    }
+  ]
+}

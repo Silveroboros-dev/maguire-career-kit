@@ -1,0 +1,99 @@
+{
+  "schema": "maguire-quality-gold-v1",
+  "case_id": "PF-02",
+  "family": "multiple_preferences_aligned",
+  "title": "Several preferences fully matched by two published sources",
+  "review_status": "proposed_agent_authored",
+  "human_approved": false,
+  "units": [
+    {
+      "target_id": "pref_remote",
+      "kind": "work_arrangement",
+      "allowed_labels": [
+        "aligned"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_posting"
+        ],
+        [
+          "jd_terms"
+        ]
+      ],
+      "rationale": "The role explicitly permits fully remote work within the candidate’s country.",
+      "required_points": [
+        "Remote is available anywhere in Switzerland."
+      ],
+      "forbidden_inferences": [
+        "Do not infer permission to work outside Switzerland."
+      ]
+    },
+    {
+      "target_id": "pref_pay",
+      "kind": "compensation",
+      "allowed_labels": [
+        "aligned"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_posting"
+        ],
+        [
+          "jd_terms"
+        ]
+      ],
+      "rationale": "The published base range starts above the candidate’s CHF 150,000 base minimum.",
+      "required_points": [
+        "The annual base range is CHF 155,000–175,000."
+      ],
+      "forbidden_inferences": [
+        "Do not promise a particular offer within the range."
+      ]
+    },
+    {
+      "target_id": "pref_async",
+      "kind": "culture",
+      "allowed_labels": [
+        "aligned"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_posting"
+        ],
+        [
+          "jd_terms"
+        ]
+      ],
+      "rationale": "Both sources state written decisions before weekly planning, matching the specific soft workflow preference.",
+      "required_points": [
+        "Written decisions precede weekly planning."
+      ],
+      "forbidden_inferences": [
+        "Do not infer that all meetings are optional."
+      ]
+    }
+  ],
+  "forbidden_assessment_targets": [],
+  "acceptable_actions": [
+    "pursue"
+  ],
+  "critical_errors": [
+    {
+      "id": "PF-02-interpretation",
+      "description": "Misreads Several preferences fully matched by two published sources: the pay preference or its cited role term.",
+      "target_ids": [
+        "pref_pay"
+      ]
+    },
+    {
+      "id": "PF-02-action",
+      "description": "For Several preferences fully matched by two published sources, takes a next step inconsistent with the supported pay result.",
+      "target_ids": [
+        "pref_pay"
+      ]
+    }
+  ],
+  "notes": [
+    "Answer 02 uses the independent employer terms source for every assessment; both evidence sets are sufficient."
+  ]
+}

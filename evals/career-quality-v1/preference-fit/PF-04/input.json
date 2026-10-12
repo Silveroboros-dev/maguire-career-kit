@@ -1,0 +1,62 @@
+{
+  "schema": "maguire-quality-input-v1",
+  "case_id": "PF-04",
+  "grader": "preference_fit",
+  "data_class": "synthetic",
+  "decision_at": "2026-10-12T10:00:00Z",
+  "task": "Assess this role against the candidate's recorded work preferences using only the supplied sources. Explain each preference judgment and recommend a supported next step.",
+  "jd": {
+    "title": "Data Quality Coordinator",
+    "sources": [
+      {
+        "id": "jd_office",
+        "text": "The position requires two fixed office days per week and three home-working days.",
+        "observed_at": "2026-10-01T09:00:00Z",
+        "authority": "job_description",
+        "supersedes": []
+      },
+      {
+        "id": "jd_hours",
+        "text": "The working week is 32 hours spread across four days.",
+        "observed_at": "2026-10-01T09:00:00Z",
+        "authority": "job_description",
+        "supersedes": []
+      },
+      {
+        "id": "jd_budget",
+        "text": "The employer provides a CHF 1,500 annual conference budget.",
+        "observed_at": "2026-10-01T09:00:00Z",
+        "authority": "job_description",
+        "supersedes": []
+      }
+    ]
+  },
+  "candidate": {
+    "facts": [],
+    "preferences": [
+      {
+        "id": "pref_office",
+        "text": "I can accept no more than one required office day per week.",
+        "priority": "must_have",
+        "allowed_exceptions": [
+          "I allow one inquiry about a formally approved one-day schedule."
+        ],
+        "confirmed_at": "2026-09-25T12:00:00Z"
+      },
+      {
+        "id": "pref_hours",
+        "text": "I require a 32-hour, four-day working week.",
+        "priority": "must_have",
+        "allowed_exceptions": [],
+        "confirmed_at": "2026-09-25T12:00:00Z"
+      },
+      {
+        "id": "pref_conference",
+        "text": "A conference budget would be useful.",
+        "priority": "nice_to_have",
+        "allowed_exceptions": [],
+        "confirmed_at": "2026-09-25T12:00:00Z"
+      }
+    ]
+  }
+}

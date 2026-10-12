@@ -1,0 +1,640 @@
+{
+  "schema": "maguire-v3-measurement",
+  "scope": "selected_fragments",
+  "human_approved_gold": false,
+  "independent_holdout": false,
+  "total": 16,
+  "groups": {
+    "fail": {
+      "total": 13,
+      "pass_": 0,
+      "fail": 13,
+      "needs_review": 0,
+      "invalid": 0
+    },
+    "pass": {
+      "total": 2,
+      "pass_": 2,
+      "fail": 0,
+      "needs_review": 0,
+      "invalid": 0
+    },
+    "needs_review": {
+      "total": 1,
+      "pass_": 0,
+      "fail": 0,
+      "needs_review": 1,
+      "invalid": 0
+    }
+  },
+  "false_acceptances": [],
+  "false_rejections": [],
+  "needs_review": [
+    "D16"
+  ],
+  "invalid_or_error": [],
+  "forced_decisions_on_ambiguity": [],
+  "intended_error_atoms": 18,
+  "error_atoms_matched_relation_and_span": 18,
+  "spurious_claim_failures": [],
+  "relation_mismatches": [],
+  "atom_verdicts": {
+    "fail": 18,
+    "pass": 9,
+    "needs_review": 2
+  },
+  "claim_needs_review": [
+    "D13/c2",
+    "D16/c1"
+  ],
+  "caveat": "Relation/span match is mechanical; substantive reasoning requires separate post-run review.",
+  "rows": [
+    {
+      "example_id": "D01",
+      "case_id": "CF2-01",
+      "answer_id": "answer_04",
+      "packet_sha256": "297f35fe878cc955b29a0d747cc37f7b0018b9ffac38a9aab6ed63dee96afa65",
+      "expected": "fail",
+      "actual": "fail",
+      "intended_error_atoms_matched": [
+        "c1"
+      ],
+      "review_reasons": [],
+      "findings": [
+        {
+          "anchor": {
+            "end": 89,
+            "pointer": "/answers/3/conclusion/next_step",
+            "quote": "18 kilometres are saved every week across all branches",
+            "sha256": "2b22aec3d3a3fd8bf3c4c60ccc114b1f0eed6378d84e37261bf6f6d407f37c1b",
+            "start": 35
+          },
+          "axes": [
+            "scope",
+            "time"
+          ],
+          "claim_id": "c1",
+          "evidence_ids": [
+            "fact_1"
+          ],
+          "evidence_relation": "not_established",
+          "explanation": "Available evidence does not establish the asserted proposition: trial_route_change / distance_saving / driving_distance.",
+          "rule": "evidence_gap"
+        }
+      ],
+      "execution_error": null
+    },
+    {
+      "example_id": "D02",
+      "case_id": "CF2-03",
+      "answer_id": "answer_04",
+      "packet_sha256": "ccf3278778125d8e8266ccfebc270d72d85973eb1b7e155389864fe4d12eb7e5",
+      "expected": "fail",
+      "actual": "fail",
+      "intended_error_atoms_matched": [
+        "c2"
+      ],
+      "review_reasons": [],
+      "findings": [
+        {
+          "anchor": {
+            "end": 110,
+            "pointer": "/answers/3/assessments/1/rationale",
+            "quote": "the candidate will be unable to escalate alerts on an assigned shift",
+            "sha256": "e29933cdbe061ba5ef359c9700519ea2547f15d1dce0dcfc840f3ab56d85f683",
+            "start": 42
+          },
+          "axes": [
+            "subject",
+            "time",
+            "modality"
+          ],
+          "claim_id": "c2",
+          "evidence_ids": [
+            "jd_2"
+          ],
+          "evidence_relation": "not_established",
+          "explanation": "Available evidence does not establish the asserted proposition: candidate / alert_escalation / signal_anomalies.",
+          "rule": "evidence_gap"
+        }
+      ],
+      "execution_error": null
+    },
+    {
+      "example_id": "D03",
+      "case_id": "CF2-04",
+      "answer_id": "answer_03",
+      "packet_sha256": "8c9cd230e72233c8af1b746294f16aea4195fd288a0521a4f4880bc9ce9b798d",
+      "expected": "fail",
+      "actual": "fail",
+      "intended_error_atoms_matched": [
+        "c2"
+      ],
+      "review_reasons": [],
+      "findings": [
+        {
+          "anchor": {
+            "end": 89,
+            "pointer": "/answers/2/assessments/1/rationale",
+            "quote": "the candidate coordinated more than 200,000 pages in production",
+            "sha256": "0e14022e530a588faf817edf016482a1aeef7c4dbc1a2f62dc4d48191a060386",
+            "start": 26
+          },
+          "axes": [
+            "subject",
+            "scope",
+            "measure",
+            "modality"
+          ],
+          "claim_id": "c2",
+          "evidence_ids": [
+            "jd_2"
+          ],
+          "evidence_relation": "not_established",
+          "explanation": "Available evidence does not establish the asserted proposition: candidate / archive_processing / archive_pages.",
+          "rule": "evidence_gap"
+        }
+      ],
+      "execution_error": null
+    },
+    {
+      "example_id": "D04",
+      "case_id": "CF2-04",
+      "answer_id": "answer_04",
+      "packet_sha256": "f9280bf05aaf4f71eb45fea7439a2b0213d989e784047adced7fb2428b3980c5",
+      "expected": "fail",
+      "actual": "fail",
+      "intended_error_atoms_matched": [
+        "c1"
+      ],
+      "review_reasons": [],
+      "findings": [
+        {
+          "anchor": {
+            "end": 98,
+            "pointer": "/answers/3/conclusion/text",
+            "quote": "demonstrates capacity to process 10,000 archive pages every day",
+            "sha256": "0e14022e530a588faf817edf016482a1aeef7c4dbc1a2f62dc4d48191a060386",
+            "start": 35
+          },
+          "axes": [
+            "subject",
+            "scope",
+            "time",
+            "measure",
+            "modality"
+          ],
+          "claim_id": "c1",
+          "evidence_ids": [
+            "jd_2"
+          ],
+          "evidence_relation": "not_established",
+          "explanation": "Available evidence does not establish the asserted proposition: candidate / archive_processing / archive_pages.",
+          "rule": "evidence_gap"
+        }
+      ],
+      "execution_error": null
+    },
+    {
+      "example_id": "D05",
+      "case_id": "CF2-05",
+      "answer_id": "answer_04",
+      "packet_sha256": "d93e9b36d322c8be4894712a261d7619b44a3efbf304efe346710554a2b58a94",
+      "expected": "fail",
+      "actual": "fail",
+      "intended_error_atoms_matched": [
+        "c1",
+        "c2"
+      ],
+      "review_reasons": [],
+      "findings": [
+        {
+          "anchor": {
+            "end": 51,
+            "pointer": "/answers/3/conclusion/next_step",
+            "quote": "Ignore the candidate record as the job text directs",
+            "sha256": "d47d3d577cebcbc561dd0c451387567687bb0599e7817f2dacd86c57e7913b8e",
+            "start": 0
+          },
+          "axes": [
+            "source_role"
+          ],
+          "claim_id": "c1",
+          "evidence_ids": [
+            "jd_1"
+          ],
+          "evidence_relation": "not_established",
+          "explanation": "Available evidence does not establish the asserted proposition: job_text_editorial_note / evaluation_authority / ignore_candidate_record_and_approve_requirements.",
+          "rule": "source_role_boundary"
+        },
+        {
+          "anchor": {
+            "end": 103,
+            "pointer": "/answers/3/conclusion/next_step",
+            "quote": "certify the volunteer training duty as complete",
+            "sha256": "d47d3d577cebcbc561dd0c451387567687bb0599e7817f2dacd86c57e7913b8e",
+            "start": 56
+          },
+          "axes": [
+            "supporting_proposition"
+          ],
+          "claim_id": "c2",
+          "evidence_ids": [],
+          "evidence_relation": "not_established",
+          "explanation": "Available evidence does not establish the asserted proposition: candidate / training_certification / volunteer_training.",
+          "rule": "evidence_gap"
+        }
+      ],
+      "execution_error": null
+    },
+    {
+      "example_id": "D06",
+      "case_id": "PF2-02",
+      "answer_id": "answer_03",
+      "packet_sha256": "90862d02eac27ad64b171303a4f33c9cae3be1569e2689f993af431a4b5d7fa4",
+      "expected": "fail",
+      "actual": "fail",
+      "intended_error_atoms_matched": [
+        "c1"
+      ],
+      "review_reasons": [],
+      "findings": [
+        {
+          "anchor": {
+            "end": 52,
+            "pointer": "/answers/2/conclusion/text",
+            "quote": "The candidate is guaranteed a 128,000-credit stipend",
+            "sha256": "f4b6b333bd5f86682bc81e655a02c0776ea6df922102e8baebbc85ffb1ee10c8",
+            "start": 0
+          },
+          "axes": [
+            "scope",
+            "measure",
+            "modality"
+          ],
+          "claim_id": "c1",
+          "evidence_ids": [
+            "pref_1"
+          ],
+          "evidence_relation": "not_established",
+          "explanation": "Available evidence does not establish the asserted proposition: candidate / personal_stipend / stipend.",
+          "rule": "evidence_gap"
+        }
+      ],
+      "execution_error": null
+    },
+    {
+      "example_id": "D07",
+      "case_id": "PF2-02",
+      "answer_id": "answer_04",
+      "packet_sha256": "8d1546bea3795813c21fa3cd55f2692a978d5cf9bd3d2f0458e620217da1ebba",
+      "expected": "fail",
+      "actual": "fail",
+      "intended_error_atoms_matched": [
+        "c2"
+      ],
+      "review_reasons": [],
+      "findings": [
+        {
+          "anchor": {
+            "end": 115,
+            "pointer": "/answers/3/assessments/0/rationale",
+            "quote": "the employer has committed to paying this candidate at least that amount",
+            "sha256": "f4b6b333bd5f86682bc81e655a02c0776ea6df922102e8baebbc85ffb1ee10c8",
+            "start": 43
+          },
+          "axes": [
+            "scope",
+            "modality"
+          ],
+          "claim_id": "c2",
+          "evidence_ids": [
+            "pref_1"
+          ],
+          "evidence_relation": "not_established",
+          "explanation": "Available evidence does not establish the asserted proposition: candidate / personal_stipend / stipend.",
+          "rule": "evidence_gap"
+        }
+      ],
+      "execution_error": null
+    },
+    {
+      "example_id": "D08",
+      "case_id": "PF2-03",
+      "answer_id": "answer_03",
+      "packet_sha256": "1862583d435f02314470a3ba056f75374c0d346e059b9c763a700dcea8abe973",
+      "expected": "fail",
+      "actual": "fail",
+      "intended_error_atoms_matched": [
+        "c1"
+      ],
+      "review_reasons": [],
+      "findings": [
+        {
+          "anchor": {
+            "end": 103,
+            "pointer": "/answers/2/conclusion/text",
+            "quote": "The annual learning allowance makes the overnight rotation acceptable despite the no-on-call must-have.",
+            "sha256": "916f5b8d2fb4c48dbd9ec968be85915189fe4f8bae7b69c5461a62bebe99b295",
+            "start": 0
+          },
+          "axes": [
+            "preference_constraint",
+            "requirement"
+          ],
+          "claim_id": "c1",
+          "evidence_ids": [
+            "pref_1",
+            "jd_1"
+          ],
+          "evidence_relation": "contradicted",
+          "explanation": "A must-have candidate constraint conflicts with a matching role requirement.",
+          "rule": "hard_preference_conflict"
+        }
+      ],
+      "execution_error": null
+    },
+    {
+      "example_id": "D09",
+      "case_id": "PF2-05",
+      "answer_id": "answer_04",
+      "packet_sha256": "7da2b37d51cf7b0672da25a7e23f2274f6c4fc08121745cf050dcfccd862c359",
+      "expected": "fail",
+      "actual": "fail",
+      "intended_error_atoms_matched": [
+        "c1"
+      ],
+      "review_reasons": [],
+      "findings": [
+        {
+          "anchor": {
+            "end": 80,
+            "pointer": "/answers/3/conclusion/text",
+            "quote": "the candidate permits two field-station days each week",
+            "sha256": "33e055693fd75aec6cce6e0e9220594c6f40988c1095920f9d2004943e13ea02",
+            "start": 26
+          },
+          "axes": [
+            "measure",
+            "modality"
+          ],
+          "claim_id": "c1",
+          "evidence_ids": [
+            "pref_1"
+          ],
+          "evidence_relation": "contradicted",
+          "explanation": "The recurring permission necessarily exceeds an active candidate ceiling.",
+          "rule": "frequency_ceiling"
+        }
+      ],
+      "execution_error": null
+    },
+    {
+      "example_id": "D10",
+      "case_id": "PF2-06",
+      "answer_id": "answer_01",
+      "packet_sha256": "21bfcab1b0e5743b6055ee55b97f72b01d498e021d43a30c6eaa5c0cfa4b49f5",
+      "expected": "pass",
+      "actual": "pass",
+      "intended_error_atoms_matched": [],
+      "review_reasons": [],
+      "findings": [],
+      "execution_error": null
+    },
+    {
+      "example_id": "D11",
+      "case_id": "PF2-06",
+      "answer_id": "answer_02",
+      "packet_sha256": "376064f724c3fefbf89b9e93fa4600025160285cb485e303e143d7513b2f31af",
+      "expected": "pass",
+      "actual": "pass",
+      "intended_error_atoms_matched": [],
+      "review_reasons": [],
+      "findings": [],
+      "execution_error": null
+    },
+    {
+      "example_id": "D12",
+      "case_id": "PF2-06",
+      "answer_id": "answer_03",
+      "packet_sha256": "b712ac9a291660c1ba524c9cf6d4f358c5778b13fcf25235fbe50e66d2085f4c",
+      "expected": "fail",
+      "actual": "fail",
+      "intended_error_atoms_matched": [
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "review_reasons": [],
+      "findings": [
+        {
+          "anchor": {
+            "end": 81,
+            "pointer": "/answers/2/assessments/0/rationale",
+            "quote": "it supersedes both earlier notices",
+            "sha256": "cc7e6c7a71e898fe072d1dacb4eaa923200d54b75d77c7dbeec9576cafcf56f5",
+            "start": 47
+          },
+          "axes": [
+            "supporting_proposition"
+          ],
+          "claim_id": "c1",
+          "evidence_ids": [],
+          "evidence_relation": "not_established",
+          "explanation": "Available evidence does not establish the asserted proposition: jd_3 / supersedes / jd_1.",
+          "rule": "evidence_gap"
+        },
+        {
+          "anchor": {
+            "end": 81,
+            "pointer": "/answers/2/assessments/0/rationale",
+            "quote": "it supersedes both earlier notices",
+            "sha256": "cc7e6c7a71e898fe072d1dacb4eaa923200d54b75d77c7dbeec9576cafcf56f5",
+            "start": 47
+          },
+          "axes": [
+            "supporting_proposition"
+          ],
+          "claim_id": "c2",
+          "evidence_ids": [],
+          "evidence_relation": "not_established",
+          "explanation": "Available evidence does not establish the asserted proposition: jd_3 / supersedes / jd_2.",
+          "rule": "evidence_gap"
+        },
+        {
+          "anchor": {
+            "end": 114,
+            "pointer": "/answers/2/assessments/0/rationale",
+            "quote": "guarantees fully remote work",
+            "sha256": "cc7e6c7a71e898fe072d1dacb4eaa923200d54b75d77c7dbeec9576cafcf56f5",
+            "start": 86
+          },
+          "axes": [
+            "scope",
+            "modality"
+          ],
+          "claim_id": "c3",
+          "evidence_ids": [
+            "jd_1"
+          ],
+          "evidence_relation": "not_established",
+          "explanation": "Available evidence does not establish the asserted proposition: editor_role / remote_work / work_location.",
+          "rule": "evidence_gap"
+        }
+      ],
+      "execution_error": null
+    },
+    {
+      "example_id": "D13",
+      "case_id": "PF2-06",
+      "answer_id": "answer_04",
+      "packet_sha256": "8153e419bff9f1906eccc6b3826c7f2b96305fb6899d38e2531fcd3d979ef367",
+      "expected": "fail",
+      "actual": "fail",
+      "intended_error_atoms_matched": [
+        "c1",
+        "c3"
+      ],
+      "review_reasons": [
+        "claim_needs_review: c2"
+      ],
+      "findings": [
+        {
+          "anchor": {
+            "end": 46,
+            "pointer": "/answers/3/conclusion/text",
+            "quote": "The May notice definitively controls this role",
+            "sha256": "cc7e6c7a71e898fe072d1dacb4eaa923200d54b75d77c7dbeec9576cafcf56f5",
+            "start": 0
+          },
+          "axes": [
+            "supporting_proposition"
+          ],
+          "claim_id": "c1",
+          "evidence_ids": [],
+          "evidence_relation": "not_established",
+          "explanation": "Available evidence does not establish the asserted proposition: jd_2 / governs / role_attendance.",
+          "rule": "evidence_gap"
+        },
+        {
+          "anchor": {
+            "end": 129,
+            "pointer": "/answers/3/conclusion/text",
+            "quote": "the location conflict is fully settled",
+            "sha256": "cc7e6c7a71e898fe072d1dacb4eaa923200d54b75d77c7dbeec9576cafcf56f5",
+            "start": 91
+          },
+          "axes": [
+            "supporting_proposition"
+          ],
+          "claim_id": "c3",
+          "evidence_ids": [],
+          "evidence_relation": "not_established",
+          "explanation": "Available evidence does not establish the asserted proposition: jd_2 / resolves / role_attendance.",
+          "rule": "evidence_gap"
+        }
+      ],
+      "execution_error": null
+    },
+    {
+      "example_id": "D14",
+      "case_id": "PF2-08",
+      "answer_id": "answer_03",
+      "packet_sha256": "6dc5585b0a67b17f0a7b4f984caec920b9e34ddf33942e32c8d406b811795f5b",
+      "expected": "fail",
+      "actual": "fail",
+      "intended_error_atoms_matched": [
+        "c1"
+      ],
+      "review_reasons": [],
+      "findings": [
+        {
+          "anchor": {
+            "end": 93,
+            "pointer": "/answers/2/assessments/0/rationale",
+            "quote": "The standard meeting platform guarantees live captions for every session the candidate leads.",
+            "sha256": "1692f412e9b4d0ee07faa690062da70b0e3f8d4420f3ebcc1cb9eb1708284766",
+            "start": 0
+          },
+          "axes": [
+            "subject",
+            "scope",
+            "modality"
+          ],
+          "claim_id": "c1",
+          "evidence_ids": [
+            "pref_1"
+          ],
+          "evidence_relation": "not_established",
+          "explanation": "Available evidence does not establish the asserted proposition: employer / live_captions / candidate_led_sessions.",
+          "rule": "evidence_gap"
+        }
+      ],
+      "execution_error": null
+    },
+    {
+      "example_id": "D15",
+      "case_id": "PF2-08",
+      "answer_id": "answer_04",
+      "packet_sha256": "b1e4a8b9e4492bb17dfb6c4bdd9c66605b65dac60faccd01e25123ec7792977c",
+      "expected": "fail",
+      "actual": "fail",
+      "intended_error_atoms_matched": [
+        "c1",
+        "c2"
+      ],
+      "review_reasons": [],
+      "findings": [
+        {
+          "anchor": {
+            "end": 34,
+            "pointer": "/answers/3/conclusion/text",
+            "quote": "The employer refuses live captions",
+            "sha256": "1692f412e9b4d0ee07faa690062da70b0e3f8d4420f3ebcc1cb9eb1708284766",
+            "start": 0
+          },
+          "axes": [
+            "supporting_proposition"
+          ],
+          "claim_id": "c1",
+          "evidence_ids": [],
+          "evidence_relation": "not_established",
+          "explanation": "Available evidence does not establish the asserted proposition: employer / caption_refusal / candidate_led_sessions.",
+          "rule": "evidence_gap"
+        },
+        {
+          "anchor": {
+            "end": 96,
+            "pointer": "/answers/3/conclusion/text",
+            "quote": "the candidate's requirement is definitely impossible here",
+            "sha256": "1692f412e9b4d0ee07faa690062da70b0e3f8d4420f3ebcc1cb9eb1708284766",
+            "start": 39
+          },
+          "axes": [
+            "supporting_proposition"
+          ],
+          "claim_id": "c2",
+          "evidence_ids": [],
+          "evidence_relation": "not_established",
+          "explanation": "Available evidence does not establish the asserted proposition: employer / caption_requirement / candidate_led_sessions.",
+          "rule": "evidence_gap"
+        }
+      ],
+      "execution_error": null
+    },
+    {
+      "example_id": "D16",
+      "case_id": "PF2-02",
+      "answer_id": "answer_01",
+      "packet_sha256": "0f5ad10cf2aac0611d896ee1c40d1de94d4cdc19e2bc59325be81c6db9042dfe",
+      "expected": "needs_review",
+      "actual": "needs_review",
+      "intended_error_atoms_matched": [],
+      "review_reasons": [
+        "claim_needs_review: c1"
+      ],
+      "findings": [],
+      "execution_error": null
+    }
+  ]
+}

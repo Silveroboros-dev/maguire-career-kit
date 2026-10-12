@@ -1,0 +1,190 @@
+{
+  "schema": "maguire-quality-answers-v1",
+  "case_id": "PF-07",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "assessments": [
+        {
+          "target_id": "pref_autonomy",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_culture",
+              "quote": "We are a high-ownership, entrepreneurial team with a collaborative culture."
+            }
+          ],
+          "rationale": "High-ownership branding does not specify who approves routine technical decisions."
+        },
+        {
+          "target_id": "pref_remote",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_remote",
+              "quote": "This position is remote-first with one optional team gathering each quarter; office attendance is not required."
+            }
+          ],
+          "rationale": "Optional gatherings and no required attendance satisfy zero compulsory days."
+        },
+        {
+          "target_id": "pref_hours",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_hours",
+              "quote": "Required core meetings run 13:00–16:00 Europe/Zurich; no required core meeting ends later."
+            }
+          ],
+          "rationale": "The JD explicitly says required core meetings end by 16:00 Europe/Zurich, before the candidate’s 17:00 preference."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "Location and stated core hours fit, while the decision-rights must-have is not established by the culture slogan.",
+        "next_step": "Ask who can approve routine technical design decisions and request a concrete example from this team."
+      },
+      "limitations": [
+        "The posting gives no approval matrix or actual team practice."
+      ]
+    },
+    {
+      "answer_id": "answer_02",
+      "assessments": [
+        {
+          "target_id": "pref_autonomy",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_culture",
+              "quote": "We are a high-ownership, entrepreneurial team with a collaborative culture."
+            }
+          ],
+          "rationale": "High-ownership branding does not specify who approves routine technical decisions."
+        },
+        {
+          "target_id": "pref_remote",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_remote",
+              "quote": "This position is remote-first with one optional team gathering each quarter; office attendance is not required."
+            }
+          ],
+          "rationale": "Optional gatherings and no required attendance satisfy zero compulsory days."
+        },
+        {
+          "target_id": "pref_hours",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_hours",
+              "quote": "Required core meetings run 13:00–16:00 Europe/Zurich; no required core meeting ends later."
+            }
+          ],
+          "rationale": "The JD explicitly says required core meetings end by 16:00 Europe/Zurich, before the candidate’s 17:00 preference."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "The decisive unknown is implementation authority, not the remote policy.",
+        "next_step": "Ask the hiring manager whether routine design choices require manager sign-off before drafting a fit conclusion."
+      },
+      "limitations": [
+        "The posting gives no approval matrix or actual team practice."
+      ]
+    },
+    {
+      "answer_id": "answer_03",
+      "assessments": [
+        {
+          "target_id": "pref_autonomy",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_culture",
+              "quote": "We are a high-ownership, entrepreneurial team with a collaborative culture."
+            }
+          ],
+          "rationale": "A high-ownership team necessarily lets the candidate choose routine technical designs without approval."
+        },
+        {
+          "target_id": "pref_remote",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_remote",
+              "quote": "This position is remote-first with one optional team gathering each quarter; office attendance is not required."
+            }
+          ],
+          "rationale": "Optional gatherings and no required attendance satisfy zero compulsory days."
+        },
+        {
+          "target_id": "pref_hours",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_hours",
+              "quote": "Required core meetings run 13:00–16:00 Europe/Zurich; no required core meeting ends later."
+            }
+          ],
+          "rationale": "The JD explicitly says required core meetings end by 16:00 Europe/Zurich, before the candidate’s 17:00 preference."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "Location and stated core hours fit, while the decision-rights must-have is not established by the culture slogan.",
+        "next_step": "Ask who can approve routine technical design decisions and request a concrete example from this team."
+      },
+      "limitations": [
+        "The posting gives no approval matrix or actual team practice."
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "assessments": [
+        {
+          "target_id": "pref_autonomy",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_hours",
+              "quote": "Required core meetings run 13:00–16:00 Europe/Zurich; no required core meeting ends later."
+            }
+          ],
+          "rationale": "High-ownership branding does not specify who approves routine technical decisions."
+        },
+        {
+          "target_id": "pref_remote",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_remote",
+              "quote": "This position is remote-first with one optional team gathering each quarter; office attendance is not required."
+            }
+          ],
+          "rationale": "Optional gatherings and no required attendance satisfy zero compulsory days."
+        },
+        {
+          "target_id": "pref_hours",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_hours",
+              "quote": "Required core meetings run 13:00–16:00 Europe/Zurich; no required core meeting ends later."
+            }
+          ],
+          "rationale": "The JD explicitly says required core meetings end by 16:00 Europe/Zurich, before the candidate’s 17:00 preference."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "Location and stated core hours fit, while the decision-rights must-have is not established by the culture slogan.",
+        "next_step": "Ask who can approve routine technical design decisions and request a concrete example from this team."
+      },
+      "limitations": [
+        "The posting gives no approval matrix or actual team practice."
+      ]
+    }
+  ]
+}

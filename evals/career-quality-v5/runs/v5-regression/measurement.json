@@ -1,0 +1,3479 @@
+{
+  "schema": "maguire-v5-regression-measurement",
+  "human_approved": false,
+  "scope": "manually normalized fragments; no extractor or complete-advice assessment",
+  "overall": {
+    "total": 40,
+    "confusion": {
+      "pass": {
+        "pass": 18,
+        "fail": 1,
+        "needs_review": 5,
+        "invalid": 0
+      },
+      "fail": {
+        "pass": 0,
+        "fail": 12,
+        "needs_review": 0,
+        "invalid": 0
+      },
+      "needs_review": {
+        "pass": 0,
+        "fail": 0,
+        "needs_review": 4,
+        "invalid": 0
+      }
+    },
+    "missed_errors": [],
+    "false_rejections": [
+      "PF3N-04"
+    ],
+    "needs_review": {
+      "pass": [
+        "CF3N-03",
+        "CF3N-04",
+        "CF3N-08",
+        "CF3N-11",
+        "PF3N-08"
+      ],
+      "fail": [],
+      "needs_review": [
+        "CF3N-19",
+        "CF3N-20",
+        "PF3N-19",
+        "PF3N-20"
+      ]
+    },
+    "ambiguous_forced_decisions": [],
+    "invalid": [],
+    "execution_errors": [],
+    "automatic_decisions": 31,
+    "intended_errors_total": 14,
+    "intended_errors_flagged": 14,
+    "bad_fragments_rejected_only_on_other_claims": [],
+    "extra_failures_in_bad_fragments": []
+  },
+  "by_family": {
+    "candidate-fit": {
+      "total": 20,
+      "confusion": {
+        "pass": {
+          "pass": 8,
+          "fail": 0,
+          "needs_review": 4,
+          "invalid": 0
+        },
+        "fail": {
+          "pass": 0,
+          "fail": 6,
+          "needs_review": 0,
+          "invalid": 0
+        },
+        "needs_review": {
+          "pass": 0,
+          "fail": 0,
+          "needs_review": 2,
+          "invalid": 0
+        }
+      },
+      "missed_errors": [],
+      "false_rejections": [],
+      "needs_review": {
+        "pass": [
+          "CF3N-03",
+          "CF3N-04",
+          "CF3N-08",
+          "CF3N-11"
+        ],
+        "fail": [],
+        "needs_review": [
+          "CF3N-19",
+          "CF3N-20"
+        ]
+      },
+      "ambiguous_forced_decisions": [],
+      "invalid": [],
+      "execution_errors": [],
+      "automatic_decisions": 14,
+      "intended_errors_total": 6,
+      "intended_errors_flagged": 6,
+      "bad_fragments_rejected_only_on_other_claims": [],
+      "extra_failures_in_bad_fragments": []
+    },
+    "preference-fit": {
+      "total": 20,
+      "confusion": {
+        "pass": {
+          "pass": 10,
+          "fail": 1,
+          "needs_review": 1,
+          "invalid": 0
+        },
+        "fail": {
+          "pass": 0,
+          "fail": 6,
+          "needs_review": 0,
+          "invalid": 0
+        },
+        "needs_review": {
+          "pass": 0,
+          "fail": 0,
+          "needs_review": 2,
+          "invalid": 0
+        }
+      },
+      "missed_errors": [],
+      "false_rejections": [
+        "PF3N-04"
+      ],
+      "needs_review": {
+        "pass": [
+          "PF3N-08"
+        ],
+        "fail": [],
+        "needs_review": [
+          "PF3N-19",
+          "PF3N-20"
+        ]
+      },
+      "ambiguous_forced_decisions": [],
+      "invalid": [],
+      "execution_errors": [],
+      "automatic_decisions": 17,
+      "intended_errors_total": 8,
+      "intended_errors_flagged": 8,
+      "bad_fragments_rejected_only_on_other_claims": [],
+      "extra_failures_in_bad_fragments": []
+    }
+  },
+  "rows": [
+    {
+      "case_id": "CF3N-01",
+      "family": "candidate-fit",
+      "packet_sha256": "72a91828d2a794184ca21d3b6d11ef0dad9e600cfffc6fdbbe5d50313fbf01b7",
+      "expected": "pass",
+      "actual": "pass",
+      "reference_reason": "The self-reported 84 km pilot result supports the weaker lower bound of 70 km for the same week.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "localized_error_claim_ids": [],
+      "other_failed_claim_ids": [],
+      "review_claim_ids": [],
+      "execution_error": null,
+      "claims": [
+        {
+          "anchor": {
+            "end": 95,
+            "pointer": "/rows/0/answer/text",
+            "quote": "My pilot route change saved at least 70 km of travel in that week, based on my own measurement.",
+            "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+            "start": 0
+          },
+          "axes": [],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "CF3N-01-S1"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Direct support found.",
+          "id": "c1",
+          "inspected_source_ids": [
+            "CF3N-01-S1"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "direct_support",
+          "support_evidence_ids": [
+            "CF3N-01-S1"
+          ],
+          "verdict": "pass"
+        }
+      ],
+      "review_reasons": []
+    },
+    {
+      "case_id": "CF3N-02",
+      "family": "candidate-fit",
+      "packet_sha256": "d07007c666a428bd5cae849ae1d5beb321995fe06ec6e1f7216d02b517998677",
+      "expected": "pass",
+      "actual": "pass",
+      "reference_reason": "Both clauses weaken the source quantities and retain the personal contribution and 2024 setting.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "localized_error_claim_ids": [],
+      "other_failed_claim_ids": [],
+      "review_claim_ids": [],
+      "execution_error": null,
+      "claims": [
+        {
+          "anchor": {
+            "end": 61,
+            "pointer": "/rows/1/answer/text",
+            "quote": "I used more than ten dispatch consoles",
+            "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+            "start": 23
+          },
+          "axes": [],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "CF3N-02-S1"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Direct support found.",
+          "id": "c1",
+          "inspected_source_ids": [
+            "CF3N-02-S1"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "direct_support",
+          "support_evidence_ids": [
+            "CF3N-02-S1"
+          ],
+          "verdict": "pass"
+        },
+        {
+          "anchor": {
+            "end": 116,
+            "pointer": "/rows/1/answer/text",
+            "quote": "personally indexed at least twenty archive cartons",
+            "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+            "start": 66
+          },
+          "axes": [],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "CF3N-02-S1"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Direct support found.",
+          "id": "c2",
+          "inspected_source_ids": [
+            "CF3N-02-S1"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "direct_support",
+          "support_evidence_ids": [
+            "CF3N-02-S1"
+          ],
+          "verdict": "pass"
+        }
+      ],
+      "review_reasons": []
+    },
+    {
+      "case_id": "CF3N-03",
+      "family": "candidate-fit",
+      "packet_sha256": "7fe5b589650f2e3caa68ed81e8c4eac815405a58476c389b611a492a1d783e7a",
+      "expected": "pass",
+      "actual": "needs_review",
+      "reference_reason": "The candidate and job clauses preserve their different evidence types; the relevance judgment follows their shared duty.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "localized_error_claim_ids": [],
+      "other_failed_claim_ids": [],
+      "review_claim_ids": [
+        "c3"
+      ],
+      "execution_error": null,
+      "claims": [
+        {
+          "anchor": {
+            "end": 32,
+            "pointer": "/rows/2/answer/text",
+            "quote": "weekday alert triage",
+            "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+            "start": 12
+          },
+          "axes": [
+            "subject",
+            "time",
+            "modality"
+          ],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "CF3N-03-S1",
+            "CF3N-03-JD"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Direct support found.",
+          "id": "c1",
+          "inspected_source_ids": [
+            "CF3N-03-S1",
+            "CF3N-03-JD"
+          ],
+          "limited_evidence_ids": [
+            "CF3N-03-JD"
+          ],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "direct_support",
+          "support_evidence_ids": [
+            "CF3N-03-S1"
+          ],
+          "verdict": "pass"
+        },
+        {
+          "anchor": {
+            "end": 47,
+            "pointer": "/rows/2/answer/text",
+            "quote": "and escalation",
+            "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+            "start": 33
+          },
+          "axes": [],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "CF3N-03-S1"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Direct support found.",
+          "id": "c2",
+          "inspected_source_ids": [
+            "CF3N-03-S1",
+            "CF3N-03-JD"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "direct_support",
+          "support_evidence_ids": [
+            "CF3N-03-S1"
+          ],
+          "verdict": "pass"
+        },
+        {
+          "anchor": {
+            "end": 113,
+            "pointer": "/rows/2/answer/text",
+            "quote": "directly relevant to the role’s weekday escalation requirement",
+            "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+            "start": 51
+          },
+          "axes": [
+            "predicate"
+          ],
+          "counter_evidence_ids": [],
+          "evidence_ids": [],
+          "evidence_relation": null,
+          "explanation": "Predicate has no registered comparison rule.",
+          "id": "c3",
+          "inspected_source_ids": [
+            "CF3N-03-S1",
+            "CF3N-03-JD"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "valid",
+          "reasoning_status": "unresolved",
+          "rule": "unknown_predicate",
+          "support_evidence_ids": [],
+          "verdict": "needs_review"
+        },
+        {
+          "anchor": {
+            "end": 113,
+            "pointer": "/rows/2/answer/text",
+            "quote": "the role’s weekday escalation requirement",
+            "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+            "start": 72
+          },
+          "axes": [],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "CF3N-03-JD"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Direct support found.",
+          "id": "c4",
+          "inspected_source_ids": [
+            "CF3N-03-S1",
+            "CF3N-03-JD"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "direct_support",
+          "support_evidence_ids": [
+            "CF3N-03-JD"
+          ],
+          "verdict": "pass"
+        }
+      ],
+      "review_reasons": [
+        "claim_needs_review: c3"
+      ]
+    },
+    {
+      "case_id": "CF3N-04",
+      "family": "candidate-fit",
+      "packet_sha256": "816c15b1da4965377091d048816f90f9fd24f0f9818800b6726be7040c005286",
+      "expected": "pass",
+      "actual": "needs_review",
+      "reference_reason": "The paper subset is explicitly 31 and the total is 43, both self-reported for the same month.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "localized_error_claim_ids": [],
+      "other_failed_claim_ids": [],
+      "review_claim_ids": [
+        "c3"
+      ],
+      "execution_error": null,
+      "claims": [
+        {
+          "anchor": {
+            "end": 64,
+            "pointer": "/rows/3/answer/text",
+            "quote": "I personally processed over 30 paper records boxes",
+            "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+            "start": 14
+          },
+          "axes": [
+            "object"
+          ],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "CF3N-04-S1"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Direct support found.",
+          "id": "c1",
+          "inspected_source_ids": [
+            "CF3N-04-S1"
+          ],
+          "limited_evidence_ids": [
+            "CF3N-04-S1"
+          ],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "direct_support",
+          "support_evidence_ids": [
+            "CF3N-04-S1"
+          ],
+          "verdict": "pass"
+        },
+        {
+          "anchor": {
+            "end": 118,
+            "pointer": "/rows/3/answer/text",
+            "quote": "my 43 total archive boxes",
+            "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+            "start": 93
+          },
+          "axes": [
+            "object",
+            "measure"
+          ],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "CF3N-04-S1"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Direct support found.",
+          "id": "c2",
+          "inspected_source_ids": [
+            "CF3N-04-S1"
+          ],
+          "limited_evidence_ids": [
+            "CF3N-04-S1"
+          ],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "direct_support",
+          "support_evidence_ids": [
+            "CF3N-04-S1"
+          ],
+          "verdict": "pass"
+        },
+        {
+          "anchor": {
+            "end": 118,
+            "pointer": "/rows/3/answer/text",
+            "quote": "that number is a subset of my 43 total archive boxes",
+            "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+            "start": 66
+          },
+          "axes": [
+            "predicate"
+          ],
+          "counter_evidence_ids": [],
+          "evidence_ids": [],
+          "evidence_relation": null,
+          "explanation": "Predicate has no registered comparison rule.",
+          "id": "c3",
+          "inspected_source_ids": [
+            "CF3N-04-S1"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "valid",
+          "reasoning_status": "unresolved",
+          "rule": "unknown_predicate",
+          "support_evidence_ids": [],
+          "verdict": "needs_review"
+        }
+      ],
+      "review_reasons": [
+        "claim_needs_review: c3"
+      ]
+    },
+    {
+      "case_id": "CF3N-05",
+      "family": "candidate-fit",
+      "packet_sha256": "7f81485b39cfb4e8d4a4a3218210d2deb72eda422d4bf7628ffce22a798c44c4",
+      "expected": "pass",
+      "actual": "pass",
+      "reference_reason": "The recommendation reflects the stated sandbox trial and explicit absence of deployment.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "localized_error_claim_ids": [],
+      "other_failed_claim_ids": [],
+      "review_claim_ids": [],
+      "execution_error": null,
+      "claims": [
+        {
+          "anchor": {
+            "end": 42,
+            "pointer": "/rows/4/answer/text",
+            "quote": "a three-batch sandbox OCR trial",
+            "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+            "start": 11
+          },
+          "axes": [
+            "object",
+            "scope",
+            "measure"
+          ],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "CF3N-05-S1"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Direct support found.",
+          "id": "c1",
+          "inspected_source_ids": [
+            "CF3N-05-S1"
+          ],
+          "limited_evidence_ids": [
+            "CF3N-05-S1"
+          ],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "direct_support",
+          "support_evidence_ids": [
+            "CF3N-05-S1"
+          ],
+          "verdict": "pass"
+        },
+        {
+          "anchor": {
+            "end": 93,
+            "pointer": "/rows/4/answer/text",
+            "quote": "leaving production OCR experience unclaimed",
+            "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+            "start": 50
+          },
+          "axes": [
+            "object",
+            "scope",
+            "measure"
+          ],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "CF3N-05-S1"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Direct support found.",
+          "id": "c2",
+          "inspected_source_ids": [
+            "CF3N-05-S1"
+          ],
+          "limited_evidence_ids": [
+            "CF3N-05-S1"
+          ],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "direct_support",
+          "support_evidence_ids": [
+            "CF3N-05-S1"
+          ],
+          "verdict": "pass"
+        }
+      ],
+      "review_reasons": []
+    },
+    {
+      "case_id": "CF3N-06",
+      "family": "candidate-fit",
+      "packet_sha256": "56905210f71a143cf463307c9a0fec8db7e5fb2c2f98228243c25028e409e403",
+      "expected": "pass",
+      "actual": "pass",
+      "reference_reason": "Certification has a stated issuer, while the demo count is explicitly self-reported and conservatively lowered.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "localized_error_claim_ids": [],
+      "other_failed_claim_ids": [],
+      "review_claim_ids": [],
+      "execution_error": null,
+      "claims": [
+        {
+          "anchor": {
+            "end": 72,
+            "pointer": "/rows/5/answer/text",
+            "quote": "a certified safety trainer",
+            "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+            "start": 46
+          },
+          "axes": [],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "CF3N-06-S1"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Direct support found.",
+          "id": "c1",
+          "inspected_source_ids": [
+            "CF3N-06-S1"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "direct_support",
+          "support_evidence_ids": [
+            "CF3N-06-S1"
+          ],
+          "verdict": "pass"
+        },
+        {
+          "anchor": {
+            "end": 148,
+            "pointer": "/rows/5/answer/text",
+            "quote": "I gave at least five equipment demos in 2025",
+            "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+            "start": 104
+          },
+          "axes": [],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "CF3N-06-S1"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Direct support found.",
+          "id": "c2",
+          "inspected_source_ids": [
+            "CF3N-06-S1"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "direct_support",
+          "support_evidence_ids": [
+            "CF3N-06-S1"
+          ],
+          "verdict": "pass"
+        }
+      ],
+      "review_reasons": []
+    },
+    {
+      "case_id": "CF3N-07",
+      "family": "candidate-fit",
+      "packet_sha256": "571b10c4e14ea963f0a583cef594e32c4e60537c280a15441d32d1143c548aa1",
+      "expected": "pass",
+      "actual": "pass",
+      "reference_reason": "It attributes scoring to the candidate and reserves final decisions for the chair.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "localized_error_claim_ids": [],
+      "other_failed_claim_ids": [],
+      "review_claim_ids": [],
+      "execution_error": null,
+      "claims": [
+        {
+          "anchor": {
+            "end": 49,
+            "pointer": "/rows/6/answer/text",
+            "quote": "I contributed proposal scores as a panel reviewer",
+            "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+            "start": 0
+          },
+          "axes": [
+            "object",
+            "scope"
+          ],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "CF3N-07-S1"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Direct support found.",
+          "id": "c1",
+          "inspected_source_ids": [
+            "CF3N-07-S1"
+          ],
+          "limited_evidence_ids": [
+            "CF3N-07-S1"
+          ],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "direct_support",
+          "support_evidence_ids": [
+            "CF3N-07-S1"
+          ],
+          "verdict": "pass"
+        },
+        {
+          "anchor": {
+            "end": 97,
+            "pointer": "/rows/6/answer/text",
+            "quote": "final funding decisions sat with the chair",
+            "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+            "start": 55
+          },
+          "axes": [
+            "subject",
+            "scope"
+          ],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "CF3N-07-S1"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Direct support found.",
+          "id": "c2",
+          "inspected_source_ids": [
+            "CF3N-07-S1"
+          ],
+          "limited_evidence_ids": [
+            "CF3N-07-S1"
+          ],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "direct_support",
+          "support_evidence_ids": [
+            "CF3N-07-S1"
+          ],
+          "verdict": "pass"
+        }
+      ],
+      "review_reasons": []
+    },
+    {
+      "case_id": "CF3N-08",
+      "family": "candidate-fit",
+      "packet_sha256": "98703ba9f6fa907b3fdd5a18243b09f74267a7622edfd773a592becdd8805459",
+      "expected": "pass",
+      "actual": "needs_review",
+      "reference_reason": "The answer uses the past schedule as history and explicitly leaves present availability unresolved.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "localized_error_claim_ids": [],
+      "other_failed_claim_ids": [],
+      "review_claim_ids": [
+        "c3",
+        "c4"
+      ],
+      "execution_error": null,
+      "claims": [
+        {
+          "anchor": {
+            "end": 31,
+            "pointer": "/rows/7/answer/text",
+            "quote": "My 2022 two-day station routine",
+            "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+            "start": 0
+          },
+          "axes": [
+            "subject",
+            "scope",
+            "time",
+            "modality"
+          ],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "CF3N-08-S1",
+            "CF3N-08-JD"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Direct support found.",
+          "id": "c1",
+          "inspected_source_ids": [
+            "CF3N-08-S1",
+            "CF3N-08-JD"
+          ],
+          "limited_evidence_ids": [
+            "CF3N-08-JD"
+          ],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "direct_support",
+          "support_evidence_ids": [
+            "CF3N-08-S1"
+          ],
+          "verdict": "pass"
+        },
+        {
+          "anchor": {
+            "end": 130,
+            "pointer": "/rows/7/answer/text",
+            "quote": "the new weekly on-site requirement",
+            "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+            "start": 96
+          },
+          "axes": [
+            "subject",
+            "scope",
+            "time",
+            "modality"
+          ],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "CF3N-08-JD",
+            "CF3N-08-S1"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Direct support found.",
+          "id": "c2",
+          "inspected_source_ids": [
+            "CF3N-08-S1",
+            "CF3N-08-JD"
+          ],
+          "limited_evidence_ids": [
+            "CF3N-08-S1"
+          ],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "direct_support",
+          "support_evidence_ids": [
+            "CF3N-08-JD"
+          ],
+          "verdict": "pass"
+        },
+        {
+          "anchor": {
+            "end": 51,
+            "pointer": "/rows/7/answer/text",
+            "quote": "is relevant history",
+            "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+            "start": 32
+          },
+          "axes": [
+            "predicate"
+          ],
+          "counter_evidence_ids": [],
+          "evidence_ids": [],
+          "evidence_relation": null,
+          "explanation": "Predicate has no registered comparison rule.",
+          "id": "c3",
+          "inspected_source_ids": [
+            "CF3N-08-S1",
+            "CF3N-08-JD"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "valid",
+          "reasoning_status": "unresolved",
+          "rule": "unknown_predicate",
+          "support_evidence_ids": [],
+          "verdict": "needs_review"
+        },
+        {
+          "anchor": {
+            "end": 130,
+            "pointer": "/rows/7/answer/text",
+            "quote": "I would need to confirm whether I can meet the new weekly on-site requirement",
+            "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+            "start": 53
+          },
+          "axes": [
+            "predicate"
+          ],
+          "counter_evidence_ids": [],
+          "evidence_ids": [],
+          "evidence_relation": null,
+          "explanation": "Predicate has no registered comparison rule.",
+          "id": "c4",
+          "inspected_source_ids": [
+            "CF3N-08-S1",
+            "CF3N-08-JD"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "valid",
+          "reasoning_status": "unresolved",
+          "rule": "unknown_predicate",
+          "support_evidence_ids": [],
+          "verdict": "needs_review"
+        }
+      ],
+      "review_reasons": [
+        "claim_needs_review: c3",
+        "claim_needs_review: c4"
+      ]
+    },
+    {
+      "case_id": "CF3N-09",
+      "family": "candidate-fit",
+      "packet_sha256": "b369c7ed3c6af80b9c0e96821c97afc4e905c3199ae758b24c1ecce46641ca50",
+      "expected": "pass",
+      "actual": "pass",
+      "reference_reason": "Two observed weekends per quarter supports a lower bound of one, restricted to 2024.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "localized_error_claim_ids": [],
+      "other_failed_claim_ids": [],
+      "review_claim_ids": [],
+      "execution_error": null,
+      "claims": [
+        {
+          "anchor": {
+            "end": 74,
+            "pointer": "/rows/8/answer/text",
+            "quote": "at least one on-call support weekend per quarter",
+            "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+            "start": 26
+          },
+          "axes": [],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "CF3N-09-S1"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Direct support found.",
+          "id": "c1",
+          "inspected_source_ids": [
+            "CF3N-09-S1"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "direct_support",
+          "support_evidence_ids": [
+            "CF3N-09-S1"
+          ],
+          "verdict": "pass"
+        }
+      ],
+      "review_reasons": []
+    },
+    {
+      "case_id": "CF3N-10",
+      "family": "candidate-fit",
+      "packet_sha256": "5eee315d64e2aee93ba4928deea60a84100829e63591a9bf17fba2d4f18ada8d",
+      "expected": "pass",
+      "actual": "pass",
+      "reference_reason": "Eighteen months exceeds a year, and the source explicitly excludes purchase approval.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "localized_error_claim_ids": [],
+      "other_failed_claim_ids": [],
+      "review_claim_ids": [],
+      "execution_error": null,
+      "claims": [
+        {
+          "anchor": {
+            "end": 76,
+            "pointer": "/rows/9/answer/text",
+            "quote": "I maintained the checkout ledger for more than a year and recorded handovers",
+            "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+            "start": 0
+          },
+          "axes": [],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "CF3N-10-S1"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Actual positive count or explicit elapsed months support the narrower assertion.",
+          "id": "c1",
+          "inspected_source_ids": [
+            "CF3N-10-S1"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "bounded_direct_entailment",
+          "support_evidence_ids": [
+            "CF3N-10-S1"
+          ],
+          "verdict": "pass"
+        },
+        {
+          "anchor": {
+            "end": 134,
+            "pointer": "/rows/9/answer/text",
+            "quote": "I should not present that as purchase approval authority",
+            "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+            "start": 78
+          },
+          "axes": [],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "CF3N-10-S1"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Direct support found.",
+          "id": "c2",
+          "inspected_source_ids": [
+            "CF3N-10-S1"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "direct_support",
+          "support_evidence_ids": [
+            "CF3N-10-S1"
+          ],
+          "verdict": "pass"
+        }
+      ],
+      "review_reasons": []
+    },
+    {
+      "case_id": "CF3N-11",
+      "family": "candidate-fit",
+      "packet_sha256": "43e4c40c1a095915b1d7454e66a033cb61eb82ee1b697b532f6c63c661d65e92",
+      "expected": "pass",
+      "actual": "needs_review",
+      "reference_reason": "The signed log supplies direct evidence for the same narrow activity named by the job.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "localized_error_claim_ids": [],
+      "other_failed_claim_ids": [],
+      "review_claim_ids": [
+        "c1"
+      ],
+      "execution_error": null,
+      "claims": [
+        {
+          "anchor": {
+            "end": 35,
+            "pointer": "/rows/10/answer/text",
+            "quote": "The signed log is enough to support",
+            "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+            "start": 0
+          },
+          "axes": [
+            "predicate"
+          ],
+          "counter_evidence_ids": [],
+          "evidence_ids": [],
+          "evidence_relation": null,
+          "explanation": "Predicate has no registered comparison rule.",
+          "id": "c1",
+          "inspected_source_ids": [
+            "CF3N-11-S1",
+            "CF3N-11-JD"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "valid",
+          "reasoning_status": "unresolved",
+          "rule": "unknown_predicate",
+          "support_evidence_ids": [],
+          "verdict": "needs_review"
+        },
+        {
+          "anchor": {
+            "end": 97,
+            "pointer": "/rows/10/answer/text",
+            "quote": "I have delivered live equipment demos to new operators",
+            "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+            "start": 43
+          },
+          "axes": [],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "CF3N-11-S1"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Actual positive count or explicit elapsed months support the narrower assertion.",
+          "id": "c2",
+          "inspected_source_ids": [
+            "CF3N-11-S1",
+            "CF3N-11-JD"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "bounded_direct_entailment",
+          "support_evidence_ids": [
+            "CF3N-11-S1"
+          ],
+          "verdict": "pass"
+        },
+        {
+          "anchor": {
+            "end": 124,
+            "pointer": "/rows/10/answer/text",
+            "quote": "this role requires",
+            "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+            "start": 106
+          },
+          "axes": [
+            "subject",
+            "time",
+            "measure",
+            "modality"
+          ],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "CF3N-11-JD",
+            "CF3N-11-S1"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Direct support found.",
+          "id": "c3",
+          "inspected_source_ids": [
+            "CF3N-11-S1",
+            "CF3N-11-JD"
+          ],
+          "limited_evidence_ids": [
+            "CF3N-11-S1"
+          ],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "direct_support",
+          "support_evidence_ids": [
+            "CF3N-11-JD"
+          ],
+          "verdict": "pass"
+        }
+      ],
+      "review_reasons": [
+        "claim_needs_review: c1"
+      ]
+    },
+    {
+      "case_id": "CF3N-12",
+      "family": "candidate-fit",
+      "packet_sha256": "b2bd491372db9d62a4959143bcd43d5423d525215f6cb6147a4571305ccdc5de",
+      "expected": "pass",
+      "actual": "pass",
+      "reference_reason": "Both the recommended inclusion and exclusion follow the candidate’s limited self-report.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "localized_error_claim_ids": [],
+      "other_failed_claim_ids": [],
+      "review_claim_ids": [],
+      "execution_error": null,
+      "claims": [
+        {
+          "anchor": {
+            "end": 65,
+            "pointer": "/rows/11/answer/text",
+            "quote": "hands-on scanning and indexing of 18 fragile maps",
+            "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+            "start": 16
+          },
+          "axes": [],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "CF3N-12-S1"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Direct support found.",
+          "id": "c1",
+          "inspected_source_ids": [
+            "CF3N-12-S1"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "direct_support",
+          "support_evidence_ids": [
+            "CF3N-12-S1"
+          ],
+          "verdict": "pass"
+        },
+        {
+          "anchor": {
+            "end": 113,
+            "pointer": "/rows/11/answer/text",
+            "quote": "keeping archive-policy design off the CV",
+            "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+            "start": 73
+          },
+          "axes": [],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "CF3N-12-S1"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Direct support found.",
+          "id": "c2",
+          "inspected_source_ids": [
+            "CF3N-12-S1"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "direct_support",
+          "support_evidence_ids": [
+            "CF3N-12-S1"
+          ],
+          "verdict": "pass"
+        }
+      ],
+      "review_reasons": []
+    },
+    {
+      "case_id": "CF3N-13",
+      "family": "candidate-fit",
+      "packet_sha256": "37721daf76f7c313aef079e0cbe07c666c473148f9cfe48a1ab21e97e84e6a69",
+      "expected": "fail",
+      "actual": "fail",
+      "reference_reason": "Attendance is supported. Not taking the trainer assessment does not establish certificate status; earning the certificate is unsupported by this source.",
+      "intended_error_claim_ids": [
+        "c2"
+      ],
+      "failed_claim_ids": [
+        "c2"
+      ],
+      "localized_error_claim_ids": [
+        "c2"
+      ],
+      "other_failed_claim_ids": [],
+      "review_claim_ids": [],
+      "execution_error": null,
+      "claims": [
+        {
+          "anchor": {
+            "end": 43,
+            "pointer": "/rows/12/answer/text",
+            "quote": "I attended two vendor safety demonstrations",
+            "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+            "start": 0
+          },
+          "axes": [],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "CF3N-13-S1"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Direct support found.",
+          "id": "c1",
+          "inspected_source_ids": [
+            "CF3N-13-S1"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "direct_support",
+          "support_evidence_ids": [
+            "CF3N-13-S1"
+          ],
+          "verdict": "pass"
+        },
+        {
+          "anchor": {
+            "end": 92,
+            "pointer": "/rows/12/answer/text",
+            "quote": "earned the vendor safety trainer certificate",
+            "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+            "start": 48
+          },
+          "axes": [
+            "supporting_proposition"
+          ],
+          "counter_evidence_ids": [],
+          "evidence_ids": [],
+          "evidence_relation": "not_established",
+          "explanation": "Available evidence does not establish the asserted proposition: candidate / training_certification / vendor safety trainer certificate.",
+          "id": "c2",
+          "inspected_source_ids": [
+            "CF3N-13-S1"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "evidence_gap",
+          "support_evidence_ids": [],
+          "verdict": "fail"
+        }
+      ],
+      "review_reasons": []
+    },
+    {
+      "case_id": "CF3N-14",
+      "family": "candidate-fit",
+      "packet_sha256": "08f45d733a7bb00a45d1e163dfb799b654c012ce1ca3ac789b6696c0225465d0",
+      "expected": "fail",
+      "actual": "fail",
+      "reference_reason": "A 14-form trial does not support validation across the unprocessed collection.",
+      "intended_error_claim_ids": [
+        "c2"
+      ],
+      "failed_claim_ids": [
+        "c2"
+      ],
+      "localized_error_claim_ids": [
+        "c2"
+      ],
+      "other_failed_claim_ids": [],
+      "review_claim_ids": [],
+      "execution_error": null,
+      "claims": [
+        {
+          "anchor": {
+            "end": 31,
+            "pointer": "/rows/13/answer/text",
+            "quote": "I used OCR on handwritten forms",
+            "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+            "start": 0
+          },
+          "axes": [],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "CF3N-14-S1"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Direct support found.",
+          "id": "c1",
+          "inspected_source_ids": [
+            "CF3N-14-S1"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "direct_support",
+          "support_evidence_ids": [
+            "CF3N-14-S1"
+          ],
+          "verdict": "pass"
+        },
+        {
+          "anchor": {
+            "end": 77,
+            "pointer": "/rows/13/answer/text",
+            "quote": "validated the method across all 240 forms",
+            "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+            "start": 36
+          },
+          "axes": [
+            "scope",
+            "measure"
+          ],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "CF3N-14-S1"
+          ],
+          "evidence_relation": "not_established",
+          "explanation": "Available evidence does not establish the asserted proposition: candidate / sample_size / forms processed by OCR.",
+          "id": "c2",
+          "inspected_source_ids": [
+            "CF3N-14-S1"
+          ],
+          "limited_evidence_ids": [
+            "CF3N-14-S1"
+          ],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "evidence_gap",
+          "support_evidence_ids": [],
+          "verdict": "fail"
+        }
+      ],
+      "review_reasons": []
+    },
+    {
+      "case_id": "CF3N-15",
+      "family": "candidate-fit",
+      "packet_sha256": "af0cea67301bc28593949f5be568bbcede108723939111aff11a4e4c78cb74a8",
+      "expected": "fail",
+      "actual": "fail",
+      "reference_reason": "The first clause is accurate team output; the second contradicts the explicit individual role.",
+      "intended_error_claim_ids": [
+        "c2"
+      ],
+      "failed_claim_ids": [
+        "c2"
+      ],
+      "localized_error_claim_ids": [
+        "c2"
+      ],
+      "other_failed_claim_ids": [],
+      "review_claim_ids": [],
+      "execution_error": null,
+      "claims": [
+        {
+          "anchor": {
+            "end": 29,
+            "pointer": "/rows/14/answer/text",
+            "quote": "The team processed 60 folders",
+            "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+            "start": 0
+          },
+          "axes": [
+            "subject",
+            "scope",
+            "measure"
+          ],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "CF3N-15-S1"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Direct support found.",
+          "id": "c1",
+          "inspected_source_ids": [
+            "CF3N-15-S1"
+          ],
+          "limited_evidence_ids": [
+            "CF3N-15-S1"
+          ],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "direct_support",
+          "support_evidence_ids": [
+            "CF3N-15-S1"
+          ],
+          "verdict": "pass"
+        },
+        {
+          "anchor": {
+            "end": 74,
+            "pointer": "/rows/14/answer/text",
+            "quote": "I personally processed those 60 folders",
+            "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+            "start": 35
+          },
+          "axes": [
+            "subject",
+            "scope",
+            "measure"
+          ],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "CF3N-15-S1"
+          ],
+          "evidence_relation": "not_established",
+          "explanation": "Available evidence does not establish the asserted proposition: candidate / archive_processing / folders.",
+          "id": "c2",
+          "inspected_source_ids": [
+            "CF3N-15-S1"
+          ],
+          "limited_evidence_ids": [
+            "CF3N-15-S1"
+          ],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "evidence_gap",
+          "support_evidence_ids": [],
+          "verdict": "fail"
+        }
+      ],
+      "review_reasons": []
+    },
+    {
+      "case_id": "CF3N-16",
+      "family": "candidate-fit",
+      "packet_sha256": "2c27e5b335dd3ad7207117c3c319e50f4a1469879bec7887a88dc41fdfd2ad1e",
+      "expected": "fail",
+      "actual": "fail",
+      "reference_reason": "The historical escalation is supported; the source explicitly ends on-call duty in 2021.",
+      "intended_error_claim_ids": [
+        "c2"
+      ],
+      "failed_claim_ids": [
+        "c2"
+      ],
+      "localized_error_claim_ids": [
+        "c2"
+      ],
+      "other_failed_claim_ids": [],
+      "review_claim_ids": [],
+      "execution_error": null,
+      "claims": [
+        {
+          "anchor": {
+            "end": 36,
+            "pointer": "/rows/15/answer/text",
+            "quote": "I escalated overnight alerts in 2021",
+            "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+            "start": 0
+          },
+          "axes": [],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "CF3N-16-S1"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Direct support found.",
+          "id": "c1",
+          "inspected_source_ids": [
+            "CF3N-16-S1"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "direct_support",
+          "support_evidence_ids": [
+            "CF3N-16-S1"
+          ],
+          "verdict": "pass"
+        },
+        {
+          "anchor": {
+            "end": 75,
+            "pointer": "/rows/15/answer/text",
+            "quote": "remain on the current on-call rota",
+            "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+            "start": 41
+          },
+          "axes": [
+            "time"
+          ],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "CF3N-16-S1"
+          ],
+          "evidence_relation": "not_established",
+          "explanation": "Available evidence does not establish the asserted proposition: candidate / on_call / support rota.",
+          "id": "c2",
+          "inspected_source_ids": [
+            "CF3N-16-S1"
+          ],
+          "limited_evidence_ids": [
+            "CF3N-16-S1"
+          ],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "evidence_gap",
+          "support_evidence_ids": [],
+          "verdict": "fail"
+        }
+      ],
+      "review_reasons": []
+    },
+    {
+      "case_id": "CF3N-17",
+      "family": "candidate-fit",
+      "packet_sha256": "64ef77b3828033f0172e34deb58d681bc4320a03dcb2b84299323bc5e39d69ef",
+      "expected": "fail",
+      "actual": "fail",
+      "reference_reason": "A forecast for an unimplemented route cannot support a guaranteed realized saving.",
+      "intended_error_claim_ids": [
+        "c2"
+      ],
+      "failed_claim_ids": [
+        "c2"
+      ],
+      "localized_error_claim_ids": [
+        "c2"
+      ],
+      "other_failed_claim_ids": [],
+      "review_claim_ids": [],
+      "execution_error": null,
+      "claims": [
+        {
+          "anchor": {
+            "end": 49,
+            "pointer": "/rows/16/answer/text",
+            "quote": "My spreadsheet estimated a 45–65 km weekly saving",
+            "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+            "start": 0
+          },
+          "axes": [],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "CF3N-17-S1"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Direct support found.",
+          "id": "c1",
+          "inspected_source_ids": [
+            "CF3N-17-S1"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "direct_support",
+          "support_evidence_ids": [
+            "CF3N-17-S1"
+          ],
+          "verdict": "pass"
+        },
+        {
+          "anchor": {
+            "end": 101,
+            "pointer": "/rows/16/answer/text",
+            "quote": "I can guarantee at least 45 km saved every week",
+            "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+            "start": 54
+          },
+          "axes": [
+            "scope",
+            "measure",
+            "modality"
+          ],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "CF3N-17-S1"
+          ],
+          "evidence_relation": "not_established",
+          "explanation": "Available evidence does not establish the asserted proposition: candidate / distance_saving / proposed route.",
+          "id": "c2",
+          "inspected_source_ids": [
+            "CF3N-17-S1"
+          ],
+          "limited_evidence_ids": [
+            "CF3N-17-S1"
+          ],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "evidence_gap",
+          "support_evidence_ids": [],
+          "verdict": "fail"
+        }
+      ],
+      "review_reasons": []
+    },
+    {
+      "case_id": "CF3N-18",
+      "family": "candidate-fit",
+      "packet_sha256": "3aa0b126ff396692d46e54fad3a1e5ec8351324c42d293cc722cd870ba9c3263",
+      "expected": "fail",
+      "actual": "fail",
+      "reference_reason": "Platform operation is supported, but the candidate says live captioning is unavailable.",
+      "intended_error_claim_ids": [
+        "c2"
+      ],
+      "failed_claim_ids": [
+        "c2"
+      ],
+      "localized_error_claim_ids": [
+        "c2"
+      ],
+      "other_failed_claim_ids": [],
+      "review_claim_ids": [],
+      "execution_error": null,
+      "claims": [
+        {
+          "anchor": {
+            "end": 30,
+            "pointer": "/rows/17/answer/text",
+            "quote": "I can run the meeting platform",
+            "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+            "start": 0
+          },
+          "axes": [],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "CF3N-18-S1"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Direct support found.",
+          "id": "c1",
+          "inspected_source_ids": [
+            "CF3N-18-S1",
+            "CF3N-18-JD"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "direct_support",
+          "support_evidence_ids": [
+            "CF3N-18-S1"
+          ],
+          "verdict": "pass"
+        },
+        {
+          "anchor": {
+            "end": 99,
+            "pointer": "/rows/17/answer/text",
+            "quote": "I already meet its live-caption requirement for public sessions",
+            "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+            "start": 36
+          },
+          "axes": [
+            "preference",
+            "requirement"
+          ],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "CF3N-18-JD"
+          ],
+          "evidence_relation": "not_established",
+          "explanation": "A matching candidate preference and role requirement do not jointly establish compatibility.",
+          "id": "c2",
+          "inspected_source_ids": [
+            "CF3N-18-S1",
+            "CF3N-18-JD"
+          ],
+          "limited_evidence_ids": [
+            "CF3N-18-JD"
+          ],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "compatibility_gap",
+          "support_evidence_ids": [],
+          "verdict": "fail"
+        }
+      ],
+      "review_reasons": []
+    },
+    {
+      "case_id": "CF3N-19",
+      "family": "candidate-fit",
+      "packet_sha256": "94a1bde051f7de4935e314d0dc722eb6b3b39eaf81008b3c60d16022631afd1f",
+      "expected": "needs_review",
+      "actual": "needs_review",
+      "reference_reason": "“On call for shifts” may mean covered the shifts or remained reachable outside them.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "localized_error_claim_ids": [],
+      "other_failed_claim_ids": [],
+      "review_claim_ids": [
+        "c1"
+      ],
+      "execution_error": null,
+      "claims": [
+        {
+          "anchor": {
+            "end": 71,
+            "pointer": "/rows/18/answer/text",
+            "quote": "I was on call for rotating support shifts during the 2024 outage season",
+            "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+            "start": 0
+          },
+          "axes": [],
+          "counter_evidence_ids": [],
+          "evidence_ids": [],
+          "evidence_relation": null,
+          "explanation": "Multiple plausible readings require review.",
+          "id": "c1",
+          "inspected_source_ids": [
+            "CF3N-19-S1"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "ambiguous",
+          "reasoning_status": "unresolved",
+          "rule": "alternative_readings",
+          "support_evidence_ids": [],
+          "verdict": "needs_review"
+        }
+      ],
+      "review_reasons": [
+        "claim_needs_review: c1"
+      ]
+    },
+    {
+      "case_id": "CF3N-20",
+      "family": "candidate-fit",
+      "packet_sha256": "9e1360beb0d8604d19eef88872efdf950e89f2c9f5124bc3b0ede08858c3e581",
+      "expected": "needs_review",
+      "actual": "needs_review",
+      "reference_reason": "“Led with my mentor” can describe co-presenting or claiming primary leadership.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "localized_error_claim_ids": [],
+      "other_failed_claim_ids": [],
+      "review_claim_ids": [
+        "c1"
+      ],
+      "execution_error": null,
+      "claims": [
+        {
+          "anchor": {
+            "end": 43,
+            "pointer": "/rows/19/answer/text",
+            "quote": "I led the 2025 training demo with my mentor",
+            "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+            "start": 0
+          },
+          "axes": [],
+          "counter_evidence_ids": [],
+          "evidence_ids": [],
+          "evidence_relation": null,
+          "explanation": "Multiple plausible readings require review.",
+          "id": "c1",
+          "inspected_source_ids": [
+            "CF3N-20-S1"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "ambiguous",
+          "reasoning_status": "unresolved",
+          "rule": "alternative_readings",
+          "support_evidence_ids": [],
+          "verdict": "needs_review"
+        }
+      ],
+      "review_reasons": [
+        "claim_needs_review: c1"
+      ]
+    },
+    {
+      "case_id": "PF3N-01",
+      "family": "preference-fit",
+      "packet_sha256": "72d6aa3a86bc2e2fc524746c7c6e04a11537de375674c8d7877302186e95beeb",
+      "expected": "pass",
+      "actual": "pass",
+      "reference_reason": "The published annual amount exceeds the candidate-owned annual floor.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "localized_error_claim_ids": [],
+      "other_failed_claim_ids": [],
+      "review_claim_ids": [],
+      "execution_error": null,
+      "claims": [
+        {
+          "anchor": {
+            "end": 43,
+            "pointer": "/rows/0/answer/text",
+            "quote": "published $600 yearly equipment stipend",
+            "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+            "start": 4
+          },
+          "axes": [
+            "subject",
+            "scope",
+            "measure",
+            "modality"
+          ],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "J01",
+            "P01"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Direct support found.",
+          "id": "A",
+          "inspected_source_ids": [
+            "J01",
+            "P01"
+          ],
+          "limited_evidence_ids": [
+            "P01"
+          ],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "direct_support",
+          "support_evidence_ids": [
+            "J01"
+          ],
+          "verdict": "pass"
+        },
+        {
+          "anchor": {
+            "end": 68,
+            "pointer": "/rows/0/answer/text",
+            "quote": "clears your $500 minimum",
+            "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+            "start": 44
+          },
+          "axes": [],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "J01",
+            "P01"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Entire offered interval compared with the candidate's allowed interval.",
+          "id": "B",
+          "inspected_source_ids": [
+            "J01",
+            "P01"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "constraint_interval",
+          "support_evidence_ids": [
+            "J01",
+            "P01"
+          ],
+          "verdict": "pass"
+        }
+      ],
+      "review_reasons": []
+    },
+    {
+      "case_id": "PF3N-02",
+      "family": "preference-fit",
+      "packet_sha256": "778cba2c164bf781cf2fe2bd7dbd1a50480a602505029d44dd55043de5938a23",
+      "expected": "pass",
+      "actual": "pass",
+      "reference_reason": "The lower bound of the stated monthly range is already above the preference floor.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "localized_error_claim_ids": [],
+      "other_failed_claim_ids": [],
+      "review_claim_ids": [],
+      "execution_error": null,
+      "claims": [
+        {
+          "anchor": {
+            "end": 34,
+            "pointer": "/rows/1/answer/text",
+            "quote": "stated $450 monthly floor",
+            "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+            "start": 9
+          },
+          "axes": [
+            "subject",
+            "scope",
+            "measure",
+            "modality"
+          ],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "J02",
+            "P02"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Direct support found.",
+          "id": "A",
+          "inspected_source_ids": [
+            "J02",
+            "P02"
+          ],
+          "limited_evidence_ids": [
+            "P02"
+          ],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "direct_support",
+          "support_evidence_ids": [
+            "J02"
+          ],
+          "verdict": "pass"
+        },
+        {
+          "anchor": {
+            "end": 73,
+            "pointer": "/rows/1/answer/text",
+            "quote": "above your $400 monthly requirement",
+            "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+            "start": 38
+          },
+          "axes": [],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "J02",
+            "P02"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Entire offered interval compared with the candidate's allowed interval.",
+          "id": "B",
+          "inspected_source_ids": [
+            "J02",
+            "P02"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "constraint_interval",
+          "support_evidence_ids": [
+            "J02",
+            "P02"
+          ],
+          "verdict": "pass"
+        }
+      ],
+      "review_reasons": []
+    },
+    {
+      "case_id": "PF3N-03",
+      "family": "preference-fit",
+      "packet_sha256": "16b7cfc762e60accb93feb1a165b14ebd3ce48697475fa3aff2fce1e4cefe086",
+      "expected": "pass",
+      "actual": "pass",
+      "reference_reason": "The required frequency is narrower than the candidate ceiling.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "localized_error_claim_ids": [],
+      "other_failed_claim_ids": [],
+      "review_claim_ids": [],
+      "execution_error": null,
+      "claims": [
+        {
+          "anchor": {
+            "end": 37,
+            "pointer": "/rows/2/answer/text",
+            "quote": "one required station day per week",
+            "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+            "start": 4
+          },
+          "axes": [
+            "subject",
+            "scope",
+            "measure",
+            "modality"
+          ],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "J03",
+            "P03"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Direct support found.",
+          "id": "A",
+          "inspected_source_ids": [
+            "J03",
+            "P03"
+          ],
+          "limited_evidence_ids": [
+            "P03"
+          ],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "direct_support",
+          "support_evidence_ids": [
+            "J03"
+          ],
+          "verdict": "pass"
+        },
+        {
+          "anchor": {
+            "end": 68,
+            "pointer": "/rows/2/answer/text",
+            "quote": "within your two-day ceiling",
+            "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+            "start": 41
+          },
+          "axes": [],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "J03",
+            "P03"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Entire offered interval compared with the candidate's allowed interval.",
+          "id": "B",
+          "inspected_source_ids": [
+            "J03",
+            "P03"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "constraint_interval",
+          "support_evidence_ids": [
+            "J03",
+            "P03"
+          ],
+          "verdict": "pass"
+        }
+      ],
+      "review_reasons": []
+    },
+    {
+      "case_id": "PF3N-04",
+      "family": "preference-fit",
+      "packet_sha256": "787b4f963c3302141df4ae82d1122b7f5c224fdcbdc2a426da74bfb0420b5d2d",
+      "expected": "pass",
+      "actual": "fail",
+      "reference_reason": "The explicit Saturday-only schedule stays inside both the frequency and weekday limits.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [
+        "A"
+      ],
+      "localized_error_claim_ids": [],
+      "other_failed_claim_ids": [
+        "A"
+      ],
+      "review_claim_ids": [],
+      "execution_error": null,
+      "claims": [
+        {
+          "anchor": {
+            "end": 30,
+            "pointer": "/rows/3/answer/text",
+            "quote": "Saturday-only monthly rota",
+            "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+            "start": 4
+          },
+          "axes": [
+            "scope",
+            "measure",
+            "modality",
+            "subject"
+          ],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "J04",
+            "P04"
+          ],
+          "evidence_relation": "not_established",
+          "explanation": "Available evidence does not establish the asserted proposition: role / on_call / on-call shift.",
+          "id": "A",
+          "inspected_source_ids": [
+            "J04",
+            "P04"
+          ],
+          "limited_evidence_ids": [
+            "J04",
+            "P04"
+          ],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "evidence_gap",
+          "support_evidence_ids": [],
+          "verdict": "fail"
+        },
+        {
+          "anchor": {
+            "end": 64,
+            "pointer": "/rows/3/answer/text",
+            "quote": "fits the on-call window you allow",
+            "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+            "start": 31
+          },
+          "axes": [],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "J04",
+            "P04"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Entire offered interval compared with the candidate's allowed interval.",
+          "id": "B",
+          "inspected_source_ids": [
+            "J04",
+            "P04"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "constraint_interval",
+          "support_evidence_ids": [
+            "J04",
+            "P04"
+          ],
+          "verdict": "pass"
+        }
+      ],
+      "review_reasons": []
+    },
+    {
+      "case_id": "PF3N-05",
+      "family": "preference-fit",
+      "packet_sha256": "4d0d2c3dbcd9403e64889455b58063945a143c8db87fab9b5cb4732f3ab6035d",
+      "expected": "pass",
+      "actual": "pass",
+      "reference_reason": "The employer explicitly replaced the old three-day rule with a one-day rule.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "localized_error_claim_ids": [],
+      "other_failed_claim_ids": [],
+      "review_claim_ids": [],
+      "execution_error": null,
+      "claims": [
+        {
+          "anchor": {
+            "end": 20,
+            "pointer": "/rows/4/answer/text",
+            "quote": "replacement rule",
+            "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+            "start": 4
+          },
+          "axes": [],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "J05U"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Direct support found.",
+          "id": "A",
+          "inspected_source_ids": [
+            "J05",
+            "J05U",
+            "P05"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "direct_support",
+          "support_evidence_ids": [
+            "J05U"
+          ],
+          "verdict": "pass"
+        },
+        {
+          "anchor": {
+            "end": 52,
+            "pointer": "/rows/4/answer/text",
+            "quote": "requires one station day weekly",
+            "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+            "start": 21
+          },
+          "axes": [
+            "measure",
+            "subject",
+            "scope",
+            "modality"
+          ],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "J05U",
+            "J05",
+            "P05"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Direct support found.",
+          "id": "B",
+          "inspected_source_ids": [
+            "J05",
+            "J05U",
+            "P05"
+          ],
+          "limited_evidence_ids": [
+            "J05",
+            "P05"
+          ],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "direct_support",
+          "support_evidence_ids": [
+            "J05U"
+          ],
+          "verdict": "pass"
+        },
+        {
+          "anchor": {
+            "end": 70,
+            "pointer": "/rows/4/answer/text",
+            "quote": "meeting your cap",
+            "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+            "start": 54
+          },
+          "axes": [],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "J05U",
+            "P05",
+            "J05"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Entire offered interval compared with the candidate's allowed interval.",
+          "id": "C",
+          "inspected_source_ids": [
+            "J05",
+            "J05U",
+            "P05"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "constraint_interval",
+          "support_evidence_ids": [
+            "J05U",
+            "P05",
+            "J05"
+          ],
+          "verdict": "pass"
+        }
+      ],
+      "review_reasons": []
+    },
+    {
+      "case_id": "PF3N-06",
+      "family": "preference-fit",
+      "packet_sha256": "d6954cf69ffe49e79e1f2eadf00a7d129f1438306edad094b096041917245dea",
+      "expected": "pass",
+      "actual": "pass",
+      "reference_reason": "The employer expressly allows remote work after an on-site period equal to the candidate exception.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "localized_error_claim_ids": [],
+      "other_failed_claim_ids": [],
+      "review_claim_ids": [],
+      "execution_error": null,
+      "claims": [
+        {
+          "anchor": {
+            "end": 55,
+            "pointer": "/rows/5/answer/text",
+            "quote": "30-day on-site period matches your exception",
+            "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+            "start": 11
+          },
+          "axes": [],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "J06",
+            "P06"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Onboarding duration compared with the preference and later remote permission.",
+          "id": "A",
+          "inspected_source_ids": [
+            "J06",
+            "P06"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "onboarding_limit",
+          "support_evidence_ids": [
+            "J06",
+            "P06"
+          ],
+          "verdict": "pass"
+        },
+        {
+          "anchor": {
+            "end": 93,
+            "pointer": "/rows/5/answer/text",
+            "quote": "remote work permitted afterward",
+            "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+            "start": 62
+          },
+          "axes": [],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "J06"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Direct support found.",
+          "id": "B",
+          "inspected_source_ids": [
+            "J06",
+            "P06"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "direct_support",
+          "support_evidence_ids": [
+            "J06"
+          ],
+          "verdict": "pass"
+        }
+      ],
+      "review_reasons": []
+    },
+    {
+      "case_id": "PF3N-07",
+      "family": "preference-fit",
+      "packet_sha256": "e867bd88149ff957b9ba2363c163e988396e5916657dec0ed55bd81e1f29ddd6",
+      "expected": "pass",
+      "actual": "pass",
+      "reference_reason": "An undecided amount cannot establish whether the stated minimum is met.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "localized_error_claim_ids": [],
+      "other_failed_claim_ids": [],
+      "review_claim_ids": [],
+      "execution_error": null,
+      "claims": [
+        {
+          "anchor": {
+            "end": 49,
+            "pointer": "/rows/6/answer/text",
+            "quote": "employer has not decided the allowance amount",
+            "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+            "start": 4
+          },
+          "axes": [
+            "scope",
+            "subject",
+            "measure",
+            "modality"
+          ],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "J07",
+            "P07"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Direct support found.",
+          "id": "A",
+          "inspected_source_ids": [
+            "J07",
+            "P07"
+          ],
+          "limited_evidence_ids": [
+            "J07",
+            "P07"
+          ],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "direct_support",
+          "support_evidence_ids": [
+            "J07"
+          ],
+          "verdict": "pass"
+        },
+        {
+          "anchor": {
+            "end": 96,
+            "pointer": "/rows/6/answer/text",
+            "quote": "your $1,000 requirement remains unresolved",
+            "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+            "start": 54
+          },
+          "axes": [],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "J07",
+            "P07"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "The source explicitly leaves this constraint unresolved.",
+          "id": "B",
+          "inspected_source_ids": [
+            "J07",
+            "P07"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "explicit_pending",
+          "support_evidence_ids": [
+            "J07",
+            "P07"
+          ],
+          "verdict": "pass"
+        }
+      ],
+      "review_reasons": []
+    },
+    {
+      "case_id": "PF3N-08",
+      "family": "preference-fit",
+      "packet_sha256": "c35afcfc63850a496bc9bb6d3bc3a6a7b59fcb49f1771556c67b4b1e4e336cd3",
+      "expected": "pass",
+      "actual": "needs_review",
+      "reference_reason": "The answer makes satisfaction conditional on a future written term and does not claim the term exists now.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "localized_error_claim_ids": [],
+      "other_failed_claim_ids": [],
+      "review_claim_ids": [
+        "A",
+        "B"
+      ],
+      "execution_error": null,
+      "claims": [
+        {
+          "anchor": {
+            "end": 54,
+            "pointer": "/rows/7/answer/text",
+            "quote": "written offer confirms three remote days weekly",
+            "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+            "start": 7
+          },
+          "axes": [
+            "stance"
+          ],
+          "counter_evidence_ids": [],
+          "evidence_ids": [],
+          "evidence_relation": null,
+          "explanation": "Conditional reasoning is outside this slice.",
+          "id": "A",
+          "inspected_source_ids": [
+            "J08",
+            "P08"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "valid",
+          "reasoning_status": "unresolved",
+          "rule": "conditional_semantics",
+          "support_evidence_ids": [],
+          "verdict": "needs_review"
+        },
+        {
+          "anchor": {
+            "end": 78,
+            "pointer": "/rows/7/answer/text",
+            "quote": "this preference is met",
+            "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+            "start": 56
+          },
+          "axes": [
+            "stance"
+          ],
+          "counter_evidence_ids": [],
+          "evidence_ids": [],
+          "evidence_relation": null,
+          "explanation": "Conditional reasoning is outside this slice.",
+          "id": "B",
+          "inspected_source_ids": [
+            "J08",
+            "P08"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "valid",
+          "reasoning_status": "unresolved",
+          "rule": "conditional_semantics",
+          "support_evidence_ids": [],
+          "verdict": "needs_review"
+        }
+      ],
+      "review_reasons": [
+        "claim_needs_review: A",
+        "claim_needs_review: B"
+      ]
+    },
+    {
+      "case_id": "PF3N-09",
+      "family": "preference-fit",
+      "packet_sha256": "9e097ed6e3a0ded1e6223e55020b06b0d35c6e22f59cfd94ff8b29b95c46f8cc",
+      "expected": "pass",
+      "actual": "pass",
+      "reference_reason": "The instruction preserves the explicit pending status and does not count unprovided captions as a fit.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "localized_error_claim_ids": [],
+      "other_failed_claim_ids": [],
+      "review_claim_ids": [],
+      "execution_error": null,
+      "claims": [
+        {
+          "anchor": {
+            "end": 20,
+            "pointer": "/rows/8/answer/text",
+            "quote": "Captions are pending",
+            "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+            "start": 0
+          },
+          "axes": [
+            "scope",
+            "subject",
+            "modality"
+          ],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "J09",
+            "P09"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Direct support found.",
+          "id": "A",
+          "inspected_source_ids": [
+            "J09",
+            "P09"
+          ],
+          "limited_evidence_ids": [
+            "J09",
+            "P09"
+          ],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "direct_support",
+          "support_evidence_ids": [
+            "J09"
+          ],
+          "verdict": "pass"
+        },
+        {
+          "anchor": {
+            "end": 89,
+            "pointer": "/rows/8/answer/text",
+            "quote": "ask for confirmation before treating the meeting requirement as met",
+            "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+            "start": 22
+          },
+          "axes": [],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "J09",
+            "P09"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "The source explicitly leaves this constraint unresolved.",
+          "id": "B",
+          "inspected_source_ids": [
+            "J09",
+            "P09"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "explicit_pending",
+          "support_evidence_ids": [
+            "J09",
+            "P09"
+          ],
+          "verdict": "pass"
+        }
+      ],
+      "review_reasons": []
+    },
+    {
+      "case_id": "PF3N-10",
+      "family": "preference-fit",
+      "packet_sha256": "a6f7397d536f893d62751ac6ed85b93b9fd614f574c6d6d6857da7663a95d2d0",
+      "expected": "pass",
+      "actual": "pass",
+      "reference_reason": "The two premises are explicit and the question makes no claim about eligible courses.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "localized_error_claim_ids": [],
+      "other_failed_claim_ids": [],
+      "review_claim_ids": [],
+      "execution_error": null,
+      "claims": [
+        {
+          "anchor": {
+            "end": 32,
+            "pointer": "/rows/9/answer/text",
+            "quote": "listing states $900 annually",
+            "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+            "start": 4
+          },
+          "axes": [
+            "subject",
+            "scope",
+            "measure",
+            "modality"
+          ],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "J10",
+            "P10"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Direct support found.",
+          "id": "A",
+          "inspected_source_ids": [
+            "J10",
+            "P10"
+          ],
+          "limited_evidence_ids": [
+            "P10"
+          ],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "direct_support",
+          "support_evidence_ids": [
+            "J10"
+          ],
+          "verdict": "pass"
+        },
+        {
+          "anchor": {
+            "end": 65,
+            "pointer": "/rows/9/answer/text",
+            "quote": "your preferred floor is $700",
+            "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+            "start": 37
+          },
+          "axes": [
+            "subject",
+            "scope",
+            "measure",
+            "modality"
+          ],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "P10",
+            "J10"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Direct support found.",
+          "id": "B",
+          "inspected_source_ids": [
+            "J10",
+            "P10"
+          ],
+          "limited_evidence_ids": [
+            "J10"
+          ],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "direct_support",
+          "support_evidence_ids": [
+            "P10"
+          ],
+          "verdict": "pass"
+        },
+        {
+          "anchor": {
+            "end": 109,
+            "pointer": "/rows/9/answer/text",
+            "quote": "would you still ask which courses qualify?",
+            "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+            "start": 67
+          },
+          "axes": [],
+          "counter_evidence_ids": [],
+          "evidence_ids": [],
+          "evidence_relation": null,
+          "explanation": "Quoted, rejected, or questioned text does not assert world truth.",
+          "id": "C",
+          "inspected_source_ids": [
+            "J10",
+            "P10"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "nonassertive_stance",
+          "support_evidence_ids": [],
+          "verdict": "pass"
+        }
+      ],
+      "review_reasons": []
+    },
+    {
+      "case_id": "PF3N-11",
+      "family": "preference-fit",
+      "packet_sha256": "1adab93a315c65a8377246d6156805c831715bc6c67e241bdc611a7991e8b846",
+      "expected": "pass",
+      "actual": "pass",
+      "reference_reason": "Two is within the permitted maximum, and the answer preserves the approval condition.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "localized_error_claim_ids": [],
+      "other_failed_claim_ids": [],
+      "review_claim_ids": [],
+      "execution_error": null,
+      "claims": [
+        {
+          "anchor": {
+            "end": 45,
+            "pointer": "/rows/10/answer/text",
+            "quote": "Two remote days fit the stated four-day limit",
+            "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+            "start": 0
+          },
+          "axes": [],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "J11",
+            "P11"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Requested interval compared with the explicit permission ceiling; grant is not inferred.",
+          "id": "A",
+          "inspected_source_ids": [
+            "J11",
+            "P11"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "permission_envelope",
+          "support_evidence_ids": [
+            "J11",
+            "P11"
+          ],
+          "verdict": "pass"
+        },
+        {
+          "anchor": {
+            "end": 74,
+            "pointer": "/rows/10/answer/text",
+            "quote": "subject to manager approval",
+            "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+            "start": 47
+          },
+          "axes": [],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "J11"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "The offer explicitly carries the stated condition.",
+          "id": "B",
+          "inspected_source_ids": [
+            "J11",
+            "P11"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "explicit_condition",
+          "support_evidence_ids": [
+            "J11"
+          ],
+          "verdict": "pass"
+        }
+      ],
+      "review_reasons": []
+    },
+    {
+      "case_id": "PF3N-12",
+      "family": "preference-fit",
+      "packet_sha256": "9699d2ad0fd1110e89256a2c6abf438fe7222886a62592ff17372e7bba4e7e79",
+      "expected": "pass",
+      "actual": "pass",
+      "reference_reason": "The statement is limited to the only required demos, whose stated end time is 16:00.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "localized_error_claim_ids": [],
+      "other_failed_claim_ids": [],
+      "review_claim_ids": [],
+      "execution_error": null,
+      "claims": [
+        {
+          "anchor": {
+            "end": 67,
+            "pointer": "/rows/11/answer/text",
+            "quote": "Wednesday training demos end before your 18:00 cutoff",
+            "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+            "start": 14
+          },
+          "axes": [],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "J12",
+            "P12"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "The exhaustive schedule ends by the prohibited cutoff.",
+          "id": "A",
+          "inspected_source_ids": [
+            "J12",
+            "P12"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "schedule_cutoff",
+          "support_evidence_ids": [
+            "J12",
+            "P12"
+          ],
+          "verdict": "pass"
+        }
+      ],
+      "review_reasons": []
+    },
+    {
+      "case_id": "PF3N-13",
+      "family": "preference-fit",
+      "packet_sha256": "5deb384315104bf545d0c1190e47d165d93b04734a74c5d5586a194977e73054",
+      "expected": "fail",
+      "actual": "fail",
+      "reference_reason": "Permission to request does not guarantee approval or three days.",
+      "intended_error_claim_ids": [
+        "B"
+      ],
+      "failed_claim_ids": [
+        "B"
+      ],
+      "localized_error_claim_ids": [
+        "B"
+      ],
+      "other_failed_claim_ids": [],
+      "review_claim_ids": [],
+      "execution_error": null,
+      "claims": [
+        {
+          "anchor": {
+            "end": 27,
+            "pointer": "/rows/12/answer/text",
+            "quote": "Remote requests are allowed",
+            "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+            "start": 0
+          },
+          "axes": [
+            "object",
+            "scope",
+            "modality"
+          ],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "J13"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Direct support found.",
+          "id": "A",
+          "inspected_source_ids": [
+            "J13",
+            "P13"
+          ],
+          "limited_evidence_ids": [
+            "J13"
+          ],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "direct_support",
+          "support_evidence_ids": [
+            "J13"
+          ],
+          "verdict": "pass"
+        },
+        {
+          "anchor": {
+            "end": 69,
+            "pointer": "/rows/12/answer/text",
+            "quote": "your three remote days are guaranteed",
+            "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+            "start": 32
+          },
+          "axes": [
+            "object",
+            "scope",
+            "measure",
+            "modality"
+          ],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "J13"
+          ],
+          "evidence_relation": "not_established",
+          "explanation": "Available evidence does not establish the asserted proposition: role / remote_work / three days.",
+          "id": "B",
+          "inspected_source_ids": [
+            "J13",
+            "P13"
+          ],
+          "limited_evidence_ids": [
+            "J13"
+          ],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "evidence_gap",
+          "support_evidence_ids": [],
+          "verdict": "fail"
+        }
+      ],
+      "review_reasons": []
+    },
+    {
+      "case_id": "PF3N-14",
+      "family": "preference-fit",
+      "packet_sha256": "5722446829a1471ec58f1a57887c7b6d10264d38ba9e867e661f4a77d8e56f85",
+      "expected": "fail",
+      "actual": "fail",
+      "reference_reason": "The note explicitly lacks authority to amend the two-day requirement.",
+      "intended_error_claim_ids": [
+        "A",
+        "B"
+      ],
+      "failed_claim_ids": [
+        "A",
+        "B"
+      ],
+      "localized_error_claim_ids": [
+        "A",
+        "B"
+      ],
+      "other_failed_claim_ids": [],
+      "review_claim_ids": [],
+      "execution_error": null,
+      "claims": [
+        {
+          "anchor": {
+            "end": 40,
+            "pointer": "/rows/13/answer/text",
+            "quote": "staff note replaces the two-day rule",
+            "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+            "start": 4
+          },
+          "axes": [
+            "polarity"
+          ],
+          "counter_evidence_ids": [
+            "J14N"
+          ],
+          "evidence_ids": [
+            "J14N"
+          ],
+          "evidence_relation": "contradicted",
+          "explanation": "Applicable evidence states the opposite polarity.",
+          "id": "A",
+          "inspected_source_ids": [
+            "J14",
+            "J14N",
+            "P14"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "opposite_polarity",
+          "support_evidence_ids": [],
+          "verdict": "fail"
+        },
+        {
+          "anchor": {
+            "end": 76,
+            "pointer": "/rows/13/answer/text",
+            "quote": "role meets your one-day cap",
+            "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+            "start": 49
+          },
+          "axes": [
+            "measure"
+          ],
+          "counter_evidence_ids": [
+            "J14",
+            "P14",
+            "J14N"
+          ],
+          "evidence_ids": [
+            "J14",
+            "P14",
+            "J14N"
+          ],
+          "evidence_relation": "contradicted",
+          "explanation": "Entire offered interval compared with the candidate's allowed interval.",
+          "id": "B",
+          "inspected_source_ids": [
+            "J14",
+            "J14N",
+            "P14"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "constraint_interval",
+          "support_evidence_ids": [],
+          "verdict": "fail"
+        }
+      ],
+      "review_reasons": []
+    },
+    {
+      "case_id": "PF3N-15",
+      "family": "preference-fit",
+      "packet_sha256": "e59c3b481fcc1d3c5c219920106129ba1ff38f9aba45d4adefbc97a4bc162c97",
+      "expected": "fail",
+      "actual": "fail",
+      "reference_reason": "The posting explicitly requires the duty that the candidate excludes.",
+      "intended_error_claim_ids": [
+        "A",
+        "B"
+      ],
+      "failed_claim_ids": [
+        "A",
+        "B"
+      ],
+      "localized_error_claim_ids": [
+        "A",
+        "B"
+      ],
+      "other_failed_claim_ids": [],
+      "review_claim_ids": [],
+      "execution_error": null,
+      "claims": [
+        {
+          "anchor": {
+            "end": 38,
+            "pointer": "/rows/14/answer/text",
+            "quote": "no overnight on-call duty",
+            "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+            "start": 13
+          },
+          "axes": [
+            "measure",
+            "subject",
+            "scope",
+            "modality"
+          ],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "J15",
+            "P15"
+          ],
+          "evidence_relation": "not_established",
+          "explanation": "Available evidence does not establish the asserted proposition: role / on_call / overnight on-call.",
+          "id": "A",
+          "inspected_source_ids": [
+            "J15",
+            "P15"
+          ],
+          "limited_evidence_ids": [
+            "J15",
+            "P15"
+          ],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "evidence_gap",
+          "support_evidence_ids": [],
+          "verdict": "fail"
+        },
+        {
+          "anchor": {
+            "end": 68,
+            "pointer": "/rows/14/answer/text",
+            "quote": "satisfies your constraint",
+            "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+            "start": 43
+          },
+          "axes": [
+            "source_conflict",
+            "preference_constraint"
+          ],
+          "counter_evidence_ids": [
+            "J15",
+            "P15"
+          ],
+          "evidence_ids": [
+            "J15",
+            "P15"
+          ],
+          "evidence_relation": "contradicted",
+          "explanation": "Other active terms on this property change the constraint assessment.",
+          "id": "B",
+          "inspected_source_ids": [
+            "J15",
+            "P15"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "additional_restriction",
+          "support_evidence_ids": [],
+          "verdict": "fail"
+        }
+      ],
+      "review_reasons": []
+    },
+    {
+      "case_id": "PF3N-16",
+      "family": "preference-fit",
+      "packet_sha256": "df3fcd2b3660a979fb25d15d679a96e1fbefef07a5466a8ff99b8dc44ae7f754",
+      "expected": "fail",
+      "actual": "fail",
+      "reference_reason": "A platform feature and candidate requirement do not establish an employer commitment.",
+      "intended_error_claim_ids": [
+        "B"
+      ],
+      "failed_claim_ids": [
+        "B"
+      ],
+      "localized_error_claim_ids": [
+        "B"
+      ],
+      "other_failed_claim_ids": [],
+      "review_claim_ids": [],
+      "execution_error": null,
+      "claims": [
+        {
+          "anchor": {
+            "end": 30,
+            "pointer": "/rows/15/answer/text",
+            "quote": "platform supports captions",
+            "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+            "start": 4
+          },
+          "axes": [],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "J16"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Direct support found.",
+          "id": "A",
+          "inspected_source_ids": [
+            "J16",
+            "P16"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "direct_support",
+          "support_evidence_ids": [
+            "J16"
+          ],
+          "verdict": "pass"
+        },
+        {
+          "anchor": {
+            "end": 87,
+            "pointer": "/rows/15/answer/text",
+            "quote": "employer will enable them in every team meeting",
+            "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+            "start": 40
+          },
+          "axes": [
+            "supporting_proposition"
+          ],
+          "counter_evidence_ids": [],
+          "evidence_ids": [],
+          "evidence_relation": "not_established",
+          "explanation": "Available evidence does not establish the asserted proposition: employer / live_captions / enabled.",
+          "id": "B",
+          "inspected_source_ids": [
+            "J16",
+            "P16"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "evidence_gap",
+          "support_evidence_ids": [],
+          "verdict": "fail"
+        }
+      ],
+      "review_reasons": []
+    },
+    {
+      "case_id": "PF3N-17",
+      "family": "preference-fit",
+      "packet_sha256": "0c00817164e7260627abc3fa4007780cd31269c84780a063481e6b88ae07e3bd",
+      "expected": "fail",
+      "actual": "fail",
+      "reference_reason": "The $900 is annual, only $75 per month if evenly spread, below the $200 monthly minimum.",
+      "intended_error_claim_ids": [
+        "B"
+      ],
+      "failed_claim_ids": [
+        "B"
+      ],
+      "localized_error_claim_ids": [
+        "B"
+      ],
+      "other_failed_claim_ids": [],
+      "review_claim_ids": [],
+      "execution_error": null,
+      "claims": [
+        {
+          "anchor": {
+            "end": 16,
+            "pointer": "/rows/16/answer/text",
+            "quote": "$900 stipend",
+            "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+            "start": 4
+          },
+          "axes": [
+            "subject",
+            "scope",
+            "measure",
+            "modality"
+          ],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "J17",
+            "P17"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Direct support found.",
+          "id": "A",
+          "inspected_source_ids": [
+            "J17",
+            "P17"
+          ],
+          "limited_evidence_ids": [
+            "P17"
+          ],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "direct_support",
+          "support_evidence_ids": [
+            "J17"
+          ],
+          "verdict": "pass"
+        },
+        {
+          "anchor": {
+            "end": 48,
+            "pointer": "/rows/16/answer/text",
+            "quote": "meets your $200 monthly minimum",
+            "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+            "start": 17
+          },
+          "axes": [
+            "measure"
+          ],
+          "counter_evidence_ids": [
+            "J17",
+            "P17"
+          ],
+          "evidence_ids": [
+            "J17",
+            "P17"
+          ],
+          "evidence_relation": "contradicted",
+          "explanation": "Entire offered interval compared with the candidate's allowed interval.",
+          "id": "B",
+          "inspected_source_ids": [
+            "J17",
+            "P17"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "constraint_interval",
+          "support_evidence_ids": [],
+          "verdict": "fail"
+        }
+      ],
+      "review_reasons": []
+    },
+    {
+      "case_id": "PF3N-18",
+      "family": "preference-fit",
+      "packet_sha256": "3d401af9caeeff5a0d22ced8cd7d43fad3045cd7fcccff989376c1f869483a76",
+      "expected": "fail",
+      "actual": "fail",
+      "reference_reason": "The stated allowance expressly excludes conference travel.",
+      "intended_error_claim_ids": [
+        "B"
+      ],
+      "failed_claim_ids": [
+        "B"
+      ],
+      "localized_error_claim_ids": [
+        "B"
+      ],
+      "other_failed_claim_ids": [],
+      "review_claim_ids": [],
+      "execution_error": null,
+      "claims": [
+        {
+          "anchor": {
+            "end": 33,
+            "pointer": "/rows/17/answer/text",
+            "quote": "allowance is $1,200 for exams",
+            "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+            "start": 4
+          },
+          "axes": [
+            "object",
+            "measure"
+          ],
+          "counter_evidence_ids": [],
+          "evidence_ids": [
+            "J18"
+          ],
+          "evidence_relation": "supported",
+          "explanation": "Direct support found.",
+          "id": "A",
+          "inspected_source_ids": [
+            "J18",
+            "P18"
+          ],
+          "limited_evidence_ids": [
+            "J18"
+          ],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "direct_support",
+          "support_evidence_ids": [
+            "J18"
+          ],
+          "verdict": "pass"
+        },
+        {
+          "anchor": {
+            "end": 73,
+            "pointer": "/rows/17/answer/text",
+            "quote": "it can cover your conference travel",
+            "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+            "start": 38
+          },
+          "axes": [
+            "object",
+            "measure",
+            "subject",
+            "scope",
+            "modality",
+            "polarity"
+          ],
+          "counter_evidence_ids": [
+            "J18"
+          ],
+          "evidence_ids": [
+            "J18",
+            "P18"
+          ],
+          "evidence_relation": "contradicted",
+          "explanation": "Applicable evidence states the opposite polarity.",
+          "id": "B",
+          "inspected_source_ids": [
+            "J18",
+            "P18"
+          ],
+          "limited_evidence_ids": [
+            "J18",
+            "P18"
+          ],
+          "parse_status": "valid",
+          "reasoning_status": "resolved",
+          "rule": "opposite_polarity",
+          "support_evidence_ids": [],
+          "verdict": "fail"
+        }
+      ],
+      "review_reasons": []
+    },
+    {
+      "case_id": "PF3N-19",
+      "family": "preference-fit",
+      "packet_sha256": "258b327d9f86d42fdf043183b0664876882d5403656b05623f470570f4cd6f1e",
+      "expected": "needs_review",
+      "actual": "needs_review",
+      "reference_reason": "Offers could preserve the contingent option or imply a firm benefit; the fragment does not decide which.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "localized_error_claim_ids": [],
+      "other_failed_claim_ids": [],
+      "review_claim_ids": [
+        "A"
+      ],
+      "execution_error": null,
+      "claims": [
+        {
+          "anchor": {
+            "end": 47,
+            "pointer": "/rows/18/answer/text",
+            "quote": "offers two remote days after the trial",
+            "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+            "start": 9
+          },
+          "axes": [],
+          "counter_evidence_ids": [],
+          "evidence_ids": [],
+          "evidence_relation": null,
+          "explanation": "Multiple plausible readings require review.",
+          "id": "A",
+          "inspected_source_ids": [
+            "J19",
+            "P19"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "ambiguous",
+          "reasoning_status": "unresolved",
+          "rule": "alternative_readings",
+          "support_evidence_ids": [],
+          "verdict": "needs_review"
+        }
+      ],
+      "review_reasons": [
+        "claim_needs_review: A"
+      ]
+    },
+    {
+      "case_id": "PF3N-20",
+      "family": "preference-fit",
+      "packet_sha256": "44e218dc500a1a5262253580f95c13cd7092144a95488f2c2fa0a7b7b3fd1e19",
+      "expected": "needs_review",
+      "actual": "needs_review",
+      "reference_reason": "Available may mean requestable under the stated condition or routinely supplied at every meeting.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "localized_error_claim_ids": [],
+      "other_failed_claim_ids": [],
+      "review_claim_ids": [
+        "A"
+      ],
+      "execution_error": null,
+      "claims": [
+        {
+          "anchor": {
+            "end": 50,
+            "pointer": "/rows/19/answer/text",
+            "quote": "Live captions are available for your team meetings",
+            "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+            "start": 0
+          },
+          "axes": [],
+          "counter_evidence_ids": [],
+          "evidence_ids": [],
+          "evidence_relation": null,
+          "explanation": "Multiple plausible readings require review.",
+          "id": "A",
+          "inspected_source_ids": [
+            "J20",
+            "P20"
+          ],
+          "limited_evidence_ids": [],
+          "parse_status": "ambiguous",
+          "reasoning_status": "unresolved",
+          "rule": "alternative_readings",
+          "support_evidence_ids": [],
+          "verdict": "needs_review"
+        }
+      ],
+      "review_reasons": [
+        "claim_needs_review: A"
+      ]
+    }
+  ]
+}

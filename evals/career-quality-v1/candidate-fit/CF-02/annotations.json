@@ -1,0 +1,68 @@
+{
+  "schema": "maguire-quality-annotations-v1",
+  "case_id": "CF-02",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "Prototype testing is supported and production operations remain unknown.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_02",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "A focused operational skill check is admissible without calling the demo production.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_03",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "A tested prototype does not support production ownership.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "prototype inflation",
+        "description": "A tested prototype does not support production ownership.",
+        "changed_paths": [
+          "/assessments/1/label",
+          "/assessments/1/rationale"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "CF-LABEL",
+          "severity": "critical",
+          "target_id": "jd_2",
+          "explanation": "A tested prototype does not support production ownership."
+        }
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "No past deployment in one project does not prove future inability.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "absence as inability",
+        "description": "No past deployment in one project does not prove future inability.",
+        "changed_paths": [
+          "/assessments/1/label",
+          "/assessments/1/rationale"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "CF-UNCERTAINTY",
+          "severity": "major",
+          "target_id": "jd_2",
+          "explanation": "No past deployment in one project does not prove future inability."
+        }
+      ]
+    }
+  ]
+}

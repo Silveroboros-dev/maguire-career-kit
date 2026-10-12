@@ -1,0 +1,103 @@
+{
+  "schema": "maguire-v5-local-handoff-v1",
+  "created_at": "2026-10-12T17:55:28.217406+00:00",
+  "human_approved": false,
+  "git_head": "4d87b90ef74c4f40b282e08b6d82fc6ad9f2749e",
+  "git_status": [
+    "?? evals/"
+  ],
+  "files": {
+    "ANALYSIS.md": {
+      "sha256": "7cc929224a0789abdf44e646fec2d41a10ea95b742c9e95e78bd7c06b18b2a8e",
+      "bytes": 17200
+    },
+    "FREEZE.json": {
+      "sha256": "4c8b491f939d19ddc4de3107d60bf09099b16416d773deea2d5a59d207d5cecb",
+      "bytes": 13367
+    },
+    "START.json": {
+      "sha256": "d511e7bc288f1924cd9e2783577499fa79e3a807b198669a751e5c75c72a0445",
+      "bytes": 3634
+    },
+    "PREDECESSOR.json": {
+      "sha256": "bfcdae11061e4868af7717a07131601f6253e713cdbe8bbe82c449dcad544553",
+      "bytes": 61108
+    },
+    "review/results_review_v1.json": {
+      "sha256": "390483b97fbd8f7120c1fefe572a7f4b2225733b9affbdc2ebe2b96c694bc321",
+      "bytes": 17085
+    },
+    "runs/v5-regression/RECEIPT.json": {
+      "sha256": "6e79081c9cc08fa03eaf40840d7474194cc831829d5eef534cfb938d55fe589d",
+      "bytes": 1330
+    },
+    "runs/v5-regression/measurement.json": {
+      "sha256": "4f4e36347b16f838ed5a819e63ca966c19d3d89396aaa2245dc194cae6a7ef31",
+      "bytes": 105546
+    },
+    "runs/v5-regression/comparison.json": {
+      "sha256": "fe0de79d410667f3302aa0b50f8b548373dda5dbd9b1ef1c604611198e28f834",
+      "bytes": 11064
+    }
+  },
+  "scope": "Same known40-case regression; manual agent-reviewed normalization; not independent holdout.",
+  "result": {
+    "total": 40,
+    "confusion": {
+      "pass": {
+        "pass": 18,
+        "fail": 1,
+        "needs_review": 5,
+        "invalid": 0
+      },
+      "fail": {
+        "pass": 0,
+        "fail": 12,
+        "needs_review": 0,
+        "invalid": 0
+      },
+      "needs_review": {
+        "pass": 0,
+        "fail": 0,
+        "needs_review": 4,
+        "invalid": 0
+      }
+    },
+    "missed_errors": [],
+    "false_rejections": [
+      "PF3N-04"
+    ],
+    "needs_review": {
+      "pass": [
+        "CF3N-03",
+        "CF3N-04",
+        "CF3N-08",
+        "CF3N-11",
+        "PF3N-08"
+      ],
+      "fail": [],
+      "needs_review": [
+        "CF3N-19",
+        "CF3N-20",
+        "PF3N-19",
+        "PF3N-20"
+      ]
+    },
+    "ambiguous_forced_decisions": [],
+    "invalid": [],
+    "execution_errors": [],
+    "automatic_decisions": 31,
+    "intended_errors_total": 14,
+    "intended_errors_flagged": 14,
+    "bad_fragments_rejected_only_on_other_claims": [],
+    "extra_failures_in_bad_fragments": []
+  },
+  "limits": [
+    "PF3N-04 remains a gold-relative false rejection with source interpretation tension.",
+    "Five correct and four ambiguous fragments need review.",
+    "CF3N-18 causal explanation and free-text extraction unproven."
+  ],
+  "network_calls": 0,
+  "commits": 0,
+  "pushes": 0
+}

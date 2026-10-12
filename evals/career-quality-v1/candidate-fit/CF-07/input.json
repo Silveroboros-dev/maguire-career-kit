@@ -1,0 +1,48 @@
+{
+  "schema": "maguire-quality-input-v1",
+  "case_id": "CF-07",
+  "grader": "candidate_fit",
+  "data_class": "synthetic",
+  "decision_at": "2026-10-12T12:00:00Z",
+  "task": "Assess the supplied candidate evidence against the job description. Cite relevant sources, state any uncertainty, and recommend a next action.",
+  "jd": {
+    "title": "Data Warehouse Migration Specialist",
+    "sources": [
+      {
+        "id": "jd_1",
+        "text": "Own the customer data warehouse migration plan, including the field-mapping checklist and leadership of the overall rollout plan.",
+        "observed_at": "2026-10-12T12:00:00Z",
+        "authority": "job_description",
+        "supersedes": []
+      },
+      {
+        "id": "jd_2",
+        "text": "Document data quality checks before each release.",
+        "observed_at": "2026-10-12T12:00:00Z",
+        "authority": "job_description",
+        "supersedes": []
+      }
+    ]
+  },
+  "candidate": {
+    "facts": [
+      {
+        "id": "fact_1",
+        "text": "Our six-person team launched a customer data warehouse migration; I owned the field-mapping checklist, while another lead owned the migration plan.",
+        "evidence_type": "self_report",
+        "observed_at": "2026-10-12T12:00:00Z",
+        "status": "active",
+        "supersedes": []
+      },
+      {
+        "id": "fact_2",
+        "text": "A supplied checklist excerpt lists null-rate and duplicate-key checks before a release.",
+        "evidence_type": "supplied_artifact_excerpt",
+        "observed_at": "2026-10-12T12:00:00Z",
+        "status": "active",
+        "supersedes": []
+      }
+    ],
+    "preferences": []
+  }
+}

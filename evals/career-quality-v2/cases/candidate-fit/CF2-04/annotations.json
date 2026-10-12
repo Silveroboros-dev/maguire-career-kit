@@ -1,0 +1,66 @@
+{
+  "schema": "maguire-quality-annotations-v1",
+  "case_id": "CF2-04",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The assessment keeps the stated evidence and its limits in scope.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_02",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The independent acceptable conclusion preserves the same substantive constraints.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_03",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "The source gives a 75-page sample and no production coordination at collection scale.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "invent collection scale",
+        "description": "The source gives a 75-page sample and no production coordination at collection scale.",
+        "changed_paths": [
+          "/assessments/1/rationale"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "CF-EVIDENCE",
+          "severity": "major",
+          "target_id": "jd_2",
+          "explanation": "The source gives a 75-page sample and no production coordination at collection scale."
+        }
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "No source establishes a daily processing rate.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "invent throughput",
+        "description": "No source establishes a daily processing rate.",
+        "changed_paths": [
+          "/conclusion/text"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "CF-UNCERTAINTY",
+          "severity": "major",
+          "target_id": "jd_2",
+          "explanation": "No source establishes a daily processing rate."
+        }
+      ]
+    }
+  ]
+}

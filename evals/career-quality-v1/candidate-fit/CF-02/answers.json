@@ -1,0 +1,185 @@
+{
+  "schema": "maguire-quality-answers-v1",
+  "case_id": "CF-02",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "assessments": [
+        {
+          "target_id": "jd_1",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Build a retrieval assistant prototype that staff can test with sample policy questions."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "I built a retrieval assistant prototype and invited staff to test it against sample policy questions."
+            }
+          ],
+          "rationale": "The reported build and staff sample testing match the prototype duty."
+        },
+        {
+          "target_id": "jd_2",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Own a production retrieval service with on-call support and rollback procedures."
+            },
+            {
+              "source_id": "fact_2",
+              "quote": "The demo log records six staff test prompts and notes that the assistant was never deployed to production."
+            }
+          ],
+          "rationale": "The demo log says this project was never deployed; it does not settle whether the candidate could own a future service."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "The prototype duty is supported; production ownership needs more evidence.",
+        "next_step": "Ask for a concrete on-call or rollback example from another project before claiming production ownership."
+      },
+      "limitations": [
+        "The prototype is self-reported.",
+        "The log only speaks to this project."
+      ]
+    },
+    {
+      "answer_id": "answer_02",
+      "assessments": [
+        {
+          "target_id": "jd_1",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Build a retrieval assistant prototype that staff can test with sample policy questions."
+            },
+            {
+              "source_id": "fact_2",
+              "quote": "The demo log records six staff test prompts and notes that the assistant was never deployed to production."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "I built a retrieval assistant prototype and invited staff to test it against sample policy questions."
+            }
+          ],
+          "rationale": "The candidate reports building the prototype; the supplied demo log documents staff test prompts. Neither source shows production deployment."
+        },
+        {
+          "target_id": "jd_2",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Own a production retrieval service with on-call support and rollback procedures."
+            },
+            {
+              "source_id": "fact_2",
+              "quote": "The demo log records six staff test prompts and notes that the assistant was never deployed to production."
+            }
+          ],
+          "rationale": "This prototype was not in production, and no other operational record is supplied."
+        }
+      ],
+      "conclusion": {
+        "action": "verify_skill",
+        "text": "The evidence supports prototyping but leaves production operations untested.",
+        "next_step": "Use a focused rollback and incident scenario to check the operational skill."
+      },
+      "limitations": [
+        "A scenario would test skill, not create a past deployment record."
+      ]
+    },
+    {
+      "answer_id": "answer_03",
+      "assessments": [
+        {
+          "target_id": "jd_1",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Build a retrieval assistant prototype that staff can test with sample policy questions."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "I built a retrieval assistant prototype and invited staff to test it against sample policy questions."
+            }
+          ],
+          "rationale": "The reported build and staff sample testing match the prototype duty."
+        },
+        {
+          "target_id": "jd_2",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Own a production retrieval service with on-call support and rollback procedures."
+            },
+            {
+              "source_id": "fact_2",
+              "quote": "The demo log records six staff test prompts and notes that the assistant was never deployed to production."
+            }
+          ],
+          "rationale": "The staff demo proves ownership of a production retrieval service."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "The prototype duty is supported; production ownership needs more evidence.",
+        "next_step": "Ask for a concrete on-call or rollback example from another project before claiming production ownership."
+      },
+      "limitations": [
+        "The prototype is self-reported.",
+        "The log only speaks to this project."
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "assessments": [
+        {
+          "target_id": "jd_1",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Build a retrieval assistant prototype that staff can test with sample policy questions."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "I built a retrieval assistant prototype and invited staff to test it against sample policy questions."
+            }
+          ],
+          "rationale": "The reported build and staff sample testing match the prototype duty."
+        },
+        {
+          "target_id": "jd_2",
+          "label": "contradicted",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Own a production retrieval service with on-call support and rollback procedures."
+            },
+            {
+              "source_id": "fact_2",
+              "quote": "The demo log records six staff test prompts and notes that the assistant was never deployed to production."
+            }
+          ],
+          "rationale": "Because this prototype was not deployed, the candidate cannot operate a future production service."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "The prototype duty is supported; production ownership needs more evidence.",
+        "next_step": "Ask for a concrete on-call or rollback example from another project before claiming production ownership."
+      },
+      "limitations": [
+        "The prototype is self-reported.",
+        "The log only speaks to this project."
+      ]
+    }
+  ]
+}

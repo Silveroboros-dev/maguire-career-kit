@@ -1,0 +1,194 @@
+{
+  "schema": "maguire-quality-answers-v1",
+  "case_id": "PF-01",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "assessments": [
+        {
+          "target_id": "pref_remote",
+          "label": "conflict",
+          "evidence": [
+            {
+              "source_id": "jd_location",
+              "quote": "This role requires three office days every week in the Harbor office; the remaining two days may be worked remotely."
+            }
+          ],
+          "rationale": "Three mandatory office days directly exceed zero; an unconfirmed waiver cannot erase the conflict."
+        },
+        {
+          "target_id": "pref_learning",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_learning",
+              "quote": "The employer funds one professional course each year."
+            }
+          ],
+          "rationale": "A funded annual course satisfies the stated soft learning preference."
+        },
+        {
+          "target_id": "pref_travel",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_travel",
+              "quote": "Business travel consists of two local team-meeting trips per year, with no additional required trips."
+            }
+          ],
+          "rationale": "The two stated local team-meeting trips are within the candidate’s four-trip annual preference."
+        }
+      ],
+      "conclusion": {
+        "action": "pass",
+        "text": "The three required office days breach the candidate’s zero-office must-have despite the learning and low travel benefits.",
+        "next_step": "Record this as a declined fit under the published office policy."
+      },
+      "limitations": [
+        "No employer waiver is documented.",
+        "This assessment does not predict an interview or offer."
+      ]
+    },
+    {
+      "answer_id": "answer_02",
+      "assessments": [
+        {
+          "target_id": "pref_remote",
+          "label": "conflict",
+          "evidence": [
+            {
+              "source_id": "jd_location",
+              "quote": "This role requires three office days every week in the Harbor office; the remaining two days may be worked remotely."
+            }
+          ],
+          "rationale": "Three mandatory office days directly exceed zero; an unconfirmed waiver cannot erase the conflict."
+        },
+        {
+          "target_id": "pref_learning",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_learning",
+              "quote": "The employer funds one professional course each year."
+            }
+          ],
+          "rationale": "A funded annual course satisfies the stated soft learning preference."
+        },
+        {
+          "target_id": "pref_travel",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_travel",
+              "quote": "Business travel consists of two local team-meeting trips per year, with no additional required trips."
+            }
+          ],
+          "rationale": "The two stated local team-meeting trips are within the candidate’s four-trip annual preference."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "The published policy conflicts with zero-office; the candidate has expressly allowed one waiver inquiry.",
+        "next_step": "Ask the employer once whether an authorized zero-office exception applies to this role, then pass if the answer is no or unavailable."
+      },
+      "limitations": [
+        "No employer waiver is documented.",
+        "This assessment does not predict an interview or offer."
+      ]
+    },
+    {
+      "answer_id": "answer_03",
+      "assessments": [
+        {
+          "target_id": "pref_remote",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_location",
+              "quote": "This role requires three office days every week in the Harbor office; the remaining two days may be worked remotely."
+            }
+          ],
+          "rationale": "Three office days count as aligned because the candidate could ask for an exception."
+        },
+        {
+          "target_id": "pref_learning",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_learning",
+              "quote": "The employer funds one professional course each year."
+            }
+          ],
+          "rationale": "A funded annual course satisfies the stated soft learning preference."
+        },
+        {
+          "target_id": "pref_travel",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_travel",
+              "quote": "Business travel consists of two local team-meeting trips per year, with no additional required trips."
+            }
+          ],
+          "rationale": "The two stated local team-meeting trips are within the candidate’s four-trip annual preference."
+        }
+      ],
+      "conclusion": {
+        "action": "pass",
+        "text": "The three required office days breach the candidate’s zero-office must-have despite the learning and low travel benefits.",
+        "next_step": "Record this as a declined fit under the published office policy."
+      },
+      "limitations": [
+        "No employer waiver is documented.",
+        "This assessment does not predict an interview or offer."
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "assessments": [
+        {
+          "target_id": "pref_remote",
+          "label": "conflict",
+          "evidence": [
+            {
+              "source_id": "jd_location",
+              "quote": "This role requires three office days every week in the Harbor office; the remaining two days may be worked remotely."
+            }
+          ],
+          "rationale": "Three mandatory office days directly exceed zero; an unconfirmed waiver cannot erase the conflict."
+        },
+        {
+          "target_id": "pref_learning",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_learning",
+              "quote": "The employer funds one professional course each year."
+            }
+          ],
+          "rationale": "A funded annual course satisfies the stated soft learning preference."
+        },
+        {
+          "target_id": "pref_travel",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_travel",
+              "quote": "Business travel consists of two local team-meeting trips per year, with no additional required trips."
+            }
+          ],
+          "rationale": "The two stated local team-meeting trips are within the candidate’s four-trip annual preference."
+        }
+      ],
+      "conclusion": {
+        "action": "pursue",
+        "text": "Proceed with the application because the learning benefit and limited travel make the package attractive.",
+        "next_step": "Prepare an application without checking the office requirement."
+      },
+      "limitations": [
+        "No employer waiver is documented.",
+        "This assessment does not predict an interview or offer."
+      ]
+    }
+  ]
+}

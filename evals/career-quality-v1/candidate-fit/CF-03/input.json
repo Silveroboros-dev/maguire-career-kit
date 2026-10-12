@@ -1,0 +1,55 @@
+{
+  "schema": "maguire-quality-input-v1",
+  "case_id": "CF-03",
+  "grader": "candidate_fit",
+  "data_class": "synthetic",
+  "decision_at": "2026-10-12T12:00:00Z",
+  "task": "Assess the supplied candidate evidence against the job description. Cite relevant sources, state any uncertainty, and recommend a next action.",
+  "jd": {
+    "title": "Event Platform Engineer",
+    "sources": [
+      {
+        "id": "jd_1",
+        "text": "Previous production deployment experience is not required for entry.",
+        "observed_at": "2026-10-12T12:00:00Z",
+        "authority": "job_description",
+        "supersedes": []
+      },
+      {
+        "id": "jd_2",
+        "text": "The engineer will maintain release checklists and participate in incident reviews.",
+        "observed_at": "2026-10-12T12:00:00Z",
+        "authority": "job_description",
+        "supersedes": []
+      },
+      {
+        "id": "jd_3",
+        "text": "The engineer will write Python scripts to check event payloads.",
+        "observed_at": "2026-10-12T12:00:00Z",
+        "authority": "job_description",
+        "supersedes": []
+      }
+    ]
+  },
+  "candidate": {
+    "facts": [
+      {
+        "id": "fact_1",
+        "text": "I wrote Python scripts that checked event payload fields in a local test harness.",
+        "evidence_type": "self_report",
+        "observed_at": "2026-10-12T12:00:00Z",
+        "status": "active",
+        "supersedes": []
+      },
+      {
+        "id": "fact_2",
+        "text": "I have not participated in an incident review or maintained a release checklist.",
+        "evidence_type": "self_report",
+        "observed_at": "2026-10-12T12:00:00Z",
+        "status": "active",
+        "supersedes": []
+      }
+    ],
+    "preferences": []
+  }
+}

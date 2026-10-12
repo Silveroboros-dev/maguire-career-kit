@@ -1,0 +1,150 @@
+{
+  "schema": "maguire-quality-answers-v1",
+  "case_id": "PF2-06",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "assessments": [
+        {
+          "target_id": "pref_1",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "pref_1",
+              "quote": "After orientation, I require zero mandatory observatory days."
+            },
+            {
+              "source_id": "jd_1",
+              "quote": "Editors may work fully remotely after initial orientation."
+            },
+            {
+              "source_id": "jd_2",
+              "quote": "Editors attend the observatory in person on Tuesdays and Thursdays."
+            },
+            {
+              "source_id": "jd_3",
+              "quote": "Location arrangements remain flexible and should be discussed with the team."
+            }
+          ],
+          "rationale": "One notice allows full remote work, another requires Tuesday and Thursday attendance, and the newer flexibility note does not resolve which rule governs this role."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "The location condition cannot be settled from these unsuperseded notices.",
+        "next_step": "Ask for the current role-specific attendance requirement and whether it replaces the earlier notices."
+      },
+      "limitations": [
+        "The latest date by itself does not make the flexible note authoritative over the other terms."
+      ]
+    },
+    {
+      "answer_id": "answer_02",
+      "assessments": [
+        {
+          "target_id": "pref_1",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "pref_1",
+              "quote": "After orientation, I require zero mandatory observatory days."
+            },
+            {
+              "source_id": "jd_1",
+              "quote": "Editors may work fully remotely after initial orientation."
+            },
+            {
+              "source_id": "jd_2",
+              "quote": "Editors attend the observatory in person on Tuesdays and Thursdays."
+            },
+            {
+              "source_id": "jd_3",
+              "quote": "Location arrangements remain flexible and should be discussed with the team."
+            }
+          ],
+          "rationale": "One notice allows full remote work, another requires Tuesday and Thursday attendance, and the newer flexibility note does not resolve which rule governs this role."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "Both remote and mandatory-attendance language remain in the supplied record; a current governing rule is needed.",
+        "next_step": "Request an explicit written resolution of Tuesday and Thursday attendance for this editor role."
+      },
+      "limitations": [
+        "A newer publication date is not an explicit supersession relationship."
+      ]
+    },
+    {
+      "answer_id": "answer_03",
+      "assessments": [
+        {
+          "target_id": "pref_1",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "pref_1",
+              "quote": "After orientation, I require zero mandatory observatory days."
+            },
+            {
+              "source_id": "jd_1",
+              "quote": "Editors may work fully remotely after initial orientation."
+            },
+            {
+              "source_id": "jd_2",
+              "quote": "Editors attend the observatory in person on Tuesdays and Thursdays."
+            },
+            {
+              "source_id": "jd_3",
+              "quote": "Location arrangements remain flexible and should be discussed with the team."
+            }
+          ],
+          "rationale": "The September flexibility notice is newest, so it supersedes both earlier notices and guarantees fully remote work."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "The location condition cannot be settled from these unsuperseded notices.",
+        "next_step": "Ask for the current role-specific attendance requirement and whether it replaces the earlier notices."
+      },
+      "limitations": [
+        "The latest date by itself does not make the flexible note authoritative over the other terms."
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "assessments": [
+        {
+          "target_id": "pref_1",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "pref_1",
+              "quote": "After orientation, I require zero mandatory observatory days."
+            },
+            {
+              "source_id": "jd_1",
+              "quote": "Editors may work fully remotely after initial orientation."
+            },
+            {
+              "source_id": "jd_2",
+              "quote": "Editors attend the observatory in person on Tuesdays and Thursdays."
+            },
+            {
+              "source_id": "jd_3",
+              "quote": "Location arrangements remain flexible and should be discussed with the team."
+            }
+          ],
+          "rationale": "One notice allows full remote work, another requires Tuesday and Thursday attendance, and the newer flexibility note does not resolve which rule governs this role."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "The May notice definitively controls this role because it is later than the remote notice; the location conflict is fully settled.",
+        "next_step": "Ask for the current role-specific attendance requirement and whether it replaces the earlier notices."
+      },
+      "limitations": [
+        "The latest date by itself does not make the flexible note authoritative over the other terms."
+      ]
+    }
+  ]
+}

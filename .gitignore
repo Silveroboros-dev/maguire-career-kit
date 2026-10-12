@@ -32,3 +32,29 @@ identity-documents/
 # Reproducible distribution archives
 *.zip
 *.tar.gz
+
+# Local evaluation receipts with private host paths (original bytes preserved)
+/evals/career-quality-v1/runs/baseline-v1/execution.json
+/evals/career-quality-v2/runs/new-v1/execution.json
+/evals/career-quality-v2/runs/new-v2/execution.json
+/evals/career-quality-v2/runs/regression-v2/execution.json
+/evals/career-quality-v3/runs/first-slice-v3/execution.json
+/evals/career-quality-v3-new-cases/START.json
+/evals/career-quality-v3-new-cases/review/challenge_packet_v2.json
+/evals/career-quality-v3-new-cases/runs/new-cases-v3/execution.json
+/evals/career-quality-v4/START.json
+/evals/career-quality-v4/review/challenge_packet_v1.json
+/evals/career-quality-v4/runs/v4-regression/execution.json
+/evals/career-quality-v5/START.json
+/evals/career-quality-v5/review/challenge_packet_v1.json
+/evals/career-quality-v5/runs/v5-regression/execution.json
+/evals/career-quality-v5-new-cases/START.json
+/evals/career-quality-v5-new-cases/runs/new-cases-v5/execution.json
+/evals/career-quality-v6/START.json
+/evals/career-quality-v6/review/challenge_packet_v1.json
+/evals/career-quality-v6/runs/regression-v6/execution.json
+/evals/career-quality-v6-new-cases/START.json
+/evals/career-quality-v6-new-cases/review/raw_judgments_candidate-fit_v1.json
+/evals/career-quality-v6-new-cases/review/raw_judgments_candidate-fit_v2.json
+/evals/career-quality-v6-new-cases/review/raw_judgments_preference-fit_v1.json
+/evals/career-quality-v6-new-cases/runs/new-cases-v6/execution.json

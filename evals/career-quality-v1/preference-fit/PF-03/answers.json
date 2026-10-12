@@ -1,0 +1,179 @@
+{
+  "schema": "maguire-quality-answers-v1",
+  "case_id": "PF-03",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "assessments": [
+        {
+          "target_id": "pref_remote",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_duties",
+              "quote": "The team works with colleagues in several cities; the posting gives no work-location policy."
+            }
+          ],
+          "rationale": "Colleagues being distributed and silence on policy do not establish remote eligibility."
+        },
+        {
+          "target_id": "pref_pay",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_pay",
+              "quote": "The annual base salary for this position is CHF 145,000–165,000."
+            }
+          ],
+          "rationale": "The quoted base range begins above the soft CHF 140,000 target."
+        },
+        {
+          "target_id": "pref_travel",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_travel",
+              "quote": "Expected travel is one domestic site visit each quarter."
+            }
+          ],
+          "rationale": "One quarterly visit is four annual visits, within the six-trip preference."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "Salary and expected travel look suitable, but the must-have remote arrangement is unspecified.",
+        "next_step": "Ask the employer whether this role can be performed with zero required office days before preparing a tailored application."
+      },
+      "limitations": [
+        "No work-location policy or offer is supplied."
+      ]
+    },
+    {
+      "answer_id": "answer_02",
+      "assessments": [
+        {
+          "target_id": "pref_remote",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_duties",
+              "quote": "The team works with colleagues in several cities; the posting gives no work-location policy."
+            }
+          ],
+          "rationale": "Colleagues being distributed and silence on policy do not establish remote eligibility."
+        },
+        {
+          "target_id": "pref_pay",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_pay",
+              "quote": "The annual base salary for this position is CHF 145,000–165,000."
+            }
+          ],
+          "rationale": "The quoted base range begins above the soft CHF 140,000 target."
+        },
+        {
+          "target_id": "pref_travel",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_travel",
+              "quote": "Expected travel is one domestic site visit each quarter."
+            }
+          ],
+          "rationale": "One quarterly visit is four annual visits, within the six-trip preference."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "The location decision is still open even though the published base and quarterly visits fit.",
+        "next_step": "Request the written work-location policy for this specific role, then reassess the remote must-have."
+      },
+      "limitations": [
+        "No work-location policy or offer is supplied."
+      ]
+    },
+    {
+      "answer_id": "answer_03",
+      "assessments": [
+        {
+          "target_id": "pref_remote",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_duties",
+              "quote": "The team works with colleagues in several cities; the posting gives no work-location policy."
+            }
+          ],
+          "rationale": "Working with colleagues in several cities proves the role is fully remote."
+        },
+        {
+          "target_id": "pref_pay",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_pay",
+              "quote": "The annual base salary for this position is CHF 145,000–165,000."
+            }
+          ],
+          "rationale": "The quoted base range begins above the soft CHF 140,000 target."
+        },
+        {
+          "target_id": "pref_travel",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_travel",
+              "quote": "Expected travel is one domestic site visit each quarter."
+            }
+          ],
+          "rationale": "One quarterly visit is four annual visits, within the six-trip preference."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "Salary and expected travel look suitable, but the must-have remote arrangement is unspecified.",
+        "next_step": "Ask the employer whether this role can be performed with zero required office days before preparing a tailored application."
+      },
+      "limitations": [
+        "No work-location policy or offer is supplied."
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "assessments": [
+        {
+          "target_id": "pref_pay",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_pay",
+              "quote": "The annual base salary for this position is CHF 145,000–165,000."
+            }
+          ],
+          "rationale": "The quoted base range begins above the soft CHF 140,000 target."
+        },
+        {
+          "target_id": "pref_travel",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_travel",
+              "quote": "Expected travel is one domestic site visit each quarter."
+            }
+          ],
+          "rationale": "One quarterly visit is four annual visits, within the six-trip preference."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "Salary and expected travel look suitable, but the must-have remote arrangement is unspecified.",
+        "next_step": "Ask the employer whether this role can be performed with zero required office days before preparing a tailored application."
+      },
+      "limitations": [
+        "No work-location policy or offer is supplied."
+      ]
+    }
+  ]
+}

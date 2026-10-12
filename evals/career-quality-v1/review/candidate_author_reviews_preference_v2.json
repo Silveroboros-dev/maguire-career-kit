@@ -1,0 +1,337 @@
+{
+  "schema": "maguire-quality-peer-review-v2",
+  "reviewer_model": "gpt-6-sol",
+  "reviewer_reasoning_effort": "high",
+  "human_review": false,
+  "review_environment": "Same local checkout, offline read-only review of the repaired preference-fit suite.",
+  "scope_case_ids": [
+    "PF-01",
+    "PF-02",
+    "PF-03",
+    "PF-04",
+    "PF-05",
+    "PF-06",
+    "PF-07",
+    "PF-08",
+    "PF-09",
+    "PF-10",
+    "PF-11",
+    "PF-12"
+  ],
+  "actual_files_read": [
+    "preference-fit/PF-01/annotations.json",
+    "preference-fit/PF-01/answers.json",
+    "preference-fit/PF-01/gold.json",
+    "preference-fit/PF-01/input.json",
+    "preference-fit/PF-02/annotations.json",
+    "preference-fit/PF-02/answers.json",
+    "preference-fit/PF-02/gold.json",
+    "preference-fit/PF-02/input.json",
+    "preference-fit/PF-03/annotations.json",
+    "preference-fit/PF-03/answers.json",
+    "preference-fit/PF-03/gold.json",
+    "preference-fit/PF-03/input.json",
+    "preference-fit/PF-04/annotations.json",
+    "preference-fit/PF-04/answers.json",
+    "preference-fit/PF-04/gold.json",
+    "preference-fit/PF-04/input.json",
+    "preference-fit/PF-05/annotations.json",
+    "preference-fit/PF-05/answers.json",
+    "preference-fit/PF-05/gold.json",
+    "preference-fit/PF-05/input.json",
+    "preference-fit/PF-06/annotations.json",
+    "preference-fit/PF-06/answers.json",
+    "preference-fit/PF-06/gold.json",
+    "preference-fit/PF-06/input.json",
+    "preference-fit/PF-07/annotations.json",
+    "preference-fit/PF-07/answers.json",
+    "preference-fit/PF-07/gold.json",
+    "preference-fit/PF-07/input.json",
+    "preference-fit/PF-08/annotations.json",
+    "preference-fit/PF-08/answers.json",
+    "preference-fit/PF-08/gold.json",
+    "preference-fit/PF-08/input.json",
+    "preference-fit/PF-09/annotations.json",
+    "preference-fit/PF-09/answers.json",
+    "preference-fit/PF-09/gold.json",
+    "preference-fit/PF-09/input.json",
+    "preference-fit/PF-10/annotations.json",
+    "preference-fit/PF-10/answers.json",
+    "preference-fit/PF-10/gold.json",
+    "preference-fit/PF-10/input.json",
+    "preference-fit/PF-11/annotations.json",
+    "preference-fit/PF-11/answers.json",
+    "preference-fit/PF-11/gold.json",
+    "preference-fit/PF-11/input.json",
+    "preference-fit/PF-12/annotations.json",
+    "preference-fit/PF-12/answers.json",
+    "preference-fit/PF-12/gold.json",
+    "preference-fit/PF-12/input.json"
+  ],
+  "source_review": {
+    "path": "review/candidate_author_reviews_preference.json",
+    "sha256": "d22eb863f0388a51683bad5d44bb50f35cfc00ee27200fc792f90a90a71f1212",
+    "finding_count": 16,
+    "open_question_count": 2
+  },
+  "repair_record": {
+    "path": "review/preference_repairs_v1.json",
+    "sha256": "5acda01259ae30776df9b351b40403767b7d55e1a68bac72813fb0f332b8b02b"
+  },
+  "current_case_file_sha256": {
+    "preference-fit/PF-01/annotations.json": "629a745b76cdd3fa61215949ac003c1930ebca4e576f79915d9ad57d84d62cca",
+    "preference-fit/PF-01/answers.json": "2f4c7630a8f784f5f67128eaf4928f03d26ef68bed8857e537952d9f3ae415b1",
+    "preference-fit/PF-01/gold.json": "2b68634074b3ca5a65e611c857c8994bc4a0737417b2746afa5259e61303d618",
+    "preference-fit/PF-01/input.json": "5277ac9d334213fea9486f4a51903be850babc366ae9f57844228feee3c0c3c5",
+    "preference-fit/PF-02/annotations.json": "e136134a5777f21ad9be7706a4cb7bde05153433b2dc14446161ac582f73144b",
+    "preference-fit/PF-02/answers.json": "7ccbad5e6f61a0deb3b35f8937f9b2d5f18dba37b22578a996ee5b87b58aca11",
+    "preference-fit/PF-02/gold.json": "3e67209f04ca33093eb4a6a51e5119af58c1fe5dc59b46595cb66f66c3f5fc87",
+    "preference-fit/PF-02/input.json": "33ea4729b9f0f40429612295d715a79cd78f7f352bff5f4062f2145231478cbd",
+    "preference-fit/PF-03/annotations.json": "c0b40a2e5df07409dd714ae06035c3e21eaa1e21f48cf259724b09dc4ec2a5ef",
+    "preference-fit/PF-03/answers.json": "07462bb3b4427b16ecd5977e76aa3b7cd173deb43c0666d950cc22ddf0bd9ab7",
+    "preference-fit/PF-03/gold.json": "b5db07d9880873df2ca27043d74286a5185c9d7669b42ab1c04ce4ceaf42f422",
+    "preference-fit/PF-03/input.json": "aa34979bb82a19ee53b8042dc6cf257c33c465be663591d5d306d0a5938959cd",
+    "preference-fit/PF-04/annotations.json": "977d554946bb0407e48bf6e1c60aa4526138b1b55ef5bf842bfb9330fba120ed",
+    "preference-fit/PF-04/answers.json": "d13238ff42a2f7625ebe3fa1cb27e5755da2579c7c5f0c9d7dda0d788df1844b",
+    "preference-fit/PF-04/gold.json": "acbfc72838540a45f8809559b295c6976759f2c5582e0b54cef6b3e8ab3e502c",
+    "preference-fit/PF-04/input.json": "8de732356a0e11cd91d3db04410bb4bfe62727f01664a0d32bc7d786d4db9328",
+    "preference-fit/PF-05/annotations.json": "1ba94fbe28887881d434d6f97e7272dbc5fca18e64afbd7bcd3f285bfb4b49a5",
+    "preference-fit/PF-05/answers.json": "4a8b11604b5b4090d3bd101e971eef40e90765a6461b6d4ba671abbcf4a97a0f",
+    "preference-fit/PF-05/gold.json": "951186cd71d0076f74fb313d7ff0f4038daa2ae3a6a12d356e2927559fd96566",
+    "preference-fit/PF-05/input.json": "41753f678a97c684c3963f962b3092dff32948bcd3615dd107ed3096349630aa",
+    "preference-fit/PF-06/annotations.json": "2306e403119125422e8ce808571b5da51b1b3909ef3ae87adaec65433ed98835",
+    "preference-fit/PF-06/answers.json": "2212196987c816750b310c956a775dff200fe4ca35416ee32ded8913b009e9f6",
+    "preference-fit/PF-06/gold.json": "df63eec5bf0480061368425403ed51804e3f5117982ea5ab38a93f9da81bca30",
+    "preference-fit/PF-06/input.json": "b38737395dcd58fd91af7c17067308535582922148e2a9d83821a79cac9cdd57",
+    "preference-fit/PF-07/annotations.json": "f91e5def77369657945c47c8581b9332e8de7c90b07495b1ae7541f525fdd53d",
+    "preference-fit/PF-07/answers.json": "2b92b6ef0ae881a2a40ab45112f39377cf90f7e121b800e5e80e34fb91a6ce4c",
+    "preference-fit/PF-07/gold.json": "6f991bc34eefe7cbebf624b4e8b14a46fac64230d4b9a7b90a4b28d77fc5b5f5",
+    "preference-fit/PF-07/input.json": "1a8de8cc0584b73fc125b41cd83311dced562279ea8732a65f4f1e3645e25aa2",
+    "preference-fit/PF-08/annotations.json": "a1c3382d7b9d99a9923ef9cb13f7e495fda11b71719900908593d42eca5a09eb",
+    "preference-fit/PF-08/answers.json": "06889ca69187af4dc1c7c155b07e4304277b82ac3382d86d1ae9eed237e69257",
+    "preference-fit/PF-08/gold.json": "1fb28ab7c8826e5a9d8dae1005d60aabf6e7a73d3d9ca4d91b35795b16f4e00a",
+    "preference-fit/PF-08/input.json": "f59787bbf9d4c7999f4188ea02378f4d205251e3d6df31396a1ae247f51da556",
+    "preference-fit/PF-09/annotations.json": "63004c83488142154db3be399cec7983ccacdc48eff5ccb6d25fa2857083aa69",
+    "preference-fit/PF-09/answers.json": "a165976c290c7bf0e10be1a00462c8e7560bc80680293cfddd0e9a59278aa754",
+    "preference-fit/PF-09/gold.json": "d83819af573884d46f48b6840af8b3436144f8d1ebbe289cb8d5a0829fbbd7ba",
+    "preference-fit/PF-09/input.json": "75a337e665a3efff679d598c312b42807c7d5505ef8244eca213bff5a7a570ae",
+    "preference-fit/PF-10/annotations.json": "62b835d3a43bfc9a483e2e3003082767c950fc97ebd57199264165fa5a96c2ad",
+    "preference-fit/PF-10/answers.json": "8ac78f58b5d3a8e700dc015faa03aad5f6010f24374d2ea8886b34d6991333d5",
+    "preference-fit/PF-10/gold.json": "bfad528aa4b31ae51b0596ae69f00962fd4de4eab4e920ac53edffec07135af4",
+    "preference-fit/PF-10/input.json": "68940dc08190c3b7247a9415962be4f507fc5f1ab81fa6eef91172316416f5a8",
+    "preference-fit/PF-11/annotations.json": "fdba34ec16447f39613f889e992d81fbbd16f32b0352fb44e2fc532cc1ac2e83",
+    "preference-fit/PF-11/answers.json": "4c7b6296aa70003ef6f1f89b6d67105fd306f2d3f3716f859cf599a75681d956",
+    "preference-fit/PF-11/gold.json": "ab8a249e149b2435d7bbcbe44eb5552b2abbc2d671e419f27cd226074d44e0df",
+    "preference-fit/PF-11/input.json": "f4aeee3b36e074cbf48198aca071863118b437baf0d51f7a0f8094560302fd3c",
+    "preference-fit/PF-12/annotations.json": "e24c2366be980ac7f16edee6feee400152d6335d13e34f0a9c0c0ddbb8c03a83",
+    "preference-fit/PF-12/answers.json": "cceb7c14f69738ef5e2b93afa4a1766464de174a1e13038811796f0ef078c795",
+    "preference-fit/PF-12/gold.json": "96145a2ece981d4ff8aa79e05e1503c8ac99c60ada97ac09eca15c97e976f102",
+    "preference-fit/PF-12/input.json": "77bb9aeaa8a9e78978ec67b1b6797dcd2a8661fb26b9d52bf6a8dc85fcfcac58"
+  },
+  "original_finding_statuses": [
+    {
+      "original_finding_index": 0,
+      "case_id": "PF-07",
+      "answer_ids": [
+        "answer_01",
+        "answer_02"
+      ],
+      "status": "resolved",
+      "resolution_evidence": "PF-07 jd_hours now explicitly says required core meetings run 13:00–16:00 and no required core meeting ends later; both positive pref_hours citations and aligned label follow."
+    },
+    {
+      "original_finding_index": 1,
+      "case_id": "PF-05",
+      "answer_ids": [
+        "answer_04"
+      ],
+      "status": "resolved",
+      "resolution_evidence": "PF-05 answer_04 finding and matching gold critical error now target pref_travel, the explicit four-week-notice travel exception."
+    },
+    {
+      "original_finding_index": 2,
+      "case_id": "PF-11",
+      "answer_ids": [
+        "answer_04"
+      ],
+      "status": "resolved",
+      "resolution_evidence": "PF-11 answer_04 finding and matching gold critical error now target pref_pay, whose annual base is unpublished."
+    },
+    {
+      "original_finding_index": 3,
+      "case_id": "PF-06",
+      "answer_ids": [
+        "answer_03",
+        "answer_04"
+      ],
+      "status": "resolved",
+      "resolution_evidence": "PF-06 answer_03 wrongly guarantees CHF 160,000 while answer_04 wrongly treats CHF 150,000 as a final cap; these are opposite unjustified interpretations of an indicative range."
+    },
+    {
+      "original_finding_index": 4,
+      "case_id": "PF-01",
+      "answer_ids": [
+        "answer_03",
+        "answer_04"
+      ],
+      "status": "resolved",
+      "resolution_evidence": "Current answer_03 finding: jd_location requires three office days each week, while pref_remote requires zero. Permission to ask once about an authorized waiver does not establish one; the supported result remains conflict, with pass or that single conditional inquiry. Current answer_04 finding: jd_location requires three office days against pref_remote's zero-office must-have. The annual course and two trips are soft matches and cannot offset that conflict; pass under the published policy or use the candidate-authorized single inquiry."
+    },
+    {
+      "original_finding_index": 5,
+      "case_id": "PF-02",
+      "answer_ids": [
+        "answer_03",
+        "answer_04"
+      ],
+      "status": "resolved",
+      "resolution_evidence": "Current answer_03 finding: Both JD sources put annual CHF base at 155,000–175,000, above pref_pay's CHF 150,000 minimum. The supported pay label is aligned; no source shows a below-minimum base. Current answer_04 finding: The JD states remote work within Switzerland, annual base starting at CHF 155,000 and written decisions before weekly planning; all three recorded preferences align. A pass based on those terms is unsupported; pursue is the supported action."
+    },
+    {
+      "original_finding_index": 6,
+      "case_id": "PF-03",
+      "answer_ids": [
+        "answer_03",
+        "answer_04"
+      ],
+      "status": "resolved",
+      "resolution_evidence": "Current answer_03 finding: jd_duties gives no work-location policy. Colleagues in several cities do not promise zero required office days; pref_remote remains unknown and needs a role-specific policy answer. Current answer_04 finding: The JD omits a work-location policy, so pref_remote's zero-office must-have is unknown. The published salary and quarterly travel cannot resolve it; the supported next step is to clarify location before tailoring."
+    },
+    {
+      "original_finding_index": 7,
+      "case_id": "PF-04",
+      "answer_ids": [
+        "answer_03",
+        "answer_04"
+      ],
+      "status": "resolved",
+      "resolution_evidence": "Current answer_03 finding: jd_office requires two fixed office days each week, exceeding pref_office's maximum of one. Three home days do not reduce that two-day requirement; the supported label is conflict. Current answer_04 finding: jd_office requires two office days against pref_office's one-day ceiling. The matching four-day schedule and conference budget do not cure it; pass or use the candidate's one permitted formal-exception inquiry."
+    },
+    {
+      "original_finding_index": 8,
+      "case_id": "PF-05",
+      "answer_ids": [
+        "answer_03",
+        "answer_04"
+      ],
+      "status": "resolved",
+      "resolution_evidence": "Current answer_03 finding: jd_growth specifies no protected learning time; generic growth opportunities do not meet pref_learning's monthly protected-time request. The correct label is unknown and the benefit should be clarified. Current answer_04 finding: pref_travel expressly accepts up to 20% travel when every trip has four weeks notice, and jd_travel promises that notice. The two hard preferences align, so passing on a blanket 10% ceiling ignores the candidate's exception; pursue or clarify the soft learning term."
+    },
+    {
+      "original_finding_index": 9,
+      "case_id": "PF-06",
+      "answer_ids": [
+        "answer_03",
+        "answer_04"
+      ],
+      "status": "resolved",
+      "resolution_evidence": "Current answer_03 finding: jd_salary calls CHF 130,000–150,000 indicative and says above-range offers may be considered; it does not guarantee pref_salary's CHF 160,000 base minimum. Salary remains unknown until actual approved offer authority is clarified. Current answer_04 finding: jd_salary expressly allows above-range offers to be considered, so its CHF 150,000 indicative ceiling is not a definitive cap. Calling pref_salary's CHF 160,000 base minimum impossible and passing is premature; clarify approved base-pay authority."
+    },
+    {
+      "original_finding_index": 10,
+      "case_id": "PF-07",
+      "answer_ids": [
+        "answer_03",
+        "answer_04"
+      ],
+      "status": "resolved",
+      "resolution_evidence": "Current answer_03 finding: jd_culture says only high-ownership and entrepreneurial; it does not grant pref_autonomy's routine technical decision rights. Autonomy remains unknown and should be clarified with the decision owner. Current answer_04 finding: The cited jd_hours text concerns required meeting hours and says nothing about routine design approval. It cannot support the autonomy assessment; cite jd_culture and keep pref_autonomy unknown until decision rights are clarified."
+    },
+    {
+      "original_finding_index": 11,
+      "case_id": "PF-08",
+      "answer_ids": [
+        "answer_03",
+        "answer_04"
+      ],
+      "status": "resolved",
+      "resolution_evidence": "Current answer_03 finding: jd_office requires four on-site days while pref_remote requires none. CHF 175,000+ base and a learning allowance are nice-to-haves, so the correct remote label is conflict. Current answer_04 finding: Four mandatory on-site days in jd_office violate pref_remote's zero-day must-have. The salary and learning benefits cannot outweigh it; pass under the published policy or use the candidate-authorized one-exception check."
+    },
+    {
+      "original_finding_index": 12,
+      "case_id": "PF-09",
+      "answer_ids": [
+        "answer_03",
+        "answer_04"
+      ],
+      "status": "resolved",
+      "resolution_evidence": "Current answer_03 finding: jd_original says zero office days and jd_update says two required days; neither source supersedes the other. The later date and employer_update type do not establish which governs, so pref_remote is unknown. Current answer_04 finding: The two employer location statements remain unresolved without explicit supersession. Pursuing as if the older remote term governs assumes the hard preference is met; clarify the current policy before a pursue decision."
+    },
+    {
+      "original_finding_index": 13,
+      "case_id": "PF-10",
+      "answer_ids": [
+        "answer_03",
+        "answer_04"
+      ],
+      "status": "resolved",
+      "resolution_evidence": "Current answer_03 finding: jd_replacement explicitly withdraws jd_original's fully remote term and requires two office days. pref_remote requires zero, so current alignment is false and the supported label is conflict. Current answer_04 finding: The explicit correction supersedes the old remote term and imposes two office days against pref_remote's zero-office requirement. Do not apply using withdrawn terms; pass or make the one candidate-permitted exception inquiry."
+    },
+    {
+      "original_finding_index": 14,
+      "case_id": "PF-11",
+      "answer_ids": [
+        "answer_03",
+        "answer_04"
+      ],
+      "status": "resolved",
+      "resolution_evidence": "Current answer_03 finding: jd_schedule requires overlap through 17:00 Europe/Zurich, exactly the inclusive end of pref_overlap's availability. That endpoint is within bounds; the supported label is aligned. Current answer_04 finding: jd_pay gives proration but no annual base figure, so it cannot establish pref_pay's CHF 100,000 target at part-time hours. Keep pay unknown and request the actual contracted-hours base amount."
+    },
+    {
+      "original_finding_index": 15,
+      "case_id": "PF-12",
+      "answer_ids": [
+        "answer_03",
+        "answer_04"
+      ],
+      "status": "resolved",
+      "resolution_evidence": "Current answer_03 finding: pref_location explicitly accepts two office days when annual base is at least CHF 160,000. jd_office states exactly two days and jd_salary starts at CHF 170,000, so the supported location label is aligned. Current answer_04 finding: The candidate-owned exception covers jd_office's two days because jd_salary's CHF 170,000 lower bound exceeds the CHF 160,000 condition. Passing solely for hybrid work ignores that alternative; pursue or clarify the separate conference benefit."
+    }
+  ],
+  "original_question_statuses": [
+    {
+      "case_id": "PF-01",
+      "status": "resolved",
+      "evidence": "pref_learning now asks for an employer-funded annual course and jd_learning funds one course each year; jd_travel explicitly states two annual work trips."
+    },
+    {
+      "case_id": "PF-02",
+      "status": "resolved_with_new_issue",
+      "evidence": "pref_async now asks specifically for written decisions before the weekly planning meeting. jd_posting explicitly says before the weekly planning call; jd_terms still omits timing, yielding the separate new blocker below."
+    }
+  ],
+  "special_negative_checks": [
+    {
+      "case_id": "PF-03",
+      "answer_id": "answer_04",
+      "status": "accurately_annotated",
+      "evidence": "The negative literally omits pref_remote from assessments; the annotation targets pref_remote with PF-COVERAGE. The conclusion still calls location unspecified, so the defect is missing assessment coverage rather than a false action."
+    },
+    {
+      "case_id": "PF-07",
+      "answer_id": "answer_04",
+      "status": "accurately_annotated",
+      "evidence": "The autonomy assessment cites the literal jd_hours meeting-time text. That quote is valid but irrelevant to technical decision authority; the annotation targets pref_autonomy with PF-EVIDENCE."
+    }
+  ],
+  "new_blockers": [
+    {
+      "case_id": "PF-02",
+      "answer_id": "answer_02",
+      "severity": "major",
+      "paths": [
+        "input.json#/jd/sources/1/text",
+        "gold.json#/units/2/acceptable_evidence_sets",
+        "answers.json#/answers/1/assessments/2"
+      ],
+      "evidence": [
+        "pref_async requires decisions in writing before the weekly planning meeting.",
+        "jd_terms says only: Weekly planning decisions are documented asynchronously.",
+        "answer_02 cites only jd_terms for pref_async and says written decisions precede the planning call."
+      ],
+      "issue": "Asynchronous documentation does not establish whether it occurs before the meeting. The jd_terms-only evidence set is semantically insufficient for this positive answer.",
+      "proposed_fix": "Amend the synthetic jd_terms source to say decisions are documented asynchronously before the weekly planning call, then refresh every literal quote that cites it. Alternatively, cite jd_posting as well in answer_02 and remove jd_terms alone as an acceptable evidence set for pref_async."
+    }
+  ],
+  "review_limit": "This is a bounded same-environment agent review. Structural validation and these judgments do not create human-approved gold or a live model result."
+}

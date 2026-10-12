@@ -1,0 +1,181 @@
+{
+  "schema": "maguire-quality-answers-v1",
+  "case_id": "CF-09",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "assessments": [
+        {
+          "target_id": "jd_1",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Required: produce API documentation with runnable examples."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "A supplied documentation excerpt includes a runnable request and response example for a fictional API."
+            }
+          ],
+          "rationale": "The excerpt includes a runnable API example."
+        },
+        {
+          "target_id": "jd_2",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Preferred: facilitate developer workshops for external partners."
+            },
+            {
+              "source_id": "fact_2",
+              "quote": "I have not facilitated an external developer workshop."
+            }
+          ],
+          "rationale": "The candidate reports no previous external workshop; the ability to facilitate a future workshop remains untested and is only preferred."
+        }
+      ],
+      "conclusion": {
+        "action": "pursue",
+        "text": "The required documentation work is supported; future workshop facilitation remains unknown with no past example.",
+        "next_step": "Lead with the existing API documentation and leave external workshop facilitation unclaimed."
+      },
+      "limitations": [
+        "The excerpt is supplied rather than independently verified.",
+        "No prior external workshop is reported; future facilitation ability is untested."
+      ]
+    },
+    {
+      "answer_id": "answer_02",
+      "assessments": [
+        {
+          "target_id": "jd_2",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Preferred: facilitate developer workshops for external partners."
+            },
+            {
+              "source_id": "fact_2",
+              "quote": "I have not facilitated an external developer workshop."
+            }
+          ],
+          "rationale": "The candidate reports no previous external workshop; the ability to facilitate a future workshop remains untested and is only preferred."
+        },
+        {
+          "target_id": "jd_1",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Required: produce API documentation with runnable examples."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "A supplied documentation excerpt includes a runnable request and response example for a fictional API."
+            }
+          ],
+          "rationale": "A runnable request and response supports the required documentation duty."
+        }
+      ],
+      "conclusion": {
+        "action": "show_existing_evidence",
+        "text": "The required documentation evidence can be shown while preferred workshop facilitation remains unknown.",
+        "next_step": "Show the supplied API example in the application packet."
+      },
+      "limitations": [
+        "Future external workshop facilitation is untested."
+      ]
+    },
+    {
+      "answer_id": "answer_03",
+      "assessments": [
+        {
+          "target_id": "jd_1",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Required: produce API documentation with runnable examples."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "A supplied documentation excerpt includes a runnable request and response example for a fictional API."
+            }
+          ],
+          "rationale": "The excerpt includes a runnable API example."
+        },
+        {
+          "target_id": "jd_2",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Preferred: facilitate developer workshops for external partners."
+            },
+            {
+              "source_id": "fact_2",
+              "quote": "I have not facilitated an external developer workshop."
+            }
+          ],
+          "rationale": "The candidate reports no previous external workshop; the ability to facilitate a future workshop remains untested and is only preferred."
+        }
+      ],
+      "conclusion": {
+        "action": "pass",
+        "text": "The missing preferred workshop history disqualifies the candidate despite meeting the required documentation duty.",
+        "next_step": "Do not apply."
+      },
+      "limitations": [
+        "The excerpt is supplied rather than independently verified.",
+        "No prior external workshop is reported; future facilitation ability is untested."
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "assessments": [
+        {
+          "target_id": "jd_1",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Required: produce API documentation with runnable examples."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "A supplied documentation excerpt includes a runnable request and response example for a fictional API."
+            }
+          ],
+          "rationale": "The excerpt includes a runnable API example."
+        },
+        {
+          "target_id": "jd_2",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Preferred: facilitate developer workshops for external partners."
+            },
+            {
+              "source_id": "fact_2",
+              "quote": "I have not facilitated an external developer workshop."
+            }
+          ],
+          "rationale": "The candidate has facilitated external developer workshops."
+        }
+      ],
+      "conclusion": {
+        "action": "pursue",
+        "text": "The required documentation work is supported; future workshop facilitation remains unknown with no past example.",
+        "next_step": "Lead with the existing API documentation and leave external workshop facilitation unclaimed."
+      },
+      "limitations": [
+        "The excerpt is supplied rather than independently verified.",
+        "No prior external workshop is reported; future facilitation ability is untested."
+      ]
+    }
+  ]
+}

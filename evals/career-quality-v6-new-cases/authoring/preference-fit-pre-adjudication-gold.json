@@ -1,0 +1,145 @@
+{
+  "schema": "maguire-v6-new-gold",
+  "family": "preference-fit",
+  "human_approved": false,
+  "exposure": {
+    "checker_code_seen": false,
+    "previous_cases_seen": false,
+    "predictions_seen": false
+  },
+  "rows": [
+    {
+      "case_id": "PF6H-01",
+      "verdict": "pass",
+      "reason": "Five required station days occupy the stated induction week, and the after-induction remote permission preserves the clearance condition.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "PF6H-02",
+      "verdict": "fail",
+      "reason": "The offered EUR 1,200 annual allowance is accurately stated, but it is EUR 600 below the candidate's EUR 1,800 annual minimum.",
+      "error_claim_ids": [
+        "c2"
+      ]
+    },
+    {
+      "case_id": "PF6H-03",
+      "verdict": "pass",
+      "reason": "The exhaustive Saturday-only rota does not intersect the candidate's Monday–Friday prohibition.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "PF6H-04",
+      "verdict": "pass",
+      "reason": "The active update explicitly removes mandatory attendance after onboarding and allows voluntary visits.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "PF6H-05",
+      "verdict": "pass",
+      "reason": "The one-day role description would meet the candidate's limit, and the answer explicitly says the conflicting later two-day note leaves the current rule unresolved. It makes no unqualified current-fit claim.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "PF6H-06",
+      "verdict": "fail",
+      "reason": "The CHF 120 draft is real historical evidence, but it is withdrawn and the current offer has no transport stipend. The fit conclusion is false.",
+      "error_claim_ids": [
+        "c2"
+      ]
+    },
+    {
+      "case_id": "PF6H-07",
+      "verdict": "pass",
+      "reason": "The only required Tuesday demo ends exactly at the 16:00 cutoff in the same local time zone.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "PF6H-08",
+      "verdict": "pass",
+      "reason": "EUR 2,400 per year equals EUR 200 per calendar month as a budget equivalent; the answer does not assert a payment schedule.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "PF6H-09",
+      "verdict": "fail",
+      "reason": "Pending procurement and no activation promise cannot support a first-day guarantee; the pending status itself is accurately stated.",
+      "error_claim_ids": [
+        "c2"
+      ]
+    },
+    {
+      "case_id": "PF6H-10",
+      "verdict": "pass",
+      "reason": "The first-quarter travel restriction matches the no-travel term, while later travel is only described as possible.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "PF6H-11",
+      "verdict": "fail",
+      "reason": "The active role requires two weekly station days, not one. Both the reported term and its claimed fit are false.",
+      "error_claim_ids": [
+        "c1",
+        "c2"
+      ]
+    },
+    {
+      "case_id": "PF6H-12",
+      "verdict": "pass",
+      "reason": "The written offer specifies Monday through Thursday working days and Friday free, exactly matching the expressed preference.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "PF6H-13",
+      "verdict": "needs_review",
+      "reason": "The team may approve Wednesday remote work case by case, and no approval decision has been made. The answer's feasibility judgment remains tentative; the source does not establish that a manager is the decision maker. That authority detail is unsupported but not explicitly contradicted by the complete inventory.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "PF6H-14",
+      "verdict": "pass",
+      "reason": "The written first-month CHF 100 monthly transport stipend exceeds the candidate's CHF 80 monthly floor.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "PF6H-15",
+      "verdict": "fail",
+      "reason": "Three required overnight trips each month exceed the candidate's two-trip cap; the role requirement itself is correctly quoted.",
+      "error_claim_ids": [
+        "c2"
+      ]
+    },
+    {
+      "case_id": "PF6H-16",
+      "verdict": "pass",
+      "reason": "Two required onboarding station days meet the two-day cap, and both the remote preference and permission retain the same clearance condition after onboarding.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "PF6H-17",
+      "verdict": "fail",
+      "reason": "The newer update expressly supersedes the three-day term; four current required days exceed the candidate's three-day cap. The supersession and current-day premises are true.",
+      "error_claim_ids": [
+        "c3"
+      ]
+    },
+    {
+      "case_id": "PF6H-18",
+      "verdict": "pass",
+      "reason": "Only the internal team demo is required, which the candidate accepts; the role explicitly has no mandatory public demo.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "PF6H-19",
+      "verdict": "pass",
+      "reason": "The required rota is exhaustive Monday–Friday and the source explicitly excludes weekend on-call shifts.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "PF6H-20",
+      "verdict": "pass",
+      "reason": "The employer allows approved EU locations but has not listed approved countries. The answer preserves Portugal as a possibility and asks for confirmation, without claiming approval.",
+      "error_claim_ids": []
+    }
+  ]
+}

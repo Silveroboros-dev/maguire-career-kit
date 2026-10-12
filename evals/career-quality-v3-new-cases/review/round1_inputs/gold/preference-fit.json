@@ -1,0 +1,245 @@
+{
+  "schema": "maguire-v3-new-gold",
+  "family": "preference-fit",
+  "human_approved": false,
+  "exposure": {
+    "author": "preference-fit worker",
+    "basis": "manual fictional authoring",
+    "prior_eval_access": false,
+    "checker_access": false,
+    "runtime_predictions_seen": false
+  },
+  "rows": [
+    {
+      "case_id": "PF3N-01",
+      "verdict": "pass",
+      "reason": "The published annual amount exceeds the candidate-owned annual floor.",
+      "error_claim_ids": [],
+      "review_reason": null,
+      "tags": [
+        "amount",
+        "bounded_inference"
+      ]
+    },
+    {
+      "case_id": "PF3N-02",
+      "verdict": "pass",
+      "reason": "The lower bound of the stated monthly range is already above the preference floor.",
+      "error_claim_ids": [],
+      "review_reason": null,
+      "tags": [
+        "range",
+        "bounded_inference"
+      ]
+    },
+    {
+      "case_id": "PF3N-03",
+      "verdict": "pass",
+      "reason": "The required frequency is narrower than the candidate ceiling.",
+      "error_claim_ids": [],
+      "review_reason": null,
+      "tags": [
+        "ceiling",
+        "attendance"
+      ]
+    },
+    {
+      "case_id": "PF3N-04",
+      "verdict": "pass",
+      "reason": "The explicit Saturday-only schedule stays inside both the frequency and weekday limits.",
+      "error_claim_ids": [],
+      "review_reason": null,
+      "tags": [
+        "permitted_scope",
+        "on_call"
+      ]
+    },
+    {
+      "case_id": "PF3N-05",
+      "verdict": "pass",
+      "reason": "The employer explicitly replaced the old three-day rule with a one-day rule.",
+      "error_claim_ids": [],
+      "review_reason": null,
+      "tags": [
+        "rule_change",
+        "attendance"
+      ]
+    },
+    {
+      "case_id": "PF3N-06",
+      "verdict": "pass",
+      "reason": "The employer expressly allows remote work after an on-site period equal to the candidate exception.",
+      "error_claim_ids": [],
+      "review_reason": null,
+      "tags": [
+        "condition",
+        "remote_work"
+      ]
+    },
+    {
+      "case_id": "PF3N-07",
+      "verdict": "pass",
+      "reason": "An undecided amount cannot establish whether the stated minimum is met.",
+      "error_claim_ids": [],
+      "review_reason": null,
+      "tags": [
+        "uncertainty",
+        "caution"
+      ]
+    },
+    {
+      "case_id": "PF3N-08",
+      "verdict": "pass",
+      "reason": "The answer makes satisfaction conditional on a future written term and does not claim the term exists now.",
+      "error_claim_ids": [],
+      "review_reason": null,
+      "tags": [
+        "conditional_advice",
+        "remote_work"
+      ]
+    },
+    {
+      "case_id": "PF3N-09",
+      "verdict": "pass",
+      "reason": "The instruction preserves the explicit pending status and does not count unprovided captions as a fit.",
+      "error_claim_ids": [],
+      "review_reason": null,
+      "tags": [
+        "uncertainty",
+        "positive_advice"
+      ]
+    },
+    {
+      "case_id": "PF3N-10",
+      "verdict": "pass",
+      "reason": "The two premises are explicit and the question makes no claim about eligible courses.",
+      "error_claim_ids": [],
+      "review_reason": null,
+      "tags": [
+        "nonassertive",
+        "premise_split"
+      ]
+    },
+    {
+      "case_id": "PF3N-11",
+      "verdict": "pass",
+      "reason": "Two is within the permitted maximum, and the answer preserves the approval condition.",
+      "error_claim_ids": [],
+      "review_reason": null,
+      "tags": [
+        "permission",
+        "narrower_scope"
+      ]
+    },
+    {
+      "case_id": "PF3N-12",
+      "verdict": "pass",
+      "reason": "The statement is limited to the only required demos, whose stated end time is 16:00.",
+      "error_claim_ids": [],
+      "review_reason": null,
+      "tags": [
+        "time_bound",
+        "narrower_scope"
+      ]
+    },
+    {
+      "case_id": "PF3N-13",
+      "verdict": "fail",
+      "reason": "Permission to request does not guarantee approval or three days.",
+      "error_claim_ids": [
+        "B"
+      ],
+      "review_reason": null,
+      "tags": [
+        "guarantee_inflation"
+      ]
+    },
+    {
+      "case_id": "PF3N-14",
+      "verdict": "fail",
+      "reason": "The note explicitly lacks authority to amend the two-day requirement.",
+      "error_claim_ids": [
+        "A",
+        "B"
+      ],
+      "review_reason": null,
+      "tags": [
+        "authority",
+        "rule_change"
+      ]
+    },
+    {
+      "case_id": "PF3N-15",
+      "verdict": "fail",
+      "reason": "The posting explicitly requires the duty that the candidate excludes.",
+      "error_claim_ids": [
+        "A",
+        "B"
+      ],
+      "review_reason": null,
+      "tags": [
+        "polarity",
+        "duty"
+      ]
+    },
+    {
+      "case_id": "PF3N-16",
+      "verdict": "fail",
+      "reason": "A platform feature and candidate requirement do not establish an employer commitment.",
+      "error_claim_ids": [
+        "B"
+      ],
+      "review_reason": null,
+      "tags": [
+        "attribution",
+        "commitment"
+      ]
+    },
+    {
+      "case_id": "PF3N-17",
+      "verdict": "fail",
+      "reason": "The $900 is annual, only $75 per month if evenly spread, below the $200 monthly minimum.",
+      "error_claim_ids": [
+        "B"
+      ],
+      "review_reason": null,
+      "tags": [
+        "time_scale",
+        "amount"
+      ]
+    },
+    {
+      "case_id": "PF3N-18",
+      "verdict": "fail",
+      "reason": "The stated allowance expressly excludes conference travel.",
+      "error_claim_ids": [
+        "B"
+      ],
+      "review_reason": null,
+      "tags": [
+        "scope",
+        "expense_category"
+      ]
+    },
+    {
+      "case_id": "PF3N-19",
+      "verdict": "needs_review",
+      "reason": "Offers could preserve the contingent option or imply a firm benefit; the fragment does not decide which.",
+      "error_claim_ids": [],
+      "review_reason": "Clarify whether offers means possible agreement or guaranteed post-trial schedule.",
+      "tags": [
+        "modality_ambiguity"
+      ]
+    },
+    {
+      "case_id": "PF3N-20",
+      "verdict": "needs_review",
+      "reason": "Available may mean requestable under the stated condition or routinely supplied at every meeting.",
+      "error_claim_ids": [],
+      "review_reason": "Clarify whether available refers to requestable captions or unconditional provision.",
+      "tags": [
+        "condition_ambiguity"
+      ]
+    }
+  ]
+}

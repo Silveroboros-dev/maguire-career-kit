@@ -1,0 +1,74 @@
+{
+  "schema": "maguire-quality-gold-v1",
+  "case_id": "CF2-03",
+  "family": "failed recency criterion presented as future incapacity",
+  "title": "Recent console practice versus future monitoring",
+  "review_status": "proposed_agent_authored",
+  "human_approved": false,
+  "units": [
+    {
+      "target_id": "jd_1",
+      "kind": "minimum",
+      "allowed_labels": [
+        "contradicted"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_1",
+          "fact_1"
+        ]
+      ],
+      "rationale": "The explicit last-use date fails the specified two-year recency gate at the decision date.",
+      "required_points": [
+        "2021 last use",
+        "Two-year recency fails"
+      ],
+      "forbidden_inferences": [
+        "A failed recency condition is not future incapacity"
+      ]
+    },
+    {
+      "target_id": "jd_2",
+      "kind": "future_duty",
+      "allowed_labels": [
+        "unknown"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_2",
+          "fact_1"
+        ]
+      ],
+      "rationale": "Old console experience does not establish current alert handling or inability to learn it.",
+      "required_points": [
+        "Future alert handling is unproven"
+      ],
+      "forbidden_inferences": [
+        "Do not infer inability to monitor alerts"
+      ]
+    }
+  ],
+  "forbidden_assessment_targets": [],
+  "acceptable_actions": [
+    "clarify"
+  ],
+  "critical_errors": [
+    {
+      "id": "CF2-03-E1",
+      "description": "A failed past-use minimum does not establish inability to perform a future duty.",
+      "target_ids": [
+        "jd_2"
+      ]
+    },
+    {
+      "id": "CF2-03-E2",
+      "description": "The old date supports a recency conflict, not a forecast of incapacity.",
+      "target_ids": [
+        "jd_2"
+      ]
+    }
+  ],
+  "notes": [
+    "All people, roles, dates, and source statements are synthetic."
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": "maguire-quality-input-v1",
+  "case_id": "PF-07",
+  "grader": "preference_fit",
+  "data_class": "synthetic",
+  "decision_at": "2026-10-12T10:00:00Z",
+  "task": "Assess this role against the candidate's recorded work preferences using only the supplied sources. Explain each preference judgment and recommend a supported next step.",
+  "jd": {
+    "title": "Technical Design Lead",
+    "sources": [
+      {
+        "id": "jd_culture",
+        "text": "We are a high-ownership, entrepreneurial team with a collaborative culture.",
+        "observed_at": "2026-10-01T09:00:00Z",
+        "authority": "job_description",
+        "supersedes": []
+      },
+      {
+        "id": "jd_remote",
+        "text": "This position is remote-first with one optional team gathering each quarter; office attendance is not required.",
+        "observed_at": "2026-10-01T09:00:00Z",
+        "authority": "job_description",
+        "supersedes": []
+      },
+      {
+        "id": "jd_hours",
+        "text": "Required core meetings run 13:00–16:00 Europe/Zurich; no required core meeting ends later.",
+        "observed_at": "2026-10-01T09:00:00Z",
+        "authority": "job_description",
+        "supersedes": []
+      }
+    ]
+  },
+  "candidate": {
+    "facts": [],
+    "preferences": [
+      {
+        "id": "pref_autonomy",
+        "text": "I require authority to choose technical implementation without manager approval for routine design decisions.",
+        "priority": "must_have",
+        "allowed_exceptions": [],
+        "confirmed_at": "2026-09-25T12:00:00Z"
+      },
+      {
+        "id": "pref_remote",
+        "text": "I require zero compulsory office days.",
+        "priority": "must_have",
+        "allowed_exceptions": [],
+        "confirmed_at": "2026-09-25T12:00:00Z"
+      },
+      {
+        "id": "pref_hours",
+        "text": "I prefer core meetings to finish by 17:00 Europe/Zurich.",
+        "priority": "nice_to_have",
+        "allowed_exceptions": [],
+        "confirmed_at": "2026-09-25T12:00:00Z"
+      }
+    ]
+  }
+}

@@ -1,0 +1,2139 @@
+{
+  "schema": "maguire-v5-new-normalized",
+  "family": "candidate-fit",
+  "human_approved": false,
+  "exposure": {
+    "checker_code_seen": false,
+    "previous_cases_seen": false,
+    "predictions_seen": false
+  },
+  "rows": [
+    {
+      "case_id": "CF5H-01",
+      "sources": [
+        {
+          "id": "CF5H-01-s1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "ledger_maintenance",
+              "object": "archive migration ledger",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "team": "archive"
+              },
+              "time": {
+                "start": "2024-01",
+                "end": "2025-03"
+              },
+              "measure": null
+            },
+            {
+              "subject": "candidate",
+              "predicate": "handoff_recording",
+              "object": "archive migration handoffs",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "team": "archive"
+              },
+              "time": {
+                "start": "2024-01",
+                "end": "2025-03"
+              },
+              "measure": {
+                "kind": "frequency",
+                "unit": "handoff",
+                "lower": 1,
+                "upper": 1,
+                "per": "week"
+              }
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "Mara maintained the archive migration ledger for over a year",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "ledger_maintenance",
+              "object": "archive migration ledger",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "team": "archive",
+                "duration_months_lower": 13
+              },
+              "time": {
+                "start": "2024-01",
+                "end": "2025-03"
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "recorded weekly handoffs",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "handoff_recording",
+              "object": "archive migration handoffs",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "team": "archive"
+              },
+              "time": {
+                "start": "2024-01",
+                "end": "2025-03"
+              },
+              "measure": {
+                "kind": "frequency",
+                "unit": "handoff",
+                "lower": 1,
+                "upper": 1,
+                "per": "week"
+              }
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF5H-02",
+      "sources": [
+        {
+          "id": "CF5H-02-s1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "demo_shadowing",
+              "object": "customer demos",
+              "polarity": "positive",
+              "modality": "permission",
+              "epistemic_scope": "world",
+              "scope": {
+                "project": "April 2025 pilot"
+              },
+              "time": {
+                "start": "2025-04",
+                "end": "2025-04"
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "demo",
+                "lower": 2,
+                "upper": 2,
+                "per": null
+              }
+            },
+            {
+              "subject": "candidate",
+              "predicate": "demo_presentation",
+              "object": "customer demos",
+              "polarity": "negative",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "project": "April 2025 pilot"
+              },
+              "time": {
+                "start": "2025-04",
+                "end": "2025-04"
+              },
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "Mara presented two customer demos during the April 2025 pilot",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "demo_presentation",
+              "object": "customer demos",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "project": "April 2025 pilot"
+              },
+              "time": {
+                "start": "2025-04",
+                "end": "2025-04"
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "demo",
+                "lower": 2,
+                "upper": 2,
+                "per": null
+              }
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF5H-03",
+      "sources": [
+        {
+          "id": "CF5H-03-s1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "incident_review_facilitation",
+              "object": "post-incident reviews",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "service": "municipal data service"
+              },
+              "time": {
+                "start": "2025-03",
+                "end": "2025-08"
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "review",
+                "lower": 4,
+                "upper": 4,
+                "per": null
+              }
+            },
+            {
+              "subject": "candidate",
+              "predicate": "follow_up_documentation",
+              "object": "post-incident review owners",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "service": "municipal data service"
+              },
+              "time": {
+                "start": "2025-03",
+                "end": "2025-08"
+              },
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "CF5H-03-s2",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "incident_review_facilitation",
+              "object": "post-incident reviews",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "Mara facilitated four post-incident reviews",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "incident_review_facilitation",
+              "object": "post-incident reviews",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "service": "municipal data service"
+              },
+              "time": {
+                "start": "2025-03",
+                "end": "2025-08"
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "review",
+                "lower": 4,
+                "upper": 4,
+                "per": null
+              }
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "documented their follow-up owners",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "follow_up_documentation",
+              "object": "post-incident review owners",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "service": "municipal data service"
+              },
+              "time": {
+                "start": "2025-03",
+                "end": "2025-08"
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c3",
+          "quote": "The role requires post-incident review facilitation",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role",
+              "predicate": "incident_review_facilitation",
+              "object": "post-incident reviews",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF5H-04",
+      "sources": [
+        {
+          "id": "CF5H-04-s1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "alert_triage",
+              "object": "service alerts",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "project": "six-week service pilot"
+              },
+              "time": {
+                "start": "2025",
+                "end": "2025"
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "alert",
+                "lower": 18,
+                "upper": 18,
+                "per": null
+              }
+            },
+            {
+              "subject": "candidate",
+              "predicate": "alert_escalation",
+              "object": "service alerts to SRE team",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "project": "six-week service pilot"
+              },
+              "time": {
+                "start": "2025",
+                "end": "2025"
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "alert",
+                "lower": 3,
+                "upper": 3,
+                "per": null
+              }
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "Mara triaged alerts",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "alert_triage",
+              "object": "service alerts",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "project": "six-week service pilot"
+              },
+              "time": {
+                "start": "2025",
+                "end": "2025"
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "escalated three to the SRE team during the six-week service pilot",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "alert_escalation",
+              "object": "service alerts to SRE team",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "project": "six-week service pilot"
+              },
+              "time": {
+                "start": "2025",
+                "end": "2025"
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "alert",
+                "lower": 3,
+                "upper": 3,
+                "per": null
+              }
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF5H-05",
+      "sources": [
+        {
+          "id": "CF5H-05-s1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "caption_accuracy_testing",
+              "object": "recorded interview captions",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "project": "2025 accessibility pilot",
+                "mode": "recorded"
+              },
+              "time": {
+                "year": "2025"
+              },
+              "measure": null
+            },
+            {
+              "subject": "candidate",
+              "predicate": "live_captions",
+              "object": "live interview caption operation",
+              "polarity": "negative",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "event": "live_interview"
+              },
+              "time": {},
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "CF5H-05-s2",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "live_captions",
+              "object": "customer interview caption operation",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {
+                "event": "live_customer_interview"
+              },
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "Mara's recorded-caption QA experience is transferable to live-caption operation",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "fit_relevance",
+              "object": "live-caption operation",
+              "polarity": "positive",
+              "modality": "record_assessment",
+              "epistemic_scope": "packet",
+              "scope": {
+                "source_activity": "recorded_caption_accuracy_testing",
+                "target_activity": "live_customer_interview_caption_operation"
+              },
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF5H-06",
+      "sources": [
+        {
+          "id": "CF5H-06-s1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "remote_work",
+              "object": "work_location",
+              "polarity": "positive",
+              "modality": "permission",
+              "epistemic_scope": "world",
+              "scope": {
+                "employer": "former_employer"
+              },
+              "time": {
+                "year": "2023"
+              },
+              "measure": {
+                "kind": "frequency",
+                "unit": "day",
+                "lower": 3,
+                "upper": 3,
+                "per": "week"
+              }
+            },
+            {
+              "subject": "candidate",
+              "predicate": "employment",
+              "object": "former_employer",
+              "polarity": "negative",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "start": "2024-01"
+              },
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "CF5H-06-s2",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "station_attendance",
+              "object": "office",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {
+                "weekday": "Monday–Friday",
+                "status": "current"
+              },
+              "time": {},
+              "measure": {
+                "kind": "frequency",
+                "unit": "day",
+                "lower": 5,
+                "upper": 5,
+                "per": "week"
+              }
+            },
+            {
+              "subject": "role",
+              "predicate": "remote_work",
+              "object": "work_location",
+              "polarity": "negative",
+              "modality": "permission",
+              "epistemic_scope": "world",
+              "scope": {
+                "status": "current"
+              },
+              "time": {},
+              "measure": {
+                "kind": "frequency",
+                "unit": "day",
+                "lower": 0,
+                "upper": 0,
+                "per": "week"
+              }
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "This role currently permits Mara to work remotely three days a week",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role",
+              "predicate": "remote_work",
+              "object": "work_location",
+              "polarity": "positive",
+              "modality": "permission",
+              "epistemic_scope": "world",
+              "scope": {
+                "status": "current"
+              },
+              "time": {},
+              "measure": {
+                "kind": "frequency",
+                "unit": "day",
+                "lower": 3,
+                "upper": 3,
+                "per": "week"
+              }
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF5H-07",
+      "sources": [
+        {
+          "id": "CF5H-07-s1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "ocr_method",
+              "object": "scan indexing review",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "project": "pilot"
+              },
+              "time": {
+                "start": "2025-06",
+                "end": "2025-08"
+              },
+              "measure": null
+            },
+            {
+              "subject": "candidate",
+              "predicate": "training_certification",
+              "object": "OCR training certificate",
+              "polarity": "negative",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "Mara has OCR indexing experience",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "ocr_method",
+              "object": "scan indexing review",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "project": "pilot"
+              },
+              "time": {
+                "start": "2025-06",
+                "end": "2025-08"
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "no OCR training certificate",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "training_certification",
+              "object": "OCR training certificate",
+              "polarity": "negative",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF5H-08",
+      "sources": [
+        {
+          "id": "CF5H-08-s1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "vendor_cutover_coordination",
+              "object": "vendor cutovers",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "project": "2025 pilot",
+                "condition": "engineering_signoff"
+              },
+              "time": {
+                "year": "2025"
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "cutover",
+                "lower": 3,
+                "upper": 3,
+                "per": null
+              }
+            }
+          ]
+        },
+        {
+          "id": "CF5H-08-s2",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "vendor_cutover_coordination",
+              "object": "vendor cutovers",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "Mara coordinated three vendor cutovers under engineering signoff",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "vendor_cutover_coordination",
+              "object": "vendor cutovers",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "project": "2025 pilot",
+                "condition": "engineering_signoff"
+              },
+              "time": {
+                "year": "2025"
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "cutover",
+                "lower": 3,
+                "upper": 3,
+                "per": null
+              }
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "the role requires cutover coordination",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role",
+              "predicate": "vendor_cutover_coordination",
+              "object": "vendor cutovers",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF5H-09",
+      "sources": [
+        {
+          "id": "CF5H-09-s1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "course_completion",
+              "object": "internal security awareness course",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            },
+            {
+              "subject": "candidate",
+              "predicate": "training_certification",
+              "object": "CISSP certification",
+              "polarity": "negative",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "CF5H-09-s2",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "training_certification",
+              "object": "CISSP certification",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "Mara holds the CISSP certification",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "training_certification",
+              "object": "CISSP certification",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "required by the role",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role",
+              "predicate": "training_certification",
+              "object": "CISSP certification",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF5H-10",
+      "sources": [
+        {
+          "id": "CF5H-10-s1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "alert_escalation",
+              "object": "severity-one service alerts",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "project": "2025 service pilot",
+                "recipient": "incident_lead"
+              },
+              "time": {
+                "year": "2025"
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "alert",
+                "lower": 2,
+                "upper": 2,
+                "per": null
+              }
+            },
+            {
+              "subject": "incident lead",
+              "predicate": "evaluation_authority",
+              "object": "final incident decisions",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "project": "2025 service pilot"
+              },
+              "time": {
+                "year": "2025"
+              },
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "CF5H-10-s2",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "alert_escalation",
+              "object": "service incidents",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "Mara escalated two severity-one alerts to an incident lead during the pilot",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "alert_escalation",
+              "object": "severity-one service alerts",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "project": "2025 service pilot",
+                "recipient": "incident_lead"
+              },
+              "time": {
+                "year": "2025"
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "alert",
+                "lower": 2,
+                "upper": 2,
+                "per": null
+              }
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "the lead made final decisions",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "incident lead",
+              "predicate": "evaluation_authority",
+              "object": "final incident decisions",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "project": "2025 service pilot"
+              },
+              "time": {
+                "year": "2025"
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c3",
+          "quote": "The role requires incident escalation experience",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role",
+              "predicate": "alert_escalation",
+              "object": "service incidents",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF5H-11",
+      "sources": [
+        {
+          "id": "CF5H-11-s1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "kubernetes_use",
+              "object": "Kubernetes",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "environment": "personal_lab",
+                "only": true
+              },
+              "time": {},
+              "measure": {
+                "kind": "count",
+                "unit": "week",
+                "lower": 4,
+                "upper": 4,
+                "per": null
+              }
+            },
+            {
+              "subject": "candidate",
+              "predicate": "kubernetes_use",
+              "object": "Kubernetes",
+              "polarity": "negative",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "environment": "production"
+              },
+              "time": {},
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "CF5H-11-s2",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "kubernetes_use",
+              "object": "production Kubernetes experience",
+              "polarity": "negative",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {
+                "environment": "production"
+              },
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "The role does not require production Kubernetes experience",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role",
+              "predicate": "kubernetes_use",
+              "object": "production Kubernetes experience",
+              "polarity": "negative",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {
+                "environment": "production"
+              },
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "Mara has only used it in a personal lab",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "kubernetes_use",
+              "object": "Kubernetes",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "environment": "personal_lab",
+                "only": true
+              },
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF5H-12",
+      "sources": [
+        {
+          "id": "CF5H-12-s1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "archive_processing",
+              "object": "legal archive boxes",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "archive_total": 5
+              },
+              "time": {
+                "end": "2025-09"
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "box",
+                "lower": 2,
+                "upper": 2,
+                "per": null
+              }
+            },
+            {
+              "subject": "candidate",
+              "predicate": "archive_processing",
+              "object": "remaining legal archive boxes",
+              "polarity": "negative",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "archive_total": 5
+              },
+              "time": {
+                "end": "2025-09"
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "box",
+                "lower": 3,
+                "upper": 3,
+                "per": null
+              }
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "Mara processed all five boxes in the legal archive by September 2025",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "archive_processing",
+              "object": "legal archive boxes",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "archive_total": 5
+              },
+              "time": {
+                "end": "2025-09"
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "box",
+                "lower": 5,
+                "upper": 5,
+                "per": null
+              }
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF5H-13",
+      "sources": [
+        {
+          "id": "CF5H-13-s1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "plan_drafting",
+              "object": "API migration plan",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "project": "2025 pilot",
+                "contribution": "personal"
+              },
+              "time": {
+                "year": "2025"
+              },
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "CF5H-13-s2",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "plan_review",
+              "object": "API migration plan",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "project": "2025 pilot"
+              },
+              "time": {
+                "year": "2025"
+              },
+              "measure": null
+            },
+            {
+              "subject": "candidate",
+              "predicate": "plan_drafting",
+              "object": "API migration plan",
+              "polarity": "negative",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "project": "2025 pilot",
+                "contribution": "personal"
+              },
+              "time": {
+                "year": "2025"
+              },
+              "measure": null
+            },
+            {
+              "subject": "Jo",
+              "predicate": "plan_drafting",
+              "object": "API migration plan",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "project": "2025 pilot"
+              },
+              "time": {
+                "year": "2025"
+              },
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "Mara drafted the API migration plan for the 2025 pilot",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "plan_drafting",
+              "object": "API migration plan",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "project": "2025 pilot",
+                "contribution": "personal"
+              },
+              "time": {
+                "year": "2025"
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF5H-14",
+      "sources": [
+        {
+          "id": "CF5H-14-s1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "guide_writing",
+              "object": "bilingual French/English client onboarding guides",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "languages": "French,English",
+                "medium": "written"
+              },
+              "time": {},
+              "measure": {
+                "kind": "count",
+                "unit": "guide",
+                "lower": 3,
+                "upper": 3,
+                "per": null
+              }
+            },
+            {
+              "subject": "candidate",
+              "predicate": "client_onboarding",
+              "object": "live client sessions",
+              "polarity": "negative",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "languages": "French,English",
+                "medium": "live"
+              },
+              "time": {},
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "CF5H-14-s2",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "guide_writing",
+              "object": "bilingual written onboarding guides",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {
+                "medium": "written"
+              },
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "Mara wrote three bilingual French/English onboarding guides",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "guide_writing",
+              "object": "bilingual French/English client onboarding guides",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "languages": "French,English",
+                "medium": "written"
+              },
+              "time": {},
+              "measure": {
+                "kind": "count",
+                "unit": "guide",
+                "lower": 3,
+                "upper": 3,
+                "per": null
+              }
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "the role requires bilingual written onboarding guides",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role",
+              "predicate": "guide_writing",
+              "object": "bilingual written onboarding guides",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {
+                "medium": "written"
+              },
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF5H-15",
+      "sources": [
+        {
+          "id": "CF5H-15-s1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "ticket_tagging",
+              "object": "support tickets",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "team_size": 6
+              },
+              "time": {},
+              "measure": null
+            },
+            {
+              "subject": "team",
+              "predicate": "triage_time_reduction",
+              "object": "mean triage time",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "team_size": 6,
+                "period": "that_quarter"
+              },
+              "time": {},
+              "measure": {
+                "kind": "rate",
+                "unit": "percent",
+                "lower": 30,
+                "upper": 30,
+                "per": null
+              }
+            },
+            {
+              "subject": "report",
+              "predicate": "individual_attribution",
+              "object": "triage time reduction",
+              "polarity": "negative",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "period": "that_quarter"
+              },
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "Mara cut mean triage time by 30% that quarter",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "triage_time_reduction",
+              "object": "mean triage time",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "period": "that_quarter"
+              },
+              "time": {},
+              "measure": {
+                "kind": "rate",
+                "unit": "percent",
+                "lower": 30,
+                "upper": 30,
+                "per": null
+              }
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF5H-16",
+      "sources": [
+        {
+          "id": "CF5H-16-s1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "rollback_plan_writing",
+              "object": "internal pilot deployment rollback plans",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "environment": "internal_pilot"
+              },
+              "time": {},
+              "measure": {
+                "kind": "count",
+                "unit": "plan",
+                "lower": 3,
+                "upper": 3,
+                "per": null
+              }
+            },
+            {
+              "subject": "candidate",
+              "predicate": "rollback_plan_use",
+              "object": "internal pilot rollback plans",
+              "polarity": "negative",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "environment": "production"
+              },
+              "time": {},
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "CF5H-16-s2",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "rollback_plan_documentation",
+              "object": "deployment rollback plans",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "Mara has written rollback plans for three internal pilots",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "rollback_plan_writing",
+              "object": "internal pilot deployment rollback plans",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "environment": "internal_pilot"
+              },
+              "time": {},
+              "measure": {
+                "kind": "count",
+                "unit": "plan",
+                "lower": 3,
+                "upper": 3,
+                "per": null
+              }
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "The role requires rollback-plan documentation",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role",
+              "predicate": "rollback_plan_documentation",
+              "object": "deployment rollback plans",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF5H-17",
+      "sources": [
+        {
+          "id": "CF5H-17-s1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "training_certification",
+              "object": "data privacy certification",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "year": "2025",
+                "month": "05"
+              },
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "CF5H-17-s2",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "course_completion",
+              "object": "vendor data privacy course",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "year": "2025",
+                "month": "05"
+              },
+              "measure": null
+            },
+            {
+              "subject": "candidate",
+              "predicate": "certification_exam",
+              "object": "data privacy exam",
+              "polarity": "negative",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "Mara completed the data privacy course in May 2025",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "course_completion",
+              "object": "vendor data privacy course",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "year": "2025",
+                "month": "05"
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "she did not take the certification exam",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "certification_exam",
+              "object": "data privacy exam",
+              "polarity": "negative",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF5H-18",
+      "sources": [
+        {
+          "id": "CF5H-18-s1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "sql_query",
+              "object": "synthetic data",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "environment": "sandbox",
+                "data_type": "synthetic"
+              },
+              "time": {},
+              "measure": null
+            },
+            {
+              "subject": "candidate",
+              "predicate": "sql_query",
+              "object": "production customer database",
+              "polarity": "negative",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "environment": "production",
+                "data_type": "customer"
+              },
+              "time": {},
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "CF5H-18-s2",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "sql_query",
+              "object": "production customer database",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {
+                "environment": "production",
+                "data_type": "customer"
+              },
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "Mara has queried production customer databases with SQL",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "sql_query",
+              "object": "production customer database",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "environment": "production",
+                "data_type": "customer"
+              },
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "as the role requires",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role",
+              "predicate": "sql_query",
+              "object": "production customer database",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {
+                "environment": "production",
+                "data_type": "customer"
+              },
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF5H-19",
+      "sources": [
+        {
+          "id": "CF5H-19-s1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "client_onboarding",
+              "object": "French-language sessions",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "language": "French"
+              },
+              "time": {
+                "year": "2025"
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "session",
+                "lower": 2,
+                "upper": 2,
+                "per": null
+              }
+            },
+            {
+              "subject": "candidate",
+              "predicate": "client_onboarding",
+              "object": "English-language sessions",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "language": "English"
+              },
+              "time": {
+                "year": "2025"
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "session",
+                "lower": 2,
+                "upper": 2,
+                "per": null
+              }
+            },
+            {
+              "subject": "candidate",
+              "predicate": "client_onboarding",
+              "object": "bilingual client onboarding",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "year": "2025"
+              },
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "CF5H-19-s2",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "client_onboarding",
+              "object": "bilingual client onboarding",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "Mara has handled onboarding in both French and English",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "client_onboarding",
+              "object": "bilingual client onboarding",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "year": "2025"
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "the role requires bilingual onboarding",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role",
+              "predicate": "client_onboarding",
+              "object": "bilingual client onboarding",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF5H-20",
+      "sources": [
+        {
+          "id": "CF5H-20-s1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "runbook_writing",
+              "object": "pilot runbook",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "project": "one-month pilot"
+              },
+              "time": {},
+              "measure": null
+            },
+            {
+              "subject": "candidate",
+              "predicate": "operator_training",
+              "object": "pilot runbook",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "project": "one-month pilot"
+              },
+              "time": {},
+              "measure": {
+                "kind": "count",
+                "unit": "operator",
+                "lower": 3,
+                "upper": 3,
+                "per": null
+              }
+            },
+            {
+              "subject": "candidate",
+              "predicate": "runbook_use",
+              "object": "pilot runbook",
+              "polarity": "negative",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "environment": "production"
+              },
+              "time": {},
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "CF5H-20-s2",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "runbook_writing",
+              "object": "runbook",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            },
+            {
+              "subject": "role",
+              "predicate": "operator_training",
+              "object": "operators",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "Mara wrote a pilot runbook",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "runbook_writing",
+              "object": "pilot runbook",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "project": "one-month pilot"
+              },
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "trained three operators on it",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "operator_training",
+              "object": "pilot runbook",
+              "polarity": "positive",
+              "modality": "self_report",
+              "epistemic_scope": "world",
+              "scope": {
+                "project": "one-month pilot"
+              },
+              "time": {},
+              "measure": {
+                "kind": "count",
+                "unit": "operator",
+                "lower": 3,
+                "upper": 3,
+                "per": null
+              }
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c3",
+          "quote": "the role calls for runbook writing",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role",
+              "predicate": "runbook_writing",
+              "object": "runbook",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c4",
+          "quote": "operator training",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role",
+              "predicate": "operator_training",
+              "object": "operators",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    }
+  ]
+}

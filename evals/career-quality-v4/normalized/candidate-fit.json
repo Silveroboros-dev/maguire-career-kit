@@ -1,0 +1,2037 @@
+{
+  "schema": "maguire-v4-normalized",
+  "family": "candidate-fit",
+  "human_approved": false,
+  "exposure": {
+    "author": "v4 normalization agent",
+    "basis": "manual review of predecessor annotations, raw fragments, v3 analysis and v4 schema",
+    "checker_access": false,
+    "runtime_predictions_seen": false,
+    "human_approved": false,
+    "limitations": "Known-case regression; no independent human review or raw-text extraction test."
+  },
+  "rows": [
+    {
+      "case_id": "CF3N-01",
+      "sources": [
+        {
+          "id": "CF3N-01-S1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "distance_saving",
+              "object": "courier route",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "setting": "warehouse pilot"
+              },
+              "time": {
+                "year": 2025,
+                "period": "pilot week"
+              },
+              "measure": {
+                "kind": "difference",
+                "unit": "km",
+                "lower": 84,
+                "upper": 84,
+                "per": null
+              }
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "My pilot route change saved at least 70 km of travel in that week, based on my own measurement.",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "distance_saving",
+              "object": "courier route",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "setting": "warehouse pilot"
+              },
+              "time": {
+                "year": 2025,
+                "period": "pilot week"
+              },
+              "measure": {
+                "kind": "difference",
+                "unit": "km",
+                "lower": 70,
+                "upper": null,
+                "per": null
+              }
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF3N-02",
+      "sources": [
+        {
+          "id": "CF3N-02-S1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "console_use",
+              "object": "dispatch consoles",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "setting": "migration"
+              },
+              "time": {
+                "year": 2024
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "consoles",
+                "lower": 12,
+                "upper": 12,
+                "per": null
+              }
+            },
+            {
+              "subject": "candidate",
+              "predicate": "archive_processing",
+              "object": "indexed archive cartons",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "setting": "migration",
+                "contribution": "personal"
+              },
+              "time": {
+                "year": 2024
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "cartons",
+                "lower": 26,
+                "upper": 26,
+                "per": null
+              }
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "I used more than ten dispatch consoles",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "console_use",
+              "object": "dispatch consoles",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "setting": "migration"
+              },
+              "time": {
+                "year": 2024
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "consoles",
+                "lower": 11,
+                "upper": null,
+                "per": null
+              }
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "personally indexed at least twenty archive cartons",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "archive_processing",
+              "object": "indexed archive cartons",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "setting": "migration",
+                "contribution": "personal"
+              },
+              "time": {
+                "year": 2024
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "cartons",
+                "lower": 20,
+                "upper": null,
+                "per": null
+              }
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF3N-03",
+      "sources": [
+        {
+          "id": "CF3N-03-S1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "alert_triage",
+              "object": "monitoring alerts",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "shift": "weekday"
+              },
+              "time": {
+                "year": 2025
+              },
+              "measure": null
+            },
+            {
+              "subject": "candidate",
+              "predicate": "alert_escalation",
+              "object": "unresolved monitoring alerts to duty engineer",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "shift": "weekday"
+              },
+              "time": {
+                "year": 2025
+              },
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "CF3N-03-JD",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "alert_triage",
+              "object": "monitoring alerts",
+              "modality": "requirement",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "shift": "weekday"
+              },
+              "time": {},
+              "measure": null
+            },
+            {
+              "subject": "role",
+              "predicate": "alert_escalation",
+              "object": "monitoring alerts to duty engineer",
+              "modality": "requirement",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "shift": "weekday"
+              },
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "weekday alert triage",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "alert_triage",
+              "object": "monitoring alerts",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "shift": "weekday"
+              },
+              "time": {
+                "year": 2025
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "and escalation",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "alert_escalation",
+              "object": "unresolved monitoring alerts to duty engineer",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "shift": "weekday"
+              },
+              "time": {
+                "year": 2025
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c3",
+          "quote": "directly relevant to the role’s weekday escalation requirement",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate weekday alert triage and escalation",
+              "predicate": "fit_relevance",
+              "object": "role weekday escalation requirement",
+              "modality": "record_assessment",
+              "polarity": "positive",
+              "epistemic_scope": "packet",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c4",
+          "quote": "the role’s weekday escalation requirement",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role",
+              "predicate": "alert_escalation",
+              "object": "monitoring alerts to duty engineer",
+              "modality": "requirement",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "shift": "weekday"
+              },
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF3N-04",
+      "sources": [
+        {
+          "id": "CF3N-04-S1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "archive_processing",
+              "object": "archive boxes",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "contribution": "personal"
+              },
+              "time": {
+                "year": 2025,
+                "period": "one calendar month"
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "boxes",
+                "lower": 43,
+                "upper": 43,
+                "per": "calendar_month"
+              }
+            },
+            {
+              "subject": "candidate",
+              "predicate": "archive_processing",
+              "object": "paper records boxes",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "contribution": "personal"
+              },
+              "time": {
+                "year": 2025,
+                "period": "one calendar month"
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "boxes",
+                "lower": 31,
+                "upper": 31,
+                "per": "calendar_month"
+              }
+            },
+            {
+              "subject": "31 paper records boxes",
+              "predicate": "subset_of",
+              "object": "43 total archive boxes",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "year": 2025,
+                "period": "one calendar month"
+              },
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "I personally processed over 30 paper records boxes",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "archive_processing",
+              "object": "paper records boxes",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "contribution": "personal"
+              },
+              "time": {
+                "year": 2025,
+                "period": "one calendar month"
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "boxes",
+                "lower": 31,
+                "upper": null,
+                "per": "calendar_month"
+              }
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "my 43 total archive boxes",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "archive_processing",
+              "object": "archive boxes",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "contribution": "personal"
+              },
+              "time": {
+                "year": 2025,
+                "period": "one calendar month"
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "boxes",
+                "lower": 43,
+                "upper": 43,
+                "per": "calendar_month"
+              }
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c3",
+          "quote": "that number is a subset of my 43 total archive boxes",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "31 paper records boxes",
+              "predicate": "subset_of",
+              "object": "43 total archive boxes",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "year": 2025,
+                "period": "one calendar month"
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF3N-05",
+      "sources": [
+        {
+          "id": "CF3N-05-S1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "ocr_method",
+              "object": "invoice OCR trial",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "setting": "sandbox",
+                "status": "trial"
+              },
+              "time": {},
+              "measure": {
+                "kind": "count",
+                "unit": "batches",
+                "lower": 3,
+                "upper": 3,
+                "per": null
+              }
+            },
+            {
+              "subject": "candidate",
+              "predicate": "ocr_method",
+              "object": "production invoice intake",
+              "modality": "self_report",
+              "polarity": "negative",
+              "epistemic_scope": "world",
+              "scope": {
+                "status": "deployed"
+              },
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "a three-batch sandbox OCR trial",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "ocr_method",
+              "object": "invoice OCR trial",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "setting": "sandbox",
+                "status": "trial"
+              },
+              "time": {},
+              "measure": {
+                "kind": "count",
+                "unit": "batches",
+                "lower": 3,
+                "upper": 3,
+                "per": null
+              }
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "leaving production OCR experience unclaimed",
+          "stance": "recommended_as_fact",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "ocr_method",
+              "object": "production invoice intake",
+              "modality": "self_report",
+              "polarity": "negative",
+              "epistemic_scope": "world",
+              "scope": {
+                "status": "deployed"
+              },
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF3N-06",
+      "sources": [
+        {
+          "id": "CF3N-06-S1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "training_certification",
+              "object": "safety trainer certificate",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "issuer": "vendor"
+              },
+              "time": {},
+              "measure": null
+            },
+            {
+              "subject": "candidate",
+              "predicate": "training_demo",
+              "object": "equipment demos",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "year": 2025
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "demos",
+                "lower": 6,
+                "upper": 6,
+                "per": null
+              }
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "a certified safety trainer",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "training_certification",
+              "object": "safety trainer certificate",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "issuer": "vendor"
+              },
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "I gave at least five equipment demos in 2025",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "training_demo",
+              "object": "equipment demos",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "year": 2025
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "demos",
+                "lower": 5,
+                "upper": null,
+                "per": null
+              }
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF3N-07",
+      "sources": [
+        {
+          "id": "CF3N-07-S1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "evaluation_authority",
+              "object": "proposal scoring",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "role": "one of five reviewers"
+              },
+              "time": {
+                "year": 2023
+              },
+              "measure": null
+            },
+            {
+              "subject": "candidate",
+              "predicate": "evaluation_authority",
+              "object": "final funding decisions",
+              "modality": "self_report",
+              "polarity": "negative",
+              "epistemic_scope": "world",
+              "scope": {
+                "role": "signatory"
+              },
+              "time": {
+                "year": 2023
+              },
+              "measure": null
+            },
+            {
+              "subject": "chair",
+              "predicate": "evaluation_authority",
+              "object": "final funding decisions",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "role": "sole signatory"
+              },
+              "time": {
+                "year": 2023
+              },
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "I contributed proposal scores as a panel reviewer",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "evaluation_authority",
+              "object": "proposal scoring",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "role": "one of five reviewers"
+              },
+              "time": {
+                "year": 2023
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "final funding decisions sat with the chair",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "chair",
+              "predicate": "evaluation_authority",
+              "object": "final funding decisions",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "role": "sole signatory"
+              },
+              "time": {
+                "year": 2023
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF3N-08",
+      "sources": [
+        {
+          "id": "CF3N-08-S1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "station_attendance",
+              "object": "field station",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "days": "Tuesday and Thursday"
+              },
+              "time": {
+                "year": 2022
+              },
+              "measure": {
+                "kind": "frequency",
+                "unit": "days",
+                "lower": 2,
+                "upper": 2,
+                "per": "week"
+              }
+            },
+            {
+              "subject": "CF3N-08-S1",
+              "predicate": "resolves",
+              "object": "candidate current travel availability",
+              "modality": "record_assessment",
+              "polarity": "negative",
+              "epistemic_scope": "packet",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "CF3N-08-JD",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "station_attendance",
+              "object": "field station",
+              "modality": "requirement",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "from_year": 2027
+              },
+              "measure": {
+                "kind": "frequency",
+                "unit": "days",
+                "lower": 2,
+                "upper": 2,
+                "per": "week"
+              }
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "My 2022 two-day station routine",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "station_attendance",
+              "object": "field station",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "days": "Tuesday and Thursday"
+              },
+              "time": {
+                "year": 2022
+              },
+              "measure": {
+                "kind": "frequency",
+                "unit": "days",
+                "lower": 2,
+                "upper": 2,
+                "per": "week"
+              }
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "the new weekly on-site requirement",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role",
+              "predicate": "station_attendance",
+              "object": "field station",
+              "modality": "requirement",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "from_year": 2027
+              },
+              "measure": {
+                "kind": "frequency",
+                "unit": "days",
+                "lower": 2,
+                "upper": 2,
+                "per": "week"
+              }
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c3",
+          "quote": "is relevant history",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate 2022 station routine",
+              "predicate": "fit_relevance",
+              "object": "role 2027 station attendance requirement",
+              "modality": "record_assessment",
+              "polarity": "positive",
+              "epistemic_scope": "packet",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c4",
+          "quote": "I would need to confirm whether I can meet the new weekly on-site requirement",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "verification_needed",
+              "object": "ability to meet role weekly station attendance requirement",
+              "modality": "evaluation_instruction",
+              "polarity": "positive",
+              "epistemic_scope": "packet",
+              "scope": {},
+              "time": {
+                "from_year": 2027
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF3N-09",
+      "sources": [
+        {
+          "id": "CF3N-09-S1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "on_call",
+              "object": "support weekends",
+              "modality": "observation",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "year": 2024
+              },
+              "measure": {
+                "kind": "frequency",
+                "unit": "weekends",
+                "lower": 2,
+                "upper": 2,
+                "per": "calendar_quarter"
+              }
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "at least one on-call support weekend per quarter",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "on_call",
+              "object": "support weekends",
+              "modality": "observation",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "year": 2024
+              },
+              "measure": {
+                "kind": "frequency",
+                "unit": "weekends",
+                "lower": 1,
+                "upper": null,
+                "per": "calendar_quarter"
+              }
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF3N-10",
+      "sources": [
+        {
+          "id": "CF3N-10-S1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "ledger_maintenance",
+              "object": "equipment checkout ledger",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "task": "recorded handovers"
+              },
+              "time": {
+                "start": "2023-01",
+                "end": "2024-06"
+              },
+              "measure": null
+            },
+            {
+              "subject": "candidate",
+              "predicate": "evaluation_authority",
+              "object": "equipment purchases",
+              "modality": "self_report",
+              "polarity": "negative",
+              "epistemic_scope": "world",
+              "scope": {
+                "role": "approver"
+              },
+              "time": {
+                "start": "2023-01",
+                "end": "2024-06"
+              },
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "I maintained the checkout ledger for more than a year and recorded handovers",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "ledger_maintenance",
+              "object": "equipment checkout ledger",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "task": "recorded handovers",
+                "duration_months_lower": 13
+              },
+              "time": {
+                "start": "2023-01",
+                "end": "2024-06"
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "I should not present that as purchase approval authority",
+          "stance": "recommended_as_fact",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "evaluation_authority",
+              "object": "equipment purchases",
+              "modality": "self_report",
+              "polarity": "negative",
+              "epistemic_scope": "world",
+              "scope": {
+                "role": "approver"
+              },
+              "time": {
+                "start": "2023-01",
+                "end": "2024-06"
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF3N-11",
+      "sources": [
+        {
+          "id": "CF3N-11-S1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "training_demo",
+              "object": "live equipment demos to new operators",
+              "modality": "observation",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "month": "2025-03"
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "demos",
+                "lower": 4,
+                "upper": 4,
+                "per": null
+              }
+            }
+          ]
+        },
+        {
+          "id": "CF3N-11-JD",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "training_demo",
+              "object": "live equipment demos to new operators",
+              "modality": "requirement",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "The signed log is enough to support",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "supervisor-signed log",
+              "predicate": "evidence_sufficiency",
+              "object": "candidate delivered live equipment demos to new operators",
+              "modality": "record_assessment",
+              "polarity": "positive",
+              "epistemic_scope": "packet",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "I have delivered live equipment demos to new operators",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "training_demo",
+              "object": "live equipment demos to new operators",
+              "modality": "observation",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "month": "2025-03"
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c3",
+          "quote": "this role requires",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role",
+              "predicate": "training_demo",
+              "object": "live equipment demos to new operators",
+              "modality": "requirement",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF3N-12",
+      "sources": [
+        {
+          "id": "CF3N-12-S1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "archive_processing",
+              "object": "fragile maps",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "tasks": "scanned and indexed",
+                "contribution": "personal"
+              },
+              "time": {
+                "year": 2025
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "maps",
+                "lower": 18,
+                "upper": 18,
+                "per": null
+              }
+            },
+            {
+              "subject": "candidate",
+              "predicate": "evaluation_authority",
+              "object": "archive policy",
+              "modality": "self_report",
+              "polarity": "negative",
+              "epistemic_scope": "world",
+              "scope": {
+                "role": "designer"
+              },
+              "time": {
+                "year": 2025
+              },
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "hands-on scanning and indexing of 18 fragile maps",
+          "stance": "recommended_as_fact",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "archive_processing",
+              "object": "fragile maps",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "tasks": "scanned and indexed",
+                "contribution": "personal"
+              },
+              "time": {
+                "year": 2025
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "maps",
+                "lower": 18,
+                "upper": 18,
+                "per": null
+              }
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "keeping archive-policy design off the CV",
+          "stance": "recommended_as_fact",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "evaluation_authority",
+              "object": "archive policy",
+              "modality": "self_report",
+              "polarity": "negative",
+              "epistemic_scope": "world",
+              "scope": {
+                "role": "designer"
+              },
+              "time": {
+                "year": 2025
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF3N-13",
+      "sources": [
+        {
+          "id": "CF3N-13-S1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "training_demo",
+              "object": "vendor safety demos",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "role": "attendee"
+              },
+              "time": {
+                "year": 2025
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "demos",
+                "lower": 2,
+                "upper": 2,
+                "per": null
+              }
+            },
+            {
+              "subject": "candidate",
+              "predicate": "training_certification_assessment",
+              "object": "vendor safety trainer assessment",
+              "modality": "self_report",
+              "polarity": "negative",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "I attended two vendor safety demonstrations",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "training_demo",
+              "object": "vendor safety demos",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "role": "attendee"
+              },
+              "time": {
+                "year": 2025
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "demos",
+                "lower": 2,
+                "upper": 2,
+                "per": null
+              }
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "earned the vendor safety trainer certificate",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "training_certification",
+              "object": "vendor safety trainer certificate",
+              "modality": "observation",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF3N-14",
+      "sources": [
+        {
+          "id": "CF3N-14-S1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "ocr_method",
+              "object": "handwritten form OCR trial",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "status": "trial"
+              },
+              "time": {},
+              "measure": null
+            },
+            {
+              "subject": "candidate",
+              "predicate": "sample_size",
+              "object": "forms processed by OCR",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "status": "trial"
+              },
+              "time": {},
+              "measure": {
+                "kind": "count",
+                "unit": "forms",
+                "lower": 14,
+                "upper": 14,
+                "per": null
+              }
+            },
+            {
+              "subject": "candidate",
+              "predicate": "archive_processing",
+              "object": "larger form collection",
+              "modality": "self_report",
+              "polarity": "negative",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": {
+                "kind": "count",
+                "unit": "forms",
+                "lower": 240,
+                "upper": 240,
+                "per": null
+              }
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "I used OCR on handwritten forms",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "ocr_method",
+              "object": "handwritten form OCR trial",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "status": "trial"
+              },
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "validated the method across all 240 forms",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "sample_size",
+              "object": "forms processed by OCR",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "status": "validated"
+              },
+              "time": {},
+              "measure": {
+                "kind": "count",
+                "unit": "forms",
+                "lower": 240,
+                "upper": 240,
+                "per": null
+              }
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF3N-15",
+      "sources": [
+        {
+          "id": "CF3N-15-S1",
+          "facts": [
+            {
+              "subject": "archive team",
+              "predicate": "archive_processing",
+              "object": "folders",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "team_size": 4
+              },
+              "time": {},
+              "measure": {
+                "kind": "count",
+                "unit": "folders",
+                "lower": 60,
+                "upper": 60,
+                "per": null
+              }
+            },
+            {
+              "subject": "candidate",
+              "predicate": "ledger_maintenance",
+              "object": "transfer ledger",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            },
+            {
+              "subject": "candidate",
+              "predicate": "archive_processing",
+              "object": "folders",
+              "modality": "self_report",
+              "polarity": "negative",
+              "epistemic_scope": "world",
+              "scope": {
+                "contribution": "personal"
+              },
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "The team processed 60 folders",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "archive team",
+              "predicate": "archive_processing",
+              "object": "folders",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "team_size": 4
+              },
+              "time": {},
+              "measure": {
+                "kind": "count",
+                "unit": "folders",
+                "lower": 60,
+                "upper": 60,
+                "per": null
+              }
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "I personally processed those 60 folders",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "archive_processing",
+              "object": "folders",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "contribution": "personal"
+              },
+              "time": {},
+              "measure": {
+                "kind": "count",
+                "unit": "folders",
+                "lower": 60,
+                "upper": 60,
+                "per": null
+              }
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF3N-16",
+      "sources": [
+        {
+          "id": "CF3N-16-S1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "alert_escalation",
+              "object": "overnight alerts",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "year": 2021
+              },
+              "measure": null
+            },
+            {
+              "subject": "candidate",
+              "predicate": "on_call",
+              "object": "support rota",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "year": 2021
+              },
+              "measure": null
+            },
+            {
+              "subject": "candidate",
+              "predicate": "on_call",
+              "object": "support rota",
+              "modality": "self_report",
+              "polarity": "negative",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "after": "2021-12"
+              },
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "I escalated overnight alerts in 2021",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "alert_escalation",
+              "object": "overnight alerts",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "year": 2021
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "remain on the current on-call rota",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "on_call",
+              "object": "support rota",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "current": true
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF3N-17",
+      "sources": [
+        {
+          "id": "CF3N-17-S1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "distance_saving",
+              "object": "proposed route",
+              "modality": "prediction",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "status": "unimplemented"
+              },
+              "time": {},
+              "measure": {
+                "kind": "difference",
+                "unit": "km",
+                "lower": 45,
+                "upper": 65,
+                "per": "week"
+              }
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "My spreadsheet estimated a 45–65 km weekly saving",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "distance_saving",
+              "object": "proposed route",
+              "modality": "prediction",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "status": "unimplemented"
+              },
+              "time": {},
+              "measure": {
+                "kind": "difference",
+                "unit": "km",
+                "lower": 45,
+                "upper": 65,
+                "per": "week"
+              }
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "I can guarantee at least 45 km saved every week",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "distance_saving",
+              "object": "proposed route",
+              "modality": "guarantee",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "status": "implemented"
+              },
+              "time": {},
+              "measure": {
+                "kind": "difference",
+                "unit": "km",
+                "lower": 45,
+                "upper": null,
+                "per": "week"
+              }
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF3N-18",
+      "sources": [
+        {
+          "id": "CF3N-18-S1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "meeting_platform",
+              "object": "meeting platform",
+              "modality": "ability",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            },
+            {
+              "subject": "candidate",
+              "predicate": "live_captions",
+              "object": "live meeting captions",
+              "modality": "ability",
+              "polarity": "negative",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            },
+            {
+              "subject": "candidate",
+              "predicate": "captioning_service",
+              "object": "captioning service",
+              "modality": "self_report",
+              "polarity": "negative",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "CF3N-18-JD",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "caption_requirement",
+              "object": "live captions in public sessions",
+              "modality": "requirement",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "quantifier": "all"
+              },
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "I can run the meeting platform",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "meeting_platform",
+              "object": "meeting platform",
+              "modality": "ability",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "I already meet its live-caption requirement for public sessions",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "compatible",
+              "object": "live captions in public sessions",
+              "modality": "ability",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "quantifier": "all"
+              },
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF3N-19",
+      "sources": [
+        {
+          "id": "CF3N-19-S1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "on_call",
+              "object": "requested rotating support shifts",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "during_shifts": true
+              },
+              "time": {
+                "year": 2024
+              },
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "I was on call for rotating support shifts during the 2024 outage season",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "on_call",
+              "object": "requested rotating support shifts",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "during_shifts": true
+              },
+              "time": {
+                "year": 2024
+              },
+              "measure": null
+            },
+            {
+              "subject": "candidate",
+              "predicate": "on_call",
+              "object": "requested rotating support shifts",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "outside_shifts": true
+              },
+              "time": {
+                "year": 2024
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF3N-20",
+      "sources": [
+        {
+          "id": "CF3N-20-S1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "training_demo",
+              "object": "training demo",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "role": "joint presenter"
+              },
+              "time": {
+                "year": 2025
+              },
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "I led the 2025 training demo with my mentor",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "training_demo",
+              "object": "training demo",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "role": "joint presenter"
+              },
+              "time": {
+                "year": 2025
+              },
+              "measure": null
+            },
+            {
+              "subject": "candidate",
+              "predicate": "training_demo",
+              "object": "training demo",
+              "modality": "self_report",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "role": "lead presenter"
+              },
+              "time": {
+                "year": 2025
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    }
+  ]
+}

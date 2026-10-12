@@ -1,0 +1,66 @@
+{
+  "schema": "maguire-quality-annotations-v1",
+  "case_id": "PF2-03",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The assessment keeps the stated evidence and its limits in scope.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_02",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The independent acceptable conclusion preserves the same substantive constraints.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_03",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "A nice-to-have allowance cannot override the explicit overnight exclusion.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "soft benefit overrides hard restriction",
+        "description": "A nice-to-have allowance cannot override the explicit overnight exclusion.",
+        "changed_paths": [
+          "/conclusion/text"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "PF-PRIORITY",
+          "severity": "major",
+          "target_id": "pref_1",
+          "explanation": "A nice-to-have allowance cannot override the explicit overnight exclusion."
+        }
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "Compensation by an unrelated soft benefit does not satisfy the hard condition.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "benefit erases condition",
+        "description": "Compensation by an unrelated soft benefit does not satisfy the hard condition.",
+        "changed_paths": [
+          "/assessments/0/rationale"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "PF-PRIORITY",
+          "severity": "major",
+          "target_id": "pref_1",
+          "explanation": "Compensation by an unrelated soft benefit does not satisfy the hard condition."
+        }
+      ]
+    }
+  ]
+}

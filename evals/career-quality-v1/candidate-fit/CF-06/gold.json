@@ -1,0 +1,73 @@
+{
+  "schema": "maguire-quality-gold-v1",
+  "case_id": "CF-06",
+  "family": "missing facts remain unknown",
+  "title": "Missing scheduling evidence",
+  "review_status": "proposed_agent_authored",
+  "human_approved": false,
+  "units": [
+    {
+      "target_id": "jd_1",
+      "kind": "duty",
+      "allowed_labels": [
+        "supported"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_1",
+          "fact_1"
+        ]
+      ],
+      "rationale": "The workbook excerpt directly supports the formula summary.",
+      "required_points": [
+        "Friday ticket summaries and formulas are shown"
+      ],
+      "forbidden_inferences": [
+        "Do not infer formula design ownership beyond excerpt"
+      ]
+    },
+    {
+      "target_id": "jd_2",
+      "kind": "duty",
+      "allowed_labels": [
+        "unknown"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_2"
+        ]
+      ],
+      "rationale": "No source addresses meeting facilitation; silence leaves it unknown.",
+      "required_points": [
+        "Meeting facilitation is unaddressed"
+      ],
+      "forbidden_inferences": [
+        "Do not convert silence to inability"
+      ]
+    }
+  ],
+  "forbidden_assessment_targets": [],
+  "acceptable_actions": [
+    "clarify",
+    "pursue"
+  ],
+  "critical_errors": [
+    {
+      "id": "CF-06-E1",
+      "description": "Missing evidence is unknown, not a counterfact or inability.",
+      "target_ids": [
+        "jd_2"
+      ]
+    },
+    {
+      "id": "CF-06-E2",
+      "description": "The assessment leaves Monday meeting facilitation unknown, but the conclusion says every duty is met; missing evidence cannot be silently resolved.",
+      "target_ids": [
+        "jd_2"
+      ]
+    }
+  ],
+  "notes": [
+    "The workbook supports Friday formulas; the snapshot says nothing about Monday meeting facilitation."
+  ]
+}

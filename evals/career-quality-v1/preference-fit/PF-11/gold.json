@@ -1,0 +1,90 @@
+{
+  "schema": "maguire-quality-gold-v1",
+  "case_id": "PF-11",
+  "family": "part_time_timezone_exact_bounds",
+  "title": "Part-time hours and time-zone bounds",
+  "review_status": "proposed_agent_authored",
+  "human_approved": false,
+  "units": [
+    {
+      "target_id": "pref_hours",
+      "kind": "schedule",
+      "allowed_labels": [
+        "aligned"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_schedule"
+        ]
+      ],
+      "rationale": "The role’s inclusive 24–28 hour interval exactly fits the requested interval.",
+      "required_points": [
+        "Both intervals are 24–28 paid hours per week."
+      ],
+      "forbidden_inferences": [
+        "Do not compare this against a full-time equivalent salary."
+      ]
+    },
+    {
+      "target_id": "pref_overlap",
+      "kind": "schedule",
+      "allowed_labels": [
+        "aligned"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_schedule"
+        ]
+      ],
+      "rationale": "Required overlap 13:00–17:00 lies within candidate availability 12:00–17:00, including the end boundary.",
+      "required_points": [
+        "The required overlap ends at 17:00 Europe/Zurich."
+      ],
+      "forbidden_inferences": [
+        "Do not treat 17:00 as after the candidate ceiling."
+      ]
+    },
+    {
+      "target_id": "pref_pay",
+      "kind": "compensation",
+      "allowed_labels": [
+        "unknown"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_pay"
+        ]
+      ],
+      "rationale": "Proration without a base amount does not establish the candidate’s part-time pay target.",
+      "required_points": [
+        "No annual base range is published."
+      ],
+      "forbidden_inferences": [
+        "Do not compute pay from an absent full-time figure."
+      ]
+    }
+  ],
+  "forbidden_assessment_targets": [],
+  "acceptable_actions": [
+    "clarify"
+  ],
+  "critical_errors": [
+    {
+      "id": "PF-11-interpretation",
+      "description": "Misreads Part-time hours and time-zone bounds: the overlap preference or its cited role term.",
+      "target_ids": [
+        "pref_overlap"
+      ]
+    },
+    {
+      "id": "PF-11-action",
+      "description": "Treating unpublished prorated annual base pay as meeting CHF 100,000 falsely resolves pref_pay.",
+      "target_ids": [
+        "pref_pay"
+      ]
+    }
+  ],
+  "notes": [
+    "Inclusive endpoints matter; the missing base amount cannot be reconstructed from proration language."
+  ]
+}

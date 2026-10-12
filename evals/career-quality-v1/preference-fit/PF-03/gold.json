@@ -1,0 +1,90 @@
+{
+  "schema": "maguire-quality-gold-v1",
+  "case_id": "PF-03",
+  "family": "missing_remote_term",
+  "title": "Remote term absent from a salary-forward posting",
+  "review_status": "proposed_agent_authored",
+  "human_approved": false,
+  "units": [
+    {
+      "target_id": "pref_remote",
+      "kind": "work_arrangement",
+      "allowed_labels": [
+        "unknown"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_duties"
+        ]
+      ],
+      "rationale": "Colleagues being distributed and silence on policy do not establish remote eligibility.",
+      "required_points": [
+        "The posting gives no location policy."
+      ],
+      "forbidden_inferences": [
+        "Do not treat distributed colleagues as a remote-work promise."
+      ]
+    },
+    {
+      "target_id": "pref_pay",
+      "kind": "compensation",
+      "allowed_labels": [
+        "aligned"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_pay"
+        ]
+      ],
+      "rationale": "The quoted base range begins above the soft CHF 140,000 target.",
+      "required_points": [
+        "The lower bound is CHF 145,000."
+      ],
+      "forbidden_inferences": [
+        "Do not treat the published range as an offer."
+      ]
+    },
+    {
+      "target_id": "pref_travel",
+      "kind": "travel",
+      "allowed_labels": [
+        "aligned"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_travel"
+        ]
+      ],
+      "rationale": "One quarterly visit is four annual visits, within the six-trip preference.",
+      "required_points": [
+        "One visit each quarter implies four planned visits per year."
+      ],
+      "forbidden_inferences": [
+        "Do not infer no other travel beyond the stated expectation."
+      ]
+    }
+  ],
+  "forbidden_assessment_targets": [],
+  "acceptable_actions": [
+    "clarify"
+  ],
+  "critical_errors": [
+    {
+      "id": "PF-03-interpretation",
+      "description": "Misreads Remote term absent from a salary-forward posting: the remote preference or its cited role term.",
+      "target_ids": [
+        "pref_remote"
+      ]
+    },
+    {
+      "id": "PF-03-action",
+      "description": "Omitting pref_remote from the assessment leaves the must-have work-location term unassessed.",
+      "target_ids": [
+        "pref_remote"
+      ]
+    }
+  ],
+  "notes": [
+    "Silence remains unknown; favorable soft terms cannot resolve a hard remote preference."
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schema": "maguire-quality-input-v1",
+  "case_id": "PF2-03",
+  "grader": "preference_fit",
+  "data_class": "synthetic",
+  "decision_at": "2026-10-11T12:00:00Z",
+  "task": "Assess the supplied role and candidate snapshot, cite sources, explain uncertainty, and recommend a next action.",
+  "jd": {
+    "title": "Aquarium Sensor Technician",
+    "sources": [
+      {
+        "id": "jd_1",
+        "text": "Technicians rotate through overnight on-call duty every fourth week.",
+        "observed_at": "2026-09-01T12:00:00Z",
+        "authority": "job_description",
+        "supersedes": []
+      },
+      {
+        "id": "jd_2",
+        "text": "The role provides a yearly marine-science learning allowance.",
+        "observed_at": "2026-09-01T12:00:00Z",
+        "authority": "job_description",
+        "supersedes": []
+      }
+    ]
+  },
+  "candidate": {
+    "facts": [],
+    "preferences": [
+      {
+        "id": "pref_1",
+        "text": "I will not take any overnight on-call duty.",
+        "priority": "must_have",
+        "allowed_exceptions": [],
+        "confirmed_at": "2026-08-15T12:00:00Z"
+      },
+      {
+        "id": "pref_2",
+        "text": "A learning allowance would be welcome but is not required.",
+        "priority": "nice_to_have",
+        "allowed_exceptions": [],
+        "confirmed_at": "2026-08-15T12:00:00Z"
+      }
+    ]
+  }
+}

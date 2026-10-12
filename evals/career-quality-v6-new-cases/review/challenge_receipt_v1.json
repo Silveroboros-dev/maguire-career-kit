@@ -1,0 +1,9 @@
+{
+  "schema": "eval_contract_challenge_receipt_v1",
+  "packet_path": "review/challenge_packet_v1.json",
+  "packet_raw_sha256": "c995889fa71254f42bf6258810c973f905f9f904c0977c192f6c615b9eb3769d",
+  "packet_byte_count": 14547,
+  "packet_internal_digest_sha256": "af7c55484ea60ccfb2cb51cca5dfb4023133812166067a82c1a216642b60c487",
+  "external_seal": false,
+  "created_at_utc": "2026-10-12T18:45:06.743421+00:00"
+}

@@ -1,0 +1,190 @@
+{
+  "schema": "maguire-quality-answers-v1",
+  "case_id": "PF-04",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "assessments": [
+        {
+          "target_id": "pref_office",
+          "label": "conflict",
+          "evidence": [
+            {
+              "source_id": "jd_office",
+              "quote": "The position requires two fixed office days per week and three home-working days."
+            }
+          ],
+          "rationale": "Two fixed days exceed the candidate’s maximum of one."
+        },
+        {
+          "target_id": "pref_hours",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_hours",
+              "quote": "The working week is 32 hours spread across four days."
+            }
+          ],
+          "rationale": "The stated weekly hours and day count exactly match the candidate."
+        },
+        {
+          "target_id": "pref_conference",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_budget",
+              "quote": "The employer provides a CHF 1,500 annual conference budget."
+            }
+          ],
+          "rationale": "The explicit budget meets the soft conference preference."
+        }
+      ],
+      "conclusion": {
+        "action": "pass",
+        "text": "The 32-hour schedule and conference budget fit, but two fixed office days exceed the one-day must-have.",
+        "next_step": "Mark the role unsuitable under its published schedule."
+      },
+      "limitations": [
+        "No approved one-day exception is in the supplied sources."
+      ]
+    },
+    {
+      "answer_id": "answer_02",
+      "assessments": [
+        {
+          "target_id": "pref_office",
+          "label": "conflict",
+          "evidence": [
+            {
+              "source_id": "jd_office",
+              "quote": "The position requires two fixed office days per week and three home-working days."
+            }
+          ],
+          "rationale": "Two fixed days exceed the candidate’s maximum of one."
+        },
+        {
+          "target_id": "pref_hours",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_hours",
+              "quote": "The working week is 32 hours spread across four days."
+            }
+          ],
+          "rationale": "The stated weekly hours and day count exactly match the candidate."
+        },
+        {
+          "target_id": "pref_conference",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_budget",
+              "quote": "The employer provides a CHF 1,500 annual conference budget."
+            }
+          ],
+          "rationale": "The explicit budget meets the soft conference preference."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "The office requirement is a conflict; the candidate permits a single check for a formal one-day arrangement.",
+        "next_step": "Ask for written confirmation that this role can use one office day per week; pass if it cannot."
+      },
+      "limitations": [
+        "No approved one-day exception is in the supplied sources."
+      ]
+    },
+    {
+      "answer_id": "answer_03",
+      "assessments": [
+        {
+          "target_id": "pref_office",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_office",
+              "quote": "The position requires two fixed office days per week and three home-working days."
+            }
+          ],
+          "rationale": "Three home-working days mean the candidate’s maximum office frequency is satisfied."
+        },
+        {
+          "target_id": "pref_hours",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_hours",
+              "quote": "The working week is 32 hours spread across four days."
+            }
+          ],
+          "rationale": "The stated weekly hours and day count exactly match the candidate."
+        },
+        {
+          "target_id": "pref_conference",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_budget",
+              "quote": "The employer provides a CHF 1,500 annual conference budget."
+            }
+          ],
+          "rationale": "The explicit budget meets the soft conference preference."
+        }
+      ],
+      "conclusion": {
+        "action": "pass",
+        "text": "The 32-hour schedule and conference budget fit, but two fixed office days exceed the one-day must-have.",
+        "next_step": "Mark the role unsuitable under its published schedule."
+      },
+      "limitations": [
+        "No approved one-day exception is in the supplied sources."
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "assessments": [
+        {
+          "target_id": "pref_office",
+          "label": "conflict",
+          "evidence": [
+            {
+              "source_id": "jd_office",
+              "quote": "The position requires two fixed office days per week and three home-working days."
+            }
+          ],
+          "rationale": "Two fixed days exceed the candidate’s maximum of one."
+        },
+        {
+          "target_id": "pref_hours",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_hours",
+              "quote": "The working week is 32 hours spread across four days."
+            }
+          ],
+          "rationale": "The stated weekly hours and day count exactly match the candidate."
+        },
+        {
+          "target_id": "pref_conference",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_budget",
+              "quote": "The employer provides a CHF 1,500 annual conference budget."
+            }
+          ],
+          "rationale": "The explicit budget meets the soft conference preference."
+        }
+      ],
+      "conclusion": {
+        "action": "pursue",
+        "text": "Apply because the four-day schedule and budget outweigh one extra office day.",
+        "next_step": "Submit a tailored application under the two-day office schedule."
+      },
+      "limitations": [
+        "No approved one-day exception is in the supplied sources."
+      ]
+    }
+  ]
+}

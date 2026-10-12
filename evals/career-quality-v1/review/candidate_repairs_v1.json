@@ -1,0 +1,126 @@
+{
+  "schema": "maguire-quality-candidate-repairs-v1",
+  "source_review": "review/preference_author_reviews_candidate.json",
+  "human_review": false,
+  "scope_case_ids": [
+    "CF-01",
+    "CF-02",
+    "CF-03",
+    "CF-04",
+    "CF-05",
+    "CF-06",
+    "CF-07",
+    "CF-08",
+    "CF-09",
+    "CF-10",
+    "CF-11",
+    "CF-12"
+  ],
+  "review_finding_repairs": [
+    {
+      "case_id": "CF-01",
+      "answer_id": "answer_04",
+      "repair": "Moved invented report-impact finding and gold error target to jd_2."
+    },
+    {
+      "case_id": "CF-02",
+      "answer_id": "answer_02",
+      "repair": "Removed insufficient demo-only evidence set; added fact_1 to the positive build assessment."
+    },
+    {
+      "case_id": "CF-04",
+      "answer_id": "answer_02",
+      "repair": "Replaced external permit with internal training certificate; both good answers now pass and reassess only after renewal."
+    },
+    {
+      "case_id": "CF-06",
+      "answer_id": "answer_04",
+      "repair": "Changed finding to CF-UNCERTAINTY because the duty is assessed but misrepresented in conclusion."
+    },
+    {
+      "case_id": "CF-07",
+      "answer_id": "answer_01,answer_02",
+      "repair": "Made jd_1 an explicit compound migration-planning duty with field mapping as the supported subset."
+    },
+    {
+      "case_id": "CF-08",
+      "answer_id": "answer_02",
+      "repair": "Removed invented waiver route; both good answers pass and allow reassessment only on new qualifying evidence."
+    },
+    {
+      "case_id": "CF-09",
+      "answer_id": "answer_01,answer_02",
+      "repair": "Changed future preferred workshop ability to unknown while retaining explicit absence of prior history."
+    },
+    {
+      "case_id": "CF-12",
+      "answer_id": "answer_04",
+      "repair": "Removed jd_2 assessment and discussion to make the negative a real coverage omission."
+    }
+  ],
+  "additional_repairs": [
+    {
+      "case_id": "CF-11",
+      "repair": "Made retention work an explicit compound duty so the corrected category/checklist contribution is a meaningful partial subset."
+    },
+    {
+      "case_id": "CF-12",
+      "repair": "Removed the injection line’s self-explanation while preserving it as untrusted JD source text."
+    },
+    {
+      "case_id": "CF-01..CF-12",
+      "repair": "Replaced evaluation-leaking input JD titles with neutral fictional role titles and used the same label-neutral task prompt."
+    }
+  ],
+  "validation": "Shared offline structural validator passed after repairs: 24 cases, 48 positive answers, 48 negative answers, zero errors. Semantic labels remain proposed and not human-approved.",
+  "case_file_sha256_after": {
+    "candidate-fit/CF-01/annotations.json": "6714e908b8c64fb35768d233ef34d3f176ddeef297ae4ba5059baa74995ec560",
+    "candidate-fit/CF-01/answers.json": "acb9ddb24232f4436ea9ee16f6ec443d5a85053b85d9fd05c6ba679ee9add453",
+    "candidate-fit/CF-01/gold.json": "8548cc58813611d217ff49c17c300f9fda9b6bd1758ec87daa0f542df5935dd5",
+    "candidate-fit/CF-01/input.json": "ee59d26568a20de321f09dc73f2dbbd4dc6b21c148b7d7ce501d7eefd7164a55",
+    "candidate-fit/CF-02/annotations.json": "2bb6192ed7f6ab92d2f7b651b6f3eaec0b2f9e0bc02c09ac8ed12020132c8f46",
+    "candidate-fit/CF-02/answers.json": "cb6d9cc118c39682d065ce0dbd8c87dc6b4b4b95007dc5d00e7fecf91252a3b6",
+    "candidate-fit/CF-02/gold.json": "d19a1e695b078809cc25cce468500bf77974f33d7acb68e59c7706f1d43681cc",
+    "candidate-fit/CF-02/input.json": "e42872b09903251908d179538a0871678b557e1deb23dc2b310eed2f9b9d0bef",
+    "candidate-fit/CF-03/annotations.json": "556d07d4c02f9f7e344618e5e0d70ec6fd18b8cd3f5c8c24f4ba9015e534310c",
+    "candidate-fit/CF-03/answers.json": "2ae8001fdd9eb4fcde04b981d722022e71edddb59f1ca625a49090600ee283e1",
+    "candidate-fit/CF-03/gold.json": "27bb4a40372400d0309290a8179245aafaf552700f689b307f0e7f3ad559ee8f",
+    "candidate-fit/CF-03/input.json": "f48b4c811993ee0f471bd66df01a0f9c487765aef20eed2d2b3f12dd161bc260",
+    "candidate-fit/CF-04/annotations.json": "45a68744be9d06b7d1bdcf46a7eae67e5e89e2340ebd0c740a830d9215f3bd9e",
+    "candidate-fit/CF-04/answers.json": "41c3b80cf0518c1f8d04b326ac08066479a19f8a1b95cc2ea7c40279fe77182b",
+    "candidate-fit/CF-04/gold.json": "4f4897623776c6e283df545d63584fdb6e405d0131d02e3fc4244ff483474915",
+    "candidate-fit/CF-04/input.json": "aa101cad0bd3c3f2b36a9db8a60dc8d2c4ae64dfc1e0436adb51657dc25c8fb0",
+    "candidate-fit/CF-05/annotations.json": "3f1ba1d2f4186f8fcf3476f9ea562a9c15679fc92c3b1d96afdc6ea99b5cc985",
+    "candidate-fit/CF-05/answers.json": "dca35493068b143f01c121d3ee260489ebdea7d7c39fc02b48460b82619d2844",
+    "candidate-fit/CF-05/gold.json": "c174cc0732539bdd57600eeff2b1616834748651c49150fd3dceaa3e62afea1b",
+    "candidate-fit/CF-05/input.json": "c800c2d1b61501e0b87acba650974685d90529bbbc10116fe75a2494e736c115",
+    "candidate-fit/CF-06/annotations.json": "e296d397b046d994d8492853d976cb279812a88b78b6aaa7758c098c6ab699e0",
+    "candidate-fit/CF-06/answers.json": "c10c403326b23ebc2aa0e15d8fb8f412f5c35b992e7c727ebedec338621ed59a",
+    "candidate-fit/CF-06/gold.json": "bd1057d415751b61fb3e3931d61f2d749bc69584dd1c0a28b3e63e8688aaa482",
+    "candidate-fit/CF-06/input.json": "4ef3fc87abbdf916fe86779a972c708783ef20c96f8ec05b0cbf8aee2cfa1eb5",
+    "candidate-fit/CF-07/annotations.json": "789d30343c6c050a24eb5fe49cded5ac61da4490085da13d13648c95e052e985",
+    "candidate-fit/CF-07/answers.json": "eeffc51bcfd5e4781fe646dc71f1f638913ed30a847f5feb28a219e34080a578",
+    "candidate-fit/CF-07/gold.json": "0f2c90aa2de8b36ab462e266107744191ac90e0effa16d17309b90f4e466ed74",
+    "candidate-fit/CF-07/input.json": "ab28316bfe4e96137b6dabcfcbb59412db602ea989db032ccbd362c9f0d1bf5a",
+    "candidate-fit/CF-08/annotations.json": "f2ca6f47e04484a161dd451da0c3cc518214f51e2ab8bd8ad60d3532b8a6b6b5",
+    "candidate-fit/CF-08/answers.json": "5415cf826ead75fd0d55aeaa63dd12c59a60624ed07488f1a719a347f6a4cdaa",
+    "candidate-fit/CF-08/gold.json": "7dfd868e0741a5e9c3ad3aed804defd765e2fdb75e85613c51d127e1eedb9338",
+    "candidate-fit/CF-08/input.json": "54218b31d2ace2e66083145fd020f012e586bf39f543cdd7b4e2a7896c3309a9",
+    "candidate-fit/CF-09/annotations.json": "a30770fb4e2194befab5b2a7346870fc5f271f0773b7294599df631e9a08b849",
+    "candidate-fit/CF-09/answers.json": "77f2ceb332dd2d3af782d253c211780d00e9854ddba29f6b29e935b53e889090",
+    "candidate-fit/CF-09/gold.json": "dc0b893e8d8d96cba939c4682b44b22c52fe8139790544299f9748bc2bdd6e6a",
+    "candidate-fit/CF-09/input.json": "bdb63cc03bf35719ef7b8527840858d41fee6a8c18b772366b27188a6a379501",
+    "candidate-fit/CF-10/annotations.json": "8056dbda0eb26a4c5b3959adec3eade27442fe9a134e79f527586040272ce7da",
+    "candidate-fit/CF-10/answers.json": "0e1b1cb6f3727541f344f622ec0e5ad8445d8504c2a9157fffb81e757a7584ac",
+    "candidate-fit/CF-10/gold.json": "9d49de48d46805ccd9cff7dc680b568fdb1a400ef3d9405e307af5f432ead288",
+    "candidate-fit/CF-10/input.json": "e1e05900350571f7ec3a769a54d5c348816e96d363a2d665025765c13a714132",
+    "candidate-fit/CF-11/annotations.json": "022d36d5388bddaf2b6e04f0b2108f4143b6e3d4da672cade028eed63951b30f",
+    "candidate-fit/CF-11/answers.json": "b55569555add70c124f011654b2f3d61b561d2710656058af262818d64f7a121",
+    "candidate-fit/CF-11/gold.json": "7016b94e20f54ec1a2a537536e52a493f660ec1210dfe170d58d51c5c3566ed4",
+    "candidate-fit/CF-11/input.json": "13dfbe63c7d6d8c7d86691330bc566073a68311b569c31f2a6b86334d812437d",
+    "candidate-fit/CF-12/annotations.json": "22b7f029215e0c5b94bf02fb0f6a393c3610a29db698dd4a2dc610e62ce16047",
+    "candidate-fit/CF-12/answers.json": "4e8a84edfebc14d829448b49c9d230fa90b8e398f4d9d55c500aa3ecb28b27f2",
+    "candidate-fit/CF-12/gold.json": "86c2f8f7eff061909410d6ca7220f3debb674b4729da66d331211d87bdfe4a50",
+    "candidate-fit/CF-12/input.json": "840d80b5eef48a35ad19395a682fe53057447b53ca216e480646d68b1ae3e58d"
+  }
+}

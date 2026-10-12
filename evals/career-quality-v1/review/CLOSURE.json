@@ -1,0 +1,25 @@
+{
+  "schema": "maguire-quality-review-closure-v1",
+  "date": "2026-10-12",
+  "case_count": 24,
+  "current_case_files_verified": 96,
+  "manifest_sha256": "55d6e2da6955fb5fa795bdceb51f507a6595632b028bed6cd75dc52ab478a3e0",
+  "structural_report_sha256": "b9c93960fda1efc91cfccea5903ec9f87888a6fba4cdae9943293264d40cdddb",
+  "unit_tests": {
+    "command": "python3 -B -m unittest discover -s evals/career-quality-v1/tests -v",
+    "passed": 14,
+    "failed": 0
+  },
+  "latest_review_records": {
+    "review/preference_author_reviews_candidate_v2.json": "f8d1a295013d12578c20d7f1cef7db6dca084617f7bf2dfeb13a664e7db861eb",
+    "review/preference_author_reviews_candidate_v3.json": "054b6b5f40e3383995b99c3a429b365f46e9ca7e619cc24f7dc9399362ec3797",
+    "review/candidate_author_reviews_preference_v2.json": "7f782fbc57ad25d03b2f62d4246c67cf0bd758121029059bf1175dadc0b035a3",
+    "review/candidate_author_reviews_preference_v3.json": "17de8f80ab456d9072108b9f1e0de3fa83c9b67888cff85625b1fac7a1a7141b"
+  },
+  "review_scope": "Two authors cross-reviewed the other suite in the same local environment. Earlier reviews and repair records retained. Final targeted reviews supersede affected case hashes in v2 reviews.",
+  "human_approved": false,
+  "semantic_grader_run": false,
+  "holdout": false,
+  "known_unresolved_blockers": [],
+  "limitation": "Review closure is an agent-authored record of completed corrections, not proof of semantic accuracy or independently sealed evidence."
+}

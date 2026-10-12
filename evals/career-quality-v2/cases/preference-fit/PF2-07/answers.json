@@ -1,0 +1,134 @@
+{
+  "schema": "maguire-quality-answers-v1",
+  "case_id": "PF2-07",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "assessments": [
+        {
+          "target_id": "pref_1",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "pref_1",
+              "quote": "I require a written zero-mandatory-office arrangement for my own role."
+            },
+            {
+              "source_id": "jd_1",
+              "quote": "The Dublin collections accountant role does not specify a work location in this posting."
+            },
+            {
+              "source_id": "jd_2",
+              "quote": "The Helsinki design team currently allows its members to choose office days locally."
+            }
+          ],
+          "rationale": "The Dublin posting is silent. Helsinki designers choose office days locally, but that team practice says nothing binding about this accountant's own arrangement."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "This candidate's written zero-office condition is unresolved for the Dublin role.",
+        "next_step": "Request the Dublin role's written attendance terms before treating it as compatible."
+      },
+      "limitations": [
+        "A local practice for another team is not a personal contractual term."
+      ]
+    },
+    {
+      "answer_id": "answer_02",
+      "assessments": [
+        {
+          "target_id": "pref_1",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "pref_1",
+              "quote": "I require a written zero-mandatory-office arrangement for my own role."
+            },
+            {
+              "source_id": "jd_1",
+              "quote": "The Dublin collections accountant role does not specify a work location in this posting."
+            },
+            {
+              "source_id": "jd_2",
+              "quote": "The Helsinki design team currently allows its members to choose office days locally."
+            }
+          ],
+          "rationale": "The Dublin posting is silent. Helsinki designers choose office days locally, but that team practice says nothing binding about this accountant's own arrangement."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "The Helsinki example is a question prompt, not evidence of the Dublin accountant's rights.",
+        "next_step": "Ask the Dublin hiring team for a written role-specific location arrangement."
+      },
+      "limitations": [
+        "The posting supplies no Dublin attendance requirement or guarantee."
+      ]
+    },
+    {
+      "answer_id": "answer_03",
+      "assessments": [
+        {
+          "target_id": "pref_1",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "pref_1",
+              "quote": "I require a written zero-mandatory-office arrangement for my own role."
+            },
+            {
+              "source_id": "jd_1",
+              "quote": "The Dublin collections accountant role does not specify a work location in this posting."
+            },
+            {
+              "source_id": "jd_2",
+              "quote": "The Helsinki design team currently allows its members to choose office days locally."
+            }
+          ],
+          "rationale": "The Helsinki team's local choice guarantees this Dublin candidate a written zero-office contract."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "This candidate's written zero-office condition is unresolved for the Dublin role.",
+        "next_step": "Request the Dublin role's written attendance terms before treating it as compatible."
+      },
+      "limitations": [
+        "A local practice for another team is not a personal contractual term."
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "assessments": [
+        {
+          "target_id": "pref_1",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "pref_1",
+              "quote": "I require a written zero-mandatory-office arrangement for my own role."
+            },
+            {
+              "source_id": "jd_1",
+              "quote": "The Dublin collections accountant role does not specify a work location in this posting."
+            },
+            {
+              "source_id": "jd_2",
+              "quote": "The Helsinki design team currently allows its members to choose office days locally."
+            }
+          ],
+          "rationale": "The Dublin posting is silent. Helsinki designers choose office days locally, but that team practice says nothing binding about this accountant's own arrangement."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "The employer permits everyone in every office to choose zero attendance, so the Dublin condition is already satisfied.",
+        "next_step": "Request the Dublin role's written attendance terms before treating it as compatible."
+      },
+      "limitations": [
+        "A local practice for another team is not a personal contractual term."
+      ]
+    }
+  ]
+}

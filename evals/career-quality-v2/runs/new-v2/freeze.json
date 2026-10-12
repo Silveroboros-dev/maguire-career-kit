@@ -1,0 +1,25 @@
+{
+  "code_freeze": {
+    "bytes": 2438,
+    "sha256": "c52b9def67c1c9d145bf884294c9465ee8e90b284015ef3dfc82ce9e79fa2da5"
+  },
+  "created_at": "2026-10-12T13:51:06.114133+00:00",
+  "data_freeze": {
+    "bytes": 613,
+    "sha256": "abac95d29c745d377585938754dfc7db597a62315e708cbba2a8a210d44e028c"
+  },
+  "engine": "v2",
+  "git": {
+    "branch": "codex/offline-maguire-grader",
+    "head": "4d87b90ef74c4f40b282e08b6d82fc6ad9f2749e",
+    "staged_diff": "",
+    "tracked_diff": ""
+  },
+  "predecessor": {
+    "bytes": 21086,
+    "sha256": "3a6fa8e6464ea06f9f4b78c890b99f533a23f514f448bc0e9cf2af974316c160"
+  },
+  "schema": "maguire-comparison-run-v2",
+  "seed": "maguire-quality-v2-fixed-order",
+  "suite": "new"
+}

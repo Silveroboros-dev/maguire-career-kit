@@ -1,0 +1,76 @@
+{
+  "schema": "maguire-quality-gold-v1",
+  "case_id": "CF-11",
+  "family": "withdrawn claim and correction",
+  "title": "Corrected platform ownership",
+  "review_status": "proposed_agent_authored",
+  "human_approved": false,
+  "units": [
+    {
+      "target_id": "jd_1",
+      "kind": "compound_duty",
+      "allowed_labels": [
+        "partial"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_1",
+          "fact_2"
+        ]
+      ],
+      "rationale": "The active correction supports category review and checklist drafting, two explicit components, while a colleague designed the final schedule.",
+      "required_points": [
+        "Withdrawn full-design claim is not current evidence",
+        "Candidate reviewed categories and drafted a deletion checklist",
+        "A colleague designed the final schedule"
+      ],
+      "forbidden_inferences": [
+        "Do not revive the withdrawn full-design claim or assign the colleague’s final schedule to the candidate"
+      ]
+    },
+    {
+      "target_id": "jd_2",
+      "kind": "duty",
+      "allowed_labels": [
+        "supported"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_2",
+          "fact_3"
+        ]
+      ],
+      "rationale": "The SQL excerpt supports duplicate-ID checking.",
+      "required_points": [
+        "Duplicate-ID count is shown"
+      ],
+      "forbidden_inferences": [
+        "Do not infer production execution"
+      ]
+    }
+  ],
+  "forbidden_assessment_targets": [],
+  "acceptable_actions": [
+    "pursue",
+    "show_existing_evidence"
+  ],
+  "critical_errors": [
+    {
+      "id": "CF-11-E1",
+      "description": "The full-design statement is withdrawn and superseded by a correction.",
+      "target_ids": [
+        "jd_1"
+      ]
+    },
+    {
+      "id": "CF-11-E2",
+      "description": "Category review and checklist drafting are meaningful subsets.",
+      "target_ids": [
+        "jd_1"
+      ]
+    }
+  ],
+  "notes": [
+    "The active correction is the current claim: two explicit retention-work components belong to the candidate, while final schedule design belongs to a colleague."
+  ]
+}

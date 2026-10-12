@@ -1,0 +1,100 @@
+{
+  "schema": "maguire-offline-grader-boundary-review-v1",
+  "reviewed_at_utc": "2026-10-12T13:31:55Z",
+  "author": "offline_grader_boundaries agent",
+  "scope": "Read-only code review and invented offline boundary fixtures for the pure grade(packet) API. This is agent-authored development review, not human approval or an independent holdout.",
+  "decision": "bounded_boundary_checks_passed_with_exposure_caveat",
+  "source_bindings": {
+    "graders/__init__.py": {
+      "sha256": "9de1460f0c0143731663584e0a3cad2899c55a87d22575d2c5625c43c8bca041",
+      "bytes": 200
+    },
+    "graders/shared.py": {
+      "sha256": "327cc95a72f8cf72e24a6a94e46862363958f728174e26ae03b09dad9eb1a1e8",
+      "bytes": 15562
+    },
+    "graders/candidate.py": {
+      "sha256": "2ec01bebcc5245d7c6eb40d28a776cd8cdf7cb17fc6d3a5bfb733b6111af0166",
+      "bytes": 6565
+    },
+    "graders/preference.py": {
+      "sha256": "e52b1b97a683cf43827629cb90fab47680bdb1a15fe843c7e64e3bd40bb45573",
+      "bytes": 3981
+    },
+    "tests/test_graders.py": {
+      "sha256": "e2800026e8686e0345ddce99937431bf030934774cdc46b39668200d921f56f4",
+      "bytes": 10349
+    },
+    "tests/test_grader_boundaries.py": {
+      "sha256": "bd3448dec2189477ca087ac89172eb444daecccc13757b8554aadf3dc671a99f",
+      "bytes": 21618
+    },
+    "IMPLEMENTATION_CONTRACT.md": {
+      "sha256": "690e51b152dc27db0a8b46825dd970a0318dca437000b2df684996b9931dd649",
+      "bytes": 4234
+    },
+    "RUBRIC.md": {
+      "sha256": "2dcf9136270116eabd348228941e730e2de7cc4a78c6089bab3029e5ec3aec91",
+      "bytes": 5274
+    },
+    "FORMAT.md": {
+      "sha256": "d41b030079bed84b1078e3b4c0eafb80bb4e86a23e65abe015667b3987d32292",
+      "bytes": 6626
+    },
+    "MANIFEST.json": {
+      "sha256": "55d6e2da6955fb5fa795bdceb51f507a6595632b028bed6cd75dc52ab478a3e0",
+      "bytes": 15185
+    }
+  },
+  "checks": [
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -B -m unittest discover -s evals/career-quality-v1/tests -p test_grader_boundaries.py -v",
+      "cwd": "repository root",
+      "tests": 16,
+      "failures": 0,
+      "errors": 0,
+      "status": "passed"
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -B -m unittest discover -s evals/career-quality-v1/tests -p test_graders.py -v",
+      "cwd": "repository root",
+      "tests": 14,
+      "failures": 0,
+      "errors": 0,
+      "status": "passed"
+    },
+    {
+      "command": "grade_packets.grade_rows([one invented projected candidate packet]) under python3 -B",
+      "cwd": "repository root",
+      "tests": 1,
+      "status": "passed: pass verdict, no execution_error under Python audit guard"
+    }
+  ],
+  "boundaries_observed": [
+    "Exact packet projection rejects presentation IDs, expected verdicts and forbidden metadata as invalid input.",
+    "A missing material assessment is a failing answer, not a technical invalid packet.",
+    "Literal quote integrity and complete proposed evidence-set citations are checked; an irrelevant but literal citation fails.",
+    "Renaming all source and target IDs with consistent joins preserves both a passing and a failing verdict; source and assessment row order preserves the result.",
+    "Conservative checks reject employer requirements used as sole candidate experience, negated or planned numerical outcomes promoted to achievements, unknown capability stated as inability, an invented granted employer waiver, and explicit pay override of a must-have conflict.",
+    "A permitted conditional clarification and a permitted pass are accepted for the same explicit office conflict."
+  ],
+  "observed_limitations": [
+    "A pass means only that the implemented deterministic rules found no material error; it is not general semantic entailment or advice certification.",
+    "Proposed gold labels and evidence sets are not independently approved truth. The 16 synthetic boundary tests do not estimate false-acceptance rates on new prose.",
+    "Semantic prose checks use bounded patterns and can miss equivalent wording; a valid quote and source ID alone do not establish every claimed proposition.",
+    "The grader audit guard is a Python process check, not an adversarial operating-system sandbox. No live calls or external effects were tested.",
+    "The final repository-wide test command indirectly exposed authored answer and annotation bytes to its test process. Reviewer did not inspect or output those contents, but strict no-read independence cannot be claimed after that command."
+  ],
+  "exposure_attestation": {
+    "reviewer_authored": true,
+    "directly_opened_or_inspected_answer_files": false,
+    "directly_opened_or_inspected_annotation_files": false,
+    "combined_test_process_deserialized_answer_and_annotation_files": true,
+    "combined_test_process_read_all_dataset_files_for_inventory": true,
+    "combined_test_event": "Before the final candidate.py edit, repository-wide discovery ran 53 tests successfully. Existing test_dataset.py deserialized authored CF-01 answers.json and annotations.json in that test process. This event is recorded as exposure, not as validation of the final bound code.",
+    "read_later_run_predictions_or_measurements": false,
+    "ran_full_96_answer_suite": false,
+    "fixtures": "Invented in tests/test_grader_boundaries.py; that test module itself imports no authored answer or annotation bytes.",
+    "not_cryptographic_or_human_attestation": true
+  }
+}

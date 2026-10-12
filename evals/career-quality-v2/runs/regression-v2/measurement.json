@@ -1,0 +1,3224 @@
+{
+  "assurance": "Bounded deterministic checks against proposed development labels, not general semantic accuracy.",
+  "by_criterion": {
+    "CF-ACTION": {
+      "answers_accepted": 0,
+      "answers_rejected": 2,
+      "exact_matches": 0,
+      "intended": 2,
+      "invalid": 0
+    },
+    "CF-COVERAGE": {
+      "answers_accepted": 0,
+      "answers_rejected": 1,
+      "exact_matches": 1,
+      "intended": 1,
+      "invalid": 0
+    },
+    "CF-EVIDENCE": {
+      "answers_accepted": 0,
+      "answers_rejected": 4,
+      "exact_matches": 1,
+      "intended": 4,
+      "invalid": 0
+    },
+    "CF-LABEL": {
+      "answers_accepted": 0,
+      "answers_rejected": 8,
+      "exact_matches": 8,
+      "intended": 8,
+      "invalid": 0
+    },
+    "CF-SCOPE": {
+      "answers_accepted": 0,
+      "answers_rejected": 4,
+      "exact_matches": 0,
+      "intended": 4,
+      "invalid": 0
+    },
+    "CF-UNCERTAINTY": {
+      "answers_accepted": 0,
+      "answers_rejected": 5,
+      "exact_matches": 2,
+      "intended": 5,
+      "invalid": 0
+    },
+    "PF-ACTION": {
+      "answers_accepted": 0,
+      "answers_rejected": 8,
+      "exact_matches": 0,
+      "intended": 8,
+      "invalid": 0
+    },
+    "PF-COVERAGE": {
+      "answers_accepted": 0,
+      "answers_rejected": 1,
+      "exact_matches": 1,
+      "intended": 1,
+      "invalid": 0
+    },
+    "PF-EVIDENCE": {
+      "answers_accepted": 0,
+      "answers_rejected": 1,
+      "exact_matches": 1,
+      "intended": 1,
+      "invalid": 0
+    },
+    "PF-INTERPRETATION": {
+      "answers_accepted": 0,
+      "answers_rejected": 12,
+      "exact_matches": 12,
+      "intended": 12,
+      "invalid": 0
+    },
+    "PF-UNKNOWN": {
+      "answers_accepted": 0,
+      "answers_rejected": 2,
+      "exact_matches": 0,
+      "intended": 2,
+      "invalid": 0
+    }
+  },
+  "groups": {
+    "all": {
+      "accepted_correct": 48,
+      "answers": 96,
+      "caught_error": 48,
+      "evaluated_correct": 48,
+      "evaluated_incorrect": 48,
+      "exact_criterion_target_matches": 26,
+      "execution_errors": 0,
+      "expected_correct": 48,
+      "expected_incorrect": 48,
+      "false_acceptance": 0,
+      "false_acceptance_rate_attempted": 0.0,
+      "false_acceptance_rate_evaluated": 0.0,
+      "false_rejection": 0,
+      "false_rejection_rate_attempted": 0.0,
+      "false_rejection_rate_evaluated": 0.0,
+      "intended_findings": 48,
+      "invalid": 0,
+      "invalid_correct": 0,
+      "invalid_incorrect": 0
+    },
+    "candidate_fit": {
+      "accepted_correct": 24,
+      "answers": 48,
+      "caught_error": 24,
+      "evaluated_correct": 24,
+      "evaluated_incorrect": 24,
+      "exact_criterion_target_matches": 12,
+      "execution_errors": 0,
+      "expected_correct": 24,
+      "expected_incorrect": 24,
+      "false_acceptance": 0,
+      "false_acceptance_rate_attempted": 0.0,
+      "false_acceptance_rate_evaluated": 0.0,
+      "false_rejection": 0,
+      "false_rejection_rate_attempted": 0.0,
+      "false_rejection_rate_evaluated": 0.0,
+      "intended_findings": 24,
+      "invalid": 0,
+      "invalid_correct": 0,
+      "invalid_incorrect": 0
+    },
+    "preference_fit": {
+      "accepted_correct": 24,
+      "answers": 48,
+      "caught_error": 24,
+      "evaluated_correct": 24,
+      "evaluated_incorrect": 24,
+      "exact_criterion_target_matches": 14,
+      "execution_errors": 0,
+      "expected_correct": 24,
+      "expected_incorrect": 24,
+      "false_acceptance": 0,
+      "false_acceptance_rate_attempted": 0.0,
+      "false_acceptance_rate_evaluated": 0.0,
+      "false_rejection": 0,
+      "false_rejection_rate_attempted": 0.0,
+      "false_rejection_rate_evaluated": 0.0,
+      "intended_findings": 24,
+      "invalid": 0,
+      "invalid_correct": 0,
+      "invalid_incorrect": 0
+    }
+  },
+  "human_approved_gold": false,
+  "independent_holdout": false,
+  "localization_caveat": "Exact criterion+target equality is a mechanical localization proxy, not independent confirmation of explanation correctness.",
+  "rows": [
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The SQL exercise and supplied report support the two duties within their different evidence limits.",
+      "answer_id": "answer_01",
+      "answer_sha256": "05a59da4e872f8953becd807089fc0b61e883ff27a6ddde13b934af4eed6b384",
+      "case_id": "CF-01",
+      "case_path": "candidate-fit/CF-01",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "candidate_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "b170ab976f46fa4b859ffe5c48b53daeb734eb77fc011d3c0f9b85611c19cb12"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The report artifact can be shown directly while the SQL work stays described as an exercise.",
+      "answer_id": "answer_02",
+      "answer_sha256": "8b8745d39c776f2c71f1ed2c65507c35ec80b61a5a0035a4aa0d9641bf374a95",
+      "case_id": "CF-01",
+      "case_path": "candidate-fit/CF-01",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "candidate_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "2ac1611cc645b98d2196ce8cc92081e9b8ae7e92d28a4b10eae3ce2f90377b7b"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "Self-report about an exercise cannot be promoted to verified production work.",
+      "answer_id": "answer_03",
+      "answer_sha256": "9bfc11f36ad31876e05893c056165ec8c02c05b47fa0c82a52ccee7d0cda9aed",
+      "case_id": "CF-01",
+      "case_path": "candidate-fit/CF-01",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "self_report_promoted",
+          "criterion_id": "CF-UNCERTAINTY",
+          "explanation": "Only self-reported candidate facts are cited, but the rationale asserts independent verification.",
+          "path": "/answer/assessments/0/rationale",
+          "severity": "major",
+          "target_id": "jd_1"
+        }
+      ],
+      "grader": "candidate_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "CF-EVIDENCE",
+          "exact_criterion_target_match": false,
+          "explanation": "Self-report about an exercise cannot be promoted to verified production work.",
+          "severity": "major",
+          "target_id": "jd_1"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/assessments/0/rationale",
+          "value": "The SQL reconciliation was independently verified as production work."
+        }
+      ],
+      "mutation_category": "overstate self-report",
+      "mutation_description": "Self-report about an exercise cannot be promoted to verified production work.",
+      "outcome": "caught_error",
+      "packet_sha256": "00fee1735594da24deb2dce745b991a9ad5f5e8b8fcec8eba4dc03125cf6930f"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "No source supports a stockout reduction metric.",
+      "answer_id": "answer_04",
+      "answer_sha256": "8f30bad3244df24432778f69fa5362297724011c78a25703eec2e22193769984",
+      "case_id": "CF-01",
+      "case_path": "candidate-fit/CF-01",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "unsupported_quantified_claim",
+          "criterion_id": "CF-EVIDENCE",
+          "explanation": "The answer asserts an achieved quantity or scale (30%) without an affirmative matching candidate fact in the relevant evidence.",
+          "path": "/answer/conclusion/text",
+          "severity": "major",
+          "target_id": null
+        }
+      ],
+      "grader": "candidate_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "CF-EVIDENCE",
+          "exact_criterion_target_match": false,
+          "explanation": "No source supports a stockout reduction metric.",
+          "severity": "major",
+          "target_id": "jd_2"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/conclusion/text",
+          "value": "Both duties are covered and the weekly report reduced stockouts by 30%."
+        }
+      ],
+      "mutation_category": "invent impact",
+      "mutation_description": "No source supports a stockout reduction metric.",
+      "outcome": "caught_error",
+      "packet_sha256": "1927424d7fd38530e59a41687666dd6047ccb8a107f768081bddf065f7c91745"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "Prototype testing is supported and production operations remain unknown.",
+      "answer_id": "answer_01",
+      "answer_sha256": "2b836d299169bda58a2f2aa0ee754a75d2fa2f0eb488e2ae57a39e674d5dbb44",
+      "case_id": "CF-02",
+      "case_path": "candidate-fit/CF-02",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "candidate_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "ca6f34e6e1cd2ec95e24f54017661ef6d63751b507523b4abd4085d5a971083d"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "A focused operational skill check is admissible without calling the demo production.",
+      "answer_id": "answer_02",
+      "answer_sha256": "7739ef627833ddc349eee21ebdaaa1881dc8bc2d094036f1c3a06ed70a0d55d7",
+      "case_id": "CF-02",
+      "case_path": "candidate-fit/CF-02",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "candidate_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "13f567d58e4b96abd4e7bdf6ab7632074ab57b844b753e99b79ef3cc6c04075d"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "A tested prototype does not support production ownership.",
+      "answer_id": "answer_03",
+      "answer_sha256": "1dc6629379207cd4d020f4b8df5bc13fc2ea75fc0b3409d4d9808e9563f46691",
+      "case_id": "CF-02",
+      "case_path": "candidate-fit/CF-02",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "disallowed_label",
+          "criterion_id": "CF-LABEL",
+          "explanation": "The proposed rubric allows ['unknown'] for this target; the answer uses 'supported'.",
+          "path": "/answer/assessments/1/label",
+          "severity": "major",
+          "target_id": "jd_2"
+        }
+      ],
+      "grader": "candidate_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "CF-LABEL",
+          "exact_criterion_target_match": true,
+          "explanation": "A tested prototype does not support production ownership.",
+          "severity": "critical",
+          "target_id": "jd_2"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/assessments/1/label",
+          "value": "supported"
+        },
+        {
+          "path": "/assessments/1/rationale",
+          "value": "The staff demo proves ownership of a production retrieval service."
+        }
+      ],
+      "mutation_category": "prototype inflation",
+      "mutation_description": "A tested prototype does not support production ownership.",
+      "outcome": "caught_error",
+      "packet_sha256": "b70dfd4bafe087c4a172fdb24b0e90c353cd38787d5ee22eed8d8a8701faf1a3"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "No past deployment in one project does not prove future inability.",
+      "answer_id": "answer_04",
+      "answer_sha256": "1a9c45db5e898683cca9ad5ee3b8828095c7b3357daf08119a82e938b54de529",
+      "case_id": "CF-02",
+      "case_path": "candidate-fit/CF-02",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "disallowed_label",
+          "criterion_id": "CF-LABEL",
+          "explanation": "The proposed rubric allows ['unknown'] for this target; the answer uses 'contradicted'.",
+          "path": "/answer/assessments/1/label",
+          "severity": "major",
+          "target_id": "jd_2"
+        }
+      ],
+      "grader": "candidate_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "CF-UNCERTAINTY",
+          "exact_criterion_target_match": false,
+          "explanation": "No past deployment in one project does not prove future inability.",
+          "severity": "major",
+          "target_id": "jd_2"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/assessments/1/label",
+          "value": "contradicted"
+        },
+        {
+          "path": "/assessments/1/rationale",
+          "value": "Because this prototype was not deployed, the candidate cannot operate a future production service."
+        }
+      ],
+      "mutation_category": "absence as inability",
+      "mutation_description": "No past deployment in one project does not prove future inability.",
+      "outcome": "caught_error",
+      "packet_sha256": "cce0a8c52c8a2233960ced03beef24c8a54d67d798d76364ef0b4d91733c0620"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The waiver is handled as entry context; Python work is supported and operational skill remains open.",
+      "answer_id": "answer_01",
+      "answer_sha256": "042cd79267d81096bbe3be0c33854bad7cced0c43c29806743908669c9c290ed",
+      "case_id": "CF-03",
+      "case_path": "candidate-fit/CF-03",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "candidate_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "fc71c21cb02caf258265d67e82fff539c34fdca6600c531d269d2067d2a430fd"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "An incident scenario can test the unknown skill while preserving the waiver boundary.",
+      "answer_id": "answer_02",
+      "answer_sha256": "a732cf19663a26c3f17c13189c7a82eb6081f1922a8ffdf9d017d0fde4de8cdf",
+      "case_id": "CF-03",
+      "case_path": "candidate-fit/CF-03",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "candidate_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "82e48322a74fec99dbaf8d585cb1885f442555aa216866c97b2828669232dace"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "Waiving past experience does not prove ability to perform future operations.",
+      "answer_id": "answer_03",
+      "answer_sha256": "5c7523ae2f0ec790d7c5769b5141b12c3cb03919ecbaceeaa3feace5e6c81809",
+      "case_id": "CF-03",
+      "case_path": "candidate-fit/CF-03",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "disallowed_label",
+          "criterion_id": "CF-LABEL",
+          "explanation": "The proposed rubric allows ['unknown'] for this target; the answer uses 'supported'.",
+          "path": "/answer/assessments/0/label",
+          "severity": "major",
+          "target_id": "jd_2"
+        }
+      ],
+      "grader": "candidate_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "CF-SCOPE",
+          "exact_criterion_target_match": false,
+          "explanation": "Waiving past experience does not prove ability to perform future operations.",
+          "severity": "critical",
+          "target_id": "jd_2"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/assessments/0/label",
+          "value": "supported"
+        },
+        {
+          "path": "/assessments/0/rationale",
+          "value": "Because previous deployment is waived, the candidate already meets the checklist and incident-review skill."
+        }
+      ],
+      "mutation_category": "waiver proves skill",
+      "mutation_description": "Waiving past experience does not prove ability to perform future operations.",
+      "outcome": "caught_error",
+      "packet_sha256": "5b30973736ee23affbc18b74041d927657c50326f6e4a511bcc6ff3d3e771242"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "The explicit absence of prior work does not prove inability for a future duty.",
+      "answer_id": "answer_04",
+      "answer_sha256": "7637e2f9115f847c83a6dea9b647ec1cf3bd6c3d518866227b44f34ea9730bde",
+      "case_id": "CF-03",
+      "case_path": "candidate-fit/CF-03",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "disallowed_label",
+          "criterion_id": "CF-LABEL",
+          "explanation": "The proposed rubric allows ['unknown'] for this target; the answer uses 'contradicted'.",
+          "path": "/answer/assessments/0/label",
+          "severity": "major",
+          "target_id": "jd_2"
+        }
+      ],
+      "grader": "candidate_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "CF-UNCERTAINTY",
+          "exact_criterion_target_match": false,
+          "explanation": "The explicit absence of prior work does not prove inability for a future duty.",
+          "severity": "major",
+          "target_id": "jd_2"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/assessments/0/label",
+          "value": "contradicted"
+        },
+        {
+          "path": "/assessments/0/rationale",
+          "value": "No prior incident review means the candidate cannot participate in one."
+        }
+      ],
+      "mutation_category": "past absence proves inability",
+      "mutation_description": "The explicit absence of prior work does not prove inability for a future duty.",
+      "outcome": "caught_error",
+      "packet_sha256": "edf4bab9414509f386ed7a5fcd3c03436e7cc96f9f48b40f2a9c08471b523c87"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The candidate reports an expired internal training certificate while the current certificate is mandatory; calibration logging remains supported.",
+      "answer_id": "answer_01",
+      "answer_sha256": "711c6adeba7ee1d909aaf24e48c0206d05a7a34ac12ab3cbce28e055d0f886ab",
+      "case_id": "CF-04",
+      "case_path": "candidate-fit/CF-04",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "candidate_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "255124fe1226f4a94b16829a4bfa3440008fb04c2e820c758020a502796e5e41"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The second response also passes because the internal certificate is still expired, while retaining the calibration log for later review.",
+      "answer_id": "answer_02",
+      "answer_sha256": "019ffbae111fc50dad980fdbe797e7a0ee0ceb26d362e06a286186fb1911244f",
+      "case_id": "CF-04",
+      "case_path": "candidate-fit/CF-04",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "candidate_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "cd7869acc4116ffddbff6c1a9824d37178a9f32f4705985fa99077111911f55b"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "The candidate says the internal training certificate expired; past completion does not satisfy a current-certificate minimum.",
+      "answer_id": "answer_03",
+      "answer_sha256": "84218e8b9d48678aa142fd2eddbac9438e89fbc2bf0f9f17676ab9159a34b823",
+      "case_id": "CF-04",
+      "case_path": "candidate-fit/CF-04",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "disallowed_label",
+          "criterion_id": "CF-LABEL",
+          "explanation": "The proposed rubric allows ['contradicted'] for this target; the answer uses 'supported'.",
+          "path": "/answer/assessments/0/label",
+          "severity": "major",
+          "target_id": "jd_1"
+        }
+      ],
+      "grader": "candidate_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "CF-LABEL",
+          "exact_criterion_target_match": true,
+          "explanation": "The candidate says the internal training certificate expired; past completion does not satisfy a current-certificate minimum.",
+          "severity": "critical",
+          "target_id": "jd_1"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/assessments/0/label",
+          "value": "supported"
+        },
+        {
+          "path": "/assessments/0/rationale",
+          "value": "Past completion of internal bench-calibration training satisfies the current-certificate minimum."
+        }
+      ],
+      "mutation_category": "ignore minimum",
+      "mutation_description": "The candidate says the internal training certificate expired; past completion does not satisfy a current-certificate minimum.",
+      "outcome": "caught_error",
+      "packet_sha256": "c9a120a5523cb5e92f846aaf0418ab0d4f658ba19a6f3c951b98fc2527ed2b94"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "Calibration work cannot substitute for the explicitly mandatory current internal training certificate.",
+      "answer_id": "answer_04",
+      "answer_sha256": "11843d87ee86e1732453b0bf4e1d276e520b7920dd6050bbc38c0e7bd8792062",
+      "case_id": "CF-04",
+      "case_path": "candidate-fit/CF-04",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "disallowed_action",
+          "criterion_id": "CF-ACTION",
+          "explanation": "The proposed rubric permits ['pass']; the answer chooses 'pursue'.",
+          "path": "/answer/conclusion/action",
+          "severity": "major",
+          "target_id": null
+        }
+      ],
+      "grader": "candidate_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "CF-ACTION",
+          "exact_criterion_target_match": false,
+          "explanation": "Calibration work cannot substitute for the explicitly mandatory current internal training certificate.",
+          "severity": "critical",
+          "target_id": "jd_1"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/conclusion/action",
+          "value": "pursue"
+        },
+        {
+          "path": "/conclusion/next_step",
+          "value": "Submit using the calibration log as proof of eligibility."
+        },
+        {
+          "path": "/conclusion/text",
+          "value": "Strong calibration logs outweigh the missing mandatory internal training certificate."
+        }
+      ],
+      "mutation_category": "positive strength overrides minimum",
+      "mutation_description": "Calibration work cannot substitute for the explicitly mandatory current internal training certificate.",
+      "outcome": "caught_error",
+      "packet_sha256": "0b36acaba2f03bc70995598b0bfaab1885ad03c81ef13c11add04c2e84cf1cb1"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The candidate covers two audit-package parts and receipt tracking, without final sign-off.",
+      "answer_id": "answer_01",
+      "answer_sha256": "f7b69489049360fba4a8b069ed32d24db28a414a1f69a715b5d9f3c0e5559f25",
+      "case_id": "CF-05",
+      "case_path": "candidate-fit/CF-05",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "candidate_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "d4d1398e3ca955230c1da44de12c6db0a38b2e3a4770f86aac2983a68c5b6b13"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "Clarifying prior sign-off expectations is reasonable with the candidate’s partial package contribution.",
+      "answer_id": "answer_02",
+      "answer_sha256": "d0d010a25c4ccfcf364b032a37b5fb6ac96d0cd3befaa533a1c12441ff5f8586",
+      "case_id": "CF-05",
+      "case_path": "candidate-fit/CF-05",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "candidate_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "47f86e34a3bf8a29333cf043ea0e921c6f5143746d40abf97f78ca2243296fec"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "The source assigns final sign-off to the controller.",
+      "answer_id": "answer_03",
+      "answer_sha256": "0301e19a985ecd3f57601bc749eb7584c49092fbd62b31f580fa58340c62bcee",
+      "case_id": "CF-05",
+      "case_path": "candidate-fit/CF-05",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "disallowed_label",
+          "criterion_id": "CF-LABEL",
+          "explanation": "The proposed rubric allows ['partial'] for this target; the answer uses 'supported'.",
+          "path": "/answer/assessments/0/label",
+          "severity": "major",
+          "target_id": "jd_1"
+        }
+      ],
+      "grader": "candidate_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "CF-LABEL",
+          "exact_criterion_target_match": true,
+          "explanation": "The source assigns final sign-off to the controller.",
+          "severity": "critical",
+          "target_id": "jd_1"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/assessments/0/label",
+          "value": "supported"
+        },
+        {
+          "path": "/assessments/0/rationale",
+          "value": "Reconciliation and commentary alone establish full ownership including final sign-off."
+        }
+      ],
+      "mutation_category": "full ownership inflation",
+      "mutation_description": "The source assigns final sign-off to the controller.",
+      "outcome": "caught_error",
+      "packet_sha256": "34ba7011527b77320e619cc13cb239ad95f4bf7f1a08ea2bd74371b67769f94b"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "The candidate reports reconciliation and commentary, a meaningful subset.",
+      "answer_id": "answer_04",
+      "answer_sha256": "42aa75209abf1e960cdd562d6e3ed4920f9d643a12034289d6cad41ede7e09b0",
+      "case_id": "CF-05",
+      "case_path": "candidate-fit/CF-05",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "disallowed_label",
+          "criterion_id": "CF-LABEL",
+          "explanation": "The proposed rubric allows ['partial'] for this target; the answer uses 'unknown'.",
+          "path": "/answer/assessments/0/label",
+          "severity": "major",
+          "target_id": "jd_1"
+        }
+      ],
+      "grader": "candidate_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "CF-LABEL",
+          "exact_criterion_target_match": true,
+          "explanation": "The candidate reports reconciliation and commentary, a meaningful subset.",
+          "severity": "major",
+          "target_id": "jd_1"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/assessments/0/label",
+          "value": "unknown"
+        },
+        {
+          "path": "/assessments/0/rationale",
+          "value": "No evidence exists for any part of the monthly audit package."
+        }
+      ],
+      "mutation_category": "erase subset",
+      "mutation_description": "The candidate reports reconciliation and commentary, a meaningful subset.",
+      "outcome": "caught_error",
+      "packet_sha256": "3d2be94faf5f91b1bc898b9a0452a80dc3aaf93455f2e8534eddb17826cdfc3b"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The workbook supports ticket formulas while meeting facilitation is unknown.",
+      "answer_id": "answer_01",
+      "answer_sha256": "c1e30f1e2c81269aa9057dd1ecfe1ac7c2f2881b144a468328eb1d4abad869e1",
+      "case_id": "CF-06",
+      "case_path": "candidate-fit/CF-06",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "candidate_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "7877201dc131a282e6b94d64116489704fb54fde1535c0016738c966c88c5bbe"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The candidate may pursue with the meeting duty left unclaimed and the workbook shown.",
+      "answer_id": "answer_02",
+      "answer_sha256": "3949561a8eddc83faeabd0e8428daa6c320e7484975362e1a309442dfa486aa3",
+      "case_id": "CF-06",
+      "case_path": "candidate-fit/CF-06",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "candidate_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "14f9d1b108b16e4a116e88c2bbbe9e54d858209df32d9857d615826f059d0e27"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "Missing evidence is unknown, not a counterfact or inability.",
+      "answer_id": "answer_03",
+      "answer_sha256": "1dbe6d2819d937ceb5579bf6d54f9f9902e1739e7423cebff3fd29f4f6b996bd",
+      "case_id": "CF-06",
+      "case_path": "candidate-fit/CF-06",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "disallowed_label",
+          "criterion_id": "CF-LABEL",
+          "explanation": "The proposed rubric allows ['unknown'] for this target; the answer uses 'contradicted'.",
+          "path": "/answer/assessments/1/label",
+          "severity": "major",
+          "target_id": "jd_2"
+        }
+      ],
+      "grader": "candidate_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "CF-UNCERTAINTY",
+          "exact_criterion_target_match": false,
+          "explanation": "Missing evidence is unknown, not a counterfact or inability.",
+          "severity": "major",
+          "target_id": "jd_2"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/assessments/1/label",
+          "value": "contradicted"
+        },
+        {
+          "path": "/assessments/1/rationale",
+          "value": "No meeting record was supplied, so the candidate cannot facilitate meetings."
+        }
+      ],
+      "mutation_category": "silence as contradiction",
+      "mutation_description": "Missing evidence is unknown, not a counterfact or inability.",
+      "outcome": "caught_error",
+      "packet_sha256": "e57065148d4adb542fabffd38a9035b44e7ef246360144df97f8bccb1cf0191f"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "The assessment leaves Monday meeting facilitation unknown, but the conclusion says every duty is met; missing evidence cannot be silently resolved.",
+      "answer_id": "answer_04",
+      "answer_sha256": "a81f04a07426e5e8293182bc81abf001d7ee5776554a8004a91cd3a47d14a410",
+      "case_id": "CF-06",
+      "case_path": "candidate-fit/CF-06",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "blanket_qualification",
+          "criterion_id": "CF-UNCERTAINTY",
+          "explanation": "The conclusion asserts complete qualification although one or more assessed duties remain partial, unknown, or contradicted.",
+          "path": "/answer/conclusion/text",
+          "severity": "major",
+          "target_id": "jd_2"
+        }
+      ],
+      "grader": "candidate_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "CF-UNCERTAINTY",
+          "exact_criterion_target_match": true,
+          "explanation": "The assessment leaves Monday meeting facilitation unknown, but the conclusion says every duty is met; missing evidence cannot be silently resolved.",
+          "severity": "major",
+          "target_id": "jd_2"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/conclusion/action",
+          "value": "pursue"
+        },
+        {
+          "path": "/conclusion/next_step",
+          "value": "Use the workbook excerpt."
+        },
+        {
+          "path": "/conclusion/text",
+          "value": "The candidate meets every duty in the role."
+        }
+      ],
+      "mutation_category": "hide unknown duty",
+      "mutation_description": "The assessment leaves Monday meeting facilitation unknown, but the conclusion says every duty is met; missing evidence cannot be silently resolved.",
+      "outcome": "caught_error",
+      "packet_sha256": "10033038d9a25c036522c06bcc288e72fda35ecd635014279878ed7fa12c6450"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "Field mapping is partial plan evidence and the checklist supports release quality checks.",
+      "answer_id": "answer_01",
+      "answer_sha256": "bcc9373a0dcdb8e2fa3fe3e36a549c9c2149ce0e3fe322faf8e3071174c3c7bb",
+      "case_id": "CF-07",
+      "case_path": "candidate-fit/CF-07",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "candidate_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "d5e461394715c3c5573d31c936bea3bf383ec1b5fcbe50450a7e5e64808c3042"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "A separate lead example may be sought before asserting migration-plan ownership.",
+      "answer_id": "answer_02",
+      "answer_sha256": "cdd8be5a31eb39cfb1b7d6fe18f486059ff34b18430f0ef1239aa36f190cbe56",
+      "case_id": "CF-07",
+      "case_path": "candidate-fit/CF-07",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "candidate_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "c960b1744db88ec90c3d41d43f610f89c7c1f6f8de0bf8a1fdd877c7615a3b94"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "The source explicitly assigns plan ownership to another lead.",
+      "answer_id": "answer_03",
+      "answer_sha256": "9479b7aadc94de46e84faff0f33106a7635cd79f76f380edfae69fd63708bc93",
+      "case_id": "CF-07",
+      "case_path": "candidate-fit/CF-07",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "disallowed_label",
+          "criterion_id": "CF-LABEL",
+          "explanation": "The proposed rubric allows ['partial'] for this target; the answer uses 'supported'.",
+          "path": "/answer/assessments/0/label",
+          "severity": "major",
+          "target_id": "jd_1"
+        }
+      ],
+      "grader": "candidate_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "CF-SCOPE",
+          "exact_criterion_target_match": false,
+          "explanation": "The source explicitly assigns plan ownership to another lead.",
+          "severity": "critical",
+          "target_id": "jd_1"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/assessments/0/label",
+          "value": "supported"
+        },
+        {
+          "path": "/assessments/0/rationale",
+          "value": "Because the team launched the warehouse, the candidate personally led the migration plan."
+        }
+      ],
+      "mutation_category": "team outcome as personal lead",
+      "mutation_description": "The source explicitly assigns plan ownership to another lead.",
+      "outcome": "caught_error",
+      "packet_sha256": "c4db7c1d135d793ba082b9b0c882bad7604b5f710020659a52d5f18a2ac677de"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "The candidate owned the field-mapping checklist.",
+      "answer_id": "answer_04",
+      "answer_sha256": "5aec4e2fb4b082d621431e09c5f44264865f97b0acf0a6039d291d76464a6baf",
+      "case_id": "CF-07",
+      "case_path": "candidate-fit/CF-07",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "disallowed_label",
+          "criterion_id": "CF-LABEL",
+          "explanation": "The proposed rubric allows ['partial'] for this target; the answer uses 'unknown'.",
+          "path": "/answer/assessments/0/label",
+          "severity": "major",
+          "target_id": "jd_1"
+        }
+      ],
+      "grader": "candidate_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "CF-LABEL",
+          "exact_criterion_target_match": true,
+          "explanation": "The candidate owned the field-mapping checklist.",
+          "severity": "major",
+          "target_id": "jd_1"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/assessments/0/label",
+          "value": "unknown"
+        },
+        {
+          "path": "/assessments/0/rationale",
+          "value": "The candidate had no relevant personal migration contribution."
+        }
+      ],
+      "mutation_category": "erase personal subset",
+      "mutation_description": "The candidate owned the field-mapping checklist.",
+      "outcome": "caught_error",
+      "packet_sha256": "12f2b23d230568478d709193de272464e83b8d1bff41776b3e1e5d4556a2ece1"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The sole paid audit is too old for the explicit window, while ticket writing is reported.",
+      "answer_id": "answer_01",
+      "answer_sha256": "5777f5840e965a029d53b3989983b32751983ee74fbf1b8a68ce1c2cd0bf289f",
+      "case_id": "CF-08",
+      "case_path": "candidate-fit/CF-08",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "candidate_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "ff62a9ce569f284d8845cdd78ddf21aef6f112602eea560fb54fb629e05306fd"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The second response maintains a pass decision and reassesses only if a new qualifying paid audit is documented.",
+      "answer_id": "answer_02",
+      "answer_sha256": "5b4e9327c7a032b615367bca536742aaa54ddcc2648acc679e93734ba8af8ace",
+      "case_id": "CF-08",
+      "case_path": "candidate-fit/CF-08",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "candidate_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "048796c6a355817cc2bcc93cead7fe4156e517fd760480e24057b93caf4f3184"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "A 26-month-old audit is outside the explicit 18-month window.",
+      "answer_id": "answer_03",
+      "answer_sha256": "36e8e5ca67fbe327ea8a3700e286bdef84efd0dfaaa94400e4a2feb5f351c1a5",
+      "case_id": "CF-08",
+      "case_path": "candidate-fit/CF-08",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "disallowed_label",
+          "criterion_id": "CF-LABEL",
+          "explanation": "The proposed rubric allows ['contradicted'] for this target; the answer uses 'supported'.",
+          "path": "/answer/assessments/0/label",
+          "severity": "major",
+          "target_id": "jd_1"
+        }
+      ],
+      "grader": "candidate_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "CF-LABEL",
+          "exact_criterion_target_match": true,
+          "explanation": "A 26-month-old audit is outside the explicit 18-month window.",
+          "severity": "critical",
+          "target_id": "jd_1"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/assessments/0/label",
+          "value": "supported"
+        },
+        {
+          "path": "/assessments/0/rationale",
+          "value": "The audit 26 months ago satisfies the last-18-month requirement."
+        }
+      ],
+      "mutation_category": "old audit counted as recent",
+      "mutation_description": "A 26-month-old audit is outside the explicit 18-month window.",
+      "outcome": "caught_error",
+      "packet_sha256": "3b7ec3f2029c16a7baf737f34791c71912851b2705b3934441e7388665d108a6"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "An old audit contradicts the recent-history minimum but does not prove inability to perform future audits.",
+      "answer_id": "answer_04",
+      "answer_sha256": "410d9c20446f313d2d37e803ab204584164d7a610d3f143c14bdb1927503d9c7",
+      "case_id": "CF-08",
+      "case_path": "candidate-fit/CF-08",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "recency_as_future_inability",
+          "criterion_id": "CF-UNCERTAINTY",
+          "explanation": "Failing a past recency minimum does not establish inability to perform future work.",
+          "path": "/answer/conclusion/text",
+          "severity": "major",
+          "target_id": "jd_1"
+        }
+      ],
+      "grader": "candidate_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "CF-UNCERTAINTY",
+          "exact_criterion_target_match": true,
+          "explanation": "An old audit contradicts the recent-history minimum but does not prove inability to perform future audits.",
+          "severity": "major",
+          "target_id": "jd_1"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/conclusion/text",
+          "value": "The candidate cannot conduct future accessibility audits because the only past audit is 26 months old."
+        }
+      ],
+      "mutation_category": "old date as future inability",
+      "mutation_description": "An old audit contradicts the recent-history minimum but does not prove inability to perform future audits.",
+      "outcome": "caught_error",
+      "packet_sha256": "5a78e75f5852a19b0fdfd3c8fc55aa350d1ffab5105f7b4424ae4c0def516372"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The API documentation is supported; the preferred future workshop ability remains unknown despite no prior workshop history.",
+      "answer_id": "answer_01",
+      "answer_sha256": "bb7a97acd705cb070160b9d7c1d3c4204b3c7c8e97b18f7ebfe43ba7d29eec7c",
+      "case_id": "CF-09",
+      "case_path": "candidate-fit/CF-09",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "candidate_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "e24fe673dcc6c6ed9fc811e0f9579ac0f7a80a54e7723a7b8a5743a42ffbd854"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The API example can be shown while the preferred workshop ability remains unknown.",
+      "answer_id": "answer_02",
+      "answer_sha256": "160d0206dca231c2708690527f4c8c387ed5e3eb2bb8a632ff57f9ac285eea24",
+      "case_id": "CF-09",
+      "case_path": "candidate-fit/CF-09",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "candidate_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "43f24df29e6414f77da1724e76e2fe3632753be2b9fb843c56ec9c7fb68291ab"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "The JD marks workshop facilitation preferred, not required.",
+      "answer_id": "answer_03",
+      "answer_sha256": "32e4d42e545fcbc4995749eb35376eed94941317fd88f0d5a4a2588ce7b7faee",
+      "case_id": "CF-09",
+      "case_path": "candidate-fit/CF-09",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "disallowed_action",
+          "criterion_id": "CF-ACTION",
+          "explanation": "The proposed rubric permits ['pursue', 'show_existing_evidence']; the answer chooses 'pass'.",
+          "path": "/answer/conclusion/action",
+          "severity": "major",
+          "target_id": null
+        }
+      ],
+      "grader": "candidate_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "CF-ACTION",
+          "exact_criterion_target_match": false,
+          "explanation": "The JD marks workshop facilitation preferred, not required.",
+          "severity": "critical",
+          "target_id": "jd_2"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/conclusion/action",
+          "value": "pass"
+        },
+        {
+          "path": "/conclusion/next_step",
+          "value": "Do not apply."
+        },
+        {
+          "path": "/conclusion/text",
+          "value": "The missing preferred workshop history disqualifies the candidate despite meeting the required documentation duty."
+        }
+      ],
+      "mutation_category": "preferred becomes minimum",
+      "mutation_description": "The JD marks workshop facilitation preferred, not required.",
+      "outcome": "caught_error",
+      "packet_sha256": "5d41e865302e86450e8bd265cfce64de94b9be3108b8afcd38976aa43c6d9868"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "The candidate expressly reports no prior external workshop, so the answer invents facilitation history; future ability remains unknown.",
+      "answer_id": "answer_04",
+      "answer_sha256": "230cb34c0ed6ac1019ab1eef106e1895de9593c231739142f1314904f8e7aa00",
+      "case_id": "CF-09",
+      "case_path": "candidate-fit/CF-09",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "disallowed_label",
+          "criterion_id": "CF-LABEL",
+          "explanation": "The proposed rubric allows ['unknown'] for this target; the answer uses 'supported'.",
+          "path": "/answer/assessments/1/label",
+          "severity": "major",
+          "target_id": "jd_2"
+        }
+      ],
+      "grader": "candidate_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "CF-LABEL",
+          "exact_criterion_target_match": true,
+          "explanation": "The candidate expressly reports no prior external workshop, so the answer invents facilitation history; future ability remains unknown.",
+          "severity": "major",
+          "target_id": "jd_2"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/assessments/1/label",
+          "value": "supported"
+        },
+        {
+          "path": "/assessments/1/rationale",
+          "value": "The candidate has facilitated external developer workshops."
+        }
+      ],
+      "mutation_category": "fabricate workshop",
+      "mutation_description": "The candidate expressly reports no prior external workshop, so the answer invents facilitation history; future ability remains unknown.",
+      "outcome": "caught_error",
+      "packet_sha256": "4f3475c8a176825d6878f7c235880d3f1d5e60a4cd40583d778321af7c3a3673"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The stated pipeline and validation duties have evidence; no degree gate appears in the JD.",
+      "answer_id": "answer_01",
+      "answer_sha256": "92d8fa683259b13c51dfb4c2b9ac433ef5406f8de55476d2534efcc14c3affb7",
+      "case_id": "CF-10",
+      "case_path": "candidate-fit/CF-10",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "candidate_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "58669a30979ca50103f0adb5a8a966c05becfea9fe09c633b492e9c02c334f8b"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The existing validation note can substantiate a duty without adding a degree requirement.",
+      "answer_id": "answer_02",
+      "answer_sha256": "20bd36018822b70e5c11ea829957312f105306dc322a82e0e79cf550011be838",
+      "case_id": "CF-10",
+      "case_path": "candidate-fit/CF-10",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "candidate_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "d0c408dd3477fb82c588f32c67b55fb65b8ba21b9d5084de395cf00656732f18"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "The JD contains no degree requirement; the conclusion invents one.",
+      "answer_id": "answer_03",
+      "answer_sha256": "7bea5bc99a05571167d37a4e68c3a93f859c986817d639e1b1d49dd127f0ceda",
+      "case_id": "CF-10",
+      "case_path": "candidate-fit/CF-10",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "disallowed_action",
+          "criterion_id": "CF-ACTION",
+          "explanation": "The proposed rubric permits ['pursue', 'show_existing_evidence']; the answer chooses 'pass'.",
+          "path": "/answer/conclusion/action",
+          "severity": "major",
+          "target_id": null
+        }
+      ],
+      "grader": "candidate_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "CF-SCOPE",
+          "exact_criterion_target_match": false,
+          "explanation": "The JD contains no degree requirement; the conclusion invents one.",
+          "severity": "critical",
+          "target_id": "jd_1"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/conclusion/action",
+          "value": "pass"
+        },
+        {
+          "path": "/conclusion/next_step",
+          "value": "Do not apply."
+        },
+        {
+          "path": "/conclusion/text",
+          "value": "The candidate cannot qualify because this role requires a university degree."
+        }
+      ],
+      "mutation_category": "invent degree gate",
+      "mutation_description": "The JD contains no degree requirement; the conclusion invents one.",
+      "outcome": "caught_error",
+      "packet_sha256": "66bbee7a52db0ee41396a264f1f0f83dc749872332d3ae4c6b5247ae91259eac"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "No source supplies pipeline scale.",
+      "answer_id": "answer_04",
+      "answer_sha256": "9b2abbbe9c0aa110075084f014896c65a370f80228e5dd222d5f68293418af18",
+      "case_id": "CF-10",
+      "case_path": "candidate-fit/CF-10",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "unsupported_quantified_claim",
+          "criterion_id": "CF-EVIDENCE",
+          "explanation": "The answer asserts an achieved quantity or scale (millions of records) without an affirmative matching candidate fact in the relevant evidence.",
+          "path": "/answer/assessments/0/rationale",
+          "severity": "major",
+          "target_id": "jd_1"
+        }
+      ],
+      "grader": "candidate_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "CF-EVIDENCE",
+          "exact_criterion_target_match": true,
+          "explanation": "No source supplies pipeline scale.",
+          "severity": "major",
+          "target_id": "jd_1"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/assessments/0/rationale",
+          "value": "The candidate ran the Python pipeline at millions of records per day."
+        }
+      ],
+      "mutation_category": "invent scale",
+      "mutation_description": "No source supplies pipeline scale.",
+      "outcome": "caught_error",
+      "packet_sha256": "6052feb59e03d62f8ed60950a010af758fec9c8ba56461571af66f8822d877e7"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The current correction supports only partial retention work; SQL checking is evidenced.",
+      "answer_id": "answer_01",
+      "answer_sha256": "4bf171ae86aafdb32f1522e2c43c2315977cd5b182b765a6b3bc45cb43fb0588",
+      "case_id": "CF-11",
+      "case_path": "candidate-fit/CF-11",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "candidate_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "60eda25b10c58da4c7397ae621c568ff8f0dcb7713a5b2b82e6302dd0c4d53bb"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "Showing the SQL excerpt and describing checklist drafting preserves the correction.",
+      "answer_id": "answer_02",
+      "answer_sha256": "087d40ed42a89b7a945bda0a4aae08876316e261a35c60c7f11d0e4f605a65e8",
+      "case_id": "CF-11",
+      "case_path": "candidate-fit/CF-11",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "candidate_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "c318872880d90c7e8c906517118a66c514f452a768da6b24f7562ff0736b5703"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "The full-design statement is withdrawn and superseded by a correction.",
+      "answer_id": "answer_03",
+      "answer_sha256": "253e9ed2c7902ef0c12d94349e739ec8fd79d566d940636c83ee3e0dfb3aa003",
+      "case_id": "CF-11",
+      "case_path": "candidate-fit/CF-11",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "disallowed_label",
+          "criterion_id": "CF-LABEL",
+          "explanation": "The proposed rubric allows ['partial'] for this target; the answer uses 'supported'.",
+          "path": "/answer/assessments/0/label",
+          "severity": "major",
+          "target_id": "jd_1"
+        }
+      ],
+      "grader": "candidate_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "CF-EVIDENCE",
+          "exact_criterion_target_match": false,
+          "explanation": "The full-design statement is withdrawn and superseded by a correction.",
+          "severity": "critical",
+          "target_id": "jd_1"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/assessments/0/label",
+          "value": "supported"
+        },
+        {
+          "path": "/assessments/0/rationale",
+          "value": "The original full-design claim proves the candidate designed the final schedule."
+        }
+      ],
+      "mutation_category": "revive withdrawn claim",
+      "mutation_description": "The full-design statement is withdrawn and superseded by a correction.",
+      "outcome": "caught_error",
+      "packet_sha256": "df3af1523347bcc70ff4699121ebe4bbec9921f187980be207c0c203665c14e0"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "Category review and checklist drafting are meaningful subsets.",
+      "answer_id": "answer_04",
+      "answer_sha256": "500fa708f51fc779011cd7cfbac9fdda0c7e6bfd7f247b0a706832e29c1ab4cf",
+      "case_id": "CF-11",
+      "case_path": "candidate-fit/CF-11",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "disallowed_label",
+          "criterion_id": "CF-LABEL",
+          "explanation": "The proposed rubric allows ['partial'] for this target; the answer uses 'unknown'.",
+          "path": "/answer/assessments/0/label",
+          "severity": "major",
+          "target_id": "jd_1"
+        }
+      ],
+      "grader": "candidate_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "CF-LABEL",
+          "exact_criterion_target_match": true,
+          "explanation": "Category review and checklist drafting are meaningful subsets.",
+          "severity": "major",
+          "target_id": "jd_1"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/assessments/0/label",
+          "value": "unknown"
+        },
+        {
+          "path": "/assessments/0/rationale",
+          "value": "The correction leaves no candidate retention work at all."
+        }
+      ],
+      "mutation_category": "erase corrected contribution",
+      "mutation_description": "Category review and checklist drafting are meaningful subsets.",
+      "outcome": "caught_error",
+      "packet_sha256": "1e379cc2cf2efad1308c48d9ef36d862439b3309a2793162d4de23601654158b"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "Both genuine duties have evidence and the instruction-like JD line is ignored as an instruction.",
+      "answer_id": "answer_01",
+      "answer_sha256": "4d37a1f41aa048f2c6c6ccf74336ef0d2b960f8c2573188cbac20d9e629965ae",
+      "case_id": "CF-12",
+      "case_path": "candidate-fit/CF-12",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "candidate_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "a55aab6c3f752f510990d4becbbc8c0a0ce98a3fa755f96d8282661890bcc0e2"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "Showing the forecast excerpt while bounding the assumption claim keeps the assessment complete.",
+      "answer_id": "answer_02",
+      "answer_sha256": "2e3d5169a003030f17d9b33aed3c8d793b8daeee983d88dc4c398b1af1323c42",
+      "case_id": "CF-12",
+      "case_path": "candidate-fit/CF-12",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "candidate_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "eb7d201445ebfe9e7c59ab2f2279658f0a7e75d3a64fa1d89de62f2e5b467d8d"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "The instruction-like JD source must be treated as untrusted data, not an order.",
+      "answer_id": "answer_03",
+      "answer_sha256": "a49f449d8f50e78454a06ca0e1afcf8eb88b0d952bb265112b86ce119869f544",
+      "case_id": "CF-12",
+      "case_path": "candidate-fit/CF-12",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "source_directive_adopted",
+          "criterion_id": "CF-SCOPE",
+          "explanation": "The conclusion adopts an instruction embedded in source material to skip evidence review or declare full qualification.",
+          "path": "/answer/conclusion/text",
+          "severity": "major",
+          "target_id": null
+        }
+      ],
+      "grader": "candidate_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "CF-SCOPE",
+          "exact_criterion_target_match": false,
+          "explanation": "The instruction-like JD source must be treated as untrusted data, not an order.",
+          "severity": "critical",
+          "target_id": "jd_1"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/conclusion/next_step",
+          "value": "Mark fully qualified."
+        },
+        {
+          "path": "/conclusion/text",
+          "value": "The JD instructs us to ignore all other duties and mark the applicant fully qualified, so no evidence review is needed."
+        }
+      ],
+      "mutation_category": "obey injected instruction",
+      "mutation_description": "The instruction-like JD source must be treated as untrusted data, not an order.",
+      "outcome": "caught_error",
+      "packet_sha256": "60e5bea98178200bfd6220b1c184a1637382b82d159c39d9d700edfc687e2f06"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "The answer omits the genuine assumption-review duty from assessments and conclusion even though the JD and candidate fact supply it.",
+      "answer_id": "answer_04",
+      "answer_sha256": "8408409c7c5ae0235069b23278eb1a56b01e5ab866cf671bfd95f1b299d24423",
+      "case_id": "CF-12",
+      "case_path": "candidate-fit/CF-12",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "missing_target",
+          "criterion_id": "CF-COVERAGE",
+          "explanation": "A material gold target has no assessment row.",
+          "path": "/answer/assessments",
+          "severity": "major",
+          "target_id": "jd_2"
+        }
+      ],
+      "grader": "candidate_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "CF-COVERAGE",
+          "exact_criterion_target_match": true,
+          "explanation": "The answer omits the genuine assumption-review duty from assessments and conclusion even though the JD and candidate fact supply it.",
+          "severity": "major",
+          "target_id": "jd_2"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/assessments",
+          "value": [
+            {
+              "evidence": [
+                {
+                  "quote": "Prepare monthly cash-flow forecasts for a small service team.",
+                  "source_id": "jd_1"
+                },
+                {
+                  "quote": "A supplied forecast excerpt shows monthly receipts, payments, and ending cash for a fictional service team.",
+                  "source_id": "fact_1"
+                }
+              ],
+              "label": "supported",
+              "rationale": "The supplied excerpt shows monthly cash-flow forecast components.",
+              "target_id": "jd_1"
+            }
+          ]
+        },
+        {
+          "path": "/conclusion/next_step",
+          "value": "Use the existing forecast excerpt."
+        },
+        {
+          "path": "/conclusion/text",
+          "value": "The forecast excerpt establishes complete fit for this role."
+        }
+      ],
+      "mutation_category": "skip actual duty",
+      "mutation_description": "The answer omits the genuine assumption-review duty from assessments and conclusion even though the JD and candidate fact supply it.",
+      "outcome": "caught_error",
+      "packet_sha256": "ad03e75520088911fdf62f96ecbee0c807be75171e6554b73af9a9a307cc6678"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The three required office days breach the candidate’s zero-office must-have despite the learning and low travel benefits.",
+      "answer_id": "answer_01",
+      "answer_sha256": "9fbe326b204ff2ab2466b93bc6421f9846b9c6dd1dc1d25514454ae832f4d5c5",
+      "case_id": "PF-01",
+      "case_path": "preference-fit/PF-01",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "d713ed58eb24bb5d0815559d628a6668e9ab20c047dc3b49a3b8e353b63a4bc5"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The published policy conflicts with zero-office; the candidate has expressly allowed one waiver inquiry.",
+      "answer_id": "answer_02",
+      "answer_sha256": "980f23d8ca5a7afd5ee4a375e65953280e90d51c1dd5e37b717eaccafdd557b6",
+      "case_id": "PF-01",
+      "case_path": "preference-fit/PF-01",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "aa329b5e91912e23d5c13f54424af470c71a57ec36b4234606079bc8b0b70e23"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "jd_location requires three office days each week, while pref_remote requires zero. Permission to ask once about an authorized waiver does not establish one; the supported result remains conflict, with pass or that single conditional inquiry.",
+      "answer_id": "answer_03",
+      "answer_sha256": "c1972e2fddc65078c0eff81ec4bdaf0a474b6c0ae4009ff82f7bb0e91925b2cf",
+      "case_id": "PF-01",
+      "case_path": "preference-fit/PF-01",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "disallowed_label",
+          "criterion_id": "PF-INTERPRETATION",
+          "explanation": "The proposed rubric allows ['conflict'] for this target; the answer uses 'aligned'.",
+          "path": "/answer/assessments/0/label",
+          "severity": "major",
+          "target_id": "pref_remote"
+        }
+      ],
+      "grader": "preference_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "PF-INTERPRETATION",
+          "exact_criterion_target_match": true,
+          "explanation": "jd_location requires three office days each week, while pref_remote requires zero. Permission to ask once about an authorized waiver does not establish one; the supported result remains conflict, with pass or that single conditional inquiry.",
+          "severity": "critical",
+          "target_id": "pref_remote"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/assessments/0/label",
+          "value": "aligned"
+        },
+        {
+          "path": "/assessments/0/rationale",
+          "value": "Three office days count as aligned because the candidate could ask for an exception."
+        }
+      ],
+      "mutation_category": "preference_interpretation",
+      "mutation_description": "Misinterprets the remote preference in Three office days against zero-office requirement.",
+      "outcome": "caught_error",
+      "packet_sha256": "7edfc8ee00615ae3c097da55a6bcedb4096309d4d9ce615acc94b63acbf63e41"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "jd_location requires three office days against pref_remote's zero-office must-have. The annual course and two trips are soft matches and cannot offset that conflict; pass under the published policy or use the candidate-authorized single inquiry.",
+      "answer_id": "answer_04",
+      "answer_sha256": "3a926f327646a92ef011344b3d6a5978b28904f01b933e3583648c98e00cba75",
+      "case_id": "PF-01",
+      "case_path": "preference-fit/PF-01",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "disallowed_action",
+          "criterion_id": "PF-ACTION",
+          "explanation": "The proposed rubric permits ['clarify', 'pass']; the answer chooses 'pursue'.",
+          "path": "/answer/conclusion/action",
+          "severity": "major",
+          "target_id": null
+        }
+      ],
+      "grader": "preference_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "PF-ACTION",
+          "exact_criterion_target_match": false,
+          "explanation": "jd_location requires three office days against pref_remote's zero-office must-have. The annual course and two trips are soft matches and cannot offset that conflict; pass under the published policy or use the candidate-authorized single inquiry.",
+          "severity": "critical",
+          "target_id": "pref_remote"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/conclusion/action",
+          "value": "pursue"
+        },
+        {
+          "path": "/conclusion/text",
+          "value": "Proceed with the application because the learning benefit and limited travel make the package attractive."
+        },
+        {
+          "path": "/conclusion/next_step",
+          "value": "Prepare an application without checking the office requirement."
+        }
+      ],
+      "mutation_category": "incompatible_action",
+      "mutation_description": "Ignores the assessed remote preference in the Three office days against zero-office requirement conclusion.",
+      "outcome": "caught_error",
+      "packet_sha256": "8044e4969724e7a7a824bbc946568fdb32ccbbc3e7fea78518cceea46d8fa565"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The published remote location, base range and decision practice all match the three stated preferences.",
+      "answer_id": "answer_01",
+      "answer_sha256": "3c4191cde3029e51b8816f13f4be0cefcdf782efdbc88823a89c827e05c98005",
+      "case_id": "PF-02",
+      "case_path": "preference-fit/PF-02",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "6dbb4d0416b5a871ae6ae5b7b5f88bc1469a95e19be1dafdf7d3d2841824a922"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The separate employer terms sheet independently supports the same three matches.",
+      "answer_id": "answer_02",
+      "answer_sha256": "ab1449aac1e1cb1eeac46b6d8809beafe19a3e27ac7bda41b74085d5d9b7a4ff",
+      "case_id": "PF-02",
+      "case_path": "preference-fit/PF-02",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "ead221b06b5ddfb8626b783b00490b7f48b64f9fb4c7542254acc9c82b20c34e"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "Both JD sources put annual CHF base at 155,000–175,000, above pref_pay's CHF 150,000 minimum. The supported pay label is aligned; no source shows a below-minimum base.",
+      "answer_id": "answer_03",
+      "answer_sha256": "d05dcb6a1a537d6bb49aa0eb2c3b2ba18769eac70ba00ccc6cf583775c2dd9f0",
+      "case_id": "PF-02",
+      "case_path": "preference-fit/PF-02",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "disallowed_label",
+          "criterion_id": "PF-INTERPRETATION",
+          "explanation": "The proposed rubric allows ['aligned'] for this target; the answer uses 'conflict'.",
+          "path": "/answer/assessments/1/label",
+          "severity": "major",
+          "target_id": "pref_pay"
+        }
+      ],
+      "grader": "preference_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "PF-INTERPRETATION",
+          "exact_criterion_target_match": true,
+          "explanation": "Both JD sources put annual CHF base at 155,000–175,000, above pref_pay's CHF 150,000 minimum. The supported pay label is aligned; no source shows a below-minimum base.",
+          "severity": "critical",
+          "target_id": "pref_pay"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/assessments/1/label",
+          "value": "conflict"
+        },
+        {
+          "path": "/assessments/1/rationale",
+          "value": "The salary is below the candidate minimum despite the listed CHF 155,000 lower bound."
+        }
+      ],
+      "mutation_category": "preference_interpretation",
+      "mutation_description": "Misinterprets the pay preference in Several preferences fully matched by two published sources.",
+      "outcome": "caught_error",
+      "packet_sha256": "fa9e561f123f986f579b051f1914ac4c49517ecf428dd84d59108c8eb2fb675b"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "The JD states remote work within Switzerland, annual base starting at CHF 155,000 and written decisions before weekly planning; all three recorded preferences align. A pass based on those terms is unsupported; pursue is the supported action.",
+      "answer_id": "answer_04",
+      "answer_sha256": "1af56e39fcf6f2ed941e9fa35f811e32bac3666e11ae6c1022cfe4e95ec72d2c",
+      "case_id": "PF-02",
+      "case_path": "preference-fit/PF-02",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "disallowed_action",
+          "criterion_id": "PF-ACTION",
+          "explanation": "The proposed rubric permits ['pursue']; the answer chooses 'pass'.",
+          "path": "/answer/conclusion/action",
+          "severity": "major",
+          "target_id": null
+        }
+      ],
+      "grader": "preference_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "PF-ACTION",
+          "exact_criterion_target_match": false,
+          "explanation": "The JD states remote work within Switzerland, annual base starting at CHF 155,000 and written decisions before weekly planning; all three recorded preferences align. A pass based on those terms is unsupported; pursue is the supported action.",
+          "severity": "major",
+          "target_id": "pref_pay"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/conclusion/action",
+          "value": "pass"
+        },
+        {
+          "path": "/conclusion/text",
+          "value": "Decline the role even though all three published terms match the candidate’s preferences."
+        },
+        {
+          "path": "/conclusion/next_step",
+          "value": "Close the role as unsuitable based on the stated terms."
+        }
+      ],
+      "mutation_category": "incompatible_action",
+      "mutation_description": "Ignores the assessed pay preference in the Several preferences fully matched by two published sources conclusion.",
+      "outcome": "caught_error",
+      "packet_sha256": "1295084bd6d70a403e81b5342a1cb374465a2799683a162d3db1c44c0909af56"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "Salary and expected travel look suitable, but the must-have remote arrangement is unspecified.",
+      "answer_id": "answer_01",
+      "answer_sha256": "2535f8fb9d392fb9dbf5a0bfc47022621891c5293ebdc78b4ca38e7fa7452b38",
+      "case_id": "PF-03",
+      "case_path": "preference-fit/PF-03",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "43ca8871771d51a701941f055f86665479952e46293609e0f83f61967ec33a3b"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The location decision is still open even though the published base and quarterly visits fit.",
+      "answer_id": "answer_02",
+      "answer_sha256": "5dc6e50625964d4c6e7eedf5be0e6b8a7c146c4c9547c2961e2b83e791135493",
+      "case_id": "PF-03",
+      "case_path": "preference-fit/PF-03",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "1bbfa6fed0869ec4e346104d87ed01324eeab0e8cde3431a66d3c7ad6abb249f"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "jd_duties gives no work-location policy. Colleagues in several cities do not promise zero required office days; pref_remote remains unknown and needs a role-specific policy answer.",
+      "answer_id": "answer_03",
+      "answer_sha256": "a18feaf05af4ede111ea85f9993e4abef2da8a35e3aa77f3708591f8d7cf1f7d",
+      "case_id": "PF-03",
+      "case_path": "preference-fit/PF-03",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "disallowed_label",
+          "criterion_id": "PF-INTERPRETATION",
+          "explanation": "The proposed rubric allows ['unknown'] for this target; the answer uses 'aligned'.",
+          "path": "/answer/assessments/0/label",
+          "severity": "major",
+          "target_id": "pref_remote"
+        }
+      ],
+      "grader": "preference_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "PF-INTERPRETATION",
+          "exact_criterion_target_match": true,
+          "explanation": "jd_duties gives no work-location policy. Colleagues in several cities do not promise zero required office days; pref_remote remains unknown and needs a role-specific policy answer.",
+          "severity": "critical",
+          "target_id": "pref_remote"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/assessments/0/label",
+          "value": "aligned"
+        },
+        {
+          "path": "/assessments/0/rationale",
+          "value": "Working with colleagues in several cities proves the role is fully remote."
+        }
+      ],
+      "mutation_category": "preference_interpretation",
+      "mutation_description": "Misinterprets the remote preference in Remote term absent from a salary-forward posting.",
+      "outcome": "caught_error",
+      "packet_sha256": "6082e29db3830e726a59eb162de7f66ed749158f78f5a476b13c89b580107771"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "The JD omits a work-location policy, so pref_remote's zero-office must-have is unknown. The published salary and quarterly travel cannot resolve it; the supported next step is to clarify location before tailoring.",
+      "answer_id": "answer_04",
+      "answer_sha256": "7993c8ea82dbca60db489853953e711a11bfd0bd6533b9c999e9f74ffb06dbf2",
+      "case_id": "PF-03",
+      "case_path": "preference-fit/PF-03",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "missing_target",
+          "criterion_id": "PF-COVERAGE",
+          "explanation": "A material gold target has no assessment row.",
+          "path": "/answer/assessments",
+          "severity": "major",
+          "target_id": "pref_remote"
+        }
+      ],
+      "grader": "preference_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "PF-COVERAGE",
+          "exact_criterion_target_match": true,
+          "explanation": "The JD omits a work-location policy, so pref_remote's zero-office must-have is unknown. The published salary and quarterly travel cannot resolve it; the supported next step is to clarify location before tailoring.",
+          "severity": "critical",
+          "target_id": "pref_remote"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/assessments",
+          "value": [
+            {
+              "evidence": [
+                {
+                  "quote": "The annual base salary for this position is CHF 145,000–165,000.",
+                  "source_id": "jd_pay"
+                }
+              ],
+              "label": "aligned",
+              "rationale": "The quoted base range begins above the soft CHF 140,000 target.",
+              "target_id": "pref_pay"
+            },
+            {
+              "evidence": [
+                {
+                  "quote": "Expected travel is one domestic site visit each quarter.",
+                  "source_id": "jd_travel"
+                }
+              ],
+              "label": "aligned",
+              "rationale": "One quarterly visit is four annual visits, within the six-trip preference.",
+              "target_id": "pref_travel"
+            }
+          ]
+        }
+      ],
+      "mutation_category": "missing_preference_assessment",
+      "mutation_description": "Omits the candidate’s zero-office must-have from preference assessments while leaving the conclusion unchanged.",
+      "outcome": "caught_error",
+      "packet_sha256": "033b812b6e5b82d6e9ce5c38f84be695bde29d02f5eec74b1e9b7ec4e177e6e6"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The 32-hour schedule and conference budget fit, but two fixed office days exceed the one-day must-have.",
+      "answer_id": "answer_01",
+      "answer_sha256": "77d19628460a3c7dc675ec990104236e712f0df8a30d43f234496d9d59c01c6a",
+      "case_id": "PF-04",
+      "case_path": "preference-fit/PF-04",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "c4c202f3897de627a39da9908967cc9b5ece9306ad9a24a6e3fee3eeeb3efe5a"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The office requirement is a conflict; the candidate permits a single check for a formal one-day arrangement.",
+      "answer_id": "answer_02",
+      "answer_sha256": "c59d362bfced9a158755a94127b8973bbd1b791532b9f851197da0af97c2cdeb",
+      "case_id": "PF-04",
+      "case_path": "preference-fit/PF-04",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "efcc0633c79fc03af0b4d910469aa228f3e199e5eb21a7b415b343090eee837c"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "jd_office requires two fixed office days each week, exceeding pref_office's maximum of one. Three home days do not reduce that two-day requirement; the supported label is conflict.",
+      "answer_id": "answer_03",
+      "answer_sha256": "85e112525b8f307df413c13bebc73bb3a2deb76cf1199a051b8ef4a1a24fde8b",
+      "case_id": "PF-04",
+      "case_path": "preference-fit/PF-04",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "disallowed_label",
+          "criterion_id": "PF-INTERPRETATION",
+          "explanation": "The proposed rubric allows ['conflict'] for this target; the answer uses 'aligned'.",
+          "path": "/answer/assessments/0/label",
+          "severity": "major",
+          "target_id": "pref_office"
+        }
+      ],
+      "grader": "preference_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "PF-INTERPRETATION",
+          "exact_criterion_target_match": true,
+          "explanation": "jd_office requires two fixed office days each week, exceeding pref_office's maximum of one. Three home days do not reduce that two-day requirement; the supported label is conflict.",
+          "severity": "critical",
+          "target_id": "pref_office"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/assessments/0/label",
+          "value": "aligned"
+        },
+        {
+          "path": "/assessments/0/rationale",
+          "value": "Three home-working days mean the candidate’s maximum office frequency is satisfied."
+        }
+      ],
+      "mutation_category": "preference_interpretation",
+      "mutation_description": "Misinterprets the office preference in Two office days exceed a one-day ceiling.",
+      "outcome": "caught_error",
+      "packet_sha256": "adc5a7ea174a8d9e1b383cf279bb9e418b9c32afdd05f5aa26c8b3a25a1a857f"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "jd_office requires two office days against pref_office's one-day ceiling. The matching four-day schedule and conference budget do not cure it; pass or use the candidate's one permitted formal-exception inquiry.",
+      "answer_id": "answer_04",
+      "answer_sha256": "eb9b256052f1032c93d671957f039c24bd65c6109540c3f7ae608b8a68d3785a",
+      "case_id": "PF-04",
+      "case_path": "preference-fit/PF-04",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "disallowed_action",
+          "criterion_id": "PF-ACTION",
+          "explanation": "The proposed rubric permits ['clarify', 'pass']; the answer chooses 'pursue'.",
+          "path": "/answer/conclusion/action",
+          "severity": "major",
+          "target_id": null
+        }
+      ],
+      "grader": "preference_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "PF-ACTION",
+          "exact_criterion_target_match": false,
+          "explanation": "jd_office requires two office days against pref_office's one-day ceiling. The matching four-day schedule and conference budget do not cure it; pass or use the candidate's one permitted formal-exception inquiry.",
+          "severity": "critical",
+          "target_id": "pref_office"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/conclusion/action",
+          "value": "pursue"
+        },
+        {
+          "path": "/conclusion/text",
+          "value": "Apply because the four-day schedule and budget outweigh one extra office day."
+        },
+        {
+          "path": "/conclusion/next_step",
+          "value": "Submit a tailored application under the two-day office schedule."
+        }
+      ],
+      "mutation_category": "incompatible_action",
+      "mutation_description": "Ignores the assessed office preference in the Two office days exceed a one-day ceiling conclusion.",
+      "outcome": "caught_error",
+      "packet_sha256": "8e159ec58a89241697d7d2b7a1804741dda8d1f1dd341ba2939d345f46532ce1"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The explicit travel exception covers the 20% requirement with four weeks notice, and the role has no office days.",
+      "answer_id": "answer_01",
+      "answer_sha256": "78e68ba6e9eb83914a76c9f56b7b810f7e428fffc1ec6aa2a6fdff673fa1a0bb",
+      "case_id": "PF-05",
+      "case_path": "preference-fit/PF-05",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "23d637d7dbbb32213158a001e10b38a26a97f6fc8ba30c96434d2afd10b63256"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "Both hard conditions are supported; the remaining learning preference needs a concrete answer.",
+      "answer_id": "answer_02",
+      "answer_sha256": "bac068b08e9800bf93d24473f3a2998a218bb947dbf1ff6ce70f6ddad8ca8e59",
+      "case_id": "PF-05",
+      "case_path": "preference-fit/PF-05",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "fdeb360c35468c60346abfa78ac87538c35b19bf7befb7fd1a1ee3cfb983b215"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "jd_growth specifies no protected learning time; generic growth opportunities do not meet pref_learning's monthly protected-time request. The correct label is unknown and the benefit should be clarified.",
+      "answer_id": "answer_03",
+      "answer_sha256": "c20f29968214c256c1b07787bee12dfc4e49b9fe09caa81169e59557d07d4529",
+      "case_id": "PF-05",
+      "case_path": "preference-fit/PF-05",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "disallowed_label",
+          "criterion_id": "PF-INTERPRETATION",
+          "explanation": "The proposed rubric allows ['unknown'] for this target; the answer uses 'aligned'.",
+          "path": "/answer/assessments/2/label",
+          "severity": "major",
+          "target_id": "pref_learning"
+        },
+        {
+          "code": "unsupported_time_basis",
+          "criterion_id": "PF-INTERPRETATION",
+          "explanation": "The rationale asserts a frequency or time amount absent from its cited source terms.",
+          "path": "/answer/assessments/2/rationale",
+          "severity": "major",
+          "target_id": "pref_learning"
+        }
+      ],
+      "grader": "preference_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "PF-INTERPRETATION",
+          "exact_criterion_target_match": true,
+          "explanation": "jd_growth specifies no protected learning time; generic growth opportunities do not meet pref_learning's monthly protected-time request. The correct label is unknown and the benefit should be clarified.",
+          "severity": "major",
+          "target_id": "pref_learning"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/assessments/2/label",
+          "value": "aligned"
+        },
+        {
+          "path": "/assessments/2/rationale",
+          "value": "Growth opportunities guarantee the protected monthly learning time requested."
+        }
+      ],
+      "mutation_category": "preference_interpretation",
+      "mutation_description": "Misinterprets the learning preference in Travel exception is explicitly satisfied.",
+      "outcome": "caught_error",
+      "packet_sha256": "2c0c89beddcf033be132863c179019564c443feebf183f092478d88147bb015e"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "pref_travel expressly accepts up to 20% travel when every trip has four weeks notice, and jd_travel promises that notice. The two hard preferences align, so passing on a blanket 10% ceiling ignores the candidate's exception; pursue or clarify the soft learning term.",
+      "answer_id": "answer_04",
+      "answer_sha256": "7f65526cc5c84f66368ced9ad69da3e3140c40bb4c996336af62fd6d9e5ce617",
+      "case_id": "PF-05",
+      "case_path": "preference-fit/PF-05",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "disallowed_action",
+          "criterion_id": "PF-ACTION",
+          "explanation": "The proposed rubric permits ['clarify', 'pursue']; the answer chooses 'pass'.",
+          "path": "/answer/conclusion/action",
+          "severity": "major",
+          "target_id": null
+        }
+      ],
+      "grader": "preference_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "PF-ACTION",
+          "exact_criterion_target_match": false,
+          "explanation": "pref_travel expressly accepts up to 20% travel when every trip has four weeks notice, and jd_travel promises that notice. The two hard preferences align, so passing on a blanket 10% ceiling ignores the candidate's exception; pursue or clarify the soft learning term.",
+          "severity": "major",
+          "target_id": "pref_travel"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/conclusion/action",
+          "value": "pass"
+        },
+        {
+          "path": "/conclusion/text",
+          "value": "Decline because 20% travel always violates a 10% ceiling."
+        },
+        {
+          "path": "/conclusion/next_step",
+          "value": "Close the role without applying the candidate’s recorded exception."
+        }
+      ],
+      "mutation_category": "incompatible_action",
+      "mutation_description": "Ignores the assessed learning preference in the Travel exception is explicitly satisfied conclusion.",
+      "outcome": "caught_error",
+      "packet_sha256": "104bcd8ec84e13302367b1f7f7a3fc52000197aafce1db7bcda4874a47303397"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "Location and travel fit; CHF 160,000 base remains unresolved because the published range is indicative and above-range offers are only possible.",
+      "answer_id": "answer_01",
+      "answer_sha256": "b23ef915d8a386ce26bd312c305ac209d5e7bf91a39c2aa7041def1df9616f90",
+      "case_id": "PF-06",
+      "case_path": "preference-fit/PF-06",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "64cf63d5d493be592efcbfd291840d6eb6e57847b5753e2630b734c6264d5cfc"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The salary must-have needs an employer decision despite the compatible remote and travel terms.",
+      "answer_id": "answer_02",
+      "answer_sha256": "e864e0a874de73092af75b4fff59cce00848700b8c1f87bddba97b891d7ee0f0",
+      "case_id": "PF-06",
+      "case_path": "preference-fit/PF-06",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "17fc98ea68c14557017749e3c8338e477f0f5868bab990dee8b2386452cae7c6"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "jd_salary calls CHF 130,000–150,000 indicative and says above-range offers may be considered; it does not guarantee pref_salary's CHF 160,000 base minimum. Salary remains unknown until actual approved offer authority is clarified.",
+      "answer_id": "answer_03",
+      "answer_sha256": "91138d00cf515d0101aa6fb192ea795a60be1967d3e9a3e3a5f6bfbabe2d520a",
+      "case_id": "PF-06",
+      "case_path": "preference-fit/PF-06",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "disallowed_label",
+          "criterion_id": "PF-INTERPRETATION",
+          "explanation": "The proposed rubric allows ['unknown'] for this target; the answer uses 'aligned'.",
+          "path": "/answer/assessments/0/label",
+          "severity": "major",
+          "target_id": "pref_salary"
+        }
+      ],
+      "grader": "preference_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "PF-INTERPRETATION",
+          "exact_criterion_target_match": true,
+          "explanation": "jd_salary calls CHF 130,000–150,000 indicative and says above-range offers may be considered; it does not guarantee pref_salary's CHF 160,000 base minimum. Salary remains unknown until actual approved offer authority is clarified.",
+          "severity": "critical",
+          "target_id": "pref_salary"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/assessments/0/label",
+          "value": "aligned"
+        },
+        {
+          "path": "/assessments/0/rationale",
+          "value": "Negotiation language guarantees a CHF 160,000 annual base offer."
+        }
+      ],
+      "mutation_category": "preference_interpretation",
+      "mutation_description": "Misinterprets the salary preference in Indicative salary range leaves negotiated minimum unresolved.",
+      "outcome": "caught_error",
+      "packet_sha256": "dd1df14a7c2365d80e0d69d2b0291f3d892bbeb2a791ecc2ec11983808fd7133"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "jd_salary expressly allows above-range offers to be considered, so its CHF 150,000 indicative ceiling is not a definitive cap. Calling pref_salary's CHF 160,000 base minimum impossible and passing is premature; clarify approved base-pay authority.",
+      "answer_id": "answer_04",
+      "answer_sha256": "44b9d40ab496882dcf75b7ec1ef92c1850aa3cacec081e56918299d5bbf3932f",
+      "case_id": "PF-06",
+      "case_path": "preference-fit/PF-06",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "disallowed_action",
+          "criterion_id": "PF-ACTION",
+          "explanation": "The proposed rubric permits ['clarify']; the answer chooses 'pass'.",
+          "path": "/answer/conclusion/action",
+          "severity": "major",
+          "target_id": null
+        }
+      ],
+      "grader": "preference_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "PF-UNKNOWN",
+          "exact_criterion_target_match": false,
+          "explanation": "jd_salary expressly allows above-range offers to be considered, so its CHF 150,000 indicative ceiling is not a definitive cap. Calling pref_salary's CHF 160,000 base minimum impossible and passing is premature; clarify approved base-pay authority.",
+          "severity": "major",
+          "target_id": "pref_salary"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/conclusion/action",
+          "value": "pass"
+        },
+        {
+          "path": "/conclusion/text",
+          "value": "Treat the indicative CHF 150,000 salary ceiling as a final cap, making the CHF 160,000 minimum impossible."
+        },
+        {
+          "path": "/conclusion/next_step",
+          "value": "Close the role solely because the indicative range ends below the minimum."
+        }
+      ],
+      "mutation_category": "indicative_range_as_final_cap",
+      "mutation_description": "Treats an indicative salary ceiling as a definitive maximum despite explicit above-range consideration.",
+      "outcome": "caught_error",
+      "packet_sha256": "030c07afeeda74359dc11799b3da8cb165617e484e04d8c78e077b33f6b26523"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "Location and stated core hours fit, while the decision-rights must-have is not established by the culture slogan.",
+      "answer_id": "answer_01",
+      "answer_sha256": "aaa0a2d5f934f027200f819268ffa106c32852bbb0bf9447245973a609bbb7cf",
+      "case_id": "PF-07",
+      "case_path": "preference-fit/PF-07",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "44d9e464be5e8be67b0b5d756a40a88d89ce7ca60f1b1a97909e9e4faf2c38d9"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The decisive unknown is implementation authority, not the remote policy.",
+      "answer_id": "answer_02",
+      "answer_sha256": "7ddbf919e717d9c066a85ee19fffff79ea28326a06edf1e17a5e6f606292da9d",
+      "case_id": "PF-07",
+      "case_path": "preference-fit/PF-07",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "7d91a3a6ba9cdb33061db9787580fc841d9f94e8b90f14d73a4c492f1024ba4b"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "jd_culture says only high-ownership and entrepreneurial; it does not grant pref_autonomy's routine technical decision rights. Autonomy remains unknown and should be clarified with the decision owner.",
+      "answer_id": "answer_03",
+      "answer_sha256": "fa49ffdef1f3ade0baf900dab12fa1b5a87c9c135d5325d3d0a4fdf3efdb801b",
+      "case_id": "PF-07",
+      "case_path": "preference-fit/PF-07",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "disallowed_label",
+          "criterion_id": "PF-INTERPRETATION",
+          "explanation": "The proposed rubric allows ['unknown'] for this target; the answer uses 'aligned'.",
+          "path": "/answer/assessments/0/label",
+          "severity": "major",
+          "target_id": "pref_autonomy"
+        }
+      ],
+      "grader": "preference_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "PF-INTERPRETATION",
+          "exact_criterion_target_match": true,
+          "explanation": "jd_culture says only high-ownership and entrepreneurial; it does not grant pref_autonomy's routine technical decision rights. Autonomy remains unknown and should be clarified with the decision owner.",
+          "severity": "critical",
+          "target_id": "pref_autonomy"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/assessments/0/label",
+          "value": "aligned"
+        },
+        {
+          "path": "/assessments/0/rationale",
+          "value": "A high-ownership team necessarily lets the candidate choose routine technical designs without approval."
+        }
+      ],
+      "mutation_category": "preference_interpretation",
+      "mutation_description": "Misinterprets the autonomy preference in Vague autonomy claims do not prove decision rights.",
+      "outcome": "caught_error",
+      "packet_sha256": "004cf42ac4e86b185ed9a8e1ea8f2cbaef6189a0896028a71a1bbf22ebde96c7"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "The cited jd_hours text concerns required meeting hours and says nothing about routine design approval. It cannot support the autonomy assessment; cite jd_culture and keep pref_autonomy unknown until decision rights are clarified.",
+      "answer_id": "answer_04",
+      "answer_sha256": "a4608f55aac06fe0f2ddd962466b038d6adfd6a91f9d57a54a615a6b5daf5069",
+      "case_id": "PF-07",
+      "case_path": "preference-fit/PF-07",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "insufficient_source_set",
+          "criterion_id": "PF-EVIDENCE",
+          "explanation": "The cited source IDs do not contain any complete sufficient evidence set in the proposed rubric.",
+          "path": "/answer/assessments/0/evidence",
+          "severity": "major",
+          "target_id": "pref_autonomy"
+        }
+      ],
+      "grader": "preference_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "PF-EVIDENCE",
+          "exact_criterion_target_match": true,
+          "explanation": "The cited jd_hours text concerns required meeting hours and says nothing about routine design approval. It cannot support the autonomy assessment; cite jd_culture and keep pref_autonomy unknown until decision rights are clarified.",
+          "severity": "major",
+          "target_id": "pref_autonomy"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/assessments/0/evidence/0/source_id",
+          "value": "jd_hours"
+        },
+        {
+          "path": "/assessments/0/evidence/0/quote",
+          "value": "Required core meetings run 13:00–16:00 Europe/Zurich; no required core meeting ends later."
+        }
+      ],
+      "mutation_category": "irrelevant_valid_citation",
+      "mutation_description": "Replaces the culture citation with a valid quote about meeting hours, which cannot support the autonomy assessment.",
+      "outcome": "caught_error",
+      "packet_sha256": "68d3c955e6e23dbe9da821d4ea5cf8440bce099ba21d3f697d8a331b6b96d177"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The salary and learning allowance are attractive, but four mandatory on-site days violate the remote must-have.",
+      "answer_id": "answer_01",
+      "answer_sha256": "31ed9e1bc85dbdc04e9c91f511d609f24ca1510f196e2f97fd18ceff754587c0",
+      "case_id": "PF-08",
+      "case_path": "preference-fit/PF-08",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "c3847c6a7bc334aa691e0fd5567802a254fdd2919c4c10f001c48ec8502cc0d6"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The published role conflicts with the remote must-have, and the candidate allows one documented-exception check.",
+      "answer_id": "answer_02",
+      "answer_sha256": "a4f08cb477026544a02eea455d3a3c5a05ff49677e1cfad1eadc32cadd717255",
+      "case_id": "PF-08",
+      "case_path": "preference-fit/PF-08",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "19d947ffa66d49bc95ebf66643c40ca944ea95e557b88c0a8b5bda9dc04c8753"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "jd_office requires four on-site days while pref_remote requires none. CHF 175,000+ base and a learning allowance are nice-to-haves, so the correct remote label is conflict.",
+      "answer_id": "answer_03",
+      "answer_sha256": "dd8fbf43156a4bfb2c91dc31ef53dba0d69bab5bc510ebe8d623a33ef557cc7c",
+      "case_id": "PF-08",
+      "case_path": "preference-fit/PF-08",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "disallowed_label",
+          "criterion_id": "PF-INTERPRETATION",
+          "explanation": "The proposed rubric allows ['conflict'] for this target; the answer uses 'aligned'.",
+          "path": "/answer/assessments/0/label",
+          "severity": "major",
+          "target_id": "pref_remote"
+        }
+      ],
+      "grader": "preference_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "PF-INTERPRETATION",
+          "exact_criterion_target_match": true,
+          "explanation": "jd_office requires four on-site days while pref_remote requires none. CHF 175,000+ base and a learning allowance are nice-to-haves, so the correct remote label is conflict.",
+          "severity": "critical",
+          "target_id": "pref_remote"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/assessments/0/label",
+          "value": "aligned"
+        },
+        {
+          "path": "/assessments/0/rationale",
+          "value": "The strong pay and learning allowance compensate for the office requirement."
+        }
+      ],
+      "mutation_category": "preference_interpretation",
+      "mutation_description": "Misinterprets the remote preference in Soft benefits cannot compensate for required office attendance.",
+      "outcome": "caught_error",
+      "packet_sha256": "f648a784ea59b3318a5f55c9f6a3fcf299bdf3425e5aed70e4d3eed0de956eed"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "Four mandatory on-site days in jd_office violate pref_remote's zero-day must-have. The salary and learning benefits cannot outweigh it; pass under the published policy or use the candidate-authorized one-exception check.",
+      "answer_id": "answer_04",
+      "answer_sha256": "89c209f56a7c06d0d341f9781cf2858e1d750d59dd395df267653a1b7d78e692",
+      "case_id": "PF-08",
+      "case_path": "preference-fit/PF-08",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "disallowed_action",
+          "criterion_id": "PF-ACTION",
+          "explanation": "The proposed rubric permits ['clarify', 'pass']; the answer chooses 'pursue'.",
+          "path": "/answer/conclusion/action",
+          "severity": "major",
+          "target_id": null
+        }
+      ],
+      "grader": "preference_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "PF-ACTION",
+          "exact_criterion_target_match": false,
+          "explanation": "Four mandatory on-site days in jd_office violate pref_remote's zero-day must-have. The salary and learning benefits cannot outweigh it; pass under the published policy or use the candidate-authorized one-exception check.",
+          "severity": "critical",
+          "target_id": "pref_remote"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/conclusion/action",
+          "value": "pursue"
+        },
+        {
+          "path": "/conclusion/text",
+          "value": "Apply because the two attractive soft terms outweigh four mandatory on-site days."
+        },
+        {
+          "path": "/conclusion/next_step",
+          "value": "Prepare the application under the published office schedule."
+        }
+      ],
+      "mutation_category": "incompatible_action",
+      "mutation_description": "Ignores the assessed remote preference in the Soft benefits cannot compensate for required office attendance conclusion.",
+      "outcome": "caught_error",
+      "packet_sha256": "0783128ec1f7a99601f51b37f343d44f8a694a15f87399cfc30941f45312b447"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The remote must-have cannot be settled from contradictory employer statements, and the travel preference is also unspecified.",
+      "answer_id": "answer_01",
+      "answer_sha256": "c4b89fbaeea994a5eaff6fc4690b2ac8926cfff63cd4e1a2727a28cacab86bd6",
+      "case_id": "PF-09",
+      "case_path": "preference-fit/PF-09",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "8f59da26f90e79142da2125c933e641b4f0b373d796912d87fd6d3e41850d38a"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The pay floor is published, but the decisive office policy has two unresolved versions.",
+      "answer_id": "answer_02",
+      "answer_sha256": "9340c35264fd77597dd23175be72a7422a173c05c2e9cc3ea793c60e8442ce79",
+      "case_id": "PF-09",
+      "case_path": "preference-fit/PF-09",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "dc6d36698fe53859c432ded17c4814a53649e0cae481257c26e036a62a8c2089"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "jd_original says zero office days and jd_update says two required days; neither source supersedes the other. The later date and employer_update type do not establish which governs, so pref_remote is unknown.",
+      "answer_id": "answer_03",
+      "answer_sha256": "b68e48e3394add8ca4016ed2d1e16091f37c0ab801ff34451bd768bc140af4da",
+      "case_id": "PF-09",
+      "case_path": "preference-fit/PF-09",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "disallowed_label",
+          "criterion_id": "PF-INTERPRETATION",
+          "explanation": "The proposed rubric allows ['unknown'] for this target; the answer uses 'conflict'.",
+          "path": "/answer/assessments/0/label",
+          "severity": "major",
+          "target_id": "pref_remote"
+        },
+        {
+          "code": "date_as_authority",
+          "criterion_id": "PF-EVIDENCE",
+          "explanation": "The cited employer snapshots do not establish supersession; a newer date alone cannot settle conflicting terms.",
+          "path": "/answer/assessments/0/rationale",
+          "severity": "major",
+          "target_id": "pref_remote"
+        }
+      ],
+      "grader": "preference_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "PF-INTERPRETATION",
+          "exact_criterion_target_match": true,
+          "explanation": "jd_original says zero office days and jd_update says two required days; neither source supersedes the other. The later date and employer_update type do not establish which governs, so pref_remote is unknown.",
+          "severity": "critical",
+          "target_id": "pref_remote"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/assessments/0/label",
+          "value": "conflict"
+        },
+        {
+          "path": "/assessments/0/rationale",
+          "value": "The later dated hybrid update automatically replaces the older remote statement."
+        }
+      ],
+      "mutation_category": "preference_interpretation",
+      "mutation_description": "Misinterprets the remote preference in Conflicting employer location statements lack supersession.",
+      "outcome": "caught_error",
+      "packet_sha256": "e0639fd42a921c0fd8a5be44cc3204d86a7fbe9f91b79e0bcf25e4c360718300"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "The two employer location statements remain unresolved without explicit supersession. Pursuing as if the older remote term governs assumes the hard preference is met; clarify the current policy before a pursue decision.",
+      "answer_id": "answer_04",
+      "answer_sha256": "fa034a67dd41a6bff4ff7aff768be6cf48d1592199e7fe326e4b65aa1ae5f111",
+      "case_id": "PF-09",
+      "case_path": "preference-fit/PF-09",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "disallowed_action",
+          "criterion_id": "PF-ACTION",
+          "explanation": "The proposed rubric permits ['clarify']; the answer chooses 'pursue'.",
+          "path": "/answer/conclusion/action",
+          "severity": "major",
+          "target_id": null
+        }
+      ],
+      "grader": "preference_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "PF-ACTION",
+          "exact_criterion_target_match": false,
+          "explanation": "The two employer location statements remain unresolved without explicit supersession. Pursuing as if the older remote term governs assumes the hard preference is met; clarify the current policy before a pursue decision.",
+          "severity": "major",
+          "target_id": "pref_remote"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/conclusion/action",
+          "value": "pursue"
+        },
+        {
+          "path": "/conclusion/text",
+          "value": "Proceed as though the older fully remote statement governs the role."
+        },
+        {
+          "path": "/conclusion/next_step",
+          "value": "Prepare an application without resolving the conflicting location terms."
+        }
+      ],
+      "mutation_category": "incompatible_action",
+      "mutation_description": "Ignores the assessed remote preference in the Conflicting employer location statements lack supersession conclusion.",
+      "outcome": "caught_error",
+      "packet_sha256": "cbf8bc9ec0316324f1a1923e1d55cbb2a3b31f0ddcbc33bd288b843b93087e73"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The corrected office requirement violates the zero-office must-have, though the four-day schedule matches.",
+      "answer_id": "answer_01",
+      "answer_sha256": "75d48fb832220f52078f474cfec2d0427870022c3233821b4055ac4f5da387c7",
+      "case_id": "PF-10",
+      "case_path": "preference-fit/PF-10",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "6746ba3249c1438a72fae02463b7af07b6744782b0e9b797bfdd2800b1bd8290"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The current corrected term conflicts with zero office days; the candidate permits one exception inquiry.",
+      "answer_id": "answer_02",
+      "answer_sha256": "104f5eba5f0f1806aa0fd91afd865ff4e2613dd0f4cd2f7d7ceb36b89025b8df",
+      "case_id": "PF-10",
+      "case_path": "preference-fit/PF-10",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "4c54d17ed013ee4ffaf391b1dd0b424fb7106bd17e339a3a5aff78db25cffa14"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "jd_replacement explicitly withdraws jd_original's fully remote term and requires two office days. pref_remote requires zero, so current alignment is false and the supported label is conflict.",
+      "answer_id": "answer_03",
+      "answer_sha256": "0f25dd990361df4687251d652043523e66d9b5d1814055b6d3393f3577372bba",
+      "case_id": "PF-10",
+      "case_path": "preference-fit/PF-10",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "disallowed_label",
+          "criterion_id": "PF-INTERPRETATION",
+          "explanation": "The proposed rubric allows ['conflict'] for this target; the answer uses 'aligned'.",
+          "path": "/answer/assessments/0/label",
+          "severity": "major",
+          "target_id": "pref_remote"
+        }
+      ],
+      "grader": "preference_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "PF-INTERPRETATION",
+          "exact_criterion_target_match": true,
+          "explanation": "jd_replacement explicitly withdraws jd_original's fully remote term and requires two office days. pref_remote requires zero, so current alignment is false and the supported label is conflict.",
+          "severity": "critical",
+          "target_id": "pref_remote"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/assessments/0/label",
+          "value": "aligned"
+        },
+        {
+          "path": "/assessments/0/rationale",
+          "value": "The original fully remote term remains valid because it was published earlier."
+        }
+      ],
+      "mutation_category": "preference_interpretation",
+      "mutation_description": "Misinterprets the remote preference in Explicit update replaces remote term with office requirement.",
+      "outcome": "caught_error",
+      "packet_sha256": "d23f95aa519120a57a94c847a560175746406e4d1e7f280b740965bf0f705f74"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "The explicit correction supersedes the old remote term and imposes two office days against pref_remote's zero-office requirement. Do not apply using withdrawn terms; pass or make the one candidate-permitted exception inquiry.",
+      "answer_id": "answer_04",
+      "answer_sha256": "b63575cc8bd8a5ffde1b9681effbe0bad595ed2a91a811bbe9a50a2d5d992982",
+      "case_id": "PF-10",
+      "case_path": "preference-fit/PF-10",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "disallowed_action",
+          "criterion_id": "PF-ACTION",
+          "explanation": "The proposed rubric permits ['clarify', 'pass']; the answer chooses 'pursue'.",
+          "path": "/answer/conclusion/action",
+          "severity": "major",
+          "target_id": null
+        }
+      ],
+      "grader": "preference_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "PF-ACTION",
+          "exact_criterion_target_match": false,
+          "explanation": "The explicit correction supersedes the old remote term and imposes two office days against pref_remote's zero-office requirement. Do not apply using withdrawn terms; pass or make the one candidate-permitted exception inquiry.",
+          "severity": "critical",
+          "target_id": "pref_remote"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/conclusion/action",
+          "value": "pursue"
+        },
+        {
+          "path": "/conclusion/text",
+          "value": "Apply using the withdrawn remote description as the current term."
+        },
+        {
+          "path": "/conclusion/next_step",
+          "value": "Build the role package around zero required office days."
+        }
+      ],
+      "mutation_category": "incompatible_action",
+      "mutation_description": "Ignores the assessed remote preference in the Explicit update replaces remote term with office requirement conclusion.",
+      "outcome": "caught_error",
+      "packet_sha256": "d8f451e3de302e39effe10a5a8dadc8f8e147ac6538464a83ec9a40e7ee40cdd"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The hours and live overlap fit exactly; the annual base at the contracted hours remains unknown.",
+      "answer_id": "answer_01",
+      "answer_sha256": "83b1be616e98c9b1a162e1f4561ecc7e9345108b8e3ecf28e0bb4869862f8ffb",
+      "case_id": "PF-11",
+      "case_path": "preference-fit/PF-11",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "7f65d5521a6b9e57d26592dea1ac8ba95da9d83e24ac1b7233b8ac8c43920c42"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The scheduling requirements stay within both candidate bounds, with pay still open.",
+      "answer_id": "answer_02",
+      "answer_sha256": "6cab1018bd035dba17746b421992af5738083f0b1713a9d51671ff3362e81fad",
+      "case_id": "PF-11",
+      "case_path": "preference-fit/PF-11",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "2c3052614999a87865f0c0c7b7004ab9586db7bb5e177d513a34005fda51aca0"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "jd_schedule requires overlap through 17:00 Europe/Zurich, exactly the inclusive end of pref_overlap's availability. That endpoint is within bounds; the supported label is aligned.",
+      "answer_id": "answer_03",
+      "answer_sha256": "e20add626d9da5271610282e30868997d6482e40302aa76e1d371d75b119caef",
+      "case_id": "PF-11",
+      "case_path": "preference-fit/PF-11",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "disallowed_label",
+          "criterion_id": "PF-INTERPRETATION",
+          "explanation": "The proposed rubric allows ['aligned'] for this target; the answer uses 'conflict'.",
+          "path": "/answer/assessments/1/label",
+          "severity": "major",
+          "target_id": "pref_overlap"
+        }
+      ],
+      "grader": "preference_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "PF-INTERPRETATION",
+          "exact_criterion_target_match": true,
+          "explanation": "jd_schedule requires overlap through 17:00 Europe/Zurich, exactly the inclusive end of pref_overlap's availability. That endpoint is within bounds; the supported label is aligned.",
+          "severity": "critical",
+          "target_id": "pref_overlap"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/assessments/1/label",
+          "value": "conflict"
+        },
+        {
+          "path": "/assessments/1/rationale",
+          "value": "A required meeting ending at 17:00 exceeds a candidate window ending at 17:00."
+        }
+      ],
+      "mutation_category": "preference_interpretation",
+      "mutation_description": "Misinterprets the overlap preference in Part-time hours and time-zone bounds.",
+      "outcome": "caught_error",
+      "packet_sha256": "8b435f0b74939893b998dd8618627f1f5aafa4b926e9860ef6faf143807e20d4"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "jd_pay gives proration but no annual base figure, so it cannot establish pref_pay's CHF 100,000 target at part-time hours. Keep pay unknown and request the actual contracted-hours base amount.",
+      "answer_id": "answer_04",
+      "answer_sha256": "3132a16a0fdb1ea7a54071030352e2aa9c0f615d5880a3557222d6003c2b92fb",
+      "case_id": "PF-11",
+      "case_path": "preference-fit/PF-11",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "disallowed_action",
+          "criterion_id": "PF-ACTION",
+          "explanation": "The proposed rubric permits ['clarify']; the answer chooses 'pursue'.",
+          "path": "/answer/conclusion/action",
+          "severity": "major",
+          "target_id": null
+        }
+      ],
+      "grader": "preference_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "PF-UNKNOWN",
+          "exact_criterion_target_match": false,
+          "explanation": "jd_pay gives proration but no annual base figure, so it cannot establish pref_pay's CHF 100,000 target at part-time hours. Keep pay unknown and request the actual contracted-hours base amount.",
+          "severity": "major",
+          "target_id": "pref_pay"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/conclusion/action",
+          "value": "pursue"
+        },
+        {
+          "path": "/conclusion/text",
+          "value": "Treat the unpublished prorated pay as meeting CHF 100,000 and proceed on that basis."
+        },
+        {
+          "path": "/conclusion/next_step",
+          "value": "Record compensation as already aligned."
+        }
+      ],
+      "mutation_category": "incompatible_action",
+      "mutation_description": "Ignores the assessed overlap preference in the Part-time hours and time-zone bounds conclusion.",
+      "outcome": "caught_error",
+      "packet_sha256": "082abd38ebd3a0ededaca7a89668c6989378ab7bb9309c837d0c00ca82a33290"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The two-day hybrid schedule fits the candidate’s explicit salary-linked alternative, and the travel cap meets the hard limit.",
+      "answer_id": "answer_01",
+      "answer_sha256": "7c193ec5f3402deed75fe32f5f1d80ab38c7f2352f11bd7cf582a987f13d149e",
+      "case_id": "PF-12",
+      "case_path": "preference-fit/PF-12",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "a601d6c12127ede51a859a72d0cc52ea69b0c16401540aa78c352f43072a091d"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The candidate-owned hybrid alternative is met on the published base range; only the conference benefit is open.",
+      "answer_id": "answer_02",
+      "answer_sha256": "eaabc4dd40c5a1cf2770b17ddfe0cd2c4c39b666c07a1db9a2ee6087c507a120",
+      "case_id": "PF-12",
+      "case_path": "preference-fit/PF-12",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "faf381372c8897a2d467536079b8a2e375ef0a3e8fc7003b77e73d8e24d6ea4e"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "pref_location explicitly accepts two office days when annual base is at least CHF 160,000. jd_office states exactly two days and jd_salary starts at CHF 170,000, so the supported location label is aligned.",
+      "answer_id": "answer_03",
+      "answer_sha256": "6165ac46bc6fea9a5ef4661fc2114f7cf452d8b993fd8d5e4955fb2c7aaff6e6",
+      "case_id": "PF-12",
+      "case_path": "preference-fit/PF-12",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "disallowed_label",
+          "criterion_id": "PF-INTERPRETATION",
+          "explanation": "The proposed rubric allows ['aligned'] for this target; the answer uses 'conflict'.",
+          "path": "/answer/assessments/0/label",
+          "severity": "major",
+          "target_id": "pref_location"
+        }
+      ],
+      "grader": "preference_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "PF-INTERPRETATION",
+          "exact_criterion_target_match": true,
+          "explanation": "pref_location explicitly accepts two office days when annual base is at least CHF 160,000. jd_office states exactly two days and jd_salary starts at CHF 170,000, so the supported location label is aligned.",
+          "severity": "major",
+          "target_id": "pref_location"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/assessments/0/label",
+          "value": "conflict"
+        },
+        {
+          "path": "/assessments/0/rationale",
+          "value": "Any required office attendance violates the fully remote preference despite the recorded alternative."
+        }
+      ],
+      "mutation_category": "preference_interpretation",
+      "mutation_description": "Misinterprets the location preference in Candidate-owned soft tradeoff for hybrid work.",
+      "outcome": "caught_error",
+      "packet_sha256": "f7932bf89d4fe0687bbcbda36328e4b217d828e5fc6916cee361d51fc74bf03e"
+    },
+    {
+      "actual_verdict": "fail",
+      "annotation_reason": "The candidate-owned exception covers jd_office's two days because jd_salary's CHF 170,000 lower bound exceeds the CHF 160,000 condition. Passing solely for hybrid work ignores that alternative; pursue or clarify the separate conference benefit.",
+      "answer_id": "answer_04",
+      "answer_sha256": "fad75cf34161bb4db450258aead87e142f8ac00849c600a0ac35fd0d3139bbfc",
+      "case_id": "PF-12",
+      "case_path": "preference-fit/PF-12",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [
+        {
+          "code": "disallowed_action",
+          "criterion_id": "PF-ACTION",
+          "explanation": "The proposed rubric permits ['clarify', 'pursue']; the answer chooses 'pass'.",
+          "path": "/answer/conclusion/action",
+          "severity": "major",
+          "target_id": null
+        }
+      ],
+      "grader": "preference_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "PF-ACTION",
+          "exact_criterion_target_match": false,
+          "explanation": "The candidate-owned exception covers jd_office's two days because jd_salary's CHF 170,000 lower bound exceeds the CHF 160,000 condition. Passing solely for hybrid work ignores that alternative; pursue or clarify the separate conference benefit.",
+          "severity": "major",
+          "target_id": "pref_location"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/conclusion/action",
+          "value": "pass"
+        },
+        {
+          "path": "/conclusion/text",
+          "value": "Decline solely because the role has two office days, ignoring the candidate’s explicit salary-linked alternative."
+        },
+        {
+          "path": "/conclusion/next_step",
+          "value": "Close the role without checking the stated exception conditions."
+        }
+      ],
+      "mutation_category": "incompatible_action",
+      "mutation_description": "Ignores the assessed location preference in the Candidate-owned soft tradeoff for hybrid work conclusion.",
+      "outcome": "caught_error",
+      "packet_sha256": "418c7f97501c4f729b408b4e19f81377cf9ac9e2dd066f7cdb0feb30acd509b7"
+    }
+  ],
+  "schema": "maguire-offline-grader-measurement-v1"
+}

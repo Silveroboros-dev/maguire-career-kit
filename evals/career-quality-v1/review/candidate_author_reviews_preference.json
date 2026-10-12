@@ -1,0 +1,406 @@
+{
+  "schema": "maguire-quality-peer-review-v1",
+  "reviewer_model": "gpt-6-sol",
+  "reviewer_reasoning_effort": "high",
+  "human_review": false,
+  "review_environment": "Same local checkout, offline, read-only review of preference-fit fixtures.",
+  "scope_case_ids": [
+    "PF-01",
+    "PF-02",
+    "PF-03",
+    "PF-04",
+    "PF-05",
+    "PF-06",
+    "PF-07",
+    "PF-08",
+    "PF-09",
+    "PF-10",
+    "PF-11",
+    "PF-12"
+  ],
+  "actual_files_read": [
+    "preference-fit/PF-01/annotations.json",
+    "preference-fit/PF-01/answers.json",
+    "preference-fit/PF-01/gold.json",
+    "preference-fit/PF-01/input.json",
+    "preference-fit/PF-02/annotations.json",
+    "preference-fit/PF-02/answers.json",
+    "preference-fit/PF-02/gold.json",
+    "preference-fit/PF-02/input.json",
+    "preference-fit/PF-03/annotations.json",
+    "preference-fit/PF-03/answers.json",
+    "preference-fit/PF-03/gold.json",
+    "preference-fit/PF-03/input.json",
+    "preference-fit/PF-04/annotations.json",
+    "preference-fit/PF-04/answers.json",
+    "preference-fit/PF-04/gold.json",
+    "preference-fit/PF-04/input.json",
+    "preference-fit/PF-05/annotations.json",
+    "preference-fit/PF-05/answers.json",
+    "preference-fit/PF-05/gold.json",
+    "preference-fit/PF-05/input.json",
+    "preference-fit/PF-06/annotations.json",
+    "preference-fit/PF-06/answers.json",
+    "preference-fit/PF-06/gold.json",
+    "preference-fit/PF-06/input.json",
+    "preference-fit/PF-07/annotations.json",
+    "preference-fit/PF-07/answers.json",
+    "preference-fit/PF-07/gold.json",
+    "preference-fit/PF-07/input.json",
+    "preference-fit/PF-08/annotations.json",
+    "preference-fit/PF-08/answers.json",
+    "preference-fit/PF-08/gold.json",
+    "preference-fit/PF-08/input.json",
+    "preference-fit/PF-09/annotations.json",
+    "preference-fit/PF-09/answers.json",
+    "preference-fit/PF-09/gold.json",
+    "preference-fit/PF-09/input.json",
+    "preference-fit/PF-10/annotations.json",
+    "preference-fit/PF-10/answers.json",
+    "preference-fit/PF-10/gold.json",
+    "preference-fit/PF-10/input.json",
+    "preference-fit/PF-11/annotations.json",
+    "preference-fit/PF-11/answers.json",
+    "preference-fit/PF-11/gold.json",
+    "preference-fit/PF-11/input.json",
+    "preference-fit/PF-12/annotations.json",
+    "preference-fit/PF-12/answers.json",
+    "preference-fit/PF-12/gold.json",
+    "preference-fit/PF-12/input.json"
+  ],
+  "findings": [
+    {
+      "case_id": "PF-07",
+      "answer_ids": [
+        "answer_01",
+        "answer_02"
+      ],
+      "paths": [
+        "input.json#/jd/sources/2/text",
+        "gold.json#/units/2/allowed_labels",
+        "answers.json#/answers/0/assessments/2",
+        "answers.json#/answers/1/assessments/2"
+      ],
+      "evidence": [
+        "JD: \"Core collaboration hours are 13:00–16:00 Europe/Zurich.\"",
+        "Preference: \"I prefer core meetings to finish by 17:00 Europe/Zurich.\""
+      ],
+      "severity": "major",
+      "issue": "The JD states collaboration hours but does not say required core meetings are confined to those hours. The aligned label and both positive rationales infer a meeting end time from a broader scheduling term.",
+      "proposed_fix": "If the intended gold is aligned, change the fictional JD source to state that required core meetings finish by 16:00 and update all literal citations. Otherwise mark this preference unknown, explain the gap, and adjust the positive answers."
+    },
+    {
+      "case_id": "PF-05",
+      "answer_ids": [
+        "answer_04"
+      ],
+      "paths": [
+        "annotations.json#/answers/3/expected_findings/0/target_id",
+        "gold.json#/critical_errors/1/target_ids",
+        "gold.json#/critical_errors/1/description"
+      ],
+      "evidence": [
+        "Answer 04 says 20% travel always violates the 10% ceiling.",
+        "pref_travel expressly accepts up to 20% when trips have four weeks notice; jd_travel promises that notice.",
+        "The finding and gold critical error instead point to pref_learning."
+      ],
+      "severity": "major",
+      "issue": "The annotated action defect concerns the travel exception, but the finding and critical-error target are bound to the learning preference.",
+      "proposed_fix": "Set the finding and corresponding gold critical-error target to pref_travel; explain that the candidate-owned exception is satisfied."
+    },
+    {
+      "case_id": "PF-11",
+      "answer_ids": [
+        "answer_04"
+      ],
+      "paths": [
+        "annotations.json#/answers/3/expected_findings/0/target_id",
+        "gold.json#/critical_errors/1/target_ids",
+        "gold.json#/critical_errors/1/description"
+      ],
+      "evidence": [
+        "Answer 04 treats unpublished prorated pay as meeting CHF 100,000.",
+        "jd_pay publishes no annual base range and pref_pay asks for at least CHF 100,000.",
+        "The finding and gold critical error instead point to pref_overlap."
+      ],
+      "severity": "major",
+      "issue": "The annotated action defect concerns unknown pay, but the finding and critical-error target are bound to the overlap preference.",
+      "proposed_fix": "Set the finding and corresponding gold critical-error target to pref_pay; explain that proration without a base figure cannot meet the threshold."
+    },
+    {
+      "case_id": "PF-06",
+      "answer_ids": [
+        "answer_03",
+        "answer_04"
+      ],
+      "paths": [
+        "answers.json#/answers/2/assessments/0",
+        "answers.json#/answers/3/conclusion",
+        "annotations.json#/answers/2/mutation/category",
+        "annotations.json#/answers/3/mutation/category"
+      ],
+      "evidence": [
+        "Answer 03 labels salary aligned because negotiation supposedly guarantees CHF 160,000.",
+        "Answer 04 pursues on the assumption that an above-range CHF 160,000 offer will be made.",
+        "jd_salary says above-range offers \"may be considered,\" not that any particular offer is approved."
+      ],
+      "severity": "moderate",
+      "issue": "The two planted failures exercise nearly the same unsupported assumption that an above-range salary will materialize, despite different structural categories.",
+      "proposed_fix": "Keep answer 03 as false guarantee. Make answer 04 a distinct error, such as treating the indicative CHF 150,000 ceiling as a definitive conflict despite the explicit above-range possibility; update its annotation and exact diff paths."
+    },
+    {
+      "case_id": "PF-01",
+      "answer_ids": [
+        "answer_03",
+        "answer_04"
+      ],
+      "paths": [
+        "annotations.json#/answers/2/reason",
+        "annotations.json#/answers/2/expected_findings/0/explanation",
+        "annotations.json#/answers/3/reason",
+        "annotations.json#/answers/3/expected_findings/0/explanation"
+      ],
+      "evidence": [
+        "JD requires three office days; candidate must have zero. An unconfirmed waiver inquiry cannot create alignment, and soft benefits cannot override that must-have."
+      ],
+      "severity": "moderate",
+      "issue": "The negative annotation reason and expected-finding explanation mostly repeat the flawed answer as a bare assertion. A reviewer cannot tell from these fields alone which source or preference defeats it.",
+      "proposed_fix": "Rewrite both explanations as evidence-backed reasons the answers fail, naming the pertinent JD term and preference. Keep the deliberately wrong wording in answers.json only."
+    },
+    {
+      "case_id": "PF-02",
+      "answer_ids": [
+        "answer_03",
+        "answer_04"
+      ],
+      "paths": [
+        "annotations.json#/answers/2/reason",
+        "annotations.json#/answers/2/expected_findings/0/explanation",
+        "annotations.json#/answers/3/reason",
+        "annotations.json#/answers/3/expected_findings/0/explanation"
+      ],
+      "evidence": [
+        "The published annual base starts at CHF 155,000, above the CHF 150,000 minimum; remote Switzerland is explicit. A salary conflict or pass conclusion contradicts those terms."
+      ],
+      "severity": "moderate",
+      "issue": "The negative annotation reason and expected-finding explanation mostly repeat the flawed answer as a bare assertion. A reviewer cannot tell from these fields alone which source or preference defeats it.",
+      "proposed_fix": "Rewrite both explanations as evidence-backed reasons the answers fail, naming the pertinent JD term and preference. Keep the deliberately wrong wording in answers.json only."
+    },
+    {
+      "case_id": "PF-03",
+      "answer_ids": [
+        "answer_03",
+        "answer_04"
+      ],
+      "paths": [
+        "annotations.json#/answers/2/reason",
+        "annotations.json#/answers/2/expected_findings/0/explanation",
+        "annotations.json#/answers/3/reason",
+        "annotations.json#/answers/3/expected_findings/0/explanation"
+      ],
+      "evidence": [
+        "The posting expressly gives no work-location policy. Distributed colleagues do not prove zero-office work, and salary/travel preferences cannot settle the remote must-have."
+      ],
+      "severity": "moderate",
+      "issue": "The negative annotation reason and expected-finding explanation mostly repeat the flawed answer as a bare assertion. A reviewer cannot tell from these fields alone which source or preference defeats it.",
+      "proposed_fix": "Rewrite both explanations as evidence-backed reasons the answers fail, naming the pertinent JD term and preference. Keep the deliberately wrong wording in answers.json only."
+    },
+    {
+      "case_id": "PF-04",
+      "answer_ids": [
+        "answer_03",
+        "answer_04"
+      ],
+      "paths": [
+        "annotations.json#/answers/2/reason",
+        "annotations.json#/answers/2/expected_findings/0/explanation",
+        "annotations.json#/answers/3/reason",
+        "annotations.json#/answers/3/expected_findings/0/explanation"
+      ],
+      "evidence": [
+        "The JD fixes two office days; the candidate accepts at most one. Three home days and a conference budget do not repair the office conflict."
+      ],
+      "severity": "moderate",
+      "issue": "The negative annotation reason and expected-finding explanation mostly repeat the flawed answer as a bare assertion. A reviewer cannot tell from these fields alone which source or preference defeats it.",
+      "proposed_fix": "Rewrite both explanations as evidence-backed reasons the answers fail, naming the pertinent JD term and preference. Keep the deliberately wrong wording in answers.json only."
+    },
+    {
+      "case_id": "PF-05",
+      "answer_ids": [
+        "answer_03",
+        "answer_04"
+      ],
+      "paths": [
+        "annotations.json#/answers/2/reason",
+        "annotations.json#/answers/2/expected_findings/0/explanation",
+        "annotations.json#/answers/3/reason",
+        "annotations.json#/answers/3/expected_findings/0/explanation"
+      ],
+      "evidence": [
+        "Generic growth opportunities do not establish monthly protected learning time. The candidate’s own exception expressly accepts 20% travel with four weeks notice, which the JD promises."
+      ],
+      "severity": "moderate",
+      "issue": "The negative annotation reason and expected-finding explanation mostly repeat the flawed answer as a bare assertion. A reviewer cannot tell from these fields alone which source or preference defeats it.",
+      "proposed_fix": "Rewrite both explanations as evidence-backed reasons the answers fail, naming the pertinent JD term and preference. Keep the deliberately wrong wording in answers.json only."
+    },
+    {
+      "case_id": "PF-06",
+      "answer_ids": [
+        "answer_03",
+        "answer_04"
+      ],
+      "paths": [
+        "annotations.json#/answers/2/reason",
+        "annotations.json#/answers/2/expected_findings/0/explanation",
+        "annotations.json#/answers/3/reason",
+        "annotations.json#/answers/3/expected_findings/0/explanation"
+      ],
+      "evidence": [
+        "Above-range salary offers may be considered, but no CHF 160,000 offer is approved or guaranteed. The salary must-have remains unknown until clarified."
+      ],
+      "severity": "moderate",
+      "issue": "The negative annotation reason and expected-finding explanation mostly repeat the flawed answer as a bare assertion. A reviewer cannot tell from these fields alone which source or preference defeats it.",
+      "proposed_fix": "Rewrite both explanations as evidence-backed reasons the answers fail, naming the pertinent JD term and preference. Keep the deliberately wrong wording in answers.json only."
+    },
+    {
+      "case_id": "PF-07",
+      "answer_ids": [
+        "answer_03",
+        "answer_04"
+      ],
+      "paths": [
+        "annotations.json#/answers/2/reason",
+        "annotations.json#/answers/2/expected_findings/0/explanation",
+        "annotations.json#/answers/3/reason",
+        "annotations.json#/answers/3/expected_findings/0/explanation"
+      ],
+      "evidence": [
+        "A high-ownership culture slogan does not specify authority over routine designs; the autonomy must-have remains unknown until decision rights are clarified."
+      ],
+      "severity": "moderate",
+      "issue": "The negative annotation reason and expected-finding explanation mostly repeat the flawed answer as a bare assertion. A reviewer cannot tell from these fields alone which source or preference defeats it.",
+      "proposed_fix": "Rewrite both explanations as evidence-backed reasons the answers fail, naming the pertinent JD term and preference. Keep the deliberately wrong wording in answers.json only."
+    },
+    {
+      "case_id": "PF-08",
+      "answer_ids": [
+        "answer_03",
+        "answer_04"
+      ],
+      "paths": [
+        "annotations.json#/answers/2/reason",
+        "annotations.json#/answers/2/expected_findings/0/explanation",
+        "annotations.json#/answers/3/reason",
+        "annotations.json#/answers/3/expected_findings/0/explanation"
+      ],
+      "evidence": [
+        "Four on-site days conflict with zero compulsory days. Salary and learning benefits are soft preferences and do not cancel that hard conflict."
+      ],
+      "severity": "moderate",
+      "issue": "The negative annotation reason and expected-finding explanation mostly repeat the flawed answer as a bare assertion. A reviewer cannot tell from these fields alone which source or preference defeats it.",
+      "proposed_fix": "Rewrite both explanations as evidence-backed reasons the answers fail, naming the pertinent JD term and preference. Keep the deliberately wrong wording in answers.json only."
+    },
+    {
+      "case_id": "PF-09",
+      "answer_ids": [
+        "answer_03",
+        "answer_04"
+      ],
+      "paths": [
+        "annotations.json#/answers/2/reason",
+        "annotations.json#/answers/2/expected_findings/0/explanation",
+        "annotations.json#/answers/3/reason",
+        "annotations.json#/answers/3/expected_findings/0/explanation"
+      ],
+      "evidence": [
+        "The remote and hybrid statements conflict, and neither source explicitly supersedes the other. Date and employer_update authority alone do not establish which governs."
+      ],
+      "severity": "moderate",
+      "issue": "The negative annotation reason and expected-finding explanation mostly repeat the flawed answer as a bare assertion. A reviewer cannot tell from these fields alone which source or preference defeats it.",
+      "proposed_fix": "Rewrite both explanations as evidence-backed reasons the answers fail, naming the pertinent JD term and preference. Keep the deliberately wrong wording in answers.json only."
+    },
+    {
+      "case_id": "PF-10",
+      "answer_ids": [
+        "answer_03",
+        "answer_04"
+      ],
+      "paths": [
+        "annotations.json#/answers/2/reason",
+        "annotations.json#/answers/2/expected_findings/0/explanation",
+        "annotations.json#/answers/3/reason",
+        "annotations.json#/answers/3/expected_findings/0/explanation"
+      ],
+      "evidence": [
+        "The correction explicitly withdraws the original remote term and requires two office days. The earlier term cannot establish current alignment."
+      ],
+      "severity": "moderate",
+      "issue": "The negative annotation reason and expected-finding explanation mostly repeat the flawed answer as a bare assertion. A reviewer cannot tell from these fields alone which source or preference defeats it.",
+      "proposed_fix": "Rewrite both explanations as evidence-backed reasons the answers fail, naming the pertinent JD term and preference. Keep the deliberately wrong wording in answers.json only."
+    },
+    {
+      "case_id": "PF-11",
+      "answer_ids": [
+        "answer_03",
+        "answer_04"
+      ],
+      "paths": [
+        "annotations.json#/answers/2/reason",
+        "annotations.json#/answers/2/expected_findings/0/explanation",
+        "annotations.json#/answers/3/reason",
+        "annotations.json#/answers/3/expected_findings/0/explanation"
+      ],
+      "evidence": [
+        "An inclusive availability window ending at 17:00 covers a required overlap ending at 17:00. Proration without a base figure leaves the CHF 100,000 target unknown."
+      ],
+      "severity": "moderate",
+      "issue": "The negative annotation reason and expected-finding explanation mostly repeat the flawed answer as a bare assertion. A reviewer cannot tell from these fields alone which source or preference defeats it.",
+      "proposed_fix": "Rewrite both explanations as evidence-backed reasons the answers fail, naming the pertinent JD term and preference. Keep the deliberately wrong wording in answers.json only."
+    },
+    {
+      "case_id": "PF-12",
+      "answer_ids": [
+        "answer_03",
+        "answer_04"
+      ],
+      "paths": [
+        "annotations.json#/answers/2/reason",
+        "annotations.json#/answers/2/expected_findings/0/explanation",
+        "annotations.json#/answers/3/reason",
+        "annotations.json#/answers/3/expected_findings/0/explanation"
+      ],
+      "evidence": [
+        "The candidate explicitly accepts up to two office days when base is at least CHF 160,000; the JD states two days and a CHF 170,000 lower bound."
+      ],
+      "severity": "moderate",
+      "issue": "The negative annotation reason and expected-finding explanation mostly repeat the flawed answer as a bare assertion. A reviewer cannot tell from these fields alone which source or preference defeats it.",
+      "proposed_fix": "Rewrite both explanations as evidence-backed reasons the answers fail, naming the pertinent JD term and preference. Keep the deliberately wrong wording in answers.json only."
+    }
+  ],
+  "open_questions": [
+    {
+      "case_id": "PF-01",
+      "paths": [
+        "input.json#/candidate/preferences/1/text",
+        "input.json#/jd/sources/1/text",
+        "gold.json#/units/1/allowed_labels"
+      ],
+      "question": "Does funding one professional course annually satisfy the candidate’s request for an annual learning allowance, or does allowance mean a flexible annual budget?",
+      "materiality": "The answer determines whether pref_learning is aligned or unknown.",
+      "proposed_resolution": "Make the preference explicitly ask for a funded annual course, or make the JD explicitly offer an annual learning allowance."
+    },
+    {
+      "case_id": "PF-02",
+      "paths": [
+        "input.json#/candidate/preferences/2/text",
+        "input.json#/jd/sources/0/text",
+        "input.json#/jd/sources/1/text",
+        "gold.json#/units/2/allowed_labels"
+      ],
+      "question": "Does writing decisions before one weekly planning call satisfy a preference for written decisions before recurring team meetings generally?",
+      "materiality": "Other recurring meetings are unaddressed; aligned may overstate the scope of the policy.",
+      "proposed_resolution": "If full alignment is intended, state in both JD sources that decisions are written before every recurring team meeting; otherwise make the preference specific to weekly planning meetings."
+    }
+  ],
+  "review_limit": "Agent-authored same-environment review; no human gold approval and no model generation run."
+}

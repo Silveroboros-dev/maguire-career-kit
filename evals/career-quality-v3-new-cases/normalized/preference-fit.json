@@ -1,0 +1,2005 @@
+{
+  "schema": "maguire-v3-new-normalized",
+  "family": "preference-fit",
+  "human_approved": false,
+  "exposure": {
+    "author": "preference-fit worker",
+    "basis": "manual fictional authoring",
+    "prior_eval_access": false,
+    "checker_access": false,
+    "runtime_predictions_seen": false
+  },
+  "rows": [
+    {
+      "case_id": "PF3N-01",
+      "sources": [
+        {
+          "id": "J01",
+          "facts": [
+            {
+              "subject": "employer",
+              "predicate": "published_stipend",
+              "object": "personal equipment",
+              "modality": "observation",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "annual": true
+              },
+              "time": {},
+              "measure": {
+                "kind": "amount",
+                "unit": "USD",
+                "lower": 600,
+                "upper": 600,
+                "per": null
+              }
+            }
+          ]
+        },
+        {
+          "id": "P01",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "personal_stipend",
+              "object": "personal equipment",
+              "modality": "preference_constraint",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "priority": "must_have",
+                "annual": true
+              },
+              "time": {},
+              "measure": {
+                "kind": "amount",
+                "unit": "USD",
+                "lower": 500,
+                "upper": null,
+                "per": null
+              }
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "A",
+          "quote": "published $600 yearly equipment stipend",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "employer",
+              "predicate": "published_stipend",
+              "object": "personal equipment",
+              "modality": "observation",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "annual": true
+              },
+              "time": {},
+              "measure": {
+                "kind": "amount",
+                "unit": "USD",
+                "lower": 600,
+                "upper": 600,
+                "per": null
+              }
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "quote": "clears your $500 minimum",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "employer stipend",
+              "predicate": "compatible",
+              "object": "candidate equipment minimum",
+              "modality": "record_assessment",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "annual": true
+              },
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "PF3N-02",
+      "sources": [
+        {
+          "id": "J02",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "published_stipend",
+              "object": "personal workspace",
+              "modality": "observation",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": {
+                "kind": "amount",
+                "unit": "USD",
+                "lower": 450,
+                "upper": 650,
+                "per": "calendar_month"
+              }
+            }
+          ]
+        },
+        {
+          "id": "P02",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "personal_stipend",
+              "object": "personal workspace",
+              "modality": "preference_constraint",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "priority": "must_have"
+              },
+              "time": {},
+              "measure": {
+                "kind": "amount",
+                "unit": "USD",
+                "lower": 400,
+                "upper": null,
+                "per": "calendar_month"
+              }
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "A",
+          "quote": "stated $450 monthly floor",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role",
+              "predicate": "published_stipend",
+              "object": "personal workspace",
+              "modality": "observation",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": {
+                "kind": "amount",
+                "unit": "USD",
+                "lower": 450,
+                "upper": 650,
+                "per": "calendar_month"
+              }
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "quote": "above your $400 monthly requirement",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role stipend",
+              "predicate": "compatible",
+              "object": "candidate workspace minimum",
+              "modality": "record_assessment",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "basis": "monthly_floor"
+              },
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "PF3N-03",
+      "sources": [
+        {
+          "id": "J03",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "station_attendance",
+              "object": "required",
+              "modality": "requirement",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": {
+                "kind": "frequency",
+                "unit": "day",
+                "lower": 1,
+                "upper": 1,
+                "per": "week"
+              }
+            }
+          ]
+        },
+        {
+          "id": "P03",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "station_attendance",
+              "object": "maximum",
+              "modality": "preference_constraint",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "priority": "must_have"
+              },
+              "time": {},
+              "measure": {
+                "kind": "frequency",
+                "unit": "day",
+                "lower": null,
+                "upper": 2,
+                "per": "week"
+              }
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "A",
+          "quote": "one required station day per week",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role",
+              "predicate": "station_attendance",
+              "object": "required",
+              "modality": "requirement",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": {
+                "kind": "frequency",
+                "unit": "day",
+                "lower": 1,
+                "upper": 1,
+                "per": "week"
+              }
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "quote": "within your two-day ceiling",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role attendance",
+              "predicate": "compatible",
+              "object": "candidate station ceiling",
+              "modality": "record_assessment",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "PF3N-04",
+      "sources": [
+        {
+          "id": "J04",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "on_call",
+              "object": "Saturday",
+              "modality": "requirement",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "weekday_shifts": false
+              },
+              "time": {},
+              "measure": {
+                "kind": "frequency",
+                "unit": "shift",
+                "lower": 1,
+                "upper": 1,
+                "per": "calendar_month"
+              }
+            }
+          ]
+        },
+        {
+          "id": "P04",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "on_call",
+              "object": "Saturday",
+              "modality": "preference_constraint",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "priority": "must_have",
+                "weekday_shifts": false
+              },
+              "time": {},
+              "measure": {
+                "kind": "frequency",
+                "unit": "shift",
+                "lower": null,
+                "upper": 1,
+                "per": "calendar_month"
+              }
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "A",
+          "quote": "Saturday-only monthly rota",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role",
+              "predicate": "on_call",
+              "object": "Saturday",
+              "modality": "requirement",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "weekday_shifts": false
+              },
+              "time": {},
+              "measure": {
+                "kind": "frequency",
+                "unit": "shift",
+                "lower": 1,
+                "upper": 1,
+                "per": "calendar_month"
+              }
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "quote": "fits the on-call window you allow",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role rota",
+              "predicate": "compatible",
+              "object": "candidate on-call window",
+              "modality": "record_assessment",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "PF3N-05",
+      "sources": [
+        {
+          "id": "J05",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "station_attendance",
+              "object": "required",
+              "modality": "requirement",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": {
+                "kind": "frequency",
+                "unit": "day",
+                "lower": 3,
+                "upper": 3,
+                "per": "week"
+              }
+            }
+          ]
+        },
+        {
+          "id": "J05U",
+          "facts": [
+            {
+              "subject": "update J05U",
+              "predicate": "supersedes",
+              "object": "posting J05",
+              "modality": "observation",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            },
+            {
+              "subject": "role",
+              "predicate": "station_attendance",
+              "object": "required",
+              "modality": "requirement",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": {
+                "kind": "frequency",
+                "unit": "day",
+                "lower": 1,
+                "upper": 1,
+                "per": "week"
+              }
+            }
+          ]
+        },
+        {
+          "id": "P05",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "station_attendance",
+              "object": "maximum",
+              "modality": "preference_constraint",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "priority": "must_have"
+              },
+              "time": {},
+              "measure": {
+                "kind": "frequency",
+                "unit": "day",
+                "lower": null,
+                "upper": 1,
+                "per": "week"
+              }
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "A",
+          "quote": "replacement rule",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "update J05U",
+              "predicate": "supersedes",
+              "object": "posting J05",
+              "modality": "observation",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "quote": "requires one station day weekly",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role",
+              "predicate": "station_attendance",
+              "object": "required",
+              "modality": "requirement",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": {
+                "kind": "frequency",
+                "unit": "day",
+                "lower": 1,
+                "upper": 1,
+                "per": "week"
+              }
+            }
+          ]
+        },
+        {
+          "id": "C",
+          "quote": "meeting your cap",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role attendance",
+              "predicate": "compatible",
+              "object": "candidate station ceiling",
+              "modality": "record_assessment",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "PF3N-06",
+      "sources": [
+        {
+          "id": "J06",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "station_attendance",
+              "object": "on site",
+              "modality": "requirement",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "first_days": 30
+              },
+              "measure": null
+            },
+            {
+              "subject": "role",
+              "predicate": "remote_work",
+              "object": "permitted",
+              "modality": "permission",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "after_day": 30
+              },
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "P06",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "remote_work",
+              "object": "after onboarding",
+              "modality": "preference_constraint",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "priority": "must_have",
+                "condition": "on_site_first_30_days"
+              },
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "A",
+          "quote": "30-day on-site period matches your exception",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role onboarding",
+              "predicate": "compatible",
+              "object": "candidate 30-day exception",
+              "modality": "record_assessment",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "first_days": 30
+              },
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "quote": "remote work permitted afterward",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role",
+              "predicate": "remote_work",
+              "object": "permitted",
+              "modality": "permission",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "after_day": 30
+              },
+              "measure": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "PF3N-07",
+      "sources": [
+        {
+          "id": "J07",
+          "facts": [
+            {
+              "subject": "employer",
+              "predicate": "learning_allowance",
+              "object": "planned",
+              "modality": "observation",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            },
+            {
+              "subject": "employer",
+              "predicate": "learning_allowance",
+              "object": "amount undecided",
+              "modality": "observation",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "P07",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "learning_allowance",
+              "object": "confirmed minimum",
+              "modality": "preference_constraint",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "priority": "must_have",
+                "annual": true
+              },
+              "time": {},
+              "measure": {
+                "kind": "amount",
+                "unit": "USD",
+                "lower": 1000,
+                "upper": null,
+                "per": null
+              }
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "A",
+          "quote": "employer has not decided the allowance amount",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "employer",
+              "predicate": "learning_allowance",
+              "object": "amount undecided",
+              "modality": "observation",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "quote": "your $1,000 requirement remains unresolved",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role allowance",
+              "predicate": "compatible",
+              "object": "candidate allowance minimum",
+              "modality": "record_assessment",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "status": "unresolved"
+              },
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "PF3N-08",
+      "sources": [
+        {
+          "id": "J08",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "written_offer",
+              "object": "sets remote schedule",
+              "modality": "commitment",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            },
+            {
+              "subject": "posting",
+              "predicate": "remote_work",
+              "object": "weekly count unset",
+              "modality": "observation",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "P08",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "remote_work",
+              "object": "minimum",
+              "modality": "preference_constraint",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "priority": "must_have"
+              },
+              "time": {},
+              "measure": {
+                "kind": "frequency",
+                "unit": "day",
+                "lower": 3,
+                "upper": null,
+                "per": "week"
+              }
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "A",
+          "quote": "written offer confirms three remote days weekly",
+          "stance": "conditional",
+          "readings": [
+            {
+              "subject": "role",
+              "predicate": "written_offer",
+              "object": "three remote days",
+              "modality": "possibility",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "condition": "if_offer_confirms"
+              },
+              "time": {},
+              "measure": {
+                "kind": "frequency",
+                "unit": "day",
+                "lower": 3,
+                "upper": 3,
+                "per": "week"
+              }
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "quote": "this preference is met",
+          "stance": "conditional",
+          "readings": [
+            {
+              "subject": "role schedule",
+              "predicate": "compatible",
+              "object": "candidate remote minimum",
+              "modality": "record_assessment",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "condition": "if_offer_confirms_three_days"
+              },
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "PF3N-09",
+      "sources": [
+        {
+          "id": "J09",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "live_captions",
+              "object": "available now",
+              "modality": "observation",
+              "polarity": "negative",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            },
+            {
+              "subject": "role",
+              "predicate": "live_captions",
+              "object": "pending procurement",
+              "modality": "observation",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "P09",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "live_captions",
+              "object": "team meetings",
+              "modality": "preference_constraint",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "priority": "must_have"
+              },
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "A",
+          "quote": "Captions are pending",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role",
+              "predicate": "live_captions",
+              "object": "pending procurement",
+              "modality": "observation",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "quote": "ask for confirmation before treating the meeting requirement as met",
+          "stance": "recommended_as_fact",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "compatible",
+              "object": "role meeting captions",
+              "modality": "evaluation_instruction",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "condition": "confirmation_required"
+              },
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "PF3N-10",
+      "sources": [
+        {
+          "id": "J10",
+          "facts": [
+            {
+              "subject": "employer",
+              "predicate": "learning_allowance",
+              "object": "annual",
+              "modality": "observation",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "annual": true
+              },
+              "time": {},
+              "measure": {
+                "kind": "amount",
+                "unit": "USD",
+                "lower": 900,
+                "upper": 900,
+                "per": null
+              }
+            }
+          ]
+        },
+        {
+          "id": "P10",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "learning_allowance",
+              "object": "minimum",
+              "modality": "preference_constraint",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "priority": "nice_to_have",
+                "annual": true
+              },
+              "time": {},
+              "measure": {
+                "kind": "amount",
+                "unit": "USD",
+                "lower": 700,
+                "upper": null,
+                "per": null
+              }
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "A",
+          "quote": "listing states $900 annually",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "employer",
+              "predicate": "learning_allowance",
+              "object": "annual",
+              "modality": "observation",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "annual": true
+              },
+              "time": {},
+              "measure": {
+                "kind": "amount",
+                "unit": "USD",
+                "lower": 900,
+                "upper": 900,
+                "per": null
+              }
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "quote": "your preferred floor is $700",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "learning_allowance",
+              "object": "minimum",
+              "modality": "preference_constraint",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "priority": "nice_to_have",
+                "annual": true
+              },
+              "time": {},
+              "measure": {
+                "kind": "amount",
+                "unit": "USD",
+                "lower": 700,
+                "upper": null,
+                "per": null
+              }
+            }
+          ]
+        },
+        {
+          "id": "C",
+          "quote": "would you still ask which courses qualify?",
+          "stance": "question",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "learning_allowance",
+              "object": "eligible courses",
+              "modality": "evaluation_instruction",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "PF3N-11",
+      "sources": [
+        {
+          "id": "J11",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "remote_work",
+              "object": "up to four days",
+              "modality": "permission",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "condition": "manager_approval"
+              },
+              "time": {},
+              "measure": {
+                "kind": "frequency",
+                "unit": "day",
+                "lower": null,
+                "upper": 4,
+                "per": "week"
+              }
+            }
+          ]
+        },
+        {
+          "id": "P11",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "remote_work",
+              "object": "two days",
+              "modality": "preference_constraint",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "priority": "nice_to_have",
+                "condition": "manager_approval"
+              },
+              "time": {},
+              "measure": {
+                "kind": "frequency",
+                "unit": "day",
+                "lower": 2,
+                "upper": 2,
+                "per": "week"
+              }
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "A",
+          "quote": "Two remote days fit the stated four-day limit",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role remote permission",
+              "predicate": "compatible",
+              "object": "candidate two-day wish",
+              "modality": "record_assessment",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "condition": "manager_approval"
+              },
+              "time": {},
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "quote": "subject to manager approval",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role",
+              "predicate": "remote_work",
+              "object": "manager approval",
+              "modality": "requirement",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "PF3N-12",
+      "sources": [
+        {
+          "id": "J12",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "training_demo",
+              "object": "Wednesday 15:00-16:00",
+              "modality": "requirement",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "required_demos_only": true
+              },
+              "time": {},
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "P12",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "training_demo",
+              "object": "after 18:00",
+              "modality": "preference_constraint",
+              "polarity": "negative",
+              "epistemic_scope": "world",
+              "scope": {
+                "priority": "must_have"
+              },
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "A",
+          "quote": "Wednesday training demos end before your 18:00 cutoff",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role demos",
+              "predicate": "compatible",
+              "object": "candidate demo cutoff",
+              "modality": "record_assessment",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "required_demos_only": true
+              },
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "PF3N-13",
+      "sources": [
+        {
+          "id": "J13",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "remote_work",
+              "object": "requestable",
+              "modality": "permission",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "condition": "manager_approval"
+              },
+              "time": {},
+              "measure": null
+            },
+            {
+              "subject": "role",
+              "predicate": "remote_work",
+              "object": "guaranteed count",
+              "modality": "observation",
+              "polarity": "negative",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "P13",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "remote_work",
+              "object": "guaranteed minimum",
+              "modality": "preference_constraint",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "priority": "must_have"
+              },
+              "time": {},
+              "measure": {
+                "kind": "frequency",
+                "unit": "day",
+                "lower": 3,
+                "upper": null,
+                "per": "week"
+              }
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "A",
+          "quote": "Remote requests are allowed",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role",
+              "predicate": "remote_work",
+              "object": "requestable",
+              "modality": "permission",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "condition": "manager_approval"
+              },
+              "time": {},
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "quote": "your three remote days are guaranteed",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role",
+              "predicate": "remote_work",
+              "object": "three days",
+              "modality": "guarantee",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": {
+                "kind": "frequency",
+                "unit": "day",
+                "lower": 3,
+                "upper": 3,
+                "per": "week"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "PF3N-14",
+      "sources": [
+        {
+          "id": "J14",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "station_attendance",
+              "object": "required",
+              "modality": "requirement",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": {
+                "kind": "frequency",
+                "unit": "day",
+                "lower": 2,
+                "upper": 2,
+                "per": "week"
+              }
+            }
+          ]
+        },
+        {
+          "id": "J14N",
+          "facts": [
+            {
+              "subject": "staff note J14N",
+              "predicate": "supersedes",
+              "object": "posting J14",
+              "modality": "observation",
+              "polarity": "negative",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            },
+            {
+              "subject": "some teams",
+              "predicate": "station_attendance",
+              "object": "fewer days trial",
+              "modality": "possibility",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "P14",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "station_attendance",
+              "object": "maximum",
+              "modality": "preference_constraint",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "priority": "must_have"
+              },
+              "time": {},
+              "measure": {
+                "kind": "frequency",
+                "unit": "day",
+                "lower": null,
+                "upper": 1,
+                "per": "week"
+              }
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "A",
+          "quote": "staff note replaces the two-day rule",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "staff note J14N",
+              "predicate": "supersedes",
+              "object": "posting J14",
+              "modality": "observation",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "quote": "role meets your one-day cap",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role attendance",
+              "predicate": "compatible",
+              "object": "candidate one-day ceiling",
+              "modality": "record_assessment",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "PF3N-15",
+      "sources": [
+        {
+          "id": "J15",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "on_call",
+              "object": "overnight",
+              "modality": "requirement",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": {
+                "kind": "frequency",
+                "unit": "shift",
+                "lower": 1,
+                "upper": 1,
+                "per": "week"
+              }
+            }
+          ]
+        },
+        {
+          "id": "P15",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "on_call",
+              "object": "overnight",
+              "modality": "preference_constraint",
+              "polarity": "negative",
+              "epistemic_scope": "world",
+              "scope": {
+                "priority": "must_have"
+              },
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "A",
+          "quote": "no overnight on-call duty",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role",
+              "predicate": "on_call",
+              "object": "overnight",
+              "modality": "requirement",
+              "polarity": "negative",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "quote": "satisfies your constraint",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role on-call",
+              "predicate": "compatible",
+              "object": "candidate overnight ban",
+              "modality": "record_assessment",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "PF3N-16",
+      "sources": [
+        {
+          "id": "J16",
+          "facts": [
+            {
+              "subject": "meeting platform",
+              "predicate": "live_captions",
+              "object": "optional feature",
+              "modality": "ability",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            },
+            {
+              "subject": "employer",
+              "predicate": "live_captions",
+              "object": "enabled for team meetings",
+              "modality": "commitment",
+              "polarity": "negative",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "P16",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "live_captions",
+              "object": "team meetings",
+              "modality": "preference_constraint",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "priority": "must_have"
+              },
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "A",
+          "quote": "platform supports captions",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "meeting platform",
+              "predicate": "live_captions",
+              "object": "optional feature",
+              "modality": "ability",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "quote": "employer will enable them in every team meeting",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "employer",
+              "predicate": "live_captions",
+              "object": "enabled",
+              "modality": "commitment",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "quantifier": "all",
+                "meeting_type": "team"
+              },
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "PF3N-17",
+      "sources": [
+        {
+          "id": "J17",
+          "facts": [
+            {
+              "subject": "employer",
+              "predicate": "published_stipend",
+              "object": "personal internet",
+              "modality": "observation",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "annual": true
+              },
+              "time": {},
+              "measure": {
+                "kind": "amount",
+                "unit": "USD",
+                "lower": 900,
+                "upper": 900,
+                "per": null
+              }
+            }
+          ]
+        },
+        {
+          "id": "P17",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "personal_stipend",
+              "object": "personal internet",
+              "modality": "preference_constraint",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "priority": "must_have"
+              },
+              "time": {},
+              "measure": {
+                "kind": "amount",
+                "unit": "USD",
+                "lower": 200,
+                "upper": null,
+                "per": "calendar_month"
+              }
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "A",
+          "quote": "$900 stipend",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "employer",
+              "predicate": "published_stipend",
+              "object": "personal internet",
+              "modality": "observation",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "annual": true
+              },
+              "time": {},
+              "measure": {
+                "kind": "amount",
+                "unit": "USD",
+                "lower": 900,
+                "upper": 900,
+                "per": null
+              }
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "quote": "meets your $200 monthly minimum",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role stipend",
+              "predicate": "compatible",
+              "object": "candidate monthly internet minimum",
+              "modality": "record_assessment",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "PF3N-18",
+      "sources": [
+        {
+          "id": "J18",
+          "facts": [
+            {
+              "subject": "employer",
+              "predicate": "learning_allowance",
+              "object": "certification exam fees",
+              "modality": "permission",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "annual": true
+              },
+              "time": {},
+              "measure": {
+                "kind": "amount",
+                "unit": "USD",
+                "lower": null,
+                "upper": 1200,
+                "per": null
+              }
+            },
+            {
+              "subject": "employer",
+              "predicate": "learning_allowance",
+              "object": "conference travel",
+              "modality": "permission",
+              "polarity": "negative",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "P18",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "learning_allowance",
+              "object": "conference travel",
+              "modality": "preference_constraint",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "priority": "must_have",
+                "annual": true
+              },
+              "time": {},
+              "measure": {
+                "kind": "amount",
+                "unit": "USD",
+                "lower": 800,
+                "upper": null,
+                "per": null
+              }
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "A",
+          "quote": "allowance is $1,200 for exams",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "employer",
+              "predicate": "learning_allowance",
+              "object": "certification exam fees",
+              "modality": "permission",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "annual": true
+              },
+              "time": {},
+              "measure": {
+                "kind": "amount",
+                "unit": "USD",
+                "lower": null,
+                "upper": 1200,
+                "per": null
+              }
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "quote": "it can cover your conference travel",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "employer",
+              "predicate": "learning_allowance",
+              "object": "conference travel",
+              "modality": "permission",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "PF3N-19",
+      "sources": [
+        {
+          "id": "J19",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "remote_work",
+              "object": "two days after trial",
+              "modality": "possibility",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "condition": "agreement_after_trial"
+              },
+              "time": {},
+              "measure": {
+                "kind": "frequency",
+                "unit": "day",
+                "lower": 2,
+                "upper": 2,
+                "per": "week"
+              }
+            }
+          ]
+        },
+        {
+          "id": "P19",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "remote_work",
+              "object": "minimum after trial",
+              "modality": "preference_constraint",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "priority": "must_have"
+              },
+              "time": {},
+              "measure": {
+                "kind": "frequency",
+                "unit": "day",
+                "lower": 2,
+                "upper": null,
+                "per": "week"
+              }
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "A",
+          "quote": "offers two remote days after the trial",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role",
+              "predicate": "remote_work",
+              "object": "two days after trial",
+              "modality": "possibility",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "condition": "agreement_after_trial"
+              },
+              "time": {},
+              "measure": {
+                "kind": "frequency",
+                "unit": "day",
+                "lower": 2,
+                "upper": 2,
+                "per": "week"
+              }
+            },
+            {
+              "subject": "role",
+              "predicate": "remote_work",
+              "object": "two days after trial",
+              "modality": "guarantee",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": {
+                "kind": "frequency",
+                "unit": "day",
+                "lower": 2,
+                "upper": 2,
+                "per": "week"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "PF3N-20",
+      "sources": [
+        {
+          "id": "J20",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "live_captions",
+              "object": "team meetings",
+              "modality": "permission",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "condition": "advance_request"
+              },
+              "time": {},
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "P20",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "live_captions",
+              "object": "team meetings",
+              "modality": "preference_constraint",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "priority": "must_have",
+                "quantifier": "all"
+              },
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "A",
+          "quote": "Live captions are available for your team meetings",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role",
+              "predicate": "live_captions",
+              "object": "team meetings",
+              "modality": "permission",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "condition": "advance_request"
+              },
+              "time": {},
+              "measure": null
+            },
+            {
+              "subject": "role",
+              "predicate": "live_captions",
+              "object": "team meetings",
+              "modality": "guarantee",
+              "polarity": "positive",
+              "epistemic_scope": "world",
+              "scope": {
+                "quantifier": "all"
+              },
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

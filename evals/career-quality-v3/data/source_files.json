@@ -1,0 +1,23 @@
+{
+  "schema": "maguire-v3-source-lineage",
+  "files_by_sha256": {
+    "35077caac489ee83a76a6ff6864334572af8350c18875c4fc993553cef657cb9": "career-quality-v2/cases/candidate-fit/CF2-01/input.json",
+    "2b22aec3d3a3fd8bf3c4c60ccc114b1f0eed6378d84e37261bf6f6d407f37c1b": "career-quality-v2/cases/candidate-fit/CF2-01/answers.json",
+    "6605067dd2483b7d2dead63855d9d0ad21ef998dfdad974cf601d2595098901a": "career-quality-v2/cases/candidate-fit/CF2-03/input.json",
+    "e29933cdbe061ba5ef359c9700519ea2547f15d1dce0dcfc840f3ab56d85f683": "career-quality-v2/cases/candidate-fit/CF2-03/answers.json",
+    "8e6cee235934ed348d62855e14167b36419e585caddb39df19486e7479abf5c6": "career-quality-v2/cases/candidate-fit/CF2-04/input.json",
+    "0e14022e530a588faf817edf016482a1aeef7c4dbc1a2f62dc4d48191a060386": "career-quality-v2/cases/candidate-fit/CF2-04/answers.json",
+    "67d220a9fadde269054783d01d657ae716c1b4eb7379c7461e24adcd13df8dc8": "career-quality-v2/cases/candidate-fit/CF2-05/input.json",
+    "d47d3d577cebcbc561dd0c451387567687bb0599e7817f2dacd86c57e7913b8e": "career-quality-v2/cases/candidate-fit/CF2-05/answers.json",
+    "2993964d486d78d7e1078d326190507c3a4f9f91ea20ae78c78670022ea49dd9": "career-quality-v2/cases/preference-fit/PF2-02/input.json",
+    "f4b6b333bd5f86682bc81e655a02c0776ea6df922102e8baebbc85ffb1ee10c8": "career-quality-v2/cases/preference-fit/PF2-02/answers.json",
+    "c6061d8e7410dfd4956ceb958448186ade6946208d4238385e69d898d7e1b62d": "career-quality-v2/cases/preference-fit/PF2-03/input.json",
+    "916f5b8d2fb4c48dbd9ec968be85915189fe4f8bae7b69c5461a62bebe99b295": "career-quality-v2/cases/preference-fit/PF2-03/answers.json",
+    "210cea6448d197cb02f33a1367b0d9dc8bfa5bfe899e32c31e3681476d178b19": "career-quality-v2/cases/preference-fit/PF2-05/input.json",
+    "33e055693fd75aec6cce6e0e9220594c6f40988c1095920f9d2004943e13ea02": "career-quality-v2/cases/preference-fit/PF2-05/answers.json",
+    "198f566cda3a6736287050b5a0401f4d5bd5c8d4d6b2fac126baac4e0503c35c": "career-quality-v2/cases/preference-fit/PF2-06/input.json",
+    "cc7e6c7a71e898fe072d1dacb4eaa923200d54b75d77c7dbeec9576cafcf56f5": "career-quality-v2/cases/preference-fit/PF2-06/answers.json",
+    "856ca35ea7aefe50bce7c616b1f7a42abf2af76d059a959938131335e3c74995": "career-quality-v2/cases/preference-fit/PF2-08/input.json",
+    "1692f412e9b4d0ee07faa690062da70b0e3f8d4420f3ebcc1cb9eb1708284766": "career-quality-v2/cases/preference-fit/PF2-08/answers.json"
+  }
+}

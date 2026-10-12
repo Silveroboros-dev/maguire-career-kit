@@ -1,0 +1,381 @@
+{
+  "schema": "maguire-v3-new-raw",
+  "family": "candidate-fit",
+  "human_approved": false,
+  "exposure": {
+    "author": "candidate-fit author worker",
+    "statement": "I read repository AGENTS.md, README.md, CREDITS.md, and only this new folder’s CONTRACT.md, SCHEMA.md, and author_support.py before authoring. I did not inspect prior eval folders, checker code, tests, designs, cases, results, or predictions, and did not call or import the checker.",
+    "sources": "All case people, roles, snapshots, quantities, and answers are fictional manual constructions.",
+    "limitations": "Manual self-attestation in a shared filesystem; no enforced isolation, independent human approval, or organically sourced job sample."
+  },
+  "rows": [
+    {
+      "case_id": "CF3N-01",
+      "title": "Weakened route saving",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF3N-01-S1",
+          "text": "In a self-reported 2025 warehouse pilot, I changed the courier route and measured 84 km less travel across the pilot week.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "My pilot route change saved at least 70 km of travel in that week, based on my own measurement."
+      }
+    },
+    {
+      "case_id": "CF3N-02",
+      "title": "Consoles and archives kept separate",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF3N-02-S1",
+          "text": "I report using 12 dispatch consoles during a 2024 migration and personally indexing 26 archive cartons in that migration.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "In the 2024 migration, I used more than ten dispatch consoles and personally indexed at least twenty archive cartons."
+      }
+    },
+    {
+      "case_id": "CF3N-03",
+      "title": "Matching escalation duty",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF3N-03-S1",
+          "text": "I report triaging monitoring alerts and escalating unresolved alerts to the duty engineer on weekday shifts in 2025.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        },
+        {
+          "id": "CF3N-03-JD",
+          "text": "The vacancy requires alert triage and escalation to a duty engineer during weekday operations.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "My reported weekday alert triage and escalation is directly relevant to the role’s weekday escalation requirement."
+      }
+    },
+    {
+      "case_id": "CF3N-04",
+      "title": "Archive throughput lower bound",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF3N-04-S1",
+          "text": "In my own log for one calendar month in 2025, I processed 43 archive boxes, including 31 paper records boxes.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "In that month I personally processed over 30 paper records boxes; that number is a subset of my 43 total archive boxes."
+      }
+    },
+    {
+      "case_id": "CF3N-05",
+      "title": "Pilot OCR stays a pilot",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF3N-05-S1",
+          "text": "I tried OCR on three small invoice batches in a sandbox. The trial was not deployed to the production intake.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "I can cite a three-batch sandbox OCR trial, while leaving production OCR experience unclaimed."
+      }
+    },
+    {
+      "case_id": "CF3N-06",
+      "title": "Training and certification distinction",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF3N-06-S1",
+          "text": "I hold a vendor-issued safety trainer certificate and report delivering six equipment training demos in 2025.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The vendor certificate supports listing me as a certified safety trainer; my own record supports saying I gave at least five equipment demos in 2025."
+      }
+    },
+    {
+      "case_id": "CF3N-07",
+      "title": "Panel contribution without final authority",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF3N-07-S1",
+          "text": "For a 2023 grants panel, I scored proposals as one of five reviewers. The chair alone signed final funding decisions.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "I contributed proposal scores as a panel reviewer, but final funding decisions sat with the chair."
+      }
+    },
+    {
+      "case_id": "CF3N-08",
+      "title": "Historical attendance is not current availability",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF3N-08-S1",
+          "text": "During a 2022 station rollout, I attended the field station every Tuesday and Thursday. This record says nothing about my current travel availability.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        },
+        {
+          "id": "CF3N-08-JD",
+          "text": "This job requires two on-site station days each week from 2027 onward.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "My 2022 two-day station routine is relevant history; I would need to confirm whether I can meet the new weekly on-site requirement."
+      }
+    },
+    {
+      "case_id": "CF3N-09",
+      "title": "On-call record bounded",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF3N-09-S1",
+          "text": "My 2024 rota shows I covered two weekends of on-call support in each calendar quarter of that year.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The 2024 rota establishes at least one on-call support weekend per quarter, without establishing a current rota."
+      }
+    },
+    {
+      "case_id": "CF3N-10",
+      "title": "Ledger maintenance duration",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF3N-10-S1",
+          "text": "I kept the equipment checkout ledger from January 2023 through June 2024, recording handovers but not approving purchases.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "I maintained the checkout ledger for more than a year and recorded handovers; I should not present that as purchase approval authority."
+      }
+    },
+    {
+      "case_id": "CF3N-11",
+      "title": "Explicit evidence for a narrow job demand",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF3N-11-S1",
+          "text": "A supervisor-signed log records that I gave four live equipment training demos to new operators in March 2025.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        },
+        {
+          "id": "CF3N-11-JD",
+          "text": "The role requires live demonstrations of equipment use to new operators.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The signed log is enough to support saying I have delivered live equipment demos to new operators, a task this role requires."
+      }
+    },
+    {
+      "case_id": "CF3N-12",
+      "title": "Constrained archive recommendation",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF3N-12-S1",
+          "text": "I personally scanned and indexed 18 fragile maps in a 2025 archive exercise. I did not design the archive policy.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "I can highlight hands-on scanning and indexing of 18 fragile maps, while keeping archive-policy design off the CV."
+      }
+    },
+    {
+      "case_id": "CF3N-13",
+      "title": "Attendance inflated to certification",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF3N-13-S1",
+          "text": "I attended two vendor safety demonstrations in 2025. I did not take the trainer certification assessment.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "I attended two vendor safety demonstrations and earned the vendor safety trainer certificate."
+      }
+    },
+    {
+      "case_id": "CF3N-14",
+      "title": "OCR method inflated to validated scale",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF3N-14-S1",
+          "text": "I used OCR in a trial on 14 handwritten forms; the larger 240-form collection was not processed.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "I used OCR on handwritten forms and validated the method across all 240 forms."
+      }
+    },
+    {
+      "case_id": "CF3N-15",
+      "title": "Team output attributed to individual",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF3N-15-S1",
+          "text": "Our four-person archive team processed 60 folders. My individual role was maintaining the transfer ledger; I did not process the folders myself.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The team processed 60 folders, and I personally processed those 60 folders."
+      }
+    },
+    {
+      "case_id": "CF3N-16",
+      "title": "Past escalation turned into current on-call duty",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF3N-16-S1",
+          "text": "I escalated overnight alerts while on the 2021 support rota. My last on-call shift ended in December 2021, and I have had no on-call duty since.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "I escalated overnight alerts in 2021 and remain on the current on-call rota."
+      }
+    },
+    {
+      "case_id": "CF3N-17",
+      "title": "Estimate promoted to guarantee",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF3N-17-S1",
+          "text": "In a proposed routing change, my spreadsheet estimated a possible saving of 45 to 65 km per week. The route was never implemented.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "My spreadsheet estimated a 45–65 km weekly saving, so I can guarantee at least 45 km saved every week."
+      }
+    },
+    {
+      "case_id": "CF3N-18",
+      "title": "Caption requirement contradicted",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF3N-18-S1",
+          "text": "I can operate the meeting platform, but I cannot provide live captions and do not have a captioning service.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        },
+        {
+          "id": "CF3N-18-JD",
+          "text": "The vacancy requires the facilitator to provide live captions in all public sessions.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "I can run the meeting platform, and I already meet its live-caption requirement for public sessions."
+      }
+    },
+    {
+      "case_id": "CF3N-19",
+      "title": "On-call phrase has two ordinary meanings",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF3N-19-S1",
+          "text": "During the 2024 outage season I covered rotating support shifts when the manager requested them. The record does not say whether I waited for calls outside those shifts.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "I was on call for rotating support shifts during the 2024 outage season."
+      }
+    },
+    {
+      "case_id": "CF3N-20",
+      "title": "Shared demo leadership ambiguous",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF3N-20-S1",
+          "text": "My mentor and I ran the 2025 training demo together; the notes do not assign a lead presenter.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "I led the 2025 training demo with my mentor."
+      }
+    }
+  ]
+}

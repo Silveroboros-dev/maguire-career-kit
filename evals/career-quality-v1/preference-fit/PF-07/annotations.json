@@ -1,0 +1,68 @@
+{
+  "schema": "maguire-quality-annotations-v1",
+  "case_id": "PF-07",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "Location and stated core hours fit, while the decision-rights must-have is not established by the culture slogan.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_02",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The decisive unknown is implementation authority, not the remote policy.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_03",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "jd_culture says only high-ownership and entrepreneurial; it does not grant pref_autonomy's routine technical decision rights. Autonomy remains unknown and should be clarified with the decision owner.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "preference_interpretation",
+        "description": "Misinterprets the autonomy preference in Vague autonomy claims do not prove decision rights.",
+        "changed_paths": [
+          "/assessments/0/label",
+          "/assessments/0/rationale"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "PF-INTERPRETATION",
+          "severity": "critical",
+          "target_id": "pref_autonomy",
+          "explanation": "jd_culture says only high-ownership and entrepreneurial; it does not grant pref_autonomy's routine technical decision rights. Autonomy remains unknown and should be clarified with the decision owner."
+        }
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "The cited jd_hours text concerns required meeting hours and says nothing about routine design approval. It cannot support the autonomy assessment; cite jd_culture and keep pref_autonomy unknown until decision rights are clarified.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "irrelevant_valid_citation",
+        "description": "Replaces the culture citation with a valid quote about meeting hours, which cannot support the autonomy assessment.",
+        "changed_paths": [
+          "/assessments/0/evidence/0/source_id",
+          "/assessments/0/evidence/0/quote"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "PF-EVIDENCE",
+          "severity": "major",
+          "target_id": "pref_autonomy",
+          "explanation": "The cited jd_hours text concerns required meeting hours and says nothing about routine design approval. It cannot support the autonomy assessment; cite jd_culture and keep pref_autonomy unknown until decision rights are clarified."
+        }
+      ]
+    }
+  ]
+}

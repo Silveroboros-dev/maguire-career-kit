@@ -1,0 +1,48 @@
+{
+  "schema": "maguire-quality-input-v1",
+  "case_id": "CF-08",
+  "grader": "candidate_fit",
+  "data_class": "synthetic",
+  "decision_at": "2026-10-12T12:00:00Z",
+  "task": "Assess the supplied candidate evidence against the job description. Cite relevant sources, state any uncertainty, and recommend a next action.",
+  "jd": {
+    "title": "Accessibility Audit Specialist",
+    "sources": [
+      {
+        "id": "jd_1",
+        "text": "Applicants must have completed a paid accessibility audit within the last 18 months.",
+        "observed_at": "2026-10-12T12:00:00Z",
+        "authority": "job_description",
+        "supersedes": []
+      },
+      {
+        "id": "jd_2",
+        "text": "Write clear remediation tickets for interface issues.",
+        "observed_at": "2026-10-12T12:00:00Z",
+        "authority": "job_description",
+        "supersedes": []
+      }
+    ]
+  },
+  "candidate": {
+    "facts": [
+      {
+        "id": "fact_1",
+        "text": "I have completed only one paid accessibility audit, 26 months before this decision date.",
+        "evidence_type": "self_report",
+        "observed_at": "2026-10-12T12:00:00Z",
+        "status": "active",
+        "supersedes": []
+      },
+      {
+        "id": "fact_2",
+        "text": "I wrote remediation tickets for keyboard navigation and contrast issues during that audit.",
+        "evidence_type": "self_report",
+        "observed_at": "2026-10-12T12:00:00Z",
+        "status": "active",
+        "supersedes": []
+      }
+    ],
+    "preferences": []
+  }
+}

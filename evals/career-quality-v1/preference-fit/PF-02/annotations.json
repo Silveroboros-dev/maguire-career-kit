@@ -1,0 +1,69 @@
+{
+  "schema": "maguire-quality-annotations-v1",
+  "case_id": "PF-02",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The published remote location, base range and decision practice all match the three stated preferences.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_02",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The separate employer terms sheet independently supports the same three matches.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_03",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "Both JD sources put annual CHF base at 155,000–175,000, above pref_pay's CHF 150,000 minimum. The supported pay label is aligned; no source shows a below-minimum base.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "preference_interpretation",
+        "description": "Misinterprets the pay preference in Several preferences fully matched by two published sources.",
+        "changed_paths": [
+          "/assessments/1/label",
+          "/assessments/1/rationale"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "PF-INTERPRETATION",
+          "severity": "critical",
+          "target_id": "pref_pay",
+          "explanation": "Both JD sources put annual CHF base at 155,000–175,000, above pref_pay's CHF 150,000 minimum. The supported pay label is aligned; no source shows a below-minimum base."
+        }
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "The JD states remote work within Switzerland, annual base starting at CHF 155,000 and written decisions before weekly planning; all three recorded preferences align. A pass based on those terms is unsupported; pursue is the supported action.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "incompatible_action",
+        "description": "Ignores the assessed pay preference in the Several preferences fully matched by two published sources conclusion.",
+        "changed_paths": [
+          "/conclusion/action",
+          "/conclusion/text",
+          "/conclusion/next_step"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "PF-ACTION",
+          "severity": "major",
+          "target_id": "pref_pay",
+          "explanation": "The JD states remote work within Switzerland, annual base starting at CHF 155,000 and written decisions before weekly planning; all three recorded preferences align. A pass based on those terms is unsupported; pursue is the supported action."
+        }
+      ]
+    }
+  ]
+}

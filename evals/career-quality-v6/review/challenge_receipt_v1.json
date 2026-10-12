@@ -1,0 +1,19 @@
+{
+  "schema": "maguire-v6-contract-challenge-receipt-v1",
+  "packet": "review/challenge_packet_v1.json",
+  "packet_raw": {
+    "sha256": "ffe20fd70a53ea30f1af068916a7ac4293e581c15b8286852e4a558d9afdd69e",
+    "bytes": 14142
+  },
+  "packet_internal_digest_sha256": "0e20f8852654836b7bf85dcac9388e660e670b439659a16e0eafdca47436f2df",
+  "predecessor_packet_raw": {
+    "sha256": "84bca2f5af320128a0eecceef513f57d6323456a1563591b9ce184ae72a89ad4",
+    "bytes": 10474
+  },
+  "predecessor_packet_internal_digest_sha256": "87f38bb8ea93a6af6f74b982275321c8589cdc3ab238fb3ead727d351a9b157b",
+  "predecessor_receipt_raw": {
+    "sha256": "bb6becddb4c3c7d11d589cf433f57b5b176eea80b1a7602c56d9b7404efbe8b9",
+    "bytes": 1028
+  },
+  "externally_sealed": false
+}

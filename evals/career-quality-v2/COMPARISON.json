@@ -1,0 +1,361 @@
+{
+  "schema": "maguire-v2-comparison-v1",
+  "bindings": {
+    "runs/new-v1/receipt.json": {
+      "sha256": "c7ce5349e7d11a924a101b2ac75ce7e49a3f2aad7e85309f0764c1b22be004b7",
+      "bytes": 7111
+    },
+    "runs/new-v2/receipt.json": {
+      "sha256": "d9e3c517a783a45141b94a05f8289646d9211f4f7900353a7ec9a2225de0a161",
+      "bytes": 7184
+    },
+    "runs/regression-v2/receipt.json": {
+      "sha256": "7a967cbe27324fb246bbc3015bb80dac1b1b05fd9644c5929ac76e81da0d985e",
+      "bytes": 10291
+    },
+    "CODE_FREEZE.json": {
+      "sha256": "c52b9def67c1c9d145bf884294c9465ee8e90b284015ef3dfc82ce9e79fa2da5",
+      "bytes": 2438
+    },
+    "DATA_FREEZE.json": {
+      "sha256": "abac95d29c745d377585938754dfc7db597a62315e708cbba2a8a210d44e028c",
+      "bytes": 613
+    }
+  },
+  "same_new_packet_bytes": true,
+  "same_regression_packet_identities_as_v1": true,
+  "new_v1": {
+    "all": {
+      "accepted_correct": 26,
+      "answers": 52,
+      "caught_error": 0,
+      "evaluated_correct": 26,
+      "evaluated_incorrect": 26,
+      "exact_criterion_target_matches": 0,
+      "execution_errors": 0,
+      "expected_correct": 26,
+      "expected_incorrect": 26,
+      "false_acceptance": 26,
+      "false_acceptance_rate_attempted": 1.0,
+      "false_acceptance_rate_evaluated": 1.0,
+      "false_rejection": 0,
+      "false_rejection_rate_attempted": 0.0,
+      "false_rejection_rate_evaluated": 0.0,
+      "intended_findings": 26,
+      "invalid": 0,
+      "invalid_correct": 0,
+      "invalid_incorrect": 0
+    },
+    "candidate_fit": {
+      "accepted_correct": 10,
+      "answers": 20,
+      "caught_error": 0,
+      "evaluated_correct": 10,
+      "evaluated_incorrect": 10,
+      "exact_criterion_target_matches": 0,
+      "execution_errors": 0,
+      "expected_correct": 10,
+      "expected_incorrect": 10,
+      "false_acceptance": 10,
+      "false_acceptance_rate_attempted": 1.0,
+      "false_acceptance_rate_evaluated": 1.0,
+      "false_rejection": 0,
+      "false_rejection_rate_attempted": 0.0,
+      "false_rejection_rate_evaluated": 0.0,
+      "intended_findings": 10,
+      "invalid": 0,
+      "invalid_correct": 0,
+      "invalid_incorrect": 0
+    },
+    "preference_fit": {
+      "accepted_correct": 16,
+      "answers": 32,
+      "caught_error": 0,
+      "evaluated_correct": 16,
+      "evaluated_incorrect": 16,
+      "exact_criterion_target_matches": 0,
+      "execution_errors": 0,
+      "expected_correct": 16,
+      "expected_incorrect": 16,
+      "false_acceptance": 16,
+      "false_acceptance_rate_attempted": 1.0,
+      "false_acceptance_rate_evaluated": 1.0,
+      "false_rejection": 0,
+      "false_rejection_rate_attempted": 0.0,
+      "false_rejection_rate_evaluated": 0.0,
+      "intended_findings": 16,
+      "invalid": 0,
+      "invalid_correct": 0,
+      "invalid_incorrect": 0
+    }
+  },
+  "new_v2": {
+    "all": {
+      "accepted_correct": 24,
+      "answers": 52,
+      "caught_error": 5,
+      "evaluated_correct": 26,
+      "evaluated_incorrect": 26,
+      "exact_criterion_target_matches": 1,
+      "execution_errors": 0,
+      "expected_correct": 26,
+      "expected_incorrect": 26,
+      "false_acceptance": 21,
+      "false_acceptance_rate_attempted": 0.8076923076923077,
+      "false_acceptance_rate_evaluated": 0.8076923076923077,
+      "false_rejection": 2,
+      "false_rejection_rate_attempted": 0.07692307692307693,
+      "false_rejection_rate_evaluated": 0.07692307692307693,
+      "intended_findings": 26,
+      "invalid": 0,
+      "invalid_correct": 0,
+      "invalid_incorrect": 0
+    },
+    "candidate_fit": {
+      "accepted_correct": 10,
+      "answers": 20,
+      "caught_error": 2,
+      "evaluated_correct": 10,
+      "evaluated_incorrect": 10,
+      "exact_criterion_target_matches": 0,
+      "execution_errors": 0,
+      "expected_correct": 10,
+      "expected_incorrect": 10,
+      "false_acceptance": 8,
+      "false_acceptance_rate_attempted": 0.8,
+      "false_acceptance_rate_evaluated": 0.8,
+      "false_rejection": 0,
+      "false_rejection_rate_attempted": 0.0,
+      "false_rejection_rate_evaluated": 0.0,
+      "intended_findings": 10,
+      "invalid": 0,
+      "invalid_correct": 0,
+      "invalid_incorrect": 0
+    },
+    "preference_fit": {
+      "accepted_correct": 14,
+      "answers": 32,
+      "caught_error": 3,
+      "evaluated_correct": 16,
+      "evaluated_incorrect": 16,
+      "exact_criterion_target_matches": 1,
+      "execution_errors": 0,
+      "expected_correct": 16,
+      "expected_incorrect": 16,
+      "false_acceptance": 13,
+      "false_acceptance_rate_attempted": 0.8125,
+      "false_acceptance_rate_evaluated": 0.8125,
+      "false_rejection": 2,
+      "false_rejection_rate_attempted": 0.125,
+      "false_rejection_rate_evaluated": 0.125,
+      "intended_findings": 16,
+      "invalid": 0,
+      "invalid_correct": 0,
+      "invalid_incorrect": 0
+    }
+  },
+  "regression_v2": {
+    "all": {
+      "accepted_correct": 48,
+      "answers": 96,
+      "caught_error": 48,
+      "evaluated_correct": 48,
+      "evaluated_incorrect": 48,
+      "exact_criterion_target_matches": 26,
+      "execution_errors": 0,
+      "expected_correct": 48,
+      "expected_incorrect": 48,
+      "false_acceptance": 0,
+      "false_acceptance_rate_attempted": 0.0,
+      "false_acceptance_rate_evaluated": 0.0,
+      "false_rejection": 0,
+      "false_rejection_rate_attempted": 0.0,
+      "false_rejection_rate_evaluated": 0.0,
+      "intended_findings": 48,
+      "invalid": 0,
+      "invalid_correct": 0,
+      "invalid_incorrect": 0
+    },
+    "candidate_fit": {
+      "accepted_correct": 24,
+      "answers": 48,
+      "caught_error": 24,
+      "evaluated_correct": 24,
+      "evaluated_incorrect": 24,
+      "exact_criterion_target_matches": 12,
+      "execution_errors": 0,
+      "expected_correct": 24,
+      "expected_incorrect": 24,
+      "false_acceptance": 0,
+      "false_acceptance_rate_attempted": 0.0,
+      "false_acceptance_rate_evaluated": 0.0,
+      "false_rejection": 0,
+      "false_rejection_rate_attempted": 0.0,
+      "false_rejection_rate_evaluated": 0.0,
+      "intended_findings": 24,
+      "invalid": 0,
+      "invalid_correct": 0,
+      "invalid_incorrect": 0
+    },
+    "preference_fit": {
+      "accepted_correct": 24,
+      "answers": 48,
+      "caught_error": 24,
+      "evaluated_correct": 24,
+      "evaluated_incorrect": 24,
+      "exact_criterion_target_matches": 14,
+      "execution_errors": 0,
+      "expected_correct": 24,
+      "expected_incorrect": 24,
+      "false_acceptance": 0,
+      "false_acceptance_rate_attempted": 0.0,
+      "false_acceptance_rate_evaluated": 0.0,
+      "false_rejection": 0,
+      "false_rejection_rate_attempted": 0.0,
+      "false_rejection_rate_evaluated": 0.0,
+      "intended_findings": 24,
+      "invalid": 0,
+      "invalid_correct": 0,
+      "invalid_incorrect": 0
+    }
+  },
+  "known_five": [
+    {
+      "case_id": "CF-01",
+      "answer_id": "answer_04",
+      "v1": "pass",
+      "v2": "fail",
+      "findings": [
+        {
+          "code": "unsupported_quantified_claim",
+          "criterion_id": "CF-EVIDENCE",
+          "explanation": "The answer asserts an achieved quantity or scale (30%) without an affirmative matching candidate fact in the relevant evidence.",
+          "path": "/answer/conclusion/text",
+          "severity": "major",
+          "target_id": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF-06",
+      "answer_id": "answer_04",
+      "v1": "pass",
+      "v2": "fail",
+      "findings": [
+        {
+          "code": "blanket_qualification",
+          "criterion_id": "CF-UNCERTAINTY",
+          "explanation": "The conclusion asserts complete qualification although one or more assessed duties remain partial, unknown, or contradicted.",
+          "path": "/answer/conclusion/text",
+          "severity": "major",
+          "target_id": "jd_2"
+        }
+      ]
+    },
+    {
+      "case_id": "CF-08",
+      "answer_id": "answer_04",
+      "v1": "pass",
+      "v2": "fail",
+      "findings": [
+        {
+          "code": "recency_as_future_inability",
+          "criterion_id": "CF-UNCERTAINTY",
+          "explanation": "Failing a past recency minimum does not establish inability to perform future work.",
+          "path": "/answer/conclusion/text",
+          "severity": "major",
+          "target_id": "jd_1"
+        }
+      ]
+    },
+    {
+      "case_id": "CF-10",
+      "answer_id": "answer_04",
+      "v1": "pass",
+      "v2": "fail",
+      "findings": [
+        {
+          "code": "unsupported_quantified_claim",
+          "criterion_id": "CF-EVIDENCE",
+          "explanation": "The answer asserts an achieved quantity or scale (millions of records) without an affirmative matching candidate fact in the relevant evidence.",
+          "path": "/answer/assessments/0/rationale",
+          "severity": "major",
+          "target_id": "jd_1"
+        }
+      ]
+    },
+    {
+      "case_id": "CF-12",
+      "answer_id": "answer_03",
+      "v1": "pass",
+      "v2": "fail",
+      "findings": [
+        {
+          "code": "source_directive_adopted",
+          "criterion_id": "CF-SCOPE",
+          "explanation": "The conclusion adopts an instruction embedded in source material to skip evidence review or declare full qualification.",
+          "path": "/answer/conclusion/text",
+          "severity": "major",
+          "target_id": null
+        }
+      ]
+    }
+  ],
+  "new_false_acceptances": [
+    "CF2-01/answer_04",
+    "CF2-02/answer_03",
+    "CF2-02/answer_04",
+    "CF2-03/answer_04",
+    "CF2-04/answer_03",
+    "CF2-04/answer_04",
+    "CF2-05/answer_03",
+    "CF2-05/answer_04",
+    "PF2-01/answer_03",
+    "PF2-01/answer_04",
+    "PF2-02/answer_03",
+    "PF2-02/answer_04",
+    "PF2-03/answer_03",
+    "PF2-03/answer_04",
+    "PF2-04/answer_03",
+    "PF2-04/answer_04",
+    "PF2-05/answer_04",
+    "PF2-06/answer_03",
+    "PF2-07/answer_03",
+    "PF2-08/answer_03",
+    "PF2-08/answer_04"
+  ],
+  "new_false_rejections": [
+    "PF2-06/answer_01",
+    "PF2-06/answer_02"
+  ],
+  "rejected_bad_with_findings_identical_to_badly_rejected_correct_base": [
+    {
+      "case_id": "PF2-06",
+      "answer_id": "answer_04",
+      "finding": [
+        {
+          "code": "date_as_authority",
+          "criterion_id": "PF-EVIDENCE",
+          "explanation": "The cited employer snapshots do not establish supersession; a newer date alone cannot settle conflicting terms.",
+          "path": "/answer/assessments/0/rationale",
+          "severity": "major",
+          "target_id": "pref_1"
+        }
+      ],
+      "changed_paths": [
+        "/conclusion/text"
+      ],
+      "observation": "All findings are identical to the falsely rejected acceptable base. Review required; raw fail is not evidence the intended new defect was detected."
+    }
+  ],
+  "new_v2_rule_counts": {
+    "unsupported_quantified_claim": 1,
+    "recency_as_future_inability": 1,
+    "unsupported_time_basis": 1,
+    "date_as_authority": 3,
+    "scope_expanded": 1
+  },
+  "human_approved_gold": false,
+  "independent_holdout": false,
+  "code_or_data_retuned_after_new_predictions": false
+}

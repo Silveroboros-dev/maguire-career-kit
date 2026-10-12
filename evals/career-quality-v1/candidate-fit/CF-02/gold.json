@@ -1,0 +1,75 @@
+{
+  "schema": "maguire-quality-gold-v1",
+  "case_id": "CF-02",
+  "family": "prototype versus production",
+  "title": "Prototype deployment boundary",
+  "review_status": "proposed_agent_authored",
+  "human_approved": false,
+  "units": [
+    {
+      "target_id": "jd_1",
+      "kind": "duty",
+      "allowed_labels": [
+        "supported"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_1",
+          "fact_1"
+        ]
+      ],
+      "rationale": "The candidate built and tested the requested prototype.",
+      "required_points": [
+        "Prototype and staff testing are evidenced"
+      ],
+      "forbidden_inferences": [
+        "Do not call the test a production deployment"
+      ]
+    },
+    {
+      "target_id": "jd_2",
+      "kind": "duty",
+      "allowed_labels": [
+        "unknown"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_2",
+          "fact_2"
+        ]
+      ],
+      "rationale": "The demo log excludes this project from production, but it does not establish inability or rule out other production experience.",
+      "required_points": [
+        "No production ownership is evidenced here",
+        "Ability and other experience remain unknown"
+      ],
+      "forbidden_inferences": [
+        "Do not equate no past deployment with inability"
+      ]
+    }
+  ],
+  "forbidden_assessment_targets": [],
+  "acceptable_actions": [
+    "clarify",
+    "verify_skill"
+  ],
+  "critical_errors": [
+    {
+      "id": "CF-02-E1",
+      "description": "A tested prototype does not support production ownership.",
+      "target_ids": [
+        "jd_2"
+      ]
+    },
+    {
+      "id": "CF-02-E2",
+      "description": "No past deployment in one project does not prove future inability.",
+      "target_ids": [
+        "jd_2"
+      ]
+    }
+  ],
+  "notes": [
+    "A staff-tested retrieval prototype is relevant to prototyping, while production ownership remains unestablished."
+  ]
+}

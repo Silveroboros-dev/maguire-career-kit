@@ -1,0 +1,93 @@
+{
+  "schema": "maguire-quality-gold-v1",
+  "case_id": "PF-10",
+  "family": "authoritative_superseding_term",
+  "title": "Explicit update replaces remote term with office requirement",
+  "review_status": "proposed_agent_authored",
+  "human_approved": false,
+  "units": [
+    {
+      "target_id": "pref_remote",
+      "kind": "work_arrangement",
+      "allowed_labels": [
+        "conflict"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_replacement"
+        ]
+      ],
+      "rationale": "The explicit correction supersedes the remote source and imposes two office days.",
+      "required_points": [
+        "The remote term is expressly withdrawn.",
+        "Two office days are required."
+      ],
+      "forbidden_inferences": [
+        "Do not retain the superseded remote term as current."
+      ]
+    },
+    {
+      "target_id": "pref_hours",
+      "kind": "schedule",
+      "allowed_labels": [
+        "aligned"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_hours"
+        ]
+      ],
+      "rationale": "The role states exactly the candidate’s four-day, 32-hour schedule.",
+      "required_points": [
+        "Four days and 32 hours are both stated."
+      ],
+      "forbidden_inferences": [
+        "Do not infer control of daily start times."
+      ]
+    },
+    {
+      "target_id": "pref_travel",
+      "kind": "travel",
+      "allowed_labels": [
+        "unknown"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_replacement",
+          "jd_hours"
+        ]
+      ],
+      "rationale": "Neither applicable term specifies the annual number of work trips.",
+      "required_points": [
+        "Office days and weekly hours do not state travel volume."
+      ],
+      "forbidden_inferences": [
+        "Do not equate commuting days with business trips."
+      ]
+    }
+  ],
+  "forbidden_assessment_targets": [],
+  "acceptable_actions": [
+    "clarify",
+    "pass"
+  ],
+  "critical_errors": [
+    {
+      "id": "PF-10-interpretation",
+      "description": "Misreads Explicit update replaces remote term with office requirement: the remote preference or its cited role term.",
+      "target_ids": [
+        "pref_remote"
+      ]
+    },
+    {
+      "id": "PF-10-action",
+      "description": "For Explicit update replaces remote term with office requirement, takes a next step inconsistent with the supported remote result.",
+      "target_ids": [
+        "pref_remote"
+      ]
+    }
+  ],
+  "notes": [
+    "Supersession is explicit in the correction text and source relationship, not inferred from date alone."
+  ]
+}

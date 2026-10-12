@@ -1,0 +1,53 @@
+{
+  "schema": "maguire-quality-gold-v1",
+  "case_id": "PF2-05",
+  "family": "time basis or frequency changed in prose",
+  "title": "Weekly field shifts versus monthly limit",
+  "review_status": "proposed_agent_authored",
+  "human_approved": false,
+  "units": [
+    {
+      "target_id": "pref_1",
+      "kind": "must_have",
+      "allowed_labels": [
+        "conflict"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "pref_1",
+          "jd_1"
+        ]
+      ],
+      "rationale": "Two days weekly exceed two days monthly.",
+      "required_points": [
+        "Weekly and monthly bases must remain distinct"
+      ],
+      "forbidden_inferences": [
+        "Do not silently change the time denominator"
+      ]
+    }
+  ],
+  "forbidden_assessment_targets": [],
+  "acceptable_actions": [
+    "clarify"
+  ],
+  "critical_errors": [
+    {
+      "id": "PF2-05-E1",
+      "description": "The source says two days every week, not per month.",
+      "target_ids": [
+        "pref_1"
+      ]
+    },
+    {
+      "id": "PF2-05-E2",
+      "description": "The candidate's limit is two days per calendar month.",
+      "target_ids": [
+        "pref_1"
+      ]
+    }
+  ],
+  "notes": [
+    "All people, roles, dates, and source statements are synthetic."
+  ]
+}

@@ -1,0 +1,1997 @@
+{
+  "schema": "maguire-v6-new-predecessor",
+  "created_at": "2026-10-12T18:32:45.239628+00:00",
+  "files": {
+    "evals/career-quality-v1/ANALYSIS.md": {
+      "sha256": "ad11227ae68cd4cbf696780e9dfd058620c81383090fc7f1f19007f79be00c50",
+      "bytes": 11232
+    },
+    "evals/career-quality-v1/FORMAT.md": {
+      "sha256": "d41b030079bed84b1078e3b4c0eafb80bb4e86a23e65abe015667b3987d32292",
+      "bytes": 6626
+    },
+    "evals/career-quality-v1/GRADERS.md": {
+      "sha256": "b00015e147c39f86de69abb1ea4d93caa70a0055f99b33e37a5d73e93f339585",
+      "bytes": 10884
+    },
+    "evals/career-quality-v1/IMPLEMENTATION_CONTRACT.md": {
+      "sha256": "690e51b152dc27db0a8b46825dd970a0318dca437000b2df684996b9931dd649",
+      "bytes": 4234
+    },
+    "evals/career-quality-v1/INDEX.md": {
+      "sha256": "5083f94f772eec68c6d4cf7b63987b8abbcd32a47a6bfde3ed451471d08fa35c",
+      "bytes": 12131
+    },
+    "evals/career-quality-v1/MANIFEST.json": {
+      "sha256": "55d6e2da6955fb5fa795bdceb51f507a6595632b028bed6cd75dc52ab478a3e0",
+      "bytes": 15185
+    },
+    "evals/career-quality-v1/README.md": {
+      "sha256": "2ee3f4783a09740ab852232441e08a4506f5f0419118abdb2a57422dada2b2bd",
+      "bytes": 9072
+    },
+    "evals/career-quality-v1/RUBRIC.md": {
+      "sha256": "2dcf9136270116eabd348228941e730e2de7cc4a78c6089bab3029e5ec3aec91",
+      "bytes": 5274
+    },
+    "evals/career-quality-v1/VALIDATION.md": {
+      "sha256": "11a4f8b2e994c0eaa25fde85c1d293f7b8d7dc467b83cb1c4cd858cf2e581dd7",
+      "bytes": 7236
+    },
+    "evals/career-quality-v1/candidate-fit/CF-01/annotations.json": {
+      "sha256": "6714e908b8c64fb35768d233ef34d3f176ddeef297ae4ba5059baa74995ec560",
+      "bytes": 2089
+    },
+    "evals/career-quality-v1/candidate-fit/CF-01/answers.json": {
+      "sha256": "acb9ddb24232f4436ea9ee16f6ec443d5a85053b85d9fd05c6ba679ee9add453",
+      "bytes": 6824
+    },
+    "evals/career-quality-v1/candidate-fit/CF-01/gold.json": {
+      "sha256": "8548cc58813611d217ff49c17c300f9fda9b6bd1758ec87daa0f542df5935dd5",
+      "bytes": 2058
+    },
+    "evals/career-quality-v1/candidate-fit/CF-01/input.json": {
+      "sha256": "ee59d26568a20de321f09dc73f2dbbd4dc6b21c148b7d7ce501d7eefd7164a55",
+      "bytes": 1567
+    },
+    "evals/career-quality-v1/candidate-fit/CF-02/annotations.json": {
+      "sha256": "2bb6192ed7f6ab92d2f7b651b6f3eaec0b2f9e0bc02c09ac8ed12020132c8f46",
+      "bytes": 2135
+    },
+    "evals/career-quality-v1/candidate-fit/CF-02/answers.json": {
+      "sha256": "cb6d9cc118c39682d065ce0dbd8c87dc6b4b4b95007dc5d00e7fecf91252a3b6",
+      "bytes": 7000
+    },
+    "evals/career-quality-v1/candidate-fit/CF-02/gold.json": {
+      "sha256": "d19a1e695b078809cc25cce468500bf77974f33d7acb68e59c7706f1d43681cc",
+      "bytes": 1934
+    },
+    "evals/career-quality-v1/candidate-fit/CF-02/input.json": {
+      "sha256": "e42872b09903251908d179538a0871678b557e1deb23dc2b310eed2f9b9d0bef",
+      "bytes": 1597
+    },
+    "evals/career-quality-v1/candidate-fit/CF-03/annotations.json": {
+      "sha256": "556d07d4c02f9f7e344618e5e0d70ec6fd18b8cd3f5c8c24f4ba9015e534310c",
+      "bytes": 2266
+    },
+    "evals/career-quality-v1/candidate-fit/CF-03/answers.json": {
+      "sha256": "2ae8001fdd9eb4fcde04b981d722022e71edddb59f1ca625a49090600ee283e1",
+      "bytes": 6356
+    },
+    "evals/career-quality-v1/candidate-fit/CF-03/gold.json": {
+      "sha256": "27bb4a40372400d0309290a8179245aafaf552700f689b307f0e7f3ad559ee8f",
+      "bytes": 1897
+    },
+    "evals/career-quality-v1/candidate-fit/CF-03/input.json": {
+      "sha256": "f48b4c811993ee0f471bd66df01a0f9c487765aef20eed2d2b3f12dd161bc260",
+      "bytes": 1751
+    },
+    "evals/career-quality-v1/candidate-fit/CF-04/annotations.json": {
+      "sha256": "45a68744be9d06b7d1bdcf46a7eae67e5e89e2340ebd0c740a830d9215f3bd9e",
+      "bytes": 2605
+    },
+    "evals/career-quality-v1/candidate-fit/CF-04/answers.json": {
+      "sha256": "41c3b80cf0518c1f8d04b326ac08066479a19f8a1b95cc2ea7c40279fe77182b",
+      "bytes": 6520
+    },
+    "evals/career-quality-v1/candidate-fit/CF-04/gold.json": {
+      "sha256": "4f4897623776c6e283df545d63584fdb6e405d0131d02e3fc4244ff483474915",
+      "bytes": 2135
+    },
+    "evals/career-quality-v1/candidate-fit/CF-04/input.json": {
+      "sha256": "aa101cad0bd3c3f2b36a9db8a60dc8d2c4ae64dfc1e0436adb51657dc25c8fb0",
+      "bytes": 1541
+    },
+    "evals/career-quality-v1/candidate-fit/CF-05/annotations.json": {
+      "sha256": "3f1ba1d2f4186f8fcf3476f9ea562a9c15679fc92c3b1d96afdc6ea99b5cc985",
+      "bytes": 2171
+    },
+    "evals/career-quality-v1/candidate-fit/CF-05/answers.json": {
+      "sha256": "dca35493068b143f01c121d3ee260489ebdea7d7c39fc02b48460b82619d2844",
+      "bytes": 6637
+    },
+    "evals/career-quality-v1/candidate-fit/CF-05/gold.json": {
+      "sha256": "c174cc0732539bdd57600eeff2b1616834748651c49150fd3dceaa3e62afea1b",
+      "bytes": 1872
+    },
+    "evals/career-quality-v1/candidate-fit/CF-05/input.json": {
+      "sha256": "c800c2d1b61501e0b87acba650974685d90529bbbc10116fe75a2494e736c115",
+      "bytes": 1605
+    },
+    "evals/career-quality-v1/candidate-fit/CF-06/annotations.json": {
+      "sha256": "e296d397b046d994d8492853d976cb279812a88b78b6aaa7758c098c6ab699e0",
+      "bytes": 2422
+    },
+    "evals/career-quality-v1/candidate-fit/CF-06/answers.json": {
+      "sha256": "c10c403326b23ebc2aa0e15d8fb8f412f5c35b992e7c727ebedec338621ed59a",
+      "bytes": 5368
+    },
+    "evals/career-quality-v1/candidate-fit/CF-06/gold.json": {
+      "sha256": "bd1057d415751b61fb3e3931d61f2d749bc69584dd1c0a28b3e63e8688aaa482",
+      "bytes": 1862
+    },
+    "evals/career-quality-v1/candidate-fit/CF-06/input.json": {
+      "sha256": "4ef3fc87abbdf916fe86779a972c708783ef20c96f8ec05b0cbf8aee2cfa1eb5",
+      "bytes": 1244
+    },
+    "evals/career-quality-v1/candidate-fit/CF-07/annotations.json": {
+      "sha256": "789d30343c6c050a24eb5fe49cded5ac61da4490085da13d13648c95e052e985",
+      "bytes": 2111
+    },
+    "evals/career-quality-v1/candidate-fit/CF-07/answers.json": {
+      "sha256": "eeffc51bcfd5e4781fe646dc71f1f638913ed30a847f5feb28a219e34080a578",
+      "bytes": 6656
+    },
+    "evals/career-quality-v1/candidate-fit/CF-07/gold.json": {
+      "sha256": "0f2c90aa2de8b36ab462e266107744191ac90e0effa16d17309b90f4e466ed74",
+      "bytes": 2047
+    },
+    "evals/career-quality-v1/candidate-fit/CF-07/input.json": {
+      "sha256": "ab28316bfe4e96137b6dabcfcbb59412db602ea989db032ccbd362c9f0d1bf5a",
+      "bytes": 1644
+    },
+    "evals/career-quality-v1/candidate-fit/CF-08/annotations.json": {
+      "sha256": "026328d09215d21d5e446a19ed71d6823484b24f7fc018082dbb1ecbf931c4be",
+      "bytes": 2285
+    },
+    "evals/career-quality-v1/candidate-fit/CF-08/answers.json": {
+      "sha256": "3cc99b2d5bff723c85f8f256aefeffecc6c63a01e2bbe770f861ffca15ea5122",
+      "bytes": 6572
+    },
+    "evals/career-quality-v1/candidate-fit/CF-08/gold.json": {
+      "sha256": "7dfd868e0741a5e9c3ad3aed804defd765e2fdb75e85613c51d127e1eedb9338",
+      "bytes": 2000
+    },
+    "evals/career-quality-v1/candidate-fit/CF-08/input.json": {
+      "sha256": "54218b31d2ace2e66083145fd020f012e586bf39f543cdd7b4e2a7896c3309a9",
+      "bytes": 1528
+    },
+    "evals/career-quality-v1/candidate-fit/CF-09/annotations.json": {
+      "sha256": "a30770fb4e2194befab5b2a7346870fc5f271f0773b7294599df631e9a08b849",
+      "bytes": 2422
+    },
+    "evals/career-quality-v1/candidate-fit/CF-09/answers.json": {
+      "sha256": "77f2ceb332dd2d3af782d253c211780d00e9854ddba29f6b29e935b53e889090",
+      "bytes": 6587
+    },
+    "evals/career-quality-v1/candidate-fit/CF-09/gold.json": {
+      "sha256": "dc0b893e8d8d96cba939c4682b44b22c52fe8139790544299f9748bc2bdd6e6a",
+      "bytes": 2218
+    },
+    "evals/career-quality-v1/candidate-fit/CF-09/input.json": {
+      "sha256": "bdb63cc03bf35719ef7b8527840858d41fee6a8c18b772366b27188a6a379501",
+      "bytes": 1510
+    },
+    "evals/career-quality-v1/candidate-fit/CF-10/annotations.json": {
+      "sha256": "8056dbda0eb26a4c5b3959adec3eade27442fe9a134e79f527586040272ce7da",
+      "bytes": 2068
+    },
+    "evals/career-quality-v1/candidate-fit/CF-10/answers.json": {
+      "sha256": "0e1b1cb6f3727541f344f622ec0e5ad8445d8504c2a9157fffb81e757a7584ac",
+      "bytes": 5956
+    },
+    "evals/career-quality-v1/candidate-fit/CF-10/gold.json": {
+      "sha256": "9d49de48d46805ccd9cff7dc680b568fdb1a400ef3d9405e307af5f432ead288",
+      "bytes": 1706
+    },
+    "evals/career-quality-v1/candidate-fit/CF-10/input.json": {
+      "sha256": "e1e05900350571f7ec3a769a54d5c348816e96d363a2d665025765c13a714132",
+      "bytes": 1743
+    },
+    "evals/career-quality-v1/candidate-fit/CF-11/annotations.json": {
+      "sha256": "022d36d5388bddaf2b6e04f0b2108f4143b6e3d4da672cade028eed63951b30f",
+      "bytes": 2184
+    },
+    "evals/career-quality-v1/candidate-fit/CF-11/answers.json": {
+      "sha256": "b55569555add70c124f011654b2f3d61b561d2710656058af262818d64f7a121",
+      "bytes": 6612
+    },
+    "evals/career-quality-v1/candidate-fit/CF-11/gold.json": {
+      "sha256": "7016b94e20f54ec1a2a537536e52a493f660ec1210dfe170d58d51c5c3566ed4",
+      "bytes": 2129
+    },
+    "evals/career-quality-v1/candidate-fit/CF-11/input.json": {
+      "sha256": "13dfbe63c7d6d8c7d86691330bc566073a68311b569c31f2a6b86334d812437d",
+      "bytes": 1899
+    },
+    "evals/career-quality-v1/candidate-fit/CF-12/annotations.json": {
+      "sha256": "22b7f029215e0c5b94bf02fb0f6a393c3610a29db698dd4a2dc610e62ce16047",
+      "bytes": 2445
+    },
+    "evals/career-quality-v1/candidate-fit/CF-12/answers.json": {
+      "sha256": "4e8a84edfebc14d829448b49c9d230fa90b8e398f4d9d55c500aa3ecb28b27f2",
+      "bytes": 5853
+    },
+    "evals/career-quality-v1/candidate-fit/CF-12/gold.json": {
+      "sha256": "86c2f8f7eff061909410d6ca7220f3debb674b4729da66d331211d87bdfe4a50",
+      "bytes": 1949
+    },
+    "evals/career-quality-v1/candidate-fit/CF-12/input.json": {
+      "sha256": "840d80b5eef48a35ad19395a682fe53057447b53ca216e480646d68b1ae3e58d",
+      "bytes": 1789
+    },
+    "evals/career-quality-v1/grade_packets.py": {
+      "sha256": "0aa99c3ac02fb7fb3775fb41ec963a0b35cf6740b22ead5646fbed88a4225fb3",
+      "bytes": 2904
+    },
+    "evals/career-quality-v1/graders/__init__.py": {
+      "sha256": "9de1460f0c0143731663584e0a3cad2899c55a87d22575d2c5625c43c8bca041",
+      "bytes": 200
+    },
+    "evals/career-quality-v1/graders/candidate.py": {
+      "sha256": "2ec01bebcc5245d7c6eb40d28a776cd8cdf7cb17fc6d3a5bfb733b6111af0166",
+      "bytes": 6565
+    },
+    "evals/career-quality-v1/graders/preference.py": {
+      "sha256": "e52b1b97a683cf43827629cb90fab47680bdb1a15fe843c7e64e3bd40bb45573",
+      "bytes": 3981
+    },
+    "evals/career-quality-v1/graders/shared.py": {
+      "sha256": "327cc95a72f8cf72e24a6a94e46862363958f728174e26ae03b09dad9eb1a1e8",
+      "bytes": 15562
+    },
+    "evals/career-quality-v1/measure.py": {
+      "sha256": "cc6c233b3acc6aee717d8d1cffd5e6670a2dfb253f956b8cc23c3f776b43fd8b",
+      "bytes": 13224
+    },
+    "evals/career-quality-v1/preference-fit/PF-01/annotations.json": {
+      "sha256": "629a745b76cdd3fa61215949ac003c1930ebca4e576f79915d9ad57d84d62cca",
+      "bytes": 3056
+    },
+    "evals/career-quality-v1/preference-fit/PF-01/answers.json": {
+      "sha256": "2f4c7630a8f784f5f67128eaf4928f03d26ef68bed8857e537952d9f3ae415b1",
+      "bytes": 7247
+    },
+    "evals/career-quality-v1/preference-fit/PF-01/gold.json": {
+      "sha256": "2b68634074b3ca5a65e611c857c8994bc4a0737417b2746afa5259e61303d618",
+      "bytes": 2583
+    },
+    "evals/career-quality-v1/preference-fit/PF-01/input.json": {
+      "sha256": "5277ac9d334213fea9486f4a51903be850babc366ae9f57844228feee3c0c3c5",
+      "bytes": 2124
+    },
+    "evals/career-quality-v1/preference-fit/PF-02/annotations.json": {
+      "sha256": "e136134a5777f21ad9be7706a4cb7bde05153433b2dc14446161ac582f73144b",
+      "bytes": 2863
+    },
+    "evals/career-quality-v1/preference-fit/PF-02/answers.json": {
+      "sha256": "b4c701d795db09d7142856bd5d481f453dbbb82338ed3869d9c2c943c6c8ddbe",
+      "bytes": 7859
+    },
+    "evals/career-quality-v1/preference-fit/PF-02/gold.json": {
+      "sha256": "3e67209f04ca33093eb4a6a51e5119af58c1fe5dc59b46595cb66f66c3f5fc87",
+      "bytes": 2674
+    },
+    "evals/career-quality-v1/preference-fit/PF-02/input.json": {
+      "sha256": "5064d994255d776cf6cc749b8c248451e2138ba636dd11755d19fb6047a9d048",
+      "bytes": 1877
+    },
+    "evals/career-quality-v1/preference-fit/PF-03/annotations.json": {
+      "sha256": "c0b40a2e5df07409dd714ae06035c3e21eaa1e21f48cf259724b09dc4ec2a5ef",
+      "bytes": 2775
+    },
+    "evals/career-quality-v1/preference-fit/PF-03/answers.json": {
+      "sha256": "07462bb3b4427b16ecd5977e76aa3b7cd173deb43c0666d950cc22ddf0bd9ab7",
+      "bytes": 6239
+    },
+    "evals/career-quality-v1/preference-fit/PF-03/gold.json": {
+      "sha256": "b5db07d9880873df2ca27043d74286a5185c9d7669b42ab1c04ce4ceaf42f422",
+      "bytes": 2436
+    },
+    "evals/career-quality-v1/preference-fit/PF-03/input.json": {
+      "sha256": "aa34979bb82a19ee53b8042dc6cf257c33c465be663591d5d306d0a5938959cd",
+      "bytes": 1925
+    },
+    "evals/career-quality-v1/preference-fit/PF-04/annotations.json": {
+      "sha256": "977d554946bb0407e48bf6e1c60aa4526138b1b55ef5bf842bfb9330fba120ed",
+      "bytes": 2830
+    },
+    "evals/career-quality-v1/preference-fit/PF-04/answers.json": {
+      "sha256": "d13238ff42a2f7625ebe3fa1cb27e5755da2579c7c5f0c9d7dda0d788df1844b",
+      "bytes": 6330
+    },
+    "evals/career-quality-v1/preference-fit/PF-04/gold.json": {
+      "sha256": "acbfc72838540a45f8809559b295c6976759f2c5582e0b54cef6b3e8ab3e502c",
+      "bytes": 2430
+    },
+    "evals/career-quality-v1/preference-fit/PF-04/input.json": {
+      "sha256": "8de732356a0e11cd91d3db04410bb4bfe62727f01664a0d32bc7d786d4db9328",
+      "bytes": 1980
+    },
+    "evals/career-quality-v1/preference-fit/PF-05/annotations.json": {
+      "sha256": "1ba94fbe28887881d434d6f97e7272dbc5fca18e64afbd7bcd3f285bfb4b49a5",
+      "bytes": 2982
+    },
+    "evals/career-quality-v1/preference-fit/PF-05/answers.json": {
+      "sha256": "4a8b11604b5b4090d3bd101e971eef40e90765a6461b6d4ba671abbcf4a97a0f",
+      "bytes": 6898
+    },
+    "evals/career-quality-v1/preference-fit/PF-05/gold.json": {
+      "sha256": "951186cd71d0076f74fb313d7ff0f4038daa2ae3a6a12d356e2927559fd96566",
+      "bytes": 2505
+    },
+    "evals/career-quality-v1/preference-fit/PF-05/input.json": {
+      "sha256": "41753f678a97c684c3963f962b3092dff32948bcd3615dd107ed3096349630aa",
+      "bytes": 2050
+    },
+    "evals/career-quality-v1/preference-fit/PF-06/annotations.json": {
+      "sha256": "2306e403119125422e8ce808571b5da51b1b3909ef3ae87adaec65433ed98835",
+      "bytes": 3069
+    },
+    "evals/career-quality-v1/preference-fit/PF-06/answers.json": {
+      "sha256": "2212196987c816750b310c956a775dff200fe4ca35416ee32ded8913b009e9f6",
+      "bytes": 7465
+    },
+    "evals/career-quality-v1/preference-fit/PF-06/gold.json": {
+      "sha256": "df63eec5bf0480061368425403ed51804e3f5117982ea5ab38a93f9da81bca30",
+      "bytes": 2630
+    },
+    "evals/career-quality-v1/preference-fit/PF-06/input.json": {
+      "sha256": "b38737395dcd58fd91af7c17067308535582922148e2a9d83821a79cac9cdd57",
+      "bytes": 1958
+    },
+    "evals/career-quality-v1/preference-fit/PF-07/annotations.json": {
+      "sha256": "f91e5def77369657945c47c8581b9332e8de7c90b07495b1ae7541f525fdd53d",
+      "bytes": 2917
+    },
+    "evals/career-quality-v1/preference-fit/PF-07/answers.json": {
+      "sha256": "2b92b6ef0ae881a2a40ab45112f39377cf90f7e121b800e5e80e34fb91a6ce4c",
+      "bytes": 7244
+    },
+    "evals/career-quality-v1/preference-fit/PF-07/gold.json": {
+      "sha256": "6f991bc34eefe7cbebf624b4e8b14a46fac64230d4b9a7b90a4b28d77fc5b5f5",
+      "bytes": 2494
+    },
+    "evals/career-quality-v1/preference-fit/PF-07/input.json": {
+      "sha256": "1a8de8cc0584b73fc125b41cd83311dced562279ea8732a65f4f1e3645e25aa2",
+      "bytes": 2041
+    },
+    "evals/career-quality-v1/preference-fit/PF-08/annotations.json": {
+      "sha256": "a1c3382d7b9d99a9923ef9cb13f7e495fda11b71719900908593d42eca5a09eb",
+      "bytes": 2890
+    },
+    "evals/career-quality-v1/preference-fit/PF-08/answers.json": {
+      "sha256": "06889ca69187af4dc1c7c155b07e4304277b82ac3382d86d1ae9eed237e69257",
+      "bytes": 6252
+    },
+    "evals/career-quality-v1/preference-fit/PF-08/gold.json": {
+      "sha256": "1fb28ab7c8826e5a9d8dae1005d60aabf6e7a73d3d9ca4d91b35795b16f4e00a",
+      "bytes": 2406
+    },
+    "evals/career-quality-v1/preference-fit/PF-08/input.json": {
+      "sha256": "f59787bbf9d4c7999f4188ea02378f4d205251e3d6df31396a1ae247f51da556",
+      "bytes": 1998
+    },
+    "evals/career-quality-v1/preference-fit/PF-09/annotations.json": {
+      "sha256": "63004c83488142154db3be399cec7983ccacdc48eff5ccb6d25fa2857083aa69",
+      "bytes": 2936
+    },
+    "evals/career-quality-v1/preference-fit/PF-09/answers.json": {
+      "sha256": "a165976c290c7bf0e10be1a00462c8e7560bc80680293cfddd0e9a59278aa754",
+      "bytes": 8022
+    },
+    "evals/career-quality-v1/preference-fit/PF-09/gold.json": {
+      "sha256": "d83819af573884d46f48b6840af8b3436144f8d1ebbe289cb8d5a0829fbbd7ba",
+      "bytes": 2659
+    },
+    "evals/career-quality-v1/preference-fit/PF-09/input.json": {
+      "sha256": "75a337e665a3efff679d598c312b42807c7d5505ef8244eca213bff5a7a570ae",
+      "bytes": 1860
+    },
+    "evals/career-quality-v1/preference-fit/PF-10/annotations.json": {
+      "sha256": "62b835d3a43bfc9a483e2e3003082767c950fc97ebd57199264165fa5a96c2ad",
+      "bytes": 2921
+    },
+    "evals/career-quality-v1/preference-fit/PF-10/answers.json": {
+      "sha256": "8ac78f58b5d3a8e700dc015faa03aad5f6010f24374d2ea8886b34d6991333d5",
+      "bytes": 7399
+    },
+    "evals/career-quality-v1/preference-fit/PF-10/gold.json": {
+      "sha256": "bfad528aa4b31ae51b0596ae69f00962fd4de4eab4e920ac53edffec07135af4",
+      "bytes": 2587
+    },
+    "evals/career-quality-v1/preference-fit/PF-10/input.json": {
+      "sha256": "68940dc08190c3b7247a9415962be4f507fc5f1ab81fa6eef91172316416f5a8",
+      "bytes": 2031
+    },
+    "evals/career-quality-v1/preference-fit/PF-11/annotations.json": {
+      "sha256": "fdba34ec16447f39613f889e992d81fbbd16f32b0352fb44e2fc532cc1ac2e83",
+      "bytes": 2750
+    },
+    "evals/career-quality-v1/preference-fit/PF-11/answers.json": {
+      "sha256": "4c7b6296aa70003ef6f1f89b6d67105fd306f2d3f3716f859cf599a75681d956",
+      "bytes": 7211
+    },
+    "evals/career-quality-v1/preference-fit/PF-11/gold.json": {
+      "sha256": "ab8a249e149b2435d7bbcbe44eb5552b2abbc2d671e419f27cd226074d44e0df",
+      "bytes": 2489
+    },
+    "evals/career-quality-v1/preference-fit/PF-11/input.json": {
+      "sha256": "f4aeee3b36e074cbf48198aca071863118b437baf0d51f7a0f8094560302fd3c",
+      "bytes": 2059
+    },
+    "evals/career-quality-v1/preference-fit/PF-12/annotations.json": {
+      "sha256": "e24c2366be980ac7f16edee6feee400152d6335d13e34f0a9c0c0ddbb8c03a83",
+      "bytes": 2987
+    },
+    "evals/career-quality-v1/preference-fit/PF-12/answers.json": {
+      "sha256": "cceb7c14f69738ef5e2b93afa4a1766464de174a1e13038811796f0ef078c795",
+      "bytes": 7308
+    },
+    "evals/career-quality-v1/preference-fit/PF-12/gold.json": {
+      "sha256": "96145a2ece981d4ff8aa79e05e1503c8ac99c60ada97ac09eca15c97e976f102",
+      "bytes": 2581
+    },
+    "evals/career-quality-v1/preference-fit/PF-12/input.json": {
+      "sha256": "77bb9aeaa8a9e78978ec67b1b6797dcd2a8661fb26b9d52bf6a8dc85fcfcac58",
+      "bytes": 2250
+    },
+    "evals/career-quality-v1/review/CLOSURE.json": {
+      "sha256": "a562c528bf542c86895f265124595caa6c971d1c2141c26638ba03b793f2be75",
+      "bytes": 1476
+    },
+    "evals/career-quality-v1/review/candidate_author_reviews_preference.json": {
+      "sha256": "d22eb863f0388a51683bad5d44bb50f35cfc00ee27200fc792f90a90a71f1212",
+      "bytes": 20148
+    },
+    "evals/career-quality-v1/review/candidate_author_reviews_preference_v2.json": {
+      "sha256": "7f782fbc57ad25d03b2f62d4246c67cf0bd758121029059bf1175dadc0b035a3",
+      "bytes": 20322
+    },
+    "evals/career-quality-v1/review/candidate_author_reviews_preference_v3.json": {
+      "sha256": "17de8f80ab456d9072108b9f1e0de3fa83c9b67888cff85625b1fac7a1a7141b",
+      "bytes": 1928
+    },
+    "evals/career-quality-v1/review/candidate_repairs_v1.json": {
+      "sha256": "482d92d364461de2fba40857349794e2aea39c5976903569a326be629dfec680",
+      "bytes": 7835
+    },
+    "evals/career-quality-v1/review/grader_code_review_v1.json": {
+      "sha256": "445ca295dc3588ad633601ed2a910862d25b3d23327bd2837cbdd62f3306e32d",
+      "bytes": 5409
+    },
+    "evals/career-quality-v1/review/grader_results_review_v1.json": {
+      "sha256": "330c750231b3dc368f8b880f534e5d4dd6b07e82854049c4fa422f0f4adff6f0",
+      "bytes": 7334
+    },
+    "evals/career-quality-v1/review/preference_author_reviews_candidate.json": {
+      "sha256": "cee479aff473c1d91bc6fd1b66a2859d029ed305fabaa1278be48074f79e2f4c",
+      "bytes": 8125
+    },
+    "evals/career-quality-v1/review/preference_author_reviews_candidate_v2.json": {
+      "sha256": "f8d1a295013d12578c20d7f1cef7db6dca084617f7bf2dfeb13a664e7db861eb",
+      "bytes": 10862
+    },
+    "evals/career-quality-v1/review/preference_author_reviews_candidate_v3.json": {
+      "sha256": "054b6b5f40e3383995b99c3a429b365f46e9ca7e619cc24f7dc9399362ec3797",
+      "bytes": 1706
+    },
+    "evals/career-quality-v1/review/preference_repairs_v1.json": {
+      "sha256": "5acda01259ae30776df9b351b40403767b7d55e1a68bac72813fb0f332b8b02b",
+      "bytes": 13535
+    },
+    "evals/career-quality-v1/review/root_repairs_v1.json": {
+      "sha256": "da510c77d67f398b4f6e8b338a67c10f638b0776d0ee8fd49fc045d1f9193cd5",
+      "bytes": 1441
+    },
+    "evals/career-quality-v1/review/structural-validation.json": {
+      "sha256": "b9c93960fda1efc91cfccea5903ec9f87888a6fba4cdae9943293264d40cdddb",
+      "bytes": 22512
+    },
+    "evals/career-quality-v1/run_offline.py": {
+      "sha256": "f775fa45302257cc58946931a919658ecbe09a34a2c377497a649bcad1bb4475",
+      "bytes": 11611
+    },
+    "evals/career-quality-v1/runs/baseline-v1/RESULTS.md": {
+      "sha256": "25bfc4741dc765065f9e6b641f1a7d000d6b596a3401a09f4da29578db27b989",
+      "bytes": 7984
+    },
+    "evals/career-quality-v1/runs/baseline-v1/execution.json": {
+      "sha256": "c2f33510e8b12ed4c350b709e4875f973b5929d0a63867f897ba139536611b19",
+      "bytes": 732
+    },
+    "evals/career-quality-v1/runs/baseline-v1/freeze.json": {
+      "sha256": "12945bd387f656fcc95dce6631c7d31fb038cd29acf70faf0642eb6a594ba214",
+      "bytes": 3278
+    },
+    "evals/career-quality-v1/runs/baseline-v1/mapping.json": {
+      "sha256": "b7e6141c05b9216e8382e5c4e4a4a571d18e1f8043cf505c5e6f561a959efc57",
+      "bytes": 29955
+    },
+    "evals/career-quality-v1/runs/baseline-v1/measurement.json": {
+      "sha256": "7e7f5719b3bbb3125147d67d1273425f0bc65fc12962eac75cdd4f09e771a33f",
+      "bytes": 130475
+    },
+    "evals/career-quality-v1/runs/baseline-v1/packets.jsonl": {
+      "sha256": "392be58440543051735e58d899faa56325f59e4376586dc73a784fd923d13ad5",
+      "bytes": 360947
+    },
+    "evals/career-quality-v1/runs/baseline-v1/predictions.jsonl": {
+      "sha256": "57f972330ff68d2045c5033e14467e6767ecebfbe16c95e1966c3da9c2d3b89f",
+      "bytes": 28690
+    },
+    "evals/career-quality-v1/runs/baseline-v1/receipt.json": {
+      "sha256": "5a2d8014b7a927caee5e2542217952b216e82d5ced3393632e27a76f45e6febb",
+      "bytes": 10852
+    },
+    "evals/career-quality-v1/tests/test_dataset.py": {
+      "sha256": "0046de289505517b289d27fc24bff20d6d81900d049adcd18b0b316468f4a50f",
+      "bytes": 5339
+    },
+    "evals/career-quality-v1/tests/test_grader_boundaries.py": {
+      "sha256": "bd3448dec2189477ca087ac89172eb444daecccc13757b8554aadf3dc671a99f",
+      "bytes": 21618
+    },
+    "evals/career-quality-v1/tests/test_graders.py": {
+      "sha256": "e2800026e8686e0345ddce99937431bf030934774cdc46b39668200d921f56f4",
+      "bytes": 10349
+    },
+    "evals/career-quality-v1/tests/test_pipeline.py": {
+      "sha256": "46b48bd04187e10e4fcba0c49004bbb68a1ac859767e7c0418a648d32ac90f2a",
+      "bytes": 7173
+    },
+    "evals/career-quality-v1/validate_dataset.py": {
+      "sha256": "b4d1907f58eed98a84ce6514cf4f83951b7171e266f10c5f7b87be7a9f7caca0",
+      "bytes": 18632
+    },
+    "evals/career-quality-v2/ANALYSIS.md": {
+      "sha256": "8a65faa51c6867de2af072a4875ce64ca5a9a55eb1176f4093a50fca17460dd8",
+      "bytes": 13681
+    },
+    "evals/career-quality-v2/AUTHORING.md": {
+      "sha256": "aeb774d1b54ff30d64fac01978c4b62dc9d52fd65927ca2d6a7a625045d31a93",
+      "bytes": 3773
+    },
+    "evals/career-quality-v2/CODE_FREEZE.json": {
+      "sha256": "c52b9def67c1c9d145bf884294c9465ee8e90b284015ef3dfc82ce9e79fa2da5",
+      "bytes": 2438
+    },
+    "evals/career-quality-v2/COMPARISON.json": {
+      "sha256": "caade97a8e10a6f55912d1a39c504c183211e0d7d984bc8c89825e08b2b0d6af",
+      "bytes": 11073
+    },
+    "evals/career-quality-v2/CONTRACT.md": {
+      "sha256": "ecd428d373ece4581896584b45b074d2c2f19ba5f3f2265591d41cabd3ad468c",
+      "bytes": 5703
+    },
+    "evals/career-quality-v2/DATA_FREEZE.json": {
+      "sha256": "abac95d29c745d377585938754dfc7db597a62315e708cbba2a8a210d44e028c",
+      "bytes": 613
+    },
+    "evals/career-quality-v2/MANIFEST.json": {
+      "sha256": "c18af8f617973c3d1bc5c1d741ca7897b464491725c422bdb9f95eb1981218cc",
+      "bytes": 8234
+    },
+    "evals/career-quality-v2/PREDECESSOR.json": {
+      "sha256": "3a6fa8e6464ea06f9f4b78c890b99f533a23f514f448bc0e9cf2af974316c160",
+      "bytes": 21086
+    },
+    "evals/career-quality-v2/README.md": {
+      "sha256": "dc1ba277758f63efd82d70b0fade651f791649219d4bc457aa1d0af26b212fb9",
+      "bytes": 9119
+    },
+    "evals/career-quality-v2/STRUCTURAL_AUDIT.json": {
+      "sha256": "1d71bb4af0bf5d55e7908718b0b5718b22f96e05daa4ff8d89a56ddd0c7fdbb3",
+      "bytes": 4532
+    },
+    "evals/career-quality-v2/author_cases.py": {
+      "sha256": "7c22e6a3128a81b25d0dbe2c6d83e91e951fd2b914b0fffc7b6b3d8f1c3bddc4",
+      "bytes": 38475
+    },
+    "evals/career-quality-v2/cases/candidate-fit/CF2-01/annotations.json": {
+      "sha256": "4b9dc0ab0154a0332b9bdc8f392f76e4321453112d26295aa1d3fa92fd3abbd6",
+      "bytes": 2140
+    },
+    "evals/career-quality-v2/cases/candidate-fit/CF2-01/answers.json": {
+      "sha256": "2b22aec3d3a3fd8bf3c4c60ccc114b1f0eed6378d84e37261bf6f6d407f37c1b",
+      "bytes": 6756
+    },
+    "evals/career-quality-v2/cases/candidate-fit/CF2-01/gold.json": {
+      "sha256": "bd2fbdf9ed802ef029fc3d0551595b45748a50158284a44e1cdc1119a14b5143",
+      "bytes": 1931
+    },
+    "evals/career-quality-v2/cases/candidate-fit/CF2-01/input.json": {
+      "sha256": "35077caac489ee83a76a6ff6864334572af8350c18875c4fc993553cef657cb9",
+      "bytes": 1498
+    },
+    "evals/career-quality-v2/cases/candidate-fit/CF2-02/annotations.json": {
+      "sha256": "b1dbce66fd9b5728737094206e1177365cd5b2454c156ac31b7ccbd594287201",
+      "bytes": 2276
+    },
+    "evals/career-quality-v2/cases/candidate-fit/CF2-02/answers.json": {
+      "sha256": "d7e2acbe7be02f84313b8324e6329a07da1825f809be4654982bba8c9653827d",
+      "bytes": 6372
+    },
+    "evals/career-quality-v2/cases/candidate-fit/CF2-02/gold.json": {
+      "sha256": "dc0b1563e368704ac383bdfd7ae64e6163b6af783f7430c0307b4797533b513a",
+      "bytes": 1844
+    },
+    "evals/career-quality-v2/cases/candidate-fit/CF2-02/input.json": {
+      "sha256": "66cc7531b386edd6aa11e19ef6786b3d356a8e56770e7ff84eda0b747c9830fa",
+      "bytes": 1258
+    },
+    "evals/career-quality-v2/cases/candidate-fit/CF2-03/annotations.json": {
+      "sha256": "3ca965d32a2e080776bb41205f144417b06dbde8e8f9da3d6e83854a865cf049",
+      "bytes": 2144
+    },
+    "evals/career-quality-v2/cases/candidate-fit/CF2-03/answers.json": {
+      "sha256": "e29933cdbe061ba5ef359c9700519ea2547f15d1dce0dcfc840f3ab56d85f683",
+      "bytes": 7036
+    },
+    "evals/career-quality-v2/cases/candidate-fit/CF2-03/gold.json": {
+      "sha256": "a199579707869d144e77e3cae1102c75437e88a5fc6ff954eeacffd5c66171d0",
+      "bytes": 1895
+    },
+    "evals/career-quality-v2/cases/candidate-fit/CF2-03/input.json": {
+      "sha256": "6605067dd2483b7d2dead63855d9d0ad21ef998dfdad974cf601d2595098901a",
+      "bytes": 1226
+    },
+    "evals/career-quality-v2/cases/candidate-fit/CF2-04/annotations.json": {
+      "sha256": "feead88d39eebaec391775e1666dcbf2c4c85280ad17b9d8a9115e8e736b8836",
+      "bytes": 2075
+    },
+    "evals/career-quality-v2/cases/candidate-fit/CF2-04/answers.json": {
+      "sha256": "0e14022e530a588faf817edf016482a1aeef7c4dbc1a2f62dc4d48191a060386",
+      "bytes": 7079
+    },
+    "evals/career-quality-v2/cases/candidate-fit/CF2-04/gold.json": {
+      "sha256": "163a440f8ccbe6c142dfaa60abf8ee49cf8278baef801689079fd7d2146bee79",
+      "bytes": 1860
+    },
+    "evals/career-quality-v2/cases/candidate-fit/CF2-04/input.json": {
+      "sha256": "8e6cee235934ed348d62855e14167b36419e585caddb39df19486e7479abf5c6",
+      "bytes": 1237
+    },
+    "evals/career-quality-v2/cases/candidate-fit/CF2-05/annotations.json": {
+      "sha256": "0822d34562d8f2716d901a5581d8b1d03a981880b786afdb7addd3cad536b360",
+      "bytes": 2213
+    },
+    "evals/career-quality-v2/cases/candidate-fit/CF2-05/answers.json": {
+      "sha256": "d47d3d577cebcbc561dd0c451387567687bb0599e7817f2dacd86c57e7913b8e",
+      "bytes": 7545
+    },
+    "evals/career-quality-v2/cases/candidate-fit/CF2-05/gold.json": {
+      "sha256": "50d4e465d2501cca2fbd29b84f73cb2f7b5604488d108b22e80744ea8a006ccc",
+      "bytes": 1944
+    },
+    "evals/career-quality-v2/cases/candidate-fit/CF2-05/input.json": {
+      "sha256": "67d220a9fadde269054783d01d657ae716c1b4eb7379c7461e24adcd13df8dc8",
+      "bytes": 1614
+    },
+    "evals/career-quality-v2/cases/preference-fit/PF2-01/annotations.json": {
+      "sha256": "51ac47718f4ed79149bf1d372487cbaa10f85fc5e4c2f790195ff2e89595974f",
+      "bytes": 2186
+    },
+    "evals/career-quality-v2/cases/preference-fit/PF2-01/answers.json": {
+      "sha256": "ac8b5af32be8006c72443c157e38fb44335923647d54fdb1fabc54ece66bb4bf",
+      "bytes": 4880
+    },
+    "evals/career-quality-v2/cases/preference-fit/PF2-01/gold.json": {
+      "sha256": "4f7d82c7f7ef510255568f037634843c67b1ce667a423ed179fa3cbbfaef4acf",
+      "bytes": 1413
+    },
+    "evals/career-quality-v2/cases/preference-fit/PF2-01/input.json": {
+      "sha256": "f79de2d67b59f8d151dc2d50a57f74b304491df1b09a13a6dcdd1d2bf4e48174",
+      "bytes": 1158
+    },
+    "evals/career-quality-v2/cases/preference-fit/PF2-02/annotations.json": {
+      "sha256": "50e79f1356ce016bd1c5f50b795716e673bc9c59b45c39e27cc88ccb3d868421",
+      "bytes": 2037
+    },
+    "evals/career-quality-v2/cases/preference-fit/PF2-02/answers.json": {
+      "sha256": "f4b6b333bd5f86682bc81e655a02c0776ea6df922102e8baebbc85ffb1ee10c8",
+      "bytes": 4643
+    },
+    "evals/career-quality-v2/cases/preference-fit/PF2-02/gold.json": {
+      "sha256": "a1533d20587f3b8856438800138c86459aae0c0d6032a40a71bed90bafa37aac",
+      "bytes": 1345
+    },
+    "evals/career-quality-v2/cases/preference-fit/PF2-02/input.json": {
+      "sha256": "2993964d486d78d7e1078d326190507c3a4f9f91ea20ae78c78670022ea49dd9",
+      "bytes": 1004
+    },
+    "evals/career-quality-v2/cases/preference-fit/PF2-03/annotations.json": {
+      "sha256": "4503112a1aebbb512feddc4d46376156d6517624e43372ee1669bce6b99f1756",
+      "bytes": 2162
+    },
+    "evals/career-quality-v2/cases/preference-fit/PF2-03/answers.json": {
+      "sha256": "916f5b8d2fb4c48dbd9ec968be85915189fe4f8bae7b69c5461a62bebe99b295",
+      "bytes": 6126
+    },
+    "evals/career-quality-v2/cases/preference-fit/PF2-03/gold.json": {
+      "sha256": "06af670cfdf515b0be2651e97137c46fb68fd2d085f9b2c7e4cb56cd05be3a00",
+      "bytes": 1740
+    },
+    "evals/career-quality-v2/cases/preference-fit/PF2-03/input.json": {
+      "sha256": "c6061d8e7410dfd4956ceb958448186ade6946208d4238385e69d898d7e1b62d",
+      "bytes": 1362
+    },
+    "evals/career-quality-v2/cases/preference-fit/PF2-04/annotations.json": {
+      "sha256": "31a07179f0584717e121b0dc4a2cb798793246ceb296d4e826fd1b9f245c1beb",
+      "bytes": 2165
+    },
+    "evals/career-quality-v2/cases/preference-fit/PF2-04/answers.json": {
+      "sha256": "de32687d3a359894679658cb2e496b56d5ae0eb18a1780bb2e200beb18708032",
+      "bytes": 4431
+    },
+    "evals/career-quality-v2/cases/preference-fit/PF2-04/gold.json": {
+      "sha256": "3185759ac071a9ca7c4ce0c3360ea834c6d1409f03b70fe0a8e8e09be008c627",
+      "bytes": 1393
+    },
+    "evals/career-quality-v2/cases/preference-fit/PF2-04/input.json": {
+      "sha256": "8def118af07730b2e9faee94b908f04076f0ed7c40a96eaad4295ae012490b70",
+      "bytes": 1010
+    },
+    "evals/career-quality-v2/cases/preference-fit/PF2-05/annotations.json": {
+      "sha256": "d9d55f3f9be83805ceded09bebe0777da31586277b467b2080043cedaa92c286",
+      "bytes": 2015
+    },
+    "evals/career-quality-v2/cases/preference-fit/PF2-05/answers.json": {
+      "sha256": "33e055693fd75aec6cce6e0e9220594c6f40988c1095920f9d2004943e13ea02",
+      "bytes": 4173
+    },
+    "evals/career-quality-v2/cases/preference-fit/PF2-05/gold.json": {
+      "sha256": "8203f19354fcaf44495b5a9b05644e41c2befb61674c02f64bbfaf509db2fc2c",
+      "bytes": 1261
+    },
+    "evals/career-quality-v2/cases/preference-fit/PF2-05/input.json": {
+      "sha256": "210cea6448d197cb02f33a1367b0d9dc8bfa5bfe899e32c31e3681476d178b19",
+      "bytes": 929
+    },
+    "evals/career-quality-v2/cases/preference-fit/PF2-06/annotations.json": {
+      "sha256": "0f470c7fdcce302382621cc1dac59de6a0ef4575fbf11a60881cccbb8f583468",
+      "bytes": 2306
+    },
+    "evals/career-quality-v2/cases/preference-fit/PF2-06/answers.json": {
+      "sha256": "cc7e6c7a71e898fe072d1dacb4eaa923200d54b75d77c7dbeec9576cafcf56f5",
+      "bytes": 5794
+    },
+    "evals/career-quality-v2/cases/preference-fit/PF2-06/gold.json": {
+      "sha256": "4f8e8b0bb83d136fe3e21b50f592331f29e625699e46fd82b6d38e4072634b6b",
+      "bytes": 1501
+    },
+    "evals/career-quality-v2/cases/preference-fit/PF2-06/input.json": {
+      "sha256": "198f566cda3a6736287050b5a0401f4d5bd5c8d4d6b2fac126baac4e0503c35c",
+      "bytes": 1384
+    },
+    "evals/career-quality-v2/cases/preference-fit/PF2-07/annotations.json": {
+      "sha256": "0dc76df5cfaa425f3f07b5d32c932075ee87e42e920c66d971d6b78057e8826e",
+      "bytes": 2192
+    },
+    "evals/career-quality-v2/cases/preference-fit/PF2-07/answers.json": {
+      "sha256": "d3b05753d80ba5fc021eeccd7b7c6f3ce1799b2102af4ddc95ef1863cddb5377",
+      "bytes": 5167
+    },
+    "evals/career-quality-v2/cases/preference-fit/PF2-07/gold.json": {
+      "sha256": "f4d32f3088f6159e87f7d11c2d344eb0340437d03ac54ec985df54f2f3658250",
+      "bytes": 1425
+    },
+    "evals/career-quality-v2/cases/preference-fit/PF2-07/input.json": {
+      "sha256": "2abded680837b627e8b877c9a056b7290c3919a7a09ac295df3523393fa101cf",
+      "bytes": 1199
+    },
+    "evals/career-quality-v2/cases/preference-fit/PF2-08/annotations.json": {
+      "sha256": "3731afcee2a2d901e6db2ac3907922ace1430175a093469cd509639d6d926638",
+      "bytes": 2081
+    },
+    "evals/career-quality-v2/cases/preference-fit/PF2-08/answers.json": {
+      "sha256": "1692f412e9b4d0ee07faa690062da70b0e3f8d4420f3ebcc1cb9eb1708284766",
+      "bytes": 4334
+    },
+    "evals/career-quality-v2/cases/preference-fit/PF2-08/gold.json": {
+      "sha256": "2142b045baf117eb750cb4f72d6a56f3b4f2936c47e961e29d94cb1f63653ba6",
+      "bytes": 1282
+    },
+    "evals/career-quality-v2/cases/preference-fit/PF2-08/input.json": {
+      "sha256": "856ca35ea7aefe50bce7c616b1f7a42abf2af76d059a959938131335e3c74995",
+      "bytes": 931
+    },
+    "evals/career-quality-v2/grade_packets.py": {
+      "sha256": "0aa99c3ac02fb7fb3775fb41ec963a0b35cf6740b22ead5646fbed88a4225fb3",
+      "bytes": 2904
+    },
+    "evals/career-quality-v2/graders/__init__.py": {
+      "sha256": "9de1460f0c0143731663584e0a3cad2899c55a87d22575d2c5625c43c8bca041",
+      "bytes": 200
+    },
+    "evals/career-quality-v2/graders/candidate.py": {
+      "sha256": "8123f1f2324dd350d14c78eda08c69714f844c09bbdb7c7d6819188babe35805",
+      "bytes": 12802
+    },
+    "evals/career-quality-v2/graders/preference.py": {
+      "sha256": "154e692db97d2b9b30c53a65d477008a6d41048917312031fb7adf78cdd694d0",
+      "bytes": 14068
+    },
+    "evals/career-quality-v2/graders/shared.py": {
+      "sha256": "327cc95a72f8cf72e24a6a94e46862363958f728174e26ae03b09dad9eb1a1e8",
+      "bytes": 15562
+    },
+    "evals/career-quality-v2/legacy.py": {
+      "sha256": "5bb6403565bfa870a092bdca05a07966d46c6d390f8b9294e4e56fc57a83e258",
+      "bytes": 515
+    },
+    "evals/career-quality-v2/pipeline.py": {
+      "sha256": "261df680648d0d582ab93d636697311fb8dea4ef521c14b59cb211c973cc04ad",
+      "bytes": 16972
+    },
+    "evals/career-quality-v2/review/dataset_review.json": {
+      "sha256": "e4ce22f14ee5507dfd6b69bddba616c498e5e2ccfd9bfe078d8efbd5602e23ac",
+      "bytes": 11595
+    },
+    "evals/career-quality-v2/review/prefreeze_code_review.json": {
+      "sha256": "438cd7f618c4087d20cd2f255b90bfcd3aedf1f2f30579e73a64e8a5f55dcb9e",
+      "bytes": 3783
+    },
+    "evals/career-quality-v2/review/results_review.json": {
+      "sha256": "d2dbbbc4b80f7f32bebd401517f5c26ac3cc20e3c2d437915a87c60806feb685",
+      "bytes": 16212
+    },
+    "evals/career-quality-v2/runs/new-v1/RESULTS.md": {
+      "sha256": "bab1ed833959b6a9f79ae08ef2e647a0cba816fa8837c678dfc7e3855b2a2aef",
+      "bytes": 14426
+    },
+    "evals/career-quality-v2/runs/new-v1/execution.json": {
+      "sha256": "6c3ed1e2755be817662b577ef342a6bf7dd7b36d739b3b7ff0419cf5938cd2cd",
+      "bytes": 721
+    },
+    "evals/career-quality-v2/runs/new-v1/freeze.json": {
+      "sha256": "9aa81655d1d4c88c254a026df43cb39833667b55633d4869e0d4404f630bc7fd",
+      "bytes": 712
+    },
+    "evals/career-quality-v2/runs/new-v1/mapping.json": {
+      "sha256": "fab999792052ce5216995b1dec93b58e16d8da5e9f5b9354f1eb22b24526a9f2",
+      "bytes": 16343
+    },
+    "evals/career-quality-v2/runs/new-v1/measurement.json": {
+      "sha256": "91710ef1b0a3e854b566f9c995b2ef28d7500cb96ab085b8ef80f3f36057a0b8",
+      "bytes": 56622
+    },
+    "evals/career-quality-v2/runs/new-v1/packets.jsonl": {
+      "sha256": "1dc43b236b9ead043fda4d54f7f07bf69cfe13e22b66be5722acfdcaab612f90",
+      "bytes": 139545
+    },
+    "evals/career-quality-v2/runs/new-v1/predictions.jsonl": {
+      "sha256": "0644d7bc4d37a34f4ccdade6b1185bfe47bbd4552edcb04dcf697353da8338aa",
+      "bytes": 9932
+    },
+    "evals/career-quality-v2/runs/new-v1/receipt.json": {
+      "sha256": "c7ce5349e7d11a924a101b2ac75ce7e49a3f2aad7e85309f0764c1b22be004b7",
+      "bytes": 7111
+    },
+    "evals/career-quality-v2/runs/new-v2/RESULTS.md": {
+      "sha256": "49b07c7437d37bf16f35f725bd65ae5b824308d011e3e24c77ec0099b3ba82d4",
+      "bytes": 13492
+    },
+    "evals/career-quality-v2/runs/new-v2/execution.json": {
+      "sha256": "67bc3adc4512689aca09d6036468a1b0d8199847e24d8f898ffa04e81a8859a5",
+      "bytes": 721
+    },
+    "evals/career-quality-v2/runs/new-v2/freeze.json": {
+      "sha256": "15734869ca4e316de84b306ff8918985d15b88bf25e57d0c0bb6735caac737a5",
+      "bytes": 712
+    },
+    "evals/career-quality-v2/runs/new-v2/mapping.json": {
+      "sha256": "fab999792052ce5216995b1dec93b58e16d8da5e9f5b9354f1eb22b24526a9f2",
+      "bytes": 16343
+    },
+    "evals/career-quality-v2/runs/new-v2/measurement.json": {
+      "sha256": "ae0a206707cc7e129cf9d1ed11b3d5d5e1de509330272a82a2b1b80b0edbd80b",
+      "bytes": 59145
+    },
+    "evals/career-quality-v2/runs/new-v2/packets.jsonl": {
+      "sha256": "1dc43b236b9ead043fda4d54f7f07bf69cfe13e22b66be5722acfdcaab612f90",
+      "bytes": 139545
+    },
+    "evals/career-quality-v2/runs/new-v2/predictions.jsonl": {
+      "sha256": "754191505160282540d3b01cea2e59381a747561c85f03fdfdecd9985a0f9b37",
+      "bytes": 11805
+    },
+    "evals/career-quality-v2/runs/new-v2/receipt.json": {
+      "sha256": "d9e3c517a783a45141b94a05f8289646d9211f4f7900353a7ec9a2225de0a161",
+      "bytes": 7184
+    },
+    "evals/career-quality-v2/runs/regression-v2/RESULTS.md": {
+      "sha256": "29a0d7d51427652e95e58b07b69ffc42b23f9b6bdd386a300e001b589baa03ec",
+      "bytes": 6229
+    },
+    "evals/career-quality-v2/runs/regression-v2/execution.json": {
+      "sha256": "992e2c6a5208a538ce63f8382bc21d5d5b1209738b9592d2c91b70a2a34ce7b3",
+      "bytes": 735
+    },
+    "evals/career-quality-v2/runs/regression-v2/freeze.json": {
+      "sha256": "e9251d81273d14dd13f074ae88149b801409c854e14b86992816d9e9477f2623",
+      "bytes": 719
+    },
+    "evals/career-quality-v2/runs/regression-v2/mapping.json": {
+      "sha256": "b7e6141c05b9216e8382e5c4e4a4a571d18e1f8043cf505c5e6f561a959efc57",
+      "bytes": 29955
+    },
+    "evals/career-quality-v2/runs/regression-v2/measurement.json": {
+      "sha256": "c5a5d90c0c3005423f68b84d734c1572378811ba586bd51e57851845696ac236",
+      "bytes": 132955
+    },
+    "evals/career-quality-v2/runs/regression-v2/packets.jsonl": {
+      "sha256": "f57e77e50fea3a9245df0d4e9d9f8dc6c90df64dd3f034be65b042114fbb1949",
+      "bytes": 360947
+    },
+    "evals/career-quality-v2/runs/regression-v2/predictions.jsonl": {
+      "sha256": "7fb69f0648857c3113abac57f8e6f4a7490aa700ff756fefe937f1ce3fcb0985",
+      "bytes": 30670
+    },
+    "evals/career-quality-v2/runs/regression-v2/receipt.json": {
+      "sha256": "7a967cbe27324fb246bbc3015bb80dac1b1b05fd9644c5929ac76e81da0d985e",
+      "bytes": 10291
+    },
+    "evals/career-quality-v2/tests/test_boundaries.py": {
+      "sha256": "54a863d5297887622fb9c1d92224fec894b817cc363b16166eae8bb3f3f3d9e6",
+      "bytes": 15235
+    },
+    "evals/career-quality-v2/tests/test_pipeline.py": {
+      "sha256": "36495bcee75dc582e841e87046e82821c714d6a0715dcdbb51b8450cd03f53f4",
+      "bytes": 4844
+    },
+    "evals/career-quality-v2/tests/test_rules.py": {
+      "sha256": "4f756a371b3e0743dbf038968de5ea1a9beba613f1f4464c473836450843135d",
+      "bytes": 4394
+    },
+    "evals/career-quality-v3/ANALYSIS.md": {
+      "sha256": "b7234d3b62e20d8a73d591d22c9f1226ee3017d63fec2fc3fc1795651925a2b4",
+      "bytes": 12321
+    },
+    "evals/career-quality-v3/CONTRACT.md": {
+      "sha256": "2d326f2338b2dea062edc5f48f5094864f61d97af9e26551c78fef891615b925",
+      "bytes": 12005
+    },
+    "evals/career-quality-v3/FREEZE.json": {
+      "sha256": "21c7b9c5b554d047e38c2cfd5cb21713ee969b5e0264af4cc6f0aa111307108a",
+      "bytes": 3229
+    },
+    "evals/career-quality-v3/NORMALIZATION.md": {
+      "sha256": "d5d89198d97bc138d0714ae7289bfa61956070578bafa0695097f592ba7ddb1b",
+      "bytes": 5404
+    },
+    "evals/career-quality-v3/PREDECESSOR.json": {
+      "sha256": "986cd11ae9ce2182bcd086cd96ccb0fde472e23d48d5f711a17c238fca926d14",
+      "bytes": 31581
+    },
+    "evals/career-quality-v3/README.md": {
+      "sha256": "f13d5eab79045aa6265106e9d49c7a50622f3d5b63c4fb916a09464d49144293",
+      "bytes": 5356
+    },
+    "evals/career-quality-v3/checker.py": {
+      "sha256": "e4b2699f543e4260128ebfabd61547c92b5c1dba3497acd07ca2f7007f225e33",
+      "bytes": 29184
+    },
+    "evals/career-quality-v3/data/expectations.json": {
+      "sha256": "51906e5aa0fd1420cec4c153efd6beff3e74ad48feed4ee5ff50e2ef59442b86",
+      "bytes": 15068
+    },
+    "evals/career-quality-v3/data/normalizations.json": {
+      "sha256": "20aa3184169539ff29ae2591b90e3e70c3e5aab45e30885d435b7db40c040328",
+      "bytes": 105901
+    },
+    "evals/career-quality-v3/data/source_files.json": {
+      "sha256": "20650bd70e77127dea3a62f80458e1955b826757b0d874658477d06fe8cc6265",
+      "bytes": 2457
+    },
+    "evals/career-quality-v3/grade_packets.py": {
+      "sha256": "ca85f0de76a431b6b2d18eb71a8a59dc1ff7c15c425a704f1079742aff4c1665",
+      "bytes": 2825
+    },
+    "evals/career-quality-v3/pipeline.py": {
+      "sha256": "9b575f7d9c053e2516a2865ad0c286315ca05cdd87badc82b85a33e5776f8389",
+      "bytes": 21151
+    },
+    "evals/career-quality-v3/prepare_data.py": {
+      "sha256": "f7c6fb0a5e5ef3f0b95fe815c083b25a62209afa9a515cd8eaab944911e3b768",
+      "bytes": 17234
+    },
+    "evals/career-quality-v3/review/code_review_v1.json": {
+      "sha256": "05e95f42d97d6c94808698d4274b76b36d57c48e9165c760100ad16be540a223",
+      "bytes": 4860
+    },
+    "evals/career-quality-v3/review/normalization_review_v1.json": {
+      "sha256": "a7fcf20a0631f9839f67a1589dd15282ab1d95be1f38ee71ad02a1215befedd7",
+      "bytes": 9507
+    },
+    "evals/career-quality-v3/review/normalization_review_v2.json": {
+      "sha256": "c4488269c137c7e80dc433ffc97a7c52108a3e8f9f2093c720a6a9a645b2233f",
+      "bytes": 9900
+    },
+    "evals/career-quality-v3/review/prior-normalization-v1/expectations.json": {
+      "sha256": "93d8f9742cb349e0666b394a4d024655730d44207377b0e70b5438ed80142893",
+      "bytes": 13443
+    },
+    "evals/career-quality-v3/review/prior-normalization-v1/normalizations.json": {
+      "sha256": "9c77a4c584c59e2631c59fab066fd8e9cadcd7fb766144149ee1f640d0035ab9",
+      "bytes": 102353
+    },
+    "evals/career-quality-v3/review/prior-normalization-v1/source_files.json": {
+      "sha256": "20650bd70e77127dea3a62f80458e1955b826757b0d874658477d06fe8cc6265",
+      "bytes": 2457
+    },
+    "evals/career-quality-v3/review/results_review_v1.json": {
+      "sha256": "02eac04b8d38eefc662ecb1229aa68e94dd7619146ed8aae460c00786edd20f9",
+      "bytes": 21833
+    },
+    "evals/career-quality-v3/runs/first-slice-v3/RESULTS.md": {
+      "sha256": "b103e1cca25baee539050e33705b3c821a4499883de3f872d52d34aa5e5d737f",
+      "bytes": 3307
+    },
+    "evals/career-quality-v3/runs/first-slice-v3/execution.json": {
+      "sha256": "4c293cdc48882cc1d8248e126f34ca526c0e24dd061f5d1278322b4fbc755cf2",
+      "bytes": 749
+    },
+    "evals/career-quality-v3/runs/first-slice-v3/mapping.json": {
+      "sha256": "9ef12ee60ca6bdc3471a21408c79c1fe490c287d745eede4125d60d4d912eac7",
+      "bytes": 2835
+    },
+    "evals/career-quality-v3/runs/first-slice-v3/measurement.json": {
+      "sha256": "d7da669f1aaf908564e217e3da9553979bb0ec8bcfdfe0ce282386e8be87e24e",
+      "bytes": 20200
+    },
+    "evals/career-quality-v3/runs/first-slice-v3/packets.jsonl": {
+      "sha256": "42c039d49cd38675ee02ecb5e027d21244eeb93d6edb5b5d9711bb81754d547c",
+      "bytes": 53890
+    },
+    "evals/career-quality-v3/runs/first-slice-v3/predictions.jsonl": {
+      "sha256": "86f1fa5d4fa3c94f92bd4c3e61bffd09a10aba587cad3dd5c127e65d60336034",
+      "bytes": 34200
+    },
+    "evals/career-quality-v3/runs/first-slice-v3/receipt.json": {
+      "sha256": "91d17c6ce0ed27ad0c6c178b479f4149ada85839760cf05e305dd2d4875ce8f3",
+      "bytes": 2343
+    },
+    "evals/career-quality-v3/tests/test_boundaries.py": {
+      "sha256": "16b71663980bf2192a5fedba64c24a2c16be37563bf810c8356aa1722ef561a5",
+      "bytes": 10881
+    },
+    "evals/career-quality-v3/tests/test_checker.py": {
+      "sha256": "fffb2498d67234fb48638cc518c721b02f87495030789b70ed8e4356c7c708e2",
+      "bytes": 13251
+    },
+    "evals/career-quality-v3/tests/test_pipeline.py": {
+      "sha256": "37ac6dce12090abdc824682f8ccc59d355275e180241bf9ef3515556a7ba6215",
+      "bytes": 5204
+    },
+    "evals/career-quality-v3-design/CASES.md": {
+      "sha256": "fec9f2f5b1854b31ffa4ab1a4c47d030f89a594d1ad6cdd58d5b93532782cc5c",
+      "bytes": 18386
+    },
+    "evals/career-quality-v3-design/CLAIM_TRACES.json": {
+      "sha256": "c6602feda7b7bec9ad7f57a6c892a94863d12b37c44a480dc69aaaba5a815859",
+      "bytes": 73379
+    },
+    "evals/career-quality-v3-design/DESIGN.md": {
+      "sha256": "07973e663a520ec6d50c3b9301f87684d4807342fabb9e5daef76040413b8681",
+      "bytes": 29478
+    },
+    "evals/career-quality-v3-new-cases/ANALYSIS.md": {
+      "sha256": "06798af3bee020d56487f5af692af8c86084cce722f85d5dcfb90efc3b6dcf64",
+      "bytes": 16685
+    },
+    "evals/career-quality-v3-new-cases/CONTRACT.md": {
+      "sha256": "469dafb560d34a9a80d067cab1e4a43c83142c01a5be411440d9f418e20acaa7",
+      "bytes": 5157
+    },
+    "evals/career-quality-v3-new-cases/FREEZE.json": {
+      "sha256": "a3491e2723c2b04a98b23b09be4fa73412de382de465c8ffa8a59091b385c830",
+      "bytes": 15429
+    },
+    "evals/career-quality-v3-new-cases/HANDOFF.json": {
+      "sha256": "5d21337d1b1b81b081fe647af8738616f305ca565dd46802321d3e09c529f210",
+      "bytes": 979
+    },
+    "evals/career-quality-v3-new-cases/PREDECESSOR.json": {
+      "sha256": "56bedc96a14160f63bdbc9019385c0a233b847b9832348664f9ae1906215ad91",
+      "bytes": 47605
+    },
+    "evals/career-quality-v3-new-cases/README.md": {
+      "sha256": "e8d9ad7dc824c4d893e1ce476397db84e98c13bb3af6d76e33887d10cc83375f",
+      "bytes": 4729
+    },
+    "evals/career-quality-v3-new-cases/SCHEMA.md": {
+      "sha256": "a54f8230841424f0fd585262b762cab3ea8066e97d819f236554f35134096821",
+      "bytes": 5229
+    },
+    "evals/career-quality-v3-new-cases/START.json": {
+      "sha256": "57cc005a772c2e4aa313a993fa2565bc3fc4231b98ef655f6c2aca1d9dda4d59",
+      "bytes": 3819
+    },
+    "evals/career-quality-v3-new-cases/author_candidate.py": {
+      "sha256": "cc829676f398629c8fd428579f7de6b3c1f0cd85327c9d65f35542de4e79284a",
+      "bytes": 30261
+    },
+    "evals/career-quality-v3-new-cases/author_preference.py": {
+      "sha256": "e58206d88ffabf6fd59b3c9fc83186c76cd86bf57d6390f0a2f712394c23f4d0",
+      "bytes": 25779
+    },
+    "evals/career-quality-v3-new-cases/author_support.py": {
+      "sha256": "d5faebd6827ec83b7517f56b3b14f264a050db1fb3e40cded5a9a028045fcfca",
+      "bytes": 3688
+    },
+    "evals/career-quality-v3-new-cases/gold/candidate-fit.json": {
+      "sha256": "c7123fc3e6f459a27fbd2198359458983b1baefb777799b3be142c3e2f18f985",
+      "bytes": 7132
+    },
+    "evals/career-quality-v3-new-cases/gold/preference-fit.json": {
+      "sha256": "05e7cdf2ab5af57f610dcaa404a2c615e51d64ca584d5aaf59b9c69d667d7963",
+      "bytes": 6474
+    },
+    "evals/career-quality-v3-new-cases/normalized/candidate-fit.json": {
+      "sha256": "ba14817f25b55312f77a0ccb9a4faf9ba244f5f130fbfacfce39f397048ddb3d",
+      "bytes": 56733
+    },
+    "evals/career-quality-v3-new-cases/normalized/preference-fit.json": {
+      "sha256": "0412bb9b12dbb4678ab9b2bca2e70dd0e125d96516ba597a679cd75f52cda857",
+      "bytes": 55103
+    },
+    "evals/career-quality-v3-new-cases/pipeline.py": {
+      "sha256": "0d58a8a7420bd223444ce40381f0d2a3474354354cd3c5bbfd6d27159df05484",
+      "bytes": 25574
+    },
+    "evals/career-quality-v3-new-cases/raw/candidate-fit.json": {
+      "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+      "bytes": 14213
+    },
+    "evals/career-quality-v3-new-cases/raw/preference-fit.json": {
+      "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+      "bytes": 16476
+    },
+    "evals/career-quality-v3-new-cases/review/annotation_review_v1.json": {
+      "sha256": "9e1e7214e5d7e1866ac4478ee617129a6aa7fceafc7ec77914048fd9cbbb21a6",
+      "bytes": 14583
+    },
+    "evals/career-quality-v3-new-cases/review/annotation_review_v2.json": {
+      "sha256": "6368755f53674f181ebfa87ee0061954162035a27eddee13e534493947a24f74",
+      "bytes": 15329
+    },
+    "evals/career-quality-v3-new-cases/review/challenge_packet_v1.json": {
+      "sha256": "94fc00a95b5cc919829cb8b79972b7418832845fde45ab8498fb74e3c2d7107b",
+      "bytes": 3453
+    },
+    "evals/career-quality-v3-new-cases/review/challenge_packet_v2.json": {
+      "sha256": "d8c0d49d1ae7f7a7fdcb9bcab49ad373eedb46639cc024dec8023c8cc34a0757",
+      "bytes": 4787
+    },
+    "evals/career-quality-v3-new-cases/review/raw_judgments_v1.json": {
+      "sha256": "01cc4eab44a1f2568ba0acd41f590b47bd138f33bc89f64e7e8aa7b47faf6339",
+      "bytes": 8238
+    },
+    "evals/career-quality-v3-new-cases/review/results_review_v1.json": {
+      "sha256": "a1a89d432364782e688810129358c925f9f07842d1bd4f451fb4d1c9ba7d2880",
+      "bytes": 37909
+    },
+    "evals/career-quality-v3-new-cases/review/round1_inputs/author_candidate.py": {
+      "sha256": "b6c7bd205dada8f889a40ce3b9342c500f60fcbaffbaaf2540b3ea95643739dd",
+      "bytes": 27350
+    },
+    "evals/career-quality-v3-new-cases/review/round1_inputs/author_preference.py": {
+      "sha256": "01355d2c47321328717dcb8a867ead24cc50d9900b20094155bf400f73aa6ded",
+      "bytes": 25604
+    },
+    "evals/career-quality-v3-new-cases/review/round1_inputs/gold/candidate-fit.json": {
+      "sha256": "2d7516bc6d182726460dcf4ac86b02be5a4985839c23b46d2016a89371152802",
+      "bytes": 7046
+    },
+    "evals/career-quality-v3-new-cases/review/round1_inputs/gold/preference-fit.json": {
+      "sha256": "05e7cdf2ab5af57f610dcaa404a2c615e51d64ca584d5aaf59b9c69d667d7963",
+      "bytes": 6474
+    },
+    "evals/career-quality-v3-new-cases/review/round1_inputs/normalized/candidate-fit.json": {
+      "sha256": "a37d67633202d92320a54b7e6a403b2353dd68528d98b19be9862e264e36870a",
+      "bytes": 50504
+    },
+    "evals/career-quality-v3-new-cases/review/round1_inputs/normalized/preference-fit.json": {
+      "sha256": "e3773a631377d227dfeb0733b64b06e6101ed2924a56bf99234197e34ffe8e37",
+      "bytes": 54256
+    },
+    "evals/career-quality-v3-new-cases/review/round1_inputs/raw/candidate-fit.json": {
+      "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+      "bytes": 14213
+    },
+    "evals/career-quality-v3-new-cases/review/round1_inputs/raw/preference-fit.json": {
+      "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+      "bytes": 16476
+    },
+    "evals/career-quality-v3-new-cases/runs/new-cases-v3/RECEIPT.json": {
+      "sha256": "514b81ee8cc3e71fd859e3b78adefb2d6bfa87dbb6592d348b70a2b3fab6f2f5",
+      "bytes": 1106
+    },
+    "evals/career-quality-v3-new-cases/runs/new-cases-v3/REPORT.md": {
+      "sha256": "e10cfc47e88a34a8fcbb7b4aac2943ce82930d6dfe6b245693f41c6576b6d8b3",
+      "bytes": 3239
+    },
+    "evals/career-quality-v3-new-cases/runs/new-cases-v3/execution.json": {
+      "sha256": "e9079a844feaffe7f5be68e048ec35458698a329e32369d9f6e876d74d84b260",
+      "bytes": 863
+    },
+    "evals/career-quality-v3-new-cases/runs/new-cases-v3/mapping.json": {
+      "sha256": "ce7b80152bb2540d217175994be890624d2bcbf10fffeefb4dae6a650fe4b276",
+      "bytes": 6183
+    },
+    "evals/career-quality-v3-new-cases/runs/new-cases-v3/measurement.json": {
+      "sha256": "7a76b11c3e84e45843ea6963008d21cb2d549e3386020503ff80ca0476e14c15",
+      "bytes": 105343
+    },
+    "evals/career-quality-v3-new-cases/runs/new-cases-v3/packets.jsonl": {
+      "sha256": "fa3c1f4b5433f0b6c2ab3ffa88ab445f1fcafe86bc8314d471c88f896395da32",
+      "bytes": 105035
+    },
+    "evals/career-quality-v3-new-cases/runs/new-cases-v3/predictions.jsonl": {
+      "sha256": "3f2dbe9ba4fd0a6d688e5ff0c7ebaa47d3a158be00cb5749d1ef58876e05f385",
+      "bytes": 76315
+    },
+    "evals/career-quality-v3-new-cases/tests/test_pipeline.py": {
+      "sha256": "86247185f23fce825179f975c526e4f4a2ad2cd7b9e0b47266c452d61fc7bd48",
+      "bytes": 10674
+    },
+    "evals/career-quality-v4/ANALYSIS.md": {
+      "sha256": "813330b7c98f9a8b33654098b977244df60c48942d5095ee1b38154abf6023c8",
+      "bytes": 19176
+    },
+    "evals/career-quality-v4/CONTRACT.md": {
+      "sha256": "5043a472c7ddf91040c1bbfe738f726c5a65ade103de042021a12a55132ebe18",
+      "bytes": 3494
+    },
+    "evals/career-quality-v4/FREEZE.json": {
+      "sha256": "3b965b1e54745be5b693046eae253f862ae842e226e7d0c290c53d7a5178aaa3",
+      "bytes": 13069
+    },
+    "evals/career-quality-v4/HANDOFF.json": {
+      "sha256": "3eb694303acc65da55fc5d9de77be8ea1e3606b37668d8297dd7bbd4485ddd95",
+      "bytes": 1842
+    },
+    "evals/career-quality-v4/NORMALIZATION_CHANGES.md": {
+      "sha256": "80d1e23e73a02e3598a039b631a8a1ce091171104ae51d602288e9397965c550",
+      "bytes": 10783
+    },
+    "evals/career-quality-v4/PREDECESSOR.json": {
+      "sha256": "e503f6b6757bc072de3cf6fc164c81e961388448457d7f5e7e4ee1be5b9b506c",
+      "bytes": 54906
+    },
+    "evals/career-quality-v4/README.md": {
+      "sha256": "d567dbe911ec5f164607f8b113542ec204a342992526359be61ad637be177485",
+      "bytes": 4458
+    },
+    "evals/career-quality-v4/SCHEMA.md": {
+      "sha256": "a490f15cdd56e6e358aa7838289bdaf36acc3437bc064dfe3476524593720dd0",
+      "bytes": 9203
+    },
+    "evals/career-quality-v4/START.json": {
+      "sha256": "e69bb5bf336c1e19bba4bdb45b87a8f7816456a81c77f37c5c691549e77d6c19",
+      "bytes": 3634
+    },
+    "evals/career-quality-v4/checker.py": {
+      "sha256": "c5b70905631c91ddd6ed049598bea65c5a87a94a13b45f09999b65397b7a4398",
+      "bytes": 35955
+    },
+    "evals/career-quality-v4/gold/candidate-fit.json": {
+      "sha256": "c7123fc3e6f459a27fbd2198359458983b1baefb777799b3be142c3e2f18f985",
+      "bytes": 7132
+    },
+    "evals/career-quality-v4/gold/preference-fit.json": {
+      "sha256": "05e7cdf2ab5af57f610dcaa404a2c615e51d64ca584d5aaf59b9c69d667d7963",
+      "bytes": 6474
+    },
+    "evals/career-quality-v4/grade_packets.py": {
+      "sha256": "741788b5d2d8a94182d30b6b9f88d93c1acb074fe09467e998cebb9062d8c5f0",
+      "bytes": 2825
+    },
+    "evals/career-quality-v4/measurement.py": {
+      "sha256": "a0c354a49820f5b676330288277961d8c1639e8ca0e4ff3872c808cfa56499a2",
+      "bytes": 8244
+    },
+    "evals/career-quality-v4/migrate_annotations.py": {
+      "sha256": "513fd703528d479e9c2d01db35a9bf4f31c45738533488d15d1ca630181218dc",
+      "bytes": 12837
+    },
+    "evals/career-quality-v4/normalized/candidate-fit.json": {
+      "sha256": "8f758714e2bbe783944e067ce55e96d3c335e3077fbc2a3234711dc779802ba3",
+      "bytes": 57666
+    },
+    "evals/career-quality-v4/normalized/preference-fit.json": {
+      "sha256": "86bb594fa8361a7fe82dde7f043aefe2e0181f41ba86be860e2f822c8f381c4f",
+      "bytes": 61558
+    },
+    "evals/career-quality-v4/pipeline.py": {
+      "sha256": "1e3eeb723019407dd6e5b331de2c2750560a4f8a9bb633bc202a34bd95bb9aae",
+      "bytes": 16975
+    },
+    "evals/career-quality-v4/raw/candidate-fit.json": {
+      "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+      "bytes": 14213
+    },
+    "evals/career-quality-v4/raw/preference-fit.json": {
+      "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+      "bytes": 16476
+    },
+    "evals/career-quality-v4/review/annotation_review_v1.json": {
+      "sha256": "0ee842a1f4de49d2c91f044fbada61001a135e6a8ed592b6a694b5219dc9f87a",
+      "bytes": 14661
+    },
+    "evals/career-quality-v4/review/challenge_packet_v1.json": {
+      "sha256": "099794287efcbb954dba3bd684505eaed15645e1aaab97584dbf56120cf199da",
+      "bytes": 10431
+    },
+    "evals/career-quality-v4/review/challenge_receipt_v1.json": {
+      "sha256": "a485d08acfb2534b2ab3d67ffd12da1f22849e8012ac1fcc609d130c880cc96e",
+      "bytes": 364
+    },
+    "evals/career-quality-v4/review/results_review_v1.json": {
+      "sha256": "7fba7dcd550aadd10d85747b9072529a1d7873a3592d552285473c9aacb2c5a9",
+      "bytes": 21135
+    },
+    "evals/career-quality-v4/runs/v4-regression/RECEIPT.json": {
+      "sha256": "f4097ed5824083b90cf6b603bb6fdaf0654ba3ea1e9ca936e777d5d2ffcc2644",
+      "bytes": 1330
+    },
+    "evals/career-quality-v4/runs/v4-regression/REPORT.md": {
+      "sha256": "d6fe614e28d6271b7eeac68b75693d99bd54e6e40a6de627548040019bad31ec",
+      "bytes": 2951
+    },
+    "evals/career-quality-v4/runs/v4-regression/comparison.json": {
+      "sha256": "d9c1ee05c78053cde26c3554dab1176369984c68bcd640b58a7e898c5e83c9f8",
+      "bytes": 11458
+    },
+    "evals/career-quality-v4/runs/v4-regression/execution.json": {
+      "sha256": "e9ab98f998b5e051cf5e1c7b3c71db5cd8ea123464334aea51ca593f2075ffa5",
+      "bytes": 617
+    },
+    "evals/career-quality-v4/runs/v4-regression/mapping.json": {
+      "sha256": "91b4fa75390354b74ac6c36709384fa5911912b192498b6b146b1a9b3f39d2ee",
+      "bytes": 6183
+    },
+    "evals/career-quality-v4/runs/v4-regression/measurement.json": {
+      "sha256": "f471f313bfa150ff21af04c35549febae106db9c84346f109694754fae7ff37c",
+      "bytes": 105818
+    },
+    "evals/career-quality-v4/runs/v4-regression/packets.jsonl": {
+      "sha256": "e342996cc588f18d8b397217a46891f9b4f55e5eafe9975eec5b2e14aa3eee18",
+      "bytes": 108705
+    },
+    "evals/career-quality-v4/runs/v4-regression/predictions.jsonl": {
+      "sha256": "ec2bc4bed0115ce4cc788216d70066d4133262ccdd169c23ceb5c3e6809ccb2b",
+      "bytes": 69811
+    },
+    "evals/career-quality-v4/tests/test_checker.py": {
+      "sha256": "281a86cb3ad09963cbdf99ba05c6e3d716e1fa506e01fee0c9935aaf7034c8c7",
+      "bytes": 21479
+    },
+    "evals/career-quality-v4/tests/test_pipeline.py": {
+      "sha256": "c426a52e36a55b2fe8d4414b740fcc7f4411a8af5dcdc217dfd3b003d596ac29",
+      "bytes": 13247
+    },
+    "evals/career-quality-v4/tests/test_review_probes.py": {
+      "sha256": "ef7e7d0970f0750c374a1fb05967b3ee337c3e6b978fa67e0b3a1e78869e0217",
+      "bytes": 15677
+    },
+    "evals/career-quality-v4/v3_core.py": {
+      "sha256": "e4b2699f543e4260128ebfabd61547c92b5c1dba3497acd07ca2f7007f225e33",
+      "bytes": 29184
+    },
+    "evals/career-quality-v5/ANALYSIS.md": {
+      "sha256": "7cc929224a0789abdf44e646fec2d41a10ea95b742c9e95e78bd7c06b18b2a8e",
+      "bytes": 17200
+    },
+    "evals/career-quality-v5/CONTRACT.md": {
+      "sha256": "446b7c01bbbd28e3e62dd2a5df2ab74c875a12f9139346eb57503a171c51dcdd",
+      "bytes": 3255
+    },
+    "evals/career-quality-v5/FREEZE.json": {
+      "sha256": "4c8b491f939d19ddc4de3107d60bf09099b16416d773deea2d5a59d207d5cecb",
+      "bytes": 13367
+    },
+    "evals/career-quality-v5/HANDOFF.json": {
+      "sha256": "1dc2e4193f4e81b7d06b57157dc0d2abca0198bcfbc1ba80a23b867384e64b71",
+      "bytes": 2822
+    },
+    "evals/career-quality-v5/NORMALIZATION_CHANGES.md": {
+      "sha256": "7184088fa3b941761dacc8d8e8b93194c81bcb5047846672c8f89336bbdf7b02",
+      "bytes": 2644
+    },
+    "evals/career-quality-v5/PREDECESSOR.json": {
+      "sha256": "bfcdae11061e4868af7717a07131601f6253e713cdbe8bbe82c449dcad544553",
+      "bytes": 61108
+    },
+    "evals/career-quality-v5/README.md": {
+      "sha256": "0c47e46df9f56894160f586783f0bd90bbcae01334427f6ed4689a87a7a68852",
+      "bytes": 2488
+    },
+    "evals/career-quality-v5/SCHEMA.md": {
+      "sha256": "2f7f15adaa608574cd88359eddd0e21d7ef43a7bc819cf51a46de37730cb22ab",
+      "bytes": 10254
+    },
+    "evals/career-quality-v5/START.json": {
+      "sha256": "d511e7bc288f1924cd9e2783577499fa79e3a807b198669a751e5c75c72a0445",
+      "bytes": 3634
+    },
+    "evals/career-quality-v5/checker.py": {
+      "sha256": "c712f128cf7dd3a43252ed13abf18b04d5d26a53b72930231fcd0dce9414ebf6",
+      "bytes": 36834
+    },
+    "evals/career-quality-v5/gold/candidate-fit.json": {
+      "sha256": "c7123fc3e6f459a27fbd2198359458983b1baefb777799b3be142c3e2f18f985",
+      "bytes": 7132
+    },
+    "evals/career-quality-v5/gold/preference-fit.json": {
+      "sha256": "05e7cdf2ab5af57f610dcaa404a2c615e51d64ca584d5aaf59b9c69d667d7963",
+      "bytes": 6474
+    },
+    "evals/career-quality-v5/grade_packets.py": {
+      "sha256": "a175d27be88dc1b912af6288c0c84c4ce65034542dd1b0b95d310f5c08abce81",
+      "bytes": 2825
+    },
+    "evals/career-quality-v5/measurement.py": {
+      "sha256": "ca092a89b8fb4099ad5c3b7869d124c4305693b55031a1832dc900c676192bb1",
+      "bytes": 8244
+    },
+    "evals/career-quality-v5/migrate_annotations.py": {
+      "sha256": "f2b6cbe526267e51e18ba7001764ad83f341fe1f863a5d01369fb85c06f14b77",
+      "bytes": 3887
+    },
+    "evals/career-quality-v5/normalized/candidate-fit.json": {
+      "sha256": "5c5a0c327b57b5c394968575d8b22be73ec61856c675847c279bcc0c2f03c2c4",
+      "bytes": 57758
+    },
+    "evals/career-quality-v5/normalized/preference-fit.json": {
+      "sha256": "6139b7eabe2cf27293f4114643fd50e58c9cd0c06a8b201c76060b1be5a1ef43",
+      "bytes": 61709
+    },
+    "evals/career-quality-v5/pipeline.py": {
+      "sha256": "aa88c553a9e59e74e7a8274a6275210e101b8db916d187b98fc1d94f4e32fe50",
+      "bytes": 17093
+    },
+    "evals/career-quality-v5/raw/candidate-fit.json": {
+      "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+      "bytes": 14213
+    },
+    "evals/career-quality-v5/raw/preference-fit.json": {
+      "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+      "bytes": 16476
+    },
+    "evals/career-quality-v5/review/annotation_review_v1.json": {
+      "sha256": "37e2c0e76e9e711674f814acd0e194cdf792c3b30c32c26e55f254ec2c01578c",
+      "bytes": 14794
+    },
+    "evals/career-quality-v5/review/challenge_packet_v1.json": {
+      "sha256": "aed9f1e96ecd8e28db910b7f9a2f99ace5bd512883999c24e49bc90797d8017e",
+      "bytes": 20243
+    },
+    "evals/career-quality-v5/review/challenge_receipt_v1.json": {
+      "sha256": "8315194da3da319dfd5925885c2d75362fa77049410d8e9d6066d65315b91a3b",
+      "bytes": 615
+    },
+    "evals/career-quality-v5/review/results_review_v1.json": {
+      "sha256": "390483b97fbd8f7120c1fefe572a7f4b2225733b9affbdc2ebe2b96c694bc321",
+      "bytes": 17085
+    },
+    "evals/career-quality-v5/runs/v5-regression/RECEIPT.json": {
+      "sha256": "6e79081c9cc08fa03eaf40840d7474194cc831829d5eef534cfb938d55fe589d",
+      "bytes": 1330
+    },
+    "evals/career-quality-v5/runs/v5-regression/REPORT.md": {
+      "sha256": "f13541eef8964ea740e294579d1f4e42a683fd161685271a9122274fa52b5eae",
+      "bytes": 2958
+    },
+    "evals/career-quality-v5/runs/v5-regression/comparison.json": {
+      "sha256": "fe0de79d410667f3302aa0b50f8b548373dda5dbd9b1ef1c604611198e28f834",
+      "bytes": 11064
+    },
+    "evals/career-quality-v5/runs/v5-regression/execution.json": {
+      "sha256": "d3cabc76a8c310a257998e1640a65af6096d4ac8463e50032077e8c55ec8877b",
+      "bytes": 617
+    },
+    "evals/career-quality-v5/runs/v5-regression/mapping.json": {
+      "sha256": "b972e593a7843b48d985dabe3434dcfc649be8a407696c25bd903007efad0f12",
+      "bytes": 6183
+    },
+    "evals/career-quality-v5/runs/v5-regression/measurement.json": {
+      "sha256": "4f4e36347b16f838ed5a819e63ca966c19d3d89396aaa2245dc194cae6a7ef31",
+      "bytes": 105546
+    },
+    "evals/career-quality-v5/runs/v5-regression/packets.jsonl": {
+      "sha256": "ff1105c16009967097d7270dbe1c7ff9176179575a7b4ce77cddf030206b912a",
+      "bytes": 108723
+    },
+    "evals/career-quality-v5/runs/v5-regression/predictions.jsonl": {
+      "sha256": "4e7df4492d60fb8cb28565223e29b9ac75316b7a28894a772abe6a599d287d1c",
+      "bytes": 70045
+    },
+    "evals/career-quality-v5/tests/test_checker.py": {
+      "sha256": "7c8195497a21a45dd1d99e55ec4fb339fe8271bb69fbfa6901445a20be1317aa",
+      "bytes": 26586
+    },
+    "evals/career-quality-v5/tests/test_normalization.py": {
+      "sha256": "b1f4514830f245032c61e60100e978921d896eb0d8c90041394af12d05b3532a",
+      "bytes": 5022
+    },
+    "evals/career-quality-v5/tests/test_pipeline.py": {
+      "sha256": "05797cc528d6db88aaa3d74cba5733e6c8b144f1c97be2ebb24dd0e153909e3f",
+      "bytes": 13247
+    },
+    "evals/career-quality-v5/tests/test_review_probes.py": {
+      "sha256": "8e1673c1eeb1f195c1dec6edce0e77aeaef8dca87bba1861ac77f4a39fd48d72",
+      "bytes": 15677
+    },
+    "evals/career-quality-v5/tests/test_v5_review_probes.py": {
+      "sha256": "017cb7a11609b2ad23541d8f321815a62c2901ce0d59d40fff81697d141c932b",
+      "bytes": 6769
+    },
+    "evals/career-quality-v5/v3_core.py": {
+      "sha256": "e4b2699f543e4260128ebfabd61547c92b5c1dba3497acd07ca2f7007f225e33",
+      "bytes": 29184
+    },
+    "evals/career-quality-v5-new-cases/ANALYSIS.md": {
+      "sha256": "632add079f3a8b904fe1f0af02580b13b460a1c27388b04b7f6edbdb1c9e0998",
+      "bytes": 18746
+    },
+    "evals/career-quality-v5-new-cases/AUTHORING.md": {
+      "sha256": "8a07ec0de4e4dbda6814f3b72e5e9a977cd5e9a268b114aa5d1ec0f9f193650c",
+      "bytes": 6566
+    },
+    "evals/career-quality-v5-new-cases/CONTRACT.md": {
+      "sha256": "5cf71131978225d4a38bc7fec468da270e303ac3ebe4647a5641195b871fa9af",
+      "bytes": 5135
+    },
+    "evals/career-quality-v5-new-cases/FREEZE.json": {
+      "sha256": "53f4e2d0fee558a31760b7b900a2dab56965c94234c126e1996bc2e977ff5256",
+      "bytes": 22700
+    },
+    "evals/career-quality-v5-new-cases/FROZEN_SCHEMA.md": {
+      "sha256": "2f7f15adaa608574cd88359eddd0e21d7ef43a7bc819cf51a46de37730cb22ab",
+      "bytes": 10254
+    },
+    "evals/career-quality-v5-new-cases/HANDOFF.json": {
+      "sha256": "1c8874ba5a69c53dcffb50bae3376367a0a7459964a4ac13e7d64c4f4c8177d0",
+      "bytes": 5864
+    },
+    "evals/career-quality-v5-new-cases/NOVELTY_SCREEN.json": {
+      "sha256": "81032f3d4ce3634c0e27e44d11afa0415bb1d8427d5b07050280d01294bdb4af",
+      "bytes": 85592
+    },
+    "evals/career-quality-v5-new-cases/NOVELTY_SCREEN_v2.json": {
+      "sha256": "2fcf07bc2046b6187a1bc1b1cdef012cf2bcc07db66c474a00a7c6dff12b0e1e",
+      "bytes": 86378
+    },
+    "evals/career-quality-v5-new-cases/PREDECESSOR.json": {
+      "sha256": "bf1a0fe1cd1976065f7f1c3db5c2cf1477cdee16a9d40e6febed94144b8bdcf2",
+      "bytes": 68064
+    },
+    "evals/career-quality-v5-new-cases/README.md": {
+      "sha256": "200b87dc3955b9e4907fcd09d8a7cbbce38b131703f45ac0070f8bfa50762aec",
+      "bytes": 2624
+    },
+    "evals/career-quality-v5-new-cases/START.json": {
+      "sha256": "7cd8d883fa6aea9f08528facdff8c9ff938c25effea3ab7100629a7f276019b8",
+      "bytes": 3661
+    },
+    "evals/career-quality-v5-new-cases/STRUCTURAL_AUDIT_v1.json": {
+      "sha256": "102f03f3dc88e45750a332479aa1cd59e341febc591ea1c7715c38abf1a7e6ef",
+      "bytes": 1840
+    },
+    "evals/career-quality-v5-new-cases/authoring/candidate-fit-attestation.json": {
+      "sha256": "5a91bc22bd83a698aa98d96d8f5b95c4b4a94396da0d15ae10b72d963d4060d0",
+      "bytes": 6247
+    },
+    "evals/career-quality-v5-new-cases/authoring/candidate-fit.py": {
+      "sha256": "ef57cc5ea1f98249b10de9af683a845358902802abd3d883eec788e4953c5f22",
+      "bytes": 28597
+    },
+    "evals/career-quality-v5-new-cases/authoring/candidate-history/REVISION_LOG.md": {
+      "sha256": "c3894b88eb828eec6b488fc0af12c578d621b9e75f6e271a2a0444b23ae52b4f",
+      "bytes": 3183
+    },
+    "evals/career-quality-v5-new-cases/authoring/candidate-history/pre-cf04-time-attestation.json": {
+      "sha256": "6e850539a0271bf2eeaf8cba308ad8099c81c9a973229b25eaa8bddc9e1e8fba",
+      "bytes": 5033
+    },
+    "evals/career-quality-v5-new-cases/authoring/candidate-history/pre-cf04-time-helper.py": {
+      "sha256": "9af9f8b9932ece873fca251c7a45916e2ad20e9e4fba29aef510a2317002491e",
+      "bytes": 28661
+    },
+    "evals/career-quality-v5-new-cases/authoring/candidate-history/pre-cf04-time-normalized.json": {
+      "sha256": "c476e98b42c8398aa8a624c0511b72a427ae3086668ba1ed8abc813c38130135",
+      "bytes": 60878
+    },
+    "evals/career-quality-v5-new-cases/authoring/candidate-history/pre-domain-correction-attestation.json": {
+      "sha256": "7db8ecc2fd73d00b1af8016ed6cb45bd1c8a881c5a2a572f86b3b2369ffb5b50",
+      "bytes": 3383
+    },
+    "evals/career-quality-v5-new-cases/authoring/candidate-history/pre-domain-correction-gold.json": {
+      "sha256": "725e808684a0d3ec6b55a2feabe77f6ba1cd16e1943c93141162d99408b8b8f9",
+      "bytes": 5517
+    },
+    "evals/career-quality-v5-new-cases/authoring/candidate-history/pre-domain-correction-normalized.json": {
+      "sha256": "98a06b1893614c13eab0fb251eb62d9430641bca02de63417a4eeb57a6c4c987",
+      "bytes": 55429
+    },
+    "evals/career-quality-v5-new-cases/authoring/candidate-history/pre-domain-correction-raw.json": {
+      "sha256": "f14edd1549245510e196b3d79f850b3d6bcc7901816d0a8e3cf047e56b36ddee",
+      "bytes": 14891
+    },
+    "evals/career-quality-v5-new-cases/authoring/candidate-history/remote-corrected.json": {
+      "sha256": "3fb5614f99fe5940af73ce7b23ed00a445b8e1ca92d20b41da0f0d42f4ae0ed9",
+      "bytes": 14886
+    },
+    "evals/career-quality-v5-new-cases/authoring/candidate-history/reviewed-original.json": {
+      "sha256": "81349f4bd6e7a470bba5be821094e9b3407e487ccd637bef550d49a32d31d3c9",
+      "bytes": 14854
+    },
+    "evals/career-quality-v5-new-cases/authoring/preference-fit-attestation.json": {
+      "sha256": "16106cffff1bb82df786617a157969a40001c61eac0474f148db93d0cad6d7c6",
+      "bytes": 5977
+    },
+    "evals/career-quality-v5-new-cases/authoring/preference-fit.py": {
+      "sha256": "e4277955cd3ef8ae29fe550a6910ff7eaaef7985fe91425ed970cc78c27d5582",
+      "bytes": 36603
+    },
+    "evals/career-quality-v5-new-cases/authoring/preference-history/PF12_SCOPE_REVISION.md": {
+      "sha256": "9ddea621c5c2516d49892556db0364768b315c9c408b6bc667a4cdaeea6df6e8",
+      "bytes": 706
+    },
+    "evals/career-quality-v5-new-cases/authoring/preference-history/attestation-before-PF12-scope-revision.json": {
+      "sha256": "e4e0eb641ac4c5ba5a88b7a8866670207f523c04fc2e4470d7fcbba09b691eda",
+      "bytes": 4204
+    },
+    "evals/career-quality-v5-new-cases/authoring/preference-history/gold-before-PF12-scope-revision.json": {
+      "sha256": "a2b16c25e95dffc028e3da50d51f4bcf53cb37434ea2886054ac29fa62ab0355",
+      "bytes": 5139
+    },
+    "evals/career-quality-v5-new-cases/authoring/preference-history/gold-before-blind-review.json": {
+      "sha256": "52997518d8141cb1c89f78e71369b6a0f16c02cfd0648bffdd6875bd6fa89128",
+      "bytes": 5179
+    },
+    "evals/career-quality-v5-new-cases/authoring/preference-history/normalized-after-blind-review-before-fidelity.json": {
+      "sha256": "4f33e1a73c844bfd96365ae89117a7cf4b4c864e51daaf86bf3ea84ff02b6c29",
+      "bytes": 52811
+    },
+    "evals/career-quality-v5-new-cases/authoring/preference-history/normalized-before-PF12-scope-revision.json": {
+      "sha256": "7773f5b6af2e58f6012881ec3d3ac871727f2e67d2d5ef1df979c8d2005c925b",
+      "bytes": 53365
+    },
+    "evals/career-quality-v5-new-cases/authoring/preference-history/normalized-before-blind-review.json": {
+      "sha256": "5e841efd68f98af73a303995a6ef790114431a1a1b9c154bbe709172cb65de0b",
+      "bytes": 50427
+    },
+    "evals/career-quality-v5-new-cases/authoring/preference-history/raw-before-PF04-revision.json": {
+      "sha256": "0229c08bc04fb1d33a213fc09787c3a4317bec4182760f4aa57cadf4c14c155d",
+      "bytes": 16985
+    },
+    "evals/career-quality-v5-new-cases/authoring/preference-history/raw-before-PF12-scope-revision.json": {
+      "sha256": "0229c08bc04fb1d33a213fc09787c3a4317bec4182760f4aa57cadf4c14c155d",
+      "bytes": 16985
+    },
+    "evals/career-quality-v5-new-cases/checker.py": {
+      "sha256": "c712f128cf7dd3a43252ed13abf18b04d5d26a53b72930231fcd0dce9414ebf6",
+      "bytes": 36834
+    },
+    "evals/career-quality-v5-new-cases/gold/candidate-fit.json": {
+      "sha256": "e9da4250f0c486a4b1d0340f5a378a2c63f60d6e063f397862f828e6465c0718",
+      "bytes": 5747
+    },
+    "evals/career-quality-v5-new-cases/gold/preference-fit.json": {
+      "sha256": "a0d0d6651b581af6977d2b0e636ad8b5aea0eb72e894f9169f20a8ddc4dace94",
+      "bytes": 5203
+    },
+    "evals/career-quality-v5-new-cases/grade_packets.py": {
+      "sha256": "a175d27be88dc1b912af6288c0c84c4ce65034542dd1b0b95d310f5c08abce81",
+      "bytes": 2825
+    },
+    "evals/career-quality-v5-new-cases/measurement.py": {
+      "sha256": "ca092a89b8fb4099ad5c3b7869d124c4305693b55031a1832dc900c676192bb1",
+      "bytes": 8244
+    },
+    "evals/career-quality-v5-new-cases/normalized/candidate-fit.json": {
+      "sha256": "db3457cf314f3cf5e59b26ebeb6da17707ccfa256c4b8a1d00dd9cbb35df05eb",
+      "bytes": 60750
+    },
+    "evals/career-quality-v5-new-cases/normalized/preference-fit.json": {
+      "sha256": "67c13fdf43f59d1f2d712e0c8bff5b4bf3d8b1ca630a0c44b3291fc12f3d7821",
+      "bytes": 54163
+    },
+    "evals/career-quality-v5-new-cases/novelty.py": {
+      "sha256": "476fe0742db1865309cf0ed75a82bf48a37fa7a37df4f1f423b7ebe66f3050bd",
+      "bytes": 4754
+    },
+    "evals/career-quality-v5-new-cases/pipeline.py": {
+      "sha256": "2d6a3966559d9b01355720e815c2cab7ac002bce28e1690170663f641741f5eb",
+      "bytes": 17282
+    },
+    "evals/career-quality-v5-new-cases/raw/candidate-fit.json": {
+      "sha256": "8ddcce7a7a0cdc9e9986dbc68eec5b4b436dc31b5b6cbda02d786f3a041404b5",
+      "bytes": 15635
+    },
+    "evals/career-quality-v5-new-cases/raw/preference-fit.json": {
+      "sha256": "7dbdd88b9c0cbb83e23e7aacba554f0a65b175eb4dac3d861ce14a0913fdfff0",
+      "bytes": 17078
+    },
+    "evals/career-quality-v5-new-cases/review/annotation_review_v1.json": {
+      "sha256": "b345de87cd235d7750b7af47eca2e78ccd5d3edf79a3032ebe5ae8fc736ca528",
+      "bytes": 16832
+    },
+    "evals/career-quality-v5-new-cases/review/annotation_review_v2.json": {
+      "sha256": "08aa2efd2f52d0d8feda58884be48f8a74a753bb31fc226c9d88aee26d27cc0d",
+      "bytes": 17658
+    },
+    "evals/career-quality-v5-new-cases/review/challenge_packet_v1.json": {
+      "sha256": "2ed59d9cf459a4f6f4025a1becffe23898bfcb2f2bb74a6d0d94a75f60e8c89f",
+      "bytes": 9676
+    },
+    "evals/career-quality-v5-new-cases/review/challenge_packet_v2.json": {
+      "sha256": "84bca2f5af320128a0eecceef513f57d6323456a1563591b9ce184ae72a89ad4",
+      "bytes": 10474
+    },
+    "evals/career-quality-v5-new-cases/review/challenge_receipt_v1.json": {
+      "sha256": "bf1020173422cebaeaddc3f5099564f75c2b033516bb6dc80acd854c71f2490d",
+      "bytes": 759
+    },
+    "evals/career-quality-v5-new-cases/review/challenge_receipt_v2.json": {
+      "sha256": "bb6becddb4c3c7d11d589cf433f57b5b176eea80b1a7602c56d9b7404efbe8b9",
+      "bytes": 1028
+    },
+    "evals/career-quality-v5-new-cases/review/novelty_v1.json": {
+      "sha256": "5b0677d024555ca45703598d6d8a6aacfbadae5198823d6144de49097534eca0",
+      "bytes": 2718
+    },
+    "evals/career-quality-v5-new-cases/review/raw_judgments_candidate_v1.json": {
+      "sha256": "7a9f3f1c6444da873bfefb1f440166a89bab0f6260db4da2ec06c307fff0c3c2",
+      "bytes": 9233
+    },
+    "evals/career-quality-v5-new-cases/review/raw_judgments_candidate_v2.json": {
+      "sha256": "eee95deb74e09e3af0bfa82fd31fc976906a396ff7f11843378ab1fb6cfd447f",
+      "bytes": 9671
+    },
+    "evals/career-quality-v5-new-cases/review/raw_judgments_candidate_v3.json": {
+      "sha256": "d16e510d4cb791f2f28e345e54b6f110a2ddd3690a83dc416295590421123bcb",
+      "bytes": 9788
+    },
+    "evals/career-quality-v5-new-cases/review/raw_judgments_preference_v1.json": {
+      "sha256": "b5f6d97e8c6104edfc83a331fce82c9a3f05ffd8773d52e1ee29e9844dced1c8",
+      "bytes": 9331
+    },
+    "evals/career-quality-v5-new-cases/review/raw_judgments_preference_v2.json": {
+      "sha256": "ab13e669709e5f608aba1e1d4d6c0af1f8df976a246a0de591663e26c4875556",
+      "bytes": 9623
+    },
+    "evals/career-quality-v5-new-cases/review/results_review_v1.json": {
+      "sha256": "f975b1a9f0eefb7b2330610a6660460afece815d9a4582c66091bde380f24bbd",
+      "bytes": 46489
+    },
+    "evals/career-quality-v5-new-cases/runs/new-cases-v5/RECEIPT.json": {
+      "sha256": "1a1b94638e57b09f38cc71650b0a089bb3629ecaae6e4999747301f8dac2d1a2",
+      "bytes": 1202
+    },
+    "evals/career-quality-v5-new-cases/runs/new-cases-v5/REPORT.md": {
+      "sha256": "86a4a39a280a331525a167344ba41b02a50da464f0bae0aa1877016532336abe",
+      "bytes": 3202
+    },
+    "evals/career-quality-v5-new-cases/runs/new-cases-v5/execution.json": {
+      "sha256": "a3a175480d9c85d8706d7fd8ad658c0bbd23494f99bd38bc9b18a7be02777f97",
+      "bytes": 645
+    },
+    "evals/career-quality-v5-new-cases/runs/new-cases-v5/mapping.json": {
+      "sha256": "24b41659385ba0079e701695a70e2b5960d5c8f1a30b54d1595e5c572e9f83a4",
+      "bytes": 9983
+    },
+    "evals/career-quality-v5-new-cases/runs/new-cases-v5/measurement.json": {
+      "sha256": "dab89ba9e0a91c6977201964a73fdecb12901951b27c61cd1ceb447325956adc",
+      "bytes": 91022
+    },
+    "evals/career-quality-v5-new-cases/runs/new-cases-v5/packets.jsonl": {
+      "sha256": "9aff72ade7a98cb3105b378641fae9e88b9ad7984e84551020e939eaa7eed100",
+      "bytes": 107484
+    },
+    "evals/career-quality-v5-new-cases/runs/new-cases-v5/predictions.jsonl": {
+      "sha256": "1cebef2a541bc0d72b302f99f7df91fe3be5659d3304b063b7530baea0e7e339",
+      "bytes": 56358
+    },
+    "evals/career-quality-v5-new-cases/tests/test_new_cohort.py": {
+      "sha256": "8d1a33466ded0145c19b5bd60362aa2d058eeaedc9666cf1cb1737d94e390d30",
+      "bytes": 3947
+    },
+    "evals/career-quality-v5-new-cases/tests/test_pipeline.py": {
+      "sha256": "05797cc528d6db88aaa3d74cba5733e6c8b144f1c97be2ebb24dd0e153909e3f",
+      "bytes": 13247
+    },
+    "evals/career-quality-v5-new-cases/v3_core.py": {
+      "sha256": "e4b2699f543e4260128ebfabd61547c92b5c1dba3497acd07ca2f7007f225e33",
+      "bytes": 29184
+    },
+    "evals/career-quality-v6/ANALYSIS.md": {
+      "sha256": "41b6ff7c3dd403d8548a80600c00afdf8c63c513c1ba014e267e898dce8f577d",
+      "bytes": 16259
+    },
+    "evals/career-quality-v6/CHECKER_CHANGES.md": {
+      "sha256": "f288c469f5fea3fd1b8cf8cccb0fe5ca0a03a1d4454526d5f0f1bad49273be76",
+      "bytes": 3784
+    },
+    "evals/career-quality-v6/CONTRACT.md": {
+      "sha256": "9ed04437797f3edf8d75b538be943e5f1a5d30ff653d5d283186d9b305a879a3",
+      "bytes": 4297
+    },
+    "evals/career-quality-v6/FREEZE.json": {
+      "sha256": "15ba489de271266bde85ea12fb70929b548b70e0ce785320c62054cf86338e57",
+      "bytes": 17256
+    },
+    "evals/career-quality-v6/HANDOFF.json": {
+      "sha256": "86a34adc24ba5434e58bfce060ad3146f82cb6322f136f4826fc8278c3edcb9f",
+      "bytes": 6807
+    },
+    "evals/career-quality-v6/NORMALIZATION_CHANGES.md": {
+      "sha256": "afd35ee9127331b66768ee7008bb5321d922f0540bcaf0c5125a07d5aa3a370a",
+      "bytes": 7870
+    },
+    "evals/career-quality-v6/PREDECESSOR.json": {
+      "sha256": "73082c9413308c9f46d2d99872caaa4b28f957a86ab665e79f113a5bb3f2ea32",
+      "bytes": 80910
+    },
+    "evals/career-quality-v6/README.md": {
+      "sha256": "d163098510d91bd72b3eedfef4650524d57878b1db4608a767b8f92c9073d9b0",
+      "bytes": 2579
+    },
+    "evals/career-quality-v6/SCHEMA.md": {
+      "sha256": "7ecc066c338f473bed3b458c07e0743607a5758f10aa892318b6cd4c87de7e34",
+      "bytes": 6740
+    },
+    "evals/career-quality-v6/START.json": {
+      "sha256": "ddd2607d411dbb8cbabee327b73eab6b2d897debe2e761cbbb0bfc457e51f1ef",
+      "bytes": 3634
+    },
+    "evals/career-quality-v6/checker.py": {
+      "sha256": "000dd34de73f351e8713eacce1e81a4db774befc60c2dcc5d863b0923d985804",
+      "bytes": 47198
+    },
+    "evals/career-quality-v6/gold/candidate-fit.json": {
+      "sha256": "e9da4250f0c486a4b1d0340f5a378a2c63f60d6e063f397862f828e6465c0718",
+      "bytes": 5747
+    },
+    "evals/career-quality-v6/gold/preference-fit.json": {
+      "sha256": "a0d0d6651b581af6977d2b0e636ad8b5aea0eb72e894f9169f20a8ddc4dace94",
+      "bytes": 5203
+    },
+    "evals/career-quality-v6/grade_packets.py": {
+      "sha256": "d9818d216e4d1482ba9a7616327a6591c5dbe88cb222bf8305fefd9bb9ae5047",
+      "bytes": 2830
+    },
+    "evals/career-quality-v6/measurement.py": {
+      "sha256": "f013707a43efd8a3588ade359b24b607b551c08876a6949512268d0eaf53eaa5",
+      "bytes": 8250
+    },
+    "evals/career-quality-v6/normalization_attestation.json": {
+      "sha256": "f9bd381a09dc0e1daadd134ee2b676b9202c803f948f2a7dbbf0e10562047eba",
+      "bytes": 780
+    },
+    "evals/career-quality-v6/normalized/candidate-fit.json": {
+      "sha256": "5ff8dea2ea5c5e2d2040329e5c2366d1f9bcf334d27688cde905dd9bec6ff460",
+      "bytes": 60806
+    },
+    "evals/career-quality-v6/normalized/preference-fit.json": {
+      "sha256": "dd7d54a3620e93c051e5f0d20c1f340fd85b19f2d2f4556c540686a02cf771ed",
+      "bytes": 54254
+    },
+    "evals/career-quality-v6/pipeline.py": {
+      "sha256": "3c0d2841cebaebe666c0a9c2dc6717f29270f6ca88cfa11bfcd6a12fde25c17c",
+      "bytes": 19987
+    },
+    "evals/career-quality-v6/raw/candidate-fit.json": {
+      "sha256": "8ddcce7a7a0cdc9e9986dbc68eec5b4b436dc31b5b6cbda02d786f3a041404b5",
+      "bytes": 15635
+    },
+    "evals/career-quality-v6/raw/preference-fit.json": {
+      "sha256": "7dbdd88b9c0cbb83e23e7aacba554f0a65b175eb4dac3d861ce14a0913fdfff0",
+      "bytes": 17078
+    },
+    "evals/career-quality-v6/review/annotation_review_v1.json": {
+      "sha256": "d18bed424a446e615b5d5af565cff5ccfc6c4e411c1e69d495a1fa57cf8e2e7e",
+      "bytes": 13927
+    },
+    "evals/career-quality-v6/review/challenge_packet_v1.json": {
+      "sha256": "ffe20fd70a53ea30f1af068916a7ac4293e581c15b8286852e4a558d9afdd69e",
+      "bytes": 14142
+    },
+    "evals/career-quality-v6/review/challenge_receipt_v1.json": {
+      "sha256": "e7b26c498e39da280a04ab40ec0c4d45a75a675a2dc1562330651144dd6e039e",
+      "bytes": 750
+    },
+    "evals/career-quality-v6/review/results_review_v1.json": {
+      "sha256": "de503316fe9627ab5e488f648be955acbb7c6b5d585d238493012f0d4bbc4509",
+      "bytes": 23321
+    },
+    "evals/career-quality-v6/runs/regression-v6/RECEIPT.json": {
+      "sha256": "e06d9cd8a00866d8a0a8c86303d2a6693570116f27b07c1190e1b1f6835c659b",
+      "bytes": 1329
+    },
+    "evals/career-quality-v6/runs/regression-v6/REPORT.md": {
+      "sha256": "aff64dacac683abd8aee09784890d899fb865eed0334f24f54cc5d2f9d1ed8b1",
+      "bytes": 4456
+    },
+    "evals/career-quality-v6/runs/regression-v6/comparison.json": {
+      "sha256": "83714c1cd68c5e042a5c047839f1bbe785fa93e407c568cb716b3a806ac3eb15",
+      "bytes": 14503
+    },
+    "evals/career-quality-v6/runs/regression-v6/execution.json": {
+      "sha256": "eaf7c510276d81163223569c6e48ec4031a531bbbc608dafcdc5606b2cc625a9",
+      "bytes": 617
+    },
+    "evals/career-quality-v6/runs/regression-v6/mapping.json": {
+      "sha256": "7f1fd06c8a4886795430fd629ce2f9e94620fa075b8ca8d15de96ecf4c88c3c3",
+      "bytes": 9983
+    },
+    "evals/career-quality-v6/runs/regression-v6/measurement.json": {
+      "sha256": "f704a33072bc775cdf4428977de2032e4f1b7e2541ba7500c4dad76526257b55",
+      "bytes": 90188
+    },
+    "evals/career-quality-v6/runs/regression-v6/packets.jsonl": {
+      "sha256": "09e4ba6ef19a043ed411ffbd4cdb8189ae0e776e0a09658f7d94665a722c8635",
+      "bytes": 107516
+    },
+    "evals/career-quality-v6/runs/regression-v6/predictions.jsonl": {
+      "sha256": "2a0d0046c10372f38c82fe1553f1a14c3f108c4cecf9d758e8faba2b75ea84e9",
+      "bytes": 58134
+    },
+    "evals/career-quality-v6/tests/test_new_cohort.py": {
+      "sha256": "d31c56e8d65d9aecb3328805e8954237373d83508644244e4f90553d855eba25",
+      "bytes": 6327
+    },
+    "evals/career-quality-v6/tests/test_pipeline.py": {
+      "sha256": "d57567af84cfb677dcfa14d3b29e8817569bb26cc410e8d06f61398199a8bb75",
+      "bytes": 13247
+    },
+    "evals/career-quality-v6/tests/test_v6_checker.py": {
+      "sha256": "8ee0e42d6ee0fdb8fa81b541270322dbf5253477597d825db25509ec6b0830d1",
+      "bytes": 14913
+    },
+    "evals/career-quality-v6/tests/test_v6_review_probes.py": {
+      "sha256": "3604664aa0451f5e31b6a943f10aa05cf7e8e9417f66efa306bf38211f45f5fa",
+      "bytes": 15782
+    },
+    "evals/career-quality-v6/v3_core.py": {
+      "sha256": "e4b2699f543e4260128ebfabd61547c92b5c1dba3497acd07ca2f7007f225e33",
+      "bytes": 29184
+    }
+  },
+  "frozen_runtime": {
+    "checker.py": {
+      "sha256": "000dd34de73f351e8713eacce1e81a4db774befc60c2dcc5d863b0923d985804",
+      "bytes": 47198
+    },
+    "v3_core.py": {
+      "sha256": "e4b2699f543e4260128ebfabd61547c92b5c1dba3497acd07ca2f7007f225e33",
+      "bytes": 29184
+    },
+    "grade_packets.py": {
+      "sha256": "d9818d216e4d1482ba9a7616327a6591c5dbe88cb222bf8305fefd9bb9ae5047",
+      "bytes": 2830
+    },
+    "measurement.py": {
+      "sha256": "f013707a43efd8a3588ade359b24b607b551c08876a6949512268d0eaf53eaa5",
+      "bytes": 8250
+    }
+  },
+  "frozen_v6": {
+    "sha256": "15ba489de271266bde85ea12fb70929b548b70e0ce785320c62054cf86338e57",
+    "bytes": 17256
+  },
+  "git_head": "4d87b90ef74c4f40b282e08b6d82fc6ad9f2749e"
+}

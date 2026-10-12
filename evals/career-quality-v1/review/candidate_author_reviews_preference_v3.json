@@ -1,0 +1,38 @@
+{
+  "schema": "maguire-quality-peer-review-v3",
+  "reviewer_model": "gpt-6-sol",
+  "reviewer_reasoning_effort": "high",
+  "human_review": false,
+  "review_scope": [
+    "PF-02"
+  ],
+  "actual_files_read": [
+    "preference-fit/PF-02/input.json",
+    "preference-fit/PF-02/gold.json",
+    "preference-fit/PF-02/answers.json",
+    "preference-fit/PF-02/annotations.json"
+  ],
+  "source_review_v2": {
+    "path": "review/candidate_author_reviews_preference_v2.json",
+    "sha256": "7f782fbc57ad25d03b2f62d4246c67cf0bd758121029059bf1175dadc0b035a3"
+  },
+  "root_repair_record": {
+    "path": "review/root_repairs_v1.json",
+    "sha256": "da510c77d67f398b4f6e8b338a67c10f638b0776d0ee8fd49fc045d1f9193cd5"
+  },
+  "pf02_file_sha256": {
+    "preference-fit/PF-02/input.json": "5064d994255d776cf6cc749b8c248451e2138ba636dd11755d19fb6047a9d048",
+    "preference-fit/PF-02/gold.json": "3e67209f04ca33093eb4a6a51e5119af58c1fe5dc59b46595cb66f66c3f5fc87",
+    "preference-fit/PF-02/answers.json": "b4c701d795db09d7142856bd5d481f453dbbb82338ed3869d9c2c943c6c8ddbe",
+    "preference-fit/PF-02/annotations.json": "e136134a5777f21ad9be7706a4cb7bde05153433b2dc14446161ac582f73144b"
+  },
+  "v2_new_blocker": {
+    "status": "resolved",
+    "case_id": "PF-02",
+    "answer_id": "answer_02",
+    "issue": "The jd_terms-only citation did not establish written decisions before weekly planning.",
+    "resolution_evidence": "jd_terms now states that weekly planning decisions are documented in writing before the weekly planning call. pref_async requests decisions in writing before that meeting; answer_02 cites jd_terms, and its quote is a literal substring of the revised source. The gold jd_terms-only evidence set is now semantically sufficient for this preference."
+  },
+  "new_blockers": [],
+  "review_limit": "This is an offline same-environment agent recheck of PF-02 only; it does not establish human-approved gold or a live model result."
+}

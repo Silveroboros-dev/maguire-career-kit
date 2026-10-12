@@ -1,0 +1,519 @@
+{
+  "schema": "maguire-v3-new-annotation-review-v1",
+  "status": "needs_changes",
+  "reviewer": "agent:/root/new_case_review",
+  "human_approved": false,
+  "files": {
+    "raw/candidate-fit.json": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+    "raw/preference-fit.json": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+    "normalized/candidate-fit.json": "a37d67633202d92320a54b7e6a403b2353dd68528d98b19be9862e264e36870a",
+    "normalized/preference-fit.json": "e3773a631377d227dfeb0733b64b06e6101ed2924a56bf99234197e34ffe8e37",
+    "gold/candidate-fit.json": "2d7516bc6d182726460dcf4ac86b02be5a4985839c23b46d2016a89371152802",
+    "gold/preference-fit.json": "05e7cdf2ab5af57f610dcaa404a2c615e51d64ca584d5aaf59b9c69d667d7963"
+  },
+  "raw_judgments_sha256": "01cc4eab44a1f2568ba0acd41f590b47bd138f33bc89f64e7e8aa7b47faf6339",
+  "cases": [
+    {
+      "case_id": "CF3N-01",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "c1"
+      ],
+      "raw_verdict": "pass",
+      "gold_verdict": "pass",
+      "notes": "No material annotation issue found."
+    },
+    {
+      "case_id": "CF3N-02",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "raw_verdict": "pass",
+      "gold_verdict": "pass",
+      "notes": "No material annotation issue found."
+    },
+    {
+      "case_id": "CF3N-03",
+      "source_inventory_complete": false,
+      "fragment_complete": false,
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "raw_verdict": "pass",
+      "gold_verdict": "pass",
+      "notes": "Source and claim facts omit alert triage, and no claim represents the answer’s directly-relevant fit assessment."
+    },
+    {
+      "case_id": "CF3N-04",
+      "source_inventory_complete": true,
+      "fragment_complete": false,
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "raw_verdict": "pass",
+      "gold_verdict": "pass",
+      "notes": "The stated 31-of-43 subset relation is not represented as a claim; the two counts alone do not capture the explicit relationship."
+    },
+    {
+      "case_id": "CF3N-05",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "raw_verdict": "pass",
+      "gold_verdict": "pass",
+      "notes": "No material annotation issue found."
+    },
+    {
+      "case_id": "CF3N-06",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "raw_verdict": "pass",
+      "gold_verdict": "pass",
+      "notes": "No material annotation issue found."
+    },
+    {
+      "case_id": "CF3N-07",
+      "source_inventory_complete": false,
+      "fragment_complete": false,
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "raw_verdict": "pass",
+      "gold_verdict": "pass",
+      "notes": "Source says the chair alone signed final decisions; the normalization only negates candidate signatory authority. Claim c2 says decisions sat with the chair but is encoded as candidate non-authority, losing its subject."
+    },
+    {
+      "case_id": "CF3N-08",
+      "source_inventory_complete": false,
+      "fragment_complete": false,
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "raw_verdict": "pass",
+      "gold_verdict": "pass",
+      "notes": "Source explicitly says current travel availability is unknown; that boundary and the answer’s recommendation to confirm future availability are absent from normalized facts/claims."
+    },
+    {
+      "case_id": "CF3N-09",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "c1"
+      ],
+      "raw_verdict": "pass",
+      "gold_verdict": "pass",
+      "notes": "No material annotation issue found."
+    },
+    {
+      "case_id": "CF3N-10",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "raw_verdict": "pass",
+      "gold_verdict": "pass",
+      "notes": "No material annotation issue found."
+    },
+    {
+      "case_id": "CF3N-11",
+      "source_inventory_complete": true,
+      "fragment_complete": false,
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "raw_verdict": "pass",
+      "gold_verdict": "pass",
+      "notes": "The signed log is present only as observation modality; the answer’s explicit sufficiency judgment (“signed log is enough to support”) is not a claim."
+    },
+    {
+      "case_id": "CF3N-12",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "raw_verdict": "pass",
+      "gold_verdict": "pass",
+      "notes": "No material annotation issue found."
+    },
+    {
+      "case_id": "CF3N-13",
+      "source_inventory_complete": false,
+      "fragment_complete": true,
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "raw_verdict": "fail",
+      "gold_verdict": "fail",
+      "notes": "No trainer assessment is stated, but source normalization asserts no trainer certificate. That absence is not established. Gold fail is sound as unsupported; gold rationale incorrectly calls certification explicitly denied."
+    },
+    {
+      "case_id": "CF3N-14",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "raw_verdict": "fail",
+      "gold_verdict": "fail",
+      "notes": "No material annotation issue found."
+    },
+    {
+      "case_id": "CF3N-15",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "raw_verdict": "fail",
+      "gold_verdict": "fail",
+      "notes": "No material annotation issue found."
+    },
+    {
+      "case_id": "CF3N-16",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "raw_verdict": "fail",
+      "gold_verdict": "fail",
+      "notes": "No material annotation issue found."
+    },
+    {
+      "case_id": "CF3N-17",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "raw_verdict": "fail",
+      "gold_verdict": "fail",
+      "notes": "No material annotation issue found."
+    },
+    {
+      "case_id": "CF3N-18",
+      "source_inventory_complete": false,
+      "fragment_complete": true,
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "raw_verdict": "fail",
+      "gold_verdict": "fail",
+      "notes": "Source says the candidate also lacks a captioning service; this separate limit is absent from source facts. The negative caption ability still supports the fail."
+    },
+    {
+      "case_id": "CF3N-19",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "c1"
+      ],
+      "raw_verdict": "needs_review",
+      "gold_verdict": "needs_review",
+      "notes": "No material annotation issue found."
+    },
+    {
+      "case_id": "CF3N-20",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "c1"
+      ],
+      "raw_verdict": "needs_review",
+      "gold_verdict": "needs_review",
+      "notes": "No material annotation issue found."
+    },
+    {
+      "case_id": "PF3N-01",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "A",
+        "B"
+      ],
+      "raw_verdict": "pass",
+      "gold_verdict": "pass",
+      "notes": "No material annotation issue found."
+    },
+    {
+      "case_id": "PF3N-02",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "A",
+        "B"
+      ],
+      "raw_verdict": "pass",
+      "gold_verdict": "pass",
+      "notes": "No material annotation issue found."
+    },
+    {
+      "case_id": "PF3N-03",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "A",
+        "B"
+      ],
+      "raw_verdict": "pass",
+      "gold_verdict": "pass",
+      "notes": "No material annotation issue found."
+    },
+    {
+      "case_id": "PF3N-04",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "A",
+        "B"
+      ],
+      "raw_verdict": "pass",
+      "gold_verdict": "pass",
+      "notes": "No material annotation issue found."
+    },
+    {
+      "case_id": "PF3N-05",
+      "source_inventory_complete": true,
+      "fragment_complete": false,
+      "claim_ids": [
+        "A",
+        "B"
+      ],
+      "raw_verdict": "pass",
+      "gold_verdict": "pass",
+      "notes": "Claim A includes “replacement rule” but only normalizes the new attendance frequency; it omits the asserted supersession relation."
+    },
+    {
+      "case_id": "PF3N-06",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "A",
+        "B"
+      ],
+      "raw_verdict": "pass",
+      "gold_verdict": "pass",
+      "notes": "No material annotation issue found."
+    },
+    {
+      "case_id": "PF3N-07",
+      "source_inventory_complete": false,
+      "fragment_complete": true,
+      "claim_ids": [
+        "A",
+        "B"
+      ],
+      "raw_verdict": "pass",
+      "gold_verdict": "pass",
+      "notes": "Source says the employer plans an allowance as well as leaving its amount undecided; planned status is absent. This does not alter the correct unresolved judgment."
+    },
+    {
+      "case_id": "PF3N-08",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "A",
+        "B"
+      ],
+      "raw_verdict": "pass",
+      "gold_verdict": "pass",
+      "notes": "No material annotation issue found."
+    },
+    {
+      "case_id": "PF3N-09",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "A",
+        "B"
+      ],
+      "raw_verdict": "pass",
+      "gold_verdict": "pass",
+      "notes": "No material annotation issue found."
+    },
+    {
+      "case_id": "PF3N-10",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "A",
+        "B",
+        "C"
+      ],
+      "raw_verdict": "pass",
+      "gold_verdict": "pass",
+      "notes": "No material annotation issue found."
+    },
+    {
+      "case_id": "PF3N-11",
+      "source_inventory_complete": false,
+      "fragment_complete": true,
+      "claim_ids": [
+        "A",
+        "B"
+      ],
+      "raw_verdict": "pass",
+      "gold_verdict": "pass",
+      "notes": "“May request up to four” does not specify a zero lower bound; J11 encodes lower=0 despite schema rule that unspecified values are not zero."
+    },
+    {
+      "case_id": "PF3N-12",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "A"
+      ],
+      "raw_verdict": "pass",
+      "gold_verdict": "pass",
+      "notes": "No material annotation issue found."
+    },
+    {
+      "case_id": "PF3N-13",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "A",
+        "B"
+      ],
+      "raw_verdict": "fail",
+      "gold_verdict": "fail",
+      "notes": "No material annotation issue found."
+    },
+    {
+      "case_id": "PF3N-14",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "A",
+        "B"
+      ],
+      "raw_verdict": "fail",
+      "gold_verdict": "fail",
+      "notes": "No material annotation issue found."
+    },
+    {
+      "case_id": "PF3N-15",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "A",
+        "B"
+      ],
+      "raw_verdict": "fail",
+      "gold_verdict": "fail",
+      "notes": "No material annotation issue found."
+    },
+    {
+      "case_id": "PF3N-16",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "A",
+        "B"
+      ],
+      "raw_verdict": "fail",
+      "gold_verdict": "fail",
+      "notes": "No material annotation issue found."
+    },
+    {
+      "case_id": "PF3N-17",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "A",
+        "B"
+      ],
+      "raw_verdict": "fail",
+      "gold_verdict": "fail",
+      "notes": "No material annotation issue found."
+    },
+    {
+      "case_id": "PF3N-18",
+      "source_inventory_complete": false,
+      "fragment_complete": true,
+      "claim_ids": [
+        "A",
+        "B"
+      ],
+      "raw_verdict": "fail",
+      "gold_verdict": "fail",
+      "notes": "The $1,200 allowance is encoded as a 0–1,200 amount though the source states the annual allowance as $1,200; no zero floor is stated. Preserve the $1,200 cap and expense exclusion without inventing a lower bound."
+    },
+    {
+      "case_id": "PF3N-19",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "A"
+      ],
+      "raw_verdict": "needs_review",
+      "gold_verdict": "needs_review",
+      "notes": "No material annotation issue found."
+    },
+    {
+      "case_id": "PF3N-20",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "A"
+      ],
+      "raw_verdict": "needs_review",
+      "gold_verdict": "needs_review",
+      "notes": "No material annotation issue found."
+    }
+  ],
+  "counts": {
+    "reviewed": 40,
+    "raw_verdicts": {
+      "pass": 24,
+      "fail": 12,
+      "needs_review": 4
+    },
+    "gold_verdicts": {
+      "pass": 24,
+      "fail": 12,
+      "needs_review": 4
+    },
+    "cases_with_annotation_issues": 11,
+    "verdict_disagreements": 0
+  },
+  "disagreements": [
+    {
+      "case_id": "CF3N-13",
+      "kind": "gold_rationale",
+      "note": "Gold calls certification explicitly denied; the source only says the assessment was not taken. The certificate claim is unsupported, so the fail verdict remains."
+    }
+  ],
+  "exposure": {
+    "raw_judgments_saved_before_opening_normalized_or_gold": true,
+    "normalized_and_gold_seen": true,
+    "checker_code_or_predictions_seen": false,
+    "separation": "Agent review in shared filesystem; procedural access boundary and self-attestation only, not enforced isolation, human approval, or an externally held-out benchmark."
+  }
+}

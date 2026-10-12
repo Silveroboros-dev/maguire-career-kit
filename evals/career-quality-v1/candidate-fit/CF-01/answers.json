@@ -1,0 +1,181 @@
+{
+  "schema": "maguire-quality-answers-v1",
+  "case_id": "CF-01",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "assessments": [
+        {
+          "target_id": "jd_1",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "The analyst writes SQL queries to reconcile weekly inventory totals."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "I wrote SQL queries for a fictional warehouse exercise and reconciled weekly inventory totals by SKU."
+            }
+          ],
+          "rationale": "The candidate reports writing SQL for weekly SKU reconciliation in an exercise; that is relevant experience, with self-report limits."
+        },
+        {
+          "target_id": "jd_2",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "The analyst presents a concise weekly exception report to operations leads."
+            },
+            {
+              "source_id": "fact_2",
+              "quote": "A supplied report excerpt shows a weekly exception table and a slide presented to operations leads."
+            }
+          ],
+          "rationale": "The supplied excerpt shows a weekly exception table and slide presented to operations leads."
+        }
+      ],
+      "conclusion": {
+        "action": "pursue",
+        "text": "Both stated duties have relevant evidence in the supplied snapshot.",
+        "next_step": "Use the existing report excerpt and describe the SQL exercise accurately in the application."
+      },
+      "limitations": [
+        "The SQL work is self-reported and exercise-based.",
+        "The report excerpt is supplied, not independently authenticated."
+      ]
+    },
+    {
+      "answer_id": "answer_02",
+      "assessments": [
+        {
+          "target_id": "jd_2",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "The analyst presents a concise weekly exception report to operations leads."
+            },
+            {
+              "source_id": "fact_2",
+              "quote": "A supplied report excerpt shows a weekly exception table and a slide presented to operations leads."
+            }
+          ],
+          "rationale": "The supplied excerpt shows the report and presentation."
+        },
+        {
+          "target_id": "jd_1",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "The analyst writes SQL queries to reconcile weekly inventory totals."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "I wrote SQL queries for a fictional warehouse exercise and reconciled weekly inventory totals by SKU."
+            }
+          ],
+          "rationale": "The candidate describes SQL reconciliation in an exercise, so the scope must stay explicit."
+        }
+      ],
+      "conclusion": {
+        "action": "show_existing_evidence",
+        "text": "The supplied reporting artifact can substantiate one duty now; the SQL example can be described with its exercise context.",
+        "next_step": "Attach the existing report excerpt to the review packet."
+      },
+      "limitations": [
+        "No independent employment verification is supplied."
+      ]
+    },
+    {
+      "answer_id": "answer_03",
+      "assessments": [
+        {
+          "target_id": "jd_1",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "The analyst writes SQL queries to reconcile weekly inventory totals."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "I wrote SQL queries for a fictional warehouse exercise and reconciled weekly inventory totals by SKU."
+            }
+          ],
+          "rationale": "The SQL reconciliation was independently verified as production work."
+        },
+        {
+          "target_id": "jd_2",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "The analyst presents a concise weekly exception report to operations leads."
+            },
+            {
+              "source_id": "fact_2",
+              "quote": "A supplied report excerpt shows a weekly exception table and a slide presented to operations leads."
+            }
+          ],
+          "rationale": "The supplied excerpt shows a weekly exception table and slide presented to operations leads."
+        }
+      ],
+      "conclusion": {
+        "action": "pursue",
+        "text": "Both stated duties have relevant evidence in the supplied snapshot.",
+        "next_step": "Use the existing report excerpt and describe the SQL exercise accurately in the application."
+      },
+      "limitations": [
+        "The SQL work is self-reported and exercise-based.",
+        "The report excerpt is supplied, not independently authenticated."
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "assessments": [
+        {
+          "target_id": "jd_1",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "The analyst writes SQL queries to reconcile weekly inventory totals."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "I wrote SQL queries for a fictional warehouse exercise and reconciled weekly inventory totals by SKU."
+            }
+          ],
+          "rationale": "The candidate reports writing SQL for weekly SKU reconciliation in an exercise; that is relevant experience, with self-report limits."
+        },
+        {
+          "target_id": "jd_2",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "The analyst presents a concise weekly exception report to operations leads."
+            },
+            {
+              "source_id": "fact_2",
+              "quote": "A supplied report excerpt shows a weekly exception table and a slide presented to operations leads."
+            }
+          ],
+          "rationale": "The supplied excerpt shows a weekly exception table and slide presented to operations leads."
+        }
+      ],
+      "conclusion": {
+        "action": "pursue",
+        "text": "Both duties are covered and the weekly report reduced stockouts by 30%.",
+        "next_step": "Use the existing report excerpt and describe the SQL exercise accurately in the application."
+      },
+      "limitations": [
+        "The SQL work is self-reported and exercise-based.",
+        "The report excerpt is supplied, not independently authenticated."
+      ]
+    }
+  ]
+}

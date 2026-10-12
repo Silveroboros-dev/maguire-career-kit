@@ -1,0 +1,75 @@
+{
+  "schema": "maguire-quality-gold-v1",
+  "case_id": "CF-07",
+  "family": "team versus individual contribution",
+  "title": "Team launch and personal scope",
+  "review_status": "proposed_agent_authored",
+  "human_approved": false,
+  "units": [
+    {
+      "target_id": "jd_1",
+      "kind": "compound_duty",
+      "allowed_labels": [
+        "partial"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_1",
+          "fact_1"
+        ]
+      ],
+      "rationale": "The candidate owned the field-mapping checklist, an explicit component of this compound planning duty, while another lead owned the overall rollout plan.",
+      "required_points": [
+        "Candidate owned the field-mapping checklist",
+        "Another lead owned overall rollout planning"
+      ],
+      "forbidden_inferences": [
+        "Do not attribute overall rollout-plan leadership or the team launch to the candidate"
+      ]
+    },
+    {
+      "target_id": "jd_2",
+      "kind": "duty",
+      "allowed_labels": [
+        "supported"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_2",
+          "fact_2"
+        ]
+      ],
+      "rationale": "The supplied checklist covers release data quality checks.",
+      "required_points": [
+        "Null-rate and duplicate-key checks are documented"
+      ],
+      "forbidden_inferences": [
+        "Do not infer all releases used the checklist"
+      ]
+    }
+  ],
+  "forbidden_assessment_targets": [],
+  "acceptable_actions": [
+    "clarify",
+    "pursue"
+  ],
+  "critical_errors": [
+    {
+      "id": "CF-07-E1",
+      "description": "The source explicitly assigns plan ownership to another lead.",
+      "target_ids": [
+        "jd_1"
+      ]
+    },
+    {
+      "id": "CF-07-E2",
+      "description": "The candidate owned the field-mapping checklist.",
+      "target_ids": [
+        "jd_1"
+      ]
+    }
+  ],
+  "notes": [
+    "The compound planning duty makes the personally owned field-mapping checklist a supported subset; the team launch does not establish overall leadership."
+  ]
+}

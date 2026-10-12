@@ -1,0 +1,91 @@
+{
+  "schema": "maguire-quality-gold-v1",
+  "case_id": "PF-08",
+  "family": "hard_vs_soft_benefits",
+  "title": "Soft benefits cannot compensate for required office attendance",
+  "review_status": "proposed_agent_authored",
+  "human_approved": false,
+  "units": [
+    {
+      "target_id": "pref_remote",
+      "kind": "work_arrangement",
+      "allowed_labels": [
+        "conflict"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_office"
+        ]
+      ],
+      "rationale": "Four on-site days violate the zero-office must-have.",
+      "required_points": [
+        "Four mandatory office days exceed zero."
+      ],
+      "forbidden_inferences": [
+        "Do not offset the hard conflict with salary or benefits."
+      ]
+    },
+    {
+      "target_id": "pref_learning",
+      "kind": "benefit",
+      "allowed_labels": [
+        "aligned"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_benefits"
+        ]
+      ],
+      "rationale": "The stated allowance satisfies the soft learning preference.",
+      "required_points": [
+        "Annual learning allowance is included."
+      ],
+      "forbidden_inferences": [
+        "Do not infer its amount."
+      ]
+    },
+    {
+      "target_id": "pref_salary",
+      "kind": "compensation",
+      "allowed_labels": [
+        "aligned"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_salary"
+        ]
+      ],
+      "rationale": "The base range begins above the soft CHF 170,000 target.",
+      "required_points": [
+        "The published lower bound is CHF 175,000."
+      ],
+      "forbidden_inferences": [
+        "Do not promise the final offer."
+      ]
+    }
+  ],
+  "forbidden_assessment_targets": [],
+  "acceptable_actions": [
+    "clarify",
+    "pass"
+  ],
+  "critical_errors": [
+    {
+      "id": "PF-08-interpretation",
+      "description": "Misreads Soft benefits cannot compensate for required office attendance: the remote preference or its cited role term.",
+      "target_ids": [
+        "pref_remote"
+      ]
+    },
+    {
+      "id": "PF-08-action",
+      "description": "For Soft benefits cannot compensate for required office attendance, takes a next step inconsistent with the supported remote result.",
+      "target_ids": [
+        "pref_remote"
+      ]
+    }
+  ],
+  "notes": [
+    "This isolates priority handling: two soft matches do not cancel one hard conflict."
+  ]
+}

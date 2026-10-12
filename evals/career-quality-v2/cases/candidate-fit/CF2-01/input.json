@@ -1,0 +1,48 @@
+{
+  "schema": "maguire-quality-input-v1",
+  "case_id": "CF2-01",
+  "grader": "candidate_fit",
+  "data_class": "synthetic",
+  "decision_at": "2026-10-11T12:00:00Z",
+  "task": "Assess the supplied role and candidate snapshot, cite sources, explain uncertainty, and recommend a next action.",
+  "jd": {
+    "title": "Library Delivery Planner",
+    "sources": [
+      {
+        "id": "jd_1",
+        "text": "Plan daily book-transfer routes between library branches.",
+        "observed_at": "2026-09-01T12:00:00Z",
+        "authority": "job_description",
+        "supersedes": []
+      },
+      {
+        "id": "jd_2",
+        "text": "Explain route changes to branch coordinators each Friday.",
+        "observed_at": "2026-09-01T12:00:00Z",
+        "authority": "job_description",
+        "supersedes": []
+      }
+    ]
+  },
+  "candidate": {
+    "facts": [
+      {
+        "id": "fact_1",
+        "text": "I built a route sheet for a four-branch library trial and logged 18 fewer driving kilometres in one trial week.",
+        "evidence_type": "supplied_artifact_excerpt",
+        "observed_at": "2026-08-01T12:00:00Z",
+        "status": "active",
+        "supersedes": []
+      },
+      {
+        "id": "fact_2",
+        "text": "I presented the revised route sheet to four branch coordinators on a Friday call.",
+        "evidence_type": "self_report",
+        "observed_at": "2026-08-01T12:00:00Z",
+        "status": "active",
+        "supersedes": []
+      }
+    ],
+    "preferences": []
+  }
+}

@@ -1,0 +1,218 @@
+{
+  "answers": 52,
+  "cases": 13,
+  "created_at": "2026-10-12T13:51:05.753028+00:00",
+  "external_seal": false,
+  "files": {
+    "candidate-fit/CF2-01/annotations.json": {
+      "bytes": 2140,
+      "sha256": "4b9dc0ab0154a0332b9bdc8f392f76e4321453112d26295aa1d3fa92fd3abbd6"
+    },
+    "candidate-fit/CF2-01/answers.json": {
+      "bytes": 6756,
+      "sha256": "2b22aec3d3a3fd8bf3c4c60ccc114b1f0eed6378d84e37261bf6f6d407f37c1b"
+    },
+    "candidate-fit/CF2-01/gold.json": {
+      "bytes": 1931,
+      "sha256": "bd2fbdf9ed802ef029fc3d0551595b45748a50158284a44e1cdc1119a14b5143"
+    },
+    "candidate-fit/CF2-01/input.json": {
+      "bytes": 1498,
+      "sha256": "35077caac489ee83a76a6ff6864334572af8350c18875c4fc993553cef657cb9"
+    },
+    "candidate-fit/CF2-02/annotations.json": {
+      "bytes": 2276,
+      "sha256": "b1dbce66fd9b5728737094206e1177365cd5b2454c156ac31b7ccbd594287201"
+    },
+    "candidate-fit/CF2-02/answers.json": {
+      "bytes": 6372,
+      "sha256": "d7e2acbe7be02f84313b8324e6329a07da1825f809be4654982bba8c9653827d"
+    },
+    "candidate-fit/CF2-02/gold.json": {
+      "bytes": 1844,
+      "sha256": "dc0b1563e368704ac383bdfd7ae64e6163b6af783f7430c0307b4797533b513a"
+    },
+    "candidate-fit/CF2-02/input.json": {
+      "bytes": 1258,
+      "sha256": "66cc7531b386edd6aa11e19ef6786b3d356a8e56770e7ff84eda0b747c9830fa"
+    },
+    "candidate-fit/CF2-03/annotations.json": {
+      "bytes": 2144,
+      "sha256": "3ca965d32a2e080776bb41205f144417b06dbde8e8f9da3d6e83854a865cf049"
+    },
+    "candidate-fit/CF2-03/answers.json": {
+      "bytes": 7036,
+      "sha256": "e29933cdbe061ba5ef359c9700519ea2547f15d1dce0dcfc840f3ab56d85f683"
+    },
+    "candidate-fit/CF2-03/gold.json": {
+      "bytes": 1895,
+      "sha256": "a199579707869d144e77e3cae1102c75437e88a5fc6ff954eeacffd5c66171d0"
+    },
+    "candidate-fit/CF2-03/input.json": {
+      "bytes": 1226,
+      "sha256": "6605067dd2483b7d2dead63855d9d0ad21ef998dfdad974cf601d2595098901a"
+    },
+    "candidate-fit/CF2-04/annotations.json": {
+      "bytes": 2075,
+      "sha256": "feead88d39eebaec391775e1666dcbf2c4c85280ad17b9d8a9115e8e736b8836"
+    },
+    "candidate-fit/CF2-04/answers.json": {
+      "bytes": 7079,
+      "sha256": "0e14022e530a588faf817edf016482a1aeef7c4dbc1a2f62dc4d48191a060386"
+    },
+    "candidate-fit/CF2-04/gold.json": {
+      "bytes": 1860,
+      "sha256": "163a440f8ccbe6c142dfaa60abf8ee49cf8278baef801689079fd7d2146bee79"
+    },
+    "candidate-fit/CF2-04/input.json": {
+      "bytes": 1237,
+      "sha256": "8e6cee235934ed348d62855e14167b36419e585caddb39df19486e7479abf5c6"
+    },
+    "candidate-fit/CF2-05/annotations.json": {
+      "bytes": 2213,
+      "sha256": "0822d34562d8f2716d901a5581d8b1d03a981880b786afdb7addd3cad536b360"
+    },
+    "candidate-fit/CF2-05/answers.json": {
+      "bytes": 7545,
+      "sha256": "d47d3d577cebcbc561dd0c451387567687bb0599e7817f2dacd86c57e7913b8e"
+    },
+    "candidate-fit/CF2-05/gold.json": {
+      "bytes": 1944,
+      "sha256": "50d4e465d2501cca2fbd29b84f73cb2f7b5604488d108b22e80744ea8a006ccc"
+    },
+    "candidate-fit/CF2-05/input.json": {
+      "bytes": 1614,
+      "sha256": "67d220a9fadde269054783d01d657ae716c1b4eb7379c7461e24adcd13df8dc8"
+    },
+    "preference-fit/PF2-01/annotations.json": {
+      "bytes": 2186,
+      "sha256": "51ac47718f4ed79149bf1d372487cbaa10f85fc5e4c2f790195ff2e89595974f"
+    },
+    "preference-fit/PF2-01/answers.json": {
+      "bytes": 4880,
+      "sha256": "ac8b5af32be8006c72443c157e38fb44335923647d54fdb1fabc54ece66bb4bf"
+    },
+    "preference-fit/PF2-01/gold.json": {
+      "bytes": 1413,
+      "sha256": "4f7d82c7f7ef510255568f037634843c67b1ce667a423ed179fa3cbbfaef4acf"
+    },
+    "preference-fit/PF2-01/input.json": {
+      "bytes": 1158,
+      "sha256": "f79de2d67b59f8d151dc2d50a57f74b304491df1b09a13a6dcdd1d2bf4e48174"
+    },
+    "preference-fit/PF2-02/annotations.json": {
+      "bytes": 2037,
+      "sha256": "50e79f1356ce016bd1c5f50b795716e673bc9c59b45c39e27cc88ccb3d868421"
+    },
+    "preference-fit/PF2-02/answers.json": {
+      "bytes": 4643,
+      "sha256": "f4b6b333bd5f86682bc81e655a02c0776ea6df922102e8baebbc85ffb1ee10c8"
+    },
+    "preference-fit/PF2-02/gold.json": {
+      "bytes": 1345,
+      "sha256": "a1533d20587f3b8856438800138c86459aae0c0d6032a40a71bed90bafa37aac"
+    },
+    "preference-fit/PF2-02/input.json": {
+      "bytes": 1004,
+      "sha256": "2993964d486d78d7e1078d326190507c3a4f9f91ea20ae78c78670022ea49dd9"
+    },
+    "preference-fit/PF2-03/annotations.json": {
+      "bytes": 2162,
+      "sha256": "4503112a1aebbb512feddc4d46376156d6517624e43372ee1669bce6b99f1756"
+    },
+    "preference-fit/PF2-03/answers.json": {
+      "bytes": 6126,
+      "sha256": "916f5b8d2fb4c48dbd9ec968be85915189fe4f8bae7b69c5461a62bebe99b295"
+    },
+    "preference-fit/PF2-03/gold.json": {
+      "bytes": 1740,
+      "sha256": "06af670cfdf515b0be2651e97137c46fb68fd2d085f9b2c7e4cb56cd05be3a00"
+    },
+    "preference-fit/PF2-03/input.json": {
+      "bytes": 1362,
+      "sha256": "c6061d8e7410dfd4956ceb958448186ade6946208d4238385e69d898d7e1b62d"
+    },
+    "preference-fit/PF2-04/annotations.json": {
+      "bytes": 2165,
+      "sha256": "31a07179f0584717e121b0dc4a2cb798793246ceb296d4e826fd1b9f245c1beb"
+    },
+    "preference-fit/PF2-04/answers.json": {
+      "bytes": 4431,
+      "sha256": "de32687d3a359894679658cb2e496b56d5ae0eb18a1780bb2e200beb18708032"
+    },
+    "preference-fit/PF2-04/gold.json": {
+      "bytes": 1393,
+      "sha256": "3185759ac071a9ca7c4ce0c3360ea834c6d1409f03b70fe0a8e8e09be008c627"
+    },
+    "preference-fit/PF2-04/input.json": {
+      "bytes": 1010,
+      "sha256": "8def118af07730b2e9faee94b908f04076f0ed7c40a96eaad4295ae012490b70"
+    },
+    "preference-fit/PF2-05/annotations.json": {
+      "bytes": 2015,
+      "sha256": "d9d55f3f9be83805ceded09bebe0777da31586277b467b2080043cedaa92c286"
+    },
+    "preference-fit/PF2-05/answers.json": {
+      "bytes": 4173,
+      "sha256": "33e055693fd75aec6cce6e0e9220594c6f40988c1095920f9d2004943e13ea02"
+    },
+    "preference-fit/PF2-05/gold.json": {
+      "bytes": 1261,
+      "sha256": "8203f19354fcaf44495b5a9b05644e41c2befb61674c02f64bbfaf509db2fc2c"
+    },
+    "preference-fit/PF2-05/input.json": {
+      "bytes": 929,
+      "sha256": "210cea6448d197cb02f33a1367b0d9dc8bfa5bfe899e32c31e3681476d178b19"
+    },
+    "preference-fit/PF2-06/annotations.json": {
+      "bytes": 2306,
+      "sha256": "0f470c7fdcce302382621cc1dac59de6a0ef4575fbf11a60881cccbb8f583468"
+    },
+    "preference-fit/PF2-06/answers.json": {
+      "bytes": 5794,
+      "sha256": "cc7e6c7a71e898fe072d1dacb4eaa923200d54b75d77c7dbeec9576cafcf56f5"
+    },
+    "preference-fit/PF2-06/gold.json": {
+      "bytes": 1501,
+      "sha256": "4f8e8b0bb83d136fe3e21b50f592331f29e625699e46fd82b6d38e4072634b6b"
+    },
+    "preference-fit/PF2-06/input.json": {
+      "bytes": 1384,
+      "sha256": "198f566cda3a6736287050b5a0401f4d5bd5c8d4d6b2fac126baac4e0503c35c"
+    },
+    "preference-fit/PF2-07/annotations.json": {
+      "bytes": 2192,
+      "sha256": "0dc76df5cfaa425f3f07b5d32c932075ee87e42e920c66d971d6b78057e8826e"
+    },
+    "preference-fit/PF2-07/answers.json": {
+      "bytes": 5167,
+      "sha256": "d3b05753d80ba5fc021eeccd7b7c6f3ce1799b2102af4ddc95ef1863cddb5377"
+    },
+    "preference-fit/PF2-07/gold.json": {
+      "bytes": 1425,
+      "sha256": "f4d32f3088f6159e87f7d11c2d344eb0340437d03ac54ec985df54f2f3658250"
+    },
+    "preference-fit/PF2-07/input.json": {
+      "bytes": 1199,
+      "sha256": "2abded680837b627e8b877c9a056b7290c3919a7a09ac295df3523393fa101cf"
+    },
+    "preference-fit/PF2-08/annotations.json": {
+      "bytes": 2081,
+      "sha256": "3731afcee2a2d901e6db2ac3907922ace1430175a093469cd509639d6d926638"
+    },
+    "preference-fit/PF2-08/answers.json": {
+      "bytes": 4334,
+      "sha256": "1692f412e9b4d0ee07faa690062da70b0e3f8d4420f3ebcc1cb9eb1708284766"
+    },
+    "preference-fit/PF2-08/gold.json": {
+      "bytes": 1282,
+      "sha256": "2142b045baf117eb750cb4f72d6a56f3b4f2936c47e961e29d94cb1f63653ba6"
+    },
+    "preference-fit/PF2-08/input.json": {
+      "bytes": 931,
+      "sha256": "856ca35ea7aefe50bce7c616b1f7a42abf2af76d059a959938131335e3c74995"
+    }
+  },
+  "human_approved": false,
+  "schema": "maguire-prose-challenge-inventory-v2"
+}

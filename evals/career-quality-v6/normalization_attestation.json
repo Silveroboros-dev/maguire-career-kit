@@ -1,0 +1,26 @@
+{
+  "schema": "maguire-v6-normalization-attestation-v1",
+  "human_approved": false,
+  "v5_results_seen": true,
+  "v6_predictions_seen": false,
+  "case_count": 40,
+  "claim_count": 61,
+  "files": {
+    "normalized/candidate-fit.json": {
+      "sha256": "5ff8dea2ea5c5e2d2040329e5c2366d1f9bcf334d27688cde905dd9bec6ff460",
+      "bytes": 60806
+    },
+    "normalized/preference-fit.json": {
+      "sha256": "dd7d54a3620e93c051e5f0d20c1f340fd85b19f2d2f4556c540686a02cf771ed",
+      "bytes": 54254
+    },
+    "SCHEMA.md": {
+      "sha256": "7ecc066c338f473bed3b458c07e0743607a5758f10aa892318b6cd4c87de7e34",
+      "bytes": 6740
+    },
+    "NORMALIZATION_CHANGES.md": {
+      "sha256": "afd35ee9127331b66768ee7008bb5321d922f0540bcaf0c5125a07d5aa3a370a",
+      "bytes": 7870
+    }
+  }
+}

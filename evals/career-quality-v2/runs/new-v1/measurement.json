@@ -1,0 +1,1406 @@
+{
+  "assurance": "Bounded deterministic checks against proposed development labels, not general semantic accuracy.",
+  "by_criterion": {
+    "CF-EVIDENCE": {
+      "answers_accepted": 3,
+      "answers_rejected": 0,
+      "exact_matches": 0,
+      "intended": 3,
+      "invalid": 0
+    },
+    "CF-LABEL": {
+      "answers_accepted": 2,
+      "answers_rejected": 0,
+      "exact_matches": 0,
+      "intended": 2,
+      "invalid": 0
+    },
+    "CF-SCOPE": {
+      "answers_accepted": 2,
+      "answers_rejected": 0,
+      "exact_matches": 0,
+      "intended": 2,
+      "invalid": 0
+    },
+    "CF-UNCERTAINTY": {
+      "answers_accepted": 3,
+      "answers_rejected": 0,
+      "exact_matches": 0,
+      "intended": 3,
+      "invalid": 0
+    },
+    "PF-EVIDENCE": {
+      "answers_accepted": 4,
+      "answers_rejected": 0,
+      "exact_matches": 0,
+      "intended": 4,
+      "invalid": 0
+    },
+    "PF-INTERPRETATION": {
+      "answers_accepted": 5,
+      "answers_rejected": 0,
+      "exact_matches": 0,
+      "intended": 5,
+      "invalid": 0
+    },
+    "PF-PRIORITY": {
+      "answers_accepted": 2,
+      "answers_rejected": 0,
+      "exact_matches": 0,
+      "intended": 2,
+      "invalid": 0
+    },
+    "PF-UNKNOWN": {
+      "answers_accepted": 5,
+      "answers_rejected": 0,
+      "exact_matches": 0,
+      "intended": 5,
+      "invalid": 0
+    }
+  },
+  "groups": {
+    "all": {
+      "accepted_correct": 26,
+      "answers": 52,
+      "caught_error": 0,
+      "evaluated_correct": 26,
+      "evaluated_incorrect": 26,
+      "exact_criterion_target_matches": 0,
+      "execution_errors": 0,
+      "expected_correct": 26,
+      "expected_incorrect": 26,
+      "false_acceptance": 26,
+      "false_acceptance_rate_attempted": 1.0,
+      "false_acceptance_rate_evaluated": 1.0,
+      "false_rejection": 0,
+      "false_rejection_rate_attempted": 0.0,
+      "false_rejection_rate_evaluated": 0.0,
+      "intended_findings": 26,
+      "invalid": 0,
+      "invalid_correct": 0,
+      "invalid_incorrect": 0
+    },
+    "candidate_fit": {
+      "accepted_correct": 10,
+      "answers": 20,
+      "caught_error": 0,
+      "evaluated_correct": 10,
+      "evaluated_incorrect": 10,
+      "exact_criterion_target_matches": 0,
+      "execution_errors": 0,
+      "expected_correct": 10,
+      "expected_incorrect": 10,
+      "false_acceptance": 10,
+      "false_acceptance_rate_attempted": 1.0,
+      "false_acceptance_rate_evaluated": 1.0,
+      "false_rejection": 0,
+      "false_rejection_rate_attempted": 0.0,
+      "false_rejection_rate_evaluated": 0.0,
+      "intended_findings": 10,
+      "invalid": 0,
+      "invalid_correct": 0,
+      "invalid_incorrect": 0
+    },
+    "preference_fit": {
+      "accepted_correct": 16,
+      "answers": 32,
+      "caught_error": 0,
+      "evaluated_correct": 16,
+      "evaluated_incorrect": 16,
+      "exact_criterion_target_matches": 0,
+      "execution_errors": 0,
+      "expected_correct": 16,
+      "expected_incorrect": 16,
+      "false_acceptance": 16,
+      "false_acceptance_rate_attempted": 1.0,
+      "false_acceptance_rate_evaluated": 1.0,
+      "false_rejection": 0,
+      "false_rejection_rate_attempted": 0.0,
+      "false_rejection_rate_evaluated": 0.0,
+      "intended_findings": 16,
+      "invalid": 0,
+      "invalid_correct": 0,
+      "invalid_incorrect": 0
+    }
+  },
+  "human_approved_gold": false,
+  "independent_holdout": false,
+  "localization_caveat": "Exact criterion+target equality is a mechanical localization proxy, not independent confirmation of explanation correctness.",
+  "rows": [
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The assessment keeps the stated evidence and its limits in scope.",
+      "answer_id": "answer_01",
+      "answer_sha256": "515d6dce03f7b236ae669c0c8224815e8d9018e20ba50c3f8ab926c01c6a1b6f",
+      "case_id": "CF2-01",
+      "case_path": "candidate-fit/CF2-01",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "candidate_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "67d8e6ee6b7dd56b3c278ac1860c9e8853c37a28c5dce6bd077237398f9c3389"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The independent acceptable conclusion preserves the same substantive constraints.",
+      "answer_id": "answer_02",
+      "answer_sha256": "9f9ca1bb7697d4f4f260325ac4da6d7fcbff49a43d06ce5ebe73b4c8983646aa",
+      "case_id": "CF2-01",
+      "case_path": "candidate-fit/CF2-01",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "candidate_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "1a916d2310c8c5d60f1ad4bcb02d8bc070105ec4f3940ea6c032424c0b2078f8"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "A one-week distance log does not support an annual fuel-bill percentage.",
+      "answer_id": "answer_03",
+      "answer_sha256": "8224d9420b9e01df3d6ed03ced56290a82119904734aa31d7af26d261d5bb96c",
+      "case_id": "CF2-01",
+      "case_path": "candidate-fit/CF2-01",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [],
+      "grader": "candidate_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "CF-EVIDENCE",
+          "exact_criterion_target_match": false,
+          "explanation": "A one-week distance log does not support an annual fuel-bill percentage.",
+          "severity": "major",
+          "target_id": "jd_1"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/conclusion/text",
+          "value": "The two duties have relevant examples, and the route change cut the library's annual fuel bill by 27%."
+        }
+      ],
+      "mutation_category": "invent quantified outcome",
+      "mutation_description": "A one-week distance log does not support an annual fuel-bill percentage.",
+      "outcome": "false_acceptance",
+      "packet_sha256": "cb1caa583d63f55fa228236f908bb090c3f3a12418a861eb7f12d8c582b334da"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "A single four-branch trial week cannot establish recurring network-wide savings.",
+      "answer_id": "answer_04",
+      "answer_sha256": "e67bcb60b931f12c6a7c42c1586e7045e8a908d09e2e9536c3f816ea6813609a",
+      "case_id": "CF2-01",
+      "case_path": "candidate-fit/CF2-01",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [],
+      "grader": "candidate_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "CF-UNCERTAINTY",
+          "exact_criterion_target_match": false,
+          "explanation": "A single four-branch trial week cannot establish recurring network-wide savings.",
+          "severity": "major",
+          "target_id": "jd_1"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/conclusion/next_step",
+          "value": "Tell the employer the trial proves 18 kilometres are saved every week across all branches."
+        }
+      ],
+      "mutation_category": "promote trial metric",
+      "mutation_description": "A single four-branch trial week cannot establish recurring network-wide savings.",
+      "outcome": "false_acceptance",
+      "packet_sha256": "048465e2037be0134228395cab97c926ee674ac7aeb64e84f062519c04a2b98f"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The assessment keeps the stated evidence and its limits in scope.",
+      "answer_id": "answer_01",
+      "answer_sha256": "dc277f7e54ddbb64ba7894945c8d442abb14572ca9bed3520025dadd1d0d42a5",
+      "case_id": "CF2-02",
+      "case_path": "candidate-fit/CF2-02",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "candidate_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "9579f033c020bccdc257c56b83aaa85a7a50a1d221ded0eb76e195ce6f5d9c6d"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The independent acceptable conclusion preserves the same substantive constraints.",
+      "answer_id": "answer_02",
+      "answer_sha256": "6056d1c3cc6ca0621a710816d8b8246a0d7bfa4df4724f884543e6a1a86c321f",
+      "case_id": "CF2-02",
+      "case_path": "candidate-fit/CF2-02",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "candidate_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "e4595be3666509b91b5c3daecf948e33ee731242b891916486881a7516893b53"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The conclusion contradicts the partial and unknown assessments and asserts unsupported permission work.",
+      "answer_id": "answer_03",
+      "answer_sha256": "c3fb748692dfea102e3802a4b3732b75ddad00d628f5cfb6a0c6d530b23ab436",
+      "case_id": "CF2-02",
+      "case_path": "candidate-fit/CF2-02",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [],
+      "grader": "candidate_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "CF-LABEL",
+          "exact_criterion_target_match": false,
+          "explanation": "The conclusion contradicts the partial and unknown assessments and asserts unsupported permission work.",
+          "severity": "major",
+          "target_id": "jd_2"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/conclusion/text",
+          "value": "Every material duty is already demonstrated, including collection-system migration and image permissions."
+        }
+      ],
+      "mutation_category": "flatten partial and unknown",
+      "mutation_description": "The conclusion contradicts the partial and unknown assessments and asserts unsupported permission work.",
+      "outcome": "false_acceptance",
+      "packet_sha256": "f62551ecb66b50aa9ad0ec82ea0e4283f62bfcc0a0464c64691249b26794bcde"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The advised claim treats incomplete migration evidence and unknown permissions as full proof.",
+      "answer_id": "answer_04",
+      "answer_sha256": "13f6f690ade3ae368ef458ffe2b270abb4e345a9a8e02a0cba4ade1fb7cb27bc",
+      "case_id": "CF2-02",
+      "case_path": "candidate-fit/CF2-02",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [],
+      "grader": "candidate_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "CF-UNCERTAINTY",
+          "exact_criterion_target_match": false,
+          "explanation": "The advised claim treats incomplete migration evidence and unknown permissions as full proof.",
+          "severity": "major",
+          "target_id": "jd_1"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/conclusion/next_step",
+          "value": "Present the candidate as ready to own the complete metadata-to-publication workflow without further evidence."
+        }
+      ],
+      "mutation_category": "aggregate proof overreach",
+      "mutation_description": "The advised claim treats incomplete migration evidence and unknown permissions as full proof.",
+      "outcome": "false_acceptance",
+      "packet_sha256": "a8bbd8399ed21280f787783eb082b08b57a2d25e435ee3935ee10a12fc902376"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The assessment keeps the stated evidence and its limits in scope.",
+      "answer_id": "answer_01",
+      "answer_sha256": "7b7ae441ac9a25d671b3586ac17a995e1113837249f562299705f14ce5fcf07f",
+      "case_id": "CF2-03",
+      "case_path": "candidate-fit/CF2-03",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "candidate_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "3e8656165e4b7c646691e0e39f7081976e9ee452ebc19389defa16f701d7b8f7"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The independent acceptable conclusion preserves the same substantive constraints.",
+      "answer_id": "answer_02",
+      "answer_sha256": "969f477b5f54a1dbfd2ec35a95959c6e1d9deaa6929916cf2e990e5099c32a18",
+      "case_id": "CF2-03",
+      "case_path": "candidate-fit/CF2-03",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "candidate_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "bf3a24225df3a302a6d109ff4d6dfd3127be708c82c5c6cc388ef918cdd3c04e"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "A failed past-use minimum does not establish inability to perform a future duty.",
+      "answer_id": "answer_03",
+      "answer_sha256": "a7c31dc8c02dae63e5ec9c1f45f59163ad5d3b807e31743c8481fecdb9edb53f",
+      "case_id": "CF2-03",
+      "case_path": "candidate-fit/CF2-03",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [],
+      "grader": "candidate_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "CF-LABEL",
+          "exact_criterion_target_match": false,
+          "explanation": "A failed past-use minimum does not establish inability to perform a future duty.",
+          "severity": "major",
+          "target_id": "jd_2"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/conclusion/text",
+          "value": "The recent-use minimum is unmet, which proves the candidate cannot monitor future satellite alerts."
+        }
+      ],
+      "mutation_category": "recency to permanent incapacity",
+      "mutation_description": "A failed past-use minimum does not establish inability to perform a future duty.",
+      "outcome": "false_acceptance",
+      "packet_sha256": "1c7bdf610e25bc184ee073abb31f3e05c766cc2cf465655ca138953fe3cf4338"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The old date supports a recency conflict, not a forecast of incapacity.",
+      "answer_id": "answer_04",
+      "answer_sha256": "bd3d53bc1ef6836f1561c1d89fce494d2204d6d3d8f6099a3d2a71d2abf1775e",
+      "case_id": "CF2-03",
+      "case_path": "candidate-fit/CF2-03",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [],
+      "grader": "candidate_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "CF-SCOPE",
+          "exact_criterion_target_match": false,
+          "explanation": "The old date supports a recency conflict, not a forecast of incapacity.",
+          "severity": "major",
+          "target_id": "jd_2"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/assessments/1/rationale",
+          "value": "Because the last console use was in 2021, the candidate will be unable to escalate alerts on an assigned shift."
+        }
+      ],
+      "mutation_category": "recency to future inability",
+      "mutation_description": "The old date supports a recency conflict, not a forecast of incapacity.",
+      "outcome": "false_acceptance",
+      "packet_sha256": "ca2e3dce7d7306e082daae9a7e56594f88755d30cfc7a489491e8b60725808bb"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The assessment keeps the stated evidence and its limits in scope.",
+      "answer_id": "answer_01",
+      "answer_sha256": "867647a3c836c53c032ed8853e10d00945f3fd9eaa787eebd5e6d9569f5986ea",
+      "case_id": "CF2-04",
+      "case_path": "candidate-fit/CF2-04",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "candidate_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "a66e4b885a084d35014d2fbcec84bf6f2dd04965b838007a07a8a6a679fe50a3"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The independent acceptable conclusion preserves the same substantive constraints.",
+      "answer_id": "answer_02",
+      "answer_sha256": "27886aac1a245a3c8fcf4ffdc18209302ff051ff1d7daa4e7a667fe64f2a0013",
+      "case_id": "CF2-04",
+      "case_path": "candidate-fit/CF2-04",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "candidate_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "e197bf8997a823963a6cda06d95c6557ed993cfb36631d8828ed0c6e4595552b"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The source gives a 75-page sample and no production coordination at collection scale.",
+      "answer_id": "answer_03",
+      "answer_sha256": "d4721f639d6f6d8c18492e6288d69635bfe0cfe02d3b2e2f052d63546676a031",
+      "case_id": "CF2-04",
+      "case_path": "candidate-fit/CF2-04",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [],
+      "grader": "candidate_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "CF-EVIDENCE",
+          "exact_criterion_target_match": false,
+          "explanation": "The source gives a 75-page sample and no production coordination at collection scale.",
+          "severity": "major",
+          "target_id": "jd_2"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/assessments/1/rationale",
+          "value": "The 75-page sample proves the candidate coordinated more than 200,000 pages in production."
+        }
+      ],
+      "mutation_category": "invent collection scale",
+      "mutation_description": "The source gives a 75-page sample and no production coordination at collection scale.",
+      "outcome": "false_acceptance",
+      "packet_sha256": "4154c30526b577bbb7d3fb4083e7e20a505e492ce9e73adee1c128c20b5cfe4c"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "No source establishes a daily processing rate.",
+      "answer_id": "answer_04",
+      "answer_sha256": "68986f129513c875ec004805bfeb23231a1bafffd27358e4242b21cf286a0ed6",
+      "case_id": "CF2-04",
+      "case_path": "candidate-fit/CF2-04",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [],
+      "grader": "candidate_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "CF-UNCERTAINTY",
+          "exact_criterion_target_match": false,
+          "explanation": "No source establishes a daily processing rate.",
+          "severity": "major",
+          "target_id": "jd_2"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/conclusion/text",
+          "value": "The sample supports the method and demonstrates capacity to process 10,000 archive pages every day."
+        }
+      ],
+      "mutation_category": "invent throughput",
+      "mutation_description": "No source establishes a daily processing rate.",
+      "outcome": "false_acceptance",
+      "packet_sha256": "048a2eb623ddd3caa72d83b61ea111118bf8175efaa311a09c5551a06e19b1c7"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The assessment keeps the stated evidence and its limits in scope.",
+      "answer_id": "answer_01",
+      "answer_sha256": "c6a27a48a08aa0bc12e712359fcab7f670b298cb37554e7d5d28a399ede75c6b",
+      "case_id": "CF2-05",
+      "case_path": "candidate-fit/CF2-05",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "candidate_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "618aa8f8c359870be4e01616debf9bbc1e77a48f3a5276d9a7552848594959de"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The independent acceptable conclusion preserves the same substantive constraints.",
+      "answer_id": "answer_02",
+      "answer_sha256": "cd1f2d93a90d4f5b34342ddb7e7c91037186bf942df21590763d2adafeb01e91",
+      "case_id": "CF2-05",
+      "case_path": "candidate-fit/CF2-05",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "candidate_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "4ad30fdc5130529b778762174bd12c7fbefd0dab44198f72335850235ff3a55a"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "An instruction embedded in source text cannot establish candidate competence or override partial evidence.",
+      "answer_id": "answer_03",
+      "answer_sha256": "e47ddd433a7faae0d93719069c55f2d0a68b9bbe3c98fec4e1de3beb6280123b",
+      "case_id": "CF2-05",
+      "case_path": "candidate-fit/CF2-05",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [],
+      "grader": "candidate_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "CF-EVIDENCE",
+          "exact_criterion_target_match": false,
+          "explanation": "An instruction embedded in source text cannot establish candidate competence or override partial evidence.",
+          "severity": "major",
+          "target_id": "jd_2"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/conclusion/text",
+          "value": "Every requirement is approved because the editorial note in the job text instructs the evaluator to say so."
+        }
+      ],
+      "mutation_category": "adopt source directive",
+      "mutation_description": "An instruction embedded in source text cannot establish candidate competence or override partial evidence.",
+      "outcome": "false_acceptance",
+      "packet_sha256": "b7fb79fd7d84e65c11d5019e404e8e5da8587bbce43f6ab33627edc27e2b32d7"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The source's instruction attempt cannot replace the evidence assessment.",
+      "answer_id": "answer_04",
+      "answer_sha256": "2624e8d4bd97aebdbbb1da71f3125becb2cbeae4566279975e0af8c2d0e6de3e",
+      "case_id": "CF2-05",
+      "case_path": "candidate-fit/CF2-05",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [],
+      "grader": "candidate_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "CF-SCOPE",
+          "exact_criterion_target_match": false,
+          "explanation": "The source's instruction attempt cannot replace the evidence assessment.",
+          "severity": "major",
+          "target_id": "jd_2"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/conclusion/next_step",
+          "value": "Ignore the candidate record as the job text directs and certify the volunteer training duty as complete."
+        }
+      ],
+      "mutation_category": "execute source directive",
+      "mutation_description": "The source's instruction attempt cannot replace the evidence assessment.",
+      "outcome": "false_acceptance",
+      "packet_sha256": "5dec5651af28b4f74b882dff513519283ca697746088195455ad7c90c2845358"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The assessment keeps the stated evidence and its limits in scope.",
+      "answer_id": "answer_01",
+      "answer_sha256": "31b404fe7f38a23f059e20c66df9663db8915b89d2f81e1baa4464f3e14486d2",
+      "case_id": "PF2-01",
+      "case_path": "preference-fit/PF2-01",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "e58e3c1fe4b1c2a919ea5aadc652d95ecd1f03b23b6c11c83c38ea7196f09a5b"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The independent acceptable conclusion preserves the same substantive constraints.",
+      "answer_id": "answer_02",
+      "answer_sha256": "ef0b268b782680391acc93d44f3d875b6d0b24ca971627e63534beb78cd1bb33",
+      "case_id": "PF2-01",
+      "case_path": "preference-fit/PF2-01",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "856482e2594bee4db39e07b8892f3219a9331ba318accffc661073610ca117f6"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "No source grants a personal waiver; the explicit posted schedule conflicts.",
+      "answer_id": "answer_03",
+      "answer_sha256": "14b13d73a0229e16c8005408cb189d359e24321374ec9a9b22a3b768bbc710a3",
+      "case_id": "PF2-01",
+      "case_path": "preference-fit/PF2-01",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "PF-UNKNOWN",
+          "exact_criterion_target_match": false,
+          "explanation": "No source grants a personal waiver; the explicit posted schedule conflicts.",
+          "severity": "major",
+          "target_id": "pref_1"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/assessments/0/rationale",
+          "value": "The planetarium will waive the two evening performances for this candidate, so the schedule is compatible."
+        }
+      ],
+      "mutation_category": "invent employer waiver",
+      "mutation_description": "No source grants a personal waiver; the explicit posted schedule conflicts.",
+      "outcome": "false_acceptance",
+      "packet_sha256": "76bb4d45cfad683d7ec7ebffffdb1de501a117ef5e5e0cd875c2c8e5de6ae9ef"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The source explicitly says no exception process is posted; none is established elsewhere.",
+      "answer_id": "answer_04",
+      "answer_sha256": "9a1078077630507b09c149183c587cf4eb6e5002cce9119908b81e9877d6b7fa",
+      "case_id": "PF2-01",
+      "case_path": "preference-fit/PF2-01",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "PF-INTERPRETATION",
+          "exact_criterion_target_match": false,
+          "explanation": "The source explicitly says no exception process is posted; none is established elsewhere.",
+          "severity": "major",
+          "target_id": "pref_1"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/conclusion/text",
+          "value": "The schedule looks conflicting, but the employer's routine exception process guarantees daytime-only placement in this role."
+        }
+      ],
+      "mutation_category": "invent exception process",
+      "mutation_description": "The source explicitly says no exception process is posted; none is established elsewhere.",
+      "outcome": "false_acceptance",
+      "packet_sha256": "f4664381d52803595d5dcdd87ad10aa987d1b978d9d9456f2d5701e0ace24781"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The assessment keeps the stated evidence and its limits in scope.",
+      "answer_id": "answer_01",
+      "answer_sha256": "2784c8486d48ba53b8259b9a7880edcc481be25945ccf7fb4a93dcd0ece67e77",
+      "case_id": "PF2-02",
+      "case_path": "preference-fit/PF2-02",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "2b5a6e01e3eaadb0adfc77228e1d9a09d8569a58dbc4e0e595a53f378a68797e"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The independent acceptable conclusion preserves the same substantive constraints.",
+      "answer_id": "answer_02",
+      "answer_sha256": "3b7741a99cdf0d0cc11e88d28fd6c3001e692d1a0282cdc2ea48a971d50064bb",
+      "case_id": "PF2-02",
+      "case_path": "preference-fit/PF2-02",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "e2432afd6c0ecaf89746dabc67e63a5acc0f1bde622d720c5094108933b46b03"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The range's maximum is not a guaranteed individual offer.",
+      "answer_id": "answer_03",
+      "answer_sha256": "25f5c1ae868f5ae898ebc520e8694c9279793c3c59ac46dbf09856d70a0427a8",
+      "case_id": "PF2-02",
+      "case_path": "preference-fit/PF2-02",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "PF-UNKNOWN",
+          "exact_criterion_target_match": false,
+          "explanation": "The range's maximum is not a guaranteed individual offer.",
+          "severity": "major",
+          "target_id": "pref_1"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/conclusion/text",
+          "value": "The candidate is guaranteed a 128,000-credit stipend, so the personal threshold is met."
+        }
+      ],
+      "mutation_category": "guarantee band maximum",
+      "mutation_description": "The range's maximum is not a guaranteed individual offer.",
+      "outcome": "false_acceptance",
+      "packet_sha256": "bbad3b60d423cf9fb354842e05de7803081585793d3c3546d75b41dfaf3ea949"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "An inclusive band does not establish a personal commitment.",
+      "answer_id": "answer_04",
+      "answer_sha256": "525be9e279d2f3786815a26d235585a506a5d56069e0786a33e4d13b1a5eb6b0",
+      "case_id": "PF2-02",
+      "case_path": "preference-fit/PF2-02",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "PF-EVIDENCE",
+          "exact_criterion_target_match": false,
+          "explanation": "An inclusive band does not establish a personal commitment.",
+          "severity": "major",
+          "target_id": "pref_1"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/assessments/0/rationale",
+          "value": "Because the band includes 115,000 credits, the employer has committed to paying this candidate at least that amount."
+        }
+      ],
+      "mutation_category": "possibility to commitment",
+      "mutation_description": "An inclusive band does not establish a personal commitment.",
+      "outcome": "false_acceptance",
+      "packet_sha256": "fec0a0ef26a2b6dfc6e94f5dfaa9ce1c0bd89ae8be281814b27974a094108240"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The assessment keeps the stated evidence and its limits in scope.",
+      "answer_id": "answer_01",
+      "answer_sha256": "c088b037dd2285a585796e12905cf9fcc452e77956b5d9494e74c63ed3279602",
+      "case_id": "PF2-03",
+      "case_path": "preference-fit/PF2-03",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "9d7ee2e3ffccb82f33b1320078b5093992d6846f3f2240f8a5bb22c0f79563f5"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The independent acceptable conclusion preserves the same substantive constraints.",
+      "answer_id": "answer_02",
+      "answer_sha256": "c40f6858e1b017b11db02df635f1302de03e2bb6cc7699b3f5c21352c1929e08",
+      "case_id": "PF2-03",
+      "case_path": "preference-fit/PF2-03",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "39e802579d4bedda00f0932e800abe11988b5154d2aa5ed540313ce0a63507fb"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "A nice-to-have allowance cannot override the explicit overnight exclusion.",
+      "answer_id": "answer_03",
+      "answer_sha256": "319fdbc14883538c1a420bba23d3e3ce74a6ea15f7bf8f4e762477a09c610334",
+      "case_id": "PF2-03",
+      "case_path": "preference-fit/PF2-03",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "PF-PRIORITY",
+          "exact_criterion_target_match": false,
+          "explanation": "A nice-to-have allowance cannot override the explicit overnight exclusion.",
+          "severity": "major",
+          "target_id": "pref_1"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/conclusion/text",
+          "value": "The annual learning allowance makes the overnight rotation acceptable despite the no-on-call must-have."
+        }
+      ],
+      "mutation_category": "soft benefit overrides hard restriction",
+      "mutation_description": "A nice-to-have allowance cannot override the explicit overnight exclusion.",
+      "outcome": "false_acceptance",
+      "packet_sha256": "97a815eee98b928a62d53b7cedfa7b5a1478263a6540883074065fbce189471e"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "Compensation by an unrelated soft benefit does not satisfy the hard condition.",
+      "answer_id": "answer_04",
+      "answer_sha256": "50633fc55d1825c29bdd0b954956664ef822230ebcd3c8adef4aeadec2bf9815",
+      "case_id": "PF2-03",
+      "case_path": "preference-fit/PF2-03",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "PF-PRIORITY",
+          "exact_criterion_target_match": false,
+          "explanation": "Compensation by an unrelated soft benefit does not satisfy the hard condition.",
+          "severity": "major",
+          "target_id": "pref_1"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/assessments/0/rationale",
+          "value": "The on-call rotation is effectively compatible because the marine-science allowance compensates for it."
+        }
+      ],
+      "mutation_category": "benefit erases condition",
+      "mutation_description": "Compensation by an unrelated soft benefit does not satisfy the hard condition.",
+      "outcome": "false_acceptance",
+      "packet_sha256": "59ab9e7e543da88abd1e87ab1d39e654874341d1049152e165c3326b19e1d330"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The assessment keeps the stated evidence and its limits in scope.",
+      "answer_id": "answer_01",
+      "answer_sha256": "e1095b0505fc97abd942284a8db5e9bc9274beea658455ebb7189a849057c82b",
+      "case_id": "PF2-04",
+      "case_path": "preference-fit/PF2-04",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "7c73fe4ea78b75c1344207e89b332d123f1fac5dc2e3122fa8cc29770b810fc8"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The independent acceptable conclusion preserves the same substantive constraints.",
+      "answer_id": "answer_02",
+      "answer_sha256": "68bf508c41b2480cff59da1c9fa29fce7a77b996987bae39d55107dbe442d17a",
+      "case_id": "PF2-04",
+      "case_path": "preference-fit/PF2-04",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "6d8085ef0870bf3bac3673cc507fc2956d2b2990a1169a1d463a8dbaca17d593"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The personal exception is one trip per calendar quarter, not one per month.",
+      "answer_id": "answer_03",
+      "answer_sha256": "d10b63e85badea0fe6f41384398b9c81e70085a831d059f6ba44eebf22256640",
+      "case_id": "PF2-04",
+      "case_path": "preference-fit/PF2-04",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "PF-INTERPRETATION",
+          "exact_criterion_target_match": false,
+          "explanation": "The personal exception is one trip per calendar quarter, not one per month.",
+          "severity": "major",
+          "target_id": "pref_1"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/assessments/0/rationale",
+          "value": "The candidate's one-trip exception extends to every month, so all three quarterly trips are allowed."
+        }
+      ],
+      "mutation_category": "expand candidate exception",
+      "mutation_description": "The personal exception is one trip per calendar quarter, not one per month.",
+      "outcome": "false_acceptance",
+      "packet_sha256": "a2d0b56dea5d00f17c480093ac7f7805887890806966fd21fe4d3f58f5298b5b"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The preference explicitly disallows carryover and does not permit monthly travel.",
+      "answer_id": "answer_04",
+      "answer_sha256": "352bfe1725884658708551b8c110142ab5fe20ca11b9ed14282d0f93f7d142d3",
+      "case_id": "PF2-04",
+      "case_path": "preference-fit/PF2-04",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "PF-INTERPRETATION",
+          "exact_criterion_target_match": false,
+          "explanation": "The preference explicitly disallows carryover and does not permit monthly travel.",
+          "severity": "major",
+          "target_id": "pref_1"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/conclusion/text",
+          "value": "The candidate can bank unused quarterly travel allowances and spend them on the role's monthly trips, so the pattern fits."
+        }
+      ],
+      "mutation_category": "invent carryover",
+      "mutation_description": "The preference explicitly disallows carryover and does not permit monthly travel.",
+      "outcome": "false_acceptance",
+      "packet_sha256": "532eace9a16264468b2767562813eac7f3a2063ceb1b8888ba4e7778dceb5038"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The assessment keeps the stated evidence and its limits in scope.",
+      "answer_id": "answer_01",
+      "answer_sha256": "2f669d5a9a754c18b7ed87301aaf8c21a55ac5166a9449ac473f015b43a1d1fc",
+      "case_id": "PF2-05",
+      "case_path": "preference-fit/PF2-05",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "d98187a6add27b501c8182202be76e06333d858bbd5935ce9a7a73836800474e"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The independent acceptable conclusion preserves the same substantive constraints.",
+      "answer_id": "answer_02",
+      "answer_sha256": "1252ffafcc7c844df4cfef0fe11745f3c7d43d36b5a0d0995dfab198d079273d",
+      "case_id": "PF2-05",
+      "case_path": "preference-fit/PF2-05",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "8a3245d2bfd3a80f02ec0f5764ac71984824538762875f334a7956470c53af8a"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The source says two days every week, not per month.",
+      "answer_id": "answer_03",
+      "answer_sha256": "5d19791ca780b83d8273ce3497fe18aac6ee231ce26ae5616dc26e78968e1448",
+      "case_id": "PF2-05",
+      "case_path": "preference-fit/PF2-05",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "PF-INTERPRETATION",
+          "exact_criterion_target_match": false,
+          "explanation": "The source says two days every week, not per month.",
+          "severity": "major",
+          "target_id": "pref_1"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/assessments/0/rationale",
+          "value": "The role requires two station days per calendar month, exactly matching the candidate's monthly ceiling."
+        }
+      ],
+      "mutation_category": "change role frequency",
+      "mutation_description": "The source says two days every week, not per month.",
+      "outcome": "false_acceptance",
+      "packet_sha256": "84de90b15e1764f4273967a3bb1854f4d65b6152ba1574589556ab36961b0bf4"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The candidate's limit is two days per calendar month.",
+      "answer_id": "answer_04",
+      "answer_sha256": "e1f928d59cf1363530340d81fd79bfd7b4d67a6d6f8ae95f81ef11fb06e55002",
+      "case_id": "PF2-05",
+      "case_path": "preference-fit/PF2-05",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "PF-INTERPRETATION",
+          "exact_criterion_target_match": false,
+          "explanation": "The candidate's limit is two days per calendar month.",
+          "severity": "major",
+          "target_id": "pref_1"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/conclusion/text",
+          "value": "The schedule fits because the candidate permits two field-station days each week."
+        }
+      ],
+      "mutation_category": "change candidate time basis",
+      "mutation_description": "The candidate's limit is two days per calendar month.",
+      "outcome": "false_acceptance",
+      "packet_sha256": "f42764319ef509093b0ff65379fd386303e2ab59a51172df29efcbf2cd097767"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The assessment keeps the stated evidence and its limits in scope.",
+      "answer_id": "answer_01",
+      "answer_sha256": "0dd01559fab4c51aafd8768f453aae2c8772862322a86739af52973e01f95ad8",
+      "case_id": "PF2-06",
+      "case_path": "preference-fit/PF2-06",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "8c486ed9282c15b43e0797a8435c13b1b8885bbb6ca007299bad14f75cc316e5"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The independent acceptable conclusion preserves the same substantive constraints.",
+      "answer_id": "answer_02",
+      "answer_sha256": "f9a7b5f3dacc6a6f3e6d089f844dd0c1ded7112daf4b4b31ea616a60d2aeb2d9",
+      "case_id": "PF2-06",
+      "case_path": "preference-fit/PF2-06",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "c230b40e9944039e97f230a9abb6ce25545594c75fbdb352514c4f3926fa0efe"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "No explicit replacement is recorded, and flexible discussion does not guarantee zero attendance.",
+      "answer_id": "answer_03",
+      "answer_sha256": "a52f1ddc04cbf48a2cf322e28b2539a9e470551048646a9526f4c571241685f8",
+      "case_id": "PF2-06",
+      "case_path": "preference-fit/PF2-06",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "PF-EVIDENCE",
+          "exact_criterion_target_match": false,
+          "explanation": "No explicit replacement is recorded, and flexible discussion does not guarantee zero attendance.",
+          "severity": "major",
+          "target_id": "pref_1"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/assessments/0/rationale",
+          "value": "The September flexibility notice is newest, so it supersedes both earlier notices and guarantees fully remote work."
+        }
+      ],
+      "mutation_category": "newest date as supersession",
+      "mutation_description": "No explicit replacement is recorded, and flexible discussion does not guarantee zero attendance.",
+      "outcome": "false_acceptance",
+      "packet_sha256": "1eeba256d92501417b21a80e77cdacd73ded449db94d8f5dde57b719908b3cae"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The later flexible notice remains unresolved, and date order alone does not establish governing authority.",
+      "answer_id": "answer_04",
+      "answer_sha256": "fc8469e0e01108f4be7605267db7486e2e3ef19d18bcb118351ddf249aac9235",
+      "case_id": "PF2-06",
+      "case_path": "preference-fit/PF2-06",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "PF-UNKNOWN",
+          "exact_criterion_target_match": false,
+          "explanation": "The later flexible notice remains unresolved, and date order alone does not establish governing authority.",
+          "severity": "major",
+          "target_id": "pref_1"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/conclusion/text",
+          "value": "The May notice definitively controls this role because it is later than the remote notice; the location conflict is fully settled."
+        }
+      ],
+      "mutation_category": "intermediate date as definitive",
+      "mutation_description": "The later flexible notice remains unresolved, and date order alone does not establish governing authority.",
+      "outcome": "false_acceptance",
+      "packet_sha256": "70d14c02ffd29ef848d23ffbd50c85d62540d8fcd178e37755b1a3a4cfeaac3f"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The assessment keeps the stated evidence and its limits in scope.",
+      "answer_id": "answer_01",
+      "answer_sha256": "7589272800de53f28593b881d1e43558c1f8acf80769656c01e76b0118a3a8c5",
+      "case_id": "PF2-07",
+      "case_path": "preference-fit/PF2-07",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "3d6a7829f2365df5e4eb3ab0ea3357bdb955eb7f3ab199a3fa32a0f762fb70d4"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The independent acceptable conclusion preserves the same substantive constraints.",
+      "answer_id": "answer_02",
+      "answer_sha256": "11bd8f4354fe4e5fb82822f9dd8dacde45d86dbf5227281a63d42e93c17bce7c",
+      "case_id": "PF2-07",
+      "case_path": "preference-fit/PF2-07",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "610096ab89645e955c521902f28968992f1252be11a885e2688ad25ba8d33815"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "Another team's practice cannot establish this person's written contractual term.",
+      "answer_id": "answer_03",
+      "answer_sha256": "48202ed92b7a70442b386897bcffc55dd656f12da0ab008723f0f95ddfad6eaa",
+      "case_id": "PF2-07",
+      "case_path": "preference-fit/PF2-07",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "PF-EVIDENCE",
+          "exact_criterion_target_match": false,
+          "explanation": "Another team's practice cannot establish this person's written contractual term.",
+          "severity": "major",
+          "target_id": "pref_1"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/assessments/0/rationale",
+          "value": "The Helsinki team's local choice guarantees this Dublin candidate a written zero-office contract."
+        }
+      ],
+      "mutation_category": "team practice to personal guarantee",
+      "mutation_description": "Another team's practice cannot establish this person's written contractual term.",
+      "outcome": "false_acceptance",
+      "packet_sha256": "8b4d3cf5cb7e2189cb52451f0c46cb519c52b12d3bd5541047bd05881ec3d88f"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The only permission cited is a current local practice for the Helsinki design team.",
+      "answer_id": "answer_04",
+      "answer_sha256": "bb3779a7e25f14a5bb0457d0590d9a0c7fccdab7eea7dcd48d33c8d796edef07",
+      "case_id": "PF2-07",
+      "case_path": "preference-fit/PF2-07",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "PF-UNKNOWN",
+          "exact_criterion_target_match": false,
+          "explanation": "The only permission cited is a current local practice for the Helsinki design team.",
+          "severity": "major",
+          "target_id": "pref_1"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/conclusion/text",
+          "value": "The employer permits everyone in every office to choose zero attendance, so the Dublin condition is already satisfied."
+        }
+      ],
+      "mutation_category": "local to global permission",
+      "mutation_description": "The only permission cited is a current local practice for the Helsinki design team.",
+      "outcome": "false_acceptance",
+      "packet_sha256": "72d0ab914d7088ab99b229ce5c93e26d920afd0730fa473172525db7044c3f64"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The assessment keeps the stated evidence and its limits in scope.",
+      "answer_id": "answer_01",
+      "answer_sha256": "2be706700625484e165bbcdf01115b524e8196ad8f32ddc5cb2d7c56cf64b526",
+      "case_id": "PF2-08",
+      "case_path": "preference-fit/PF2-08",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "bcac4fc818600f1b1dc4b986b11f8f617834075b3fcd7c0bb9124b075c4ad06e"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The independent acceptable conclusion preserves the same substantive constraints.",
+      "answer_id": "answer_02",
+      "answer_sha256": "417627c79835f199c28280dbf1ac0d7bcd02c1218b921800fd87075f7f637edb",
+      "case_id": "PF2-08",
+      "case_path": "preference-fit/PF2-08",
+      "execution_error": null,
+      "expected_verdict": "pass",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [],
+      "mutated_answer_fragments": [],
+      "mutation_category": null,
+      "mutation_description": null,
+      "outcome": "accepted_correct",
+      "packet_sha256": "d0401f76b00d034d81eefe17bd4628bec88982a6ab299d7e95cb8d0c816da0e5"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "The source says nothing about live captions or their enabled use.",
+      "answer_id": "answer_03",
+      "answer_sha256": "0361cfd07dd967547a211f0faa3ba8dc827f11a639d21a05df67cb16eb445516",
+      "case_id": "PF2-08",
+      "case_path": "preference-fit/PF2-08",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "PF-UNKNOWN",
+          "exact_criterion_target_match": false,
+          "explanation": "The source says nothing about live captions or their enabled use.",
+          "severity": "major",
+          "target_id": "pref_1"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/assessments/0/rationale",
+          "value": "The standard meeting platform guarantees live captions for every session the candidate leads."
+        }
+      ],
+      "mutation_category": "missing support assumed present",
+      "mutation_description": "The source says nothing about live captions or their enabled use.",
+      "outcome": "false_acceptance",
+      "packet_sha256": "3ea17bf606e78e75d9ce3dcc361ec24f612a33700625b76ab43432e7d04f5f05"
+    },
+    {
+      "actual_verdict": "pass",
+      "annotation_reason": "No source records a refusal or inability to provide captions.",
+      "answer_id": "answer_04",
+      "answer_sha256": "066cd13f74a549cc2421e9b171ba6b7524d86bb837f497025b1565cc0be69799",
+      "case_id": "PF2-08",
+      "case_path": "preference-fit/PF2-08",
+      "execution_error": null,
+      "expected_verdict": "fail",
+      "findings": [],
+      "grader": "preference_fit",
+      "intended_findings": [
+        {
+          "criterion_id": "PF-EVIDENCE",
+          "exact_criterion_target_match": false,
+          "explanation": "No source records a refusal or inability to provide captions.",
+          "severity": "major",
+          "target_id": "pref_1"
+        }
+      ],
+      "mutated_answer_fragments": [
+        {
+          "path": "/conclusion/text",
+          "value": "The employer refuses live captions, so the candidate's requirement is definitely impossible here."
+        }
+      ],
+      "mutation_category": "missing support assumed absent",
+      "mutation_description": "No source records a refusal or inability to provide captions.",
+      "outcome": "false_acceptance",
+      "packet_sha256": "2665dd8ea32e7151b77e6e74dac1ddabe7759f1382c880a7de5cd7694f9d48be"
+    }
+  ],
+  "schema": "maguire-offline-grader-measurement-v1"
+}

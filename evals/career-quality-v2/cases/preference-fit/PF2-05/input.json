@@ -1,0 +1,32 @@
+{
+  "schema": "maguire-quality-input-v1",
+  "case_id": "PF2-05",
+  "grader": "preference_fit",
+  "data_class": "synthetic",
+  "decision_at": "2026-10-11T12:00:00Z",
+  "task": "Assess the supplied role and candidate snapshot, cite sources, explain uncertainty, and recommend a next action.",
+  "jd": {
+    "title": "Wetland Survey Scheduler",
+    "sources": [
+      {
+        "id": "jd_1",
+        "text": "The scheduler works at the wetland station on two weekdays every week.",
+        "observed_at": "2026-09-01T12:00:00Z",
+        "authority": "job_description",
+        "supersedes": []
+      }
+    ]
+  },
+  "candidate": {
+    "facts": [],
+    "preferences": [
+      {
+        "id": "pref_1",
+        "text": "I can work at a field station on no more than two weekdays per calendar month.",
+        "priority": "must_have",
+        "allowed_exceptions": [],
+        "confirmed_at": "2026-08-15T12:00:00Z"
+      }
+    ]
+  }
+}

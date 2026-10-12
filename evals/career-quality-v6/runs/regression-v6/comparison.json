@@ -1,0 +1,553 @@
+{
+  "schema": "maguire-v6-paired-comparison",
+  "comparison": "known-case development regression",
+  "baseline": {
+    "total": 40,
+    "confusion": {
+      "pass": {
+        "pass": 9,
+        "fail": 0,
+        "needs_review": 16,
+        "invalid": 0
+      },
+      "fail": {
+        "pass": 0,
+        "fail": 7,
+        "needs_review": 5,
+        "invalid": 0
+      },
+      "needs_review": {
+        "pass": 0,
+        "fail": 0,
+        "needs_review": 3,
+        "invalid": 0
+      }
+    },
+    "missed_errors": [],
+    "false_rejections": [],
+    "needs_review": {
+      "pass": [
+        "CF5H-01",
+        "CF5H-03",
+        "CF5H-08",
+        "CF5H-11",
+        "CF5H-14",
+        "CF5H-16",
+        "CF5H-17",
+        "CF5H-19",
+        "CF5H-20",
+        "PF5H-03",
+        "PF5H-04",
+        "PF5H-05",
+        "PF5H-09",
+        "PF5H-11",
+        "PF5H-17",
+        "PF5H-20"
+      ],
+      "fail": [
+        "CF5H-02",
+        "CF5H-15",
+        "CF5H-18",
+        "PF5H-06",
+        "PF5H-18"
+      ],
+      "needs_review": [
+        "CF5H-05",
+        "CF5H-13",
+        "PF5H-10"
+      ]
+    },
+    "ambiguous_forced_decisions": [],
+    "invalid": [],
+    "execution_errors": [],
+    "automatic_decisions": 16,
+    "intended_errors_total": 12,
+    "intended_errors_flagged": 7,
+    "bad_fragments_rejected_only_on_other_claims": [],
+    "extra_failures_in_bad_fragments": []
+  },
+  "current": {
+    "total": 40,
+    "confusion": {
+      "pass": {
+        "pass": 24,
+        "fail": 0,
+        "needs_review": 1,
+        "invalid": 0
+      },
+      "fail": {
+        "pass": 0,
+        "fail": 12,
+        "needs_review": 0,
+        "invalid": 0
+      },
+      "needs_review": {
+        "pass": 0,
+        "fail": 0,
+        "needs_review": 3,
+        "invalid": 0
+      }
+    },
+    "missed_errors": [],
+    "false_rejections": [],
+    "needs_review": {
+      "pass": [
+        "PF5H-04"
+      ],
+      "fail": [],
+      "needs_review": [
+        "CF5H-05",
+        "CF5H-13",
+        "PF5H-10"
+      ]
+    },
+    "ambiguous_forced_decisions": [],
+    "invalid": [],
+    "execution_errors": [],
+    "automatic_decisions": 36,
+    "intended_errors_total": 12,
+    "intended_errors_flagged": 12,
+    "bad_fragments_rejected_only_on_other_claims": [],
+    "extra_failures_in_bad_fragments": []
+  },
+  "rows": [
+    {
+      "case_id": "CF5H-01",
+      "family": "candidate-fit",
+      "case_content_sha256": "e1fce2954a18e912ff843a6673acf9c5f64bf84982ffe09cb6fe3755ad60d672",
+      "expected": "pass",
+      "v5": "needs_review",
+      "v6": "pass",
+      "v5_localized": [],
+      "v6_localized": []
+    },
+    {
+      "case_id": "CF5H-02",
+      "family": "candidate-fit",
+      "case_content_sha256": "11308a1818411cc44991287d5be91b624ccd12634a5755b2839df35423d1c675",
+      "expected": "fail",
+      "v5": "needs_review",
+      "v6": "fail",
+      "v5_localized": [],
+      "v6_localized": [
+        "c1"
+      ]
+    },
+    {
+      "case_id": "CF5H-03",
+      "family": "candidate-fit",
+      "case_content_sha256": "bb7c9f19e4e8942bbe7491c8388460da5677b3caff3938af53e5968fc82b308f",
+      "expected": "pass",
+      "v5": "needs_review",
+      "v6": "pass",
+      "v5_localized": [],
+      "v6_localized": []
+    },
+    {
+      "case_id": "CF5H-04",
+      "family": "candidate-fit",
+      "case_content_sha256": "debe8690ba8a8b70e84fd060d6d21a50a311111665217dbe04202d8a6e106f50",
+      "expected": "pass",
+      "v5": "pass",
+      "v6": "pass",
+      "v5_localized": [],
+      "v6_localized": []
+    },
+    {
+      "case_id": "CF5H-05",
+      "family": "candidate-fit",
+      "case_content_sha256": "a94ec2686f9ac6568fb2011e9fb134e0412e34adf5084b3ad4735bf966688774",
+      "expected": "needs_review",
+      "v5": "needs_review",
+      "v6": "needs_review",
+      "v5_localized": [],
+      "v6_localized": []
+    },
+    {
+      "case_id": "CF5H-06",
+      "family": "candidate-fit",
+      "case_content_sha256": "67b5a9bd900ed266f869a6be124b2cabaa62b64a235223e8ce8e11496a0c6663",
+      "expected": "fail",
+      "v5": "fail",
+      "v6": "fail",
+      "v5_localized": [
+        "c1"
+      ],
+      "v6_localized": [
+        "c1"
+      ]
+    },
+    {
+      "case_id": "CF5H-07",
+      "family": "candidate-fit",
+      "case_content_sha256": "3644b2f0b4c523cd8ba3f853680d0753eb409d24fcfae8aa65fb09e362adc3c5",
+      "expected": "pass",
+      "v5": "pass",
+      "v6": "pass",
+      "v5_localized": [],
+      "v6_localized": []
+    },
+    {
+      "case_id": "CF5H-08",
+      "family": "candidate-fit",
+      "case_content_sha256": "668436210aa3499bb5682887fab952b2f3e9d36788eeb04683c56998aaeb6bc7",
+      "expected": "pass",
+      "v5": "needs_review",
+      "v6": "pass",
+      "v5_localized": [],
+      "v6_localized": []
+    },
+    {
+      "case_id": "CF5H-09",
+      "family": "candidate-fit",
+      "case_content_sha256": "384174ebecf5a75e4e4758548980449b8b2ac82e0c61b36b60a1bb0218402f2d",
+      "expected": "fail",
+      "v5": "fail",
+      "v6": "fail",
+      "v5_localized": [
+        "c1"
+      ],
+      "v6_localized": [
+        "c1"
+      ]
+    },
+    {
+      "case_id": "CF5H-10",
+      "family": "candidate-fit",
+      "case_content_sha256": "25ec91e499258c809744a4f0787cc94e0fa96e430c8535b86baa601f905e834f",
+      "expected": "pass",
+      "v5": "pass",
+      "v6": "pass",
+      "v5_localized": [],
+      "v6_localized": []
+    },
+    {
+      "case_id": "CF5H-11",
+      "family": "candidate-fit",
+      "case_content_sha256": "ac6dcb21e08a22288f8fa781932a50266d3e3b077fb1a6f2cd4212a9b3f17f92",
+      "expected": "pass",
+      "v5": "needs_review",
+      "v6": "pass",
+      "v5_localized": [],
+      "v6_localized": []
+    },
+    {
+      "case_id": "CF5H-12",
+      "family": "candidate-fit",
+      "case_content_sha256": "684c0677029df96fcf4de978d657ee205b733dfa9b4a8f7f8443e623d5530812",
+      "expected": "fail",
+      "v5": "fail",
+      "v6": "fail",
+      "v5_localized": [
+        "c1"
+      ],
+      "v6_localized": [
+        "c1"
+      ]
+    },
+    {
+      "case_id": "CF5H-13",
+      "family": "candidate-fit",
+      "case_content_sha256": "d8e2c431355f71f819e108317cfa590511f2e6c1b0efa974e3de915c920db5d4",
+      "expected": "needs_review",
+      "v5": "needs_review",
+      "v6": "needs_review",
+      "v5_localized": [],
+      "v6_localized": []
+    },
+    {
+      "case_id": "CF5H-14",
+      "family": "candidate-fit",
+      "case_content_sha256": "951c1564a74bf4c58c3f65b1da4808d618b262227ee8576df5dd8e37e9eeca7f",
+      "expected": "pass",
+      "v5": "needs_review",
+      "v6": "pass",
+      "v5_localized": [],
+      "v6_localized": []
+    },
+    {
+      "case_id": "CF5H-15",
+      "family": "candidate-fit",
+      "case_content_sha256": "abdb474d4f0e2fafb0f80974ec9649e4f5fd95809a37ae2a4030f1c51ce023dc",
+      "expected": "fail",
+      "v5": "needs_review",
+      "v6": "fail",
+      "v5_localized": [],
+      "v6_localized": [
+        "c1"
+      ]
+    },
+    {
+      "case_id": "CF5H-16",
+      "family": "candidate-fit",
+      "case_content_sha256": "af79c2e3ffee89759fdf66faf18b87bd7fce8da10f3e2147fa06a39e07210713",
+      "expected": "pass",
+      "v5": "needs_review",
+      "v6": "pass",
+      "v5_localized": [],
+      "v6_localized": []
+    },
+    {
+      "case_id": "CF5H-17",
+      "family": "candidate-fit",
+      "case_content_sha256": "3e6b79e16d74d7a1ad4d660ff8e9f7f95d34c6a33af16315843ca32c4ef52c9b",
+      "expected": "pass",
+      "v5": "needs_review",
+      "v6": "pass",
+      "v5_localized": [],
+      "v6_localized": []
+    },
+    {
+      "case_id": "CF5H-18",
+      "family": "candidate-fit",
+      "case_content_sha256": "7e5eee8458b3fa2522441c95fae6d73c7801f6aea3d754ecf9b8df368d933673",
+      "expected": "fail",
+      "v5": "needs_review",
+      "v6": "fail",
+      "v5_localized": [],
+      "v6_localized": [
+        "c1"
+      ]
+    },
+    {
+      "case_id": "CF5H-19",
+      "family": "candidate-fit",
+      "case_content_sha256": "0161d67bbfb9864451bce10cff80a48d43985a80a0aa4e72b3b7de56ee9b372f",
+      "expected": "pass",
+      "v5": "needs_review",
+      "v6": "pass",
+      "v5_localized": [],
+      "v6_localized": []
+    },
+    {
+      "case_id": "CF5H-20",
+      "family": "candidate-fit",
+      "case_content_sha256": "7e55ad915bc58067e302c5044695a33826ebdd5ab8f78cfe77373e8fcd8197b4",
+      "expected": "pass",
+      "v5": "needs_review",
+      "v6": "pass",
+      "v5_localized": [],
+      "v6_localized": []
+    },
+    {
+      "case_id": "PF5H-01",
+      "family": "preference-fit",
+      "case_content_sha256": "fe48dc10facc9ea3f57b0ae8214a7d2282f9232eac2a61b1963172ddd38a7633",
+      "expected": "pass",
+      "v5": "pass",
+      "v6": "pass",
+      "v5_localized": [],
+      "v6_localized": []
+    },
+    {
+      "case_id": "PF5H-02",
+      "family": "preference-fit",
+      "case_content_sha256": "3d4f9bd08b2b4cdf3212d71e0cc458ee700615d4411abd3f7678f58014f38e78",
+      "expected": "fail",
+      "v5": "fail",
+      "v6": "fail",
+      "v5_localized": [
+        "c1"
+      ],
+      "v6_localized": [
+        "c1"
+      ]
+    },
+    {
+      "case_id": "PF5H-03",
+      "family": "preference-fit",
+      "case_content_sha256": "f99b6146dbf24392e39b923cfe2932bc4762118ac38ca6e11646d3d37b7dc451",
+      "expected": "pass",
+      "v5": "needs_review",
+      "v6": "pass",
+      "v5_localized": [],
+      "v6_localized": []
+    },
+    {
+      "case_id": "PF5H-04",
+      "family": "preference-fit",
+      "case_content_sha256": "e001d6fc7cc750bef7e9eff80ed14f6fae827431ee2d9d8f7fa8ab3081b63761",
+      "expected": "pass",
+      "v5": "needs_review",
+      "v6": "needs_review",
+      "v5_localized": [],
+      "v6_localized": []
+    },
+    {
+      "case_id": "PF5H-05",
+      "family": "preference-fit",
+      "case_content_sha256": "fd7e06be3996a1492e8d44d2b8d5072af81f6399162d7130656396b2beb13e58",
+      "expected": "pass",
+      "v5": "needs_review",
+      "v6": "pass",
+      "v5_localized": [],
+      "v6_localized": []
+    },
+    {
+      "case_id": "PF5H-06",
+      "family": "preference-fit",
+      "case_content_sha256": "f038c9409f3d3753920d86e7454403df5fd34b0604d21316b3c6f846e8fd7fed",
+      "expected": "fail",
+      "v5": "needs_review",
+      "v6": "fail",
+      "v5_localized": [],
+      "v6_localized": [
+        "c1"
+      ]
+    },
+    {
+      "case_id": "PF5H-07",
+      "family": "preference-fit",
+      "case_content_sha256": "3ac99eebbdbd7ef14ee785a0fb2f8a51c7ad5a04a110202def2500ec78efc24f",
+      "expected": "pass",
+      "v5": "pass",
+      "v6": "pass",
+      "v5_localized": [],
+      "v6_localized": []
+    },
+    {
+      "case_id": "PF5H-08",
+      "family": "preference-fit",
+      "case_content_sha256": "3595deba5b35fb12596dc121c69a927e3808096428f383a0b930c11f837c0ffa",
+      "expected": "fail",
+      "v5": "fail",
+      "v6": "fail",
+      "v5_localized": [
+        "c1"
+      ],
+      "v6_localized": [
+        "c1"
+      ]
+    },
+    {
+      "case_id": "PF5H-09",
+      "family": "preference-fit",
+      "case_content_sha256": "2c26c87e1e3597269d77de5847beb06e2a4269cd2e407bcee355e6329a73040e",
+      "expected": "pass",
+      "v5": "needs_review",
+      "v6": "pass",
+      "v5_localized": [],
+      "v6_localized": []
+    },
+    {
+      "case_id": "PF5H-10",
+      "family": "preference-fit",
+      "case_content_sha256": "fba430ea1b6489b2a5df1e575e5b3da718441229bc831326bd88cc39668eedc0",
+      "expected": "needs_review",
+      "v5": "needs_review",
+      "v6": "needs_review",
+      "v5_localized": [],
+      "v6_localized": []
+    },
+    {
+      "case_id": "PF5H-11",
+      "family": "preference-fit",
+      "case_content_sha256": "44f856eb70c9a5427379b1b26431723ff016ffc514ad1f5e4ca93e7791e60106",
+      "expected": "pass",
+      "v5": "needs_review",
+      "v6": "pass",
+      "v5_localized": [],
+      "v6_localized": []
+    },
+    {
+      "case_id": "PF5H-12",
+      "family": "preference-fit",
+      "case_content_sha256": "90a7822a2078c779d703ef6b75aa2c44a0f1a822e919e122311036e6f7e51cd3",
+      "expected": "pass",
+      "v5": "pass",
+      "v6": "pass",
+      "v5_localized": [],
+      "v6_localized": []
+    },
+    {
+      "case_id": "PF5H-13",
+      "family": "preference-fit",
+      "case_content_sha256": "ed68d9bb6e499e976e4f186cfe12942a51c69ff134014b3be56bc4395d187e1f",
+      "expected": "pass",
+      "v5": "pass",
+      "v6": "pass",
+      "v5_localized": [],
+      "v6_localized": []
+    },
+    {
+      "case_id": "PF5H-14",
+      "family": "preference-fit",
+      "case_content_sha256": "03adb693cf97f8d9aadde866a6a305c2e68ebfd1bfb1467aa9e140e2087a57c4",
+      "expected": "fail",
+      "v5": "fail",
+      "v6": "fail",
+      "v5_localized": [
+        "c1"
+      ],
+      "v6_localized": [
+        "c1"
+      ]
+    },
+    {
+      "case_id": "PF5H-15",
+      "family": "preference-fit",
+      "case_content_sha256": "a9f4f3c660f6e7124ef009a2de45b9ed3cec38326a631b5864842975d39323bd",
+      "expected": "pass",
+      "v5": "pass",
+      "v6": "pass",
+      "v5_localized": [],
+      "v6_localized": []
+    },
+    {
+      "case_id": "PF5H-16",
+      "family": "preference-fit",
+      "case_content_sha256": "5364e9c8ef97bac2994236639711b9372ce43600471faa6e1c61192062828130",
+      "expected": "fail",
+      "v5": "fail",
+      "v6": "fail",
+      "v5_localized": [
+        "c1"
+      ],
+      "v6_localized": [
+        "c1"
+      ]
+    },
+    {
+      "case_id": "PF5H-17",
+      "family": "preference-fit",
+      "case_content_sha256": "a5edeffd1ecf03d77e6c2c3fbc923ebbe4f3b9225b42d1660a56a53293a0f347",
+      "expected": "pass",
+      "v5": "needs_review",
+      "v6": "pass",
+      "v5_localized": [],
+      "v6_localized": []
+    },
+    {
+      "case_id": "PF5H-18",
+      "family": "preference-fit",
+      "case_content_sha256": "f7c2ab21b707f8bd00dbea60d2799b7035172f1d48c2eede6a0a88bdea93b268",
+      "expected": "fail",
+      "v5": "needs_review",
+      "v6": "fail",
+      "v5_localized": [],
+      "v6_localized": [
+        "c1"
+      ]
+    },
+    {
+      "case_id": "PF5H-19",
+      "family": "preference-fit",
+      "case_content_sha256": "54cfaebf53a7f79c6894be8e77fbaad1ac4c3e84ae7e3ac1f158a7104bd65abb",
+      "expected": "pass",
+      "v5": "pass",
+      "v6": "pass",
+      "v5_localized": [],
+      "v6_localized": []
+    },
+    {
+      "case_id": "PF5H-20",
+      "family": "preference-fit",
+      "case_content_sha256": "8d13cb97864b9f9576de473da08f06d268c81aea1b656fabc56e395f4b366b6e",
+      "expected": "pass",
+      "v5": "needs_review",
+      "v6": "pass",
+      "v5_localized": [],
+      "v6_localized": []
+    }
+  ]
+}

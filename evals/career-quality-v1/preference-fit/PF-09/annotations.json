@@ -1,0 +1,69 @@
+{
+  "schema": "maguire-quality-annotations-v1",
+  "case_id": "PF-09",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The remote must-have cannot be settled from contradictory employer statements, and the travel preference is also unspecified.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_02",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The pay floor is published, but the decisive office policy has two unresolved versions.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_03",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "jd_original says zero office days and jd_update says two required days; neither source supersedes the other. The later date and employer_update type do not establish which governs, so pref_remote is unknown.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "preference_interpretation",
+        "description": "Misinterprets the remote preference in Conflicting employer location statements lack supersession.",
+        "changed_paths": [
+          "/assessments/0/label",
+          "/assessments/0/rationale"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "PF-INTERPRETATION",
+          "severity": "critical",
+          "target_id": "pref_remote",
+          "explanation": "jd_original says zero office days and jd_update says two required days; neither source supersedes the other. The later date and employer_update type do not establish which governs, so pref_remote is unknown."
+        }
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "The two employer location statements remain unresolved without explicit supersession. Pursuing as if the older remote term governs assumes the hard preference is met; clarify the current policy before a pursue decision.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "incompatible_action",
+        "description": "Ignores the assessed remote preference in the Conflicting employer location statements lack supersession conclusion.",
+        "changed_paths": [
+          "/conclusion/action",
+          "/conclusion/text",
+          "/conclusion/next_step"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "PF-ACTION",
+          "severity": "major",
+          "target_id": "pref_remote",
+          "explanation": "The two employer location statements remain unresolved without explicit supersession. Pursuing as if the older remote term governs assumes the hard preference is met; clarify the current policy before a pursue decision."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "schema": "maguire-quality-gold-v1",
+  "case_id": "PF-12",
+  "family": "soft_preference_tradeoff",
+  "title": "Candidate-owned soft tradeoff for hybrid work",
+  "review_status": "proposed_agent_authored",
+  "human_approved": false,
+  "units": [
+    {
+      "target_id": "pref_location",
+      "kind": "work_arrangement",
+      "allowed_labels": [
+        "aligned"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_office",
+          "jd_salary"
+        ]
+      ],
+      "rationale": "The candidate expressly accepts up to two office days when base is at least CHF 160,000; both conditions are published.",
+      "required_points": [
+        "Exactly two office days meet the explicit exception.",
+        "CHF 170,000 lower bound exceeds the exception threshold."
+      ],
+      "forbidden_inferences": [
+        "Do not infer the candidate accepts three office days or a lower salary."
+      ]
+    },
+    {
+      "target_id": "pref_travel",
+      "kind": "travel",
+      "allowed_labels": [
+        "aligned"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_travel"
+        ]
+      ],
+      "rationale": "The 5% cap is below the hard 10% travel ceiling.",
+      "required_points": [
+        "5% is within 10%."
+      ],
+      "forbidden_inferences": [
+        "Do not convert percent travel to trip count."
+      ]
+    },
+    {
+      "target_id": "pref_conference",
+      "kind": "benefit",
+      "allowed_labels": [
+        "unknown"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_conference"
+        ]
+      ],
+      "rationale": "The missing budget statement leaves the soft benefit unconfirmed.",
+      "required_points": [
+        "No conference budget is specified."
+      ],
+      "forbidden_inferences": [
+        "Do not infer its absence or availability."
+      ]
+    }
+  ],
+  "forbidden_assessment_targets": [],
+  "acceptable_actions": [
+    "clarify",
+    "pursue"
+  ],
+  "critical_errors": [
+    {
+      "id": "PF-12-interpretation",
+      "description": "Misreads Candidate-owned soft tradeoff for hybrid work: the location preference or its cited role term.",
+      "target_ids": [
+        "pref_location"
+      ]
+    },
+    {
+      "id": "PF-12-action",
+      "description": "For Candidate-owned soft tradeoff for hybrid work, takes a next step inconsistent with the supported location result.",
+      "target_ids": [
+        "pref_location"
+      ]
+    }
+  ],
+  "notes": [
+    "This tradeoff is authorized by the candidate’s recorded exception, not inferred from perceived career upside."
+  ]
+}

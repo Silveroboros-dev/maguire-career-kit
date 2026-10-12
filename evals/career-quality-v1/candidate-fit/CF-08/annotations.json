@@ -1,0 +1,67 @@
+{
+  "schema": "maguire-quality-annotations-v1",
+  "case_id": "CF-08",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The sole paid audit is too old for the explicit window, while ticket writing is reported.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_02",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The second response maintains a pass decision and reassesses only if a new qualifying paid audit is documented.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_03",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "A 26-month-old audit is outside the explicit 18-month window.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "old audit counted as recent",
+        "description": "A 26-month-old audit is outside the explicit 18-month window.",
+        "changed_paths": [
+          "/assessments/0/label",
+          "/assessments/0/rationale"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "CF-LABEL",
+          "severity": "critical",
+          "target_id": "jd_1",
+          "explanation": "A 26-month-old audit is outside the explicit 18-month window."
+        }
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "An old audit contradicts the recent-history minimum but does not prove inability to perform future audits.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "old date as future inability",
+        "description": "An old audit contradicts the recent-history minimum but does not prove inability to perform future audits.",
+        "changed_paths": [
+          "/conclusion/text"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "CF-UNCERTAINTY",
+          "severity": "major",
+          "target_id": "jd_1",
+          "explanation": "An old audit contradicts the recent-history minimum but does not prove inability to perform future audits."
+        }
+      ]
+    }
+  ]
+}

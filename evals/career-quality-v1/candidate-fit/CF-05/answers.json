@@ -1,0 +1,178 @@
+{
+  "schema": "maguire-quality-answers-v1",
+  "case_id": "CF-05",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "assessments": [
+        {
+          "target_id": "jd_1",
+          "label": "partial",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Own the monthly audit package: reconcile expense lines, write variance commentary, and sign off the final packet."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "I reconciled expense lines and drafted variance commentary for two monthly audit packages; the controller signed off both final packets."
+            }
+          ],
+          "rationale": "The candidate did reconciliation and commentary but explicitly did not sign off the final packet."
+        },
+        {
+          "target_id": "jd_2",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Maintain a clean ledger of receipt references."
+            },
+            {
+              "source_id": "fact_2",
+              "quote": "A supplied ledger excerpt lists receipt references beside transaction IDs and amounts."
+            }
+          ],
+          "rationale": "The supplied ledger excerpt supports reference tracking."
+        }
+      ],
+      "conclusion": {
+        "action": "pursue",
+        "text": "The candidate covers substantive preparation work and reference tracking, with a sign-off boundary.",
+        "next_step": "Present reconciliation and commentary as the candidate contribution and name the controller as sign-off owner."
+      },
+      "limitations": [
+        "The first claim is self-reported."
+      ]
+    },
+    {
+      "answer_id": "answer_02",
+      "assessments": [
+        {
+          "target_id": "jd_1",
+          "label": "partial",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Own the monthly audit package: reconcile expense lines, write variance commentary, and sign off the final packet."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "I reconciled expense lines and drafted variance commentary for two monthly audit packages; the controller signed off both final packets."
+            }
+          ],
+          "rationale": "The candidate reports two of the three package components, excluding final approval."
+        },
+        {
+          "target_id": "jd_2",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Maintain a clean ledger of receipt references."
+            },
+            {
+              "source_id": "fact_2",
+              "quote": "A supplied ledger excerpt lists receipt references beside transaction IDs and amounts."
+            }
+          ],
+          "rationale": "The excerpt shows transaction-to-receipt references."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "The package preparation fit is meaningful, while approval authority is unresolved for this role.",
+        "next_step": "Ask whether the employer requires prior personal sign-off authority or will train that responsibility."
+      },
+      "limitations": [
+        "Past sign-off authority is absent from this example."
+      ]
+    },
+    {
+      "answer_id": "answer_03",
+      "assessments": [
+        {
+          "target_id": "jd_1",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Own the monthly audit package: reconcile expense lines, write variance commentary, and sign off the final packet."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "I reconciled expense lines and drafted variance commentary for two monthly audit packages; the controller signed off both final packets."
+            }
+          ],
+          "rationale": "Reconciliation and commentary alone establish full ownership including final sign-off."
+        },
+        {
+          "target_id": "jd_2",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Maintain a clean ledger of receipt references."
+            },
+            {
+              "source_id": "fact_2",
+              "quote": "A supplied ledger excerpt lists receipt references beside transaction IDs and amounts."
+            }
+          ],
+          "rationale": "The supplied ledger excerpt supports reference tracking."
+        }
+      ],
+      "conclusion": {
+        "action": "pursue",
+        "text": "The candidate covers substantive preparation work and reference tracking, with a sign-off boundary.",
+        "next_step": "Present reconciliation and commentary as the candidate contribution and name the controller as sign-off owner."
+      },
+      "limitations": [
+        "The first claim is self-reported."
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "assessments": [
+        {
+          "target_id": "jd_1",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Own the monthly audit package: reconcile expense lines, write variance commentary, and sign off the final packet."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "I reconciled expense lines and drafted variance commentary for two monthly audit packages; the controller signed off both final packets."
+            }
+          ],
+          "rationale": "No evidence exists for any part of the monthly audit package."
+        },
+        {
+          "target_id": "jd_2",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Maintain a clean ledger of receipt references."
+            },
+            {
+              "source_id": "fact_2",
+              "quote": "A supplied ledger excerpt lists receipt references beside transaction IDs and amounts."
+            }
+          ],
+          "rationale": "The supplied ledger excerpt supports reference tracking."
+        }
+      ],
+      "conclusion": {
+        "action": "pursue",
+        "text": "The candidate covers substantive preparation work and reference tracking, with a sign-off boundary.",
+        "next_step": "Present reconciliation and commentary as the candidate contribution and name the controller as sign-off owner."
+      },
+      "limitations": [
+        "The first claim is self-reported."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "schema": "maguire-quality-answers-v1",
+  "case_id": "PF2-05",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "assessments": [
+        {
+          "target_id": "pref_1",
+          "label": "conflict",
+          "evidence": [
+            {
+              "source_id": "pref_1",
+              "quote": "I can work at a field station on no more than two weekdays per calendar month."
+            },
+            {
+              "source_id": "jd_1",
+              "quote": "The scheduler works at the wetland station on two weekdays every week."
+            }
+          ],
+          "rationale": "The role requires two station days every week, while the candidate permits two in an entire calendar month."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "The stated station schedule exceeds the candidate's monthly maximum.",
+        "next_step": "Ask whether two station days per calendar month are feasible for this specific role."
+      },
+      "limitations": [
+        "No alternative station schedule is documented."
+      ]
+    },
+    {
+      "answer_id": "answer_02",
+      "assessments": [
+        {
+          "target_id": "pref_1",
+          "label": "conflict",
+          "evidence": [
+            {
+              "source_id": "pref_1",
+              "quote": "I can work at a field station on no more than two weekdays per calendar month."
+            },
+            {
+              "source_id": "jd_1",
+              "quote": "The scheduler works at the wetland station on two weekdays every week."
+            }
+          ],
+          "rationale": "The role requires two station days every week, while the candidate permits two in an entire calendar month."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "The weekly schedule conflicts with the monthly ceiling unless the employer changes the stated arrangement.",
+        "next_step": "Request a role-specific schedule clarification before proceeding."
+      },
+      "limitations": [
+        "A single week at the station could fit; recurring weeks would exceed the monthly limit."
+      ]
+    },
+    {
+      "answer_id": "answer_03",
+      "assessments": [
+        {
+          "target_id": "pref_1",
+          "label": "conflict",
+          "evidence": [
+            {
+              "source_id": "pref_1",
+              "quote": "I can work at a field station on no more than two weekdays per calendar month."
+            },
+            {
+              "source_id": "jd_1",
+              "quote": "The scheduler works at the wetland station on two weekdays every week."
+            }
+          ],
+          "rationale": "The role requires two station days per calendar month, exactly matching the candidate's monthly ceiling."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "The stated station schedule exceeds the candidate's monthly maximum.",
+        "next_step": "Ask whether two station days per calendar month are feasible for this specific role."
+      },
+      "limitations": [
+        "No alternative station schedule is documented."
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "assessments": [
+        {
+          "target_id": "pref_1",
+          "label": "conflict",
+          "evidence": [
+            {
+              "source_id": "pref_1",
+              "quote": "I can work at a field station on no more than two weekdays per calendar month."
+            },
+            {
+              "source_id": "jd_1",
+              "quote": "The scheduler works at the wetland station on two weekdays every week."
+            }
+          ],
+          "rationale": "The role requires two station days every week, while the candidate permits two in an entire calendar month."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "The schedule fits because the candidate permits two field-station days each week.",
+        "next_step": "Ask whether two station days per calendar month are feasible for this specific role."
+      },
+      "limitations": [
+        "No alternative station schedule is documented."
+      ]
+    }
+  ]
+}

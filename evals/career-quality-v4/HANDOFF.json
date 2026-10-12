@@ -1,0 +1,52 @@
+{
+  "schema": "maguire-v4-local-handoff-v1",
+  "created_at": "2026-10-12T17:45:39.214418+00:00",
+  "human_approved": false,
+  "git_head": "4d87b90ef74c4f40b282e08b6d82fc6ad9f2749e",
+  "git_status": [
+    "?? evals/"
+  ],
+  "files": {
+    "ANALYSIS.md": {
+      "sha256": "813330b7c98f9a8b33654098b977244df60c48942d5095ee1b38154abf6023c8",
+      "bytes": 19176
+    },
+    "FREEZE.json": {
+      "sha256": "3b965b1e54745be5b693046eae253f862ae842e226e7d0c290c53d7a5178aaa3",
+      "bytes": 13069
+    },
+    "START.json": {
+      "sha256": "e69bb5bf336c1e19bba4bdb45b87a8f7816456a81c77f37c5c691549e77d6c19",
+      "bytes": 3634
+    },
+    "PREDECESSOR.json": {
+      "sha256": "e503f6b6757bc072de3cf6fc164c81e961388448457d7f5e7e4ee1be5b9b506c",
+      "bytes": 54906
+    },
+    "review/results_review_v1.json": {
+      "sha256": "7fba7dcd550aadd10d85747b9072529a1d7873a3592d552285473c9aacb2c5a9",
+      "bytes": 21135
+    },
+    "runs/v4-regression/RECEIPT.json": {
+      "sha256": "f4097ed5824083b90cf6b603bb6fdaf0654ba3ea1e9ca936e777d5d2ffcc2644",
+      "bytes": 1330
+    },
+    "runs/v4-regression/measurement.json": {
+      "sha256": "f471f313bfa150ff21af04c35549febae106db9c84346f109694754fae7ff37c",
+      "bytes": 105818
+    },
+    "runs/v4-regression/comparison.json": {
+      "sha256": "d9c1ee05c78053cde26c3554dab1176369984c68bcd640b58a7e898c5e83c9f8",
+      "bytes": 11458
+    }
+  },
+  "scope": "Known 40-case regression; manual agent-reviewed normalization; no blind holdout or raw-text extraction claim.",
+  "limits": [
+    "Normalization/checker contract still has predicate, unit and pending-status mismatches.",
+    "PF3N-14/B remained needs_review rather than fail.",
+    "PF3N-04 is counted as a false rejection against unchanged gold despite an interpretation caveat."
+  ],
+  "network_calls": 0,
+  "commits": 0,
+  "pushes": 0
+}

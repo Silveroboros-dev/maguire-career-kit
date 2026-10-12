@@ -1,0 +1,162 @@
+{
+  "schema": "maguire-quality-answers-v1",
+  "case_id": "CF-06",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "assessments": [
+        {
+          "target_id": "jd_1",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Use spreadsheet formulas to summarize service tickets each Friday."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "A supplied workbook excerpt shows COUNTIF and SUMIFS formulas summarizing Friday service tickets."
+            }
+          ],
+          "rationale": "The workbook excerpt shows formulas for the requested Friday summary."
+        },
+        {
+          "target_id": "jd_2",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Facilitate the Monday planning meeting with regional leads."
+            }
+          ],
+          "rationale": "The supplied facts do not address facilitation of regional planning meetings."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "Spreadsheet work is evidenced, while meeting facilitation remains open.",
+        "next_step": "Ask for a specific planning-meeting example before claiming facilitation experience."
+      },
+      "limitations": [
+        "Only one workbook excerpt was supplied."
+      ]
+    },
+    {
+      "answer_id": "answer_02",
+      "assessments": [
+        {
+          "target_id": "jd_2",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Facilitate the Monday planning meeting with regional leads."
+            }
+          ],
+          "rationale": "There is no candidate fact about leading Monday meetings."
+        },
+        {
+          "target_id": "jd_1",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Use spreadsheet formulas to summarize service tickets each Friday."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "A supplied workbook excerpt shows COUNTIF and SUMIFS formulas summarizing Friday service tickets."
+            }
+          ],
+          "rationale": "The supplied formulas match the weekly ticket summary duty."
+        }
+      ],
+      "conclusion": {
+        "action": "pursue",
+        "text": "The known spreadsheet strength supports an application with the meeting duty disclosed as unconfirmed.",
+        "next_step": "Describe the formula example and leave meeting leadership unclaimed."
+      },
+      "limitations": [
+        "The unaddressed duty remains unknown."
+      ]
+    },
+    {
+      "answer_id": "answer_03",
+      "assessments": [
+        {
+          "target_id": "jd_1",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Use spreadsheet formulas to summarize service tickets each Friday."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "A supplied workbook excerpt shows COUNTIF and SUMIFS formulas summarizing Friday service tickets."
+            }
+          ],
+          "rationale": "The workbook excerpt shows formulas for the requested Friday summary."
+        },
+        {
+          "target_id": "jd_2",
+          "label": "contradicted",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Facilitate the Monday planning meeting with regional leads."
+            }
+          ],
+          "rationale": "No meeting record was supplied, so the candidate cannot facilitate meetings."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "Spreadsheet work is evidenced, while meeting facilitation remains open.",
+        "next_step": "Ask for a specific planning-meeting example before claiming facilitation experience."
+      },
+      "limitations": [
+        "Only one workbook excerpt was supplied."
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "assessments": [
+        {
+          "target_id": "jd_1",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Use spreadsheet formulas to summarize service tickets each Friday."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "A supplied workbook excerpt shows COUNTIF and SUMIFS formulas summarizing Friday service tickets."
+            }
+          ],
+          "rationale": "The workbook excerpt shows formulas for the requested Friday summary."
+        },
+        {
+          "target_id": "jd_2",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Facilitate the Monday planning meeting with regional leads."
+            }
+          ],
+          "rationale": "The supplied facts do not address facilitation of regional planning meetings."
+        }
+      ],
+      "conclusion": {
+        "action": "pursue",
+        "text": "The candidate meets every duty in the role.",
+        "next_step": "Use the workbook excerpt."
+      },
+      "limitations": [
+        "Only one workbook excerpt was supplied."
+      ]
+    }
+  ]
+}

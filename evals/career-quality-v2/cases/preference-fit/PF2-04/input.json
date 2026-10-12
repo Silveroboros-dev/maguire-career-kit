@@ -1,0 +1,34 @@
+{
+  "schema": "maguire-quality-input-v1",
+  "case_id": "PF2-04",
+  "grader": "preference_fit",
+  "data_class": "synthetic",
+  "decision_at": "2026-10-11T12:00:00Z",
+  "task": "Assess the supplied role and candidate snapshot, cite sources, explain uncertainty, and recommend a next action.",
+  "jd": {
+    "title": "Regional Exhibits Liaison",
+    "sources": [
+      {
+        "id": "jd_1",
+        "text": "The liaison makes one overnight trip to a partner gallery each month.",
+        "observed_at": "2026-09-01T12:00:00Z",
+        "authority": "job_description",
+        "supersedes": []
+      }
+    ]
+  },
+  "candidate": {
+    "facts": [],
+    "preferences": [
+      {
+        "id": "pref_1",
+        "text": "I can take at most one overnight work trip per calendar quarter, with no carryover.",
+        "priority": "must_have",
+        "allowed_exceptions": [
+          "One overnight trip per calendar quarter is acceptable."
+        ],
+        "confirmed_at": "2026-08-15T12:00:00Z"
+      }
+    ]
+  }
+}

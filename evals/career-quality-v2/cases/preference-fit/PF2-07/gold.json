@@ -1,0 +1,55 @@
+{
+  "schema": "maguire-quality-gold-v1",
+  "case_id": "PF2-07",
+  "family": "scope change from team policy to personal contract",
+  "title": "Another team's practice cannot bind this role",
+  "review_status": "proposed_agent_authored",
+  "human_approved": false,
+  "units": [
+    {
+      "target_id": "pref_1",
+      "kind": "must_have",
+      "allowed_labels": [
+        "unknown"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "pref_1",
+          "jd_1",
+          "jd_2"
+        ]
+      ],
+      "rationale": "The posting is silent and another team's practice does not bind the Dublin role.",
+      "required_points": [
+        "Dublin terms silent",
+        "Helsinki team practice has limited scope"
+      ],
+      "forbidden_inferences": [
+        "Do not turn team practice into a personal contract"
+      ]
+    }
+  ],
+  "forbidden_assessment_targets": [],
+  "acceptable_actions": [
+    "clarify"
+  ],
+  "critical_errors": [
+    {
+      "id": "PF2-07-E1",
+      "description": "Another team's practice cannot establish this person's written contractual term.",
+      "target_ids": [
+        "pref_1"
+      ]
+    },
+    {
+      "id": "PF2-07-E2",
+      "description": "The only permission cited is a current local practice for the Helsinki design team.",
+      "target_ids": [
+        "pref_1"
+      ]
+    }
+  ],
+  "notes": [
+    "All people, roles, dates, and source statements are synthetic."
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "schema": "maguire-quality-gold-v1",
+  "case_id": "PF-01",
+  "family": "explicit_remote_hard_conflict",
+  "title": "Three office days against zero-office requirement",
+  "review_status": "proposed_agent_authored",
+  "human_approved": false,
+  "units": [
+    {
+      "target_id": "pref_remote",
+      "kind": "work_arrangement",
+      "allowed_labels": [
+        "conflict"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_location"
+        ]
+      ],
+      "rationale": "Three mandatory office days directly exceed zero; an unconfirmed waiver cannot erase the conflict.",
+      "required_points": [
+        "The published requirement is three office days per week.",
+        "The candidate requires zero office days."
+      ],
+      "forbidden_inferences": [
+        "Do not infer flexibility from the candidate being willing to ask."
+      ]
+    },
+    {
+      "target_id": "pref_learning",
+      "kind": "benefit",
+      "allowed_labels": [
+        "aligned"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_learning"
+        ]
+      ],
+      "rationale": "A funded annual course directly satisfies the stated soft learning preference.",
+      "required_points": [
+        "One course is funded each year."
+      ],
+      "forbidden_inferences": [
+        "Do not use this benefit to offset the office conflict."
+      ]
+    },
+    {
+      "target_id": "pref_travel",
+      "kind": "travel",
+      "allowed_labels": [
+        "aligned"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_travel"
+        ]
+      ],
+      "rationale": "The two stated business trips each year are within the four-trip preference.",
+      "required_points": [
+        "Two required business trips are below four trips per year."
+      ],
+      "forbidden_inferences": [
+        "Do not infer that travel is zero."
+      ]
+    }
+  ],
+  "forbidden_assessment_targets": [],
+  "acceptable_actions": [
+    "clarify",
+    "pass"
+  ],
+  "critical_errors": [
+    {
+      "id": "PF-01-interpretation",
+      "description": "Misreads Three office days against zero-office requirement: the remote preference or its cited role term.",
+      "target_ids": [
+        "pref_remote"
+      ]
+    },
+    {
+      "id": "PF-01-action",
+      "description": "For Three office days against zero-office requirement, takes a next step inconsistent with the supported remote result.",
+      "target_ids": [
+        "pref_remote"
+      ]
+    }
+  ],
+  "notes": [
+    "The hard office conflict remains a conflict even in the conditional clarification variant."
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": "maguire-quality-annotations-v1",
+  "case_id": "PF-06",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "Location and travel fit; CHF 160,000 base remains unresolved because the published range is indicative and above-range offers are only possible.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_02",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The salary must-have needs an employer decision despite the compatible remote and travel terms.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_03",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "jd_salary calls CHF 130,000–150,000 indicative and says above-range offers may be considered; it does not guarantee pref_salary's CHF 160,000 base minimum. Salary remains unknown until actual approved offer authority is clarified.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "preference_interpretation",
+        "description": "Misinterprets the salary preference in Indicative salary range leaves negotiated minimum unresolved.",
+        "changed_paths": [
+          "/assessments/0/label",
+          "/assessments/0/rationale"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "PF-INTERPRETATION",
+          "severity": "critical",
+          "target_id": "pref_salary",
+          "explanation": "jd_salary calls CHF 130,000–150,000 indicative and says above-range offers may be considered; it does not guarantee pref_salary's CHF 160,000 base minimum. Salary remains unknown until actual approved offer authority is clarified."
+        }
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "jd_salary expressly allows above-range offers to be considered, so its CHF 150,000 indicative ceiling is not a definitive cap. Calling pref_salary's CHF 160,000 base minimum impossible and passing is premature; clarify approved base-pay authority.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "indicative_range_as_final_cap",
+        "description": "Treats an indicative salary ceiling as a definitive maximum despite explicit above-range consideration.",
+        "changed_paths": [
+          "/conclusion/action",
+          "/conclusion/text",
+          "/conclusion/next_step"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "PF-UNKNOWN",
+          "severity": "major",
+          "target_id": "pref_salary",
+          "explanation": "jd_salary expressly allows above-range offers to be considered, so its CHF 150,000 indicative ceiling is not a definitive cap. Calling pref_salary's CHF 160,000 base minimum impossible and passing is premature; clarify approved base-pay authority."
+        }
+      ]
+    }
+  ]
+}

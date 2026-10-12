@@ -1,0 +1,76 @@
+{
+  "schema": "maguire-quality-gold-v1",
+  "case_id": "CF-01",
+  "family": "supported evidence with limits",
+  "title": "Evidence-backed SQL and reporting",
+  "review_status": "proposed_agent_authored",
+  "human_approved": false,
+  "units": [
+    {
+      "target_id": "jd_1",
+      "kind": "duty",
+      "allowed_labels": [
+        "supported"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_1",
+          "fact_1"
+        ]
+      ],
+      "rationale": "The self-report directly describes the SQL reconciliation, but the exercise is not independent proof of workplace delivery.",
+      "required_points": [
+        "SQL and weekly inventory reconciliation are reported",
+        "Preserve self-report provenance"
+      ],
+      "forbidden_inferences": [
+        "Do not claim independently verified employment delivery"
+      ]
+    },
+    {
+      "target_id": "jd_2",
+      "kind": "duty",
+      "allowed_labels": [
+        "supported"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_2",
+          "fact_2"
+        ]
+      ],
+      "rationale": "The excerpt supports the report and presentation claim within the supplied artifact.",
+      "required_points": [
+        "Weekly exception reporting and presentation are shown",
+        "Do not infer downstream adoption"
+      ],
+      "forbidden_inferences": [
+        "Do not claim the report changed business outcomes"
+      ]
+    }
+  ],
+  "forbidden_assessment_targets": [],
+  "acceptable_actions": [
+    "pursue",
+    "show_existing_evidence"
+  ],
+  "critical_errors": [
+    {
+      "id": "CF-01-E1",
+      "description": "Self-report about an exercise cannot be promoted to verified production work.",
+      "target_ids": [
+        "jd_1"
+      ]
+    },
+    {
+      "id": "CF-01-E2",
+      "description": "No source supports a stockout reduction metric.",
+      "target_ids": [
+        "jd_2"
+      ]
+    }
+  ],
+  "notes": [
+    "Separate the self-reported SQL exercise from the supplied reporting excerpt; neither independently verifies workplace impact."
+  ]
+}

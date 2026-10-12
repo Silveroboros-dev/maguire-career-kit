@@ -1,0 +1,39 @@
+{
+  "schema": "maguire-quality-input-v1",
+  "case_id": "PF2-07",
+  "grader": "preference_fit",
+  "data_class": "synthetic",
+  "decision_at": "2026-10-11T12:00:00Z",
+  "task": "Assess the supplied role and candidate snapshot, cite sources, explain uncertainty, and recommend a next action.",
+  "jd": {
+    "title": "Dublin Collections Accountant",
+    "sources": [
+      {
+        "id": "jd_1",
+        "text": "The Dublin collections accountant role does not specify a work location in this posting.",
+        "observed_at": "2026-09-01T12:00:00Z",
+        "authority": "job_description",
+        "supersedes": []
+      },
+      {
+        "id": "jd_2",
+        "text": "The Helsinki design team currently allows its members to choose office days locally.",
+        "observed_at": "2026-09-01T12:00:00Z",
+        "authority": "employer_update",
+        "supersedes": []
+      }
+    ]
+  },
+  "candidate": {
+    "facts": [],
+    "preferences": [
+      {
+        "id": "pref_1",
+        "text": "I require a written zero-mandatory-office arrangement for my own role.",
+        "priority": "must_have",
+        "allowed_exceptions": [],
+        "confirmed_at": "2026-08-15T12:00:00Z"
+      }
+    ]
+  }
+}

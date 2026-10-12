@@ -1,0 +1,69 @@
+{
+  "schema": "maguire-quality-annotations-v1",
+  "case_id": "PF-04",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The 32-hour schedule and conference budget fit, but two fixed office days exceed the one-day must-have.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_02",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The office requirement is a conflict; the candidate permits a single check for a formal one-day arrangement.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_03",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "jd_office requires two fixed office days each week, exceeding pref_office's maximum of one. Three home days do not reduce that two-day requirement; the supported label is conflict.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "preference_interpretation",
+        "description": "Misinterprets the office preference in Two office days exceed a one-day ceiling.",
+        "changed_paths": [
+          "/assessments/0/label",
+          "/assessments/0/rationale"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "PF-INTERPRETATION",
+          "severity": "critical",
+          "target_id": "pref_office",
+          "explanation": "jd_office requires two fixed office days each week, exceeding pref_office's maximum of one. Three home days do not reduce that two-day requirement; the supported label is conflict."
+        }
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "jd_office requires two office days against pref_office's one-day ceiling. The matching four-day schedule and conference budget do not cure it; pass or use the candidate's one permitted formal-exception inquiry.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "incompatible_action",
+        "description": "Ignores the assessed office preference in the Two office days exceed a one-day ceiling conclusion.",
+        "changed_paths": [
+          "/conclusion/action",
+          "/conclusion/text",
+          "/conclusion/next_step"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "PF-ACTION",
+          "severity": "critical",
+          "target_id": "pref_office",
+          "explanation": "jd_office requires two office days against pref_office's one-day ceiling. The matching four-day schedule and conference budget do not cure it; pass or use the candidate's one permitted formal-exception inquiry."
+        }
+      ]
+    }
+  ]
+}

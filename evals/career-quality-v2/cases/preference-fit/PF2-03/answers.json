@@ -1,0 +1,178 @@
+{
+  "schema": "maguire-quality-answers-v1",
+  "case_id": "PF2-03",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "assessments": [
+        {
+          "target_id": "pref_1",
+          "label": "conflict",
+          "evidence": [
+            {
+              "source_id": "pref_1",
+              "quote": "I will not take any overnight on-call duty."
+            },
+            {
+              "source_id": "jd_1",
+              "quote": "Technicians rotate through overnight on-call duty every fourth week."
+            }
+          ],
+          "rationale": "Every-fourth-week overnight on-call conflicts with the candidate's non-negotiable exclusion."
+        },
+        {
+          "target_id": "pref_2",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "pref_2",
+              "quote": "A learning allowance would be welcome but is not required."
+            },
+            {
+              "source_id": "jd_2",
+              "quote": "The role provides a yearly marine-science learning allowance."
+            }
+          ],
+          "rationale": "The learning allowance matches a nice-to-have, but does not change the on-call requirement."
+        }
+      ],
+      "conclusion": {
+        "action": "pass",
+        "text": "The learning allowance is attractive, but the overnight rotation breaches a must-have.",
+        "next_step": "Decline this role unless the candidate later changes the stated boundary."
+      },
+      "limitations": [
+        "No candidate-authorized overnight exception is supplied."
+      ]
+    },
+    {
+      "answer_id": "answer_02",
+      "assessments": [
+        {
+          "target_id": "pref_1",
+          "label": "conflict",
+          "evidence": [
+            {
+              "source_id": "pref_1",
+              "quote": "I will not take any overnight on-call duty."
+            },
+            {
+              "source_id": "jd_1",
+              "quote": "Technicians rotate through overnight on-call duty every fourth week."
+            }
+          ],
+          "rationale": "Every-fourth-week overnight on-call conflicts with the candidate's non-negotiable exclusion."
+        },
+        {
+          "target_id": "pref_2",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "pref_2",
+              "quote": "A learning allowance would be welcome but is not required."
+            },
+            {
+              "source_id": "jd_2",
+              "quote": "The role provides a yearly marine-science learning allowance."
+            }
+          ],
+          "rationale": "The learning allowance matches a nice-to-have, but does not change the on-call requirement."
+        }
+      ],
+      "conclusion": {
+        "action": "pass",
+        "text": "The soft benefit is present; the hard on-call conflict controls this decision.",
+        "next_step": "Record the schedule conflict and look for a role without overnight rotation."
+      },
+      "limitations": [
+        "The supplied terms do not offer an alternative rotation."
+      ]
+    },
+    {
+      "answer_id": "answer_03",
+      "assessments": [
+        {
+          "target_id": "pref_1",
+          "label": "conflict",
+          "evidence": [
+            {
+              "source_id": "pref_1",
+              "quote": "I will not take any overnight on-call duty."
+            },
+            {
+              "source_id": "jd_1",
+              "quote": "Technicians rotate through overnight on-call duty every fourth week."
+            }
+          ],
+          "rationale": "Every-fourth-week overnight on-call conflicts with the candidate's non-negotiable exclusion."
+        },
+        {
+          "target_id": "pref_2",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "pref_2",
+              "quote": "A learning allowance would be welcome but is not required."
+            },
+            {
+              "source_id": "jd_2",
+              "quote": "The role provides a yearly marine-science learning allowance."
+            }
+          ],
+          "rationale": "The learning allowance matches a nice-to-have, but does not change the on-call requirement."
+        }
+      ],
+      "conclusion": {
+        "action": "pass",
+        "text": "The annual learning allowance makes the overnight rotation acceptable despite the no-on-call must-have.",
+        "next_step": "Decline this role unless the candidate later changes the stated boundary."
+      },
+      "limitations": [
+        "No candidate-authorized overnight exception is supplied."
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "assessments": [
+        {
+          "target_id": "pref_1",
+          "label": "conflict",
+          "evidence": [
+            {
+              "source_id": "pref_1",
+              "quote": "I will not take any overnight on-call duty."
+            },
+            {
+              "source_id": "jd_1",
+              "quote": "Technicians rotate through overnight on-call duty every fourth week."
+            }
+          ],
+          "rationale": "The on-call rotation is effectively compatible because the marine-science allowance compensates for it."
+        },
+        {
+          "target_id": "pref_2",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "pref_2",
+              "quote": "A learning allowance would be welcome but is not required."
+            },
+            {
+              "source_id": "jd_2",
+              "quote": "The role provides a yearly marine-science learning allowance."
+            }
+          ],
+          "rationale": "The learning allowance matches a nice-to-have, but does not change the on-call requirement."
+        }
+      ],
+      "conclusion": {
+        "action": "pass",
+        "text": "The learning allowance is attractive, but the overnight rotation breaches a must-have.",
+        "next_step": "Decline this role unless the candidate later changes the stated boundary."
+      },
+      "limitations": [
+        "No candidate-authorized overnight exception is supplied."
+      ]
+    }
+  ]
+}

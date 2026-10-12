@@ -1,0 +1,69 @@
+{
+  "schema": "maguire-quality-annotations-v1",
+  "case_id": "CF-09",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The API documentation is supported; the preferred future workshop ability remains unknown despite no prior workshop history.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_02",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The API example can be shown while the preferred workshop ability remains unknown.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_03",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "The JD marks workshop facilitation preferred, not required.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "preferred becomes minimum",
+        "description": "The JD marks workshop facilitation preferred, not required.",
+        "changed_paths": [
+          "/conclusion/action",
+          "/conclusion/next_step",
+          "/conclusion/text"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "CF-ACTION",
+          "severity": "critical",
+          "target_id": "jd_2",
+          "explanation": "The JD marks workshop facilitation preferred, not required."
+        }
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "The candidate expressly reports no prior external workshop, so the answer invents facilitation history; future ability remains unknown.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "fabricate workshop",
+        "description": "The candidate expressly reports no prior external workshop, so the answer invents facilitation history; future ability remains unknown.",
+        "changed_paths": [
+          "/assessments/1/label",
+          "/assessments/1/rationale"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "CF-LABEL",
+          "severity": "major",
+          "target_id": "jd_2",
+          "explanation": "The candidate expressly reports no prior external workshop, so the answer invents facilitation history; future ability remains unknown."
+        }
+      ]
+    }
+  ]
+}

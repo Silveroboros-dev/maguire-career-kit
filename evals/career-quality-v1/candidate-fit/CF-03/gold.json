@@ -1,0 +1,77 @@
+{
+  "schema": "maguire-quality-gold-v1",
+  "case_id": "CF-03",
+  "family": "experience waiver versus duty",
+  "title": "Entry waiver and future operations",
+  "review_status": "proposed_agent_authored",
+  "human_approved": false,
+  "units": [
+    {
+      "target_id": "jd_2",
+      "kind": "duty",
+      "allowed_labels": [
+        "unknown"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_2",
+          "fact_2"
+        ]
+      ],
+      "rationale": "The candidate lacks prior examples, but future ability to perform the duty is untested.",
+      "required_points": [
+        "No prior operational example is supplied",
+        "Future skill remains unknown"
+      ],
+      "forbidden_inferences": [
+        "Do not label future ability contradicted"
+      ]
+    },
+    {
+      "target_id": "jd_3",
+      "kind": "duty",
+      "allowed_labels": [
+        "supported"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_3",
+          "fact_1"
+        ]
+      ],
+      "rationale": "The self-reported local Python work matches payload checks.",
+      "required_points": [
+        "Python payload checking is reported"
+      ],
+      "forbidden_inferences": [
+        "Do not call local testing production"
+      ]
+    }
+  ],
+  "forbidden_assessment_targets": [
+    "jd_1"
+  ],
+  "acceptable_actions": [
+    "pursue",
+    "verify_skill"
+  ],
+  "critical_errors": [
+    {
+      "id": "CF-03-E1",
+      "description": "Waiving past experience does not prove ability to perform future operations.",
+      "target_ids": [
+        "jd_2"
+      ]
+    },
+    {
+      "id": "CF-03-E2",
+      "description": "The explicit absence of prior work does not prove inability for a future duty.",
+      "target_ids": [
+        "jd_2"
+      ]
+    }
+  ],
+  "notes": [
+    "The no-prior-deployment entry waiver is context, not evidence of release or incident-review skill."
+  ]
+}

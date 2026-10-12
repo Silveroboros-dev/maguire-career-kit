@@ -1,0 +1,190 @@
+{
+  "schema": "maguire-quality-answers-v1",
+  "case_id": "PF-02",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "assessments": [
+        {
+          "target_id": "pref_remote",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_posting",
+              "quote": "Work is fully remote from anywhere in Switzerland. Base pay is CHF 155,000–175,000 annually. The team publishes decisions in writing before its weekly planning call."
+            }
+          ],
+          "rationale": "The role explicitly permits fully remote work within the candidate’s country."
+        },
+        {
+          "target_id": "pref_pay",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_posting",
+              "quote": "Work is fully remote from anywhere in Switzerland. Base pay is CHF 155,000–175,000 annually. The team publishes decisions in writing before its weekly planning call."
+            }
+          ],
+          "rationale": "The published base range starts above the candidate’s CHF 150,000 base minimum."
+        },
+        {
+          "target_id": "pref_async",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_posting",
+              "quote": "Work is fully remote from anywhere in Switzerland. Base pay is CHF 155,000–175,000 annually. The team publishes decisions in writing before its weekly planning call."
+            }
+          ],
+          "rationale": "Written decisions precede the planning call, matching the soft workflow preference."
+        }
+      ],
+      "conclusion": {
+        "action": "pursue",
+        "text": "The published remote location, base range and decision practice all match the three stated preferences.",
+        "next_step": "Prepare a role assessment and verify the compensation terms in the formal offer if one arrives."
+      },
+      "limitations": [
+        "The final offer and actual team practice are not yet observed."
+      ]
+    },
+    {
+      "answer_id": "answer_02",
+      "assessments": [
+        {
+          "target_id": "pref_remote",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_terms",
+              "quote": "Location: remote within Switzerland. Annual base salary: CHF 155,000–175,000. Weekly planning decisions are documented in writing before the weekly planning call."
+            }
+          ],
+          "rationale": "The role explicitly permits fully remote work within the candidate’s country."
+        },
+        {
+          "target_id": "pref_pay",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_terms",
+              "quote": "Location: remote within Switzerland. Annual base salary: CHF 155,000–175,000. Weekly planning decisions are documented in writing before the weekly planning call."
+            }
+          ],
+          "rationale": "The published base range starts above the candidate’s CHF 150,000 base minimum."
+        },
+        {
+          "target_id": "pref_async",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_terms",
+              "quote": "Location: remote within Switzerland. Annual base salary: CHF 155,000–175,000. Weekly planning decisions are documented in writing before the weekly planning call."
+            }
+          ],
+          "rationale": "Written decisions precede the planning call, matching the soft workflow preference."
+        }
+      ],
+      "conclusion": {
+        "action": "pursue",
+        "text": "The separate employer terms sheet independently supports the same three matches.",
+        "next_step": "Proceed to a first conversation and ask that the written location and base terms be carried into any offer."
+      },
+      "limitations": [
+        "The final offer and actual team practice are not yet observed."
+      ]
+    },
+    {
+      "answer_id": "answer_03",
+      "assessments": [
+        {
+          "target_id": "pref_remote",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_posting",
+              "quote": "Work is fully remote from anywhere in Switzerland. Base pay is CHF 155,000–175,000 annually. The team publishes decisions in writing before its weekly planning call."
+            }
+          ],
+          "rationale": "The role explicitly permits fully remote work within the candidate’s country."
+        },
+        {
+          "target_id": "pref_pay",
+          "label": "conflict",
+          "evidence": [
+            {
+              "source_id": "jd_posting",
+              "quote": "Work is fully remote from anywhere in Switzerland. Base pay is CHF 155,000–175,000 annually. The team publishes decisions in writing before its weekly planning call."
+            }
+          ],
+          "rationale": "The salary is below the candidate minimum despite the listed CHF 155,000 lower bound."
+        },
+        {
+          "target_id": "pref_async",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_posting",
+              "quote": "Work is fully remote from anywhere in Switzerland. Base pay is CHF 155,000–175,000 annually. The team publishes decisions in writing before its weekly planning call."
+            }
+          ],
+          "rationale": "Written decisions precede the planning call, matching the soft workflow preference."
+        }
+      ],
+      "conclusion": {
+        "action": "pursue",
+        "text": "The published remote location, base range and decision practice all match the three stated preferences.",
+        "next_step": "Prepare a role assessment and verify the compensation terms in the formal offer if one arrives."
+      },
+      "limitations": [
+        "The final offer and actual team practice are not yet observed."
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "assessments": [
+        {
+          "target_id": "pref_remote",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_posting",
+              "quote": "Work is fully remote from anywhere in Switzerland. Base pay is CHF 155,000–175,000 annually. The team publishes decisions in writing before its weekly planning call."
+            }
+          ],
+          "rationale": "The role explicitly permits fully remote work within the candidate’s country."
+        },
+        {
+          "target_id": "pref_pay",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_posting",
+              "quote": "Work is fully remote from anywhere in Switzerland. Base pay is CHF 155,000–175,000 annually. The team publishes decisions in writing before its weekly planning call."
+            }
+          ],
+          "rationale": "The published base range starts above the candidate’s CHF 150,000 base minimum."
+        },
+        {
+          "target_id": "pref_async",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_posting",
+              "quote": "Work is fully remote from anywhere in Switzerland. Base pay is CHF 155,000–175,000 annually. The team publishes decisions in writing before its weekly planning call."
+            }
+          ],
+          "rationale": "Written decisions precede the planning call, matching the soft workflow preference."
+        }
+      ],
+      "conclusion": {
+        "action": "pass",
+        "text": "Decline the role even though all three published terms match the candidate’s preferences.",
+        "next_step": "Close the role as unsuitable based on the stated terms."
+      },
+      "limitations": [
+        "The final offer and actual team practice are not yet observed."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": "maguire-v6-new-author-attestation",
+  "family": "candidate-fit",
+  "author": "Codex subagent /root/v6h_candidate_author",
+  "model_identity": "GPT-6 family; precise runtime variant not exposed to author",
+  "human_approved": false,
+  "checker_code_seen": false,
+  "previous_cases_seen": false,
+  "predictions_seen": false,
+  "files_read": [
+    "AGENTS.md",
+    "README.md",
+    "CREDITS.md",
+    "evals/career-quality-v6-new-cases/AUTHORING.md",
+    "evals/career-quality-v6-new-cases/FROZEN_SCHEMA.md",
+    "evals/career-quality-v6-new-cases/authoring/candidate-fit-raw.py",
+    "evals/career-quality-v6-new-cases/authoring/candidate-fit-raw-initial.json",
+    "evals/career-quality-v6-new-cases/authoring/candidate-fit-normalized.py",
+    "evals/career-quality-v6-new-cases/authoring/candidate-fit-gold.py",
+    "evals/career-quality-v6-new-cases/raw/candidate-fit.json",
+    "evals/career-quality-v6-new-cases/normalized/candidate-fit.json",
+    "evals/career-quality-v6-new-cases/gold/candidate-fit.json"
+  ],
+  "files_authored": {
+    "authoring/candidate-fit-raw.py": {
+      "sha256": "4cd15b8549c06760db402b105b59c66a8c78322b050b6241774a4d16ef55c489",
+      "bytes": 8553
+    },
+    "authoring/candidate-fit-raw-initial.json": {
+      "sha256": "474a6ae2ee9e8dd087fb45f1f52bbcbb122b59c80a4a82bd7400788801656388",
+      "bytes": 17070
+    },
+    "authoring/candidate-fit-normalized.py": {
+      "sha256": "94eda5558f5e629a8bf15135d93524f3bcd1befd8dce541e3a9207a69f686b43",
+      "bytes": 16111
+    },
+    "authoring/candidate-fit-gold.py": {
+      "sha256": "b786b1245c330def0aa6a8cad515189b2799a9d62a2235e2b10e3c5fff229bde",
+      "bytes": 3718
+    },
+    "raw/candidate-fit.json": {
+      "sha256": "1d446c8961ca222d0d2abf995ad6d264e64cfa491d4336a19d01d1b601b16d74",
+      "bytes": 17110
+    },
+    "normalized/candidate-fit.json": {
+      "sha256": "5ac9dd6ce9a03e8db83d0080cd2551f289a15a4bff42d9e00475abc71558fc27",
+      "bytes": 56548
+    },
+    "gold/candidate-fit.json": {
+      "sha256": "eced817907e91c11582768932abdfede1f7b7797b23ae0cdd35fa7c71c09891f",
+      "bytes": 5127
+    }
+  },
+  "composition_notes": [
+    "20 hand-authored fictional cases: 12 pass, 6 fail, 2 needs_review; labels interleaved.",
+    "37 atomic answer claims; 16 cases have multiple claims.",
+    "At least 10 cases combine two or more of time, scope, contribution, evidence authority, modality, count, or active/withdrawn status.",
+    "One pre-freeze raw wording correction in CF6H-16 made pending certificate status explicit; original raw file preserved in authoring/candidate-fit-raw-initial.json."
+  ],
+  "limitations": [
+    "The attestation cannot contain its own SHA-256 without a circular self-reference.",
+    "No frozen checker, previous dataset, predictions, or reviewer judgments were read or run."
+  ]
+}

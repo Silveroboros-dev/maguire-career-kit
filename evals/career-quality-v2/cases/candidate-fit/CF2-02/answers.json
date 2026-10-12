@@ -1,0 +1,165 @@
+{
+  "schema": "maguire-quality-answers-v1",
+  "case_id": "CF2-02",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "assessments": [
+        {
+          "target_id": "jd_1",
+          "label": "partial",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Design metadata fields and migrate object descriptions into the collection system."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "I designed metadata fields for 60 exhibition objects in a spreadsheet; I did not migrate them into a collection system."
+            }
+          ],
+          "rationale": "The candidate reports field design for 60 objects but explicitly says the descriptions were not migrated into a collection system."
+        },
+        {
+          "target_id": "jd_2",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Obtain image reproduction permissions from rights holders before publication."
+            }
+          ],
+          "rationale": "No supplied fact describes obtaining image permissions; the status of that duty is unknown."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "Field design is relevant, while migration and rights clearance remain unproven in this snapshot.",
+        "next_step": "Ask for any existing migration or permission records before claiming end-to-end coverage."
+      },
+      "limitations": [
+        "The 60-object work is self-reported.",
+        "Silence about permissions does not establish incapacity."
+      ]
+    },
+    {
+      "answer_id": "answer_02",
+      "assessments": [
+        {
+          "target_id": "jd_1",
+          "label": "partial",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Design metadata fields and migrate object descriptions into the collection system."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "I designed metadata fields for 60 exhibition objects in a spreadsheet; I did not migrate them into a collection system."
+            }
+          ],
+          "rationale": "The candidate reports field design for 60 objects but explicitly says the descriptions were not migrated into a collection system."
+        },
+        {
+          "target_id": "jd_2",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Obtain image reproduction permissions from rights holders before publication."
+            }
+          ],
+          "rationale": "No supplied fact describes obtaining image permissions; the status of that duty is unknown."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "The role has one demonstrated subset and one unassessed duty; it would be premature to describe full readiness.",
+        "next_step": "Request an example of an actual system import and a rights-holder permission trail."
+      },
+      "limitations": [
+        "A quoted absence of migration is not evidence of inability to learn it."
+      ]
+    },
+    {
+      "answer_id": "answer_03",
+      "assessments": [
+        {
+          "target_id": "jd_1",
+          "label": "partial",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Design metadata fields and migrate object descriptions into the collection system."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "I designed metadata fields for 60 exhibition objects in a spreadsheet; I did not migrate them into a collection system."
+            }
+          ],
+          "rationale": "The candidate reports field design for 60 objects but explicitly says the descriptions were not migrated into a collection system."
+        },
+        {
+          "target_id": "jd_2",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Obtain image reproduction permissions from rights holders before publication."
+            }
+          ],
+          "rationale": "No supplied fact describes obtaining image permissions; the status of that duty is unknown."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "Every material duty is already demonstrated, including collection-system migration and image permissions.",
+        "next_step": "Ask for any existing migration or permission records before claiming end-to-end coverage."
+      },
+      "limitations": [
+        "The 60-object work is self-reported.",
+        "Silence about permissions does not establish incapacity."
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "assessments": [
+        {
+          "target_id": "jd_1",
+          "label": "partial",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Design metadata fields and migrate object descriptions into the collection system."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "I designed metadata fields for 60 exhibition objects in a spreadsheet; I did not migrate them into a collection system."
+            }
+          ],
+          "rationale": "The candidate reports field design for 60 objects but explicitly says the descriptions were not migrated into a collection system."
+        },
+        {
+          "target_id": "jd_2",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Obtain image reproduction permissions from rights holders before publication."
+            }
+          ],
+          "rationale": "No supplied fact describes obtaining image permissions; the status of that duty is unknown."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "Field design is relevant, while migration and rights clearance remain unproven in this snapshot.",
+        "next_step": "Present the candidate as ready to own the complete metadata-to-publication workflow without further evidence."
+      },
+      "limitations": [
+        "The 60-object work is self-reported.",
+        "Silence about permissions does not establish incapacity."
+      ]
+    }
+  ]
+}

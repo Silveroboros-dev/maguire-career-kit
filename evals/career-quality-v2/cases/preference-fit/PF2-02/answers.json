@@ -1,0 +1,118 @@
+{
+  "schema": "maguire-quality-answers-v1",
+  "case_id": "PF2-02",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "assessments": [
+        {
+          "target_id": "pref_1",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "pref_1",
+              "quote": "I need a personal written offer of at least 115,000 credits before accepting."
+            },
+            {
+              "source_id": "jd_1",
+              "quote": "The residency stipend ranges from 82,000 to 128,000 credits depending on placement and experience; individual amounts are set after selection."
+            }
+          ],
+          "rationale": "The published band could accommodate 115,000 credits, but the individual amount is set after selection; this candidate has no written offer yet."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "The stipend may meet the threshold, but personal compatibility is not yet known.",
+        "next_step": "Ask how placement determines the amount and wait for a written personal offer before acceptance."
+      },
+      "limitations": [
+        "A published range is not a guaranteed personal amount."
+      ]
+    },
+    {
+      "answer_id": "answer_02",
+      "assessments": [
+        {
+          "target_id": "pref_1",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "pref_1",
+              "quote": "I need a personal written offer of at least 115,000 credits before accepting."
+            },
+            {
+              "source_id": "jd_1",
+              "quote": "The residency stipend ranges from 82,000 to 128,000 credits depending on placement and experience; individual amounts are set after selection."
+            }
+          ],
+          "rationale": "The published band could accommodate 115,000 credits, but the individual amount is set after selection; this candidate has no written offer yet."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "The upper band leaves a possible path, conditional on a later written amount at or above 115,000 credits.",
+        "next_step": "Ask for the placement rules; compare any actual offer to the stated threshold."
+      },
+      "limitations": [
+        "No individual stipend decision is in the source set."
+      ]
+    },
+    {
+      "answer_id": "answer_03",
+      "assessments": [
+        {
+          "target_id": "pref_1",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "pref_1",
+              "quote": "I need a personal written offer of at least 115,000 credits before accepting."
+            },
+            {
+              "source_id": "jd_1",
+              "quote": "The residency stipend ranges from 82,000 to 128,000 credits depending on placement and experience; individual amounts are set after selection."
+            }
+          ],
+          "rationale": "The published band could accommodate 115,000 credits, but the individual amount is set after selection; this candidate has no written offer yet."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "The candidate is guaranteed a 128,000-credit stipend, so the personal threshold is met.",
+        "next_step": "Ask how placement determines the amount and wait for a written personal offer before acceptance."
+      },
+      "limitations": [
+        "A published range is not a guaranteed personal amount."
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "assessments": [
+        {
+          "target_id": "pref_1",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "pref_1",
+              "quote": "I need a personal written offer of at least 115,000 credits before accepting."
+            },
+            {
+              "source_id": "jd_1",
+              "quote": "The residency stipend ranges from 82,000 to 128,000 credits depending on placement and experience; individual amounts are set after selection."
+            }
+          ],
+          "rationale": "Because the band includes 115,000 credits, the employer has committed to paying this candidate at least that amount."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "The stipend may meet the threshold, but personal compatibility is not yet known.",
+        "next_step": "Ask how placement determines the amount and wait for a written personal offer before acceptance."
+      },
+      "limitations": [
+        "A published range is not a guaranteed personal amount."
+      ]
+    }
+  ]
+}

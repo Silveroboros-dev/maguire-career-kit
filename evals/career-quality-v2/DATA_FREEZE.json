@@ -1,0 +1,21 @@
+{
+  "audit": {
+    "bytes": 4532,
+    "sha256": "1d71bb4af0bf5d55e7908718b0b5718b22f96e05daa4ff8d89a56ddd0c7fdbb3"
+  },
+  "code_freeze": {
+    "bytes": 2438,
+    "sha256": "c52b9def67c1c9d145bf884294c9465ee8e90b284015ef3dfc82ce9e79fa2da5"
+  },
+  "created_at": "2026-10-12T13:51:05.754246+00:00",
+  "external_seal": false,
+  "manifest": {
+    "bytes": 8234,
+    "sha256": "c18af8f617973c3d1bc5c1d741ca7897b464491725c422bdb9f95eb1981218cc"
+  },
+  "review": {
+    "bytes": 11595,
+    "sha256": "e4ce22f14ee5507dfd6b69bddba616c498e5e2ccfd9bfe078d8efbd5602e23ac"
+  },
+  "schema": "maguire-prose-challenge-freeze-v2"
+}

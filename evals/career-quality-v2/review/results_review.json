@@ -1,0 +1,436 @@
+{
+  "artifact_bindings": {
+    "CODE_FREEZE.json": {
+      "bytes": 2438,
+      "sha256": "c52b9def67c1c9d145bf884294c9465ee8e90b284015ef3dfc82ce9e79fa2da5"
+    },
+    "DATA_FREEZE.json": {
+      "bytes": 613,
+      "sha256": "abac95d29c745d377585938754dfc7db597a62315e708cbba2a8a210d44e028c"
+    },
+    "MANIFEST.json": {
+      "bytes": 8234,
+      "sha256": "c18af8f617973c3d1bc5c1d741ca7897b464491725c422bdb9f95eb1981218cc"
+    },
+    "PREDECESSOR.json": {
+      "bytes": 21086,
+      "sha256": "3a6fa8e6464ea06f9f4b78c890b99f533a23f514f448bc0e9cf2af974316c160"
+    },
+    "STRUCTURAL_AUDIT.json": {
+      "bytes": 4532,
+      "sha256": "1d71bb4af0bf5d55e7908718b0b5718b22f96e05daa4ff8d89a56ddd0c7fdbb3"
+    },
+    "review/dataset_review.json": {
+      "bytes": 11595,
+      "sha256": "e4ce22f14ee5507dfd6b69bddba616c498e5e2ccfd9bfe078d8efbd5602e23ac"
+    },
+    "review/prefreeze_code_review.json": {
+      "bytes": 3783,
+      "sha256": "438cd7f618c4087d20cd2f255b90bfcd3aedf1f2f30579e73a64e8a5f55dcb9e"
+    },
+    "runs/new-v1/RESULTS.md": {
+      "bytes": 14426,
+      "sha256": "bab1ed833959b6a9f79ae08ef2e647a0cba816fa8837c678dfc7e3855b2a2aef"
+    },
+    "runs/new-v1/execution.json": {
+      "bytes": 721,
+      "sha256": "6c3ed1e2755be817662b577ef342a6bf7dd7b36d739b3b7ff0419cf5938cd2cd"
+    },
+    "runs/new-v1/freeze.json": {
+      "bytes": 712,
+      "sha256": "9aa81655d1d4c88c254a026df43cb39833667b55633d4869e0d4404f630bc7fd"
+    },
+    "runs/new-v1/mapping.json": {
+      "bytes": 16343,
+      "sha256": "fab999792052ce5216995b1dec93b58e16d8da5e9f5b9354f1eb22b24526a9f2"
+    },
+    "runs/new-v1/measurement.json": {
+      "bytes": 56622,
+      "sha256": "91710ef1b0a3e854b566f9c995b2ef28d7500cb96ab085b8ef80f3f36057a0b8"
+    },
+    "runs/new-v1/packets.jsonl": {
+      "bytes": 139545,
+      "sha256": "1dc43b236b9ead043fda4d54f7f07bf69cfe13e22b66be5722acfdcaab612f90"
+    },
+    "runs/new-v1/predictions.jsonl": {
+      "bytes": 9932,
+      "sha256": "0644d7bc4d37a34f4ccdade6b1185bfe47bbd4552edcb04dcf697353da8338aa"
+    },
+    "runs/new-v1/receipt.json": {
+      "bytes": 7111,
+      "sha256": "c7ce5349e7d11a924a101b2ac75ce7e49a3f2aad7e85309f0764c1b22be004b7"
+    },
+    "runs/new-v2/RESULTS.md": {
+      "bytes": 13492,
+      "sha256": "49b07c7437d37bf16f35f725bd65ae5b824308d011e3e24c77ec0099b3ba82d4"
+    },
+    "runs/new-v2/execution.json": {
+      "bytes": 721,
+      "sha256": "67bc3adc4512689aca09d6036468a1b0d8199847e24d8f898ffa04e81a8859a5"
+    },
+    "runs/new-v2/freeze.json": {
+      "bytes": 712,
+      "sha256": "15734869ca4e316de84b306ff8918985d15b88bf25e57d0c0bb6735caac737a5"
+    },
+    "runs/new-v2/mapping.json": {
+      "bytes": 16343,
+      "sha256": "fab999792052ce5216995b1dec93b58e16d8da5e9f5b9354f1eb22b24526a9f2"
+    },
+    "runs/new-v2/measurement.json": {
+      "bytes": 59145,
+      "sha256": "ae0a206707cc7e129cf9d1ed11b3d5d5e1de509330272a82a2b1b80b0edbd80b"
+    },
+    "runs/new-v2/packets.jsonl": {
+      "bytes": 139545,
+      "sha256": "1dc43b236b9ead043fda4d54f7f07bf69cfe13e22b66be5722acfdcaab612f90"
+    },
+    "runs/new-v2/predictions.jsonl": {
+      "bytes": 11805,
+      "sha256": "754191505160282540d3b01cea2e59381a747561c85f03fdfdecd9985a0f9b37"
+    },
+    "runs/new-v2/receipt.json": {
+      "bytes": 7184,
+      "sha256": "d9e3c517a783a45141b94a05f8289646d9211f4f7900353a7ec9a2225de0a161"
+    },
+    "runs/regression-v2/RESULTS.md": {
+      "bytes": 6229,
+      "sha256": "29a0d7d51427652e95e58b07b69ffc42b23f9b6bdd386a300e001b589baa03ec"
+    },
+    "runs/regression-v2/execution.json": {
+      "bytes": 735,
+      "sha256": "992e2c6a5208a538ce63f8382bc21d5d5b1209738b9592d2c91b70a2a34ce7b3"
+    },
+    "runs/regression-v2/freeze.json": {
+      "bytes": 719,
+      "sha256": "e9251d81273d14dd13f074ae88149b801409c854e14b86992816d9e9477f2623"
+    },
+    "runs/regression-v2/mapping.json": {
+      "bytes": 29955,
+      "sha256": "b7e6141c05b9216e8382e5c4e4a4a571d18e1f8043cf505c5e6f561a959efc57"
+    },
+    "runs/regression-v2/measurement.json": {
+      "bytes": 132955,
+      "sha256": "c5a5d90c0c3005423f68b84d734c1572378811ba586bd51e57851845696ac236"
+    },
+    "runs/regression-v2/packets.jsonl": {
+      "bytes": 360947,
+      "sha256": "f57e77e50fea3a9245df0d4e9d9f8dc6c90df64dd3f034be65b042114fbb1949"
+    },
+    "runs/regression-v2/predictions.jsonl": {
+      "bytes": 30670,
+      "sha256": "7fb69f0648857c3113abac57f8e6f4a7490aa700ff756fefe937f1ce3fcb0985"
+    },
+    "runs/regression-v2/receipt.json": {
+      "bytes": 10291,
+      "sha256": "7a967cbe27324fb246bbc3015bb80dac1b1b05fd9644c5929ac76e81da0d985e"
+    }
+  },
+  "caught_review": [
+    {
+      "answer_id": "answer_03",
+      "assessment": "The annual fuel-bill percentage is absent from the one-week route log. Null target reflects a global conclusion; criterion+target differs from annotation.",
+      "case_id": "CF2-01",
+      "correct_reason": true,
+      "finding_code": "unsupported_quantified_claim",
+      "finding_path": "/answer/conclusion/text"
+    },
+    {
+      "answer_id": "answer_03",
+      "assessment": "The finding identifies the unsupported jump from a past-use minimum to future incapacity. It localizes to the recency minimum rather than the future-duty target.",
+      "case_id": "CF2-03",
+      "correct_reason": true,
+      "finding_code": "recency_as_future_inability",
+      "finding_path": "/answer/conclusion/text"
+    },
+    {
+      "answer_id": "answer_03",
+      "assessment": "The rationale falsely changes two station days each week into two per calendar month; criterion and preference target match the annotation.",
+      "case_id": "PF2-05",
+      "correct_reason": true,
+      "finding_code": "unsupported_time_basis",
+      "finding_path": "/answer/assessments/0/rationale"
+    },
+    {
+      "answer_id": "answer_04",
+      "assessment": "The only finding is on the unchanged acceptable rationale, identical to both false-rejected positives. The changed conclusion declaring the May notice definitive receives no finding.",
+      "case_id": "PF2-06",
+      "correct_reason": false,
+      "finding_code": "date_as_authority",
+      "finding_path": "/answer/assessments/0/rationale"
+    },
+    {
+      "answer_id": "answer_04",
+      "assessment": "The conclusion wrongly expands a Helsinki team practice to everyone and asserts Dublin compatibility. The rubric criterion differs and global target is null, but the ground is substantive.",
+      "case_id": "PF2-07",
+      "correct_reason": true,
+      "finding_code": "scope_expanded",
+      "finding_path": "/answer/conclusion/text"
+    }
+  ],
+  "created_at": "2026-10-12T13:53:37.099042+00:00",
+  "false_rejections": [
+    {
+      "answer_id": "answer_01",
+      "assessment": "The rationale explicitly says the newer flexibility note does not resolve the conflict. Treating this negated statement as a claim of supersession is erroneous.",
+      "case_id": "PF2-06",
+      "finding_code": "date_as_authority",
+      "finding_path": "/answer/assessments/0/rationale"
+    },
+    {
+      "answer_id": "answer_02",
+      "assessment": "The rationale explicitly says the newer flexibility note does not resolve the conflict. Treating this negated statement as a claim of supersession is erroneous.",
+      "case_id": "PF2-06",
+      "finding_code": "date_as_authority",
+      "finding_path": "/answer/assessments/0/rationale"
+    }
+  ],
+  "gold_review": "All 13 cases retain defensible proposed labels and material negative defects on review. PF2-06 positives correctly preserve unresolved authority; their false rejection is a grader error, not a gold correction. No frozen artifact was changed.",
+  "integrity_checks": {
+    "execution_exit_codes": [
+      0,
+      0,
+      0
+    ],
+    "new_v1_v2_mapping_byte_identical": true,
+    "new_v1_v2_packets_byte_identical": true,
+    "packet_prediction_counts": {
+      "new-v1": 52,
+      "new-v2": 52,
+      "regression-v2": 96
+    },
+    "prediction_order_matches_receipts": true,
+    "run_freezes_match_current_code_and_data_freezes": true,
+    "run_receipt_files_match": true
+  },
+  "interpretation": "Raw negative-answer rejection improves from 0/26 with v1 to 5/26 with v2 on the new synthetic set, while 21/26 bad answers remain accepted and 2/26 acceptable answers are rejected. Only 4/26 bad answers receive a substantive finding on the changed error. No release or general-accuracy claim follows.",
+  "limits": [
+    "This is a post-run agent review of proposed synthetic annotations, not human approval or an independent holdout.",
+    "A correct-reason judgment is reviewer analysis of saved finding path and explanation; exact criterion+target equality is a distinct mechanical metric.",
+    "Run receipts and hashes are local drift evidence, not an external seal. No grader execution or frozen-data edit occurred in this review."
+  ],
+  "measurement": {
+    "new_v1": {
+      "correct_rejected": 0,
+      "incorrect_accepted": 26,
+      "incorrect_rejected_raw": 0,
+      "invalid": 0
+    },
+    "new_v2": {
+      "correct_rejected": 2,
+      "exact_criterion_target_matches": 1,
+      "incorrect_accepted": 21,
+      "incorrect_rejected_for_substantive_changed_error": 4,
+      "incorrect_rejected_raw": 5,
+      "intended_findings": 26,
+      "invalid": 0
+    },
+    "v1_regression_v2": {
+      "correct_accepted": 48,
+      "correct_rejected": 0,
+      "five_original_misses_rejected": [
+        "CF-01/answer_04",
+        "CF-06/answer_04",
+        "CF-08/answer_04",
+        "CF-10/answer_04",
+        "CF-12/answer_03"
+      ],
+      "incorrect_accepted": 0,
+      "incorrect_rejected_raw": 48,
+      "invalid": 0
+    }
+  },
+  "per_case": [
+    {
+      "case_id": "CF2-01",
+      "family": "candidate_fit",
+      "missed_mutation_categories": [
+        "promote trial metric"
+      ],
+      "outcomes": {
+        "answer_01": "accepted_correct",
+        "answer_02": "accepted_correct",
+        "answer_03": "caught_error",
+        "answer_04": "false_acceptance"
+      },
+      "review": "Annual 27% fuel savings is detected. A one-week 18 km distance result is still wrongly promoted to a recurring all-branches weekly saving."
+    },
+    {
+      "case_id": "CF2-02",
+      "family": "candidate_fit",
+      "missed_mutation_categories": [
+        "flatten partial and unknown",
+        "aggregate proof overreach"
+      ],
+      "outcomes": {
+        "answer_01": "accepted_correct",
+        "answer_02": "accepted_correct",
+        "answer_03": "false_acceptance",
+        "answer_04": "false_acceptance"
+      },
+      "review": "Both aggregate-certainty variants pass despite partial migration work and unknown rights permissions."
+    },
+    {
+      "case_id": "CF2-03",
+      "family": "candidate_fit",
+      "missed_mutation_categories": [
+        "recency to future inability"
+      ],
+      "outcomes": {
+        "answer_01": "accepted_correct",
+        "answer_02": "accepted_correct",
+        "answer_03": "caught_error",
+        "answer_04": "false_acceptance"
+      },
+      "review": "The conclusion-level future-inability claim is detected. The assessment-rationale forecast of future inability passes."
+    },
+    {
+      "case_id": "CF2-04",
+      "family": "candidate_fit",
+      "missed_mutation_categories": [
+        "invent collection scale",
+        "invent throughput"
+      ],
+      "outcomes": {
+        "answer_01": "accepted_correct",
+        "answer_02": "accepted_correct",
+        "answer_03": "false_acceptance",
+        "answer_04": "false_acceptance"
+      },
+      "review": "Both invented collection-scale and daily-throughput claims pass despite only a 75-page sample."
+    },
+    {
+      "case_id": "CF2-05",
+      "family": "candidate_fit",
+      "missed_mutation_categories": [
+        "adopt source directive",
+        "execute source directive"
+      ],
+      "outcomes": {
+        "answer_01": "accepted_correct",
+        "answer_02": "accepted_correct",
+        "answer_03": "false_acceptance",
+        "answer_04": "false_acceptance"
+      },
+      "review": "Both variants adopting the embedded editorial instruction pass while correct labels and citations remain intact."
+    },
+    {
+      "case_id": "PF2-01",
+      "family": "preference_fit",
+      "missed_mutation_categories": [
+        "invent employer waiver",
+        "invent exception process"
+      ],
+      "outcomes": {
+        "answer_01": "accepted_correct",
+        "answer_02": "accepted_correct",
+        "answer_03": "false_acceptance",
+        "answer_04": "false_acceptance"
+      },
+      "review": "Invented waiver and routine exception-process assertions both pass despite a conflicting posted evening schedule."
+    },
+    {
+      "case_id": "PF2-02",
+      "family": "preference_fit",
+      "missed_mutation_categories": [
+        "guarantee band maximum",
+        "possibility to commitment"
+      ],
+      "outcomes": {
+        "answer_01": "accepted_correct",
+        "answer_02": "accepted_correct",
+        "answer_03": "false_acceptance",
+        "answer_04": "false_acceptance"
+      },
+      "review": "Both guaranteed personal-stipend assertions pass although the source provides a band only."
+    },
+    {
+      "case_id": "PF2-03",
+      "family": "preference_fit",
+      "missed_mutation_categories": [
+        "soft benefit overrides hard restriction",
+        "benefit erases condition"
+      ],
+      "outcomes": {
+        "answer_01": "accepted_correct",
+        "answer_02": "accepted_correct",
+        "answer_03": "false_acceptance",
+        "answer_04": "false_acceptance"
+      },
+      "review": "Both soft-benefit overrides of the overnight must-have pass."
+    },
+    {
+      "case_id": "PF2-04",
+      "family": "preference_fit",
+      "missed_mutation_categories": [
+        "expand candidate exception",
+        "invent carryover"
+      ],
+      "outcomes": {
+        "answer_01": "accepted_correct",
+        "answer_02": "accepted_correct",
+        "answer_03": "false_acceptance",
+        "answer_04": "false_acceptance"
+      },
+      "review": "Both expansions of the candidate-owned quarterly exception pass, including invented carryover."
+    },
+    {
+      "case_id": "PF2-05",
+      "family": "preference_fit",
+      "missed_mutation_categories": [
+        "change candidate time basis"
+      ],
+      "outcomes": {
+        "answer_01": "accepted_correct",
+        "answer_02": "accepted_correct",
+        "answer_03": "caught_error",
+        "answer_04": "false_acceptance"
+      },
+      "review": "Changing the role schedule from weekly to monthly is detected; changing the candidate monthly ceiling to weekly passes."
+    },
+    {
+      "case_id": "PF2-06",
+      "family": "preference_fit",
+      "missed_mutation_categories": [
+        "newest date as supersession"
+      ],
+      "outcomes": {
+        "answer_01": "false_rejection",
+        "answer_02": "false_rejection",
+        "answer_03": "false_acceptance",
+        "answer_04": "caught_error"
+      },
+      "review": "Both acceptable answers are falsely rejected for stating that a newer note does not resolve authority. The newest-date negative passes; the other negative is rejected solely for the unchanged acceptable rationale."
+    },
+    {
+      "case_id": "PF2-07",
+      "family": "preference_fit",
+      "missed_mutation_categories": [
+        "team practice to personal guarantee"
+      ],
+      "outcomes": {
+        "answer_01": "accepted_correct",
+        "answer_02": "accepted_correct",
+        "answer_03": "false_acceptance",
+        "answer_04": "caught_error"
+      },
+      "review": "Team practice promoted to a personal contract passes; team practice promoted to global permission is detected."
+    },
+    {
+      "case_id": "PF2-08",
+      "family": "preference_fit",
+      "missed_mutation_categories": [
+        "missing support assumed present",
+        "missing support assumed absent"
+      ],
+      "outcomes": {
+        "answer_01": "accepted_correct",
+        "answer_02": "accepted_correct",
+        "answer_03": "false_acceptance",
+        "answer_04": "false_acceptance"
+      },
+      "review": "Both unsupported claims about caption support or refusal pass."
+    }
+  ],
+  "schema": "maguire-quality-v2-results-review-v1",
+  "status": "reviewed_with_failures"
+}

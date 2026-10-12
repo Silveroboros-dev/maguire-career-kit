@@ -1,0 +1,67 @@
+{
+  "schema": "maguire-quality-annotations-v1",
+  "case_id": "PF-03",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "Salary and expected travel look suitable, but the must-have remote arrangement is unspecified.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_02",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The location decision is still open even though the published base and quarterly visits fit.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_03",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "jd_duties gives no work-location policy. Colleagues in several cities do not promise zero required office days; pref_remote remains unknown and needs a role-specific policy answer.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "preference_interpretation",
+        "description": "Misinterprets the remote preference in Remote term absent from a salary-forward posting.",
+        "changed_paths": [
+          "/assessments/0/label",
+          "/assessments/0/rationale"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "PF-INTERPRETATION",
+          "severity": "critical",
+          "target_id": "pref_remote",
+          "explanation": "jd_duties gives no work-location policy. Colleagues in several cities do not promise zero required office days; pref_remote remains unknown and needs a role-specific policy answer."
+        }
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "The JD omits a work-location policy, so pref_remote's zero-office must-have is unknown. The published salary and quarterly travel cannot resolve it; the supported next step is to clarify location before tailoring.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "missing_preference_assessment",
+        "description": "Omits the candidate’s zero-office must-have from preference assessments while leaving the conclusion unchanged.",
+        "changed_paths": [
+          "/assessments"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "PF-COVERAGE",
+          "severity": "critical",
+          "target_id": "pref_remote",
+          "explanation": "The JD omits a work-location policy, so pref_remote's zero-office must-have is unknown. The published salary and quarterly travel cannot resolve it; the supported next step is to clarify location before tailoring."
+        }
+      ]
+    }
+  ]
+}

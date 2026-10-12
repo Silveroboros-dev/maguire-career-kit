@@ -1,0 +1,144 @@
+{
+  "schema": "maguire-v5-new-gold",
+  "family": "candidate-fit",
+  "human_approved": false,
+  "exposure": {
+    "checker_code_seen": false,
+    "previous_cases_seen": false,
+    "predictions_seen": false
+  },
+  "rows": [
+    {
+      "case_id": "CF5H-01",
+      "verdict": "pass",
+      "reason": "The January 2024–March 2025 interval spans 14 elapsed months, exceeding one year; the same record explicitly states weekly handoffs.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "CF5H-02",
+      "verdict": "fail",
+      "reason": "Permission to shadow is not presentation experience, and the source explicitly says Mara did not present either demo.",
+      "error_claim_ids": [
+        "c1"
+      ]
+    },
+    {
+      "case_id": "CF5H-03",
+      "verdict": "pass",
+      "reason": "The role excludes mandatory weeknight on-call duty, and Mara's preference independently excludes that same duty.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "CF5H-04",
+      "verdict": "pass",
+      "reason": "Eighteen actual triages support occurrence without a number; the source separately records three escalations to SRE in the same pilot.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "CF5H-05",
+      "verdict": "needs_review",
+      "reason": "Mara can consider fewer days, but has not accepted one day; the employer may consider exceptions but grants none here. Whether the arrangement 'fits' depends on a judgment neither source settles.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "CF5H-06",
+      "verdict": "fail",
+      "reason": "The former employer's 2023 permission ended with that job. This role explicitly permits zero remote days and requires all five weekdays in the office.",
+      "error_claim_ids": [
+        "c1"
+      ]
+    },
+    {
+      "case_id": "CF5H-07",
+      "verdict": "pass",
+      "reason": "The pilot records OCR scan review for indexing, and the same source expressly says she has not earned the certificate.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "CF5H-08",
+      "verdict": "pass",
+      "reason": "CHF 14,400 per calendar year is CHF 1,200 per calendar month as a budget equivalent, above Mara's CHF 1,000 monthly minimum. The claim concerns budget size, not payment timing.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "CF5H-09",
+      "verdict": "fail",
+      "reason": "The CHF 2,000 figure belongs to a separate learning allowance. No source supports that amount as base salary.",
+      "error_claim_ids": [
+        "c1"
+      ]
+    },
+    {
+      "case_id": "CF5H-10",
+      "verdict": "pass",
+      "reason": "One requested remote day per month is within the permitted upper limit of two. Both evidence and answer retain manager approval; no grant is asserted.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "CF5H-11",
+      "verdict": "pass",
+      "reason": "The role explicitly waives production experience. Mara's record states four weeks of lab use and explicitly excludes production operation.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "CF5H-12",
+      "verdict": "fail",
+      "reason": "The complete five-box inventory has only two processed boxes; the source explicitly says three remained unprocessed by that date.",
+      "error_claim_ids": [
+        "c1"
+      ]
+    },
+    {
+      "case_id": "CF5H-13",
+      "verdict": "needs_review",
+      "reason": "The active original notice requires alternating Saturday coverage, while the active update calls it optional and does not explicitly replace the first notice. The governing term is unresolved.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "CF5H-14",
+      "verdict": "pass",
+      "reason": "The job source says every interview uses Meet with captions enabled; Mara's preference separately states the interview caption requirement.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "CF5H-15",
+      "verdict": "fail",
+      "reason": "The 30% outcome belongs to the team; Mara's recorded contribution is ticket tagging, and the report gives no individual share of the reduction.",
+      "error_claim_ids": [
+        "c1"
+      ]
+    },
+    {
+      "case_id": "CF5H-16",
+      "verdict": "pass",
+      "reason": "The employer update expressly replaces the original four-day rule. Its two required onsite days fit Mara's maximum of two days per week.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "CF5H-17",
+      "verdict": "pass",
+      "reason": "The active correction confirms course completion in May 2025 and no certification exam. The old certification draft is withdrawn.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "CF5H-18",
+      "verdict": "fail",
+      "reason": "Weekend on-call is mandatory unless a swap is approved and accepted. The possibility of asking for a swap gives no guarantee of avoiding the shifts.",
+      "error_claim_ids": [
+        "c1"
+      ]
+    },
+    {
+      "case_id": "CF5H-19",
+      "verdict": "pass",
+      "reason": "Two actual sessions in each language support the stated bilingual onboarding experience, and the role explicitly requires bilingual client onboarding.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "CF5H-20",
+      "verdict": "pass",
+      "reason": "Mara's pilot runbook and training of three operators are explicitly documented. The role separately calls for both activities; the answer does not imply production deployment.",
+      "error_claim_ids": []
+    }
+  ]
+}

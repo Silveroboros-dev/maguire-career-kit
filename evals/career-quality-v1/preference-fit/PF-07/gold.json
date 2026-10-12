@@ -1,0 +1,90 @@
+{
+  "schema": "maguire-quality-gold-v1",
+  "case_id": "PF-07",
+  "family": "vague_culture_claims",
+  "title": "Vague autonomy claims do not prove decision rights",
+  "review_status": "proposed_agent_authored",
+  "human_approved": false,
+  "units": [
+    {
+      "target_id": "pref_autonomy",
+      "kind": "culture",
+      "allowed_labels": [
+        "unknown"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_culture"
+        ]
+      ],
+      "rationale": "High-ownership branding does not specify who approves routine technical decisions.",
+      "required_points": [
+        "The source offers only broad culture language."
+      ],
+      "forbidden_inferences": [
+        "Do not translate entrepreneurial culture into formal decision authority."
+      ]
+    },
+    {
+      "target_id": "pref_remote",
+      "kind": "work_arrangement",
+      "allowed_labels": [
+        "aligned"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_remote"
+        ]
+      ],
+      "rationale": "Optional gatherings and no required attendance satisfy zero compulsory days.",
+      "required_points": [
+        "Office attendance is not required."
+      ],
+      "forbidden_inferences": [
+        "Do not claim gatherings never occur."
+      ]
+    },
+    {
+      "target_id": "pref_hours",
+      "kind": "schedule",
+      "allowed_labels": [
+        "aligned"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_hours"
+        ]
+      ],
+      "rationale": "Required core meetings end by 16:00, inside the candidate’s 17:00 soft ceiling.",
+      "required_points": [
+        "Required core meetings end by 16:00 Europe/Zurich."
+      ],
+      "forbidden_inferences": [
+        "Do not infer that optional meetings never occur after core hours."
+      ]
+    }
+  ],
+  "forbidden_assessment_targets": [],
+  "acceptable_actions": [
+    "clarify"
+  ],
+  "critical_errors": [
+    {
+      "id": "PF-07-interpretation",
+      "description": "Misreads Vague autonomy claims do not prove decision rights: the autonomy preference or its cited role term.",
+      "target_ids": [
+        "pref_autonomy"
+      ]
+    },
+    {
+      "id": "PF-07-action",
+      "description": "Using a meeting-hours citation for the autonomy result leaves pref_autonomy without relevant cited evidence.",
+      "target_ids": [
+        "pref_autonomy"
+      ]
+    }
+  ],
+  "notes": [
+    "Broad cultural adjectives are insufficient evidence for a precise authority requirement."
+  ]
+}

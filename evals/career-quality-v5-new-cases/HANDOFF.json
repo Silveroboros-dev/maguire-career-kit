@@ -1,0 +1,237 @@
+{
+  "schema": "maguire-v5-new-cases-handoff",
+  "completed_at": "2026-10-12T18:17:15.263839+00:00",
+  "status": "completed_offline_evaluation",
+  "human_approved": false,
+  "grader_version": "frozen_v5_unchanged",
+  "new_case_count": 40,
+  "claim_count": 61,
+  "measured_runs": 1,
+  "post_run_regrading": false,
+  "predecessor_files_verified": 385,
+  "frozen_files_verified": 57,
+  "harness_tests": {
+    "passed": 19,
+    "failed": 0,
+    "cohort_predictions_in_tests": false
+  },
+  "overall": {
+    "total": 40,
+    "confusion": {
+      "pass": {
+        "pass": 9,
+        "fail": 0,
+        "needs_review": 16,
+        "invalid": 0
+      },
+      "fail": {
+        "pass": 0,
+        "fail": 7,
+        "needs_review": 5,
+        "invalid": 0
+      },
+      "needs_review": {
+        "pass": 0,
+        "fail": 0,
+        "needs_review": 3,
+        "invalid": 0
+      }
+    },
+    "missed_errors": [],
+    "false_rejections": [],
+    "needs_review": {
+      "pass": [
+        "CF5H-01",
+        "CF5H-03",
+        "CF5H-08",
+        "CF5H-11",
+        "CF5H-14",
+        "CF5H-16",
+        "CF5H-17",
+        "CF5H-19",
+        "CF5H-20",
+        "PF5H-03",
+        "PF5H-04",
+        "PF5H-05",
+        "PF5H-09",
+        "PF5H-11",
+        "PF5H-17",
+        "PF5H-20"
+      ],
+      "fail": [
+        "CF5H-02",
+        "CF5H-15",
+        "CF5H-18",
+        "PF5H-06",
+        "PF5H-18"
+      ],
+      "needs_review": [
+        "CF5H-05",
+        "CF5H-13",
+        "PF5H-10"
+      ]
+    },
+    "ambiguous_forced_decisions": [],
+    "invalid": [],
+    "execution_errors": [],
+    "automatic_decisions": 16,
+    "intended_errors_total": 12,
+    "intended_errors_flagged": 7,
+    "bad_fragments_rejected_only_on_other_claims": [],
+    "extra_failures_in_bad_fragments": []
+  },
+  "by_family": {
+    "candidate-fit": {
+      "total": 20,
+      "confusion": {
+        "pass": {
+          "pass": 3,
+          "fail": 0,
+          "needs_review": 9,
+          "invalid": 0
+        },
+        "fail": {
+          "pass": 0,
+          "fail": 3,
+          "needs_review": 3,
+          "invalid": 0
+        },
+        "needs_review": {
+          "pass": 0,
+          "fail": 0,
+          "needs_review": 2,
+          "invalid": 0
+        }
+      },
+      "missed_errors": [],
+      "false_rejections": [],
+      "needs_review": {
+        "pass": [
+          "CF5H-01",
+          "CF5H-03",
+          "CF5H-08",
+          "CF5H-11",
+          "CF5H-14",
+          "CF5H-16",
+          "CF5H-17",
+          "CF5H-19",
+          "CF5H-20"
+        ],
+        "fail": [
+          "CF5H-02",
+          "CF5H-15",
+          "CF5H-18"
+        ],
+        "needs_review": [
+          "CF5H-05",
+          "CF5H-13"
+        ]
+      },
+      "ambiguous_forced_decisions": [],
+      "invalid": [],
+      "execution_errors": [],
+      "automatic_decisions": 6,
+      "intended_errors_total": 6,
+      "intended_errors_flagged": 3,
+      "bad_fragments_rejected_only_on_other_claims": [],
+      "extra_failures_in_bad_fragments": []
+    },
+    "preference-fit": {
+      "total": 20,
+      "confusion": {
+        "pass": {
+          "pass": 6,
+          "fail": 0,
+          "needs_review": 7,
+          "invalid": 0
+        },
+        "fail": {
+          "pass": 0,
+          "fail": 4,
+          "needs_review": 2,
+          "invalid": 0
+        },
+        "needs_review": {
+          "pass": 0,
+          "fail": 0,
+          "needs_review": 1,
+          "invalid": 0
+        }
+      },
+      "missed_errors": [],
+      "false_rejections": [],
+      "needs_review": {
+        "pass": [
+          "PF5H-03",
+          "PF5H-04",
+          "PF5H-05",
+          "PF5H-09",
+          "PF5H-11",
+          "PF5H-17",
+          "PF5H-20"
+        ],
+        "fail": [
+          "PF5H-06",
+          "PF5H-18"
+        ],
+        "needs_review": [
+          "PF5H-10"
+        ]
+      },
+      "ambiguous_forced_decisions": [],
+      "invalid": [],
+      "execution_errors": [],
+      "automatic_decisions": 10,
+      "intended_errors_total": 6,
+      "intended_errors_flagged": 4,
+      "bad_fragments_rejected_only_on_other_claims": [],
+      "extra_failures_in_bad_fragments": []
+    }
+  },
+  "git": {
+    "head": "4d87b90ef74c4f40b282e08b6d82fc6ad9f2749e",
+    "status_short": "?? evals/",
+    "tracked_diff_empty": true,
+    "staged_diff_empty": true,
+    "commit": false,
+    "push": false
+  },
+  "files": {
+    "ANALYSIS.md": {
+      "sha256": "632add079f3a8b904fe1f0af02580b13b460a1c27388b04b7f6edbdb1c9e0998",
+      "bytes": 18746
+    },
+    "FREEZE.json": {
+      "sha256": "53f4e2d0fee558a31760b7b900a2dab56965c94234c126e1996bc2e977ff5256",
+      "bytes": 22700
+    },
+    "START.json": {
+      "sha256": "7cd8d883fa6aea9f08528facdff8c9ff938c25effea3ab7100629a7f276019b8",
+      "bytes": 3661
+    },
+    "runs/new-cases-v5/RECEIPT.json": {
+      "sha256": "1a1b94638e57b09f38cc71650b0a089bb3629ecaae6e4999747301f8dac2d1a2",
+      "bytes": 1202
+    },
+    "runs/new-cases-v5/REPORT.md": {
+      "sha256": "86a4a39a280a331525a167344ba41b02a50da464f0bae0aa1877016532336abe",
+      "bytes": 3202
+    },
+    "runs/new-cases-v5/measurement.json": {
+      "sha256": "dab89ba9e0a91c6977201964a73fdecb12901951b27c61cd1ceb447325956adc",
+      "bytes": 91022
+    },
+    "review/results_review_v1.json": {
+      "sha256": "f975b1a9f0eefb7b2330610a6660460afece815d9a4582c66091bde380f24bbd",
+      "bytes": 46489
+    }
+  },
+  "remaining_limits": [
+    "Agent-authored and AI-reviewed, not human-approved.",
+    "New fictional fragments share some previous reasoning families.",
+    "24 abstentions include 5 erroneous and 16 correct answers.",
+    "Normalization/runtime mismatches remain in frozen measured inputs.",
+    "No full-advice, extraction or interview-probability validation."
+  ],
+  "changes_scope": "New experiment folder only; frozen v5 and 385 predecessor files unchanged."
+}

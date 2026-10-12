@@ -1,0 +1,34 @@
+{
+  "schema": "maguire-quality-input-v1",
+  "case_id": "PF2-01",
+  "grader": "preference_fit",
+  "data_class": "synthetic",
+  "decision_at": "2026-10-11T12:00:00Z",
+  "task": "Assess the supplied role and candidate snapshot, cite sources, explain uncertainty, and recommend a next action.",
+  "jd": {
+    "title": "Planetarium Programs Host",
+    "sources": [
+      {
+        "id": "jd_1",
+        "text": "The host is scheduled for two evening performances each week; the posted schedule has no exception process.",
+        "observed_at": "2026-09-01T12:00:00Z",
+        "authority": "job_description",
+        "supersedes": []
+      }
+    ]
+  },
+  "candidate": {
+    "facts": [],
+    "preferences": [
+      {
+        "id": "pref_1",
+        "text": "I can work daytime shifts only; evening shifts are a must-have exclusion, but I am willing to ask whether a different day-only role exists.",
+        "priority": "must_have",
+        "allowed_exceptions": [
+          "May clarify whether a separate daytime role exists; no waiver of this role's evening schedule is authorized."
+        ],
+        "confirmed_at": "2026-08-15T12:00:00Z"
+      }
+    ]
+  }
+}

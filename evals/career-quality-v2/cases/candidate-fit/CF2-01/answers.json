@@ -1,0 +1,178 @@
+{
+  "schema": "maguire-quality-answers-v1",
+  "case_id": "CF2-01",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "assessments": [
+        {
+          "target_id": "jd_1",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Plan daily book-transfer routes between library branches."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "I built a route sheet for a four-branch library trial and logged 18 fewer driving kilometres in one trial week."
+            }
+          ],
+          "rationale": "The supplied excerpt supports a four-branch route trial and 18 fewer kilometres for one week; it does not establish a recurring benefit."
+        },
+        {
+          "target_id": "jd_2",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Explain route changes to branch coordinators each Friday."
+            },
+            {
+              "source_id": "fact_2",
+              "quote": "I presented the revised route sheet to four branch coordinators on a Friday call."
+            }
+          ],
+          "rationale": "The candidate reports explaining the route sheet to four coordinators on a Friday call."
+        }
+      ],
+      "conclusion": {
+        "action": "pursue",
+        "text": "The two duties have relevant examples, with the distance result limited to one trial week.",
+        "next_step": "Show the route sheet and describe the presentation as self-reported."
+      },
+      "limitations": [
+        "The trial's distance log is supplied material, not an independently audited saving."
+      ]
+    },
+    {
+      "answer_id": "answer_02",
+      "assessments": [
+        {
+          "target_id": "jd_1",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Plan daily book-transfer routes between library branches."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "I built a route sheet for a four-branch library trial and logged 18 fewer driving kilometres in one trial week."
+            }
+          ],
+          "rationale": "The supplied excerpt supports a four-branch route trial and 18 fewer kilometres for one week; it does not establish a recurring benefit."
+        },
+        {
+          "target_id": "jd_2",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Explain route changes to branch coordinators each Friday."
+            },
+            {
+              "source_id": "fact_2",
+              "quote": "I presented the revised route sheet to four branch coordinators on a Friday call."
+            }
+          ],
+          "rationale": "The candidate reports explaining the route sheet to four coordinators on a Friday call."
+        }
+      ],
+      "conclusion": {
+        "action": "show_existing_evidence",
+        "text": "The route sheet and Friday briefing are relevant; quote only the recorded 18-kilometre trial-week difference, not a projected benefit.",
+        "next_step": "Attach the trial route sheet and identify the briefing as a candidate account."
+      },
+      "limitations": [
+        "Neither source establishes annual cost or emissions effects."
+      ]
+    },
+    {
+      "answer_id": "answer_03",
+      "assessments": [
+        {
+          "target_id": "jd_1",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Plan daily book-transfer routes between library branches."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "I built a route sheet for a four-branch library trial and logged 18 fewer driving kilometres in one trial week."
+            }
+          ],
+          "rationale": "The supplied excerpt supports a four-branch route trial and 18 fewer kilometres for one week; it does not establish a recurring benefit."
+        },
+        {
+          "target_id": "jd_2",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Explain route changes to branch coordinators each Friday."
+            },
+            {
+              "source_id": "fact_2",
+              "quote": "I presented the revised route sheet to four branch coordinators on a Friday call."
+            }
+          ],
+          "rationale": "The candidate reports explaining the route sheet to four coordinators on a Friday call."
+        }
+      ],
+      "conclusion": {
+        "action": "pursue",
+        "text": "The two duties have relevant examples, and the route change cut the library's annual fuel bill by 27%.",
+        "next_step": "Show the route sheet and describe the presentation as self-reported."
+      },
+      "limitations": [
+        "The trial's distance log is supplied material, not an independently audited saving."
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "assessments": [
+        {
+          "target_id": "jd_1",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Plan daily book-transfer routes between library branches."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "I built a route sheet for a four-branch library trial and logged 18 fewer driving kilometres in one trial week."
+            }
+          ],
+          "rationale": "The supplied excerpt supports a four-branch route trial and 18 fewer kilometres for one week; it does not establish a recurring benefit."
+        },
+        {
+          "target_id": "jd_2",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Explain route changes to branch coordinators each Friday."
+            },
+            {
+              "source_id": "fact_2",
+              "quote": "I presented the revised route sheet to four branch coordinators on a Friday call."
+            }
+          ],
+          "rationale": "The candidate reports explaining the route sheet to four coordinators on a Friday call."
+        }
+      ],
+      "conclusion": {
+        "action": "pursue",
+        "text": "The two duties have relevant examples, with the distance result limited to one trial week.",
+        "next_step": "Tell the employer the trial proves 18 kilometres are saved every week across all branches."
+      },
+      "limitations": [
+        "The trial's distance log is supplied material, not an independently audited saving."
+      ]
+    }
+  ]
+}

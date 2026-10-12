@@ -1,0 +1,118 @@
+{
+  "schema": "maguire-quality-answers-v1",
+  "case_id": "PF2-08",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "assessments": [
+        {
+          "target_id": "pref_1",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "pref_1",
+              "quote": "I require live captions for every training session I lead."
+            },
+            {
+              "source_id": "jd_1",
+              "quote": "Facilitators lead live training sessions and use the employer's standard meeting platform."
+            }
+          ],
+          "rationale": "A standard meeting platform is named, but the posting does not state whether live captions are enabled for all sessions."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "The caption requirement is material and unanswered in the supplied role text.",
+        "next_step": "Ask for a written description of live-caption availability and operation in facilitator sessions."
+      },
+      "limitations": [
+        "Platform identity alone does not establish caption settings or policy."
+      ]
+    },
+    {
+      "answer_id": "answer_02",
+      "assessments": [
+        {
+          "target_id": "pref_1",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "pref_1",
+              "quote": "I require live captions for every training session I lead."
+            },
+            {
+              "source_id": "jd_1",
+              "quote": "Facilitators lead live training sessions and use the employer's standard meeting platform."
+            }
+          ],
+          "rationale": "A standard meeting platform is named, but the posting does not state whether live captions are enabled for all sessions."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "This role may be workable if every session has live captions; the current posting cannot decide that.",
+        "next_step": "Ask the employer to demonstrate caption availability in the actual training workflow."
+      },
+      "limitations": [
+        "Silence about captions is not evidence that they are impossible."
+      ]
+    },
+    {
+      "answer_id": "answer_03",
+      "assessments": [
+        {
+          "target_id": "pref_1",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "pref_1",
+              "quote": "I require live captions for every training session I lead."
+            },
+            {
+              "source_id": "jd_1",
+              "quote": "Facilitators lead live training sessions and use the employer's standard meeting platform."
+            }
+          ],
+          "rationale": "The standard meeting platform guarantees live captions for every session the candidate leads."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "The caption requirement is material and unanswered in the supplied role text.",
+        "next_step": "Ask for a written description of live-caption availability and operation in facilitator sessions."
+      },
+      "limitations": [
+        "Platform identity alone does not establish caption settings or policy."
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "assessments": [
+        {
+          "target_id": "pref_1",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "pref_1",
+              "quote": "I require live captions for every training session I lead."
+            },
+            {
+              "source_id": "jd_1",
+              "quote": "Facilitators lead live training sessions and use the employer's standard meeting platform."
+            }
+          ],
+          "rationale": "A standard meeting platform is named, but the posting does not state whether live captions are enabled for all sessions."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "The employer refuses live captions, so the candidate's requirement is definitely impossible here.",
+        "next_step": "Ask for a written description of live-caption availability and operation in facilitator sessions."
+      },
+      "limitations": [
+        "Platform identity alone does not establish caption settings or policy."
+      ]
+    }
+  ]
+}

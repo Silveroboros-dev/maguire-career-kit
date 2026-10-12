@@ -1,0 +1,68 @@
+{
+  "schema": "maguire-quality-annotations-v1",
+  "case_id": "CF-10",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The stated pipeline and validation duties have evidence; no degree gate appears in the JD.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_02",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The existing validation note can substantiate a duty without adding a degree requirement.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_03",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "The JD contains no degree requirement; the conclusion invents one.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "invent degree gate",
+        "description": "The JD contains no degree requirement; the conclusion invents one.",
+        "changed_paths": [
+          "/conclusion/action",
+          "/conclusion/next_step",
+          "/conclusion/text"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "CF-SCOPE",
+          "severity": "critical",
+          "target_id": "jd_1",
+          "explanation": "The JD contains no degree requirement; the conclusion invents one."
+        }
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "No source supplies pipeline scale.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "invent scale",
+        "description": "No source supplies pipeline scale.",
+        "changed_paths": [
+          "/assessments/0/rationale"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "CF-EVIDENCE",
+          "severity": "major",
+          "target_id": "jd_1",
+          "explanation": "No source supplies pipeline scale."
+        }
+      ]
+    }
+  ]
+}

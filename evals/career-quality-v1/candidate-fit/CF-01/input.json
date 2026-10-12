@@ -1,0 +1,48 @@
+{
+  "schema": "maguire-quality-input-v1",
+  "case_id": "CF-01",
+  "grader": "candidate_fit",
+  "data_class": "synthetic",
+  "decision_at": "2026-10-12T12:00:00Z",
+  "task": "Assess the supplied candidate evidence against the job description. Cite relevant sources, state any uncertainty, and recommend a next action.",
+  "jd": {
+    "title": "Inventory Reporting Analyst",
+    "sources": [
+      {
+        "id": "jd_1",
+        "text": "The analyst writes SQL queries to reconcile weekly inventory totals.",
+        "observed_at": "2026-10-12T12:00:00Z",
+        "authority": "job_description",
+        "supersedes": []
+      },
+      {
+        "id": "jd_2",
+        "text": "The analyst presents a concise weekly exception report to operations leads.",
+        "observed_at": "2026-10-12T12:00:00Z",
+        "authority": "job_description",
+        "supersedes": []
+      }
+    ]
+  },
+  "candidate": {
+    "facts": [
+      {
+        "id": "fact_1",
+        "text": "I wrote SQL queries for a fictional warehouse exercise and reconciled weekly inventory totals by SKU.",
+        "evidence_type": "self_report",
+        "observed_at": "2026-10-12T12:00:00Z",
+        "status": "active",
+        "supersedes": []
+      },
+      {
+        "id": "fact_2",
+        "text": "A supplied report excerpt shows a weekly exception table and a slide presented to operations leads.",
+        "evidence_type": "supplied_artifact_excerpt",
+        "observed_at": "2026-10-12T12:00:00Z",
+        "status": "active",
+        "supersedes": []
+      }
+    ],
+    "preferences": []
+  }
+}

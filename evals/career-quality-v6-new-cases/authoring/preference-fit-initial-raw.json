@@ -1,0 +1,513 @@
+{
+  "schema": "maguire-v6-new-raw",
+  "family": "preference-fit",
+  "human_approved": false,
+  "exposure": {
+    "checker_code_seen": false,
+    "previous_cases_seen": false,
+    "predictions_seen": false
+  },
+  "rows": [
+    {
+      "case_id": "PF6H-01",
+      "title": "Remote after an induction week",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "p1",
+          "text": "I accept one mandatory induction week on site, then remote work if the employer grants security clearance.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-10-12T09:00:00Z"
+        },
+        {
+          "id": "e1",
+          "text": "The role requires five station days in its first induction week. After that week, remote work is permitted when security clearance is granted.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-12T09:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The five station days fit my one-week induction limit. Remote work after induction is permitted if I get security clearance."
+      }
+    },
+    {
+      "case_id": "PF6H-02",
+      "title": "Annual learning allowance below floor",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "p1",
+          "text": "I need a learning allowance of at least EUR 1,800 per calendar year.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-10-12T09:00:00Z"
+        },
+        {
+          "id": "e1",
+          "text": "The employer offers a learning allowance of EUR 1,200 per calendar year for this role.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-12T09:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The role offers EUR 1,200 of annual learning allowance. That meets my EUR 1,800 annual minimum."
+      }
+    },
+    {
+      "case_id": "PF6H-03",
+      "title": "Saturday-only call rota",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "p1",
+          "text": "I cannot take on-call duty on any weekday, Monday through Friday.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-10-12T09:00:00Z"
+        },
+        {
+          "id": "e1",
+          "text": "For this role, the only required on-call shift is Saturday 10:00–14:00, in the role's local time zone; there are no other on-call shifts.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-12T09:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The required on-call rota is Saturday 10:00–14:00 only, so it does not use a weekday I have ruled out."
+      }
+    },
+    {
+      "case_id": "PF6H-04",
+      "title": "Office access is optional",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "p1",
+          "text": "I want no mandatory office attendance after onboarding, although I may visit voluntarily.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-10-12T09:00:00Z"
+        },
+        {
+          "id": "e1",
+          "text": "After onboarding, this role has no required office days. The office remains available for voluntary visits.",
+          "kind": "employer_update",
+          "status": "active",
+          "observed_at": "2026-10-12T09:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "After onboarding there are no mandatory office days. Voluntary office visits remain possible."
+      }
+    },
+    {
+      "case_id": "PF6H-05",
+      "title": "Competing active attendance terms",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "p1",
+          "text": "My limit is one required station day per week after onboarding.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-10-12T09:00:00Z"
+        },
+        {
+          "id": "e1",
+          "text": "The role description requires one station day per week after onboarding.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-09-20T09:00:00Z"
+        },
+        {
+          "id": "e2",
+          "text": "A recruiting note says the team requires two station days per week after onboarding. It does not state whether the role description has been replaced.",
+          "kind": "employer_update",
+          "status": "active",
+          "observed_at": "2026-10-10T09:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The one-day role description appears to match my limit, but the later two-day note leaves the current attendance rule unresolved."
+      }
+    },
+    {
+      "case_id": "PF6H-06",
+      "title": "Withdrawn transport allowance",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "p1",
+          "text": "I require an active transport stipend of at least CHF 90 per calendar month.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-10-12T09:00:00Z"
+        },
+        {
+          "id": "e1",
+          "text": "An early draft offered a CHF 120 transport stipend per calendar month.",
+          "kind": "employer_update",
+          "status": "withdrawn",
+          "observed_at": "2026-09-15T09:00:00Z"
+        },
+        {
+          "id": "e2",
+          "text": "The current offer lists no transport stipend; the earlier draft was withdrawn.",
+          "kind": "employer_update",
+          "status": "active",
+          "observed_at": "2026-10-12T09:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The early draft listed CHF 120 a month. The current offer therefore meets my transport-stipend requirement."
+      }
+    },
+    {
+      "case_id": "PF6H-07",
+      "title": "Tuesday demo ends before cutoff",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "p1",
+          "text": "I cannot present a required training demo after 16:00 on Tuesday in the role's local time zone.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-10-12T09:00:00Z"
+        },
+        {
+          "id": "e1",
+          "text": "The only required training demo is Tuesday 14:30–16:00 in the role's local time zone; no other demo slot is required.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-12T09:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The required Tuesday training demo ends at 16:00, within my Tuesday cutoff."
+      }
+    },
+    {
+      "case_id": "PF6H-08",
+      "title": "Annual budget equivalent to monthly floor",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "p1",
+          "text": "I need a learning budget equivalent to at least EUR 200 per calendar month; an annual budget is acceptable.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-10-12T09:00:00Z"
+        },
+        {
+          "id": "e1",
+          "text": "The role's learning budget is EUR 2,400 per calendar year. The employer has not specified when reimbursements are paid.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-12T09:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The EUR 2,400 annual learning budget equals my EUR 200 monthly budget floor. Its reimbursement schedule is unspecified."
+      }
+    },
+    {
+      "case_id": "PF6H-09",
+      "title": "Pending captions procurement",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "p1",
+          "text": "I require live captions for team meetings from my first day.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-10-12T09:00:00Z"
+        },
+        {
+          "id": "e1",
+          "text": "Live captions for team meetings are in procurement review. The employer has not approved an activation date or promised availability on the first day.",
+          "kind": "employer_update",
+          "status": "active",
+          "observed_at": "2026-10-12T09:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "Live captions are in procurement review. They are guaranteed to be available for my first-day team meetings."
+      }
+    },
+    {
+      "case_id": "PF6H-10",
+      "title": "Travel pause in first quarter",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "p1",
+          "text": "I cannot take required business travel in my first calendar quarter in the role.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-10-12T09:00:00Z"
+        },
+        {
+          "id": "e1",
+          "text": "The role requires no business travel in the employee's first calendar quarter. Travel may be requested later.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-12T09:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The first calendar quarter has no required business travel, which fits my first-quarter travel restriction. Later travel remains possible."
+      }
+    },
+    {
+      "case_id": "PF6H-11",
+      "title": "Two required days misreported as one",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "p1",
+          "text": "After onboarding I can attend the station at most one day per week.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-10-12T09:00:00Z"
+        },
+        {
+          "id": "e1",
+          "text": "After onboarding, the role requires two station days every week.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-12T09:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The role requires one station day each week after onboarding. That fits my one-day weekly cap."
+      }
+    },
+    {
+      "case_id": "PF6H-12",
+      "title": "Four-day work pattern",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "p1",
+          "text": "I prefer a four-day workweek with Friday free.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-10-12T09:00:00Z"
+        },
+        {
+          "id": "e1",
+          "text": "The written offer sets Monday through Thursday as working days and Friday as a nonworking day each week.",
+          "kind": "employer_update",
+          "status": "active",
+          "observed_at": "2026-10-12T09:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The written offer sets a four-day, Monday–Thursday week. Friday is free, as I prefer."
+      }
+    },
+    {
+      "case_id": "PF6H-13",
+      "title": "Remote option subject to approval",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "p1",
+          "text": "I need remote work on Wednesdays after onboarding.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-10-12T09:00:00Z"
+        },
+        {
+          "id": "e1",
+          "text": "The team may approve remote work on Wednesdays after onboarding case by case. No approval decision has been made for this candidate.",
+          "kind": "employer_update",
+          "status": "active",
+          "observed_at": "2026-10-12T09:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "Wednesday remote work after onboarding looks feasible for me, subject to a manager's decision."
+      }
+    },
+    {
+      "case_id": "PF6H-14",
+      "title": "Specified transport stipend",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "p1",
+          "text": "I need a transport stipend of at least CHF 80 per calendar month.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-10-12T09:00:00Z"
+        },
+        {
+          "id": "e1",
+          "text": "The written offer includes a CHF 100 transport stipend per calendar month, effective from the first month.",
+          "kind": "employer_update",
+          "status": "active",
+          "observed_at": "2026-10-12T09:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The written offer includes CHF 100 monthly for transport from month one. That exceeds my CHF 80 monthly floor."
+      }
+    },
+    {
+      "case_id": "PF6H-15",
+      "title": "Required travel exceeds cap",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "p1",
+          "text": "I can make at most two required overnight trips per calendar month.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-10-12T09:00:00Z"
+        },
+        {
+          "id": "e1",
+          "text": "The role requires three overnight trips in each calendar month.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-12T09:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The role requires three overnight trips monthly. This stays within my two-trip monthly limit."
+      }
+    },
+    {
+      "case_id": "PF6H-16",
+      "title": "Conditional remote schedule",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "p1",
+          "text": "I accept up to two required station days per week during onboarding. After onboarding, I accept remote work when client data clearance is granted.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-10-12T09:00:00Z"
+        },
+        {
+          "id": "e1",
+          "text": "During onboarding the role requires two station days per week. After onboarding, remote work is permitted when client data clearance is granted.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-12T09:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "Two required station days during onboarding fit my cap. After onboarding, remote work is permitted on the clearance condition I accept."
+      }
+    },
+    {
+      "case_id": "PF6H-17",
+      "title": "Superseded schedule",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "p1",
+          "text": "I can attend the office at most three days per week after onboarding.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-10-12T09:00:00Z"
+        },
+        {
+          "id": "e1",
+          "text": "An older role term required three office days per week after onboarding.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-09-01T09:00:00Z"
+        },
+        {
+          "id": "e2",
+          "text": "This update supersedes the older office-days term: four office days per week are now required after onboarding.",
+          "kind": "employer_update",
+          "status": "active",
+          "observed_at": "2026-10-12T09:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The older three-day term has been superseded. The current four-day requirement still fits my three-day weekly cap."
+      }
+    },
+    {
+      "case_id": "PF6H-18",
+      "title": "No public demo requirement",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "p1",
+          "text": "I do not want mandatory public demo presentations; internal team demos are acceptable.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-10-12T09:00:00Z"
+        },
+        {
+          "id": "e1",
+          "text": "The role requires one internal team demo per month and has no mandatory public demos.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-12T09:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The monthly internal team demo is acceptable to me. The role has no mandatory public demo."
+      }
+    },
+    {
+      "case_id": "PF6H-19",
+      "title": "Weekend-protected support schedule",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "p1",
+          "text": "I cannot provide on-call support on Saturdays or Sundays.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-10-12T09:00:00Z"
+        },
+        {
+          "id": "e1",
+          "text": "The required support rota is Monday to Friday 09:00–17:00, role-local time, with no weekend on-call shifts.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-12T09:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The required support rota is weekdays only. It leaves both weekend days free of on-call duty."
+      }
+    },
+    {
+      "case_id": "PF6H-20",
+      "title": "Location restricted to one country",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "p1",
+          "text": "I need to work remotely from Portugal after onboarding.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-10-12T09:00:00Z"
+        },
+        {
+          "id": "e1",
+          "text": "The role permits remote work after onboarding from approved EU locations. The employer has not listed which EU countries are approved for this role.",
+          "kind": "employer_update",
+          "status": "active",
+          "observed_at": "2026-10-12T09:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "Portugal might be an approved remote-work location after onboarding, but that needs confirmation from the employer."
+      }
+    }
+  ]
+}

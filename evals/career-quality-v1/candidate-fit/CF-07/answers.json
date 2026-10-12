@@ -1,0 +1,178 @@
+{
+  "schema": "maguire-quality-answers-v1",
+  "case_id": "CF-07",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "assessments": [
+        {
+          "target_id": "jd_1",
+          "label": "partial",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Own the customer data warehouse migration plan, including the field-mapping checklist and leadership of the overall rollout plan."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "Our six-person team launched a customer data warehouse migration; I owned the field-mapping checklist, while another lead owned the migration plan."
+            }
+          ],
+          "rationale": "The candidate owned the field-mapping component, while another lead owned the overall migration plan."
+        },
+        {
+          "target_id": "jd_2",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Document data quality checks before each release."
+            },
+            {
+              "source_id": "fact_2",
+              "quote": "A supplied checklist excerpt lists null-rate and duplicate-key checks before a release."
+            }
+          ],
+          "rationale": "The excerpt documents release checks for null rates and duplicate keys."
+        }
+      ],
+      "conclusion": {
+        "action": "pursue",
+        "text": "The candidate has a scoped migration contribution and direct quality-check evidence.",
+        "next_step": "Describe personal checklist ownership and avoid claiming leadership of the team plan."
+      },
+      "limitations": [
+        "The team launch is self-reported."
+      ]
+    },
+    {
+      "answer_id": "answer_02",
+      "assessments": [
+        {
+          "target_id": "jd_2",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Document data quality checks before each release."
+            },
+            {
+              "source_id": "fact_2",
+              "quote": "A supplied checklist excerpt lists null-rate and duplicate-key checks before a release."
+            }
+          ],
+          "rationale": "The checklist is direct evidence of data quality documentation."
+        },
+        {
+          "target_id": "jd_1",
+          "label": "partial",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Own the customer data warehouse migration plan, including the field-mapping checklist and leadership of the overall rollout plan."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "Our six-person team launched a customer data warehouse migration; I owned the field-mapping checklist, while another lead owned the migration plan."
+            }
+          ],
+          "rationale": "The candidate owned the field-mapping component, while another lead owned the overall migration plan."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "Leadership of a full migration plan is not supported by this example.",
+        "next_step": "Ask for any separate personally led migration before claiming plan leadership."
+      },
+      "limitations": [
+        "No separate lead example is supplied."
+      ]
+    },
+    {
+      "answer_id": "answer_03",
+      "assessments": [
+        {
+          "target_id": "jd_1",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Own the customer data warehouse migration plan, including the field-mapping checklist and leadership of the overall rollout plan."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "Our six-person team launched a customer data warehouse migration; I owned the field-mapping checklist, while another lead owned the migration plan."
+            }
+          ],
+          "rationale": "Because the team launched the warehouse, the candidate personally led the migration plan."
+        },
+        {
+          "target_id": "jd_2",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Document data quality checks before each release."
+            },
+            {
+              "source_id": "fact_2",
+              "quote": "A supplied checklist excerpt lists null-rate and duplicate-key checks before a release."
+            }
+          ],
+          "rationale": "The excerpt documents release checks for null rates and duplicate keys."
+        }
+      ],
+      "conclusion": {
+        "action": "pursue",
+        "text": "The candidate has a scoped migration contribution and direct quality-check evidence.",
+        "next_step": "Describe personal checklist ownership and avoid claiming leadership of the team plan."
+      },
+      "limitations": [
+        "The team launch is self-reported."
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "assessments": [
+        {
+          "target_id": "jd_1",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Own the customer data warehouse migration plan, including the field-mapping checklist and leadership of the overall rollout plan."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "Our six-person team launched a customer data warehouse migration; I owned the field-mapping checklist, while another lead owned the migration plan."
+            }
+          ],
+          "rationale": "The candidate had no relevant personal migration contribution."
+        },
+        {
+          "target_id": "jd_2",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Document data quality checks before each release."
+            },
+            {
+              "source_id": "fact_2",
+              "quote": "A supplied checklist excerpt lists null-rate and duplicate-key checks before a release."
+            }
+          ],
+          "rationale": "The excerpt documents release checks for null rates and duplicate keys."
+        }
+      ],
+      "conclusion": {
+        "action": "pursue",
+        "text": "The candidate has a scoped migration contribution and direct quality-check evidence.",
+        "next_step": "Describe personal checklist ownership and avoid claiming leadership of the team plan."
+      },
+      "limitations": [
+        "The team launch is self-reported."
+      ]
+    }
+  ]
+}

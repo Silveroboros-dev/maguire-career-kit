@@ -1,0 +1,93 @@
+{
+  "schema": "maguire-quality-gold-v1",
+  "case_id": "PF-09",
+  "family": "unresolved_employer_source_conflict",
+  "title": "Conflicting employer location statements lack supersession",
+  "review_status": "proposed_agent_authored",
+  "human_approved": false,
+  "units": [
+    {
+      "target_id": "pref_remote",
+      "kind": "work_arrangement",
+      "allowed_labels": [
+        "unknown"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_original",
+          "jd_update"
+        ]
+      ],
+      "rationale": "The two employer statements disagree and no source explicitly supersedes the other; recency alone cannot resolve authority.",
+      "required_points": [
+        "One source says no office days; another says two required days.",
+        "No explicit supersession is recorded."
+      ],
+      "forbidden_inferences": [
+        "Do not silently choose the newer source or average the schedules."
+      ]
+    },
+    {
+      "target_id": "pref_salary",
+      "kind": "compensation",
+      "allowed_labels": [
+        "aligned"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_pay"
+        ]
+      ],
+      "rationale": "The published base range begins above the candidate’s CHF 145,000 minimum.",
+      "required_points": [
+        "The CHF 150,000 lower bound exceeds CHF 145,000."
+      ],
+      "forbidden_inferences": [
+        "Do not infer the final offer."
+      ]
+    },
+    {
+      "target_id": "pref_travel",
+      "kind": "travel",
+      "allowed_labels": [
+        "unknown"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_original",
+          "jd_update"
+        ]
+      ],
+      "rationale": "Neither location statement gives an annual travel limit.",
+      "required_points": [
+        "Office frequency is not a travel-trip count."
+      ],
+      "forbidden_inferences": [
+        "Do not convert office attendance into work-trip volume."
+      ]
+    }
+  ],
+  "forbidden_assessment_targets": [],
+  "acceptable_actions": [
+    "clarify"
+  ],
+  "critical_errors": [
+    {
+      "id": "PF-09-interpretation",
+      "description": "Misreads Conflicting employer location statements lack supersession: the remote preference or its cited role term.",
+      "target_ids": [
+        "pref_remote"
+      ]
+    },
+    {
+      "id": "PF-09-action",
+      "description": "For Conflicting employer location statements lack supersession, takes a next step inconsistent with the supported remote result.",
+      "target_ids": [
+        "pref_remote"
+      ]
+    }
+  ],
+  "notes": [
+    "The newer timestamp and employer_update authority do not by themselves establish replacement."
+  ]
+}

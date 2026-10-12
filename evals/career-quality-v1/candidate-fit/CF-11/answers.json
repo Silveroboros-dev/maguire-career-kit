@@ -1,0 +1,181 @@
+{
+  "schema": "maguire-quality-answers-v1",
+  "case_id": "CF-11",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "assessments": [
+        {
+          "target_id": "jd_1",
+          "label": "partial",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Own the customer-record retention work: review retention categories, draft a deletion checklist, and design the final retention schedule."
+            },
+            {
+              "source_id": "fact_2",
+              "quote": "Correction: I reviewed retention categories and drafted a deletion checklist; a colleague designed the final schedule."
+            }
+          ],
+          "rationale": "The active correction limits the candidate to category review and a deletion checklist; a colleague designed the final schedule."
+        },
+        {
+          "target_id": "jd_2",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Write SQL checks for duplicate customer IDs."
+            },
+            {
+              "source_id": "fact_3",
+              "quote": "A supplied SQL excerpt contains a duplicate-ID count grouped by customer ID."
+            }
+          ],
+          "rationale": "The supplied SQL excerpt checks duplicate customer IDs."
+        }
+      ],
+      "conclusion": {
+        "action": "pursue",
+        "text": "The corrected retention contribution is partial and SQL checking is evidenced.",
+        "next_step": "Use the corrected checklist scope and existing SQL excerpt in the application."
+      },
+      "limitations": [
+        "The correction is self-reported.",
+        "The SQL excerpt does not show execution environment."
+      ]
+    },
+    {
+      "answer_id": "answer_02",
+      "assessments": [
+        {
+          "target_id": "jd_2",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Write SQL checks for duplicate customer IDs."
+            },
+            {
+              "source_id": "fact_3",
+              "quote": "A supplied SQL excerpt contains a duplicate-ID count grouped by customer ID."
+            }
+          ],
+          "rationale": "The SQL excerpt contains a grouped duplicate-ID count."
+        },
+        {
+          "target_id": "jd_1",
+          "label": "partial",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Own the customer-record retention work: review retention categories, draft a deletion checklist, and design the final retention schedule."
+            },
+            {
+              "source_id": "fact_2",
+              "quote": "Correction: I reviewed retention categories and drafted a deletion checklist; a colleague designed the final schedule."
+            }
+          ],
+          "rationale": "The current correction supersedes the earlier full-design statement."
+        }
+      ],
+      "conclusion": {
+        "action": "show_existing_evidence",
+        "text": "The candidate can show SQL work while keeping the retention contribution bounded.",
+        "next_step": "Show the SQL excerpt and describe the deletion checklist as draft work."
+      },
+      "limitations": [
+        "The withdrawn statement is not current evidence."
+      ]
+    },
+    {
+      "answer_id": "answer_03",
+      "assessments": [
+        {
+          "target_id": "jd_1",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Own the customer-record retention work: review retention categories, draft a deletion checklist, and design the final retention schedule."
+            },
+            {
+              "source_id": "fact_2",
+              "quote": "Correction: I reviewed retention categories and drafted a deletion checklist; a colleague designed the final schedule."
+            }
+          ],
+          "rationale": "The original full-design claim proves the candidate designed the final schedule."
+        },
+        {
+          "target_id": "jd_2",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Write SQL checks for duplicate customer IDs."
+            },
+            {
+              "source_id": "fact_3",
+              "quote": "A supplied SQL excerpt contains a duplicate-ID count grouped by customer ID."
+            }
+          ],
+          "rationale": "The supplied SQL excerpt checks duplicate customer IDs."
+        }
+      ],
+      "conclusion": {
+        "action": "pursue",
+        "text": "The corrected retention contribution is partial and SQL checking is evidenced.",
+        "next_step": "Use the corrected checklist scope and existing SQL excerpt in the application."
+      },
+      "limitations": [
+        "The correction is self-reported.",
+        "The SQL excerpt does not show execution environment."
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "assessments": [
+        {
+          "target_id": "jd_1",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Own the customer-record retention work: review retention categories, draft a deletion checklist, and design the final retention schedule."
+            },
+            {
+              "source_id": "fact_2",
+              "quote": "Correction: I reviewed retention categories and drafted a deletion checklist; a colleague designed the final schedule."
+            }
+          ],
+          "rationale": "The correction leaves no candidate retention work at all."
+        },
+        {
+          "target_id": "jd_2",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Write SQL checks for duplicate customer IDs."
+            },
+            {
+              "source_id": "fact_3",
+              "quote": "A supplied SQL excerpt contains a duplicate-ID count grouped by customer ID."
+            }
+          ],
+          "rationale": "The supplied SQL excerpt checks duplicate customer IDs."
+        }
+      ],
+      "conclusion": {
+        "action": "pursue",
+        "text": "The corrected retention contribution is partial and SQL checking is evidenced.",
+        "next_step": "Use the corrected checklist scope and existing SQL excerpt in the application."
+      },
+      "limitations": [
+        "The correction is self-reported.",
+        "The SQL excerpt does not show execution environment."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "schema": "maguire-quality-answers-v1",
+  "case_id": "PF2-04",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "assessments": [
+        {
+          "target_id": "pref_1",
+          "label": "conflict",
+          "evidence": [
+            {
+              "source_id": "pref_1",
+              "quote": "I can take at most one overnight work trip per calendar quarter, with no carryover."
+            },
+            {
+              "source_id": "jd_1",
+              "quote": "The liaison makes one overnight trip to a partner gallery each month."
+            }
+          ],
+          "rationale": "One overnight trip each month means roughly three in a calendar quarter; the candidate permits only one, without carryover."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "The posted monthly travel pattern exceeds the candidate's limited quarterly exception.",
+        "next_step": "Ask whether the role can truly be staffed with no more than one overnight trip per calendar quarter."
+      },
+      "limitations": [
+        "No change to the candidate's exception or employer schedule is recorded."
+      ]
+    },
+    {
+      "answer_id": "answer_02",
+      "assessments": [
+        {
+          "target_id": "pref_1",
+          "label": "conflict",
+          "evidence": [
+            {
+              "source_id": "pref_1",
+              "quote": "I can take at most one overnight work trip per calendar quarter, with no carryover."
+            },
+            {
+              "source_id": "jd_1",
+              "quote": "The liaison makes one overnight trip to a partner gallery each month."
+            }
+          ],
+          "rationale": "One overnight trip each month means roughly three in a calendar quarter; the candidate permits only one, without carryover."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "A single quarterly trip would fit the candidate's exception; the stated monthly pattern does not.",
+        "next_step": "Seek an explicit revised travel schedule before treating this role as compatible."
+      },
+      "limitations": [
+        "An inquiry about a revised schedule does not itself change the posted duty."
+      ]
+    },
+    {
+      "answer_id": "answer_03",
+      "assessments": [
+        {
+          "target_id": "pref_1",
+          "label": "conflict",
+          "evidence": [
+            {
+              "source_id": "pref_1",
+              "quote": "I can take at most one overnight work trip per calendar quarter, with no carryover."
+            },
+            {
+              "source_id": "jd_1",
+              "quote": "The liaison makes one overnight trip to a partner gallery each month."
+            }
+          ],
+          "rationale": "The candidate's one-trip exception extends to every month, so all three quarterly trips are allowed."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "The posted monthly travel pattern exceeds the candidate's limited quarterly exception.",
+        "next_step": "Ask whether the role can truly be staffed with no more than one overnight trip per calendar quarter."
+      },
+      "limitations": [
+        "No change to the candidate's exception or employer schedule is recorded."
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "assessments": [
+        {
+          "target_id": "pref_1",
+          "label": "conflict",
+          "evidence": [
+            {
+              "source_id": "pref_1",
+              "quote": "I can take at most one overnight work trip per calendar quarter, with no carryover."
+            },
+            {
+              "source_id": "jd_1",
+              "quote": "The liaison makes one overnight trip to a partner gallery each month."
+            }
+          ],
+          "rationale": "One overnight trip each month means roughly three in a calendar quarter; the candidate permits only one, without carryover."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "The candidate can bank unused quarterly travel allowances and spend them on the role's monthly trips, so the pattern fits.",
+        "next_step": "Ask whether the role can truly be staffed with no more than one overnight trip per calendar quarter."
+      },
+      "limitations": [
+        "No change to the candidate's exception or employer schedule is recorded."
+      ]
+    }
+  ]
+}

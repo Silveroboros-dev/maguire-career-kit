@@ -1,0 +1,141 @@
+{
+  "all_labels_citations_coverage_actions_valid": true,
+  "answers": 52,
+  "case_count": 13,
+  "cases": [
+    {
+      "case_id": "CF2-01",
+      "family": "unsupported quantitative result in conclusion",
+      "intentional_citation_failures": 0,
+      "negative_answers": 2,
+      "positive_answers": 2,
+      "substantive_positive_variant": true,
+      "title": "Library route planning and unsupported savings",
+      "units": 2
+    },
+    {
+      "case_id": "CF2-02",
+      "family": "aggregate certainty despite partial and unknown rows",
+      "intentional_citation_failures": 0,
+      "negative_answers": 2,
+      "positive_answers": 2,
+      "substantive_positive_variant": false,
+      "title": "Exhibition metadata and rights gap",
+      "units": 2
+    },
+    {
+      "case_id": "CF2-03",
+      "family": "failed recency criterion presented as future incapacity",
+      "intentional_citation_failures": 0,
+      "negative_answers": 2,
+      "positive_answers": 2,
+      "substantive_positive_variant": false,
+      "title": "Recent console practice versus future monitoring",
+      "units": 2
+    },
+    {
+      "case_id": "CF2-04",
+      "family": "unsupported quantified scale",
+      "intentional_citation_failures": 0,
+      "negative_answers": 2,
+      "positive_answers": 2,
+      "substantive_positive_variant": true,
+      "title": "Small OCR sample versus production scale",
+      "units": 2
+    },
+    {
+      "case_id": "CF2-05",
+      "family": "directive embedded in source data",
+      "intentional_citation_failures": 0,
+      "negative_answers": 2,
+      "positive_answers": 2,
+      "substantive_positive_variant": false,
+      "title": "Task text with an injected instruction",
+      "units": 2
+    },
+    {
+      "case_id": "PF2-01",
+      "family": "employer exception asserted without authority",
+      "intentional_citation_failures": 0,
+      "negative_answers": 2,
+      "positive_answers": 2,
+      "substantive_positive_variant": false,
+      "title": "Fixed evening schedule and invented waiver",
+      "units": 1
+    },
+    {
+      "case_id": "PF2-02",
+      "family": "range or possibility turned into guaranteed offer",
+      "intentional_citation_failures": 0,
+      "negative_answers": 2,
+      "positive_answers": 2,
+      "substantive_positive_variant": false,
+      "title": "Published stipend band versus personal offer",
+      "units": 1
+    },
+    {
+      "case_id": "PF2-03",
+      "family": "hard condition erased by soft benefits",
+      "intentional_citation_failures": 0,
+      "negative_answers": 2,
+      "positive_answers": 2,
+      "substantive_positive_variant": false,
+      "title": "On-call duty and learning allowance",
+      "units": 2
+    },
+    {
+      "case_id": "PF2-04",
+      "family": "candidate-owned exception incorrectly expanded",
+      "intentional_citation_failures": 0,
+      "negative_answers": 2,
+      "positive_answers": 2,
+      "substantive_positive_variant": false,
+      "title": "Quarterly travel exception versus monthly trips",
+      "units": 1
+    },
+    {
+      "case_id": "PF2-05",
+      "family": "time basis or frequency changed in prose",
+      "intentional_citation_failures": 0,
+      "negative_answers": 2,
+      "positive_answers": 2,
+      "substantive_positive_variant": false,
+      "title": "Weekly field shifts versus monthly limit",
+      "units": 1
+    },
+    {
+      "case_id": "PF2-06",
+      "family": "unresolved evidence called authoritative by date alone",
+      "intentional_citation_failures": 0,
+      "negative_answers": 2,
+      "positive_answers": 2,
+      "substantive_positive_variant": false,
+      "title": "Conflicting location notices without supersession",
+      "units": 1
+    },
+    {
+      "case_id": "PF2-07",
+      "family": "scope change from team policy to personal contract",
+      "intentional_citation_failures": 0,
+      "negative_answers": 2,
+      "positive_answers": 2,
+      "substantive_positive_variant": false,
+      "title": "Another team's practice cannot bind this role",
+      "units": 1
+    },
+    {
+      "case_id": "PF2-08",
+      "family": "missing information presented as known",
+      "intentional_citation_failures": 0,
+      "negative_answers": 2,
+      "positive_answers": 2,
+      "substantive_positive_variant": false,
+      "title": "Unspecified captioning support",
+      "units": 1
+    }
+  ],
+  "preference_structural_signatures_identical_within_case": true,
+  "schema": "maguire-prose-challenge-structural-audit-v2",
+  "semantic_quality_proven": false,
+  "valid": true
+}

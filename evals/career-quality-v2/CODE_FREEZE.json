@@ -1,0 +1,68 @@
+{
+  "code_review": {
+    "bytes": 3783,
+    "sha256": "438cd7f618c4087d20cd2f255b90bfcd3aedf1f2f30579e73a64e8a5f55dcb9e"
+  },
+  "created_at": "2026-10-12T13:48:58.847618+00:00",
+  "exposure": "Known v1 cases/failures and declared defect families available during development. Runtime author and code reviewer excluded new answers before code freeze. Root will review new data only after this freeze.",
+  "external_seal": false,
+  "files": {
+    "CONTRACT.md": {
+      "bytes": 5703,
+      "sha256": "ecd428d373ece4581896584b45b074d2c2f19ba5f3f2265591d41cabd3ad468c"
+    },
+    "PREDECESSOR.json": {
+      "bytes": 21086,
+      "sha256": "3a6fa8e6464ea06f9f4b78c890b99f533a23f514f448bc0e9cf2af974316c160"
+    },
+    "grade_packets.py": {
+      "bytes": 2904,
+      "sha256": "0aa99c3ac02fb7fb3775fb41ec963a0b35cf6740b22ead5646fbed88a4225fb3"
+    },
+    "graders/__init__.py": {
+      "bytes": 200,
+      "sha256": "9de1460f0c0143731663584e0a3cad2899c55a87d22575d2c5625c43c8bca041"
+    },
+    "graders/candidate.py": {
+      "bytes": 12802,
+      "sha256": "8123f1f2324dd350d14c78eda08c69714f844c09bbdb7c7d6819188babe35805"
+    },
+    "graders/preference.py": {
+      "bytes": 14068,
+      "sha256": "154e692db97d2b9b30c53a65d477008a6d41048917312031fb7adf78cdd694d0"
+    },
+    "graders/shared.py": {
+      "bytes": 15562,
+      "sha256": "327cc95a72f8cf72e24a6a94e46862363958f728174e26ae03b09dad9eb1a1e8"
+    },
+    "legacy.py": {
+      "bytes": 515,
+      "sha256": "5bb6403565bfa870a092bdca05a07966d46c6d390f8b9294e4e56fc57a83e258"
+    },
+    "pipeline.py": {
+      "bytes": 16972,
+      "sha256": "261df680648d0d582ab93d636697311fb8dea4ef521c14b59cb211c973cc04ad"
+    },
+    "tests/test_boundaries.py": {
+      "bytes": 15235,
+      "sha256": "54a863d5297887622fb9c1d92224fec894b817cc363b16166eae8bb3f3f3d9e6"
+    },
+    "tests/test_pipeline.py": {
+      "bytes": 4844,
+      "sha256": "36495bcee75dc582e841e87046e82821c714d6a0715dcdbb51b8450cd03f53f4"
+    },
+    "tests/test_rules.py": {
+      "bytes": 4394,
+      "sha256": "4f756a371b3e0743dbf038968de5ea1a9beba613f1f4464c473836450843135d"
+    }
+  },
+  "git": {
+    "branch": "codex/offline-maguire-grader",
+    "head": "4d87b90ef74c4f40b282e08b6d82fc6ad9f2749e",
+    "staged_diff": "",
+    "tracked_diff": ""
+  },
+  "independent_holdout": false,
+  "python": "3.9.6 (default, Jan  9 2026, 11:03:41) \n[Clang 17.0.0 (clang-1700.6.4.2)]",
+  "schema": "maguire-grader-code-freeze-v2"
+}

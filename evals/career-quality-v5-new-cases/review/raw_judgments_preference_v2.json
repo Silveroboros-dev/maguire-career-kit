@@ -1,0 +1,209 @@
+{
+  "schema": "maguire-v5-new-raw-judgments-v2",
+  "family": "preference-fit",
+  "human_approved": false,
+  "review_stage": "raw_only_blind",
+  "raw_file": {
+    "path": "raw/preference-fit.json",
+    "sha256": "7dbdd88b9c0cbb83e23e7aacba554f0a65b175eb4dac3d861ce14a0913fdfff0",
+    "bytes": 17078
+  },
+  "read_attestation": {
+    "files_read_before_saving_judgments": [
+      "AGENTS.md",
+      "README.md",
+      "CREDITS.md",
+      "evals/career-quality-v5-new-cases/AUTHORING.md",
+      "evals/career-quality-v5-new-cases/FROZEN_SCHEMA.md",
+      "evals/career-quality-v5-new-cases/raw/candidate-fit.json",
+      "evals/career-quality-v5-new-cases/raw/preference-fit.json",
+      "evals/career-quality-v5-new-cases/review/raw_judgments_candidate_v1.json",
+      "evals/career-quality-v5-new-cases/review/raw_judgments_candidate_v2.json"
+    ],
+    "checker_code_seen": false,
+    "tests_seen": false,
+    "previous_cases_seen": false,
+    "normalized_seen": false,
+    "gold_seen": false,
+    "authoring_helper_seen": false,
+    "predictions_seen": false,
+    "note": "Version 2 follows unchanged version 1 for SHA256 0229c08bc04fb1d33a213fc09787c3a4317bec4182760f4aa57cadf4c14c155d (16985 bytes). PF5H-12 raw was replaced to test a personal learning-time preference rather than a credential qualification; the other 19 raw cases are unchanged. This independent judgment was saved before opening changed normalized/gold or predictions."
+  },
+  "judgments": [
+    {
+      "case_id": "PF5H-01",
+      "verdict": "pass",
+      "reason": "CHF 1,800 per calendar year is CHF 150 per calendar month as a budget equivalent, above the CHF 120 monthly course-fee minimum. The answer explicitly says annual-budget basis.",
+      "faulty_quotes": [],
+      "ambiguous_readings": [],
+      "coverage_comment": "Preserve course-fee category and budget equivalence rather than payment timing."
+    },
+    {
+      "case_id": "PF5H-02",
+      "verdict": "fail",
+      "reason": "The allowance is travel-only and explicitly cannot pay course fees, the category in the preference.",
+      "faulty_quotes": [
+        "The annual allowance can cover my course-fee minimum."
+      ],
+      "ambiguous_readings": [],
+      "coverage_comment": "Same currency and sufficient amount do not overcome the category restriction."
+    },
+    {
+      "case_id": "PF5H-03",
+      "verdict": "pass",
+      "reason": "Two required station days fit a three-day cap, and the role explicitly permits post-onboarding remote work with manager approval, which the preference accepts.",
+      "faulty_quotes": [],
+      "ambiguous_readings": [],
+      "coverage_comment": "Retain the after-onboarding phase and approval condition; no schedule guarantee is claimed."
+    },
+    {
+      "case_id": "PF5H-04",
+      "verdict": "pass",
+      "reason": "The answer makes fit conditional on a future remote approval; the source permits possible approval after review and says none has been issued. The two station days are within the three-day cap.",
+      "faulty_quotes": [],
+      "ambiguous_readings": [],
+      "coverage_comment": "Treat 'may meet ... if' as conditional possibility, preserving discretionary approval."
+    },
+    {
+      "case_id": "PF5H-05",
+      "verdict": "pass",
+      "reason": "The sole on-call shift is Saturday 11:00–13:00, inside the accepted Saturday 10:00–14:00 window; an exhaustive sole shift excludes weekday duty.",
+      "faulty_quotes": [],
+      "ambiguous_readings": [],
+      "coverage_comment": "Both time window and no-weekday restriction matter."
+    },
+    {
+      "case_id": "PF5H-06",
+      "verdict": "fail",
+      "reason": "The role mandates Sunday on-call while the preference prohibits Sunday on-call at any hour.",
+      "faulty_quotes": [
+        "The mandatory Sunday shift fits my no-Sunday rule."
+      ],
+      "ambiguous_readings": [],
+      "coverage_comment": "The matching day and duty type establish contradiction."
+    },
+    {
+      "case_id": "PF5H-07",
+      "verdict": "pass",
+      "reason": "A two-day monthly request is within the four-day monthly request ceiling, and the answer preserves manager approval.",
+      "faulty_quotes": [],
+      "ambiguous_readings": [],
+      "coverage_comment": "Request eligibility is distinct from an approved remote schedule."
+    },
+    {
+      "case_id": "PF5H-08",
+      "verdict": "fail",
+      "reason": "The requested five days per calendar month exceed the three-day post-probation ceiling even if approval is sought.",
+      "faulty_quotes": [
+        "My five-day monthly request is within the post-probation limit."
+      ],
+      "ambiguous_readings": [],
+      "coverage_comment": "Keep probation phase and approval condition, but numeric limit decides the case."
+    },
+    {
+      "case_id": "PF5H-09",
+      "verdict": "pass",
+      "reason": "The course-fee amount is undecided and unapproved, so advice to confirm it before treating the EUR 900 annual preference as met is supported.",
+      "faulty_quotes": [],
+      "ambiguous_readings": [],
+      "coverage_comment": "Pending is not a zero budget or a satisfied minimum."
+    },
+    {
+      "case_id": "PF5H-10",
+      "verdict": "needs_review",
+      "reason": "Two active employer documents require three and five onboarding station days, respectively. There is no explicit supersession. Three fits the four-day cap; five does not.",
+      "faulty_quotes": [],
+      "ambiguous_readings": [
+        "The three-day role-sheet rule governs, so the cap is met.",
+        "The five-day recruiter-sheet rule governs, so the cap is exceeded."
+      ],
+      "coverage_comment": "Both live terms and absence of replacement language are material."
+    },
+    {
+      "case_id": "PF5H-11",
+      "verdict": "pass",
+      "reason": "The sole required Basel client-site day per calendar month is within the stated two-day monthly cap for this role.",
+      "faulty_quotes": [],
+      "ambiguous_readings": [],
+      "coverage_comment": "Retain location, travel category, monthly period, and role scope."
+    },
+    {
+      "case_id": "PF5H-12",
+      "verdict": "pass",
+      "reason": "After probation, four paid leadership-course learning hours per calendar month exceed the stated minimum of three paid hours in the same phase and category.",
+      "faulty_quotes": [],
+      "ambiguous_readings": [],
+      "coverage_comment": "Preserve post-probation phase, paid status, leadership-course purpose, monthly period, and hours unit."
+    },
+    {
+      "case_id": "PF5H-13",
+      "verdict": "pass",
+      "reason": "A signed update explicitly replaces the earlier three-day rule with one station day, within the candidate's two-day onboarding cap.",
+      "faulty_quotes": [],
+      "ambiguous_readings": [],
+      "coverage_comment": "The supersession relation resolves otherwise competing requirements."
+    },
+    {
+      "case_id": "PF5H-14",
+      "verdict": "fail",
+      "reason": "The four-day original rule is explicitly replaced by a current two-day rule.",
+      "faulty_quotes": [
+        "Four station days remain mandatory in the current onboarding rule."
+      ],
+      "ambiguous_readings": [],
+      "coverage_comment": "Source timing alone is not the basis; explicit replacement is."
+    },
+    {
+      "case_id": "PF5H-15",
+      "verdict": "pass",
+      "reason": "The employer commits to USD 400 per calendar month for evening on-call, exactly the candidate's stated minimum for the same duty.",
+      "faulty_quotes": [],
+      "ambiguous_readings": [],
+      "coverage_comment": "Keep currency, period, duty condition, and commitment modality."
+    },
+    {
+      "case_id": "PF5H-16",
+      "verdict": "fail",
+      "reason": "The stipend is possible and capped at USD 600, while funding is unapproved. Neither payment nor the maximum amount is guaranteed.",
+      "faulty_quotes": [
+        "The role guarantees a USD 600 monthly on-call stipend."
+      ],
+      "ambiguous_readings": [],
+      "coverage_comment": "Possible funding and maximum amount cannot be promoted to a guaranteed payment."
+    },
+    {
+      "case_id": "PF5H-17",
+      "verdict": "pass",
+      "reason": "The sole required Wednesday training demo ends at 12:30 role-local time, before the 13:00 prohibition begins.",
+      "faulty_quotes": [],
+      "ambiguous_readings": [],
+      "coverage_comment": "Exhaustive schedule, weekday, zone, and endpoint matter."
+    },
+    {
+      "case_id": "PF5H-18",
+      "verdict": "fail",
+      "reason": "The required Tuesday demo ends at 15:00 role-local time, one hour after the 14:00 cutoff.",
+      "faulty_quotes": [
+        "The required Tuesday demo ends before my 14:00 cutoff."
+      ],
+      "ambiguous_readings": [],
+      "coverage_comment": "The answer misstates the temporal comparison."
+    },
+    {
+      "case_id": "PF5H-19",
+      "verdict": "pass",
+      "reason": "The prohibition is withdrawn. Active role terms permit Friday remote work with supervisor approval, exactly as stated.",
+      "faulty_quotes": [],
+      "ambiguous_readings": [],
+      "coverage_comment": "Preserve withdrawn versus active authority and supervisor condition."
+    },
+    {
+      "case_id": "PF5H-20",
+      "verdict": "pass",
+      "reason": "The source says captions are unavailable now, procurement is pending, and no activation date is promised. Advice to confirm first-day availability follows from the unmet current status and first-day need.",
+      "faulty_quotes": [],
+      "ambiguous_readings": [],
+      "coverage_comment": "Cover the current negative, pending procurement, absent date, preference, and advice separately."
+    }
+  ]
+}

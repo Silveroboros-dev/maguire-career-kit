@@ -1,0 +1,975 @@
+{
+  "schema": "maguire-v3-new-results-review-v1",
+  "reviewer": "agent:/root/new_case_review",
+  "human_approved": false,
+  "status": "complete",
+  "bindings": {
+    "FREEZE.json": {
+      "sha256": "a3491e2723c2b04a98b23b09be4fa73412de382de465c8ffa8a59091b385c830",
+      "bytes": 15429
+    },
+    "START.json": {
+      "sha256": "57cc005a772c2e4aa313a993fa2565bc3fc4231b98ef655f6c2aca1d9dda4d59",
+      "bytes": 3819
+    },
+    "runs/new-cases-v3/RECEIPT.json": {
+      "sha256": "514b81ee8cc3e71fd859e3b78adefb2d6bfa87dbb6592d348b70a2b3fab6f2f5",
+      "bytes": 1106
+    },
+    "runs/new-cases-v3/measurement.json": {
+      "sha256": "7a76b11c3e84e45843ea6963008d21cb2d549e3386020503ff80ca0476e14c15",
+      "bytes": 105343
+    },
+    "runs/new-cases-v3/predictions.jsonl": {
+      "sha256": "3f2dbe9ba4fd0a6d688e5ff0c7ebaa47d3a158be00cb5749d1ef58876e05f385",
+      "bytes": 76315
+    }
+  },
+  "prior_review_bindings": {
+    "raw_judgments_v1_sha256": "01cc4eab44a1f2568ba0acd41f590b47bd138f33bc89f64e7e8aa7b47faf6339",
+    "annotation_review_v2_sha256": "6368755f53674f181ebfa87ee0061954162035a27eddee13e534493947a24f74",
+    "challenge_packet_v2_sha256": "d8c0d49d1ae7f7a7fdcb9bcab49ad373eedb46639cc024dec8023c8cc34a0757"
+  },
+  "counts": {
+    "total_cases": 40,
+    "reviewed_cases": 32,
+    "false_rejections": 13,
+    "acceptable_abstentions": 3,
+    "appropriate_ambiguous_reviews": 4,
+    "caught_bad_fragments": 12,
+    "intended_faulty_claims_flagged": 14,
+    "intended_faulty_claims_total": 14,
+    "missed_accepted_errors": 0,
+    "invalid": 0,
+    "execution_errors": 0
+  },
+  "cases": [
+    {
+      "case_id": "CF3N-03",
+      "review_type": "good_abstention",
+      "gold": "pass",
+      "actual": "needs_review",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "review_claim_ids": [
+        "c1",
+        "c3"
+      ],
+      "reviewed_claim_traces": [
+        {
+          "id": "c1",
+          "verdict": "needs_review",
+          "rule": "unknown_predicate",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "explanation": "Predicate has no registered comparison rule."
+        },
+        {
+          "id": "c3",
+          "verdict": "needs_review",
+          "rule": "unknown_predicate",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "explanation": "Predicate has no registered comparison rule."
+        }
+      ],
+      "primary_cause": "checker_rule_limit",
+      "explanation_assessment": "faithful_abstention",
+      "conclusion": "The reported weekday triage and escalation match the role; c1 triage and c3 relevance abstain only because the frozen checker has no rules for those honest predicates."
+    },
+    {
+      "case_id": "CF3N-04",
+      "review_type": "good_abstention",
+      "gold": "pass",
+      "actual": "needs_review",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "review_claim_ids": [
+        "c3"
+      ],
+      "reviewed_claim_traces": [
+        {
+          "id": "c3",
+          "verdict": "needs_review",
+          "rule": "unknown_predicate",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "explanation": "Predicate has no registered comparison rule."
+        }
+      ],
+      "primary_cause": "checker_rule_limit",
+      "explanation_assessment": "faithful_abstention",
+      "conclusion": "Both counts are supported; c3 subset relation is stated explicitly in the source and answer but uses an unregistered predicate, so review is a coverage limit."
+    },
+    {
+      "case_id": "CF3N-08",
+      "review_type": "false_rejection",
+      "gold": "pass",
+      "actual": "fail",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [
+        "c1"
+      ],
+      "review_claim_ids": [
+        "c3",
+        "c4"
+      ],
+      "reviewed_claim_traces": [
+        {
+          "id": "c1",
+          "verdict": "fail",
+          "rule": "evidence_gap",
+          "evidence_relation": "not_established",
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "explanation": "Available evidence does not establish the asserted proposition: candidate / station_attendance / field station."
+        },
+        {
+          "id": "c3",
+          "verdict": "needs_review",
+          "rule": "unknown_predicate",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "explanation": "Predicate has no registered comparison rule."
+        },
+        {
+          "id": "c4",
+          "verdict": "needs_review",
+          "rule": "unknown_predicate",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "explanation": "Predicate has no registered comparison rule."
+        }
+      ],
+      "primary_cause": "normalization_representation_limit",
+      "explanation_assessment": "incorrect_rejection",
+      "conclusion": "The raw 2022 every-Tuesday-and-Thursday history supports a two-day weekly routine and does not prove current availability. c1 fails because the normalized source puts weekdays in scope with measure=null while the answer has measure=2/week; c3/c4 also abstain on unregistered relevance/verification predicates."
+    },
+    {
+      "case_id": "CF3N-10",
+      "review_type": "false_rejection",
+      "gold": "pass",
+      "actual": "fail",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [
+        "c1"
+      ],
+      "review_claim_ids": [],
+      "reviewed_claim_traces": [
+        {
+          "id": "c1",
+          "verdict": "fail",
+          "rule": "evidence_gap",
+          "evidence_relation": "not_established",
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "explanation": "Available evidence does not establish the asserted proposition: candidate / ledger_maintenance / equipment checkout ledger."
+        }
+      ],
+      "primary_cause": "normalization_checker_contract_mismatch",
+      "explanation_assessment": "incorrect_rejection",
+      "conclusion": "January 2023 through June 2024 is 18 months, supporting more than a year. c1 fails because duration_months_lower is an extra answer scope key absent from the source, and the checker does not derive duration from start/end."
+    },
+    {
+      "case_id": "CF3N-11",
+      "review_type": "false_rejection",
+      "gold": "pass",
+      "actual": "fail",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [
+        "c2"
+      ],
+      "review_claim_ids": [
+        "c1"
+      ],
+      "reviewed_claim_traces": [
+        {
+          "id": "c1",
+          "verdict": "needs_review",
+          "rule": "unknown_predicate",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "explanation": "Predicate has no registered comparison rule."
+        },
+        {
+          "id": "c2",
+          "verdict": "fail",
+          "rule": "evidence_gap",
+          "evidence_relation": "not_established",
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "explanation": "Available evidence does not establish the asserted proposition: candidate / training_demo / live equipment demos to new operators."
+        }
+      ],
+      "primary_cause": "normalization_checker_contract_mismatch",
+      "explanation_assessment": "incorrect_rejection",
+      "conclusion": "The signed log of four demos supports the generic claim that the candidate delivered live demos. c2 fails because source measure=4 and answer measure=null; the checker does not infer existence from a positive count. c1 evidentiary sufficiency abstains as an unregistered predicate."
+    },
+    {
+      "case_id": "CF3N-13",
+      "review_type": "caught_defect",
+      "gold": "fail",
+      "actual": "fail",
+      "intended_error_claim_ids": [
+        "c2"
+      ],
+      "failed_claim_ids": [
+        "c2"
+      ],
+      "review_claim_ids": [],
+      "reviewed_claim_traces": [
+        {
+          "id": "c2",
+          "verdict": "fail",
+          "rule": "evidence_gap",
+          "evidence_relation": "not_established",
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "explanation": "Available evidence does not establish the asserted proposition: candidate / training_certification / vendor safety trainer certificate."
+        }
+      ],
+      "primary_cause": "source_claim_support",
+      "explanation_assessment": "sound_but_generic",
+      "conclusion": "c2 claims an earned certificate, while the source only establishes demo attendance and no trainer assessment. The evidence gap correctly marks the certificate unsupported; it does not establish an explicit denial of certificate status."
+    },
+    {
+      "case_id": "CF3N-14",
+      "review_type": "caught_defect",
+      "gold": "fail",
+      "actual": "fail",
+      "intended_error_claim_ids": [
+        "c2"
+      ],
+      "failed_claim_ids": [
+        "c2"
+      ],
+      "review_claim_ids": [],
+      "reviewed_claim_traces": [
+        {
+          "id": "c2",
+          "verdict": "fail",
+          "rule": "evidence_gap",
+          "evidence_relation": "not_established",
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "explanation": "Available evidence does not establish the asserted proposition: candidate / sample_size / forms processed by OCR."
+        }
+      ],
+      "primary_cause": "scope_and_validation_inflation",
+      "explanation_assessment": "partial",
+      "conclusion": "c2 validates OCR across 240 forms despite a 14-form trial and an explicitly unprocessed larger collection. The checker flags an evidence gap but does not cite the explicit unprocessed collection as counterevidence."
+    },
+    {
+      "case_id": "CF3N-15",
+      "review_type": "caught_defect",
+      "gold": "fail",
+      "actual": "fail",
+      "intended_error_claim_ids": [
+        "c2"
+      ],
+      "failed_claim_ids": [
+        "c2"
+      ],
+      "review_claim_ids": [],
+      "reviewed_claim_traces": [
+        {
+          "id": "c2",
+          "verdict": "fail",
+          "rule": "evidence_gap",
+          "evidence_relation": "not_established",
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "explanation": "Available evidence does not establish the asserted proposition: candidate / archive_processing / folders."
+        }
+      ],
+      "primary_cause": "team_to_personal_attribution",
+      "explanation_assessment": "partial",
+      "conclusion": "c2 assigns all 60 team-processed folders to the candidate despite the source saying the candidate handled the ledger and did not process folders. The gap flags the correct atom but fails to articulate the explicit individual denial."
+    },
+    {
+      "case_id": "CF3N-16",
+      "review_type": "caught_defect",
+      "gold": "fail",
+      "actual": "fail",
+      "intended_error_claim_ids": [
+        "c2"
+      ],
+      "failed_claim_ids": [
+        "c2"
+      ],
+      "review_claim_ids": [],
+      "reviewed_claim_traces": [
+        {
+          "id": "c2",
+          "verdict": "fail",
+          "rule": "evidence_gap",
+          "evidence_relation": "not_established",
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "explanation": "Available evidence does not establish the asserted proposition: candidate / on_call / support rota."
+        }
+      ],
+      "primary_cause": "historical_to_current_duty",
+      "explanation_assessment": "partial",
+      "conclusion": "c2 asserts current on-call status although duty ended in 2021. The checker rejects on time mismatch but gives only a generic evidence gap, not the explicit post-2021 absence."
+    },
+    {
+      "case_id": "CF3N-17",
+      "review_type": "caught_defect",
+      "gold": "fail",
+      "actual": "fail",
+      "intended_error_claim_ids": [
+        "c2"
+      ],
+      "failed_claim_ids": [
+        "c2"
+      ],
+      "review_claim_ids": [],
+      "reviewed_claim_traces": [
+        {
+          "id": "c2",
+          "verdict": "fail",
+          "rule": "evidence_gap",
+          "evidence_relation": "not_established",
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "explanation": "Available evidence does not establish the asserted proposition: candidate / distance_saving / proposed route."
+        }
+      ],
+      "primary_cause": "estimate_to_guarantee",
+      "explanation_assessment": "partial",
+      "conclusion": "c2 upgrades a possible unimplemented forecast into guaranteed realized weekly savings. The checker identifies scope/measure/modality mismatch and rejects, but its generic gap does not explain prediction versus guarantee."
+    },
+    {
+      "case_id": "CF3N-18",
+      "review_type": "caught_defect",
+      "gold": "fail",
+      "actual": "fail",
+      "intended_error_claim_ids": [
+        "c2"
+      ],
+      "failed_claim_ids": [
+        "c2"
+      ],
+      "review_claim_ids": [],
+      "reviewed_claim_traces": [
+        {
+          "id": "c2",
+          "verdict": "fail",
+          "rule": "compatibility_gap",
+          "evidence_relation": "not_established",
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "explanation": "A matching candidate preference and role requirement do not jointly establish compatibility."
+        }
+      ],
+      "primary_cause": "ability_requirement_conflict",
+      "explanation_assessment": "wrong_mechanism",
+      "conclusion": "c2 says the candidate already meets public-session caption duty despite explicit inability and no captioning service. It is flagged, but the compatible predicate is routed through a preference matcher and the compatibility-gap explanation misses the candidate-ability conflict."
+    },
+    {
+      "case_id": "CF3N-19",
+      "review_type": "appropriate_ambiguity_review",
+      "gold": "needs_review",
+      "actual": "needs_review",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "review_claim_ids": [
+        "c1"
+      ],
+      "reviewed_claim_traces": [
+        {
+          "id": "c1",
+          "verdict": "needs_review",
+          "rule": "alternative_readings",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "explanation": "Multiple plausible readings require review."
+        }
+      ],
+      "primary_cause": "genuine_alternative_readings",
+      "explanation_assessment": "appropriate_but_structural",
+      "conclusion": "The answer can mean scheduled rotating shift coverage or availability outside shifts; the source only establishes the former. Alternative readings trigger review without adjudicating them."
+    },
+    {
+      "case_id": "CF3N-20",
+      "review_type": "appropriate_ambiguity_review",
+      "gold": "needs_review",
+      "actual": "needs_review",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "review_claim_ids": [
+        "c1"
+      ],
+      "reviewed_claim_traces": [
+        {
+          "id": "c1",
+          "verdict": "needs_review",
+          "rule": "alternative_readings",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "explanation": "Multiple plausible readings require review."
+        }
+      ],
+      "primary_cause": "genuine_alternative_readings",
+      "explanation_assessment": "appropriate_but_structural",
+      "conclusion": "“Led ... with my mentor” may mean joint delivery or primary lead; the source names joint conduct without naming a lead. Alternative readings trigger review."
+    },
+    {
+      "case_id": "PF3N-01",
+      "review_type": "false_rejection",
+      "gold": "pass",
+      "actual": "fail",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [
+        "B"
+      ],
+      "review_claim_ids": [],
+      "reviewed_claim_traces": [
+        {
+          "id": "B",
+          "verdict": "fail",
+          "rule": "compatibility_gap",
+          "evidence_relation": "not_established",
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "explanation": "A matching candidate preference and role requirement do not jointly establish compatibility."
+        }
+      ],
+      "primary_cause": "compatibility_contract_gap",
+      "explanation_assessment": "incorrect_rejection",
+      "conclusion": "The published $600 annual equipment stipend clears the same-category $500 annual floor. A passes, while B is rejected because relational compatible subject/object do not match the checker’s exact preference/requirement shape; it also does not compute this bounded amount comparison."
+    },
+    {
+      "case_id": "PF3N-02",
+      "review_type": "false_rejection",
+      "gold": "pass",
+      "actual": "fail",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [
+        "B"
+      ],
+      "review_claim_ids": [],
+      "reviewed_claim_traces": [
+        {
+          "id": "B",
+          "verdict": "fail",
+          "rule": "compatibility_gap",
+          "evidence_relation": "not_established",
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "explanation": "A matching candidate preference and role requirement do not jointly establish compatibility."
+        }
+      ],
+      "primary_cause": "compatibility_contract_gap",
+      "explanation_assessment": "incorrect_rejection",
+      "conclusion": "The $450 monthly floor is above the $400 monthly workspace minimum. A passes; B is a valid numeric fit inference rejected by the narrow compatible matcher and its relational annotation shape."
+    },
+    {
+      "case_id": "PF3N-03",
+      "review_type": "false_rejection",
+      "gold": "pass",
+      "actual": "fail",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [
+        "B"
+      ],
+      "review_claim_ids": [],
+      "reviewed_claim_traces": [
+        {
+          "id": "B",
+          "verdict": "fail",
+          "rule": "compatibility_gap",
+          "evidence_relation": "not_established",
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "explanation": "A matching candidate preference and role requirement do not jointly establish compatibility."
+        }
+      ],
+      "primary_cause": "compatibility_contract_gap",
+      "explanation_assessment": "incorrect_rejection",
+      "conclusion": "One required station day is within the two-day weekly ceiling. A passes; B fails because the compatible matcher does not establish this ceiling comparison from the relational claim."
+    },
+    {
+      "case_id": "PF3N-04",
+      "review_type": "false_rejection",
+      "gold": "pass",
+      "actual": "fail",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [
+        "B"
+      ],
+      "review_claim_ids": [],
+      "reviewed_claim_traces": [
+        {
+          "id": "B",
+          "verdict": "fail",
+          "rule": "compatibility_gap",
+          "evidence_relation": "not_established",
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "explanation": "A matching candidate preference and role requirement do not jointly establish compatibility."
+        }
+      ],
+      "primary_cause": "compatibility_contract_gap",
+      "explanation_assessment": "incorrect_rejection",
+      "conclusion": "The Saturday-only monthly rota is inside the allowed Saturday window and excludes weekdays. A passes; B fails through the narrow compatible shape rather than demonstrating a schedule conflict."
+    },
+    {
+      "case_id": "PF3N-05",
+      "review_type": "false_rejection",
+      "gold": "pass",
+      "actual": "fail",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [
+        "C"
+      ],
+      "review_claim_ids": [],
+      "reviewed_claim_traces": [
+        {
+          "id": "C",
+          "verdict": "fail",
+          "rule": "compatibility_gap",
+          "evidence_relation": "not_established",
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "explanation": "A matching candidate preference and role requirement do not jointly establish compatibility."
+        }
+      ],
+      "primary_cause": "compatibility_contract_gap",
+      "explanation_assessment": "incorrect_rejection",
+      "conclusion": "The explicit update supersedes the three-day rule and requires one day, satisfying the one-day cap. A/B pass; C is falsely rejected by the compatible matcher, not by a source conflict."
+    },
+    {
+      "case_id": "PF3N-06",
+      "review_type": "false_rejection",
+      "gold": "pass",
+      "actual": "fail",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [
+        "A"
+      ],
+      "review_claim_ids": [],
+      "reviewed_claim_traces": [
+        {
+          "id": "A",
+          "verdict": "fail",
+          "rule": "compatibility_gap",
+          "evidence_relation": "not_established",
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "explanation": "A matching candidate preference and role requirement do not jointly establish compatibility."
+        }
+      ],
+      "primary_cause": "compatibility_contract_gap",
+      "explanation_assessment": "incorrect_rejection",
+      "conclusion": "The first 30 on-site days match the stated exception and remote work is then permitted. B passes; A is falsely rejected because the matcher cannot combine the on-site period, exception, and later remote permission."
+    },
+    {
+      "case_id": "PF3N-07",
+      "review_type": "false_rejection",
+      "gold": "pass",
+      "actual": "fail",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [
+        "B"
+      ],
+      "review_claim_ids": [],
+      "reviewed_claim_traces": [
+        {
+          "id": "B",
+          "verdict": "fail",
+          "rule": "compatibility_gap",
+          "evidence_relation": "not_established",
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "explanation": "A matching candidate preference and role requirement do not jointly establish compatibility."
+        }
+      ],
+      "primary_cause": "annotation_checker_contract_mismatch",
+      "explanation_assessment": "incorrect_rejection_with_representation_caveat",
+      "conclusion": "The employer has not set an amount, so the $1,000 must-have remains unresolved. B encodes this as positive compatible with scope.status=unresolved, a semantically awkward representation that the checker treats as a failed compatibility assertion. This is not proof of a pure numeric-comparison bug."
+    },
+    {
+      "case_id": "PF3N-08",
+      "review_type": "good_abstention",
+      "gold": "pass",
+      "actual": "needs_review",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "review_claim_ids": [
+        "A",
+        "B"
+      ],
+      "reviewed_claim_traces": [
+        {
+          "id": "A",
+          "verdict": "needs_review",
+          "rule": "conditional_semantics",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "explanation": "Conditional reasoning is outside this slice."
+        },
+        {
+          "id": "B",
+          "verdict": "needs_review",
+          "rule": "conditional_semantics",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "explanation": "Conditional reasoning is outside this slice."
+        }
+      ],
+      "primary_cause": "checker_rule_limit",
+      "explanation_assessment": "faithful_abstention",
+      "conclusion": "The answer says only that a written offer confirming three weekly remote days would satisfy the preference. Both clauses abstain because conditional reasoning is outside the frozen slice; there is no unsupported present promise."
+    },
+    {
+      "case_id": "PF3N-09",
+      "review_type": "false_rejection",
+      "gold": "pass",
+      "actual": "fail",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [
+        "B"
+      ],
+      "review_claim_ids": [],
+      "reviewed_claim_traces": [
+        {
+          "id": "B",
+          "verdict": "fail",
+          "rule": "compatibility_gap",
+          "evidence_relation": "not_established",
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "explanation": "A matching candidate preference and role requirement do not jointly establish compatibility."
+        }
+      ],
+      "primary_cause": "annotation_checker_contract_mismatch",
+      "explanation_assessment": "incorrect_rejection_with_representation_caveat",
+      "conclusion": "Captions are pending, so advice to confirm before counting the must-have as met is sound. B encodes verification advice as positive compatible/evaluation_instruction with recommended_as_fact stance; the compatibility matcher rejects that representation, not the underlying caution."
+    },
+    {
+      "case_id": "PF3N-11",
+      "review_type": "false_rejection",
+      "gold": "pass",
+      "actual": "fail",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [
+        "A",
+        "B"
+      ],
+      "review_claim_ids": [],
+      "reviewed_claim_traces": [
+        {
+          "id": "A",
+          "verdict": "fail",
+          "rule": "compatibility_gap",
+          "evidence_relation": "not_established",
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "explanation": "A matching candidate preference and role requirement do not jointly establish compatibility."
+        },
+        {
+          "id": "B",
+          "verdict": "fail",
+          "rule": "evidence_gap",
+          "evidence_relation": "not_established",
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "explanation": "Available evidence does not establish the asserted proposition: role / remote_work / manager approval."
+        }
+      ],
+      "primary_cause": "normalization_checker_contract_mismatch",
+      "explanation_assessment": "incorrect_rejection",
+      "conclusion": "Two remote days fit the four-day permission limit subject to manager approval. A fails via the narrow compatible matcher; B fails because manager approval is represented as a separate requirement while the source stores it as a condition on permission."
+    },
+    {
+      "case_id": "PF3N-12",
+      "review_type": "false_rejection",
+      "gold": "pass",
+      "actual": "fail",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [
+        "A"
+      ],
+      "review_claim_ids": [],
+      "reviewed_claim_traces": [
+        {
+          "id": "A",
+          "verdict": "fail",
+          "rule": "compatibility_gap",
+          "evidence_relation": "not_established",
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "explanation": "A matching candidate preference and role requirement do not jointly establish compatibility."
+        }
+      ],
+      "primary_cause": "compatibility_contract_gap",
+      "explanation_assessment": "incorrect_rejection",
+      "conclusion": "The only required demos end at 16:00, before the 18:00 cutoff. A is a valid time comparison that the relational compatible matcher rejects without establishing a conflict."
+    },
+    {
+      "case_id": "PF3N-13",
+      "review_type": "caught_defect",
+      "gold": "fail",
+      "actual": "fail",
+      "intended_error_claim_ids": [
+        "B"
+      ],
+      "failed_claim_ids": [
+        "B"
+      ],
+      "review_claim_ids": [],
+      "reviewed_claim_traces": [
+        {
+          "id": "B",
+          "verdict": "fail",
+          "rule": "evidence_gap",
+          "evidence_relation": "not_established",
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "explanation": "Available evidence does not establish the asserted proposition: role / remote_work / three days."
+        }
+      ],
+      "primary_cause": "permission_to_guarantee",
+      "explanation_assessment": "sound_but_generic",
+      "conclusion": "B promises three guaranteed remote days from permission to request subject to approval and no guaranteed count. The checker correctly flags the unsupported guarantee while passing the accurate permission premise."
+    },
+    {
+      "case_id": "PF3N-14",
+      "review_type": "caught_defect",
+      "gold": "fail",
+      "actual": "fail",
+      "intended_error_claim_ids": [
+        "A",
+        "B"
+      ],
+      "failed_claim_ids": [
+        "A",
+        "B"
+      ],
+      "review_claim_ids": [],
+      "reviewed_claim_traces": [
+        {
+          "id": "A",
+          "verdict": "fail",
+          "rule": "opposite_polarity",
+          "evidence_relation": "contradicted",
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [
+            "J14N"
+          ],
+          "explanation": "Applicable evidence states the opposite polarity."
+        },
+        {
+          "id": "B",
+          "verdict": "fail",
+          "rule": "compatibility_gap",
+          "evidence_relation": "not_established",
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "explanation": "A matching candidate preference and role requirement do not jointly establish compatibility."
+        }
+      ],
+      "primary_cause": "unofficial_note_to_policy",
+      "explanation_assessment": "partial",
+      "conclusion": "A is correctly contradicted by the note’s explicit lack of amendment authority. B is also false because two required days exceed the one-day cap, but the checker supplies only a generic compatibility gap, not that arithmetic/policy relation."
+    },
+    {
+      "case_id": "PF3N-15",
+      "review_type": "caught_defect",
+      "gold": "fail",
+      "actual": "fail",
+      "intended_error_claim_ids": [
+        "A",
+        "B"
+      ],
+      "failed_claim_ids": [
+        "A",
+        "B"
+      ],
+      "review_claim_ids": [],
+      "reviewed_claim_traces": [
+        {
+          "id": "A",
+          "verdict": "fail",
+          "rule": "evidence_gap",
+          "evidence_relation": "not_established",
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "explanation": "Available evidence does not establish the asserted proposition: role / on_call / overnight."
+        },
+        {
+          "id": "B",
+          "verdict": "fail",
+          "rule": "compatibility_gap",
+          "evidence_relation": "not_established",
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "explanation": "A matching candidate preference and role requirement do not jointly establish compatibility."
+        }
+      ],
+      "primary_cause": "required_duty_reversed",
+      "explanation_assessment": "partial",
+      "conclusion": "A denies overnight duty despite a weekly overnight requirement and B falsely says the role fits an overnight ban. Both atoms are flagged, but the checker gives evidence/compatibility gaps rather than identifying the direct duty conflict."
+    },
+    {
+      "case_id": "PF3N-16",
+      "review_type": "caught_defect",
+      "gold": "fail",
+      "actual": "fail",
+      "intended_error_claim_ids": [
+        "B"
+      ],
+      "failed_claim_ids": [
+        "B"
+      ],
+      "review_claim_ids": [],
+      "reviewed_claim_traces": [
+        {
+          "id": "B",
+          "verdict": "fail",
+          "rule": "evidence_gap",
+          "evidence_relation": "not_established",
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "explanation": "Available evidence does not establish the asserted proposition: employer / live_captions / enabled."
+        }
+      ],
+      "primary_cause": "platform_capability_to_employer_commitment",
+      "explanation_assessment": "sound_but_generic",
+      "conclusion": "Optional platform captions are supported, but no employer promise to enable them in every team meeting exists. The checker passes A and correctly flags B as unsupported; the generic gap does not claim an explicit refusal."
+    },
+    {
+      "case_id": "PF3N-17",
+      "review_type": "caught_defect",
+      "gold": "fail",
+      "actual": "fail",
+      "intended_error_claim_ids": [
+        "B"
+      ],
+      "failed_claim_ids": [
+        "B"
+      ],
+      "review_claim_ids": [],
+      "reviewed_claim_traces": [
+        {
+          "id": "B",
+          "verdict": "fail",
+          "rule": "compatibility_gap",
+          "evidence_relation": "not_established",
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "explanation": "A matching candidate preference and role requirement do not jointly establish compatibility."
+        }
+      ],
+      "primary_cause": "annual_to_monthly_conflation",
+      "explanation_assessment": "wrong_mechanism",
+      "conclusion": "The $900 annual stipend is only $75/month if spread evenly, below the $200 monthly floor. B is flagged solely by an empty-evidence compatibility gap; the checker did not compare periods or amounts, so this is localization without explanatory detection of the unit error."
+    },
+    {
+      "case_id": "PF3N-18",
+      "review_type": "caught_defect",
+      "gold": "fail",
+      "actual": "fail",
+      "intended_error_claim_ids": [
+        "B"
+      ],
+      "failed_claim_ids": [
+        "B"
+      ],
+      "review_claim_ids": [],
+      "reviewed_claim_traces": [
+        {
+          "id": "B",
+          "verdict": "fail",
+          "rule": "opposite_polarity",
+          "evidence_relation": "contradicted",
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [
+            "J18"
+          ],
+          "explanation": "Applicable evidence states the opposite polarity."
+        }
+      ],
+      "primary_cause": "expense_category_expansion",
+      "explanation_assessment": "sound",
+      "conclusion": "Exam-fee reimbursement explicitly excludes conference travel. A passes; B is correctly contradicted by J18 with opposite polarity on conference travel."
+    },
+    {
+      "case_id": "PF3N-19",
+      "review_type": "appropriate_ambiguity_review",
+      "gold": "needs_review",
+      "actual": "needs_review",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "review_claim_ids": [
+        "A"
+      ],
+      "reviewed_claim_traces": [
+        {
+          "id": "A",
+          "verdict": "needs_review",
+          "rule": "alternative_readings",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "explanation": "Multiple plausible readings require review."
+        }
+      ],
+      "primary_cause": "genuine_alternative_readings",
+      "explanation_assessment": "appropriate_but_structural",
+      "conclusion": "“Offers” can preserve a post-trial possibility or imply an assured two-day arrangement; the posting says days may be agreed. Alternative readings trigger review."
+    },
+    {
+      "case_id": "PF3N-20",
+      "review_type": "appropriate_ambiguity_review",
+      "gold": "needs_review",
+      "actual": "needs_review",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "review_claim_ids": [
+        "A"
+      ],
+      "reviewed_claim_traces": [
+        {
+          "id": "A",
+          "verdict": "needs_review",
+          "rule": "alternative_readings",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "explanation": "Multiple plausible readings require review."
+        }
+      ],
+      "primary_cause": "genuine_alternative_readings",
+      "explanation_assessment": "appropriate_but_structural",
+      "conclusion": "Caption availability can mean advance-request access or routine provision in every meeting; only the first is stated. Alternative readings trigger review."
+    }
+  ],
+  "residual_caveats": [
+    "All 14 intended faulty claim IDs were flagged, but localization is not equivalent to correct causal explanation. CF3N-18 and PF3N-17 have especially misleading generic matcher routes; several other caught defects receive only evidence-gap wording despite explicit contrary source text.",
+    "The 13 acceptable-to-fail outcomes mix narrow checker coverage with annotation/runtime representation mismatches. Relational compatible subjects/objects do not satisfy the frozen exact-shape matcher; PF3N-07 unresolved status and PF3N-09 verification advice are semantically faithful raw answers but awkward compatible encodings.",
+    "CF3N-08 normalized weekday history has no frequency measure, CF3N-10 duration exists only in answer scope, and CF3N-11 quantified source versus generic answer are representation/comparison boundaries missed by the pre-run annotation-completeness receipt. Preserve that earlier receipt; this post-run caveat does not alter gold.",
+    "The four appropriate ambiguity reviews follow pre-authored alternative readings; they demonstrate safe abstention for those represented cases, not independent discovery of ambiguity from raw prose.",
+    "This is an offline run on 40 agent-authored fictional fragments with manual normalization and agent review. No raw-text extractor, human approval, real job sample, externally blind holdout or external seal is established."
+  ],
+  "verification": {
+    "command": "python3 -B evals/career-quality-v3-new-cases/pipeline.py verify",
+    "verified_packets": 40,
+    "predecessor_files": 271,
+    "reran_checker": false,
+    "corpus_code_gold_changed_after_run": false,
+    "new_predictions_executed_by_reviewer": false
+  }
+}

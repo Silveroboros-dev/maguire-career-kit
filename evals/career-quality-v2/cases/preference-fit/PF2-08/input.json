@@ -1,0 +1,32 @@
+{
+  "schema": "maguire-quality-input-v1",
+  "case_id": "PF2-08",
+  "grader": "preference_fit",
+  "data_class": "synthetic",
+  "decision_at": "2026-10-11T12:00:00Z",
+  "task": "Assess the supplied role and candidate snapshot, cite sources, explain uncertainty, and recommend a next action.",
+  "jd": {
+    "title": "Civic Training Facilitator",
+    "sources": [
+      {
+        "id": "jd_1",
+        "text": "Facilitators lead live training sessions and use the employer's standard meeting platform.",
+        "observed_at": "2026-09-01T12:00:00Z",
+        "authority": "job_description",
+        "supersedes": []
+      }
+    ]
+  },
+  "candidate": {
+    "facts": [],
+    "preferences": [
+      {
+        "id": "pref_1",
+        "text": "I require live captions for every training session I lead.",
+        "priority": "must_have",
+        "allowed_exceptions": [],
+        "confirmed_at": "2026-08-15T12:00:00Z"
+      }
+    ]
+  }
+}

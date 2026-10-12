@@ -1,0 +1,279 @@
+{
+  "schema": "maguire-v6-handoff",
+  "completed_at": "2026-10-12T18:30:44.495349+00:00",
+  "status": "completed_offline_regression",
+  "human_approved": false,
+  "cases": 40,
+  "claims": 61,
+  "measured_runs": 1,
+  "post_freeze_regrading": false,
+  "predictions_before_freeze": false,
+  "predecessor_files_verified": 454,
+  "frozen_v6_files": 25,
+  "tests": {
+    "total": 48,
+    "passed": 48,
+    "harness": 21,
+    "checker": 11,
+    "reviewer": 16,
+    "target_cases_graded_by_tests": false
+  },
+  "overall": {
+    "total": 40,
+    "confusion": {
+      "pass": {
+        "pass": 24,
+        "fail": 0,
+        "needs_review": 1,
+        "invalid": 0
+      },
+      "fail": {
+        "pass": 0,
+        "fail": 12,
+        "needs_review": 0,
+        "invalid": 0
+      },
+      "needs_review": {
+        "pass": 0,
+        "fail": 0,
+        "needs_review": 3,
+        "invalid": 0
+      }
+    },
+    "missed_errors": [],
+    "false_rejections": [],
+    "needs_review": {
+      "pass": [
+        "PF5H-04"
+      ],
+      "fail": [],
+      "needs_review": [
+        "CF5H-05",
+        "CF5H-13",
+        "PF5H-10"
+      ]
+    },
+    "ambiguous_forced_decisions": [],
+    "invalid": [],
+    "execution_errors": [],
+    "automatic_decisions": 36,
+    "intended_errors_total": 12,
+    "intended_errors_flagged": 12,
+    "bad_fragments_rejected_only_on_other_claims": [],
+    "extra_failures_in_bad_fragments": []
+  },
+  "by_family": {
+    "candidate-fit": {
+      "total": 20,
+      "confusion": {
+        "pass": {
+          "pass": 12,
+          "fail": 0,
+          "needs_review": 0,
+          "invalid": 0
+        },
+        "fail": {
+          "pass": 0,
+          "fail": 6,
+          "needs_review": 0,
+          "invalid": 0
+        },
+        "needs_review": {
+          "pass": 0,
+          "fail": 0,
+          "needs_review": 2,
+          "invalid": 0
+        }
+      },
+      "missed_errors": [],
+      "false_rejections": [],
+      "needs_review": {
+        "pass": [],
+        "fail": [],
+        "needs_review": [
+          "CF5H-05",
+          "CF5H-13"
+        ]
+      },
+      "ambiguous_forced_decisions": [],
+      "invalid": [],
+      "execution_errors": [],
+      "automatic_decisions": 18,
+      "intended_errors_total": 6,
+      "intended_errors_flagged": 6,
+      "bad_fragments_rejected_only_on_other_claims": [],
+      "extra_failures_in_bad_fragments": []
+    },
+    "preference-fit": {
+      "total": 20,
+      "confusion": {
+        "pass": {
+          "pass": 12,
+          "fail": 0,
+          "needs_review": 1,
+          "invalid": 0
+        },
+        "fail": {
+          "pass": 0,
+          "fail": 6,
+          "needs_review": 0,
+          "invalid": 0
+        },
+        "needs_review": {
+          "pass": 0,
+          "fail": 0,
+          "needs_review": 1,
+          "invalid": 0
+        }
+      },
+      "missed_errors": [],
+      "false_rejections": [],
+      "needs_review": {
+        "pass": [
+          "PF5H-04"
+        ],
+        "fail": [],
+        "needs_review": [
+          "PF5H-10"
+        ]
+      },
+      "ambiguous_forced_decisions": [],
+      "invalid": [],
+      "execution_errors": [],
+      "automatic_decisions": 18,
+      "intended_errors_total": 6,
+      "intended_errors_flagged": 6,
+      "bad_fragments_rejected_only_on_other_claims": [],
+      "extra_failures_in_bad_fragments": []
+    }
+  },
+  "baseline_overall": {
+    "total": 40,
+    "confusion": {
+      "pass": {
+        "pass": 9,
+        "fail": 0,
+        "needs_review": 16,
+        "invalid": 0
+      },
+      "fail": {
+        "pass": 0,
+        "fail": 7,
+        "needs_review": 5,
+        "invalid": 0
+      },
+      "needs_review": {
+        "pass": 0,
+        "fail": 0,
+        "needs_review": 3,
+        "invalid": 0
+      }
+    },
+    "missed_errors": [],
+    "false_rejections": [],
+    "needs_review": {
+      "pass": [
+        "CF5H-01",
+        "CF5H-03",
+        "CF5H-08",
+        "CF5H-11",
+        "CF5H-14",
+        "CF5H-16",
+        "CF5H-17",
+        "CF5H-19",
+        "CF5H-20",
+        "PF5H-03",
+        "PF5H-04",
+        "PF5H-05",
+        "PF5H-09",
+        "PF5H-11",
+        "PF5H-17",
+        "PF5H-20"
+      ],
+      "fail": [
+        "CF5H-02",
+        "CF5H-15",
+        "CF5H-18",
+        "PF5H-06",
+        "PF5H-18"
+      ],
+      "needs_review": [
+        "CF5H-05",
+        "CF5H-13",
+        "PF5H-10"
+      ]
+    },
+    "ambiguous_forced_decisions": [],
+    "invalid": [],
+    "execution_errors": [],
+    "automatic_decisions": 16,
+    "intended_errors_total": 12,
+    "intended_errors_flagged": 7,
+    "bad_fragments_rejected_only_on_other_claims": [],
+    "extra_failures_in_bad_fragments": []
+  },
+  "changed_outcomes": 20,
+  "normalization_changed_cases": [
+    "PF5H-03",
+    "PF5H-05",
+    "PF5H-06",
+    "PF5H-09",
+    "PF5H-11",
+    "PF5H-17",
+    "PF5H-18",
+    "PF5H-20"
+  ],
+  "source_answer_and_gold_bytes_unchanged": true,
+  "claim_ids_and_quotes_unchanged": true,
+  "git": {
+    "head": "4d87b90ef74c4f40b282e08b6d82fc6ad9f2749e",
+    "branch": "codex/offline-maguire-grader",
+    "status_short": "?? evals/",
+    "tracked_diff_empty": true,
+    "staged_diff_empty": true,
+    "commit": false,
+    "push": false
+  },
+  "files": {
+    "ANALYSIS.md": {
+      "sha256": "41b6ff7c3dd403d8548a80600c00afdf8c63c513c1ba014e267e898dce8f577d",
+      "bytes": 16259
+    },
+    "FREEZE.json": {
+      "sha256": "15ba489de271266bde85ea12fb70929b548b70e0ce785320c62054cf86338e57",
+      "bytes": 17256
+    },
+    "START.json": {
+      "sha256": "ddd2607d411dbb8cbabee327b73eab6b2d897debe2e761cbbb0bfc457e51f1ef",
+      "bytes": 3634
+    },
+    "runs/regression-v6/RECEIPT.json": {
+      "sha256": "e06d9cd8a00866d8a0a8c86303d2a6693570116f27b07c1190e1b1f6835c659b",
+      "bytes": 1329
+    },
+    "runs/regression-v6/REPORT.md": {
+      "sha256": "aff64dacac683abd8aee09784890d899fb865eed0334f24f54cc5d2f9d1ed8b1",
+      "bytes": 4456
+    },
+    "runs/regression-v6/measurement.json": {
+      "sha256": "f704a33072bc775cdf4428977de2032e4f1b7e2541ba7500c4dad76526257b55",
+      "bytes": 90188
+    },
+    "runs/regression-v6/comparison.json": {
+      "sha256": "83714c1cd68c5e042a5c047839f1bbe785fa93e407c568cb716b3a806ac3eb15",
+      "bytes": 14503
+    },
+    "review/results_review_v1.json": {
+      "sha256": "de503316fe9627ab5e488f648be955acbb7c6b5d585d238493012f0d4bbc4509",
+      "bytes": 23321
+    }
+  },
+  "remaining_limits": [
+    "Exposed development regression, not independent holdout.",
+    "PF5H-04 is supported conditional advice deferred by the checker.",
+    "Three ambiguous fragments remain needs_review.",
+    "Seven rejection explanations remain broad despite correct localization.",
+    "Manual agent normalization; not human-approved or raw-text extraction.",
+    "No release or app integration performed."
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schema": "maguire-quality-input-v1",
+  "case_id": "CF-04",
+  "grader": "candidate_fit",
+  "data_class": "synthetic",
+  "decision_at": "2026-10-12T12:00:00Z",
+  "task": "Assess the supplied candidate evidence against the job description. Cite relevant sources, state any uncertainty, and recommend a next action.",
+  "jd": {
+    "title": "Bench Instrument Technician",
+    "sources": [
+      {
+        "id": "jd_1",
+        "text": "Applicants must hold a current internal bench-calibration training certificate when applying.",
+        "observed_at": "2026-10-12T12:00:00Z",
+        "authority": "job_description",
+        "supersedes": []
+      },
+      {
+        "id": "jd_2",
+        "text": "Prepare calibration logs for bench instruments.",
+        "observed_at": "2026-10-12T12:00:00Z",
+        "authority": "job_description",
+        "supersedes": []
+      }
+    ]
+  },
+  "candidate": {
+    "facts": [
+      {
+        "id": "fact_1",
+        "text": "My internal bench-calibration training certificate expired in 2024 and has not been renewed.",
+        "evidence_type": "self_report",
+        "observed_at": "2026-10-12T12:00:00Z",
+        "status": "active",
+        "supersedes": []
+      },
+      {
+        "id": "fact_2",
+        "text": "A supplied calibration log shows three bench instruments, dates, and sign-off fields.",
+        "evidence_type": "supplied_artifact_excerpt",
+        "observed_at": "2026-10-12T12:00:00Z",
+        "status": "active",
+        "supersedes": []
+      }
+    ],
+    "preferences": []
+  }
+}

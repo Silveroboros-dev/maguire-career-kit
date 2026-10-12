@@ -1,0 +1,29 @@
+{
+  "schema": "maguire-v3-new-cases-local-handoff",
+  "human_approved": false,
+  "git_head": "4d87b90ef74c4f40b282e08b6d82fc6ad9f2749e",
+  "files": {
+    "ANALYSIS.md": {
+      "sha256": "06798af3bee020d56487f5af692af8c86084cce722f85d5dcfb90efc3b6dcf64",
+      "bytes": 16685
+    },
+    "FREEZE.json": {
+      "sha256": "a3491e2723c2b04a98b23b09be4fa73412de382de465c8ffa8a59091b385c830",
+      "bytes": 15429
+    },
+    "runs/new-cases-v3/RECEIPT.json": {
+      "sha256": "514b81ee8cc3e71fd859e3b78adefb2d6bfa87dbb6592d348b70a2b3fab6f2f5",
+      "bytes": 1106
+    },
+    "review/results_review_v1.json": {
+      "sha256": "a1a89d432364782e688810129358c925f9f07842d1bd4f451fb4d1c9ba7d2880",
+      "bytes": 37909
+    }
+  },
+  "reviewed_cases": 32,
+  "new_checker_runs": 1,
+  "network_api_calls": 0,
+  "commits": 0,
+  "pushes": 0,
+  "limits": "Local hash bindings; no external seal. Offline fictional, agent-authored and agent-reviewed fragments with manually normalized claims."
+}

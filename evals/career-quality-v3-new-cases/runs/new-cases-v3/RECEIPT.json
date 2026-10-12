@@ -1,0 +1,25 @@
+{
+  "schema": "maguire-frozen-v3-new-cases-run",
+  "completed_at": "2026-10-12T14:51:18.915352+00:00",
+  "freeze_sha256": "a3491e2723c2b04a98b23b09be4fa73412de382de465c8ffa8a59091b385c830",
+  "predecessor_files": 271,
+  "freeze_bytes": 15429,
+  "start_sha256": "57cc005a772c2e4aa313a993fa2565bc3fc4231b98ef655f6c2aca1d9dda4d59",
+  "start_bytes": 3819,
+  "artifacts": {
+    "REPORT.md": "e10cfc47e88a34a8fcbb7b4aac2943ce82930d6dfe6b245693f41c6576b6d8b3",
+    "execution.json": "e9079a844feaffe7f5be68e048ec35458698a329e32369d9f6e876d74d84b260",
+    "mapping.json": "ce7b80152bb2540d217175994be890624d2bcbf10fffeefb4dae6a650fe4b276",
+    "measurement.json": "7a76b11c3e84e45843ea6963008d21cb2d549e3386020503ff80ca0476e14c15",
+    "packets.jsonl": "fa3c1f4b5433f0b6c2ab3ffa88ab445f1fcafe86bc8314d471c88f896395da32",
+    "predictions.jsonl": "3f2dbe9ba4fd0a6d688e5ff0c7ebaa47d3a158be00cb5749d1ef58876e05f385"
+  },
+  "artifact_bytes": {
+    "REPORT.md": 3239,
+    "execution.json": 863,
+    "mapping.json": 6183,
+    "measurement.json": 105343,
+    "packets.jsonl": 105035,
+    "predictions.jsonl": 76315
+  }
+}

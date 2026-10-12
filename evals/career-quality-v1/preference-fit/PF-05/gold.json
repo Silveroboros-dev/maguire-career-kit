@@ -1,0 +1,92 @@
+{
+  "schema": "maguire-quality-gold-v1",
+  "case_id": "PF-05",
+  "family": "candidate_allowed_travel_exception",
+  "title": "Travel exception is explicitly satisfied",
+  "review_status": "proposed_agent_authored",
+  "human_approved": false,
+  "units": [
+    {
+      "target_id": "pref_travel",
+      "kind": "travel",
+      "allowed_labels": [
+        "aligned"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_travel"
+        ]
+      ],
+      "rationale": "The job reaches the candidate’s explicit 20% exception and meets its four-week notice condition.",
+      "required_points": [
+        "Travel can be 20%.",
+        "Every trip has at least four weeks notice."
+      ],
+      "forbidden_inferences": [
+        "Do not silently expand the exception beyond 20% or shorten notice."
+      ]
+    },
+    {
+      "target_id": "pref_remote",
+      "kind": "work_arrangement",
+      "allowed_labels": [
+        "aligned"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_location"
+        ]
+      ],
+      "rationale": "Home-based with no required office days meets the hard location requirement.",
+      "required_points": [
+        "No office days are required."
+      ],
+      "forbidden_inferences": [
+        "Do not infer a right to work from any country."
+      ]
+    },
+    {
+      "target_id": "pref_learning",
+      "kind": "benefit",
+      "allowed_labels": [
+        "unknown"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_growth"
+        ]
+      ],
+      "rationale": "Generic growth opportunities do not establish monthly protected learning time.",
+      "required_points": [
+        "No learning time is specified."
+      ],
+      "forbidden_inferences": [
+        "Do not equate growth language with a protected time allocation."
+      ]
+    }
+  ],
+  "forbidden_assessment_targets": [],
+  "acceptable_actions": [
+    "clarify",
+    "pursue"
+  ],
+  "critical_errors": [
+    {
+      "id": "PF-05-interpretation",
+      "description": "Misreads Travel exception is explicitly satisfied: the learning preference or its cited role term.",
+      "target_ids": [
+        "pref_learning"
+      ]
+    },
+    {
+      "id": "PF-05-action",
+      "description": "Passing this role by ignoring the candidate’s explicit four-week-notice travel exception misreads pref_travel.",
+      "target_ids": [
+        "pref_travel"
+      ]
+    }
+  ],
+  "notes": [
+    "Only the precise person-owned exception makes 20% travel acceptable here."
+  ]
+}

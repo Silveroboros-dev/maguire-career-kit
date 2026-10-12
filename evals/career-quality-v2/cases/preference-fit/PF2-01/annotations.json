@@ -1,0 +1,66 @@
+{
+  "schema": "maguire-quality-annotations-v1",
+  "case_id": "PF2-01",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The assessment keeps the stated evidence and its limits in scope.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_02",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The independent acceptable conclusion preserves the same substantive constraints.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_03",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "No source grants a personal waiver; the explicit posted schedule conflicts.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "invent employer waiver",
+        "description": "No source grants a personal waiver; the explicit posted schedule conflicts.",
+        "changed_paths": [
+          "/assessments/0/rationale"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "PF-UNKNOWN",
+          "severity": "major",
+          "target_id": "pref_1",
+          "explanation": "No source grants a personal waiver; the explicit posted schedule conflicts."
+        }
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "The source explicitly says no exception process is posted; none is established elsewhere.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "invent exception process",
+        "description": "The source explicitly says no exception process is posted; none is established elsewhere.",
+        "changed_paths": [
+          "/conclusion/text"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "PF-INTERPRETATION",
+          "severity": "major",
+          "target_id": "pref_1",
+          "explanation": "The source explicitly says no exception process is posted; none is established elsewhere."
+        }
+      ]
+    }
+  ]
+}

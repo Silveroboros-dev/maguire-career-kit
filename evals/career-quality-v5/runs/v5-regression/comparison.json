@@ -1,0 +1,530 @@
+{
+  "schema": "maguire-v4-v5-known-regression-comparison",
+  "baseline": {
+    "sha256": "f471f313bfa150ff21af04c35549febae106db9c84346f109694754fae7ff37c",
+    "bytes": 105818
+  },
+  "v4": {
+    "total": 40,
+    "confusion": {
+      "pass": {
+        "pass": 14,
+        "fail": 1,
+        "needs_review": 9,
+        "invalid": 0
+      },
+      "fail": {
+        "pass": 0,
+        "fail": 12,
+        "needs_review": 0,
+        "invalid": 0
+      },
+      "needs_review": {
+        "pass": 0,
+        "fail": 0,
+        "needs_review": 4,
+        "invalid": 0
+      }
+    },
+    "missed_errors": [],
+    "false_rejections": [
+      "PF3N-04"
+    ],
+    "needs_review": {
+      "pass": [
+        "CF3N-03",
+        "CF3N-04",
+        "CF3N-08",
+        "CF3N-11",
+        "PF3N-01",
+        "PF3N-02",
+        "PF3N-06",
+        "PF3N-08",
+        "PF3N-09"
+      ],
+      "fail": [],
+      "needs_review": [
+        "CF3N-19",
+        "CF3N-20",
+        "PF3N-19",
+        "PF3N-20"
+      ]
+    },
+    "ambiguous_forced_decisions": [],
+    "invalid": [],
+    "execution_errors": [],
+    "automatic_decisions": 27,
+    "intended_errors_total": 14,
+    "intended_errors_flagged": 13,
+    "bad_fragments_rejected_only_on_other_claims": [],
+    "extra_failures_in_bad_fragments": []
+  },
+  "v5": {
+    "total": 40,
+    "confusion": {
+      "pass": {
+        "pass": 18,
+        "fail": 1,
+        "needs_review": 5,
+        "invalid": 0
+      },
+      "fail": {
+        "pass": 0,
+        "fail": 12,
+        "needs_review": 0,
+        "invalid": 0
+      },
+      "needs_review": {
+        "pass": 0,
+        "fail": 0,
+        "needs_review": 4,
+        "invalid": 0
+      }
+    },
+    "missed_errors": [],
+    "false_rejections": [
+      "PF3N-04"
+    ],
+    "needs_review": {
+      "pass": [
+        "CF3N-03",
+        "CF3N-04",
+        "CF3N-08",
+        "CF3N-11",
+        "PF3N-08"
+      ],
+      "fail": [],
+      "needs_review": [
+        "CF3N-19",
+        "CF3N-20",
+        "PF3N-19",
+        "PF3N-20"
+      ]
+    },
+    "ambiguous_forced_decisions": [],
+    "invalid": [],
+    "execution_errors": [],
+    "automatic_decisions": 31,
+    "intended_errors_total": 14,
+    "intended_errors_flagged": 14,
+    "bad_fragments_rejected_only_on_other_claims": [],
+    "extra_failures_in_bad_fragments": []
+  },
+  "rows": [
+    {
+      "case_id": "CF3N-01",
+      "family": "candidate-fit",
+      "expected": "pass",
+      "v4": "pass",
+      "v5": "pass",
+      "v4_failed_claims": [],
+      "v5_failed_claims": []
+    },
+    {
+      "case_id": "CF3N-02",
+      "family": "candidate-fit",
+      "expected": "pass",
+      "v4": "pass",
+      "v5": "pass",
+      "v4_failed_claims": [],
+      "v5_failed_claims": []
+    },
+    {
+      "case_id": "CF3N-03",
+      "family": "candidate-fit",
+      "expected": "pass",
+      "v4": "needs_review",
+      "v5": "needs_review",
+      "v4_failed_claims": [],
+      "v5_failed_claims": []
+    },
+    {
+      "case_id": "CF3N-04",
+      "family": "candidate-fit",
+      "expected": "pass",
+      "v4": "needs_review",
+      "v5": "needs_review",
+      "v4_failed_claims": [],
+      "v5_failed_claims": []
+    },
+    {
+      "case_id": "CF3N-05",
+      "family": "candidate-fit",
+      "expected": "pass",
+      "v4": "pass",
+      "v5": "pass",
+      "v4_failed_claims": [],
+      "v5_failed_claims": []
+    },
+    {
+      "case_id": "CF3N-06",
+      "family": "candidate-fit",
+      "expected": "pass",
+      "v4": "pass",
+      "v5": "pass",
+      "v4_failed_claims": [],
+      "v5_failed_claims": []
+    },
+    {
+      "case_id": "CF3N-07",
+      "family": "candidate-fit",
+      "expected": "pass",
+      "v4": "pass",
+      "v5": "pass",
+      "v4_failed_claims": [],
+      "v5_failed_claims": []
+    },
+    {
+      "case_id": "CF3N-08",
+      "family": "candidate-fit",
+      "expected": "pass",
+      "v4": "needs_review",
+      "v5": "needs_review",
+      "v4_failed_claims": [],
+      "v5_failed_claims": []
+    },
+    {
+      "case_id": "CF3N-09",
+      "family": "candidate-fit",
+      "expected": "pass",
+      "v4": "pass",
+      "v5": "pass",
+      "v4_failed_claims": [],
+      "v5_failed_claims": []
+    },
+    {
+      "case_id": "CF3N-10",
+      "family": "candidate-fit",
+      "expected": "pass",
+      "v4": "pass",
+      "v5": "pass",
+      "v4_failed_claims": [],
+      "v5_failed_claims": []
+    },
+    {
+      "case_id": "CF3N-11",
+      "family": "candidate-fit",
+      "expected": "pass",
+      "v4": "needs_review",
+      "v5": "needs_review",
+      "v4_failed_claims": [],
+      "v5_failed_claims": []
+    },
+    {
+      "case_id": "CF3N-12",
+      "family": "candidate-fit",
+      "expected": "pass",
+      "v4": "pass",
+      "v5": "pass",
+      "v4_failed_claims": [],
+      "v5_failed_claims": []
+    },
+    {
+      "case_id": "CF3N-13",
+      "family": "candidate-fit",
+      "expected": "fail",
+      "v4": "fail",
+      "v5": "fail",
+      "v4_failed_claims": [
+        "c2"
+      ],
+      "v5_failed_claims": [
+        "c2"
+      ]
+    },
+    {
+      "case_id": "CF3N-14",
+      "family": "candidate-fit",
+      "expected": "fail",
+      "v4": "fail",
+      "v5": "fail",
+      "v4_failed_claims": [
+        "c2"
+      ],
+      "v5_failed_claims": [
+        "c2"
+      ]
+    },
+    {
+      "case_id": "CF3N-15",
+      "family": "candidate-fit",
+      "expected": "fail",
+      "v4": "fail",
+      "v5": "fail",
+      "v4_failed_claims": [
+        "c2"
+      ],
+      "v5_failed_claims": [
+        "c2"
+      ]
+    },
+    {
+      "case_id": "CF3N-16",
+      "family": "candidate-fit",
+      "expected": "fail",
+      "v4": "fail",
+      "v5": "fail",
+      "v4_failed_claims": [
+        "c2"
+      ],
+      "v5_failed_claims": [
+        "c2"
+      ]
+    },
+    {
+      "case_id": "CF3N-17",
+      "family": "candidate-fit",
+      "expected": "fail",
+      "v4": "fail",
+      "v5": "fail",
+      "v4_failed_claims": [
+        "c2"
+      ],
+      "v5_failed_claims": [
+        "c2"
+      ]
+    },
+    {
+      "case_id": "CF3N-18",
+      "family": "candidate-fit",
+      "expected": "fail",
+      "v4": "fail",
+      "v5": "fail",
+      "v4_failed_claims": [
+        "c2"
+      ],
+      "v5_failed_claims": [
+        "c2"
+      ]
+    },
+    {
+      "case_id": "CF3N-19",
+      "family": "candidate-fit",
+      "expected": "needs_review",
+      "v4": "needs_review",
+      "v5": "needs_review",
+      "v4_failed_claims": [],
+      "v5_failed_claims": []
+    },
+    {
+      "case_id": "CF3N-20",
+      "family": "candidate-fit",
+      "expected": "needs_review",
+      "v4": "needs_review",
+      "v5": "needs_review",
+      "v4_failed_claims": [],
+      "v5_failed_claims": []
+    },
+    {
+      "case_id": "PF3N-01",
+      "family": "preference-fit",
+      "expected": "pass",
+      "v4": "needs_review",
+      "v5": "pass",
+      "v4_failed_claims": [],
+      "v5_failed_claims": []
+    },
+    {
+      "case_id": "PF3N-02",
+      "family": "preference-fit",
+      "expected": "pass",
+      "v4": "needs_review",
+      "v5": "pass",
+      "v4_failed_claims": [],
+      "v5_failed_claims": []
+    },
+    {
+      "case_id": "PF3N-03",
+      "family": "preference-fit",
+      "expected": "pass",
+      "v4": "pass",
+      "v5": "pass",
+      "v4_failed_claims": [],
+      "v5_failed_claims": []
+    },
+    {
+      "case_id": "PF3N-04",
+      "family": "preference-fit",
+      "expected": "pass",
+      "v4": "fail",
+      "v5": "fail",
+      "v4_failed_claims": [
+        "A"
+      ],
+      "v5_failed_claims": [
+        "A"
+      ]
+    },
+    {
+      "case_id": "PF3N-05",
+      "family": "preference-fit",
+      "expected": "pass",
+      "v4": "pass",
+      "v5": "pass",
+      "v4_failed_claims": [],
+      "v5_failed_claims": []
+    },
+    {
+      "case_id": "PF3N-06",
+      "family": "preference-fit",
+      "expected": "pass",
+      "v4": "needs_review",
+      "v5": "pass",
+      "v4_failed_claims": [],
+      "v5_failed_claims": []
+    },
+    {
+      "case_id": "PF3N-07",
+      "family": "preference-fit",
+      "expected": "pass",
+      "v4": "pass",
+      "v5": "pass",
+      "v4_failed_claims": [],
+      "v5_failed_claims": []
+    },
+    {
+      "case_id": "PF3N-08",
+      "family": "preference-fit",
+      "expected": "pass",
+      "v4": "needs_review",
+      "v5": "needs_review",
+      "v4_failed_claims": [],
+      "v5_failed_claims": []
+    },
+    {
+      "case_id": "PF3N-09",
+      "family": "preference-fit",
+      "expected": "pass",
+      "v4": "needs_review",
+      "v5": "pass",
+      "v4_failed_claims": [],
+      "v5_failed_claims": []
+    },
+    {
+      "case_id": "PF3N-10",
+      "family": "preference-fit",
+      "expected": "pass",
+      "v4": "pass",
+      "v5": "pass",
+      "v4_failed_claims": [],
+      "v5_failed_claims": []
+    },
+    {
+      "case_id": "PF3N-11",
+      "family": "preference-fit",
+      "expected": "pass",
+      "v4": "pass",
+      "v5": "pass",
+      "v4_failed_claims": [],
+      "v5_failed_claims": []
+    },
+    {
+      "case_id": "PF3N-12",
+      "family": "preference-fit",
+      "expected": "pass",
+      "v4": "pass",
+      "v5": "pass",
+      "v4_failed_claims": [],
+      "v5_failed_claims": []
+    },
+    {
+      "case_id": "PF3N-13",
+      "family": "preference-fit",
+      "expected": "fail",
+      "v4": "fail",
+      "v5": "fail",
+      "v4_failed_claims": [
+        "B"
+      ],
+      "v5_failed_claims": [
+        "B"
+      ]
+    },
+    {
+      "case_id": "PF3N-14",
+      "family": "preference-fit",
+      "expected": "fail",
+      "v4": "fail",
+      "v5": "fail",
+      "v4_failed_claims": [
+        "A"
+      ],
+      "v5_failed_claims": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "case_id": "PF3N-15",
+      "family": "preference-fit",
+      "expected": "fail",
+      "v4": "fail",
+      "v5": "fail",
+      "v4_failed_claims": [
+        "A",
+        "B"
+      ],
+      "v5_failed_claims": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "case_id": "PF3N-16",
+      "family": "preference-fit",
+      "expected": "fail",
+      "v4": "fail",
+      "v5": "fail",
+      "v4_failed_claims": [
+        "B"
+      ],
+      "v5_failed_claims": [
+        "B"
+      ]
+    },
+    {
+      "case_id": "PF3N-17",
+      "family": "preference-fit",
+      "expected": "fail",
+      "v4": "fail",
+      "v5": "fail",
+      "v4_failed_claims": [
+        "B"
+      ],
+      "v5_failed_claims": [
+        "B"
+      ]
+    },
+    {
+      "case_id": "PF3N-18",
+      "family": "preference-fit",
+      "expected": "fail",
+      "v4": "fail",
+      "v5": "fail",
+      "v4_failed_claims": [
+        "B"
+      ],
+      "v5_failed_claims": [
+        "B"
+      ]
+    },
+    {
+      "case_id": "PF3N-19",
+      "family": "preference-fit",
+      "expected": "needs_review",
+      "v4": "needs_review",
+      "v5": "needs_review",
+      "v4_failed_claims": [],
+      "v5_failed_claims": []
+    },
+    {
+      "case_id": "PF3N-20",
+      "family": "preference-fit",
+      "expected": "needs_review",
+      "v4": "needs_review",
+      "v5": "needs_review",
+      "v4_failed_claims": [],
+      "v5_failed_claims": []
+    }
+  ]
+}

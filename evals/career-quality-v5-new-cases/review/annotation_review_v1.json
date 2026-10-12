@@ -1,0 +1,555 @@
+{
+  "schema": "maguire-v5-new-annotation-review-v1",
+  "status": "ready",
+  "human_approved": false,
+  "reviewer": "separate AI semantic reviewer",
+  "checker_code_seen": false,
+  "predictions_seen": false,
+  "files": {
+    "raw/candidate-fit.json": {
+      "sha256": "8ddcce7a7a0cdc9e9986dbc68eec5b4b436dc31b5b6cbda02d786f3a041404b5",
+      "bytes": 15635
+    },
+    "raw/preference-fit.json": {
+      "sha256": "7dbdd88b9c0cbb83e23e7aacba554f0a65b175eb4dac3d861ce14a0913fdfff0",
+      "bytes": 17078
+    },
+    "normalized/candidate-fit.json": {
+      "sha256": "c476e98b42c8398aa8a624c0511b72a427ae3086668ba1ed8abc813c38130135",
+      "bytes": 60878
+    },
+    "normalized/preference-fit.json": {
+      "sha256": "67c13fdf43f59d1f2d712e0c8bff5b4bf3d8b1ca630a0c44b3291fc12f3d7821",
+      "bytes": 54163
+    },
+    "gold/candidate-fit.json": {
+      "sha256": "e9da4250f0c486a4b1d0340f5a378a2c63f60d6e063f397862f828e6465c0718",
+      "bytes": 5747
+    },
+    "gold/preference-fit.json": {
+      "sha256": "a0d0d6651b581af6977d2b0e636ad8b5aea0eb72e894f9169f20a8ddc4dace94",
+      "bytes": 5203
+    },
+    "authoring/candidate-fit-attestation.json": {
+      "sha256": "6e850539a0271bf2eeaf8cba308ad8099c81c9a973229b25eaa8bddc9e1e8fba",
+      "bytes": 5033
+    },
+    "authoring/preference-fit-attestation.json": {
+      "sha256": "16106cffff1bb82df786617a157969a40001c61eac0474f148db93d0cad6d7c6",
+      "bytes": 5977
+    },
+    "review/raw_judgments_candidate_v1.json": {
+      "sha256": "7a9f3f1c6444da873bfefb1f440166a89bab0f6260db4da2ec06c307fff0c3c2",
+      "bytes": 9233
+    },
+    "review/raw_judgments_candidate_v2.json": {
+      "sha256": "eee95deb74e09e3af0bfa82fd31fc976906a396ff7f11843378ab1fb6cfd447f",
+      "bytes": 9671
+    },
+    "review/raw_judgments_candidate_v3.json": {
+      "sha256": "d16e510d4cb791f2f28e345e54b6f110a2ddd3690a83dc416295590421123bcb",
+      "bytes": 9788
+    },
+    "review/raw_judgments_preference_v1.json": {
+      "sha256": "b5f6d97e8c6104edfc83a331fce82c9a3f05ffd8773d52e1ee29e9844dced1c8",
+      "bytes": 9331
+    },
+    "review/raw_judgments_preference_v2.json": {
+      "sha256": "ab13e669709e5f608aba1e1d4d6c0af1f8df976a246a0de591663e26c4875556",
+      "bytes": 9623
+    },
+    "NOVELTY_SCREEN_v2.json": {
+      "sha256": "2fcf07bc2046b6187a1bc1b1cdef012cf2bcc07db66c474a00a7c6dff12b0e1e",
+      "bytes": 86378
+    },
+    "review/novelty_v1.json": {
+      "sha256": "5b0677d024555ca45703598d6d8a6aacfbadae5198823d6144de49097534eca0",
+      "bytes": 2718
+    }
+  },
+  "cases": [
+    {
+      "case_id": "CF5H-01",
+      "family": "candidate-fit",
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "blind_verdict_agrees_with_gold": true,
+      "notes": "Both duration of ledger work and handoff frequency are material."
+    },
+    {
+      "case_id": "CF5H-02",
+      "family": "candidate-fit",
+      "claim_ids": [
+        "c1"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "blind_verdict_agrees_with_gold": true,
+      "notes": "Keep the permission to shadow distinct from observed presenting."
+    },
+    {
+      "case_id": "CF5H-03",
+      "family": "candidate-fit",
+      "claim_ids": [
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "blind_verdict_agrees_with_gold": true,
+      "notes": "Cover count, candidate facilitation, owner documentation, and role requirement."
+    },
+    {
+      "case_id": "CF5H-04",
+      "family": "candidate-fit",
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "blind_verdict_agrees_with_gold": true,
+      "notes": "Do not lose the distinction between triage and escalation."
+    },
+    {
+      "case_id": "CF5H-05",
+      "family": "candidate-fit",
+      "claim_ids": [
+        "c1"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "blind_verdict_agrees_with_gold": true,
+      "notes": "Preserve recorded versus live context and the absence of live-operation experience."
+    },
+    {
+      "case_id": "CF5H-06",
+      "family": "candidate-fit",
+      "claim_ids": [
+        "c1"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "blind_verdict_agrees_with_gold": true,
+      "notes": "Entity, employment period, and current zero-day rule are all decisive."
+    },
+    {
+      "case_id": "CF5H-07",
+      "family": "candidate-fit",
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "blind_verdict_agrees_with_gold": true,
+      "notes": "Experience and formal certification are separate claims."
+    },
+    {
+      "case_id": "CF5H-08",
+      "family": "candidate-fit",
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "blind_verdict_agrees_with_gold": true,
+      "notes": "Engineering signoff limits Mara’s authority; the answer preserves it."
+    },
+    {
+      "case_id": "CF5H-09",
+      "family": "candidate-fit",
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "blind_verdict_agrees_with_gold": true,
+      "notes": "The role requirement is true, but candidate credential possession is false."
+    },
+    {
+      "case_id": "CF5H-10",
+      "family": "candidate-fit",
+      "claim_ids": [
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "blind_verdict_agrees_with_gold": true,
+      "notes": "Cover count and severity, escalation recipient, decision boundary, pilot, and role requirement."
+    },
+    {
+      "case_id": "CF5H-11",
+      "family": "candidate-fit",
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "blind_verdict_agrees_with_gold": true,
+      "notes": "Preserve role requirement and candidate experience separately."
+    },
+    {
+      "case_id": "CF5H-12",
+      "family": "candidate-fit",
+      "claim_ids": [
+        "c1"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "blind_verdict_agrees_with_gold": true,
+      "notes": "The universal quantifier and total count cause the error."
+    },
+    {
+      "case_id": "CF5H-13",
+      "family": "candidate-fit",
+      "claim_ids": [
+        "c1"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "blind_verdict_agrees_with_gold": true,
+      "notes": "Do not select a source by order or wording alone; preserve Jo’s authorship alternative."
+    },
+    {
+      "case_id": "CF5H-14",
+      "family": "candidate-fit",
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "blind_verdict_agrees_with_gold": true,
+      "notes": "Preserve written-guide modality and the source’s explicit live-session exclusion."
+    },
+    {
+      "case_id": "CF5H-15",
+      "family": "candidate-fit",
+      "claim_ids": [
+        "c1"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "blind_verdict_agrees_with_gold": true,
+      "notes": "Candidate ticket tagging and team outcome must remain distinct."
+    },
+    {
+      "case_id": "CF5H-16",
+      "family": "candidate-fit",
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "blind_verdict_agrees_with_gold": true,
+      "notes": "The production-use exclusion is material to avoid upgrading pilot work."
+    },
+    {
+      "case_id": "CF5H-17",
+      "family": "candidate-fit",
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "blind_verdict_agrees_with_gold": true,
+      "notes": "Keep course completion separate from certification and ignore the withdrawn claim."
+    },
+    {
+      "case_id": "CF5H-18",
+      "family": "candidate-fit",
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "blind_verdict_agrees_with_gold": true,
+      "notes": "The role requirement is a true premise, but the claimed candidate production experience is false."
+    },
+    {
+      "case_id": "CF5H-19",
+      "family": "candidate-fit",
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "blind_verdict_agrees_with_gold": true,
+      "notes": "Two candidate language experiences and the employer requirement are material."
+    },
+    {
+      "case_id": "CF5H-20",
+      "family": "candidate-fit",
+      "claim_ids": [
+        "c1",
+        "c2",
+        "c3",
+        "c4"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "blind_verdict_agrees_with_gold": true,
+      "notes": "Keep the pilot versus production boundary and two requested skills visible."
+    },
+    {
+      "case_id": "PF5H-01",
+      "family": "preference-fit",
+      "claim_ids": [
+        "c1"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "blind_verdict_agrees_with_gold": true,
+      "notes": "Preserve course-fee category and budget equivalence rather than payment timing."
+    },
+    {
+      "case_id": "PF5H-02",
+      "family": "preference-fit",
+      "claim_ids": [
+        "c1"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "blind_verdict_agrees_with_gold": true,
+      "notes": "Same currency and sufficient amount do not overcome the category restriction."
+    },
+    {
+      "case_id": "PF5H-03",
+      "family": "preference-fit",
+      "claim_ids": [
+        "c1"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "blind_verdict_agrees_with_gold": true,
+      "notes": "Retain the after-onboarding phase and approval condition; no schedule guarantee is claimed."
+    },
+    {
+      "case_id": "PF5H-04",
+      "family": "preference-fit",
+      "claim_ids": [
+        "c1"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "blind_verdict_agrees_with_gold": true,
+      "notes": "Treat 'may meet ... if' as conditional possibility, preserving discretionary approval."
+    },
+    {
+      "case_id": "PF5H-05",
+      "family": "preference-fit",
+      "claim_ids": [
+        "c1"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "blind_verdict_agrees_with_gold": true,
+      "notes": "Both time window and no-weekday restriction matter."
+    },
+    {
+      "case_id": "PF5H-06",
+      "family": "preference-fit",
+      "claim_ids": [
+        "c1"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "blind_verdict_agrees_with_gold": true,
+      "notes": "The matching day and duty type establish contradiction."
+    },
+    {
+      "case_id": "PF5H-07",
+      "family": "preference-fit",
+      "claim_ids": [
+        "c1"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "blind_verdict_agrees_with_gold": true,
+      "notes": "Request eligibility is distinct from an approved remote schedule."
+    },
+    {
+      "case_id": "PF5H-08",
+      "family": "preference-fit",
+      "claim_ids": [
+        "c1"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "blind_verdict_agrees_with_gold": true,
+      "notes": "Keep probation phase and approval condition, but numeric limit decides the case."
+    },
+    {
+      "case_id": "PF5H-09",
+      "family": "preference-fit",
+      "claim_ids": [
+        "c1"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "blind_verdict_agrees_with_gold": true,
+      "notes": "Pending is not a zero budget or a satisfied minimum."
+    },
+    {
+      "case_id": "PF5H-10",
+      "family": "preference-fit",
+      "claim_ids": [
+        "c1"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "blind_verdict_agrees_with_gold": true,
+      "notes": "Both live terms and absence of replacement language are material."
+    },
+    {
+      "case_id": "PF5H-11",
+      "family": "preference-fit",
+      "claim_ids": [
+        "c1"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "blind_verdict_agrees_with_gold": true,
+      "notes": "Retain location, travel category, monthly period, and role scope."
+    },
+    {
+      "case_id": "PF5H-12",
+      "family": "preference-fit",
+      "claim_ids": [
+        "c1"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "blind_verdict_agrees_with_gold": true,
+      "notes": "Preserve post-probation phase, paid status, leadership-course purpose, monthly period, and hours unit."
+    },
+    {
+      "case_id": "PF5H-13",
+      "family": "preference-fit",
+      "claim_ids": [
+        "c1"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "blind_verdict_agrees_with_gold": true,
+      "notes": "The supersession relation resolves otherwise competing requirements."
+    },
+    {
+      "case_id": "PF5H-14",
+      "family": "preference-fit",
+      "claim_ids": [
+        "c1"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "blind_verdict_agrees_with_gold": true,
+      "notes": "Source timing alone is not the basis; explicit replacement is."
+    },
+    {
+      "case_id": "PF5H-15",
+      "family": "preference-fit",
+      "claim_ids": [
+        "c1"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "blind_verdict_agrees_with_gold": true,
+      "notes": "Keep currency, period, duty condition, and commitment modality."
+    },
+    {
+      "case_id": "PF5H-16",
+      "family": "preference-fit",
+      "claim_ids": [
+        "c1"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "blind_verdict_agrees_with_gold": true,
+      "notes": "Possible funding and maximum amount cannot be promoted to a guaranteed payment."
+    },
+    {
+      "case_id": "PF5H-17",
+      "family": "preference-fit",
+      "claim_ids": [
+        "c1"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "blind_verdict_agrees_with_gold": true,
+      "notes": "Exhaustive schedule, weekday, zone, and endpoint matter."
+    },
+    {
+      "case_id": "PF5H-18",
+      "family": "preference-fit",
+      "claim_ids": [
+        "c1"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "blind_verdict_agrees_with_gold": true,
+      "notes": "The answer misstates the temporal comparison."
+    },
+    {
+      "case_id": "PF5H-19",
+      "family": "preference-fit",
+      "claim_ids": [
+        "c1"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "blind_verdict_agrees_with_gold": true,
+      "notes": "Preserve withdrawn versus active authority and supervisor condition."
+    },
+    {
+      "case_id": "PF5H-20",
+      "family": "preference-fit",
+      "claim_ids": [
+        "c1",
+        "c2",
+        "c3",
+        "c4"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "blind_verdict_agrees_with_gold": true,
+      "notes": "Cover the current negative, pending procurement, absent date, preference, and advice separately."
+    }
+  ],
+  "summary": {
+    "case_count": 40,
+    "candidate_fit": 20,
+    "preference_fit": 20,
+    "raw_judgment_versions_preserved": 5,
+    "semantic_label_disagreements_remaining": 0,
+    "normalization_defects_remaining": 0,
+    "gold_composition": {
+      "candidate_fit": {
+        "pass": 12,
+        "fail": 6,
+        "needs_review": 2
+      },
+      "preference_fit": {
+        "pass": 13,
+        "fail": 6,
+        "needs_review": 1
+      }
+    },
+    "note": "Preference composition deviates from the authoring target because the conditional PF5H-04 raw answer is semantically pass. No raw case was rewritten merely to satisfy a label quota."
+  },
+  "scope_note": "This receipt attests semantic raw-to-normalization and gold fidelity, source inventory, quote uniqueness, reference validity, and versioned lineage. It is not a checker run, prediction, human approval, or proof of statistical independence."
+}

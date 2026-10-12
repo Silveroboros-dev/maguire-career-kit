@@ -1,0 +1,40 @@
+{
+  "schema": "maguire-quality-input-v1",
+  "case_id": "CF2-04",
+  "grader": "candidate_fit",
+  "data_class": "synthetic",
+  "decision_at": "2026-10-11T12:00:00Z",
+  "task": "Assess the supplied role and candidate snapshot, cite sources, explain uncertainty, and recommend a next action.",
+  "jd": {
+    "title": "Archive Text Processing Lead",
+    "sources": [
+      {
+        "id": "jd_1",
+        "text": "Build an OCR quality-check workflow for scanned archive pages.",
+        "observed_at": "2026-09-01T12:00:00Z",
+        "authority": "job_description",
+        "supersedes": []
+      },
+      {
+        "id": "jd_2",
+        "text": "Coordinate processing of a 200,000-page archive collection.",
+        "observed_at": "2026-09-01T12:00:00Z",
+        "authority": "job_description",
+        "supersedes": []
+      }
+    ]
+  },
+  "candidate": {
+    "facts": [
+      {
+        "id": "fact_1",
+        "text": "I built an OCR error checklist, scheduled two reviewers, and applied it to a 75-page sample of handwritten catalog cards.",
+        "evidence_type": "supplied_artifact_excerpt",
+        "observed_at": "2026-08-01T12:00:00Z",
+        "status": "active",
+        "supersedes": []
+      }
+    ],
+    "preferences": []
+  }
+}

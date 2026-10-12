@@ -1,0 +1,70 @@
+{
+  "schema": "challenge_packet_v1",
+  "status": "needs_changes",
+  "human_approved": false,
+  "reviewer": "agent:/root/new_case_review",
+  "mode": "read_only_offline",
+  "files": {
+    "pipeline.py": "9cddf2caf18b5b5148b15b209ca57c443436ba1c02789c2908464673a61d28f1",
+    "tests/test_pipeline.py": "47a0dd22e9f6b473116994e3d8b4ba49b483b63a14ee9dd43a20096e31fa9203",
+    "CONTRACT.md": "469dafb560d34a9a80d067cab1e4a43c83142c01a5be411440d9f418e20acaa7",
+    "SCHEMA.md": "a54f8230841424f0fd585262b762cab3ea8066e97d819f236554f35134096821",
+    "review/annotation_review_v2.json": "6368755f53674f181ebfa87ee0061954162035a27eddee13e534493947a24f74"
+  },
+  "checks": [
+    {
+      "name": "annotation and predecessor bindings",
+      "status": "pass",
+      "evidence": "audit --review review/annotation_review_v2.json: 40 packets, 81 claims, 24/12/4 gold, 271 predecessor files, zero exact duplicate text; predictions_executed=false."
+    },
+    {
+      "name": "synthetic harness tests",
+      "status": "pass",
+      "evidence": "python3 -B -m unittest discover -s evals/career-quality-v3-new-cases/tests -v: 11 passed."
+    },
+    {
+      "name": "one measured start",
+      "status": "pass",
+      "evidence": "run writes START.json with exclusive creation before worker subprocess; existing marker prevents another worker start even with another output path."
+    },
+    {
+      "name": "gold and review metadata exclusion",
+      "status": "pass",
+      "evidence": "project_family accepts raw and normalized rows plus coverage; packet keys omit case ID, title, gold, tags, reasons and reviewer judgments. Gold is joined after saved predictions for measurement."
+    },
+    {
+      "name": "metric buckets",
+      "status": "partial",
+      "evidence": "metric_group separately computes pass-to-fail, fail-to-pass, review by gold class, ambiguous forced decisions, invalid and execution errors, and intended-error localization; REPORT.md currently omits execution-error and localization summaries."
+    },
+    {
+      "name": "prediction envelope",
+      "status": "partial",
+      "evidence": "measure checks ordered packet identities, claim IDs and anchors, but does not validate per-claim verdict vocabulary or consistency of execution_error with overall invalid."
+    }
+  ],
+  "risks": [
+    {
+      "severity": "blocker",
+      "code": "report_missing_buckets",
+      "detail": "Contract requires separate invalid/execution-error reporting and claim-level localization, while the Markdown report exposes only invalid IDs and a row table. Add explicit execution-error and localization summaries before freeze."
+    },
+    {
+      "severity": "blocker",
+      "code": "prediction_envelope_unchecked",
+      "detail": "Malformed per-claim verdicts or an execution_error paired with an overall pass/fail could distort localization without being rejected. Validate these fields before measurement and add synthetic negative fixtures."
+    },
+    {
+      "severity": "limitation",
+      "code": "procedural_separation",
+      "detail": "Agent author/reviewer separation is procedural in a shared filesystem; no human approval or externally held-out benchmark is claimed."
+    }
+  ],
+  "authority": "Preflight only; no prediction execution or external authority granted.",
+  "exposure": {
+    "checker_code_seen": false,
+    "frozen_worker_code_seen": true,
+    "new_case_predictions_seen": false,
+    "gold_seen_after_raw_judgments_saved": true
+  }
+}

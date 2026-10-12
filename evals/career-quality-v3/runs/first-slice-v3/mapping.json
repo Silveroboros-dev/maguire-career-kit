@@ -1,0 +1,98 @@
+[
+  {
+    "example_id": "D01",
+    "case_id": "CF2-01",
+    "answer_id": "answer_04",
+    "packet_sha256": "297f35fe878cc955b29a0d747cc37f7b0018b9ffac38a9aab6ed63dee96afa65"
+  },
+  {
+    "example_id": "D02",
+    "case_id": "CF2-03",
+    "answer_id": "answer_04",
+    "packet_sha256": "ccf3278778125d8e8266ccfebc270d72d85973eb1b7e155389864fe4d12eb7e5"
+  },
+  {
+    "example_id": "D03",
+    "case_id": "CF2-04",
+    "answer_id": "answer_03",
+    "packet_sha256": "8c9cd230e72233c8af1b746294f16aea4195fd288a0521a4f4880bc9ce9b798d"
+  },
+  {
+    "example_id": "D04",
+    "case_id": "CF2-04",
+    "answer_id": "answer_04",
+    "packet_sha256": "f9280bf05aaf4f71eb45fea7439a2b0213d989e784047adced7fb2428b3980c5"
+  },
+  {
+    "example_id": "D05",
+    "case_id": "CF2-05",
+    "answer_id": "answer_04",
+    "packet_sha256": "d93e9b36d322c8be4894712a261d7619b44a3efbf304efe346710554a2b58a94"
+  },
+  {
+    "example_id": "D06",
+    "case_id": "PF2-02",
+    "answer_id": "answer_03",
+    "packet_sha256": "90862d02eac27ad64b171303a4f33c9cae3be1569e2689f993af431a4b5d7fa4"
+  },
+  {
+    "example_id": "D07",
+    "case_id": "PF2-02",
+    "answer_id": "answer_04",
+    "packet_sha256": "8d1546bea3795813c21fa3cd55f2692a978d5cf9bd3d2f0458e620217da1ebba"
+  },
+  {
+    "example_id": "D08",
+    "case_id": "PF2-03",
+    "answer_id": "answer_03",
+    "packet_sha256": "1862583d435f02314470a3ba056f75374c0d346e059b9c763a700dcea8abe973"
+  },
+  {
+    "example_id": "D09",
+    "case_id": "PF2-05",
+    "answer_id": "answer_04",
+    "packet_sha256": "7da2b37d51cf7b0672da25a7e23f2274f6c4fc08121745cf050dcfccd862c359"
+  },
+  {
+    "example_id": "D10",
+    "case_id": "PF2-06",
+    "answer_id": "answer_01",
+    "packet_sha256": "21bfcab1b0e5743b6055ee55b97f72b01d498e021d43a30c6eaa5c0cfa4b49f5"
+  },
+  {
+    "example_id": "D11",
+    "case_id": "PF2-06",
+    "answer_id": "answer_02",
+    "packet_sha256": "376064f724c3fefbf89b9e93fa4600025160285cb485e303e143d7513b2f31af"
+  },
+  {
+    "example_id": "D12",
+    "case_id": "PF2-06",
+    "answer_id": "answer_03",
+    "packet_sha256": "b712ac9a291660c1ba524c9cf6d4f358c5778b13fcf25235fbe50e66d2085f4c"
+  },
+  {
+    "example_id": "D13",
+    "case_id": "PF2-06",
+    "answer_id": "answer_04",
+    "packet_sha256": "8153e419bff9f1906eccc6b3826c7f2b96305fb6899d38e2531fcd3d979ef367"
+  },
+  {
+    "example_id": "D14",
+    "case_id": "PF2-08",
+    "answer_id": "answer_03",
+    "packet_sha256": "6dc5585b0a67b17f0a7b4f984caec920b9e34ddf33942e32c8d406b811795f5b"
+  },
+  {
+    "example_id": "D15",
+    "case_id": "PF2-08",
+    "answer_id": "answer_04",
+    "packet_sha256": "b1e4a8b9e4492bb17dfb6c4bdd9c66605b65dac60faccd01e25123ec7792977c"
+  },
+  {
+    "example_id": "D16",
+    "case_id": "PF2-02",
+    "answer_id": "answer_01",
+    "packet_sha256": "0f5ad10cf2aac0611d896ee1c40d1de94d4cdc19e2bc59325be81c6db9042dfe"
+  }
+]

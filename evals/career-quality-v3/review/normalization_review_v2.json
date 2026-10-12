@@ -1,0 +1,229 @@
+{
+  "bindings": {
+    "data/expectations.json": "51906e5aa0fd1420cec4c153efd6beff3e74ad48feed4ee5ff50e2ef59442b86",
+    "data/normalizations.json": "20aa3184169539ff29ae2591b90e3e70c3e5aab45e30885d435b7db40c040328",
+    "data/source_files.json": "20650bd70e77127dea3a62f80458e1955b826757b0d874658477d06fe8cc6265"
+  },
+  "checks": {
+    "canonical_source_and_claim_coverage_hashes_match": true,
+    "reviewed_claim_atom_count": 29,
+    "reviewed_fragment_count": 16,
+    "selected_fragments_bound_to_predecessor": true,
+    "source_and_answer_anchors_match_originals": true,
+    "source_inventory_count_and_identity_match": true,
+    "source_observed_or_confirmed_time_matches_input": true
+  },
+  "exposure": {
+    "claim": "agent review of manually normalized selected fragments only",
+    "independent_holdout": false,
+    "known_development_examples": true,
+    "reviewed_checker_source_and_synthetic_boundary_tests": true,
+    "seen_checker_predictions_for_16": false,
+    "seen_design_traces_and_intended_outcomes": true,
+    "seen_expectation_contents_during_this_review": false
+  },
+  "findings": [
+    {
+      "code": "v1_corrections_resolved",
+      "details": "Self-report level, 75-page sample scope, observed/publication ambiguity, newer-order coverage, and soft discussion wording were corrected or explicitly limited.",
+      "disposition": "resolved_in_successor_data",
+      "prior_review_sha256": "a7fcf20a0631f9839f67a1589dd15282ab1d95be1f38ee71ad02a1215befedd7"
+    }
+  ],
+  "human_approved": false,
+  "limits": [
+    "The receipt is agent-authored local integrity evidence, not a signature, human approval, blind review, or external seal.",
+    "Ready means normalization is fit for this offline checker slice; it does not validate runtime inference or measured outcomes.",
+    "Source inventory completeness is relative to the supplied input snapshot; it does not prove world absence or whole-answer coverage.",
+    "D10 and D11 are separate anchored answer records with duplicate wording and one semantic pattern.",
+    "D13 date wording and D16 offer absence preserve alternative readings."
+  ],
+  "per_example": [
+    {
+      "anchors": "verified_original_file_hash_pointer_and_code_point_span",
+      "answer_id": "answer_04",
+      "case_id": "CF2-01",
+      "claim_atom_count": 1,
+      "disposition": "ready_with_stated_limits",
+      "example_id": "D01",
+      "observation": "One-trial self-report remains narrower than recurring all-branch advice; recommendation stance is represented.",
+      "source_inventory": "all_original_input_sources_included"
+    },
+    {
+      "anchors": "verified_original_file_hash_pointer_and_code_point_span",
+      "answer_id": "answer_04",
+      "case_id": "CF2-03",
+      "claim_atom_count": 2,
+      "disposition": "ready_with_stated_limits",
+      "example_id": "D02",
+      "observation": "Historical self-report and future ability forecast are separate atoms; self-report is not independent biography verification.",
+      "source_inventory": "all_original_input_sources_included"
+    },
+    {
+      "anchors": "verified_original_file_hash_pointer_and_code_point_span",
+      "answer_id": "answer_03",
+      "case_id": "CF2-04",
+      "claim_atom_count": 2,
+      "disposition": "ready_with_stated_limits",
+      "example_id": "D03",
+      "observation": "75-page sample is represented narrowly as sample size; its predicate is outside the initial runtime registry, so that premise may need review while the production claim is separately checkable.",
+      "source_inventory": "all_original_input_sources_included"
+    },
+    {
+      "anchors": "verified_original_file_hash_pointer_and_code_point_span",
+      "answer_id": "answer_04",
+      "case_id": "CF2-04",
+      "claim_atom_count": 1,
+      "disposition": "ready_with_stated_limits",
+      "example_id": "D04",
+      "observation": "Selected capacity clause is bounded to its own answer span; method support outside the span is not counted.",
+      "source_inventory": "all_original_input_sources_included"
+    },
+    {
+      "anchors": "verified_original_file_hash_pointer_and_code_point_span",
+      "answer_id": "answer_04",
+      "case_id": "CF2-05",
+      "claim_atom_count": 2,
+      "disposition": "ready_with_stated_limits",
+      "example_id": "D05",
+      "observation": "Editorial command and volunteer-training certification are distinct; the JD command is data, not evaluator authority.",
+      "source_inventory": "all_original_input_sources_included"
+    },
+    {
+      "anchors": "verified_original_file_hash_pointer_and_code_point_span",
+      "answer_id": "answer_03",
+      "case_id": "PF2-02",
+      "claim_atom_count": 1,
+      "disposition": "ready_with_stated_limits",
+      "example_id": "D06",
+      "observation": "Published band and personal guarantee keep different subjects and modalities.",
+      "source_inventory": "all_original_input_sources_included"
+    },
+    {
+      "anchors": "verified_original_file_hash_pointer_and_code_point_span",
+      "answer_id": "answer_04",
+      "case_id": "PF2-02",
+      "claim_atom_count": 2,
+      "disposition": "ready_with_stated_limits",
+      "example_id": "D07",
+      "observation": "Range membership and personal commitment are separate atoms.",
+      "source_inventory": "all_original_input_sources_included"
+    },
+    {
+      "anchors": "verified_original_file_hash_pointer_and_code_point_span",
+      "answer_id": "answer_03",
+      "case_id": "PF2-03",
+      "claim_atom_count": 1,
+      "disposition": "ready_with_stated_limits",
+      "example_id": "D08",
+      "observation": "Source preference has explicit no-exception must-have and all-duty scope; allowance remains a separate nice-to-have.",
+      "source_inventory": "all_original_input_sources_included"
+    },
+    {
+      "anchors": "verified_original_file_hash_pointer_and_code_point_span",
+      "answer_id": "answer_04",
+      "case_id": "PF2-05",
+      "claim_atom_count": 1,
+      "disposition": "ready_with_stated_limits",
+      "example_id": "D09",
+      "observation": "Candidate monthly ceiling and employer weekly schedule retain units and recurrence.",
+      "source_inventory": "all_original_input_sources_included"
+    },
+    {
+      "anchors": "verified_original_file_hash_pointer_and_code_point_span",
+      "answer_id": "answer_01",
+      "case_id": "PF2-06",
+      "claim_atom_count": 3,
+      "disposition": "ready_with_stated_limits",
+      "example_id": "D10",
+      "observation": "Negative resolves and two packet-observed ordering atoms cover selected wording; same wording appears again in D11.",
+      "source_inventory": "all_original_input_sources_included"
+    },
+    {
+      "anchors": "verified_original_file_hash_pointer_and_code_point_span",
+      "answer_id": "answer_02",
+      "case_id": "PF2-06",
+      "claim_atom_count": 3,
+      "disposition": "ready_with_stated_limits",
+      "example_id": "D11",
+      "observation": "Negative resolves and two packet-observed ordering atoms cover selected wording; this is not a second independent semantic observation.",
+      "source_inventory": "all_original_input_sources_included"
+    },
+    {
+      "anchors": "verified_original_file_hash_pointer_and_code_point_span",
+      "answer_id": "answer_03",
+      "case_id": "PF2-06",
+      "claim_atom_count": 3,
+      "disposition": "ready_with_stated_limits",
+      "example_id": "D12",
+      "observation": "Supersession of each earlier notice and remote guarantee are separate atoms; no supersession edge is in the sources.",
+      "source_inventory": "all_original_input_sources_included"
+    },
+    {
+      "anchors": "verified_original_file_hash_pointer_and_code_point_span",
+      "answer_id": "answer_04",
+      "case_id": "PF2-06",
+      "claim_atom_count": 3,
+      "disposition": "ready_with_stated_limits",
+      "example_id": "D13",
+      "observation": "Governs and resolves claims are separate; bare later has observed-order and publication-order readings, so its parse remains ambiguous.",
+      "source_inventory": "all_original_input_sources_included"
+    },
+    {
+      "anchors": "verified_original_file_hash_pointer_and_code_point_span",
+      "answer_id": "answer_03",
+      "case_id": "PF2-08",
+      "claim_atom_count": 1,
+      "disposition": "ready_with_stated_limits",
+      "example_id": "D14",
+      "observation": "Standard platform use does not supply universal configured caption availability.",
+      "source_inventory": "all_original_input_sources_included"
+    },
+    {
+      "anchors": "verified_original_file_hash_pointer_and_code_point_span",
+      "answer_id": "answer_04",
+      "case_id": "PF2-08",
+      "claim_atom_count": 2,
+      "disposition": "ready_with_stated_limits",
+      "example_id": "D15",
+      "observation": "Employer refusal and requirement impossibility are separate unsupported assertions; silence is not counterevidence.",
+      "source_inventory": "all_original_input_sources_included"
+    },
+    {
+      "anchors": "verified_original_file_hash_pointer_and_code_point_span",
+      "answer_id": "answer_01",
+      "case_id": "PF2-02",
+      "claim_atom_count": 1,
+      "disposition": "ready_with_stated_limits",
+      "example_id": "D16",
+      "observation": "World absence and packet absence remain alternative readings; no favorable reading is selected.",
+      "source_inventory": "all_original_input_sources_included"
+    }
+  ],
+  "predecessor_review_sha256": "a7fcf20a0631f9839f67a1589dd15282ab1d95be1f38ee71ad02a1215befedd7",
+  "reviewed_example_ids": [
+    "D01",
+    "D02",
+    "D03",
+    "D04",
+    "D05",
+    "D06",
+    "D07",
+    "D08",
+    "D09",
+    "D10",
+    "D11",
+    "D12",
+    "D13",
+    "D14",
+    "D15",
+    "D16"
+  ],
+  "reviewer": {
+    "identity": "agent:/root/v3_slice_review",
+    "role": "agent_semantic_reviewer",
+    "signature": null
+  },
+  "schema": "maguire-v3-normalization-review-v2",
+  "status": "ready"
+}

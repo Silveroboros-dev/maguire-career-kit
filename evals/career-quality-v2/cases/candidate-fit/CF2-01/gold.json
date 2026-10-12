@@ -1,0 +1,75 @@
+{
+  "schema": "maguire-quality-gold-v1",
+  "case_id": "CF2-01",
+  "family": "unsupported quantitative result in conclusion",
+  "title": "Library route planning and unsupported savings",
+  "review_status": "proposed_agent_authored",
+  "human_approved": false,
+  "units": [
+    {
+      "target_id": "jd_1",
+      "kind": "duty",
+      "allowed_labels": [
+        "supported"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_1",
+          "fact_1"
+        ]
+      ],
+      "rationale": "The trial supports route planning and its logged distance, not a sustained cost result.",
+      "required_points": [
+        "Four-branch trial route sheet",
+        "18 kilometres in one trial week"
+      ],
+      "forbidden_inferences": [
+        "No annual savings or emissions impact is established"
+      ]
+    },
+    {
+      "target_id": "jd_2",
+      "kind": "duty",
+      "allowed_labels": [
+        "supported"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_2",
+          "fact_2"
+        ]
+      ],
+      "rationale": "The self-report describes the requested explanation, without independent attendance verification.",
+      "required_points": [
+        "Friday explanation to coordinators"
+      ],
+      "forbidden_inferences": [
+        "Do not infer organization-wide rollout"
+      ]
+    }
+  ],
+  "forbidden_assessment_targets": [],
+  "acceptable_actions": [
+    "pursue",
+    "show_existing_evidence"
+  ],
+  "critical_errors": [
+    {
+      "id": "CF2-01-E1",
+      "description": "A one-week distance log does not support an annual fuel-bill percentage.",
+      "target_ids": [
+        "jd_1"
+      ]
+    },
+    {
+      "id": "CF2-01-E2",
+      "description": "A single four-branch trial week cannot establish recurring network-wide savings.",
+      "target_ids": [
+        "jd_1"
+      ]
+    }
+  ],
+  "notes": [
+    "All people, roles, dates, and source statements are synthetic."
+  ]
+}

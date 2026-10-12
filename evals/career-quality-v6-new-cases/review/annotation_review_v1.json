@@ -1,0 +1,560 @@
+{
+  "schema": "maguire-v6-new-annotation-review-v1",
+  "status": "ready",
+  "human_approved": false,
+  "reviewer": "Codex AI agent /root/v6h_review",
+  "created_at_utc": "2026-10-12T18:43:21.355895+00:00",
+  "files": {
+    "raw/candidate-fit.json": {
+      "sha256": "1d446c8961ca222d0d2abf995ad6d264e64cfa491d4336a19d01d1b601b16d74",
+      "bytes": 17110
+    },
+    "normalized/candidate-fit.json": {
+      "sha256": "c25a600221755ed0ef8acf6e9b06a1752b1ffdee3332cb3c5953a575d6282d2f",
+      "bytes": 56576
+    },
+    "gold/candidate-fit.json": {
+      "sha256": "eced817907e91c11582768932abdfede1f7b7797b23ae0cdd35fa7c71c09891f",
+      "bytes": 5127
+    },
+    "authoring/candidate-fit-attestation.json": {
+      "sha256": "822afafe479d8814d2122bce821e73e560e5d5ceeec22403025e0f501809b2ad",
+      "bytes": 4970
+    },
+    "raw/preference-fit.json": {
+      "sha256": "515b241b4ca84cfb31f96c62e761d7d21eae2e5a6aad4b7286a8622d0c09867d",
+      "bytes": 18113
+    },
+    "normalized/preference-fit.json": {
+      "sha256": "af6d962e4bfe677a9a37f8d174cd2ddf832170a5f700cb60883c4e23b5449a88",
+      "bytes": 73129
+    },
+    "gold/preference-fit.json": {
+      "sha256": "e91dbc9da37d75002678a560bce456532d3758fec779e09a48d70c4f3b82b135",
+      "bytes": 5415
+    },
+    "authoring/preference-fit-attestation.json": {
+      "sha256": "ed4e00a5a533bd33352e19d132f8efcdcab16d867bf426d3d45bffed6281b10c",
+      "bytes": 6032
+    },
+    "AUTHORING.md": {
+      "sha256": "45112a257c66e1b40278c923755dba0a98c887529cdbb06bac5626896ae3c516",
+      "bytes": 8879
+    },
+    "CONTRACT.md": {
+      "sha256": "bfd3437afabeb89fb06f61eb77a15a58ab9093f71d40f56ba1ab2bdf6eebfa59",
+      "bytes": 3378
+    },
+    "FROZEN_SCHEMA.md": {
+      "sha256": "7ecc066c338f473bed3b458c07e0743607a5758f10aa892318b6cd4c87de7e34",
+      "bytes": 6740
+    },
+    "AUTHORING_API_ADDENDUM.md": {
+      "sha256": "8fc6c567a755e7bdd72f445ba415656142199a38d3854508ccf2cbae99ea77c6",
+      "bytes": 2432
+    }
+  },
+  "cases": [
+    {
+      "case_id": "CF6H-01",
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "semantic_verdict": "pass",
+      "review_note": "Both the candidate’s three personally facilitated May 2025 incident reviews and the role requirement are directly stated in active sources."
+    },
+    {
+      "case_id": "CF6H-02",
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "semantic_verdict": "fail",
+      "review_note": "The runbook authorship is supported, but the 20% triage improvement belongs to the support team; the source expressly leaves individual attribution unassigned."
+    },
+    {
+      "case_id": "CF6H-03",
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "semantic_verdict": "pass",
+      "review_note": "Active records support the March course completion and April internal guide authorship at the stated scope."
+    },
+    {
+      "case_id": "CF6H-04",
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "semantic_verdict": "pass",
+      "review_note": "The answer preserves the sandbox scope of the SQL work and accurately states the role’s SQL query requirement."
+    },
+    {
+      "case_id": "CF6H-05",
+      "claim_ids": [
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "semantic_verdict": "needs_review",
+      "review_note": "Shadowing two calls and authoring handoff notes are supported. Whether that experience is relevant to independently leading calls is a qualitative transferability judgment with multiple reasonable readings."
+    },
+    {
+      "case_id": "CF6H-06",
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "semantic_verdict": "pass",
+      "review_note": "Separate active records support both course completion and passing the associated exam in 2024."
+    },
+    {
+      "case_id": "CF6H-07",
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "semantic_verdict": "fail",
+      "review_note": "Permission to present a demo is supported, but no delivered demo is recorded; permission does not establish delivery."
+    },
+    {
+      "case_id": "CF6H-08",
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "semantic_verdict": "pass",
+      "review_note": "The 150 manually processed records and the role’s archive-processing requirement are both supported."
+    },
+    {
+      "case_id": "CF6H-09",
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "semantic_verdict": "pass",
+      "review_note": "Active sources support personal rollback-plan authorship and observation of the cutover; the answer does not claim vendor coordination."
+    },
+    {
+      "case_id": "CF6H-10",
+      "claim_ids": [
+        "c1"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "semantic_verdict": "fail",
+      "review_note": "The recorded Kubernetes deployment was in a sandbox; the answer changes its environment to production."
+    },
+    {
+      "case_id": "CF6H-11",
+      "claim_ids": [
+        "c1"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "semantic_verdict": "pass",
+      "review_note": "The candidate jointly trained operators with a colleague, and the answer retains that shared contribution."
+    },
+    {
+      "case_id": "CF6H-12",
+      "claim_ids": [
+        "c1"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "semantic_verdict": "pass",
+      "review_note": "The stated monthly SQL query work and January 2022 through April 2024 interval match the active record."
+    },
+    {
+      "case_id": "CF6H-13",
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "semantic_verdict": "fail",
+      "review_note": "Plan review is supported. Guide authorship rests only on a withdrawn draft with an incorrect author field, so the personal authorship claim is unsupported."
+    },
+    {
+      "case_id": "CF6H-14",
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "semantic_verdict": "pass",
+      "review_note": "The active pilot record directly supports triage of incoming alerts and escalation of severe ones to the duty engineer."
+    },
+    {
+      "case_id": "CF6H-15",
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "semantic_verdict": "needs_review",
+      "review_note": "The internal training demo is supported. Whether that practice could prepare the candidate for customer-facing product demos is a qualitative, future-facing transferability judgment."
+    },
+    {
+      "case_id": "CF6H-16",
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "semantic_verdict": "pass",
+      "review_note": "The exam pass and the still-unissued certificate as of September are both supported; the answer keeps the distinction."
+    },
+    {
+      "case_id": "CF6H-17",
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "semantic_verdict": "fail",
+      "review_note": "Checklist documentation is supported. The procurement team coordinated the cutover, with no personal coordination assigned to the candidate."
+    },
+    {
+      "case_id": "CF6H-18",
+      "claim_ids": [
+        "c1"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "semantic_verdict": "pass",
+      "review_note": "The answer accurately retains the three-week internal pilot, 30 staff users, and candidate-built tool."
+    },
+    {
+      "case_id": "CF6H-19",
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "semantic_verdict": "pass",
+      "review_note": "The sources support authorship of two guides and peer review of one before publication."
+    },
+    {
+      "case_id": "CF6H-20",
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "semantic_verdict": "fail",
+      "review_note": "Personal handling of 12 incidents in 2024 is supported. The 18 incidents in 2025 are a team total without individual ownership."
+    },
+    {
+      "case_id": "PF6H-01",
+      "claim_ids": [
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "semantic_verdict": "pass",
+      "review_note": "Five station days in the first induction week fit the stated one-week acceptance; later remote work is accurately conditioned on security clearance."
+    },
+    {
+      "case_id": "PF6H-02",
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "semantic_verdict": "fail",
+      "review_note": "The EUR 1,200 annual allowance is stated correctly, but it is below the EUR 1,800 annual minimum."
+    },
+    {
+      "case_id": "PF6H-03",
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "semantic_verdict": "pass",
+      "review_note": "The exhaustive Saturday-only on-call shift is outside the prohibited Monday-through-Friday days."
+    },
+    {
+      "case_id": "PF6H-04",
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "semantic_verdict": "pass",
+      "review_note": "The current update directly states no mandatory post-onboarding office days and voluntary office access."
+    },
+    {
+      "case_id": "PF6H-05",
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "semantic_verdict": "pass",
+      "review_note": "The answer reports the one-day older description and acknowledges the unresolved conflict with a later, still-active two-day note; it does not declare the current rule settled."
+    },
+    {
+      "case_id": "PF6H-06",
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "semantic_verdict": "fail",
+      "review_note": "The early CHF 120 stipend was withdrawn and the active offer has no stipend; it cannot meet the active-stipend requirement."
+    },
+    {
+      "case_id": "PF6H-07",
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "semantic_verdict": "pass",
+      "review_note": "The only required Tuesday demo ends exactly at the 16:00 cutoff in the same local time zone."
+    },
+    {
+      "case_id": "PF6H-08",
+      "claim_ids": [
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "semantic_verdict": "pass",
+      "review_note": "EUR 2,400 per calendar year is budget-equivalent to EUR 200 per calendar month, and the answer correctly leaves reimbursement timing unspecified."
+    },
+    {
+      "case_id": "PF6H-09",
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "semantic_verdict": "fail",
+      "review_note": "Procurement review is pending with no approved activation date or first-day promise; the first-day guarantee is unsupported."
+    },
+    {
+      "case_id": "PF6H-10",
+      "claim_ids": [
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "semantic_verdict": "pass",
+      "review_note": "No required first-quarter travel fits the restriction, and the answer preserves the possibility of later travel."
+    },
+    {
+      "case_id": "PF6H-11",
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "semantic_verdict": "fail",
+      "review_note": "The active role requires two station days weekly after onboarding, not one; two also exceeds the one-day cap."
+    },
+    {
+      "case_id": "PF6H-12",
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "semantic_verdict": "pass",
+      "review_note": "The written Monday-through-Thursday working pattern and free Friday directly match the stated preference."
+    },
+    {
+      "case_id": "PF6H-13",
+      "claim_ids": [
+        "c1"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "semantic_verdict": "fail",
+      "review_note": "The tentative feasibility assessment is unsettled, but the answer also assigns the approval decision to a manager. The source assigns possible case-by-case approval to the team and does not support manager authority; c1 is therefore an unsupported factual attribution."
+    },
+    {
+      "case_id": "PF6H-14",
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "semantic_verdict": "pass",
+      "review_note": "The active written CHF 100 monthly stipend begins in month one and exceeds the CHF 80 monthly floor."
+    },
+    {
+      "case_id": "PF6H-15",
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "semantic_verdict": "fail",
+      "review_note": "Three required overnight trips per month exceed the stated cap of two; the answer’s fit conclusion is false."
+    },
+    {
+      "case_id": "PF6H-16",
+      "claim_ids": [
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "semantic_verdict": "pass",
+      "review_note": "Two onboarding station days meet the cap, and both the preference and the role use the same client-data-clearance condition for later remote work."
+    },
+    {
+      "case_id": "PF6H-17",
+      "claim_ids": [
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "semantic_verdict": "fail",
+      "review_note": "The superseding four-day requirement is correctly identified but exceeds the three-day weekly cap, contrary to the answer’s fit conclusion."
+    },
+    {
+      "case_id": "PF6H-18",
+      "claim_ids": [
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "semantic_verdict": "pass",
+      "review_note": "The candidate accepts internal demos; the role requires only those and expressly has no mandatory public demo."
+    },
+    {
+      "case_id": "PF6H-19",
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "semantic_verdict": "pass",
+      "review_note": "The required rota is weekdays only with no weekend on-call shifts, satisfying the weekend prohibition."
+    },
+    {
+      "case_id": "PF6H-20",
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "fragment_complete": true,
+      "source_inventory_complete": true,
+      "semantic_verdict": "pass",
+      "review_note": "The answer says Portugal might be approved and expressly asks for employer confirmation. It does not claim current approval, so the carefully qualified statement is supported by the incomplete location inventory."
+    }
+  ],
+  "family_counts": {
+    "candidate-fit": {
+      "pass": 12,
+      "fail": 6,
+      "needs_review": 2
+    },
+    "preference-fit": {
+      "pass": 13,
+      "fail": 7
+    }
+  },
+  "raw_only_review_provenance": [
+    {
+      "family": "candidate-fit",
+      "review_version": "v2",
+      "local_receipt_sha256": "3db4f1e80ba57a34fbc6f5a8035f5381e24a6791b6e5d6cb4dd25fb3694f725e",
+      "bytes": 6664,
+      "publication_note": "Raw-only receipt contains local host paths and is retained locally, not included in public export."
+    },
+    {
+      "family": "preference-fit",
+      "review_version": "v1",
+      "local_receipt_sha256": "81d75247794d34306b110241bd49c601185703d94f2b54e5ec6a2a94b0908ded",
+      "bytes": 6189,
+      "publication_note": "Raw-only receipt contains local host paths and is retained locally, not included in public export."
+    }
+  ],
+  "raw_only_disagreements_adjudicated": [
+    {
+      "case_id": "PF6H-13",
+      "raw_only_verdict": "needs_review",
+      "adjudicated_verdict": "fail",
+      "reason": "The tentative feasibility assessment is unsettled, but the answer also assigns the approval decision to a manager. The source assigns possible case-by-case approval to the team and does not support manager authority; c1 is therefore an unsupported factual attribution."
+    },
+    {
+      "case_id": "PF6H-20",
+      "raw_only_verdict": "needs_review",
+      "adjudicated_verdict": "pass",
+      "reason": "The answer says Portugal might be approved and expressly asks for employer confirmation. It does not claim current approval, so the carefully qualified statement is supported by the incomplete location inventory."
+    }
+  ],
+  "access_attestation": {
+    "raw_only_judgments_saved_before_gold_or_normalized_reads": true,
+    "human_review": false,
+    "shared_filesystem_not_access_control": true,
+    "previous_cases_seen_before_annotation": false,
+    "target_predictions_seen": false,
+    "grader_executed": false,
+    "runtime_read_for_behavior": false,
+    "pipeline_shape_read_after_semantic_review": true,
+    "author_helpers_read": false,
+    "source_and_answer_fidelity_reviewed_all_40": true,
+    "normalization_source_inventory_and_asserted_claims_reviewed_all_40": true
+  },
+  "limitations": [
+    "Agent semantic review and self-attestation do not establish human approval or organizational independence.",
+    "Raw-only receipts are local predecessor evidence; their host paths make them unsuitable for public publication.",
+    "Source-grounded labels assess these fictional packets; they do not establish general checker validity."
+  ]
+}

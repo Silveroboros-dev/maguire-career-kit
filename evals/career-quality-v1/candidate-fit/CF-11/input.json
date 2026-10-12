@@ -1,0 +1,58 @@
+{
+  "schema": "maguire-quality-input-v1",
+  "case_id": "CF-11",
+  "grader": "candidate_fit",
+  "data_class": "synthetic",
+  "decision_at": "2026-10-12T12:00:00Z",
+  "task": "Assess the supplied candidate evidence against the job description. Cite relevant sources, state any uncertainty, and recommend a next action.",
+  "jd": {
+    "title": "Customer Data Operations Specialist",
+    "sources": [
+      {
+        "id": "jd_1",
+        "text": "Own the customer-record retention work: review retention categories, draft a deletion checklist, and design the final retention schedule.",
+        "observed_at": "2026-10-12T12:00:00Z",
+        "authority": "job_description",
+        "supersedes": []
+      },
+      {
+        "id": "jd_2",
+        "text": "Write SQL checks for duplicate customer IDs.",
+        "observed_at": "2026-10-12T12:00:00Z",
+        "authority": "job_description",
+        "supersedes": []
+      }
+    ]
+  },
+  "candidate": {
+    "facts": [
+      {
+        "id": "fact_1",
+        "text": "I designed the full retention schedule for customer records.",
+        "evidence_type": "self_report",
+        "observed_at": "2026-10-12T12:00:00Z",
+        "status": "withdrawn",
+        "supersedes": []
+      },
+      {
+        "id": "fact_2",
+        "text": "Correction: I reviewed retention categories and drafted a deletion checklist; a colleague designed the final schedule.",
+        "evidence_type": "self_report",
+        "observed_at": "2026-10-12T12:00:00Z",
+        "status": "active",
+        "supersedes": [
+          "fact_1"
+        ]
+      },
+      {
+        "id": "fact_3",
+        "text": "A supplied SQL excerpt contains a duplicate-ID count grouped by customer ID.",
+        "evidence_type": "supplied_artifact_excerpt",
+        "observed_at": "2026-10-12T12:00:00Z",
+        "status": "active",
+        "supersedes": []
+      }
+    ],
+    "preferences": []
+  }
+}

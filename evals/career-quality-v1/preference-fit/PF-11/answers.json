@@ -1,0 +1,190 @@
+{
+  "schema": "maguire-quality-answers-v1",
+  "case_id": "PF-11",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "assessments": [
+        {
+          "target_id": "pref_hours",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_schedule",
+              "quote": "This position is 24–28 paid hours per week. Required live overlap is 13:00–17:00 Europe/Zurich on each scheduled workday."
+            }
+          ],
+          "rationale": "The role’s inclusive 24–28 hour interval exactly fits the requested interval."
+        },
+        {
+          "target_id": "pref_overlap",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_schedule",
+              "quote": "This position is 24–28 paid hours per week. Required live overlap is 13:00–17:00 Europe/Zurich on each scheduled workday."
+            }
+          ],
+          "rationale": "Required overlap 13:00–17:00 lies within candidate availability 12:00–17:00, including the end boundary."
+        },
+        {
+          "target_id": "pref_pay",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_pay",
+              "quote": "Compensation is prorated by contracted hours; no annual base range is published."
+            }
+          ],
+          "rationale": "Proration without a base amount does not establish the candidate’s part-time pay target."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "The hours and live overlap fit exactly; the annual base at the contracted hours remains unknown.",
+        "next_step": "Ask for the annual base amount at the proposed 24–28 hour schedule."
+      },
+      "limitations": [
+        "The exact contracted hours and annual base amount are not supplied."
+      ]
+    },
+    {
+      "answer_id": "answer_02",
+      "assessments": [
+        {
+          "target_id": "pref_hours",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_schedule",
+              "quote": "This position is 24–28 paid hours per week. Required live overlap is 13:00–17:00 Europe/Zurich on each scheduled workday."
+            }
+          ],
+          "rationale": "The role’s inclusive 24–28 hour interval exactly fits the requested interval."
+        },
+        {
+          "target_id": "pref_overlap",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_schedule",
+              "quote": "This position is 24–28 paid hours per week. Required live overlap is 13:00–17:00 Europe/Zurich on each scheduled workday."
+            }
+          ],
+          "rationale": "Required overlap 13:00–17:00 lies within candidate availability 12:00–17:00, including the end boundary."
+        },
+        {
+          "target_id": "pref_pay",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_pay",
+              "quote": "Compensation is prorated by contracted hours; no annual base range is published."
+            }
+          ],
+          "rationale": "Proration without a base amount does not establish the candidate’s part-time pay target."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "The scheduling requirements stay within both candidate bounds, with pay still open.",
+        "next_step": "Request the exact contracted hours and corresponding annual base figure in writing."
+      },
+      "limitations": [
+        "The exact contracted hours and annual base amount are not supplied."
+      ]
+    },
+    {
+      "answer_id": "answer_03",
+      "assessments": [
+        {
+          "target_id": "pref_hours",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_schedule",
+              "quote": "This position is 24–28 paid hours per week. Required live overlap is 13:00–17:00 Europe/Zurich on each scheduled workday."
+            }
+          ],
+          "rationale": "The role’s inclusive 24–28 hour interval exactly fits the requested interval."
+        },
+        {
+          "target_id": "pref_overlap",
+          "label": "conflict",
+          "evidence": [
+            {
+              "source_id": "jd_schedule",
+              "quote": "This position is 24–28 paid hours per week. Required live overlap is 13:00–17:00 Europe/Zurich on each scheduled workday."
+            }
+          ],
+          "rationale": "A required meeting ending at 17:00 exceeds a candidate window ending at 17:00."
+        },
+        {
+          "target_id": "pref_pay",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_pay",
+              "quote": "Compensation is prorated by contracted hours; no annual base range is published."
+            }
+          ],
+          "rationale": "Proration without a base amount does not establish the candidate’s part-time pay target."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "The hours and live overlap fit exactly; the annual base at the contracted hours remains unknown.",
+        "next_step": "Ask for the annual base amount at the proposed 24–28 hour schedule."
+      },
+      "limitations": [
+        "The exact contracted hours and annual base amount are not supplied."
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "assessments": [
+        {
+          "target_id": "pref_hours",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_schedule",
+              "quote": "This position is 24–28 paid hours per week. Required live overlap is 13:00–17:00 Europe/Zurich on each scheduled workday."
+            }
+          ],
+          "rationale": "The role’s inclusive 24–28 hour interval exactly fits the requested interval."
+        },
+        {
+          "target_id": "pref_overlap",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_schedule",
+              "quote": "This position is 24–28 paid hours per week. Required live overlap is 13:00–17:00 Europe/Zurich on each scheduled workday."
+            }
+          ],
+          "rationale": "Required overlap 13:00–17:00 lies within candidate availability 12:00–17:00, including the end boundary."
+        },
+        {
+          "target_id": "pref_pay",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_pay",
+              "quote": "Compensation is prorated by contracted hours; no annual base range is published."
+            }
+          ],
+          "rationale": "Proration without a base amount does not establish the candidate’s part-time pay target."
+        }
+      ],
+      "conclusion": {
+        "action": "pursue",
+        "text": "Treat the unpublished prorated pay as meeting CHF 100,000 and proceed on that basis.",
+        "next_step": "Record compensation as already aligned."
+      },
+      "limitations": [
+        "The exact contracted hours and annual base amount are not supplied."
+      ]
+    }
+  ]
+}

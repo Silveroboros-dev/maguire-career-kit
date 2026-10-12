@@ -1,0 +1,75 @@
+{
+  "schema": "maguire-quality-gold-v1",
+  "case_id": "CF-04",
+  "family": "explicit minimum counterfact",
+  "title": "Credential minimum and supported work",
+  "review_status": "proposed_agent_authored",
+  "human_approved": false,
+  "units": [
+    {
+      "target_id": "jd_1",
+      "kind": "minimum",
+      "allowed_labels": [
+        "contradicted"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_1",
+          "fact_1"
+        ]
+      ],
+      "rationale": "The current internal training-certificate minimum conflicts with the candidate’s explicit expired-certificate statement.",
+      "required_points": [
+        "Current internal certificate is required when applying",
+        "Candidate says the certificate expired and was not renewed"
+      ],
+      "forbidden_inferences": [
+        "Do not treat past completion as current certification",
+        "Do not present an unmentioned waiver route as available"
+      ]
+    },
+    {
+      "target_id": "jd_2",
+      "kind": "duty",
+      "allowed_labels": [
+        "supported"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_2",
+          "fact_2"
+        ]
+      ],
+      "rationale": "The log excerpt shows the requested work.",
+      "required_points": [
+        "Bench calibration logging is evidenced"
+      ],
+      "forbidden_inferences": [
+        "Do not infer a current training certificate from calibration-log work"
+      ]
+    }
+  ],
+  "forbidden_assessment_targets": [],
+  "acceptable_actions": [
+    "pass"
+  ],
+  "critical_errors": [
+    {
+      "id": "CF-04-E1",
+      "description": "The candidate says the internal training certificate expired; past completion does not satisfy a current-certificate minimum.",
+      "target_ids": [
+        "jd_1"
+      ]
+    },
+    {
+      "id": "CF-04-E2",
+      "description": "Calibration work cannot substitute for the explicitly mandatory current internal training certificate.",
+      "target_ids": [
+        "jd_1"
+      ]
+    }
+  ],
+  "notes": [
+    "The employer-defined internal training certificate is currently absent despite related calibration-log evidence."
+  ]
+}

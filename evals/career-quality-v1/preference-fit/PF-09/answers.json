@@ -1,0 +1,222 @@
+{
+  "schema": "maguire-quality-answers-v1",
+  "case_id": "PF-09",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "assessments": [
+        {
+          "target_id": "pref_remote",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_original",
+              "quote": "This role is fully remote in Switzerland, with no office attendance."
+            },
+            {
+              "source_id": "jd_update",
+              "quote": "This role follows a hybrid schedule with two required office days per week."
+            }
+          ],
+          "rationale": "The two employer statements disagree and no source explicitly supersedes the other; recency alone cannot resolve authority."
+        },
+        {
+          "target_id": "pref_salary",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_pay",
+              "quote": "Annual base salary is CHF 150,000–170,000."
+            }
+          ],
+          "rationale": "The published base range begins above the candidate’s CHF 145,000 minimum."
+        },
+        {
+          "target_id": "pref_travel",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_original",
+              "quote": "This role is fully remote in Switzerland, with no office attendance."
+            },
+            {
+              "source_id": "jd_update",
+              "quote": "This role follows a hybrid schedule with two required office days per week."
+            }
+          ],
+          "rationale": "Neither location statement gives an annual travel limit."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "The remote must-have cannot be settled from contradictory employer statements, and the travel preference is also unspecified.",
+        "next_step": "Ask which location policy governs this vacancy and request the expected annual trip count."
+      },
+      "limitations": [
+        "No explicit supersession or live employer confirmation is supplied."
+      ]
+    },
+    {
+      "answer_id": "answer_02",
+      "assessments": [
+        {
+          "target_id": "pref_remote",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_original",
+              "quote": "This role is fully remote in Switzerland, with no office attendance."
+            },
+            {
+              "source_id": "jd_update",
+              "quote": "This role follows a hybrid schedule with two required office days per week."
+            }
+          ],
+          "rationale": "The two employer statements disagree and no source explicitly supersedes the other; recency alone cannot resolve authority."
+        },
+        {
+          "target_id": "pref_salary",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_pay",
+              "quote": "Annual base salary is CHF 150,000–170,000."
+            }
+          ],
+          "rationale": "The published base range begins above the candidate’s CHF 145,000 minimum."
+        },
+        {
+          "target_id": "pref_travel",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_original",
+              "quote": "This role is fully remote in Switzerland, with no office attendance."
+            },
+            {
+              "source_id": "jd_update",
+              "quote": "This role follows a hybrid schedule with two required office days per week."
+            }
+          ],
+          "rationale": "Neither location statement gives an annual travel limit."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "The pay floor is published, but the decisive office policy has two unresolved versions.",
+        "next_step": "Request a written policy correction naming which location statement applies before deciding whether to pursue."
+      },
+      "limitations": [
+        "No explicit supersession or live employer confirmation is supplied."
+      ]
+    },
+    {
+      "answer_id": "answer_03",
+      "assessments": [
+        {
+          "target_id": "pref_remote",
+          "label": "conflict",
+          "evidence": [
+            {
+              "source_id": "jd_original",
+              "quote": "This role is fully remote in Switzerland, with no office attendance."
+            },
+            {
+              "source_id": "jd_update",
+              "quote": "This role follows a hybrid schedule with two required office days per week."
+            }
+          ],
+          "rationale": "The later dated hybrid update automatically replaces the older remote statement."
+        },
+        {
+          "target_id": "pref_salary",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_pay",
+              "quote": "Annual base salary is CHF 150,000–170,000."
+            }
+          ],
+          "rationale": "The published base range begins above the candidate’s CHF 145,000 minimum."
+        },
+        {
+          "target_id": "pref_travel",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_original",
+              "quote": "This role is fully remote in Switzerland, with no office attendance."
+            },
+            {
+              "source_id": "jd_update",
+              "quote": "This role follows a hybrid schedule with two required office days per week."
+            }
+          ],
+          "rationale": "Neither location statement gives an annual travel limit."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "The remote must-have cannot be settled from contradictory employer statements, and the travel preference is also unspecified.",
+        "next_step": "Ask which location policy governs this vacancy and request the expected annual trip count."
+      },
+      "limitations": [
+        "No explicit supersession or live employer confirmation is supplied."
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "assessments": [
+        {
+          "target_id": "pref_remote",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_original",
+              "quote": "This role is fully remote in Switzerland, with no office attendance."
+            },
+            {
+              "source_id": "jd_update",
+              "quote": "This role follows a hybrid schedule with two required office days per week."
+            }
+          ],
+          "rationale": "The two employer statements disagree and no source explicitly supersedes the other; recency alone cannot resolve authority."
+        },
+        {
+          "target_id": "pref_salary",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_pay",
+              "quote": "Annual base salary is CHF 150,000–170,000."
+            }
+          ],
+          "rationale": "The published base range begins above the candidate’s CHF 145,000 minimum."
+        },
+        {
+          "target_id": "pref_travel",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_original",
+              "quote": "This role is fully remote in Switzerland, with no office attendance."
+            },
+            {
+              "source_id": "jd_update",
+              "quote": "This role follows a hybrid schedule with two required office days per week."
+            }
+          ],
+          "rationale": "Neither location statement gives an annual travel limit."
+        }
+      ],
+      "conclusion": {
+        "action": "pursue",
+        "text": "Proceed as though the older fully remote statement governs the role.",
+        "next_step": "Prepare an application without resolving the conflicting location terms."
+      },
+      "limitations": [
+        "No explicit supersession or live employer confirmation is supplied."
+      ]
+    }
+  ]
+}

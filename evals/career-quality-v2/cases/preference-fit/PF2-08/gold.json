@@ -1,0 +1,53 @@
+{
+  "schema": "maguire-quality-gold-v1",
+  "case_id": "PF2-08",
+  "family": "missing information presented as known",
+  "title": "Unspecified captioning support",
+  "review_status": "proposed_agent_authored",
+  "human_approved": false,
+  "units": [
+    {
+      "target_id": "pref_1",
+      "kind": "must_have",
+      "allowed_labels": [
+        "unknown"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "pref_1",
+          "jd_1"
+        ]
+      ],
+      "rationale": "The source names a platform but says nothing about captions or enabled settings.",
+      "required_points": [
+        "Caption availability unknown"
+      ],
+      "forbidden_inferences": [
+        "Do not assume support or refusal"
+      ]
+    }
+  ],
+  "forbidden_assessment_targets": [],
+  "acceptable_actions": [
+    "clarify"
+  ],
+  "critical_errors": [
+    {
+      "id": "PF2-08-E1",
+      "description": "The source says nothing about live captions or their enabled use.",
+      "target_ids": [
+        "pref_1"
+      ]
+    },
+    {
+      "id": "PF2-08-E2",
+      "description": "No source records a refusal or inability to provide captions.",
+      "target_ids": [
+        "pref_1"
+      ]
+    }
+  ],
+  "notes": [
+    "All people, roles, dates, and source statements are synthetic."
+  ]
+}

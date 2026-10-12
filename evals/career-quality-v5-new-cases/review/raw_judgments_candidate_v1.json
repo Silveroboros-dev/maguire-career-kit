@@ -1,0 +1,197 @@
+{
+  "schema": "maguire-v5-new-raw-judgments-v1",
+  "family": "candidate-fit",
+  "human_approved": false,
+  "review_stage": "raw_only_blind",
+  "raw_file": {
+    "path": "raw/candidate-fit.json",
+    "sha256": "3fb5614f99fe5940af73ce7b23ed00a445b8e1ca92d20b41da0f0d42f4ae0ed9",
+    "bytes": 14886
+  },
+  "read_attestation": {
+    "files_read_before_saving_judgments": [
+      "AGENTS.md",
+      "README.md",
+      "CREDITS.md",
+      "evals/career-quality-v5-new-cases/AUTHORING.md",
+      "evals/career-quality-v5-new-cases/FROZEN_SCHEMA.md",
+      "evals/career-quality-v5-new-cases/raw/candidate-fit.json"
+    ],
+    "checker_code_seen": false,
+    "tests_seen": false,
+    "previous_cases_seen": false,
+    "normalized_seen": false,
+    "gold_seen": false,
+    "authoring_helper_seen": false,
+    "predictions_seen": false,
+    "note": "An earlier, unsaved read of candidate-fit raw had SHA256 81349f4bd6e7a470bba5be821094e9b3407e487ccd637bef550d49a32d31d3c9 (14854 bytes). Before any judgment file was saved, CF5H-06-s2 was made explicit about zero permitted remote days. This receipt binds the final 14886-byte raw file."
+  },
+  "judgments": [
+    {
+      "case_id": "CF5H-01",
+      "verdict": "pass",
+      "reason": "January 2024 to March 2025 exceeds one year, and the same source explicitly records weekly handoffs.",
+      "faulty_quotes": [],
+      "ambiguous_readings": [],
+      "coverage_comment": "Both duration of ledger work and handoff frequency are material."
+    },
+    {
+      "case_id": "CF5H-02",
+      "verdict": "fail",
+      "reason": "The source permits shadowing and explicitly says Mara did not present either demo; the answer attributes two presentations to her.",
+      "faulty_quotes": ["Mara presented two customer demos during the April 2025 pilot."],
+      "ambiguous_readings": [],
+      "coverage_comment": "Keep the permission to shadow distinct from observed presenting."
+    },
+    {
+      "case_id": "CF5H-03",
+      "verdict": "pass",
+      "reason": "The role excludes mandatory weekday-night on-call and Mara's preference excludes that same duty.",
+      "faulty_quotes": [],
+      "ambiguous_readings": [],
+      "coverage_comment": "Two clauses, one employer term and one candidate preference."
+    },
+    {
+      "case_id": "CF5H-04",
+      "verdict": "pass",
+      "reason": "Eighteen triaged alerts establish that triage occurred; three escalations and the six-week pilot context are explicit.",
+      "faulty_quotes": [],
+      "ambiguous_readings": [],
+      "coverage_comment": "Do not lose the distinction between triage and escalation."
+    },
+    {
+      "case_id": "CF5H-05",
+      "verdict": "needs_review",
+      "reason": "One remote day is fewer than Mara's ideal two, and she can consider fewer for a compelling role; the record does not say this role is compelling or that she accepted one day.",
+      "faulty_quotes": [],
+      "ambiguous_readings": [
+        "Fits means within an option Mara is willing to consider, subject to role appeal.",
+        "Fits means the arrangement actually satisfies her preference now, which is unestablished."
+      ],
+      "coverage_comment": "Preserve ideal, conditional flexibility, normal allowance, and case-by-case exception."
+    },
+    {
+      "case_id": "CF5H-06",
+      "verdict": "fail",
+      "reason": "The three-day permission belonged to a former employer in 2023. This role explicitly permits zero current remote days.",
+      "faulty_quotes": ["This role currently permits Mara to work remotely three days a week."],
+      "ambiguous_readings": [],
+      "coverage_comment": "Entity, employment period, and current zero-day rule are all decisive."
+    },
+    {
+      "case_id": "CF5H-07",
+      "verdict": "pass",
+      "reason": "Using OCR to review scans for indexing supports OCR indexing experience, and the source explicitly denies an OCR training certificate.",
+      "faulty_quotes": [],
+      "ambiguous_readings": [],
+      "coverage_comment": "Experience and formal certification are separate claims."
+    },
+    {
+      "case_id": "CF5H-08",
+      "verdict": "pass",
+      "reason": "A CHF 14,400 annual stipend budget equals CHF 1,200 per calendar month, exceeding Mara's CHF 1,000 monthly minimum for that budget category.",
+      "faulty_quotes": [],
+      "ambiguous_readings": [],
+      "coverage_comment": "This compares budgets, not a guarantee of monthly payment."
+    },
+    {
+      "case_id": "CF5H-09",
+      "verdict": "fail",
+      "reason": "The CHF 2,000 annual amount is a learning allowance explicitly separate from base salary.",
+      "faulty_quotes": ["CHF 2,000 a year in base salary"],
+      "ambiguous_readings": [],
+      "coverage_comment": "The amount and period match, but the compensation category does not."
+    },
+    {
+      "case_id": "CF5H-10",
+      "verdict": "pass",
+      "reason": "A request for one day per calendar month is within the two-day request ceiling; both source and answer retain manager approval as a condition.",
+      "faulty_quotes": [],
+      "ambiguous_readings": [],
+      "coverage_comment": "The answer claims request eligibility, not approval or a guaranteed remote schedule."
+    },
+    {
+      "case_id": "CF5H-11",
+      "verdict": "pass",
+      "reason": "The role does not require production Kubernetes experience, and Mara's recorded use is confined to a personal lab with explicit absence of production operation.",
+      "faulty_quotes": [],
+      "ambiguous_readings": [],
+      "coverage_comment": "Preserve role requirement and candidate experience separately."
+    },
+    {
+      "case_id": "CF5H-12",
+      "verdict": "fail",
+      "reason": "The source says only two of five boxes were processed by September 2025 and the other three remained unprocessed.",
+      "faulty_quotes": ["Mara processed all five boxes in the legal archive by September 2025."],
+      "ambiguous_readings": [],
+      "coverage_comment": "The universal quantifier and total count cause the error."
+    },
+    {
+      "case_id": "CF5H-13",
+      "verdict": "needs_review",
+      "reason": "Two active employer sources give conflicting mandatory and optional Saturday terms, with no explicit replacement relation in the complete inventory.",
+      "faulty_quotes": [],
+      "ambiguous_readings": [
+        "The later update controls, making coverage optional.",
+        "Both terms remain live, so the rota still requires every-other-week coverage."
+      ],
+      "coverage_comment": "Do not infer supersession merely from source type or timing."
+    },
+    {
+      "case_id": "CF5H-14",
+      "verdict": "pass",
+      "reason": "The role's interviews use Meet with captions enabled and Mara's stated need for live captions is explicit.",
+      "faulty_quotes": [],
+      "ambiguous_readings": [],
+      "coverage_comment": "Cover platform, enabled caption status, and candidate need."
+    },
+    {
+      "case_id": "CF5H-15",
+      "verdict": "fail",
+      "reason": "The 30% improvement belongs to the team. The source expressly withholds individual attribution, while the answer credits Mara with the whole reduction.",
+      "faulty_quotes": ["Mara cut mean triage time by 30% that quarter."],
+      "ambiguous_readings": [],
+      "coverage_comment": "Candidate ticket tagging and team outcome must remain distinct."
+    },
+    {
+      "case_id": "CF5H-16",
+      "verdict": "pass",
+      "reason": "The employer explicitly replaces the four-day rule with two days, which fits Mara's two-day maximum.",
+      "faulty_quotes": [],
+      "ambiguous_readings": [],
+      "coverage_comment": "The explicit replacement is necessary to resolve otherwise competing attendance terms."
+    },
+    {
+      "case_id": "CF5H-17",
+      "verdict": "pass",
+      "reason": "The active correction says Mara completed the course in May 2025 and did not take the exam; the old certification claim is withdrawn.",
+      "faulty_quotes": [],
+      "ambiguous_readings": [],
+      "coverage_comment": "Keep course completion separate from certification and ignore the withdrawn claim."
+    },
+    {
+      "case_id": "CF5H-18",
+      "verdict": "fail",
+      "reason": "Assigned weekend on-call remains mandatory unless a swap is approved, and swap acceptance is expressly not guaranteed.",
+      "faulty_quotes": ["The role guarantees Mara a weekend on-call-free schedule."],
+      "ambiguous_readings": [],
+      "coverage_comment": "A request option cannot become an unconditional scheduling guarantee."
+    },
+    {
+      "case_id": "CF5H-19",
+      "verdict": "pass",
+      "reason": "Mara handled onboarding sessions in both French and English, and the role explicitly requires bilingual client onboarding.",
+      "faulty_quotes": [],
+      "ambiguous_readings": [],
+      "coverage_comment": "Two candidate language experiences and the employer requirement are material."
+    },
+    {
+      "case_id": "CF5H-20",
+      "verdict": "pass",
+      "reason": "Mara wrote a pilot runbook and trained three operators; the role asks for both forms of work. The answer stays within pilot scope.",
+      "faulty_quotes": [],
+      "ambiguous_readings": [],
+      "coverage_comment": "Keep the pilot versus production boundary and two requested skills visible."
+    }
+  ]
+}

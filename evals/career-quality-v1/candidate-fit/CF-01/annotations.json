@@ -1,0 +1,66 @@
+{
+  "schema": "maguire-quality-annotations-v1",
+  "case_id": "CF-01",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The SQL exercise and supplied report support the two duties within their different evidence limits.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_02",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The report artifact can be shown directly while the SQL work stays described as an exercise.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_03",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "Self-report about an exercise cannot be promoted to verified production work.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "overstate self-report",
+        "description": "Self-report about an exercise cannot be promoted to verified production work.",
+        "changed_paths": [
+          "/assessments/0/rationale"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "CF-EVIDENCE",
+          "severity": "major",
+          "target_id": "jd_1",
+          "explanation": "Self-report about an exercise cannot be promoted to verified production work."
+        }
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "No source supports a stockout reduction metric.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "invent impact",
+        "description": "No source supports a stockout reduction metric.",
+        "changed_paths": [
+          "/conclusion/text"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "CF-EVIDENCE",
+          "severity": "major",
+          "target_id": "jd_2",
+          "explanation": "No source supports a stockout reduction metric."
+        }
+      ]
+    }
+  ]
+}

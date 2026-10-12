@@ -1,0 +1,473 @@
+{
+  "schema": "maguire-v5-semantic-annotation-review-v1",
+  "status": "ready",
+  "created_at_utc": "2026-10-12T17:51:51.448510+00:00",
+  "human_approved": false,
+  "reviewer": {
+    "identity": "Codex v5 review agent",
+    "basis": "manual agent comparison of synthetic raw fragments and v4→v5 normalized annotation delta",
+    "independence": "separate team agent; v4 outcomes/gold were visible, so this is exposed known-case review, not blind or human approval"
+  },
+  "predecessor_review": {
+    "sha256": "0ee842a1f4de49d2c91f044fbada61001a135e6a8ed592b6a694b5219dc9f87a",
+    "bytes": 14661
+  },
+  "files": {
+    "raw/candidate-fit.json": {
+      "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+      "bytes": 14213
+    },
+    "raw/preference-fit.json": {
+      "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+      "bytes": 16476
+    },
+    "gold/candidate-fit.json": {
+      "sha256": "c7123fc3e6f459a27fbd2198359458983b1baefb777799b3be142c3e2f18f985",
+      "bytes": 7132
+    },
+    "gold/preference-fit.json": {
+      "sha256": "05e7cdf2ab5af57f610dcaa404a2c615e51d64ca584d5aaf59b9c69d667d7963",
+      "bytes": 6474
+    },
+    "normalized/candidate-fit.json": {
+      "sha256": "5c5a0c327b57b5c394968575d8b22be73ec61856c675847c279bcc0c2f03c2c4",
+      "bytes": 57758
+    },
+    "normalized/preference-fit.json": {
+      "sha256": "6139b7eabe2cf27293f4114643fd50e58c9cd0c06a8b201c76060b1be5a1ef43",
+      "bytes": 61709
+    },
+    "SCHEMA.md": {
+      "sha256": "2f7f15adaa608574cd88359eddd0e21d7ef43a7bc819cf51a46de37730cb22ab",
+      "bytes": 10254
+    },
+    "migrate_annotations.py": {
+      "sha256": "f2b6cbe526267e51e18ba7001764ad83f341fe1f863a5d01369fb85c06f14b77",
+      "bytes": 3887
+    },
+    "NORMALIZATION_CHANGES.md": {
+      "sha256": "7184088fa3b941761dacc8d8e8b93194c81bcb5047846672c8f89336bbdf7b02",
+      "bytes": 2644
+    }
+  },
+  "counts": {
+    "cases": 40,
+    "claims": 81,
+    "sources": 66,
+    "facts": 98,
+    "typed_checks": 14
+  },
+  "method": [
+    "Compared v5 annotations with all 40 synthetic raw source/answer fragments and v4 normalized rows.",
+    "Verified all 81 original claim IDs and exact quote strings, all 66 source IDs, unique raw answer quote occurrence, and unchanged raw/gold bytes.",
+    "Reviewed the six unit fields (four CF3N-08; two PF3N-06) and PF3N-09 J09 current-unavailability scope against the raw wording. No cohort predictions were run for this review."
+  ],
+  "cases": [
+    {
+      "case_id": "CF3N-01",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "c1"
+      ],
+      "notes": "Raw source facts, answer claim spans and retained qualifiers reviewed; no annotation gap found."
+    },
+    {
+      "case_id": "CF3N-02",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "notes": "Raw source facts, answer claim spans and retained qualifiers reviewed; no annotation gap found."
+    },
+    {
+      "case_id": "CF3N-03",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "c1",
+        "c2",
+        "c3",
+        "c4"
+      ],
+      "notes": "Relevance is represented separately and remains qualitative review."
+    },
+    {
+      "case_id": "CF3N-04",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "notes": "Subset statement is retained separately; counts alone are not treated as subset proof."
+    },
+    {
+      "case_id": "CF3N-05",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "notes": "Raw source facts, answer claim spans and retained qualifiers reviewed; no annotation gap found."
+    },
+    {
+      "case_id": "CF3N-06",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "notes": "Raw source facts, answer claim spans and retained qualifiers reviewed; no annotation gap found."
+    },
+    {
+      "case_id": "CF3N-07",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "notes": "Raw source facts, answer claim spans and retained qualifiers reviewed; no annotation gap found."
+    },
+    {
+      "case_id": "CF3N-08",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "c1",
+        "c2",
+        "c3",
+        "c4"
+      ],
+      "notes": "Raw 2022 Tuesday/Thursday history and the 2027 two-day weekly requirement support singular unit day in four frequency measures; historical attendance is not current availability."
+    },
+    {
+      "case_id": "CF3N-09",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "c1"
+      ],
+      "notes": "Raw source facts, answer claim spans and retained qualifiers reviewed; no annotation gap found."
+    },
+    {
+      "case_id": "CF3N-10",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "notes": "More than one year is 13 elapsed whole months from explicit YYYY-MM endpoints."
+    },
+    {
+      "case_id": "CF3N-11",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "notes": "Signed four-demo count can support occurrence; evidence sufficiency remains qualitative review."
+    },
+    {
+      "case_id": "CF3N-12",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "notes": "Raw source facts, answer claim spans and retained qualifiers reviewed; no annotation gap found."
+    },
+    {
+      "case_id": "CF3N-13",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "notes": "Raw source facts, answer claim spans and retained qualifiers reviewed; no annotation gap found."
+    },
+    {
+      "case_id": "CF3N-14",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "notes": "Raw source facts, answer claim spans and retained qualifiers reviewed; no annotation gap found."
+    },
+    {
+      "case_id": "CF3N-15",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "notes": "Raw source facts, answer claim spans and retained qualifiers reviewed; no annotation gap found."
+    },
+    {
+      "case_id": "CF3N-16",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "notes": "Raw source facts, answer claim spans and retained qualifiers reviewed; no annotation gap found."
+    },
+    {
+      "case_id": "CF3N-17",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "notes": "Raw source facts, answer claim spans and retained qualifiers reviewed; no annotation gap found."
+    },
+    {
+      "case_id": "CF3N-18",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "notes": "Candidate inability and public-session requirement are preserved; no v5 cross-entity ability operation proves the defect."
+    },
+    {
+      "case_id": "CF3N-19",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "c1"
+      ],
+      "notes": "Raw source facts, answer claim spans and retained qualifiers reviewed; no annotation gap found."
+    },
+    {
+      "case_id": "CF3N-20",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "c1"
+      ],
+      "notes": "Raw source facts, answer claim spans and retained qualifiers reviewed; no annotation gap found."
+    },
+    {
+      "case_id": "PF3N-01",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "A",
+        "B"
+      ],
+      "notes": "Raw source facts, answer claim spans and retained qualifiers reviewed; no annotation gap found."
+    },
+    {
+      "case_id": "PF3N-02",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "A",
+        "B"
+      ],
+      "notes": "Raw source facts, answer claim spans and retained qualifiers reviewed; no annotation gap found."
+    },
+    {
+      "case_id": "PF3N-03",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "A",
+        "B"
+      ],
+      "notes": "Raw source facts, answer claim spans and retained qualifiers reviewed; no annotation gap found."
+    },
+    {
+      "case_id": "PF3N-04",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "A",
+        "B"
+      ],
+      "notes": "Raw source specifies one Saturday shift/month and no weekday shifts; claim A faithfully retains Saturday-only exclusivity. Sunday exclusion is not explicit. Earlier gold-pass interpretation treated the rota as exhaustive; a strict interpretation may reject or review A. No Sunday fact was invented."
+    },
+    {
+      "case_id": "PF3N-05",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "A",
+        "B",
+        "C"
+      ],
+      "notes": "Raw source facts, answer claim spans and retained qualifiers reviewed; no annotation gap found."
+    },
+    {
+      "case_id": "PF3N-06",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "A",
+        "B"
+      ],
+      "notes": "Raw first 30 days and 30-day candidate exception support singular unit day in both onboarding count measures; later remote permission stays separate from a guaranteed schedule."
+    },
+    {
+      "case_id": "PF3N-07",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "A",
+        "B"
+      ],
+      "notes": "Planned allowance and undecided amount are distinct; unknown amount is not positive compatibility."
+    },
+    {
+      "case_id": "PF3N-08",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "A",
+        "B"
+      ],
+      "notes": "Offer confirmation remains conditional; no present weekly remote count was invented."
+    },
+    {
+      "case_id": "PF3N-09",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "A",
+        "B"
+      ],
+      "notes": "Raw pending procurement and “not yet available” support separate pending-positive and available_now-negative facts; no unconditional denial is inferred."
+    },
+    {
+      "case_id": "PF3N-10",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "A",
+        "B",
+        "C"
+      ],
+      "notes": "Raw source facts, answer claim spans and retained qualifiers reviewed; no annotation gap found."
+    },
+    {
+      "case_id": "PF3N-11",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "A",
+        "B"
+      ],
+      "notes": "Two-day request is within four-day request cap subject to manager approval; grant is not inferred."
+    },
+    {
+      "case_id": "PF3N-12",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "A"
+      ],
+      "notes": "Only required schedule and local-time cutoff are explicit operands; claim does not assert an invented start time."
+    },
+    {
+      "case_id": "PF3N-13",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "A",
+        "B"
+      ],
+      "notes": "Raw source facts, answer claim spans and retained qualifiers reviewed; no annotation gap found."
+    },
+    {
+      "case_id": "PF3N-14",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "A",
+        "B"
+      ],
+      "notes": "Raw informal staff note explicitly does not amend the two-day posting. Negative supersedes fact is unchanged; the 2-day requirement and 1-day preference remain numerically incompatible."
+    },
+    {
+      "case_id": "PF3N-15",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "A",
+        "B"
+      ],
+      "notes": "Raw source facts, answer claim spans and retained qualifiers reviewed; no annotation gap found."
+    },
+    {
+      "case_id": "PF3N-16",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "A",
+        "B"
+      ],
+      "notes": "Lack of an employer commitment is modeled as absence of that commitment, not a promise to refuse captions."
+    },
+    {
+      "case_id": "PF3N-17",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "A",
+        "B"
+      ],
+      "notes": "Annual and monthly USD amounts stay distinct; conversion is budget equivalence, not payout timing."
+    },
+    {
+      "case_id": "PF3N-18",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "A",
+        "B"
+      ],
+      "notes": "Exam reimbursement and conference travel remain distinct categories."
+    },
+    {
+      "case_id": "PF3N-19",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "A"
+      ],
+      "notes": "Raw source facts, answer claim spans and retained qualifiers reviewed; no annotation gap found."
+    },
+    {
+      "case_id": "PF3N-20",
+      "source_inventory_complete": true,
+      "fragment_complete": true,
+      "claim_ids": [
+        "A"
+      ],
+      "notes": "Raw source facts, answer claim spans and retained qualifiers reviewed; no annotation gap found."
+    }
+  ],
+  "scope_limitations": [
+    "Agent-reviewed exposed known cases; no blind holdout, raw-text extraction test, real-world source validation, or human approval.",
+    "PF3N-04 remains a raw/gold interpretation tension about unmentioned Sundays; source does not explicitly exclude them.",
+    "CF3N-18 cross-entity ability mechanism and broad qualitative/conditional reasoning remain outside the narrow v5 correction."
+  ]
+}

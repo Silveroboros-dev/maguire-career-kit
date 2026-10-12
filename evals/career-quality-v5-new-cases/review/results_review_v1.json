@@ -1,0 +1,1363 @@
+{
+  "schema": "maguire-v5-new-cases-results-review-v1",
+  "created_at_utc": "2026-10-12T18:16:11.288026+00:00",
+  "human_approved": false,
+  "reviewer": "separate AI semantic reviewer",
+  "checker_rerun": false,
+  "frozen_files_edited": false,
+  "files": {
+    "FREEZE.json": {
+      "sha256": "53f4e2d0fee558a31760b7b900a2dab56965c94234c126e1996bc2e977ff5256",
+      "bytes": 22700
+    },
+    "START.json": {
+      "sha256": "7cd8d883fa6aea9f08528facdff8c9ff938c25effea3ab7100629a7f276019b8",
+      "bytes": 3661
+    },
+    "runs/new-cases-v5/RECEIPT.json": {
+      "sha256": "1a1b94638e57b09f38cc71650b0a089bb3629ecaae6e4999747301f8dac2d1a2",
+      "bytes": 1202
+    },
+    "runs/new-cases-v5/predictions.jsonl": {
+      "sha256": "1cebef2a541bc0d72b302f99f7df91fe3be5659d3304b063b7530baea0e7e339",
+      "bytes": 56358
+    },
+    "runs/new-cases-v5/measurement.json": {
+      "sha256": "dab89ba9e0a91c6977201964a73fdecb12901951b27c61cd1ceb447325956adc",
+      "bytes": 91022
+    },
+    "runs/new-cases-v5/packets.jsonl": {
+      "sha256": "9aff72ade7a98cb3105b378641fae9e88b9ad7984e84551020e939eaa7eed100",
+      "bytes": 107484
+    },
+    "runs/new-cases-v5/mapping.json": {
+      "sha256": "24b41659385ba0079e701695a70e2b5960d5c8f1a30b54d1595e5c572e9f83a4",
+      "bytes": 9983
+    },
+    "review/annotation_review_v2.json": {
+      "sha256": "08aa2efd2f52d0d8feda58884be48f8a74a753bb31fc226c9d88aee26d27cc0d",
+      "bytes": 17658
+    },
+    "review/challenge_packet_v2.json": {
+      "sha256": "84bca2f5af320128a0eecceef513f57d6323456a1563591b9ce184ae72a89ad4",
+      "bytes": 10474
+    },
+    "raw/candidate-fit.json": {
+      "sha256": "8ddcce7a7a0cdc9e9986dbc68eec5b4b436dc31b5b6cbda02d786f3a041404b5",
+      "bytes": 15635
+    },
+    "raw/preference-fit.json": {
+      "sha256": "7dbdd88b9c0cbb83e23e7aacba554f0a65b175eb4dac3d861ce14a0913fdfff0",
+      "bytes": 17078
+    },
+    "normalized/candidate-fit.json": {
+      "sha256": "db3457cf314f3cf5e59b26ebeb6da17707ccfa256c4b8a1d00dd9cbb35df05eb",
+      "bytes": 60750
+    },
+    "normalized/preference-fit.json": {
+      "sha256": "67c13fdf43f59d1f2d712e0c8bff5b4bf3d8b1ca630a0c44b3291fc12f3d7821",
+      "bytes": 54163
+    },
+    "gold/candidate-fit.json": {
+      "sha256": "e9da4250f0c486a4b1d0340f5a378a2c63f60d6e063f397862f828e6465c0718",
+      "bytes": 5747
+    },
+    "gold/preference-fit.json": {
+      "sha256": "a0d0d6651b581af6977d2b0e636ad8b5aea0eb72e894f9169f20a8ddc4dace94",
+      "bytes": 5203
+    }
+  },
+  "measurement_summary": {
+    "total": 40,
+    "gold_pass": 25,
+    "gold_fail": 12,
+    "gold_needs_review": 3,
+    "pass_as_pass": 9,
+    "pass_as_fail": 0,
+    "pass_as_review": 16,
+    "fail_as_pass": 0,
+    "fail_as_fail": 7,
+    "fail_as_review": 5,
+    "review_as_review": 3,
+    "invalid": 0,
+    "execution_errors": 0,
+    "intended_error_claims_flagged": 7,
+    "intended_error_claims_total": 12,
+    "bad_fragments_rejected_only_on_other_claims": 0
+  },
+  "review_scope": {
+    "nonambiguous_deferred": 21,
+    "appropriate_ambiguous_reviews": 3,
+    "bad_fail_localizations": 7,
+    "reviewed_rows": 31
+  },
+  "case_dispositions": [
+    {
+      "case_id": "CF5H-01",
+      "family": "candidate-fit",
+      "gold": "pass",
+      "prediction": "needs_review",
+      "raw_answer": "Mara maintained the archive migration ledger for over a year and recorded weekly handoffs.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "review_claim_ids": [
+        "c2"
+      ],
+      "classification": "checker_coverage_limit",
+      "assessment": "c2 handoff_recording is unregistered. Source explicitly records weekly handoffs, and c1 duration passed; the good fragment was deferred for a sound second clause.",
+      "claim_traces": [
+        {
+          "id": "c1",
+          "verdict": "pass",
+          "rule": "bounded_direct_entailment",
+          "evidence_relation": "supported",
+          "support_evidence_ids": [
+            "CF5H-01-s1"
+          ],
+          "counter_evidence_ids": [],
+          "limited_evidence_ids": [],
+          "axes": [],
+          "explanation": "Actual positive count or explicit elapsed months support the narrower assertion."
+        },
+        {
+          "id": "c2",
+          "verdict": "needs_review",
+          "rule": "unknown_predicate",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "limited_evidence_ids": [],
+          "axes": [
+            "predicate"
+          ],
+          "explanation": "Predicate has no registered comparison rule."
+        }
+      ]
+    },
+    {
+      "case_id": "CF5H-02",
+      "family": "candidate-fit",
+      "gold": "fail",
+      "prediction": "needs_review",
+      "raw_answer": "Mara presented two customer demos during the April 2025 pilot.",
+      "intended_error_claim_ids": [
+        "c1"
+      ],
+      "failed_claim_ids": [],
+      "review_claim_ids": [
+        "c1"
+      ],
+      "classification": "checker_coverage_limit",
+      "assessment": "c1 demo_presentation is unregistered, so the checker did not use the explicit statement that Mara did not present either demo. The faulty claim was deferred.",
+      "claim_traces": [
+        {
+          "id": "c1",
+          "verdict": "needs_review",
+          "rule": "unknown_predicate",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "limited_evidence_ids": [],
+          "axes": [
+            "predicate"
+          ],
+          "explanation": "Predicate has no registered comparison rule."
+        }
+      ]
+    },
+    {
+      "case_id": "CF5H-03",
+      "family": "candidate-fit",
+      "gold": "pass",
+      "prediction": "needs_review",
+      "raw_answer": "Mara facilitated four post-incident reviews and documented their follow-up owners. The role requires post-incident review facilitation.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "review_claim_ids": [
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "classification": "checker_coverage_limit",
+      "assessment": "Incident-review facilitation and follow-up documentation predicates are unregistered. All three source-backed clauses were deferred.",
+      "claim_traces": [
+        {
+          "id": "c1",
+          "verdict": "needs_review",
+          "rule": "unknown_predicate",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "limited_evidence_ids": [],
+          "axes": [
+            "predicate"
+          ],
+          "explanation": "Predicate has no registered comparison rule."
+        },
+        {
+          "id": "c2",
+          "verdict": "needs_review",
+          "rule": "unknown_predicate",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "limited_evidence_ids": [],
+          "axes": [
+            "predicate"
+          ],
+          "explanation": "Predicate has no registered comparison rule."
+        },
+        {
+          "id": "c3",
+          "verdict": "needs_review",
+          "rule": "unknown_predicate",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "limited_evidence_ids": [],
+          "axes": [
+            "predicate"
+          ],
+          "explanation": "Predicate has no registered comparison rule."
+        }
+      ]
+    },
+    {
+      "case_id": "CF5H-05",
+      "family": "candidate-fit",
+      "gold": "needs_review",
+      "prediction": "needs_review",
+      "raw_answer": "Mara's recorded-caption QA experience is transferable to live-caption operation.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "review_claim_ids": [
+        "c1"
+      ],
+      "classification": "appropriate_review_by_fallback",
+      "assessment": "Recorded-caption QA transferability to live operation is genuinely evaluative. Unknown fit_relevance caused review; the trace did not reason over the recorded/live distinction.",
+      "claim_traces": [
+        {
+          "id": "c1",
+          "verdict": "needs_review",
+          "rule": "unknown_predicate",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "limited_evidence_ids": [],
+          "axes": [
+            "predicate"
+          ],
+          "explanation": "Predicate has no registered comparison rule."
+        }
+      ]
+    },
+    {
+      "case_id": "CF5H-06",
+      "family": "candidate-fit",
+      "gold": "fail",
+      "prediction": "fail",
+      "raw_answer": "This role currently permits Mara to work remotely three days a week.",
+      "intended_error_claim_ids": [
+        "c1"
+      ],
+      "failed_claim_ids": [
+        "c1"
+      ],
+      "review_claim_ids": [],
+      "classification": "correct_rejection",
+      "assessment": "c1 is the intended faulty claim. Evidence-gap rule rejects a current three-day role permission; trace includes former-employer history and current zero-day role term, but does not directly label their contradiction.",
+      "claim_traces": [
+        {
+          "id": "c1",
+          "verdict": "fail",
+          "rule": "evidence_gap",
+          "evidence_relation": "not_established",
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "limited_evidence_ids": [
+            "CF5H-06-s1",
+            "CF5H-06-s2"
+          ],
+          "axes": [
+            "subject",
+            "scope",
+            "time",
+            "measure"
+          ],
+          "explanation": "Available evidence does not establish the asserted proposition: role / remote_work / work_location."
+        }
+      ]
+    },
+    {
+      "case_id": "CF5H-08",
+      "family": "candidate-fit",
+      "gold": "pass",
+      "prediction": "needs_review",
+      "raw_answer": "Mara coordinated three vendor cutovers under engineering signoff; the role requires cutover coordination.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "review_claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "classification": "checker_coverage_limit",
+      "assessment": "Both candidate cutover coordination and role requirement use an unregistered predicate. The source-backed engineering-signoff boundary remained intact in normalization.",
+      "claim_traces": [
+        {
+          "id": "c1",
+          "verdict": "needs_review",
+          "rule": "unknown_predicate",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "limited_evidence_ids": [],
+          "axes": [
+            "predicate"
+          ],
+          "explanation": "Predicate has no registered comparison rule."
+        },
+        {
+          "id": "c2",
+          "verdict": "needs_review",
+          "rule": "unknown_predicate",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "limited_evidence_ids": [],
+          "axes": [
+            "predicate"
+          ],
+          "explanation": "Predicate has no registered comparison rule."
+        }
+      ]
+    },
+    {
+      "case_id": "CF5H-09",
+      "family": "candidate-fit",
+      "gold": "fail",
+      "prediction": "fail",
+      "raw_answer": "Mara holds the CISSP certification required by the role.",
+      "intended_error_claim_ids": [
+        "c1"
+      ],
+      "failed_claim_ids": [
+        "c1"
+      ],
+      "review_claim_ids": [],
+      "classification": "correct_rejection",
+      "assessment": "c1 false CISSP possession is flagged by opposite-polarity evidence from the candidate source; c2 true role requirement passes. Correct claim localization.",
+      "claim_traces": [
+        {
+          "id": "c1",
+          "verdict": "fail",
+          "rule": "opposite_polarity",
+          "evidence_relation": "contradicted",
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [
+            "CF5H-09-s1"
+          ],
+          "limited_evidence_ids": [
+            "CF5H-09-s2"
+          ],
+          "axes": [
+            "subject",
+            "modality",
+            "polarity"
+          ],
+          "explanation": "Applicable evidence states the opposite polarity."
+        },
+        {
+          "id": "c2",
+          "verdict": "pass",
+          "rule": "direct_support",
+          "evidence_relation": "supported",
+          "support_evidence_ids": [
+            "CF5H-09-s2"
+          ],
+          "counter_evidence_ids": [],
+          "limited_evidence_ids": [
+            "CF5H-09-s1"
+          ],
+          "axes": [
+            "subject",
+            "modality"
+          ],
+          "explanation": "Direct support found."
+        }
+      ]
+    },
+    {
+      "case_id": "CF5H-11",
+      "family": "candidate-fit",
+      "gold": "pass",
+      "prediction": "needs_review",
+      "raw_answer": "The role does not require production Kubernetes experience, and Mara has only used it in a personal lab.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "review_claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "classification": "checker_coverage_limit",
+      "assessment": "Kubernetes-use predicates are unregistered, so both true lab-only experience and the waived production requirement were deferred.",
+      "claim_traces": [
+        {
+          "id": "c1",
+          "verdict": "needs_review",
+          "rule": "unknown_predicate",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "limited_evidence_ids": [],
+          "axes": [
+            "predicate"
+          ],
+          "explanation": "Predicate has no registered comparison rule."
+        },
+        {
+          "id": "c2",
+          "verdict": "needs_review",
+          "rule": "unknown_predicate",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "limited_evidence_ids": [],
+          "axes": [
+            "predicate"
+          ],
+          "explanation": "Predicate has no registered comparison rule."
+        }
+      ]
+    },
+    {
+      "case_id": "CF5H-12",
+      "family": "candidate-fit",
+      "gold": "fail",
+      "prediction": "fail",
+      "raw_answer": "Mara processed all five boxes in the legal archive by September 2025.",
+      "intended_error_claim_ids": [
+        "c1"
+      ],
+      "failed_claim_ids": [
+        "c1"
+      ],
+      "review_claim_ids": [],
+      "classification": "correct_rejection",
+      "assessment": "c1 false all-five-boxes assertion is flagged as an evidence gap against the two-processed/three-unprocessed inventory. Correct localization, although the rule does not express the explicit total contradiction.",
+      "claim_traces": [
+        {
+          "id": "c1",
+          "verdict": "fail",
+          "rule": "evidence_gap",
+          "evidence_relation": "not_established",
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "limited_evidence_ids": [
+            "CF5H-12-s1"
+          ],
+          "axes": [
+            "measure",
+            "object"
+          ],
+          "explanation": "Available evidence does not establish the asserted proposition: candidate / archive_processing / legal archive boxes."
+        }
+      ]
+    },
+    {
+      "case_id": "CF5H-13",
+      "family": "candidate-fit",
+      "gold": "needs_review",
+      "prediction": "needs_review",
+      "raw_answer": "Mara drafted the API migration plan for the 2025 pilot.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "review_claim_ids": [
+        "c1"
+      ],
+      "classification": "appropriate_review_by_fallback",
+      "assessment": "Two active sources genuinely conflict on plan authorship. Unknown plan_drafting led to review without tracing the conflict or Jo alternative; label agreement is not conflict-detection evidence.",
+      "claim_traces": [
+        {
+          "id": "c1",
+          "verdict": "needs_review",
+          "rule": "unknown_predicate",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "limited_evidence_ids": [],
+          "axes": [
+            "predicate"
+          ],
+          "explanation": "Predicate has no registered comparison rule."
+        }
+      ]
+    },
+    {
+      "case_id": "CF5H-14",
+      "family": "candidate-fit",
+      "gold": "pass",
+      "prediction": "needs_review",
+      "raw_answer": "Mara wrote three bilingual French/English onboarding guides, and the role requires bilingual written onboarding guides.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "review_claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "classification": "checker_coverage_limit",
+      "assessment": "Guide-writing is unregistered; candidate written bilingual work and matching written-guide role requirement were both deferred.",
+      "claim_traces": [
+        {
+          "id": "c1",
+          "verdict": "needs_review",
+          "rule": "unknown_predicate",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "limited_evidence_ids": [],
+          "axes": [
+            "predicate"
+          ],
+          "explanation": "Predicate has no registered comparison rule."
+        },
+        {
+          "id": "c2",
+          "verdict": "needs_review",
+          "rule": "unknown_predicate",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "limited_evidence_ids": [],
+          "axes": [
+            "predicate"
+          ],
+          "explanation": "Predicate has no registered comparison rule."
+        }
+      ]
+    },
+    {
+      "case_id": "CF5H-15",
+      "family": "candidate-fit",
+      "gold": "fail",
+      "prediction": "needs_review",
+      "raw_answer": "Mara cut mean triage time by 30% that quarter.",
+      "intended_error_claim_ids": [
+        "c1"
+      ],
+      "failed_claim_ids": [],
+      "review_claim_ids": [
+        "c1"
+      ],
+      "classification": "checker_coverage_limit",
+      "assessment": "Triage-time reduction is unregistered, so c1 avoided a false pass but failed to use team-only attribution and the explicit lack of individual attribution.",
+      "claim_traces": [
+        {
+          "id": "c1",
+          "verdict": "needs_review",
+          "rule": "unknown_predicate",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "limited_evidence_ids": [],
+          "axes": [
+            "predicate"
+          ],
+          "explanation": "Predicate has no registered comparison rule."
+        }
+      ]
+    },
+    {
+      "case_id": "CF5H-16",
+      "family": "candidate-fit",
+      "gold": "pass",
+      "prediction": "needs_review",
+      "raw_answer": "Mara has written rollback plans for three internal pilots. The role requires rollback-plan documentation.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "review_claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "classification": "checker_coverage_limit",
+      "assessment": "Rollback plan writing and documentation predicates are unregistered. Both true pilot-scope clauses were deferred.",
+      "claim_traces": [
+        {
+          "id": "c1",
+          "verdict": "needs_review",
+          "rule": "unknown_predicate",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "limited_evidence_ids": [],
+          "axes": [
+            "predicate"
+          ],
+          "explanation": "Predicate has no registered comparison rule."
+        },
+        {
+          "id": "c2",
+          "verdict": "needs_review",
+          "rule": "unknown_predicate",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "limited_evidence_ids": [],
+          "axes": [
+            "predicate"
+          ],
+          "explanation": "Predicate has no registered comparison rule."
+        }
+      ]
+    },
+    {
+      "case_id": "CF5H-17",
+      "family": "candidate-fit",
+      "gold": "pass",
+      "prediction": "needs_review",
+      "raw_answer": "Mara completed the data privacy course in May 2025; she did not take the certification exam.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "review_claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "classification": "checker_coverage_limit",
+      "assessment": "Course completion and certification-exam predicates are unregistered. Both clauses match the active correction, but neither was decided.",
+      "claim_traces": [
+        {
+          "id": "c1",
+          "verdict": "needs_review",
+          "rule": "unknown_predicate",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "limited_evidence_ids": [],
+          "axes": [
+            "predicate"
+          ],
+          "explanation": "Predicate has no registered comparison rule."
+        },
+        {
+          "id": "c2",
+          "verdict": "needs_review",
+          "rule": "unknown_predicate",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "limited_evidence_ids": [],
+          "axes": [
+            "predicate"
+          ],
+          "explanation": "Predicate has no registered comparison rule."
+        }
+      ]
+    },
+    {
+      "case_id": "CF5H-18",
+      "family": "candidate-fit",
+      "gold": "fail",
+      "prediction": "needs_review",
+      "raw_answer": "Mara has queried production customer databases with SQL, as the role requires.",
+      "intended_error_claim_ids": [
+        "c1"
+      ],
+      "failed_claim_ids": [],
+      "review_claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "classification": "checker_coverage_limit",
+      "assessment": "SQL-query predicate is unregistered. The explicit negative production-database fact did not trigger failure on c1; the true role requirement c2 was also deferred.",
+      "claim_traces": [
+        {
+          "id": "c1",
+          "verdict": "needs_review",
+          "rule": "unknown_predicate",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "limited_evidence_ids": [],
+          "axes": [
+            "predicate"
+          ],
+          "explanation": "Predicate has no registered comparison rule."
+        },
+        {
+          "id": "c2",
+          "verdict": "needs_review",
+          "rule": "unknown_predicate",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "limited_evidence_ids": [],
+          "axes": [
+            "predicate"
+          ],
+          "explanation": "Predicate has no registered comparison rule."
+        }
+      ]
+    },
+    {
+      "case_id": "CF5H-19",
+      "family": "candidate-fit",
+      "gold": "pass",
+      "prediction": "needs_review",
+      "raw_answer": "Mara has handled onboarding in both French and English, and the role requires bilingual onboarding.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "review_claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "classification": "checker_coverage_limit",
+      "assessment": "Client-onboarding predicate is unregistered; candidate French/English sessions and role requirement were deferred.",
+      "claim_traces": [
+        {
+          "id": "c1",
+          "verdict": "needs_review",
+          "rule": "unknown_predicate",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "limited_evidence_ids": [],
+          "axes": [
+            "predicate"
+          ],
+          "explanation": "Predicate has no registered comparison rule."
+        },
+        {
+          "id": "c2",
+          "verdict": "needs_review",
+          "rule": "unknown_predicate",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "limited_evidence_ids": [],
+          "axes": [
+            "predicate"
+          ],
+          "explanation": "Predicate has no registered comparison rule."
+        }
+      ]
+    },
+    {
+      "case_id": "CF5H-20",
+      "family": "candidate-fit",
+      "gold": "pass",
+      "prediction": "needs_review",
+      "raw_answer": "Mara wrote a pilot runbook and trained three operators on it; the role calls for runbook writing and operator training.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "review_claim_ids": [
+        "c1",
+        "c2",
+        "c3",
+        "c4"
+      ],
+      "classification": "checker_coverage_limit",
+      "assessment": "Runbook writing and operator training predicates are unregistered; all four true pilot and role clauses were deferred.",
+      "claim_traces": [
+        {
+          "id": "c1",
+          "verdict": "needs_review",
+          "rule": "unknown_predicate",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "limited_evidence_ids": [],
+          "axes": [
+            "predicate"
+          ],
+          "explanation": "Predicate has no registered comparison rule."
+        },
+        {
+          "id": "c2",
+          "verdict": "needs_review",
+          "rule": "unknown_predicate",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "limited_evidence_ids": [],
+          "axes": [
+            "predicate"
+          ],
+          "explanation": "Predicate has no registered comparison rule."
+        },
+        {
+          "id": "c3",
+          "verdict": "needs_review",
+          "rule": "unknown_predicate",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "limited_evidence_ids": [],
+          "axes": [
+            "predicate"
+          ],
+          "explanation": "Predicate has no registered comparison rule."
+        },
+        {
+          "id": "c4",
+          "verdict": "needs_review",
+          "rule": "unknown_predicate",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "limited_evidence_ids": [],
+          "axes": [
+            "predicate"
+          ],
+          "explanation": "Predicate has no registered comparison rule."
+        }
+      ]
+    },
+    {
+      "case_id": "PF5H-02",
+      "family": "preference-fit",
+      "gold": "fail",
+      "prediction": "fail",
+      "raw_answer": "The annual allowance can cover my course-fee minimum.",
+      "intended_error_claim_ids": [
+        "c1"
+      ],
+      "failed_claim_ids": [
+        "c1"
+      ],
+      "review_claim_ids": [],
+      "classification": "correct_rejection",
+      "assessment": "c1 false course-fee coverage is flagged as an evidence gap. Trace includes travel-only allowance and course-fee preference; category restriction makes the raw answer wrong.",
+      "claim_traces": [
+        {
+          "id": "c1",
+          "verdict": "fail",
+          "rule": "evidence_gap",
+          "evidence_relation": "not_established",
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "limited_evidence_ids": [
+            "s1",
+            "s2"
+          ],
+          "axes": [
+            "object",
+            "scope",
+            "measure",
+            "modality",
+            "subject"
+          ],
+          "explanation": "Available evidence does not establish the asserted proposition: role / learning_allowance / course_fees."
+        }
+      ]
+    },
+    {
+      "case_id": "PF5H-03",
+      "family": "preference-fit",
+      "gold": "pass",
+      "prediction": "needs_review",
+      "raw_answer": "The two required station days fit my three-day onboarding cap, with remote work permitted afterward subject to manager approval.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "review_claim_ids": [
+        "c1"
+      ],
+      "classification": "checker_rule_gap",
+      "assessment": "Onboarding operation demands identical remote and station-attendance scopes. Raw post-onboarding remote permission has manager approval, which cannot be removed without losing a material condition; it therefore abstains despite a sound conditional fit.",
+      "claim_traces": [
+        {
+          "id": "c1",
+          "verdict": "needs_review",
+          "rule": "onboarding_operands",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "limited_evidence_ids": [
+            "s1",
+            "s2",
+            "s3"
+          ],
+          "axes": [
+            "predicate",
+            "object",
+            "modality",
+            "time",
+            "scope"
+          ],
+          "explanation": "Onboarding and later remote permission are not explicitly aligned."
+        }
+      ]
+    },
+    {
+      "case_id": "PF5H-04",
+      "family": "preference-fit",
+      "gold": "pass",
+      "prediction": "needs_review",
+      "raw_answer": "The onboarding arrangement may meet my preference if remote approval follows the team review.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "review_claim_ids": [
+        "c1"
+      ],
+      "classification": "checker_rule_gap",
+      "assessment": "Conditional stance is rejected by operation_stance before evaluating the source. The raw sentence asserts only that fit may follow future approval, which the separate semantic review judged supported.",
+      "claim_traces": [
+        {
+          "id": "c1",
+          "verdict": "needs_review",
+          "rule": "operation_stance",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "limited_evidence_ids": [
+            "s1",
+            "s2",
+            "s3"
+          ],
+          "axes": [
+            "stance"
+          ],
+          "explanation": "The operation requires an asserted proposition or advice."
+        }
+      ]
+    },
+    {
+      "case_id": "PF5H-05",
+      "family": "preference-fit",
+      "gold": "pass",
+      "prediction": "needs_review",
+      "raw_answer": "The Saturday 11:00–13:00 on-call shift is inside my Saturday window and adds no weekday duty.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "review_claim_ids": [
+        "c1"
+      ],
+      "classification": "normalization_runtime_mismatch",
+      "assessment": "No-weekday preference is normalized as weekday_set rather than the checker weekday vocabulary. The selected Saturday offer and preference also have distinct time windows and an only qualifier, so a simple key correction alone would not establish fit under strict context matching. The raw answer remains supported.",
+      "claim_traces": [
+        {
+          "id": "c1",
+          "verdict": "needs_review",
+          "rule": "competing_terms",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "limited_evidence_ids": [
+            "s1",
+            "s2"
+          ],
+          "axes": [
+            "source_conflict"
+          ],
+          "explanation": "Another active term or explicit supersession changes the selected evidence."
+        }
+      ]
+    },
+    {
+      "case_id": "PF5H-06",
+      "family": "preference-fit",
+      "gold": "fail",
+      "prediction": "needs_review",
+      "raw_answer": "The mandatory Sunday shift fits my no-Sunday rule.",
+      "intended_error_claim_ids": [
+        "c1"
+      ],
+      "failed_claim_ids": [],
+      "review_claim_ids": [
+        "c1"
+      ],
+      "classification": "checker_rule_gap",
+      "assessment": "The role requires a Sunday 11:00-13:00 duty and the preference prohibits Sunday duty at any hour. Exact context matching rejects the broader prohibition and defers a semantic contradiction.",
+      "claim_traces": [
+        {
+          "id": "c1",
+          "verdict": "needs_review",
+          "rule": "context_mismatch",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "limited_evidence_ids": [
+            "s1",
+            "s2"
+          ],
+          "axes": [
+            "scope",
+            "time"
+          ],
+          "explanation": "Property context or time is not retained across operands and claim."
+        }
+      ]
+    },
+    {
+      "case_id": "PF5H-08",
+      "family": "preference-fit",
+      "gold": "fail",
+      "prediction": "fail",
+      "raw_answer": "My five-day monthly request is within the post-probation limit.",
+      "intended_error_claim_ids": [
+        "c1"
+      ],
+      "failed_claim_ids": [
+        "c1"
+      ],
+      "review_claim_ids": [],
+      "classification": "correct_rejection",
+      "assessment": "c1 five-day request above a three-day post-probation permission ceiling is flagged by permission_envelope with both evidence sources. Correct localization.",
+      "claim_traces": [
+        {
+          "id": "c1",
+          "verdict": "fail",
+          "rule": "permission_envelope",
+          "evidence_relation": "contradicted",
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [
+            "s1",
+            "s2"
+          ],
+          "limited_evidence_ids": [],
+          "axes": [
+            "measure"
+          ],
+          "explanation": "Requested interval compared with the explicit permission ceiling; grant is not inferred."
+        }
+      ]
+    },
+    {
+      "case_id": "PF5H-09",
+      "family": "preference-fit",
+      "gold": "pass",
+      "prediction": "needs_review",
+      "raw_answer": "Confirm the pending course-fee allowance before treating this budget preference as met.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "review_claim_ids": [
+        "c1"
+      ],
+      "classification": "normalization_modality_dispute",
+      "assessment": "Raw employer status is currently undecided; normalization uses possibility instead of observation for the pending fact. The frozen pending operation accepts only observation/commitment, producing status_unknown. Gold pass for confirmation advice remains sound; this is an avoidable encoding dispute, not evidence of a non-pending offer.",
+      "claim_traces": [
+        {
+          "id": "c1",
+          "verdict": "needs_review",
+          "rule": "status_unknown",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "limited_evidence_ids": [
+            "s1",
+            "s2"
+          ],
+          "axes": [
+            "scope.status"
+          ],
+          "explanation": "The offer is not explicitly pending."
+        }
+      ]
+    },
+    {
+      "case_id": "PF5H-10",
+      "family": "preference-fit",
+      "gold": "needs_review",
+      "prediction": "needs_review",
+      "raw_answer": "The station-attendance requirement fits my four-day cap.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "review_claim_ids": [
+        "c1"
+      ],
+      "classification": "appropriate_conflict_detection",
+      "assessment": "The three-day and five-day active onboarding terms straddle the four-day cap. competing_terms reviews with s1/s2/s3 in the trace, matching the genuine unresolved gold reading.",
+      "claim_traces": [
+        {
+          "id": "c1",
+          "verdict": "needs_review",
+          "rule": "competing_terms",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "limited_evidence_ids": [
+            "s1",
+            "s3",
+            "s2"
+          ],
+          "axes": [
+            "source_conflict"
+          ],
+          "explanation": "Another active term or explicit supersession changes the selected evidence."
+        }
+      ]
+    },
+    {
+      "case_id": "PF5H-11",
+      "family": "preference-fit",
+      "gold": "pass",
+      "prediction": "needs_review",
+      "raw_answer": "This role's one Basel client-site day per month stays within my two-day monthly cap for this role.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "review_claim_ids": [
+        "c1"
+      ],
+      "classification": "normalization_runtime_mismatch",
+      "assessment": "Offer normalization retains role-only travel as scope.only, while the preference/reading retain role scope without only. The frozen numeric constraint requires exact scope equality and abstains; raw one-day-only Basel travel fits the two-day cap.",
+      "claim_traces": [
+        {
+          "id": "c1",
+          "verdict": "needs_review",
+          "rule": "context_mismatch",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "limited_evidence_ids": [
+            "s1",
+            "s2"
+          ],
+          "axes": [
+            "scope",
+            "time"
+          ],
+          "explanation": "Property context or time is not retained across operands and claim."
+        }
+      ]
+    },
+    {
+      "case_id": "PF5H-14",
+      "family": "preference-fit",
+      "gold": "fail",
+      "prediction": "fail",
+      "raw_answer": "Four station days remain mandatory in the current onboarding rule.",
+      "intended_error_claim_ids": [
+        "c1"
+      ],
+      "failed_claim_ids": [
+        "c1"
+      ],
+      "review_claim_ids": [],
+      "classification": "correct_rejection",
+      "assessment": "c1 false current four-day rule is flagged as an evidence gap with old and replacement source IDs. Correct localization; the rule trace does not by itself prove supersession reasoning.",
+      "claim_traces": [
+        {
+          "id": "c1",
+          "verdict": "fail",
+          "rule": "evidence_gap",
+          "evidence_relation": "not_established",
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "limited_evidence_ids": [
+            "s1",
+            "s2"
+          ],
+          "axes": [
+            "scope",
+            "measure"
+          ],
+          "explanation": "Available evidence does not establish the asserted proposition: role / station_attendance / onboarding."
+        }
+      ]
+    },
+    {
+      "case_id": "PF5H-16",
+      "family": "preference-fit",
+      "gold": "fail",
+      "prediction": "fail",
+      "raw_answer": "The role guarantees a USD 600 monthly on-call stipend.",
+      "intended_error_claim_ids": [
+        "c1"
+      ],
+      "failed_claim_ids": [
+        "c1"
+      ],
+      "review_claim_ids": [],
+      "classification": "correct_rejection",
+      "assessment": "c1 guaranteed exact USD 600 stipend is flagged as an evidence gap against an unfunded possible maximum. Correct localization, with modality/amount limits visible in trace.",
+      "claim_traces": [
+        {
+          "id": "c1",
+          "verdict": "fail",
+          "rule": "evidence_gap",
+          "evidence_relation": "not_established",
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "limited_evidence_ids": [
+            "s1"
+          ],
+          "axes": [
+            "scope",
+            "measure",
+            "modality"
+          ],
+          "explanation": "Available evidence does not establish the asserted proposition: role / stipend / on_call_compensation."
+        }
+      ]
+    },
+    {
+      "case_id": "PF5H-17",
+      "family": "preference-fit",
+      "gold": "pass",
+      "prediction": "needs_review",
+      "raw_answer": "The only required Wednesday demo finishes before my 13:00 cutoff.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "review_claim_ids": [
+        "c1"
+      ],
+      "classification": "normalization_runtime_mismatch",
+      "assessment": "Faithful Wednesday is stored in scope.weekday, while schedule_before expects time.weekday and reading.scope to retain only. The operation stops at schedule_context before the 12:30 versus 13:00 comparison; raw answer is supported.",
+      "claim_traces": [
+        {
+          "id": "c1",
+          "verdict": "needs_review",
+          "rule": "schedule_context",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "limited_evidence_ids": [
+            "s1",
+            "s2"
+          ],
+          "axes": [
+            "scope",
+            "time",
+            "modality"
+          ],
+          "explanation": "The schedule is not an exhaustive same-zone weekday requirement with matching prohibition."
+        }
+      ]
+    },
+    {
+      "case_id": "PF5H-18",
+      "family": "preference-fit",
+      "gold": "fail",
+      "prediction": "needs_review",
+      "raw_answer": "The required Tuesday demo ends before my 14:00 cutoff.",
+      "intended_error_claim_ids": [
+        "c1"
+      ],
+      "failed_claim_ids": [],
+      "review_claim_ids": [
+        "c1"
+      ],
+      "classification": "normalization_runtime_mismatch",
+      "assessment": "Faithful Tuesday is stored in scope.weekday, while schedule_before expects time.weekday and retained exhaustive scope. It stops at schedule_context before seeing that 15:00 exceeds the 14:00 cutoff, leaving a bad claim deferred.",
+      "claim_traces": [
+        {
+          "id": "c1",
+          "verdict": "needs_review",
+          "rule": "schedule_context",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "limited_evidence_ids": [
+            "s1",
+            "s2"
+          ],
+          "axes": [
+            "scope",
+            "time",
+            "modality"
+          ],
+          "explanation": "The schedule is not an exhaustive same-zone weekday requirement with matching prohibition."
+        }
+      ]
+    },
+    {
+      "case_id": "PF5H-20",
+      "family": "preference-fit",
+      "gold": "pass",
+      "prediction": "needs_review",
+      "raw_answer": "Live captions are unavailable now, while procurement is pending without a promised activation date. Confirm availability before assuming my first-day caption requirement is met.",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "review_claim_ids": [
+        "c3",
+        "c4"
+      ],
+      "classification": "mixed_rule_and_normalization_gap",
+      "assessment": "c1 current unavailability and c2 pending procurement pass. c3 absence of promised activation date uses unregistered activation_date_promised. c4 pending advice faces possibility modality and first-day time/context mismatch under the frozen pending operation. The full raw advice is semantically supported.",
+      "claim_traces": [
+        {
+          "id": "c1",
+          "verdict": "pass",
+          "rule": "direct_support",
+          "evidence_relation": "supported",
+          "support_evidence_ids": [
+            "s1"
+          ],
+          "counter_evidence_ids": [],
+          "limited_evidence_ids": [
+            "s1",
+            "s2"
+          ],
+          "axes": [
+            "scope",
+            "modality",
+            "subject",
+            "time"
+          ],
+          "explanation": "Direct support found."
+        },
+        {
+          "id": "c2",
+          "verdict": "pass",
+          "rule": "direct_support",
+          "evidence_relation": "supported",
+          "support_evidence_ids": [
+            "s1"
+          ],
+          "counter_evidence_ids": [],
+          "limited_evidence_ids": [
+            "s1",
+            "s2"
+          ],
+          "axes": [
+            "scope",
+            "subject",
+            "time",
+            "modality"
+          ],
+          "explanation": "Direct support found."
+        },
+        {
+          "id": "c3",
+          "verdict": "needs_review",
+          "rule": "unknown_predicate",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "limited_evidence_ids": [],
+          "axes": [
+            "predicate"
+          ],
+          "explanation": "Predicate has no registered comparison rule."
+        },
+        {
+          "id": "c4",
+          "verdict": "needs_review",
+          "rule": "context_mismatch",
+          "evidence_relation": null,
+          "support_evidence_ids": [],
+          "counter_evidence_ids": [],
+          "limited_evidence_ids": [
+            "s1",
+            "s2"
+          ],
+          "axes": [
+            "scope",
+            "time"
+          ],
+          "explanation": "Pending context is not retained across operands and claim."
+        }
+      ]
+    }
+  ],
+  "cross_case_findings": [
+    "All 21 nonambiguous abstentions are retained: 16 supported fragments and 5 erroneous fragments. None is counted as accepted or detected.",
+    "The three gold-ambiguous fragments all receive needs_review. CF5H-05 and CF5H-13 agree by unknown-predicate fallback, not by detected transferability uncertainty or source conflict; PF5H-10 explicitly cites competing terms.",
+    "Seven of twelve faulty claims are flagged on the intended claim ID; no bad fragment was rejected only on another claim. Five correct rejections are evidence gaps rather than explicit contradiction explanations.",
+    "Candidate-fit has broad predicate coverage limits. Preference-fit has both rule limits and normalization/runtime interface mismatches, especially pending modality and schedule weekday placement.",
+    "No final gold verdict is disputed by this post-run review. No raw, normalized, gold, checker or measured artifact was changed after freeze."
+  ],
+  "limitations": [
+    "This is an agent-authored, agent-reviewed synthetic cohort and is not a human-approved or statistically representative blind holdout.",
+    "The local receipt and hashes detect byte drift within this workspace but are not external signatures.",
+    "This review uses saved predictions and traces only; it does not rerun the grader or repair measured cases."
+  ]
+}

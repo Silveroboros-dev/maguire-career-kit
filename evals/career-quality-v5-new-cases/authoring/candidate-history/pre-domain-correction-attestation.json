@@ -1,0 +1,72 @@
+{
+  "schema": "maguire-v5-new-author-attestation",
+  "family": "candidate-fit",
+  "author": "Codex candidate-fit author",
+  "model_identity": "GPT-6 family; exact deployed model identifier unavailable to this author",
+  "human_approved": false,
+  "checker_code_seen": false,
+  "previous_cases_seen": false,
+  "predictions_seen": false,
+  "read_boundary": {
+    "allowed_files_actually_read": [
+      "AGENTS.md",
+      "README.md",
+      "CREDITS.md",
+      "evals/career-quality-v5-new-cases/AUTHORING.md",
+      "evals/career-quality-v5-new-cases/FROZEN_SCHEMA.md",
+      "evals/career-quality-v5-new-cases/authoring/candidate-fit.py",
+      "evals/career-quality-v5-new-cases/raw/candidate-fit.json",
+      "evals/career-quality-v5-new-cases/normalized/candidate-fit.json",
+      "evals/career-quality-v5-new-cases/gold/candidate-fit.json"
+    ],
+    "forbidden_material_accessed": false,
+    "external_api_or_network_used": false,
+    "checker_executed": false,
+    "git_write_used": false
+  },
+  "files_authored": {
+    "evals/career-quality-v5-new-cases/authoring/candidate-fit.py": {
+      "sha256": "73d85e8a2ff2960de369c1af13cc6c18b6fd84756377995f87f84bb886441928",
+      "bytes": 26639
+    },
+    "evals/career-quality-v5-new-cases/raw/candidate-fit.json": {
+      "sha256": "f14edd1549245510e196b3d79f850b3d6bcc7901816d0a8e3cf047e56b36ddee",
+      "bytes": 14891
+    },
+    "evals/career-quality-v5-new-cases/normalized/candidate-fit.json": {
+      "sha256": "98a06b1893614c13eab0fb251eb62d9430641bca02de63417a4eeb57a6c4c987",
+      "bytes": 55429
+    },
+    "evals/career-quality-v5-new-cases/gold/candidate-fit.json": {
+      "sha256": "725e808684a0d3ec6b55a2feabe77f6ba1cd16e1943c93141162d99408b8b8f9",
+      "bytes": 5517
+    },
+    "evals/career-quality-v5-new-cases/authoring/candidate-history/reviewed-original.json": {
+      "sha256": "81349f4bd6e7a470bba5be821094e9b3407e487ccd637bef550d49a32d31d3c9",
+      "bytes": 14854
+    },
+    "evals/career-quality-v5-new-cases/authoring/candidate-history/remote-corrected.json": {
+      "sha256": "3fb5614f99fe5940af73ce7b23ed00a445b8e1ca92d20b41da0f0d42f4ae0ed9",
+      "bytes": 14886
+    },
+    "evals/career-quality-v5-new-cases/authoring/candidate-history/REVISION_LOG.md": {
+      "sha256": "03a14aab710495369ecffaab983a98f79a922235495c24ec55f090568b0105a9",
+      "bytes": 1192
+    }
+  },
+  "attestation_self_hash_excluded": true,
+  "coverage": {
+    "case_count": 20,
+    "verdict_counts": {
+      "pass": 12,
+      "fail": 6,
+      "needs_review": 2
+    },
+    "composition": "Independent fictional candidate records paired with role notices, employer updates, and preferences. Cases combine temporal scope, source authority, numeric bounds, conditional permission, quantifier strength, category, attribution, and status. Passes retain useful claims, including monthly/yearly stipend equivalence and explicit attendance supersession; failures identify overclaims; reviews reflect flexible preference judgment and unresolved conflicting employer terms.",
+    "raw_revision_history": "Earlier reviewer-visible raw bytes and change reasons preserved in authoring/candidate-history/REVISION_LOG.md."
+  },
+  "limitations": [
+    "Author gold is semantic judgment from the complete fictional raw inventory; no grader predictions informed it.",
+    "Human approval and independent raw-only review remain pending."
+  ]
+}

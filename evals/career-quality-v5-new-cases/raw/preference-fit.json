@@ -1,0 +1,513 @@
+{
+  "schema": "maguire-v5-new-raw",
+  "family": "preference-fit",
+  "human_approved": false,
+  "exposure": {
+    "checker_code_seen": false,
+    "previous_cases_seen": false,
+    "predictions_seen": false
+  },
+  "rows": [
+    {
+      "case_id": "PF5H-01",
+      "title": "Course-fee budget across periods",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "s1",
+          "text": "The role provides CHF 1,800 per calendar year for course fees.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "s2",
+          "text": "I need at least CHF 120 per calendar month for course fees.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The course-fee allowance meets my CHF 120 monthly minimum on an annual-budget basis."
+      }
+    },
+    {
+      "case_id": "PF5H-02",
+      "title": "Travel money is not tuition money",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "s1",
+          "text": "The CHF 2,400 annual allowance covers conference travel only; it cannot pay course fees.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "s2",
+          "text": "My minimum is CHF 1,200 a year for course fees.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The annual allowance can cover my course-fee minimum."
+      }
+    },
+    {
+      "case_id": "PF5H-03",
+      "title": "Station onboarding followed by conditional remote work",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "s1",
+          "text": "New hires must attend the station for two days during onboarding.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "s2",
+          "text": "After onboarding, remote work is permitted with manager approval.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "s3",
+          "text": "I can attend at most three onboarding days and need remote work afterward; manager approval is acceptable.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The two required station days fit my three-day onboarding cap, with remote work permitted afterward subject to manager approval."
+      }
+    },
+    {
+      "case_id": "PF5H-04",
+      "title": "Remote approval remains discretionary",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "s1",
+          "text": "Onboarding requires two station days.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "s2",
+          "text": "After onboarding, remote work may be approved following a team review; no approval has been issued.",
+          "kind": "employer_update",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "s3",
+          "text": "I can do up to three station days if remote work is available after onboarding.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The onboarding arrangement may meet my preference if remote approval follows the team review."
+      }
+    },
+    {
+      "case_id": "PF5H-05",
+      "title": "Saturday support window",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "s1",
+          "text": "The only on-call shift is Saturday 11:00–13:00, role-local time.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "s2",
+          "text": "I accept Saturday on-call work from 10:00–14:00 role-local time, but no weekday on-call work.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The Saturday 11:00–13:00 on-call shift is inside my Saturday window and adds no weekday duty."
+      }
+    },
+    {
+      "case_id": "PF5H-06",
+      "title": "Sunday duty against a Sunday prohibition",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "s1",
+          "text": "The role requires on-call coverage every Sunday 11:00–13:00 local time.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "s2",
+          "text": "I cannot take Sunday on-call duty at any hour.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The mandatory Sunday shift fits my no-Sunday rule."
+      }
+    },
+    {
+      "case_id": "PF5H-07",
+      "title": "Remote request under a conditional cap",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "s1",
+          "text": "Employees may request up to four remote days per calendar month with manager approval.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "s2",
+          "text": "I would request two remote days per calendar month, subject to manager approval.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "A request for two remote days a month is within the stated four-day limit, subject to manager approval."
+      }
+    },
+    {
+      "case_id": "PF5H-08",
+      "title": "Remote request above the cap",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "s1",
+          "text": "Staff may request up to three remote days per calendar month after probation, with manager approval.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "s2",
+          "text": "After probation I need to request five remote days each calendar month, subject to approval.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "My five-day monthly request is within the post-probation limit."
+      }
+    },
+    {
+      "case_id": "PF5H-09",
+      "title": "Pending learning allowance",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "s1",
+          "text": "The course-fee allowance for this role is still undecided; no amount has been approved.",
+          "kind": "employer_update",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "s2",
+          "text": "I need at least EUR 900 per calendar year for course fees.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "Confirm the pending course-fee allowance before treating this budget preference as met."
+      }
+    },
+    {
+      "case_id": "PF5H-10",
+      "title": "Unresolved onboarding revisions",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "s1",
+          "text": "The role sheet requires three station days during onboarding.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "s2",
+          "text": "The recruiter sheet requires five station days during onboarding; it does not state that it replaces the role sheet.",
+          "kind": "employer_update",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "s3",
+          "text": "I can attend at most four station days in onboarding.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The station-attendance requirement fits my four-day cap."
+      }
+    },
+    {
+      "case_id": "PF5H-11",
+      "title": "Travel cadence scoped to the role",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "s1",
+          "text": "This role requires one client-site day each calendar month in Basel, and no other travel.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "s2",
+          "text": "For this role I accept up to two Basel client-site days per calendar month.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "This role's one Basel client-site day per month stays within my two-day monthly cap for this role."
+      }
+    },
+    {
+      "case_id": "PF5H-12",
+      "title": "Paid leadership learning time after probation",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "s1",
+          "text": "After the three-month probation period, the role provides four paid learning hours per calendar month for leadership courses.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "s2",
+          "text": "After probation, I need at least three paid learning hours per calendar month for leadership courses.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "After probation, the four paid leadership-learning hours per month meet my three-hour minimum."
+      }
+    },
+    {
+      "case_id": "PF5H-13",
+      "title": "One-day revision supersedes three-day onboarding",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "s1",
+          "text": "The earlier role sheet required three station days during onboarding.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "s2",
+          "text": "This signed update replaces the earlier role sheet's onboarding rule: one station day is required.",
+          "kind": "employer_update",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "s3",
+          "text": "I can do no more than two station days during onboarding.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The signed one-day onboarding rule fits my two-day cap."
+      }
+    },
+    {
+      "case_id": "PF5H-14",
+      "title": "Superseded rule described as current",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "s1",
+          "text": "The original role sheet required four onboarding station days.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "s2",
+          "text": "This update replaces the original onboarding rule: two station days are now required.",
+          "kind": "employer_update",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "Four station days remain mandatory in the current onboarding rule."
+      }
+    },
+    {
+      "case_id": "PF5H-15",
+      "title": "Committed on-call stipend",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "s1",
+          "text": "For required evening on-call duty, the employer will pay a USD 400 stipend each calendar month.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "s2",
+          "text": "For evening on-call duty I require at least USD 400 per calendar month.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The committed USD 400 monthly evening on-call stipend meets my USD 400 monthly minimum."
+      }
+    },
+    {
+      "case_id": "PF5H-16",
+      "title": "Possible stipend presented as guaranteed",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "s1",
+          "text": "A project-funded stipend may pay up to USD 600 per calendar month for on-call work; funding has not been approved.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The role guarantees a USD 600 monthly on-call stipend."
+      }
+    },
+    {
+      "case_id": "PF5H-17",
+      "title": "Training demo before daily cutoff",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "s1",
+          "text": "The only required training demo is on Wednesday 09:00–12:30 role-local time.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "s2",
+          "text": "I cannot attend training demos after 13:00 on Wednesdays, role-local time.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The only required Wednesday demo finishes before my 13:00 cutoff."
+      }
+    },
+    {
+      "case_id": "PF5H-18",
+      "title": "Training demo crosses cutoff",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "s1",
+          "text": "The only required training demo is Tuesday 13:00–15:00 role-local time.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "s2",
+          "text": "I cannot attend Tuesday training demos after 14:00 role-local time.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The required Tuesday demo ends before my 14:00 cutoff."
+      }
+    },
+    {
+      "case_id": "PF5H-19",
+      "title": "Withdrawn remote restriction",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "s1",
+          "text": "Remote work is prohibited for this role.",
+          "kind": "employer_update",
+          "status": "withdrawn",
+          "observed_at": "2026-09-30T09:00:00Z"
+        },
+        {
+          "id": "s2",
+          "text": "The active role terms permit remote work on Fridays with supervisor approval.",
+          "kind": "employer_update",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The active terms permit Friday remote work with supervisor approval."
+      }
+    },
+    {
+      "case_id": "PF5H-20",
+      "title": "Captions unavailable now, procurement pending",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "s1",
+          "text": "Live captions are not available now; procurement is pending, with no activation date promised.",
+          "kind": "employer_update",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "s2",
+          "text": "I need live captions in work meetings from my first day.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "Live captions are unavailable now, while procurement is pending without a promised activation date. Confirm availability before assuming my first-day caption requirement is met."
+      }
+    }
+  ]
+}

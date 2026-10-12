@@ -1,0 +1,74 @@
+{
+  "schema": "maguire-quality-gold-v1",
+  "case_id": "CF-10",
+  "family": "inferred versus explicit requirement",
+  "title": "Unstated degree assumption",
+  "review_status": "proposed_agent_authored",
+  "human_approved": false,
+  "units": [
+    {
+      "target_id": "jd_1",
+      "kind": "duty",
+      "allowed_labels": [
+        "supported"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_1",
+          "fact_1"
+        ]
+      ],
+      "rationale": "The self-report matches the pipeline duty.",
+      "required_points": [
+        "Daily Python cleaning is reported"
+      ],
+      "forbidden_inferences": [
+        "Do not infer uptime or scale"
+      ]
+    },
+    {
+      "target_id": "jd_2",
+      "kind": "duty",
+      "allowed_labels": [
+        "supported"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_2",
+          "fact_2"
+        ]
+      ],
+      "rationale": "The note documents validation rules.",
+      "required_points": [
+        "Operations validation rules are supplied"
+      ],
+      "forbidden_inferences": [
+        "Do not infer formal approval"
+      ]
+    }
+  ],
+  "forbidden_assessment_targets": [],
+  "acceptable_actions": [
+    "pursue",
+    "show_existing_evidence"
+  ],
+  "critical_errors": [
+    {
+      "id": "CF-10-E1",
+      "description": "The JD contains no degree requirement; the conclusion invents one.",
+      "target_ids": [
+        "jd_1"
+      ]
+    },
+    {
+      "id": "CF-10-E2",
+      "description": "No source supplies pipeline scale.",
+      "target_ids": [
+        "jd_1"
+      ]
+    }
+  ],
+  "notes": [
+    "The job specifies pipeline and documentation work, with no university degree minimum to infer."
+  ]
+}

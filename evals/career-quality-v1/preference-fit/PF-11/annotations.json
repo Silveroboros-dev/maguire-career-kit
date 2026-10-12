@@ -1,0 +1,69 @@
+{
+  "schema": "maguire-quality-annotations-v1",
+  "case_id": "PF-11",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The hours and live overlap fit exactly; the annual base at the contracted hours remains unknown.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_02",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The scheduling requirements stay within both candidate bounds, with pay still open.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_03",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "jd_schedule requires overlap through 17:00 Europe/Zurich, exactly the inclusive end of pref_overlap's availability. That endpoint is within bounds; the supported label is aligned.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "preference_interpretation",
+        "description": "Misinterprets the overlap preference in Part-time hours and time-zone bounds.",
+        "changed_paths": [
+          "/assessments/1/label",
+          "/assessments/1/rationale"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "PF-INTERPRETATION",
+          "severity": "critical",
+          "target_id": "pref_overlap",
+          "explanation": "jd_schedule requires overlap through 17:00 Europe/Zurich, exactly the inclusive end of pref_overlap's availability. That endpoint is within bounds; the supported label is aligned."
+        }
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "jd_pay gives proration but no annual base figure, so it cannot establish pref_pay's CHF 100,000 target at part-time hours. Keep pay unknown and request the actual contracted-hours base amount.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "incompatible_action",
+        "description": "Ignores the assessed overlap preference in the Part-time hours and time-zone bounds conclusion.",
+        "changed_paths": [
+          "/conclusion/action",
+          "/conclusion/text",
+          "/conclusion/next_step"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "PF-UNKNOWN",
+          "severity": "major",
+          "target_id": "pref_pay",
+          "explanation": "jd_pay gives proration but no annual base figure, so it cannot establish pref_pay's CHF 100,000 target at part-time hours. Keep pay unknown and request the actual contracted-hours base amount."
+        }
+      ]
+    }
+  ]
+}

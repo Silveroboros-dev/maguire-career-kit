@@ -1,0 +1,60 @@
+{
+  "schema": "maguire-quality-input-v1",
+  "case_id": "PF-11",
+  "grader": "preference_fit",
+  "data_class": "synthetic",
+  "decision_at": "2026-10-12T10:00:00Z",
+  "task": "Assess this role against the candidate's recorded work preferences using only the supplied sources. Explain each preference judgment and recommend a supported next step.",
+  "jd": {
+    "title": "Part-Time Data Analyst",
+    "sources": [
+      {
+        "id": "jd_schedule",
+        "text": "This position is 24–28 paid hours per week. Required live overlap is 13:00–17:00 Europe/Zurich on each scheduled workday.",
+        "observed_at": "2026-10-01T09:00:00Z",
+        "authority": "job_description",
+        "supersedes": []
+      },
+      {
+        "id": "jd_location",
+        "text": "Work is fully remote from within Switzerland.",
+        "observed_at": "2026-10-01T09:00:00Z",
+        "authority": "job_description",
+        "supersedes": []
+      },
+      {
+        "id": "jd_pay",
+        "text": "Compensation is prorated by contracted hours; no annual base range is published.",
+        "observed_at": "2026-10-01T09:00:00Z",
+        "authority": "job_description",
+        "supersedes": []
+      }
+    ]
+  },
+  "candidate": {
+    "facts": [],
+    "preferences": [
+      {
+        "id": "pref_hours",
+        "text": "I require a contract between 24 and 28 paid hours per week, inclusive.",
+        "priority": "must_have",
+        "allowed_exceptions": [],
+        "confirmed_at": "2026-09-25T12:00:00Z"
+      },
+      {
+        "id": "pref_overlap",
+        "text": "I can attend required live meetings from 12:00 to 17:00 Europe/Zurich, inclusive, and not later.",
+        "priority": "must_have",
+        "allowed_exceptions": [],
+        "confirmed_at": "2026-09-25T12:00:00Z"
+      },
+      {
+        "id": "pref_pay",
+        "text": "I prefer an annual base amount of at least CHF 100,000 at the agreed part-time hours.",
+        "priority": "nice_to_have",
+        "allowed_exceptions": [],
+        "confirmed_at": "2026-09-25T12:00:00Z"
+      }
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema": "maguire-quality-annotations-v1",
+  "case_id": "PF-10",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The corrected office requirement violates the zero-office must-have, though the four-day schedule matches.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_02",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The current corrected term conflicts with zero office days; the candidate permits one exception inquiry.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_03",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "jd_replacement explicitly withdraws jd_original's fully remote term and requires two office days. pref_remote requires zero, so current alignment is false and the supported label is conflict.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "preference_interpretation",
+        "description": "Misinterprets the remote preference in Explicit update replaces remote term with office requirement.",
+        "changed_paths": [
+          "/assessments/0/label",
+          "/assessments/0/rationale"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "PF-INTERPRETATION",
+          "severity": "critical",
+          "target_id": "pref_remote",
+          "explanation": "jd_replacement explicitly withdraws jd_original's fully remote term and requires two office days. pref_remote requires zero, so current alignment is false and the supported label is conflict."
+        }
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "The explicit correction supersedes the old remote term and imposes two office days against pref_remote's zero-office requirement. Do not apply using withdrawn terms; pass or make the one candidate-permitted exception inquiry.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "incompatible_action",
+        "description": "Ignores the assessed remote preference in the Explicit update replaces remote term with office requirement conclusion.",
+        "changed_paths": [
+          "/conclusion/action",
+          "/conclusion/text",
+          "/conclusion/next_step"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "PF-ACTION",
+          "severity": "critical",
+          "target_id": "pref_remote",
+          "explanation": "The explicit correction supersedes the old remote term and imposes two office days against pref_remote's zero-office requirement. Do not apply using withdrawn terms; pass or make the one candidate-permitted exception inquiry."
+        }
+      ]
+    }
+  ]
+}

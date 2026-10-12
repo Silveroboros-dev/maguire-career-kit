@@ -1,0 +1,69 @@
+{
+  "schema": "maguire-quality-annotations-v1",
+  "case_id": "PF-08",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The salary and learning allowance are attractive, but four mandatory on-site days violate the remote must-have.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_02",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The published role conflicts with the remote must-have, and the candidate allows one documented-exception check.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_03",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "jd_office requires four on-site days while pref_remote requires none. CHF 175,000+ base and a learning allowance are nice-to-haves, so the correct remote label is conflict.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "preference_interpretation",
+        "description": "Misinterprets the remote preference in Soft benefits cannot compensate for required office attendance.",
+        "changed_paths": [
+          "/assessments/0/label",
+          "/assessments/0/rationale"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "PF-INTERPRETATION",
+          "severity": "critical",
+          "target_id": "pref_remote",
+          "explanation": "jd_office requires four on-site days while pref_remote requires none. CHF 175,000+ base and a learning allowance are nice-to-haves, so the correct remote label is conflict."
+        }
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "Four mandatory on-site days in jd_office violate pref_remote's zero-day must-have. The salary and learning benefits cannot outweigh it; pass under the published policy or use the candidate-authorized one-exception check.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "incompatible_action",
+        "description": "Ignores the assessed remote preference in the Soft benefits cannot compensate for required office attendance conclusion.",
+        "changed_paths": [
+          "/conclusion/action",
+          "/conclusion/text",
+          "/conclusion/next_step"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "PF-ACTION",
+          "severity": "critical",
+          "target_id": "pref_remote",
+          "explanation": "Four mandatory on-site days in jd_office violate pref_remote's zero-day must-have. The salary and learning benefits cannot outweigh it; pass under the published policy or use the candidate-authorized one-exception check."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "schema": "maguire-quality-answers-v1",
+  "case_id": "PF2-01",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "assessments": [
+        {
+          "target_id": "pref_1",
+          "label": "conflict",
+          "evidence": [
+            {
+              "source_id": "pref_1",
+              "quote": "I can work daytime shifts only; evening shifts are a must-have exclusion, but I am willing to ask whether a different day-only role exists."
+            },
+            {
+              "source_id": "jd_1",
+              "quote": "The host is scheduled for two evening performances each week; the posted schedule has no exception process."
+            }
+          ],
+          "rationale": "The posted role requires two evenings weekly, while the candidate excludes evenings. Asking about a separate daytime role is permitted but does not waive this schedule."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "The posted host schedule conflicts with the candidate's daytime-only condition.",
+        "next_step": "Ask whether a distinct daytime role exists; do not present this role as schedule-compatible."
+      },
+      "limitations": [
+        "No authorized employer exception for this posted schedule is supplied."
+      ]
+    },
+    {
+      "answer_id": "answer_02",
+      "assessments": [
+        {
+          "target_id": "pref_1",
+          "label": "conflict",
+          "evidence": [
+            {
+              "source_id": "pref_1",
+              "quote": "I can work daytime shifts only; evening shifts are a must-have exclusion, but I am willing to ask whether a different day-only role exists."
+            },
+            {
+              "source_id": "jd_1",
+              "quote": "The host is scheduled for two evening performances each week; the posted schedule has no exception process."
+            }
+          ],
+          "rationale": "The posted role requires two evenings weekly, while the candidate excludes evenings. Asking about a separate daytime role is permitted but does not waive this schedule."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "Even if a day-only opening might exist, this particular host schedule remains a conflict.",
+        "next_step": "Check for a separate daytime vacancy before any application to it."
+      },
+      "limitations": [
+        "The candidate has authorized an inquiry, not an evening-shift exception."
+      ]
+    },
+    {
+      "answer_id": "answer_03",
+      "assessments": [
+        {
+          "target_id": "pref_1",
+          "label": "conflict",
+          "evidence": [
+            {
+              "source_id": "pref_1",
+              "quote": "I can work daytime shifts only; evening shifts are a must-have exclusion, but I am willing to ask whether a different day-only role exists."
+            },
+            {
+              "source_id": "jd_1",
+              "quote": "The host is scheduled for two evening performances each week; the posted schedule has no exception process."
+            }
+          ],
+          "rationale": "The planetarium will waive the two evening performances for this candidate, so the schedule is compatible."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "The posted host schedule conflicts with the candidate's daytime-only condition.",
+        "next_step": "Ask whether a distinct daytime role exists; do not present this role as schedule-compatible."
+      },
+      "limitations": [
+        "No authorized employer exception for this posted schedule is supplied."
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "assessments": [
+        {
+          "target_id": "pref_1",
+          "label": "conflict",
+          "evidence": [
+            {
+              "source_id": "pref_1",
+              "quote": "I can work daytime shifts only; evening shifts are a must-have exclusion, but I am willing to ask whether a different day-only role exists."
+            },
+            {
+              "source_id": "jd_1",
+              "quote": "The host is scheduled for two evening performances each week; the posted schedule has no exception process."
+            }
+          ],
+          "rationale": "The posted role requires two evenings weekly, while the candidate excludes evenings. Asking about a separate daytime role is permitted but does not waive this schedule."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "The schedule looks conflicting, but the employer's routine exception process guarantees daytime-only placement in this role.",
+        "next_step": "Ask whether a distinct daytime role exists; do not present this role as schedule-compatible."
+      },
+      "limitations": [
+        "No authorized employer exception for this posted schedule is supplied."
+      ]
+    }
+  ]
+}

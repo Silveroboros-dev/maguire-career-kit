@@ -1,0 +1,69 @@
+{
+  "schema": "maguire-quality-annotations-v1",
+  "case_id": "CF-04",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The candidate reports an expired internal training certificate while the current certificate is mandatory; calibration logging remains supported.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_02",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The second response also passes because the internal certificate is still expired, while retaining the calibration log for later review.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_03",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "The candidate says the internal training certificate expired; past completion does not satisfy a current-certificate minimum.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "ignore minimum",
+        "description": "The candidate says the internal training certificate expired; past completion does not satisfy a current-certificate minimum.",
+        "changed_paths": [
+          "/assessments/0/label",
+          "/assessments/0/rationale"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "CF-LABEL",
+          "severity": "critical",
+          "target_id": "jd_1",
+          "explanation": "The candidate says the internal training certificate expired; past completion does not satisfy a current-certificate minimum."
+        }
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "Calibration work cannot substitute for the explicitly mandatory current internal training certificate.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "positive strength overrides minimum",
+        "description": "Calibration work cannot substitute for the explicitly mandatory current internal training certificate.",
+        "changed_paths": [
+          "/conclusion/action",
+          "/conclusion/next_step",
+          "/conclusion/text"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "CF-ACTION",
+          "severity": "critical",
+          "target_id": "jd_1",
+          "explanation": "Calibration work cannot substitute for the explicitly mandatory current internal training certificate."
+        }
+      ]
+    }
+  ]
+}

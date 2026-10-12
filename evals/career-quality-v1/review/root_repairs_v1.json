@@ -1,0 +1,27 @@
+{
+  "schema": "maguire-quality-root-repairs-v1",
+  "date": "2026-10-12",
+  "human_review": false,
+  "repairs": [
+    {
+      "case_id": "PF-02",
+      "reason": "The alternate terms citation did not establish the required timing. Fictional employer terms now explicitly say written decisions precede the weekly planning call; literal citations updated."
+    },
+    {
+      "case_id": "CF-08",
+      "reason": "Restore unchanged next_step from base in the deliberately wrong label variant; remove unrelated mutation path."
+    }
+  ],
+  "before": {
+    "preference-fit/PF-02/input.json": "33ea4729b9f0f40429612295d715a79cd78f7f352bff5f4062f2145231478cbd",
+    "preference-fit/PF-02/answers.json": "7ccbad5e6f61a0deb3b35f8937f9b2d5f18dba37b22578a996ee5b87b58aca11",
+    "candidate-fit/CF-08/answers.json": "5415cf826ead75fd0d55aeaa63dd12c59a60624ed07488f1a719a347f6a4cdaa",
+    "candidate-fit/CF-08/annotations.json": "f2ca6f47e04484a161dd451da0c3cc518214f51e2ab8bd8ad60d3532b8a6b6b5"
+  },
+  "after": {
+    "preference-fit/PF-02/input.json": "5064d994255d776cf6cc749b8c248451e2138ba636dd11755d19fb6047a9d048",
+    "preference-fit/PF-02/answers.json": "b4c701d795db09d7142856bd5d481f453dbbb82338ed3869d9c2c943c6c8ddbe",
+    "candidate-fit/CF-08/answers.json": "3cc99b2d5bff723c85f8f256aefeffecc6c63a01e2bbe770f861ffca15ea5122",
+    "candidate-fit/CF-08/annotations.json": "026328d09215d21d5e446a19ed71d6823484b24f7fc018082dbb1ecbf931c4be"
+  }
+}

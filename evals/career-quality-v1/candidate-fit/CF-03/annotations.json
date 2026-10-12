@@ -1,0 +1,68 @@
+{
+  "schema": "maguire-quality-annotations-v1",
+  "case_id": "CF-03",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The waiver is handled as entry context; Python work is supported and operational skill remains open.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_02",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "An incident scenario can test the unknown skill while preserving the waiver boundary.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_03",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "Waiving past experience does not prove ability to perform future operations.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "waiver proves skill",
+        "description": "Waiving past experience does not prove ability to perform future operations.",
+        "changed_paths": [
+          "/assessments/0/label",
+          "/assessments/0/rationale"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "CF-SCOPE",
+          "severity": "critical",
+          "target_id": "jd_2",
+          "explanation": "Waiving past experience does not prove ability to perform future operations."
+        }
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "The explicit absence of prior work does not prove inability for a future duty.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "past absence proves inability",
+        "description": "The explicit absence of prior work does not prove inability for a future duty.",
+        "changed_paths": [
+          "/assessments/0/label",
+          "/assessments/0/rationale"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "CF-UNCERTAINTY",
+          "severity": "major",
+          "target_id": "jd_2",
+          "explanation": "The explicit absence of prior work does not prove inability for a future duty."
+        }
+      ]
+    }
+  ]
+}

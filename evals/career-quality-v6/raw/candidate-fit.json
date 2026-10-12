@@ -1,0 +1,450 @@
+{
+  "schema": "maguire-v5-new-raw",
+  "family": "candidate-fit",
+  "human_approved": false,
+  "exposure": {
+    "checker_code_seen": false,
+    "previous_cases_seen": false,
+    "predictions_seen": false
+  },
+  "rows": [
+    {
+      "case_id": "CF5H-01",
+      "title": "Ledger continuity",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF5H-01-s1",
+          "text": "From January 2024 through March 2025, Mara maintained the archive migration ledger and recorded weekly handoffs for the archive team.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "Mara maintained the archive migration ledger for over a year and recorded weekly handoffs."
+      }
+    },
+    {
+      "case_id": "CF5H-02",
+      "title": "Shadowing versus presenting",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF5H-02-s1",
+          "text": "During the April 2025 pilot, Mara was permitted to shadow two customer demos; she did not present either demo.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "Mara presented two customer demos during the April 2025 pilot."
+      }
+    },
+    {
+      "case_id": "CF5H-03",
+      "title": "Post-incident review facilitation",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF5H-03-s1",
+          "text": "Between March and August 2025, Mara facilitated four post-incident reviews for the municipal data service and documented the follow-up owners.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "CF5H-03-s2",
+          "text": "This role requires facilitation of post-incident reviews.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "Mara facilitated four post-incident reviews and documented their follow-up owners. The role requires post-incident review facilitation."
+      }
+    },
+    {
+      "case_id": "CF5H-04",
+      "title": "Pilot alert handling",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF5H-04-s1",
+          "text": "In a six-week service pilot in 2025, Mara triaged 18 alerts and escalated three of them to the SRE team.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "Mara triaged alerts and escalated three to the SRE team during the six-week service pilot."
+      }
+    },
+    {
+      "case_id": "CF5H-05",
+      "title": "Recorded captions versus live operation",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF5H-05-s1",
+          "text": "Mara tested caption accuracy in recorded interviews during a 2025 accessibility pilot; she did not operate captions during live interviews.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "CF5H-05-s2",
+          "text": "This role requires operating live captions in customer interviews.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "Mara's recorded-caption QA experience is transferable to live-caption operation."
+      }
+    },
+    {
+      "case_id": "CF5H-06",
+      "title": "Historical remote permission",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF5H-06-s1",
+          "text": "In 2023, Mara's former employer permitted three remote-work days per week; that employment ended in December 2023.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "CF5H-06-s2",
+          "text": "This role currently requires office attendance on all five weekdays and permits no remote-work days.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "This role currently permits Mara to work remotely three days a week."
+      }
+    },
+    {
+      "case_id": "CF5H-07",
+      "title": "OCR experience and certificate",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF5H-07-s1",
+          "text": "Mara used OCR to review scans for indexing during the June–August 2025 pilot. She has not earned an OCR training certificate.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "Mara has OCR indexing experience, but no OCR training certificate."
+      }
+    },
+    {
+      "case_id": "CF5H-08",
+      "title": "Vendor cutover coordination",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF5H-08-s1",
+          "text": "During a 2025 pilot, Mara coordinated three vendor cutovers, each under engineering signoff.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "CF5H-08-s2",
+          "text": "This role requires vendor cutover coordination.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "Mara coordinated three vendor cutovers under engineering signoff; the role requires cutover coordination."
+      }
+    },
+    {
+      "case_id": "CF5H-09",
+      "title": "Course versus certification",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF5H-09-s1",
+          "text": "Mara completed an internal security awareness course and has not earned CISSP certification.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "CF5H-09-s2",
+          "text": "This role requires CISSP certification.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "Mara holds the CISSP certification required by the role."
+      }
+    },
+    {
+      "case_id": "CF5H-10",
+      "title": "Escalation with decision boundary",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF5H-10-s1",
+          "text": "During the 2025 service pilot, Mara escalated two severity-one alerts to the incident lead; the lead made the final incident decisions.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "CF5H-10-s2",
+          "text": "This role requires incident escalation experience.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "Mara escalated two severity-one alerts to an incident lead during the pilot, while the lead made final decisions. The role requires incident escalation experience."
+      }
+    },
+    {
+      "case_id": "CF5H-11",
+      "title": "Lab versus production",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF5H-11-s1",
+          "text": "Mara only ran Kubernetes in a personal lab for four weeks and has not operated it in production.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "CF5H-11-s2",
+          "text": "Production Kubernetes experience is not required for this role.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The role does not require production Kubernetes experience, and Mara has only used it in a personal lab."
+      }
+    },
+    {
+      "case_id": "CF5H-12",
+      "title": "Partial archive processing",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF5H-12-s1",
+          "text": "By September 2025, Mara processed two of the five boxes in the legal archive; the remaining three were unprocessed.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "Mara processed all five boxes in the legal archive by September 2025."
+      }
+    },
+    {
+      "case_id": "CF5H-13",
+      "title": "Conflicting plan authorship",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF5H-13-s1",
+          "text": "Mara personally drafted the API migration plan for the 2025 pilot.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "CF5H-13-s2",
+          "text": "Mara reviewed, but did not draft, the API migration plan for the 2025 pilot; Jo wrote it.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "Mara drafted the API migration plan for the 2025 pilot."
+      }
+    },
+    {
+      "case_id": "CF5H-14",
+      "title": "Written bilingual onboarding",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF5H-14-s1",
+          "text": "Mara wrote three bilingual French/English client onboarding guides; she has not conducted live client onboarding in either language.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "CF5H-14-s2",
+          "text": "This role requires bilingual written onboarding guides.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "Mara wrote three bilingual French/English onboarding guides, and the role requires bilingual written onboarding guides."
+      }
+    },
+    {
+      "case_id": "CF5H-15",
+      "title": "Team outcome attribution",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF5H-15-s1",
+          "text": "As one of six analysts, Mara tagged support tickets. The team reduced mean triage time by 30% that quarter; the report attributed no portion of the reduction to an individual.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "Mara cut mean triage time by 30% that quarter."
+      }
+    },
+    {
+      "case_id": "CF5H-16",
+      "title": "Pilot rollback planning",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF5H-16-s1",
+          "text": "Mara wrote rollback plans for three internal pilot deployments; none of the plans were used in production.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "CF5H-16-s2",
+          "text": "This role requires documenting deployment rollback plans.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "Mara has written rollback plans for three internal pilots. The role requires rollback-plan documentation."
+      }
+    },
+    {
+      "case_id": "CF5H-17",
+      "title": "Corrected course record",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF5H-17-s1",
+          "text": "An old draft says Mara was certified in data privacy in May 2025.",
+          "kind": "candidate_fact",
+          "status": "withdrawn",
+          "observed_at": "2025-05-30T12:00:00Z"
+        },
+        {
+          "id": "CF5H-17-s2",
+          "text": "Correction: Mara completed the vendor's data privacy course in May 2025 but did not take the certification exam.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "Mara completed the data privacy course in May 2025; she did not take the certification exam."
+      }
+    },
+    {
+      "case_id": "CF5H-18",
+      "title": "Sandbox SQL versus production data",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF5H-18-s1",
+          "text": "Mara ran SQL queries on synthetic data in a sandbox; she has not queried a production customer database.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "CF5H-18-s2",
+          "text": "This role requires production customer database query experience.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "Mara has queried production customer databases with SQL, as the role requires."
+      }
+    },
+    {
+      "case_id": "CF5H-19",
+      "title": "Bilingual onboarding",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF5H-19-s1",
+          "text": "In 2025, Mara handled four client onboarding sessions: two in French and two in English.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "CF5H-19-s2",
+          "text": "Bilingual client onboarding is required for this role.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "Mara has handled onboarding in both French and English, and the role requires bilingual onboarding."
+      }
+    },
+    {
+      "case_id": "CF5H-20",
+      "title": "Pilot runbook and training",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF5H-20-s1",
+          "text": "Mara wrote a runbook for a one-month pilot and trained three operators on it. The runbook was not used in production.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "CF5H-20-s2",
+          "text": "The role asks for runbook writing and operator training.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "Mara wrote a pilot runbook and trained three operators on it; the role calls for runbook writing and operator training."
+      }
+    }
+  ]
+}

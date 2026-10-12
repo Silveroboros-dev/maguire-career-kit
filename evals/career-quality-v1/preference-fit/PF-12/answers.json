@@ -1,0 +1,206 @@
+{
+  "schema": "maguire-quality-answers-v1",
+  "case_id": "PF-12",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "assessments": [
+        {
+          "target_id": "pref_location",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_office",
+              "quote": "The position requires exactly two office days per week and permits three home-working days."
+            },
+            {
+              "source_id": "jd_salary",
+              "quote": "Annual base salary for this role is CHF 170,000–190,000."
+            }
+          ],
+          "rationale": "The candidate expressly accepts up to two office days when base is at least CHF 160,000; both conditions are published."
+        },
+        {
+          "target_id": "pref_travel",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_travel",
+              "quote": "Business travel is capped at 5% of working time."
+            }
+          ],
+          "rationale": "The 5% cap is below the hard 10% travel ceiling."
+        },
+        {
+          "target_id": "pref_conference",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_conference",
+              "quote": "The description does not specify a conference budget."
+            }
+          ],
+          "rationale": "The missing budget statement leaves the soft benefit unconfirmed."
+        }
+      ],
+      "conclusion": {
+        "action": "pursue",
+        "text": "The two-day hybrid schedule fits the candidate’s explicit salary-linked alternative, and the travel cap meets the hard limit.",
+        "next_step": "Pursue the role and ask whether a conference budget is offered."
+      },
+      "limitations": [
+        "The final salary offer and conference-budget policy are not supplied."
+      ]
+    },
+    {
+      "answer_id": "answer_02",
+      "assessments": [
+        {
+          "target_id": "pref_location",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_office",
+              "quote": "The position requires exactly two office days per week and permits three home-working days."
+            },
+            {
+              "source_id": "jd_salary",
+              "quote": "Annual base salary for this role is CHF 170,000–190,000."
+            }
+          ],
+          "rationale": "The candidate expressly accepts up to two office days when base is at least CHF 160,000; both conditions are published."
+        },
+        {
+          "target_id": "pref_travel",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_travel",
+              "quote": "Business travel is capped at 5% of working time."
+            }
+          ],
+          "rationale": "The 5% cap is below the hard 10% travel ceiling."
+        },
+        {
+          "target_id": "pref_conference",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_conference",
+              "quote": "The description does not specify a conference budget."
+            }
+          ],
+          "rationale": "The missing budget statement leaves the soft benefit unconfirmed."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "The candidate-owned hybrid alternative is met on the published base range; only the conference benefit is open.",
+        "next_step": "Ask about the conference budget while confirming the two office days and base floor in the first conversation."
+      },
+      "limitations": [
+        "The final salary offer and conference-budget policy are not supplied."
+      ]
+    },
+    {
+      "answer_id": "answer_03",
+      "assessments": [
+        {
+          "target_id": "pref_location",
+          "label": "conflict",
+          "evidence": [
+            {
+              "source_id": "jd_office",
+              "quote": "The position requires exactly two office days per week and permits three home-working days."
+            },
+            {
+              "source_id": "jd_salary",
+              "quote": "Annual base salary for this role is CHF 170,000–190,000."
+            }
+          ],
+          "rationale": "Any required office attendance violates the fully remote preference despite the recorded alternative."
+        },
+        {
+          "target_id": "pref_travel",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_travel",
+              "quote": "Business travel is capped at 5% of working time."
+            }
+          ],
+          "rationale": "The 5% cap is below the hard 10% travel ceiling."
+        },
+        {
+          "target_id": "pref_conference",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_conference",
+              "quote": "The description does not specify a conference budget."
+            }
+          ],
+          "rationale": "The missing budget statement leaves the soft benefit unconfirmed."
+        }
+      ],
+      "conclusion": {
+        "action": "pursue",
+        "text": "The two-day hybrid schedule fits the candidate’s explicit salary-linked alternative, and the travel cap meets the hard limit.",
+        "next_step": "Pursue the role and ask whether a conference budget is offered."
+      },
+      "limitations": [
+        "The final salary offer and conference-budget policy are not supplied."
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "assessments": [
+        {
+          "target_id": "pref_location",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_office",
+              "quote": "The position requires exactly two office days per week and permits three home-working days."
+            },
+            {
+              "source_id": "jd_salary",
+              "quote": "Annual base salary for this role is CHF 170,000–190,000."
+            }
+          ],
+          "rationale": "The candidate expressly accepts up to two office days when base is at least CHF 160,000; both conditions are published."
+        },
+        {
+          "target_id": "pref_travel",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_travel",
+              "quote": "Business travel is capped at 5% of working time."
+            }
+          ],
+          "rationale": "The 5% cap is below the hard 10% travel ceiling."
+        },
+        {
+          "target_id": "pref_conference",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_conference",
+              "quote": "The description does not specify a conference budget."
+            }
+          ],
+          "rationale": "The missing budget statement leaves the soft benefit unconfirmed."
+        }
+      ],
+      "conclusion": {
+        "action": "pass",
+        "text": "Decline solely because the role has two office days, ignoring the candidate’s explicit salary-linked alternative.",
+        "next_step": "Close the role without checking the stated exception conditions."
+      },
+      "limitations": [
+        "The final salary offer and conference-budget policy are not supplied."
+      ]
+    }
+  ]
+}

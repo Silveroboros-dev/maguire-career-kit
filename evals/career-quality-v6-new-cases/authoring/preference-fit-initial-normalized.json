@@ -1,0 +1,2202 @@
+{
+  "schema": "maguire-v6-new-normalized",
+  "family": "preference-fit",
+  "human_approved": false,
+  "exposure": {
+    "checker_code_seen": false,
+    "previous_cases_seen": false,
+    "predictions_seen": false
+  },
+  "rows": [
+    {
+      "case_id": "PF6H-01",
+      "sources": [
+        {
+          "id": "p1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "station_attendance",
+              "object": "first induction week",
+              "polarity": "positive",
+              "modality": "preference_constraint",
+              "epistemic_scope": "world",
+              "scope": {
+                "phase": "induction",
+                "limit": "one week"
+              },
+              "time": {},
+              "measure": null
+            },
+            {
+              "subject": "candidate",
+              "predicate": "remote_work",
+              "object": "after induction",
+              "polarity": "positive",
+              "modality": "preference_constraint",
+              "epistemic_scope": "world",
+              "scope": {
+                "phase": "after_induction",
+                "condition": "security clearance granted"
+              },
+              "time": {},
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "e1",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "station_attendance",
+              "object": "first induction week",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {
+                "phase": "induction"
+              },
+              "time": {},
+              "measure": {
+                "kind": "count",
+                "unit": "day",
+                "lower": 5,
+                "upper": 5,
+                "per": "week"
+              }
+            },
+            {
+              "subject": "role",
+              "predicate": "remote_work",
+              "object": "after induction",
+              "polarity": "positive",
+              "modality": "permission",
+              "epistemic_scope": "world",
+              "scope": {
+                "phase": "after_induction",
+                "condition": "security clearance granted"
+              },
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "The five station days fit my one-week induction limit.",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "station_attendance_fit",
+              "object": "first induction week",
+              "polarity": "positive",
+              "modality": "record_assessment",
+              "epistemic_scope": "packet",
+              "scope": {
+                "phase": "induction",
+                "required_days": 5,
+                "preference_limit": "one week"
+              },
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "Remote work after induction is permitted if I get security clearance.",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role",
+              "predicate": "remote_work",
+              "object": "after induction",
+              "polarity": "positive",
+              "modality": "permission",
+              "epistemic_scope": "world",
+              "scope": {
+                "phase": "after_induction",
+                "condition": "security clearance granted"
+              },
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "PF6H-02",
+      "sources": [
+        {
+          "id": "p1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "learning_allowance",
+              "object": "annual minimum",
+              "polarity": "positive",
+              "modality": "preference_constraint",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": {
+                "kind": "amount",
+                "unit": "EUR",
+                "lower": 1800,
+                "upper": null,
+                "per": "calendar_year"
+              }
+            }
+          ]
+        },
+        {
+          "id": "e1",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "learning_allowance",
+              "object": "annual offer",
+              "polarity": "positive",
+              "modality": "commitment",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": {
+                "kind": "amount",
+                "unit": "EUR",
+                "lower": 1200,
+                "upper": 1200,
+                "per": "calendar_year"
+              }
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "The role offers EUR 1,200 of annual learning allowance.",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role",
+              "predicate": "learning_allowance",
+              "object": "annual offer",
+              "polarity": "positive",
+              "modality": "commitment",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": {
+                "kind": "amount",
+                "unit": "EUR",
+                "lower": 1200,
+                "upper": 1200,
+                "per": "calendar_year"
+              }
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "That meets my EUR 1,800 annual minimum.",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "learning_allowance_fit",
+              "object": "annual minimum",
+              "polarity": "positive",
+              "modality": "record_assessment",
+              "epistemic_scope": "packet",
+              "scope": {
+                "currency": "EUR",
+                "period": "calendar_year",
+                "offered": 1200,
+                "minimum": 1800
+              },
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "PF6H-03",
+      "sources": [
+        {
+          "id": "p1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "on_call",
+              "object": "Monday through Friday",
+              "polarity": "negative",
+              "modality": "preference_constraint",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "weekday": "weekday"
+              },
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "e1",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "on_call",
+              "object": "Saturday shift",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {
+                "only": true,
+                "zone": "role_local"
+              },
+              "time": {
+                "weekday": "Saturday",
+                "start_minute": 600,
+                "end_minute": 840
+              },
+              "measure": null
+            },
+            {
+              "subject": "role",
+              "predicate": "on_call",
+              "object": "other shifts",
+              "polarity": "negative",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {
+                "only": true
+              },
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "The required on-call rota is Saturday 10:00–14:00 only",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role",
+              "predicate": "on_call",
+              "object": "Saturday shift",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {
+                "only": true,
+                "zone": "role_local"
+              },
+              "time": {
+                "weekday": "Saturday",
+                "start_minute": 600,
+                "end_minute": 840
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "it does not use a weekday I have ruled out.",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "on_call_fit",
+              "object": "weekday prohibition",
+              "polarity": "positive",
+              "modality": "record_assessment",
+              "epistemic_scope": "packet",
+              "scope": {
+                "only": true,
+                "zone": "role_local"
+              },
+              "time": {
+                "weekday": "Saturday",
+                "start_minute": 600,
+                "end_minute": 840
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "PF6H-04",
+      "sources": [
+        {
+          "id": "p1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "station_attendance",
+              "object": "mandatory office days",
+              "polarity": "negative",
+              "modality": "preference_constraint",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "phase": "after_onboarding"
+              },
+              "measure": null
+            },
+            {
+              "subject": "candidate",
+              "predicate": "station_attendance",
+              "object": "voluntary office visits",
+              "polarity": "positive",
+              "modality": "permission",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "phase": "after_onboarding"
+              },
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "e1",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "station_attendance",
+              "object": "mandatory office days",
+              "polarity": "negative",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "phase": "after_onboarding"
+              },
+              "measure": null
+            },
+            {
+              "subject": "role",
+              "predicate": "station_attendance",
+              "object": "voluntary office visits",
+              "polarity": "positive",
+              "modality": "permission",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "phase": "after_onboarding"
+              },
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "After onboarding there are no mandatory office days.",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role",
+              "predicate": "station_attendance",
+              "object": "mandatory office days",
+              "polarity": "negative",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "phase": "after_onboarding"
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "Voluntary office visits remain possible.",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role",
+              "predicate": "station_attendance",
+              "object": "voluntary office visits",
+              "polarity": "positive",
+              "modality": "permission",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "phase": "after_onboarding"
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "PF6H-05",
+      "sources": [
+        {
+          "id": "p1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "station_attendance",
+              "object": "weekly cap",
+              "polarity": "positive",
+              "modality": "preference_constraint",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "phase": "after_onboarding"
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "day",
+                "lower": null,
+                "upper": 1,
+                "per": "week"
+              }
+            }
+          ]
+        },
+        {
+          "id": "e1",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "station_attendance",
+              "object": "weekly requirement",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "phase": "after_onboarding"
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "day",
+                "lower": 1,
+                "upper": 1,
+                "per": "week"
+              }
+            }
+          ]
+        },
+        {
+          "id": "e2",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "station_attendance",
+              "object": "weekly requirement",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "phase": "after_onboarding"
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "day",
+                "lower": 2,
+                "upper": 2,
+                "per": "week"
+              }
+            },
+            {
+              "subject": "recruiting note",
+              "predicate": "supersedes",
+              "object": "role description",
+              "polarity": "negative",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "status": "unstated"
+              },
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "The one-day role description appears to match my limit",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "station_attendance_fit",
+              "object": "role description",
+              "polarity": "positive",
+              "modality": "record_assessment",
+              "epistemic_scope": "packet",
+              "scope": {
+                "source": "e1",
+                "qualified": "appears"
+              },
+              "time": {
+                "phase": "after_onboarding"
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "the later two-day note leaves the current attendance rule unresolved.",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "attendance_rule_resolution",
+              "object": "current rule",
+              "polarity": "positive",
+              "modality": "record_assessment",
+              "epistemic_scope": "packet",
+              "scope": {
+                "competing_sources": "e1,e2",
+                "resolved": false
+              },
+              "time": {
+                "phase": "after_onboarding"
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "PF6H-06",
+      "sources": [
+        {
+          "id": "p1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "stipend",
+              "object": "transport",
+              "polarity": "positive",
+              "modality": "preference_constraint",
+              "epistemic_scope": "world",
+              "scope": {
+                "status": "active",
+                "category": "transport"
+              },
+              "time": {},
+              "measure": {
+                "kind": "amount",
+                "unit": "CHF",
+                "lower": 90,
+                "upper": null,
+                "per": "calendar_month"
+              }
+            }
+          ]
+        },
+        {
+          "id": "e1",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "stipend",
+              "object": "transport",
+              "polarity": "positive",
+              "modality": "commitment",
+              "epistemic_scope": "world",
+              "scope": {
+                "draft": "early",
+                "category": "transport"
+              },
+              "time": {},
+              "measure": {
+                "kind": "amount",
+                "unit": "CHF",
+                "lower": 120,
+                "upper": 120,
+                "per": "calendar_month"
+              }
+            }
+          ]
+        },
+        {
+          "id": "e2",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "stipend",
+              "object": "transport",
+              "polarity": "negative",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "status": "current",
+                "category": "transport"
+              },
+              "time": {},
+              "measure": null
+            },
+            {
+              "subject": "employer",
+              "predicate": "withdraws",
+              "object": "early draft",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "The early draft listed CHF 120 a month.",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role",
+              "predicate": "stipend",
+              "object": "transport",
+              "polarity": "positive",
+              "modality": "commitment",
+              "epistemic_scope": "world",
+              "scope": {
+                "draft": "early",
+                "category": "transport"
+              },
+              "time": {},
+              "measure": {
+                "kind": "amount",
+                "unit": "CHF",
+                "lower": 120,
+                "upper": 120,
+                "per": "calendar_month"
+              }
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "The current offer therefore meets my transport-stipend requirement.",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "stipend_fit",
+              "object": "transport",
+              "polarity": "positive",
+              "modality": "record_assessment",
+              "epistemic_scope": "packet",
+              "scope": {
+                "status": "current",
+                "category": "transport",
+                "currency": "CHF",
+                "minimum_monthly": 90
+              },
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "PF6H-07",
+      "sources": [
+        {
+          "id": "p1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "training_demo",
+              "object": "presentation after 16:00",
+              "polarity": "negative",
+              "modality": "preference_constraint",
+              "epistemic_scope": "world",
+              "scope": {
+                "zone": "role_local",
+                "required": true
+              },
+              "time": {
+                "weekday": "Tuesday",
+                "after_minute": 960
+              },
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "e1",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "training_demo",
+              "object": "presentation",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {
+                "only": true,
+                "zone": "role_local"
+              },
+              "time": {
+                "weekday": "Tuesday",
+                "start_minute": 870,
+                "end_minute": 960
+              },
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "The required Tuesday training demo ends at 16:00, within my Tuesday cutoff.",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "training_demo_schedule_fit",
+              "object": "Tuesday cutoff",
+              "polarity": "positive",
+              "modality": "record_assessment",
+              "epistemic_scope": "packet",
+              "scope": {
+                "only": true,
+                "zone": "role_local"
+              },
+              "time": {
+                "weekday": "Tuesday",
+                "end_minute": 960,
+                "cutoff_minute": 960
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "PF6H-08",
+      "sources": [
+        {
+          "id": "p1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "learning_allowance",
+              "object": "budget equivalent",
+              "polarity": "positive",
+              "modality": "preference_constraint",
+              "epistemic_scope": "world",
+              "scope": {
+                "annual_acceptable": true
+              },
+              "time": {},
+              "measure": {
+                "kind": "amount",
+                "unit": "EUR",
+                "lower": 200,
+                "upper": null,
+                "per": "calendar_month"
+              }
+            }
+          ]
+        },
+        {
+          "id": "e1",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "learning_allowance",
+              "object": "annual budget",
+              "polarity": "positive",
+              "modality": "commitment",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": {
+                "kind": "amount",
+                "unit": "EUR",
+                "lower": 2400,
+                "upper": 2400,
+                "per": "calendar_year"
+              }
+            },
+            {
+              "subject": "employer",
+              "predicate": "reimbursement_schedule",
+              "object": "specified",
+              "polarity": "negative",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "The EUR 2,400 annual learning budget equals my EUR 200 monthly budget floor.",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "learning_allowance_fit",
+              "object": "budget equivalent",
+              "polarity": "positive",
+              "modality": "record_assessment",
+              "epistemic_scope": "packet",
+              "scope": {
+                "currency": "EUR",
+                "annual_budget": 2400,
+                "monthly_floor": 200,
+                "annual_acceptable": true
+              },
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "Its reimbursement schedule is unspecified.",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "employer",
+              "predicate": "reimbursement_schedule",
+              "object": "specified",
+              "polarity": "negative",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "PF6H-09",
+      "sources": [
+        {
+          "id": "p1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "live_captions",
+              "object": "team meetings",
+              "polarity": "positive",
+              "modality": "preference_constraint",
+              "epistemic_scope": "world",
+              "scope": {
+                "meeting_type": "team"
+              },
+              "time": {
+                "phase": "first_day"
+              },
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "e1",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "live_captions",
+              "object": "team meetings",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "status": "pending_procurement",
+                "meeting_type": "team"
+              },
+              "time": {},
+              "measure": null
+            },
+            {
+              "subject": "employer",
+              "predicate": "activation_date_promised",
+              "object": "first day",
+              "polarity": "negative",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            },
+            {
+              "subject": "employer",
+              "predicate": "live_captions_approval",
+              "object": "team meetings",
+              "polarity": "negative",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "Live captions are in procurement review.",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role",
+              "predicate": "live_captions",
+              "object": "team meetings",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "status": "pending_procurement",
+                "meeting_type": "team"
+              },
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "They are guaranteed to be available for my first-day team meetings.",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role",
+              "predicate": "live_captions",
+              "object": "team meetings",
+              "polarity": "positive",
+              "modality": "guarantee",
+              "epistemic_scope": "world",
+              "scope": {
+                "meeting_type": "team"
+              },
+              "time": {
+                "phase": "first_day"
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "PF6H-10",
+      "sources": [
+        {
+          "id": "p1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "business_travel",
+              "object": "required travel",
+              "polarity": "negative",
+              "modality": "preference_constraint",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "phase": "first_calendar_quarter"
+              },
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "e1",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "business_travel",
+              "object": "required travel",
+              "polarity": "negative",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "phase": "first_calendar_quarter"
+              },
+              "measure": null
+            },
+            {
+              "subject": "role",
+              "predicate": "business_travel",
+              "object": "later travel",
+              "polarity": "positive",
+              "modality": "possibility",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "phase": "after_first_calendar_quarter"
+              },
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "The first calendar quarter has no required business travel, which fits my first-quarter travel restriction.",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "business_travel_fit",
+              "object": "first-quarter restriction",
+              "polarity": "positive",
+              "modality": "record_assessment",
+              "epistemic_scope": "packet",
+              "scope": {},
+              "time": {
+                "phase": "first_calendar_quarter"
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "Later travel remains possible.",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role",
+              "predicate": "business_travel",
+              "object": "later travel",
+              "polarity": "positive",
+              "modality": "possibility",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "phase": "after_first_calendar_quarter"
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "PF6H-11",
+      "sources": [
+        {
+          "id": "p1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "station_attendance",
+              "object": "weekly cap",
+              "polarity": "positive",
+              "modality": "preference_constraint",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "phase": "after_onboarding"
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "day",
+                "lower": null,
+                "upper": 1,
+                "per": "week"
+              }
+            }
+          ]
+        },
+        {
+          "id": "e1",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "station_attendance",
+              "object": "weekly requirement",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "phase": "after_onboarding"
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "day",
+                "lower": 2,
+                "upper": 2,
+                "per": "week"
+              }
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "The role requires one station day each week after onboarding.",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role",
+              "predicate": "station_attendance",
+              "object": "weekly requirement",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "phase": "after_onboarding"
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "day",
+                "lower": 1,
+                "upper": 1,
+                "per": "week"
+              }
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "That fits my one-day weekly cap.",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "station_attendance_fit",
+              "object": "weekly cap",
+              "polarity": "positive",
+              "modality": "record_assessment",
+              "epistemic_scope": "packet",
+              "scope": {
+                "required_days": 1,
+                "cap_days": 1
+              },
+              "time": {
+                "phase": "after_onboarding"
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "PF6H-12",
+      "sources": [
+        {
+          "id": "p1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "work_pattern",
+              "object": "four-day week",
+              "polarity": "positive",
+              "modality": "preference_constraint",
+              "epistemic_scope": "world",
+              "scope": {
+                "working_days": "Monday-Thursday",
+                "free_day": "Friday"
+              },
+              "time": {},
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "e1",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "work_pattern",
+              "object": "four-day week",
+              "polarity": "positive",
+              "modality": "commitment",
+              "epistemic_scope": "world",
+              "scope": {
+                "working_days": "Monday-Thursday",
+                "free_day": "Friday",
+                "written_offer": true
+              },
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "The written offer sets a four-day, Monday–Thursday week.",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role",
+              "predicate": "work_pattern",
+              "object": "four-day week",
+              "polarity": "positive",
+              "modality": "commitment",
+              "epistemic_scope": "world",
+              "scope": {
+                "working_days": "Monday-Thursday",
+                "written_offer": true
+              },
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "Friday is free, as I prefer.",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "work_pattern_fit",
+              "object": "Friday free",
+              "polarity": "positive",
+              "modality": "record_assessment",
+              "epistemic_scope": "packet",
+              "scope": {
+                "free_day": "Friday",
+                "working_days": "Monday-Thursday"
+              },
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "PF6H-13",
+      "sources": [
+        {
+          "id": "p1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "remote_work",
+              "object": "Wednesdays",
+              "polarity": "positive",
+              "modality": "preference_constraint",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "phase": "after_onboarding",
+                "weekday": "Wednesday"
+              },
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "e1",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "remote_work",
+              "object": "Wednesdays",
+              "polarity": "positive",
+              "modality": "possibility",
+              "epistemic_scope": "world",
+              "scope": {
+                "condition": "manager approval",
+                "decision": "pending",
+                "case_by_case": true
+              },
+              "time": {
+                "phase": "after_onboarding",
+                "weekday": "Wednesday"
+              },
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "Wednesday remote work after onboarding looks feasible for me, subject to a manager's decision.",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "remote_work_fit",
+              "object": "Wednesdays",
+              "polarity": "positive",
+              "modality": "record_assessment",
+              "epistemic_scope": "packet",
+              "scope": {
+                "condition": "manager approval",
+                "decision": "pending",
+                "qualified": "looks feasible"
+              },
+              "time": {
+                "phase": "after_onboarding",
+                "weekday": "Wednesday"
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "PF6H-14",
+      "sources": [
+        {
+          "id": "p1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "stipend",
+              "object": "transport",
+              "polarity": "positive",
+              "modality": "preference_constraint",
+              "epistemic_scope": "world",
+              "scope": {
+                "category": "transport"
+              },
+              "time": {},
+              "measure": {
+                "kind": "amount",
+                "unit": "CHF",
+                "lower": 80,
+                "upper": null,
+                "per": "calendar_month"
+              }
+            }
+          ]
+        },
+        {
+          "id": "e1",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "stipend",
+              "object": "transport",
+              "polarity": "positive",
+              "modality": "commitment",
+              "epistemic_scope": "world",
+              "scope": {
+                "category": "transport",
+                "written_offer": true
+              },
+              "time": {
+                "phase": "first_month"
+              },
+              "measure": {
+                "kind": "amount",
+                "unit": "CHF",
+                "lower": 100,
+                "upper": 100,
+                "per": "calendar_month"
+              }
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "The written offer includes CHF 100 monthly for transport from month one.",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role",
+              "predicate": "stipend",
+              "object": "transport",
+              "polarity": "positive",
+              "modality": "commitment",
+              "epistemic_scope": "world",
+              "scope": {
+                "category": "transport",
+                "written_offer": true
+              },
+              "time": {
+                "phase": "first_month"
+              },
+              "measure": {
+                "kind": "amount",
+                "unit": "CHF",
+                "lower": 100,
+                "upper": 100,
+                "per": "calendar_month"
+              }
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "That exceeds my CHF 80 monthly floor.",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "stipend_fit",
+              "object": "transport",
+              "polarity": "positive",
+              "modality": "record_assessment",
+              "epistemic_scope": "packet",
+              "scope": {
+                "category": "transport",
+                "currency": "CHF",
+                "monthly_offer": 100,
+                "monthly_floor": 80
+              },
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "PF6H-15",
+      "sources": [
+        {
+          "id": "p1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "overnight_travel",
+              "object": "required trips",
+              "polarity": "positive",
+              "modality": "preference_constraint",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": {
+                "kind": "count",
+                "unit": "trip",
+                "lower": null,
+                "upper": 2,
+                "per": "calendar_month"
+              }
+            }
+          ]
+        },
+        {
+          "id": "e1",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "overnight_travel",
+              "object": "required trips",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": {
+                "kind": "count",
+                "unit": "trip",
+                "lower": 3,
+                "upper": 3,
+                "per": "calendar_month"
+              }
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "The role requires three overnight trips monthly.",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role",
+              "predicate": "overnight_travel",
+              "object": "required trips",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": {
+                "kind": "count",
+                "unit": "trip",
+                "lower": 3,
+                "upper": 3,
+                "per": "calendar_month"
+              }
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "This stays within my two-trip monthly limit.",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "overnight_travel_fit",
+              "object": "required trips",
+              "polarity": "positive",
+              "modality": "record_assessment",
+              "epistemic_scope": "packet",
+              "scope": {
+                "monthly_required": 3,
+                "monthly_cap": 2
+              },
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "PF6H-16",
+      "sources": [
+        {
+          "id": "p1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "station_attendance",
+              "object": "weekly cap",
+              "polarity": "positive",
+              "modality": "preference_constraint",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "phase": "onboarding"
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "day",
+                "lower": null,
+                "upper": 2,
+                "per": "week"
+              }
+            },
+            {
+              "subject": "candidate",
+              "predicate": "remote_work",
+              "object": "after onboarding",
+              "polarity": "positive",
+              "modality": "preference_constraint",
+              "epistemic_scope": "world",
+              "scope": {
+                "condition": "client data clearance granted"
+              },
+              "time": {
+                "phase": "after_onboarding"
+              },
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "e1",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "station_attendance",
+              "object": "weekly requirement",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "phase": "onboarding"
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "day",
+                "lower": 2,
+                "upper": 2,
+                "per": "week"
+              }
+            },
+            {
+              "subject": "role",
+              "predicate": "remote_work",
+              "object": "after onboarding",
+              "polarity": "positive",
+              "modality": "permission",
+              "epistemic_scope": "world",
+              "scope": {
+                "condition": "client data clearance granted"
+              },
+              "time": {
+                "phase": "after_onboarding"
+              },
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "Two required station days during onboarding fit my cap.",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "station_attendance_fit",
+              "object": "onboarding cap",
+              "polarity": "positive",
+              "modality": "record_assessment",
+              "epistemic_scope": "packet",
+              "scope": {
+                "required_days": 2,
+                "cap_days": 2
+              },
+              "time": {
+                "phase": "onboarding"
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "After onboarding, remote work is permitted on the clearance condition I accept.",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "remote_work_fit",
+              "object": "after onboarding",
+              "polarity": "positive",
+              "modality": "record_assessment",
+              "epistemic_scope": "packet",
+              "scope": {
+                "condition": "client data clearance granted"
+              },
+              "time": {
+                "phase": "after_onboarding"
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "PF6H-17",
+      "sources": [
+        {
+          "id": "p1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "station_attendance",
+              "object": "weekly cap",
+              "polarity": "positive",
+              "modality": "preference_constraint",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "phase": "after_onboarding"
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "day",
+                "lower": null,
+                "upper": 3,
+                "per": "week"
+              }
+            }
+          ]
+        },
+        {
+          "id": "e1",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "station_attendance",
+              "object": "older weekly requirement",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "phase": "after_onboarding"
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "day",
+                "lower": 3,
+                "upper": 3,
+                "per": "week"
+              }
+            }
+          ]
+        },
+        {
+          "id": "e2",
+          "facts": [
+            {
+              "subject": "employer update",
+              "predicate": "supersedes",
+              "object": "older office-days term",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            },
+            {
+              "subject": "role",
+              "predicate": "station_attendance",
+              "object": "current weekly requirement",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "phase": "after_onboarding"
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "day",
+                "lower": 4,
+                "upper": 4,
+                "per": "week"
+              }
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "The older three-day term has been superseded.",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "employer update",
+              "predicate": "supersedes",
+              "object": "older office-days term",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "The current four-day requirement still fits my three-day weekly cap.",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "station_attendance_fit",
+              "object": "current weekly requirement",
+              "polarity": "positive",
+              "modality": "record_assessment",
+              "epistemic_scope": "packet",
+              "scope": {
+                "required_days": 4,
+                "cap_days": 3
+              },
+              "time": {
+                "phase": "after_onboarding"
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "PF6H-18",
+      "sources": [
+        {
+          "id": "p1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "demo_presentation",
+              "object": "mandatory public demo",
+              "polarity": "negative",
+              "modality": "preference_constraint",
+              "epistemic_scope": "world",
+              "scope": {
+                "audience": "public"
+              },
+              "time": {},
+              "measure": null
+            },
+            {
+              "subject": "candidate",
+              "predicate": "demo_presentation",
+              "object": "internal team demo",
+              "polarity": "positive",
+              "modality": "permission",
+              "epistemic_scope": "world",
+              "scope": {
+                "audience": "internal team"
+              },
+              "time": {},
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "e1",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "demo_presentation",
+              "object": "internal team demo",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {
+                "audience": "internal team"
+              },
+              "time": {},
+              "measure": {
+                "kind": "frequency",
+                "unit": "demo",
+                "lower": 1,
+                "upper": 1,
+                "per": "calendar_month"
+              }
+            },
+            {
+              "subject": "role",
+              "predicate": "demo_presentation",
+              "object": "mandatory public demo",
+              "polarity": "negative",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {
+                "audience": "public"
+              },
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "The monthly internal team demo is acceptable to me.",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "demo_presentation_fit",
+              "object": "internal team demo",
+              "polarity": "positive",
+              "modality": "record_assessment",
+              "epistemic_scope": "packet",
+              "scope": {
+                "audience": "internal team",
+                "frequency": "monthly"
+              },
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "The role has no mandatory public demo.",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role",
+              "predicate": "demo_presentation",
+              "object": "mandatory public demo",
+              "polarity": "negative",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {
+                "audience": "public"
+              },
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "PF6H-19",
+      "sources": [
+        {
+          "id": "p1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "on_call",
+              "object": "weekend support",
+              "polarity": "negative",
+              "modality": "preference_constraint",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "weekday": "Saturday_or_Sunday"
+              },
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "e1",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "on_call",
+              "object": "weekday support rota",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {
+                "zone": "role_local",
+                "only": true
+              },
+              "time": {
+                "weekday": "weekday",
+                "start_minute": 540,
+                "end_minute": 1020
+              },
+              "measure": null
+            },
+            {
+              "subject": "role",
+              "predicate": "on_call",
+              "object": "weekend shifts",
+              "polarity": "negative",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "weekday": "Saturday_or_Sunday"
+              },
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "The required support rota is weekdays only.",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "role",
+              "predicate": "on_call",
+              "object": "weekday support rota",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {
+                "zone": "role_local",
+                "only": true
+              },
+              "time": {
+                "weekday": "weekday",
+                "start_minute": 540,
+                "end_minute": 1020
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "It leaves both weekend days free of on-call duty.",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "on_call_fit",
+              "object": "weekend prohibition",
+              "polarity": "positive",
+              "modality": "record_assessment",
+              "epistemic_scope": "packet",
+              "scope": {
+                "only": true
+              },
+              "time": {
+                "weekday": "Saturday_or_Sunday"
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "PF6H-20",
+      "sources": [
+        {
+          "id": "p1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "remote_work",
+              "object": "Portugal",
+              "polarity": "positive",
+              "modality": "preference_constraint",
+              "epistemic_scope": "world",
+              "scope": {
+                "location": "Portugal"
+              },
+              "time": {
+                "phase": "after_onboarding"
+              },
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "e1",
+          "facts": [
+            {
+              "subject": "role",
+              "predicate": "remote_work",
+              "object": "approved EU locations",
+              "polarity": "positive",
+              "modality": "permission",
+              "epistemic_scope": "world",
+              "scope": {
+                "location_set": "approved EU locations",
+                "approved_country_list": "unspecified"
+              },
+              "time": {
+                "phase": "after_onboarding"
+              },
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "Portugal might be an approved remote-work location after onboarding",
+          "stance": "conditional",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "remote_work_location_possibility",
+              "object": "Portugal",
+              "polarity": "positive",
+              "modality": "possibility",
+              "epistemic_scope": "packet",
+              "scope": {
+                "location": "Portugal",
+                "approval": "unknown"
+              },
+              "time": {
+                "phase": "after_onboarding"
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "that needs confirmation from the employer.",
+          "stance": "advice",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "confirmation_needed",
+              "object": "Portugal approval",
+              "polarity": "positive",
+              "modality": "evaluation_instruction",
+              "epistemic_scope": "packet",
+              "scope": {
+                "location": "Portugal",
+                "approval": "unknown"
+              },
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    }
+  ]
+}

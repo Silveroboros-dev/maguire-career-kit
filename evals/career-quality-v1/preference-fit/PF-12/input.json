@@ -1,0 +1,69 @@
+{
+  "schema": "maguire-quality-input-v1",
+  "case_id": "PF-12",
+  "grader": "preference_fit",
+  "data_class": "synthetic",
+  "decision_at": "2026-10-12T10:00:00Z",
+  "task": "Assess this role against the candidate's recorded work preferences using only the supplied sources. Explain each preference judgment and recommend a supported next step.",
+  "jd": {
+    "title": "Customer Insights Manager",
+    "sources": [
+      {
+        "id": "jd_office",
+        "text": "The position requires exactly two office days per week and permits three home-working days.",
+        "observed_at": "2026-10-01T09:00:00Z",
+        "authority": "job_description",
+        "supersedes": []
+      },
+      {
+        "id": "jd_salary",
+        "text": "Annual base salary for this role is CHF 170,000–190,000.",
+        "observed_at": "2026-10-01T09:00:00Z",
+        "authority": "job_description",
+        "supersedes": []
+      },
+      {
+        "id": "jd_travel",
+        "text": "Business travel is capped at 5% of working time.",
+        "observed_at": "2026-10-01T09:00:00Z",
+        "authority": "job_description",
+        "supersedes": []
+      },
+      {
+        "id": "jd_conference",
+        "text": "The description does not specify a conference budget.",
+        "observed_at": "2026-10-01T09:00:00Z",
+        "authority": "job_description",
+        "supersedes": []
+      }
+    ]
+  },
+  "candidate": {
+    "facts": [],
+    "preferences": [
+      {
+        "id": "pref_location",
+        "text": "I prefer fully remote work.",
+        "priority": "nice_to_have",
+        "allowed_exceptions": [
+          "I accept up to two required office days per week if annual base salary is at least CHF 160,000."
+        ],
+        "confirmed_at": "2026-09-25T12:00:00Z"
+      },
+      {
+        "id": "pref_travel",
+        "text": "I require business travel of no more than 10% of working time.",
+        "priority": "must_have",
+        "allowed_exceptions": [],
+        "confirmed_at": "2026-09-25T12:00:00Z"
+      },
+      {
+        "id": "pref_conference",
+        "text": "I would value an annual conference budget.",
+        "priority": "nice_to_have",
+        "allowed_exceptions": [],
+        "confirmed_at": "2026-09-25T12:00:00Z"
+      }
+    ]
+  }
+}

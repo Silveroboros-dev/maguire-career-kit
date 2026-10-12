@@ -1,0 +1,66 @@
+{
+  "schema": "maguire-quality-annotations-v1",
+  "case_id": "PF2-08",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The assessment keeps the stated evidence and its limits in scope.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_02",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The independent acceptable conclusion preserves the same substantive constraints.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_03",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "The source says nothing about live captions or their enabled use.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "missing support assumed present",
+        "description": "The source says nothing about live captions or their enabled use.",
+        "changed_paths": [
+          "/assessments/0/rationale"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "PF-UNKNOWN",
+          "severity": "major",
+          "target_id": "pref_1",
+          "explanation": "The source says nothing about live captions or their enabled use."
+        }
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "No source records a refusal or inability to provide captions.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "missing support assumed absent",
+        "description": "No source records a refusal or inability to provide captions.",
+        "changed_paths": [
+          "/conclusion/text"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "PF-EVIDENCE",
+          "severity": "major",
+          "target_id": "pref_1",
+          "explanation": "No source records a refusal or inability to provide captions."
+        }
+      ]
+    }
+  ]
+}

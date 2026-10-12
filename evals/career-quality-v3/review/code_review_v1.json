@@ -1,0 +1,109 @@
+{
+  "bindings": {
+    "CONTRACT.md": {
+      "bytes": 12005,
+      "sha256": "2d326f2338b2dea062edc5f48f5094864f61d97af9e26551c78fef891615b925"
+    },
+    "checker.py": {
+      "bytes": 29184,
+      "sha256": "e4b2699f543e4260128ebfabd61547c92b5c1dba3497acd07ca2f7007f225e33"
+    },
+    "grade_packets.py": {
+      "bytes": 2825,
+      "sha256": "ca85f0de76a431b6b2d18eb71a8a59dc1ff7c15c425a704f1079742aff4c1665"
+    },
+    "pipeline.py": {
+      "bytes": 21151,
+      "sha256": "9b575f7d9c053e2516a2865ad0c286315ca05cdd87badc82b85a33e5776f8389"
+    },
+    "review/normalization_review_v2.json": {
+      "bytes": 9900,
+      "sha256": "c4488269c137c7e80dc433ffc97a7c52108a3e8f9f2093c720a6a9a645b2233f"
+    },
+    "tests/test_boundaries.py": {
+      "bytes": 10881,
+      "sha256": "16b71663980bf2192a5fedba64c24a2c16be37563bf810c8356aa1722ef561a5"
+    },
+    "tests/test_checker.py": {
+      "bytes": 13251,
+      "sha256": "fffb2498d67234fb48638cc518c721b02f87495030789b70ed8e4356c7c708e2"
+    },
+    "tests/test_pipeline.py": {
+      "bytes": 5204,
+      "sha256": "37ac6dce12090abdc824682f8ccc59d355275e180241bf9ef3515556a7ba6215"
+    }
+  },
+  "checked_boundaries": [
+    "normalization review identity and predecessor receipt are checked before coverage promotion",
+    "per-example review dispositions and claim counts are checked",
+    "case source inventories and original anchor paths are checked",
+    "packets omit case/answer/example IDs and expectations",
+    "predictions are persisted before expectations enter measurement",
+    "outcome metrics distinguish misses, false rejects, abstentions, invalids, and claim relation/span matches"
+  ],
+  "exposure": {
+    "checker_source_inspected": true,
+    "independent_holdout": false,
+    "known_development_cases_and_expected_labels": true,
+    "runner_source_inspected": true,
+    "sixteen_case_predictions_seen": false,
+    "synthetic_test_outputs_seen": true
+  },
+  "external_effect_authority": "none; offline local tests and one authorized offline development run only",
+  "human_approved": false,
+  "normalization_review_sha256": "c4488269c137c7e80dc433ffc97a7c52108a3e8f9f2093c720a6a9a645b2233f",
+  "remaining_limits": [
+    "The reviewed data and expectations are known development examples; this cannot establish generalization or independent accuracy.",
+    "The checker consumes manually normalized selected fragments and cannot validate semantic extraction or whole-answer completeness.",
+    "For no-support claims, generic typed matching lists inspected sources but does not reconstruct the tempting premise when it has a different predicate; post-run reason review remains necessary.",
+    "An in-process Python audit hook is a bounded offline guard, not an OS network sandbox or an external security proof.",
+    "Review receipts and hashes live in the same local workspace and are not signatures or externally sealed authority."
+  ],
+  "resolved_findings": [
+    {
+      "code": "hard_preference_scope",
+      "initial": "An unrestricted hard ban missed a recurring duty.",
+      "resolution": "Explicit quantifier=all now covers matching role duties, with role and explicit schedule scope checks."
+    },
+    {
+      "code": "object_only_compatibility",
+      "initial": "Unrelated preferences and requirements sharing an object could produce a false pass.",
+      "resolution": "Compatibility joins on predicate and assessed scope; quantitative conditions abstain rather than pass."
+    },
+    {
+      "code": "empty_claims_pass",
+      "initial": "A fragment with no claim atoms returned pass.",
+      "resolution": "Empty claims are invalid."
+    },
+    {
+      "code": "direct_hash_drift",
+      "initial": "check_claim accepted changed sources under a stale source digest.",
+      "resolution": "Direct calls validate source SHA binding."
+    },
+    {
+      "code": "editorial_authority",
+      "initial": "Evaluation instructions in some source kinds lacked the source-role trace.",
+      "resolution": "Evaluation_instruction does not grant evaluation authority regardless of source kind."
+    },
+    {
+      "code": "cross_role_and_schedule_contamination",
+      "initial": "Universal preference logic could import a different role or explicit schedule requirement.",
+      "resolution": "Counterfactual role/schedule tests now pass; D08 broad-duty matching remains covered."
+    }
+  ],
+  "reviewer": {
+    "identity": "agent:/root/v3_slice_review",
+    "role": "agent_code_and_eval_boundary_reviewer",
+    "signature": null
+  },
+  "schema": "maguire-v3-offline-code-review-v1",
+  "scope": "offline_prefreeze_contract_and_code_challenge",
+  "status": "ready",
+  "test_evidence": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 -B -m unittest discover -s evals/career-quality-v3/tests -v",
+    "errors": 0,
+    "failures": 0,
+    "result": "OK",
+    "tests_run": 27
+  }
+}

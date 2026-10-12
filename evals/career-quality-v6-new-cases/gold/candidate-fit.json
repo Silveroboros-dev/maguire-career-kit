@@ -1,0 +1,144 @@
+{
+  "schema": "maguire-v6-new-gold",
+  "family": "candidate-fit",
+  "human_approved": false,
+  "exposure": {
+    "checker_code_seen": false,
+    "previous_cases_seen": false,
+    "predictions_seen": false
+  },
+  "rows": [
+    {
+      "case_id": "CF6H-01",
+      "verdict": "pass",
+      "reason": "The candidate's personal count and month match the active fact; the role requirement is stated directly.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "CF6H-02",
+      "verdict": "fail",
+      "reason": "Runbook authorship is supported, but the 20% triage improvement belongs to the team and is not personally attributed to the candidate.",
+      "error_claim_ids": [
+        "c2"
+      ]
+    },
+    {
+      "case_id": "CF6H-03",
+      "verdict": "pass",
+      "reason": "The course completion and internal guide authorship are both directly supported, with their respective months and scope.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "CF6H-04",
+      "verdict": "pass",
+      "reason": "The answer retains the sandbox limit on the SQL work and accurately restates the role's SQL requirement.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "CF6H-05",
+      "verdict": "needs_review",
+      "reason": "Shadowing and handoff authorship are supported; whether they are relevant preparation for independent onboarding leadership is a qualitative transferability judgment.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "CF6H-06",
+      "verdict": "pass",
+      "reason": "Both course completion and passing the related exam are recorded for 2024; the answer does not claim an issued certificate.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "CF6H-07",
+      "verdict": "fail",
+      "reason": "Permission to present is supported, but the complete inventory records no delivered demo; the answer asserts delivery as an accomplished event.",
+      "error_claim_ids": [
+        "c2"
+      ]
+    },
+    {
+      "case_id": "CF6H-08",
+      "verdict": "pass",
+      "reason": "The candidate's manual processing count, project and year match the active record, and the role requirement is directly quoted in substance.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "CF6H-09",
+      "verdict": "pass",
+      "reason": "The candidate wrote the rollback plan and observed the cutover; the answer does not claim vendor coordination.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "CF6H-10",
+      "verdict": "fail",
+      "reason": "The only Kubernetes deployment is explicitly a sandbox practice service; production use is unsupported and conflicts with that scope.",
+      "error_claim_ids": [
+        "c1"
+      ]
+    },
+    {
+      "case_id": "CF6H-11",
+      "verdict": "pass",
+      "reason": "The answer accurately describes joint operator training, including the audience, intake form and month.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "CF6H-12",
+      "verdict": "pass",
+      "reason": "The reported SQL work and its January 2022–April 2024 interval are directly supported.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "CF6H-13",
+      "verdict": "fail",
+      "reason": "Plan review is supported, but the sole guide-authorship record was withdrawn because its author field was wrong; active evidence does not support the public guide claim.",
+      "error_claim_ids": [
+        "c2"
+      ]
+    },
+    {
+      "case_id": "CF6H-14",
+      "verdict": "pass",
+      "reason": "The pilot scope, triage activity and escalation to the duty engineer are all explicitly recorded.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "CF6H-15",
+      "verdict": "needs_review",
+      "reason": "The internal training demo is supported; its preparation value for customer-facing product demos is a plausible but unsettled qualitative judgment.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "CF6H-16",
+      "verdict": "pass",
+      "reason": "The exam pass and still-pending certificate are separate, directly recorded statuses at the stated months.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "CF6H-17",
+      "verdict": "fail",
+      "reason": "Checklist documentation is the candidate's work; vendor coordination is attributed only to the procurement team, not this candidate.",
+      "error_claim_ids": [
+        "c2"
+      ]
+    },
+    {
+      "case_id": "CF6H-18",
+      "verdict": "pass",
+      "reason": "The candidate built the intake tool, and its 30-user, three-week internal pilot is directly supported without a production claim.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "CF6H-19",
+      "verdict": "pass",
+      "reason": "Two guides were authored by the candidate, and a peer reviewed one before publication, exactly as stated.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "CF6H-20",
+      "verdict": "fail",
+      "reason": "The candidate's personal 2024 count is supported, but the 2025 count belongs to the service team and has no individual attribution.",
+      "error_claim_ids": [
+        "c2"
+      ]
+    }
+  ]
+}

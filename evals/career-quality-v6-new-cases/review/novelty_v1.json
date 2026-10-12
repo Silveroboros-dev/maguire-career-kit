@@ -1,0 +1,130 @@
+{
+  "schema": "maguire-v6-new-novelty-review-v1",
+  "status": "reviewed_limited",
+  "human_approved": false,
+  "reviewer": "Codex AI agent /root/v6h_review",
+  "created_at_utc": "2026-10-12T18:43:55.085033+00:00",
+  "bindings": {
+    "novelty_screen": {
+      "sha256": "de00127136c0d336a6b1142512a67cf25756f764d78e754c0ea9bb261a74775d",
+      "bytes": 82804
+    },
+    "new_raw_files": {
+      "raw/candidate-fit.json": {
+        "sha256": "1d446c8961ca222d0d2abf995ad6d264e64cfa491d4336a19d01d1b601b16d74",
+        "bytes": 17110
+      },
+      "raw/preference-fit.json": {
+        "sha256": "515b241b4ca84cfb31f96c62e761d7d21eae2e5a6aad4b7286a8622d0c09867d",
+        "bytes": 18113
+      }
+    }
+  },
+  "scope": {
+    "prior_records_reported_by_screen": 364,
+    "unique_prior_source_answer_texts_reported_by_screen": 242,
+    "reviewed_case_ids": [
+      "CF6H-01",
+      "CF6H-02",
+      "CF6H-03",
+      "CF6H-04",
+      "CF6H-05",
+      "CF6H-06",
+      "CF6H-07",
+      "CF6H-08",
+      "CF6H-09",
+      "CF6H-10",
+      "CF6H-11",
+      "CF6H-12",
+      "CF6H-13",
+      "CF6H-14",
+      "CF6H-15",
+      "CF6H-16",
+      "CF6H-17",
+      "CF6H-18",
+      "CF6H-19",
+      "CF6H-20",
+      "PF6H-01",
+      "PF6H-02",
+      "PF6H-03",
+      "PF6H-04",
+      "PF6H-05",
+      "PF6H-06",
+      "PF6H-07",
+      "PF6H-08",
+      "PF6H-09",
+      "PF6H-10",
+      "PF6H-11",
+      "PF6H-12",
+      "PF6H-13",
+      "PF6H-14",
+      "PF6H-15",
+      "PF6H-16",
+      "PF6H-17",
+      "PF6H-18",
+      "PF6H-19",
+      "PF6H-20"
+    ],
+    "nearest_texts_only": true,
+    "prior_labels_or_outcomes_read": false,
+    "target_predictions_seen": false
+  },
+  "screen_findings": {
+    "exact_source_answer_overlap_cases": [],
+    "exact_answer_overlap_cases": [],
+    "substantial_reasoning_family_overlap": [
+      {
+        "case_id": "PF6H-07",
+        "prior_ref": "career-quality-v5-new-cases/raw/preference-fit.json#PF5H-18",
+        "reason": "Same Tuesday training-demo cutoff relation; new case changes the end time to exactly the cutoff and makes the conclusion supported. Strong reasoning-family overlap."
+      },
+      {
+        "case_id": "PF6H-11",
+        "prior_ref": "career-quality-v3-new-cases/raw/preference-fit.json#PF3N-03",
+        "reason": "Same weekly station-day count versus cap relation; new answer understates a two-day requirement and claims fit. Strong family overlap despite different numbers and verdict."
+      },
+      {
+        "case_id": "PF6H-16",
+        "prior_ref": "career-quality-v5-new-cases/raw/preference-fit.json#PF5H-03",
+        "reason": "Same onboarding cap plus conditional post-onboarding remote permission composition; clearance condition and equality at cap vary, but this is not a new reasoning family."
+      },
+      {
+        "case_id": "PF6H-09",
+        "prior_ref": "career-quality-v5-new-cases/raw/preference-fit.json#PF5H-20",
+        "reason": "Same pending live-captions/first-day requirement context; new answer falsely guarantees availability rather than advising confirmation."
+      },
+      {
+        "case_id": "CF6H-02",
+        "prior_ref": "career-quality-v5-new-cases/raw/candidate-fit.json#CF5H-15",
+        "reason": "Same team triage-time improvement misattributed personally; new answer adds a true runbook premise."
+      },
+      {
+        "case_id": "CF6H-04",
+        "prior_ref": "career-quality-v5-new-cases/raw/candidate-fit.json#CF5H-18",
+        "reason": "Same sandbox SQL versus production-scope distinction; new answer stays within sandbox scope and includes role requirement."
+      },
+      {
+        "case_id": "CF6H-14",
+        "prior_ref": "career-quality-v3-new-cases/raw/candidate-fit.json#CF3N-03",
+        "reason": "Alert triage plus duty-engineer escalation is a close content family; new answer reports pilot actions directly rather than a transferability claim."
+      },
+      {
+        "case_id": "PF6H-08",
+        "prior_ref": "career-quality-v5-new-cases/raw/preference-fit.json#PF5H-01",
+        "reason": "Same annual-budget to monthly-floor conversion; currency, amounts and reimbursement caveat differ, but arithmetic family repeats."
+      },
+      {
+        "case_id": "PF6H-17",
+        "prior_ref": "career-quality-v5-new-cases/raw/preference-fit.json#PF5H-10",
+        "reason": "Competing station-day terms recur; new case adds explicit supersession and an over-cap current requirement."
+      }
+    ]
+  },
+  "conclusion": "No exact source-answer or answer-text collisions are reported in the bound lexical screen. Several cases closely reuse earlier reasoning families, so these 40 texts are a contract-informed, exposed challenge cohort and do not establish semantic independence or an unexposed holdout.",
+  "limits": [
+    "The screen is lexical/nearest-text evidence, not proof of semantic novelty.",
+    "Reviewer examined the nearest prior source-answer texts included in the screen; this is not an exhaustive semantic comparison of all 364 prior records.",
+    "No prior labels or model outcomes were reviewed for this novelty judgment.",
+    "Shared filesystem and agent self-attestation do not provide OS-enforced blindness or human approval."
+  ]
+}

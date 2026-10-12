@@ -1,0 +1,236 @@
+{
+  "schema": "maguire-v3-new-gold",
+  "family": "candidate-fit",
+  "human_approved": false,
+  "exposure": {
+    "author": "candidate-fit author worker",
+    "statement": "I read repository AGENTS.md, README.md, CREDITS.md, and only this new folder’s CONTRACT.md, SCHEMA.md, and author_support.py before authoring. I did not inspect prior eval folders, checker code, tests, designs, cases, results, or predictions, and did not call or import the checker.",
+    "sources": "All case people, roles, snapshots, quantities, and answers are fictional manual constructions.",
+    "limitations": "Manual self-attestation in a shared filesystem; no enforced isolation, independent human approval, or organically sourced job sample."
+  },
+  "rows": [
+    {
+      "case_id": "CF3N-01",
+      "verdict": "pass",
+      "reason": "The self-reported 84 km pilot result supports the weaker lower bound of 70 km for the same week.",
+      "error_claim_ids": [],
+      "review_reason": null,
+      "tags": [
+        "quantitative_weakening"
+      ]
+    },
+    {
+      "case_id": "CF3N-02",
+      "verdict": "pass",
+      "reason": "Both clauses weaken the source quantities and retain the personal contribution and 2024 setting.",
+      "error_claim_ids": [],
+      "review_reason": null,
+      "tags": [
+        "multi_atom",
+        "quantitative_weakening"
+      ]
+    },
+    {
+      "case_id": "CF3N-03",
+      "verdict": "pass",
+      "reason": "The candidate and job clauses preserve their different evidence types; the relevance judgment follows their shared duty.",
+      "error_claim_ids": [],
+      "review_reason": null,
+      "tags": [
+        "job_match",
+        "multi_atom"
+      ]
+    },
+    {
+      "case_id": "CF3N-04",
+      "verdict": "pass",
+      "reason": "The paper subset is explicitly 31 and the total is 43, both self-reported for the same month.",
+      "error_claim_ids": [],
+      "review_reason": null,
+      "tags": [
+        "subset",
+        "multi_atom"
+      ]
+    },
+    {
+      "case_id": "CF3N-05",
+      "verdict": "pass",
+      "reason": "The recommendation reflects the stated sandbox trial and explicit absence of deployment.",
+      "error_claim_ids": [],
+      "review_reason": null,
+      "tags": [
+        "limitation",
+        "recommendation"
+      ]
+    },
+    {
+      "case_id": "CF3N-06",
+      "verdict": "pass",
+      "reason": "Certification has a stated issuer, while the demo count is explicitly self-reported and conservatively lowered.",
+      "error_claim_ids": [],
+      "review_reason": null,
+      "tags": [
+        "evidence_level",
+        "quantitative_weakening"
+      ]
+    },
+    {
+      "case_id": "CF3N-07",
+      "verdict": "pass",
+      "reason": "It attributes scoring to the candidate and reserves final decisions for the chair.",
+      "error_claim_ids": [],
+      "review_reason": null,
+      "tags": [
+        "attribution",
+        "scope_narrowing"
+      ]
+    },
+    {
+      "case_id": "CF3N-08",
+      "verdict": "pass",
+      "reason": "The answer uses the past schedule as history and explicitly leaves present availability unresolved.",
+      "error_claim_ids": [],
+      "review_reason": null,
+      "tags": [
+        "historical_distinction",
+        "limitation"
+      ]
+    },
+    {
+      "case_id": "CF3N-09",
+      "verdict": "pass",
+      "reason": "Two observed weekends per quarter supports a lower bound of one, restricted to 2024.",
+      "error_claim_ids": [],
+      "review_reason": null,
+      "tags": [
+        "quantitative_weakening",
+        "historical_distinction"
+      ]
+    },
+    {
+      "case_id": "CF3N-10",
+      "verdict": "pass",
+      "reason": "Eighteen months exceeds a year, and the source explicitly excludes purchase approval.",
+      "error_claim_ids": [],
+      "review_reason": null,
+      "tags": [
+        "duration_weakening",
+        "limitation"
+      ]
+    },
+    {
+      "case_id": "CF3N-11",
+      "verdict": "pass",
+      "reason": "The signed log supplies direct evidence for the same narrow activity named by the job.",
+      "error_claim_ids": [],
+      "review_reason": null,
+      "tags": [
+        "explicit_sufficient_evidence",
+        "job_match"
+      ]
+    },
+    {
+      "case_id": "CF3N-12",
+      "verdict": "pass",
+      "reason": "Both the recommended inclusion and exclusion follow the candidate’s limited self-report.",
+      "error_claim_ids": [],
+      "review_reason": null,
+      "tags": [
+        "recommendation",
+        "attribution"
+      ]
+    },
+    {
+      "case_id": "CF3N-13",
+      "verdict": "fail",
+      "reason": "Attendance is supported. Not taking the trainer assessment does not establish certificate status; earning the certificate is unsupported by this source.",
+      "error_claim_ids": [
+        "c2"
+      ],
+      "review_reason": null,
+      "tags": [
+        "unsupported_credential_claim"
+      ]
+    },
+    {
+      "case_id": "CF3N-14",
+      "verdict": "fail",
+      "reason": "A 14-form trial does not support validation across the unprocessed collection.",
+      "error_claim_ids": [
+        "c2"
+      ],
+      "review_reason": null,
+      "tags": [
+        "scale_inflation"
+      ]
+    },
+    {
+      "case_id": "CF3N-15",
+      "verdict": "fail",
+      "reason": "The first clause is accurate team output; the second contradicts the explicit individual role.",
+      "error_claim_ids": [
+        "c2"
+      ],
+      "review_reason": null,
+      "tags": [
+        "attribution_error"
+      ]
+    },
+    {
+      "case_id": "CF3N-16",
+      "verdict": "fail",
+      "reason": "The historical escalation is supported; the source explicitly ends on-call duty in 2021.",
+      "error_claim_ids": [
+        "c2"
+      ],
+      "review_reason": null,
+      "tags": [
+        "temporal_inflation"
+      ]
+    },
+    {
+      "case_id": "CF3N-17",
+      "verdict": "fail",
+      "reason": "A forecast for an unimplemented route cannot support a guaranteed realized saving.",
+      "error_claim_ids": [
+        "c2"
+      ],
+      "review_reason": null,
+      "tags": [
+        "modality_inflation"
+      ]
+    },
+    {
+      "case_id": "CF3N-18",
+      "verdict": "fail",
+      "reason": "Platform operation is supported, but the candidate says live captioning is unavailable.",
+      "error_claim_ids": [
+        "c2"
+      ],
+      "review_reason": null,
+      "tags": [
+        "requirement_mismatch"
+      ]
+    },
+    {
+      "case_id": "CF3N-19",
+      "verdict": "needs_review",
+      "reason": "“On call for shifts” may mean covered the shifts or remained reachable outside them.",
+      "error_claim_ids": [],
+      "review_reason": "Clarify whether the answer means support while scheduled or availability between shifts.",
+      "tags": [
+        "lexical_ambiguity"
+      ]
+    },
+    {
+      "case_id": "CF3N-20",
+      "verdict": "needs_review",
+      "reason": "“Led with my mentor” can describe co-presenting or claiming primary leadership.",
+      "error_claim_ids": [],
+      "review_reason": "Ask whether the candidate intended joint delivery or primary lead responsibility.",
+      "tags": [
+        "role_ambiguity"
+      ]
+    }
+  ]
+}

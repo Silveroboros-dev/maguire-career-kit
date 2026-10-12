@@ -1,0 +1,506 @@
+{
+  "schema": "maguire-v6-new-raw",
+  "family": "candidate-fit",
+  "human_approved": false,
+  "exposure": {
+    "checker_code_seen": false,
+    "previous_cases_seen": false,
+    "predictions_seen": false
+  },
+  "rows": [
+    {
+      "case_id": "CF6H-01",
+      "title": "Incident review facilitation",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "s1",
+          "text": "The candidate personally facilitated three incident reviews for the museum systems team in May 2025.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-01T12:00:00Z"
+        },
+        {
+          "id": "s2",
+          "text": "The operations analyst role requires incident review facilitation.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-01T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "I personally facilitated three incident reviews for the museum systems team in May 2025. The role requires incident review facilitation."
+      }
+    },
+    {
+      "case_id": "CF6H-02",
+      "title": "Team result and personal runbook",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "s1",
+          "text": "The support team reduced median alert triage time by 20% in 2025; the record does not assign that reduction to an individual.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-01T12:00:00Z"
+        },
+        {
+          "id": "s2",
+          "text": "The candidate personally wrote the team's alert runbook in 2025.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-01T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "I wrote the alert runbook in 2025 and personally reduced median alert triage time by 20%."
+      }
+    },
+    {
+      "case_id": "CF6H-03",
+      "title": "Accessibility preparation",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "s1",
+          "text": "The candidate completed an accessibility testing course in March 2025.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-01T12:00:00Z"
+        },
+        {
+          "id": "s2",
+          "text": "The candidate wrote an internal accessibility testing guide in April 2025.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-01T12:00:00Z"
+        },
+        {
+          "id": "s3",
+          "text": "The quality analyst role asks for accessibility testing documentation.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-01T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "I completed an accessibility testing course in March 2025 and wrote an internal accessibility testing guide in April 2025."
+      }
+    },
+    {
+      "case_id": "CF6H-04",
+      "title": "Scoped database practice",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "s1",
+          "text": "The candidate ran SQL queries against a sandbox inventory dataset in June 2025.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-01T12:00:00Z"
+        },
+        {
+          "id": "s2",
+          "text": "The data coordinator role asks for SQL query experience.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-01T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "I ran SQL queries against a sandbox inventory dataset in June 2025. The role asks for SQL query experience."
+      }
+    },
+    {
+      "case_id": "CF6H-05",
+      "title": "Onboarding transferability",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "s1",
+          "text": "The candidate shadowed two client onboarding calls in 2025 and authored the subsequent handoff notes.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-01T12:00:00Z"
+        },
+        {
+          "id": "s2",
+          "text": "The client success lead role requires leading onboarding calls independently.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-01T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "I shadowed two client onboarding calls and authored their handoff notes. That experience may be relevant to leading onboarding calls independently."
+      }
+    },
+    {
+      "case_id": "CF6H-06",
+      "title": "Exam and course completion",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "s1",
+          "text": "The candidate completed the rail-safety operator course in 2024.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-01T12:00:00Z"
+        },
+        {
+          "id": "s2",
+          "text": "The candidate passed the associated certification exam in 2024.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-01T12:00:00Z"
+        },
+        {
+          "id": "s3",
+          "text": "The rail operations role asks for the course and exam.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-01T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "I completed the rail-safety operator course and passed its certification exam in 2024."
+      }
+    },
+    {
+      "case_id": "CF6H-07",
+      "title": "Permission versus delivery",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "s1",
+          "text": "The candidate was permitted to present one product demo at the June 2025 team meeting; no delivered demo is recorded.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-01T12:00:00Z"
+        },
+        {
+          "id": "s2",
+          "text": "The product trainer role asks for delivered demos.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-01T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "I was permitted to present a product demo in June 2025 and delivered that demo to the team."
+      }
+    },
+    {
+      "case_id": "CF6H-08",
+      "title": "Archive processing volume",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "s1",
+          "text": "The candidate manually processed 150 archive records during the 2025 catalog migration.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-01T12:00:00Z"
+        },
+        {
+          "id": "s2",
+          "text": "The archivist role requires experience processing archive records.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-01T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "I manually processed 150 archive records during the 2025 catalog migration. The role requires archive processing experience."
+      }
+    },
+    {
+      "case_id": "CF6H-09",
+      "title": "Cutover contributions",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "s1",
+          "text": "The candidate wrote the rollback plan for the East Depot vendor cutover in 2025.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-01T12:00:00Z"
+        },
+        {
+          "id": "s2",
+          "text": "The candidate observed the East Depot cutover without coordinating the vendor.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-01T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "I wrote the rollback plan for the East Depot vendor cutover and observed the cutover in 2025."
+      }
+    },
+    {
+      "case_id": "CF6H-10",
+      "title": "Sandbox versus production",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "s1",
+          "text": "The candidate used Kubernetes to deploy a practice service in a sandbox in 2023.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-01T12:00:00Z"
+        },
+        {
+          "id": "s2",
+          "text": "The infrastructure role requires production Kubernetes use.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-01T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "I used Kubernetes in production in 2023 to deploy a service."
+      }
+    },
+    {
+      "case_id": "CF6H-11",
+      "title": "Shared operator training",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "s1",
+          "text": "The candidate and a colleague jointly trained depot operators on the new intake form in July 2025.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-01T12:00:00Z"
+        },
+        {
+          "id": "s2",
+          "text": "The operations educator role asks for operator training.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-01T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "I jointly trained depot operators on the new intake form in July 2025."
+      }
+    },
+    {
+      "case_id": "CF6H-12",
+      "title": "Dated query work",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "s1",
+          "text": "The candidate used SQL queries for monthly warehouse reports from January 2022 through April 2024.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-01T12:00:00Z"
+        },
+        {
+          "id": "s2",
+          "text": "The reporting specialist role requires previous SQL query work.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-01T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "I used SQL queries for monthly warehouse reports from January 2022 through April 2024."
+      }
+    },
+    {
+      "case_id": "CF6H-13",
+      "title": "Withdrawn guide draft",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "s1",
+          "text": "A draft says the candidate wrote a public incident response guide, but the draft was withdrawn after its author field was found to be incorrect.",
+          "kind": "candidate_fact",
+          "status": "withdrawn",
+          "observed_at": "2026-10-01T12:00:00Z"
+        },
+        {
+          "id": "s2",
+          "text": "The candidate reviewed an internal incident response plan in 2025.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-01T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "I reviewed an internal incident response plan in 2025 and wrote the public incident response guide."
+      }
+    },
+    {
+      "case_id": "CF6H-14",
+      "title": "Alert response and escalation",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "s1",
+          "text": "During a 2025 pilot, the candidate triaged incoming alerts and escalated severe ones to the duty engineer.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-01T12:00:00Z"
+        },
+        {
+          "id": "s2",
+          "text": "The monitoring role requires alert triage and escalation.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-01T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "During the 2025 pilot, I triaged incoming alerts and escalated severe ones to the duty engineer."
+      }
+    },
+    {
+      "case_id": "CF6H-15",
+      "title": "Internal demo relevance",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "s1",
+          "text": "The candidate presented a training demo to internal staff in 2025.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-01T12:00:00Z"
+        },
+        {
+          "id": "s2",
+          "text": "The solutions consultant role requires customer-facing product demos.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-01T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "I presented a training demo to internal staff in 2025. That practice could prepare me for customer-facing product demos."
+      }
+    },
+    {
+      "case_id": "CF6H-16",
+      "title": "Pending certificate distinction",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "s1",
+          "text": "The candidate passed the flood-response certification exam in August 2025.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-01T12:00:00Z"
+        },
+        {
+          "id": "s2",
+          "text": "The issuing body marked the candidate's flood-response certificate as pending and had not yet issued it as of September 2025.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-01T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "I passed the flood-response certification exam in August 2025; my certificate was still pending in September 2025."
+      }
+    },
+    {
+      "case_id": "CF6H-17",
+      "title": "Documenter versus coordinator",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "s1",
+          "text": "The candidate documented the vendor cutover checklist in 2025.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-01T12:00:00Z"
+        },
+        {
+          "id": "s2",
+          "text": "The procurement team coordinated the vendor cutover in 2025; the record does not assign coordination to the candidate.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-01T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "I documented the vendor cutover checklist and coordinated the vendor cutover in 2025."
+      }
+    },
+    {
+      "case_id": "CF6H-18",
+      "title": "Pilot tool delivery",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "s1",
+          "text": "The candidate built an intake tool used by 30 staff in a three-week internal pilot in 2025.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-01T12:00:00Z"
+        },
+        {
+          "id": "s2",
+          "text": "The service designer role asks for internal tool delivery experience.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-01T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "I built an intake tool used by 30 staff in a three-week internal pilot in 2025."
+      }
+    },
+    {
+      "case_id": "CF6H-19",
+      "title": "Guide authorship and review",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "s1",
+          "text": "The candidate authored two operator guides in 2024.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-01T12:00:00Z"
+        },
+        {
+          "id": "s2",
+          "text": "A peer reviewed one of those operator guides before publication in 2024.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-01T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "I authored two operator guides in 2024, and a peer reviewed one before publication."
+      }
+    },
+    {
+      "case_id": "CF6H-20",
+      "title": "Later team incident count",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "s1",
+          "text": "The candidate personally handled 12 service incidents in 2024.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-01T12:00:00Z"
+        },
+        {
+          "id": "s2",
+          "text": "The service team handled 18 service incidents in 2025; individual ownership is not recorded.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-01T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "I personally handled 12 service incidents in 2024 and personally handled 18 service incidents in 2025."
+      }
+    }
+  ]
+}

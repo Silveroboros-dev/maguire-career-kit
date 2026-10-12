@@ -1,0 +1,75 @@
+{
+  "schema": "maguire-quality-gold-v1",
+  "case_id": "CF2-04",
+  "family": "unsupported quantified scale",
+  "title": "Small OCR sample versus production scale",
+  "review_status": "proposed_agent_authored",
+  "human_approved": false,
+  "units": [
+    {
+      "target_id": "jd_1",
+      "kind": "duty",
+      "allowed_labels": [
+        "supported"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_1",
+          "fact_1"
+        ]
+      ],
+      "rationale": "The supplied sample checklist directly supports basic OCR quality-check design.",
+      "required_points": [
+        "Checklist and 75-page application"
+      ],
+      "forbidden_inferences": [
+        "Do not imply a production throughput rate"
+      ]
+    },
+    {
+      "target_id": "jd_2",
+      "kind": "duty",
+      "allowed_labels": [
+        "partial"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_2",
+          "fact_1"
+        ]
+      ],
+      "rationale": "The sample is relevant processing work but does not show coordination at 200,000-page scale.",
+      "required_points": [
+        "Sample is relevant",
+        "Large-scale coordination unproven"
+      ],
+      "forbidden_inferences": [
+        "Do not promote sample size to collection scale"
+      ]
+    }
+  ],
+  "forbidden_assessment_targets": [],
+  "acceptable_actions": [
+    "show_existing_evidence",
+    "clarify"
+  ],
+  "critical_errors": [
+    {
+      "id": "CF2-04-E1",
+      "description": "The source gives a 75-page sample and no production coordination at collection scale.",
+      "target_ids": [
+        "jd_2"
+      ]
+    },
+    {
+      "id": "CF2-04-E2",
+      "description": "No source establishes a daily processing rate.",
+      "target_ids": [
+        "jd_2"
+      ]
+    }
+  ],
+  "notes": [
+    "All people, roles, dates, and source statements are synthetic."
+  ]
+}

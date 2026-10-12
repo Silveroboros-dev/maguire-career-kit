@@ -1,0 +1,73 @@
+{
+  "schema": "maguire-quality-gold-v1",
+  "case_id": "PF2-03",
+  "family": "hard condition erased by soft benefits",
+  "title": "On-call duty and learning allowance",
+  "review_status": "proposed_agent_authored",
+  "human_approved": false,
+  "units": [
+    {
+      "target_id": "pref_1",
+      "kind": "must_have",
+      "allowed_labels": [
+        "conflict"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "pref_1",
+          "jd_1"
+        ]
+      ],
+      "rationale": "The mandatory rotation directly violates the no-overnight condition.",
+      "required_points": [
+        "Hard conflict"
+      ],
+      "forbidden_inferences": [
+        "Allowance cannot cancel it"
+      ]
+    },
+    {
+      "target_id": "pref_2",
+      "kind": "nice_to_have",
+      "allowed_labels": [
+        "aligned"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "pref_2",
+          "jd_2"
+        ]
+      ],
+      "rationale": "The offered allowance matches the soft preference.",
+      "required_points": [
+        "Soft benefit aligned"
+      ],
+      "forbidden_inferences": [
+        "Do not give it veto power over the must-have"
+      ]
+    }
+  ],
+  "forbidden_assessment_targets": [],
+  "acceptable_actions": [
+    "pass"
+  ],
+  "critical_errors": [
+    {
+      "id": "PF2-03-E1",
+      "description": "A nice-to-have allowance cannot override the explicit overnight exclusion.",
+      "target_ids": [
+        "pref_1"
+      ]
+    },
+    {
+      "id": "PF2-03-E2",
+      "description": "Compensation by an unrelated soft benefit does not satisfy the hard condition.",
+      "target_ids": [
+        "pref_1"
+      ]
+    }
+  ],
+  "notes": [
+    "All people, roles, dates, and source statements are synthetic."
+  ]
+}

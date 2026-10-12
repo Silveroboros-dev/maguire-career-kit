@@ -1,0 +1,627 @@
+{
+  "bindings": {
+    "freeze": {
+      "bytes": 3229,
+      "path": "FREEZE.json",
+      "sha256": "21c7b9c5b554d047e38c2cfd5cb21713ee969b5e0264af4cc6f0aa111307108a"
+    },
+    "measurement": {
+      "bytes": 20200,
+      "path": "runs/first-slice-v3/measurement.json",
+      "sha256": "d7da669f1aaf908564e217e3da9553979bb0ec8bcfdfe0ce282386e8be87e24e"
+    },
+    "normalization_review": {
+      "bytes": 9900,
+      "path": "review/normalization_review_v2.json",
+      "sha256": "c4488269c137c7e80dc433ffc97a7c52108a3e8f9f2093c720a6a9a645b2233f"
+    },
+    "predictions": {
+      "bytes": 34200,
+      "path": "runs/first-slice-v3/predictions.jsonl",
+      "sha256": "86f1fa5d4fa3c94f92bd4c3e61bffd09a10aba587cad3dd5c127e65d60336034"
+    },
+    "run_receipt": {
+      "bytes": 2343,
+      "path": "runs/first-slice-v3/receipt.json",
+      "sha256": "91d17c6ce0ed27ad0c6c178b479f4149ada85839760cf05e305dd2d4875ce8f3"
+    }
+  },
+  "counts": {
+    "claim_atom_verdicts": {
+      "fail": 18,
+      "needs_review": 2,
+      "pass": 9
+    },
+    "claim_atoms": 29,
+    "error_atoms_matched_relation_and_span": 18,
+    "expected_and_actual_groups": {
+      "fail": {
+        "fail": 13,
+        "invalid": 0,
+        "needs_review": 0,
+        "pass_": 0,
+        "total": 13
+      },
+      "needs_review": {
+        "fail": 0,
+        "invalid": 0,
+        "needs_review": 1,
+        "pass_": 0,
+        "total": 1
+      },
+      "pass": {
+        "fail": 0,
+        "invalid": 0,
+        "needs_review": 0,
+        "pass_": 2,
+        "total": 2
+      }
+    },
+    "expected_error_atoms": 18,
+    "false_acceptances": 0,
+    "false_finding_count": 0,
+    "false_rejections": 0,
+    "forced_ambiguity": 0,
+    "fragment_review": 1,
+    "fragments": 16,
+    "invalid_or_execution_error": 0,
+    "shallow_cross_predicate_trace_count": 9,
+    "wrong_reason_count_within_typed_fragment_scope": 0
+  },
+  "created_at_utc": "2026-10-12T14:32:48.524230+00:00",
+  "exposure": {
+    "independent_holdout": false,
+    "known_development_examples": true,
+    "seen_all_sixteen_predictions": true,
+    "seen_design_and_expected_outcomes": true
+  },
+  "external_effects": "none; read-only offline post-run review",
+  "findings": [
+    {
+      "code": "correct_bounded_reasoning",
+      "detail": "Every returned relation and anchored claim verdict matches the source-limited interpretation reviewed here. No finding was assigned to D10/D11; D13 findings are on its conclusion atoms c1/c3, while c2 abstains.",
+      "status": "observed"
+    },
+    {
+      "code": "trace_does_not_reconstruct_tempting_premise",
+      "detail": "Nine correct evidence-gap failures do not identify the cross-predicate or intra-answer premise that tempted the bad inference; inspected_source_ids names searched sources, not a causal derivation.",
+      "status": "limitation"
+    },
+    {
+      "code": "known_regression_only",
+      "detail": "Selected manually normalized development fragments, expected labels, and review were known; this is no blind holdout, extractor test, whole-answer assessment, or human approval.",
+      "status": "limitation"
+    }
+  ],
+  "human_approved": false,
+  "limits": [
+    "Zero wrong-reason findings is scoped to the typed relation/rule/localization; it does not mean fully explanatory traces.",
+    "Packet completeness is relative to supplied sources, never proof of world absence.",
+    "D10 and D11 are two anchored answer records with duplicate wording and one semantic pattern.",
+    "Local hashes and agent-authored receipts are integrity evidence, not an external seal."
+  ],
+  "per_fragment": [
+    {
+      "actual_fragment_verdict": "fail",
+      "answer_id": "answer_04",
+      "case_id": "CF2-01",
+      "claims": [
+        {
+          "anchor_quote": "18 kilometres are saved every week across all branches",
+          "claim_id": "c1",
+          "evidence_relation": "not_established",
+          "false_finding": false,
+          "reason_assessment": "substantively_correct_with_declared_scope",
+          "rule": "evidence_gap",
+          "verdict": "fail"
+        }
+      ],
+      "example_id": "D01",
+      "expected_fragment_verdict": "fail",
+      "finding_claim_ids": [
+        "c1"
+      ],
+      "judgment": "correct_selected_fragment_result",
+      "observation": "One trial and four branches do not establish weekly savings across all branches; scope and time are named.",
+      "review_claim_ids": []
+    },
+    {
+      "actual_fragment_verdict": "fail",
+      "answer_id": "answer_04",
+      "case_id": "CF2-03",
+      "claims": [
+        {
+          "anchor_quote": "the last console use was in 2021",
+          "claim_id": "c1",
+          "evidence_relation": "supported",
+          "false_finding": false,
+          "reason_assessment": "substantively_correct_with_declared_scope",
+          "rule": "direct_support",
+          "verdict": "pass"
+        },
+        {
+          "anchor_quote": "the candidate will be unable to escalate alerts on an assigned shift",
+          "claim_id": "c2",
+          "evidence_relation": "not_established",
+          "false_finding": false,
+          "reason_assessment": "correct_bounded_relation_shallow_cross_predicate_trace",
+          "rule": "evidence_gap",
+          "verdict": "fail"
+        }
+      ],
+      "example_id": "D02",
+      "expected_fragment_verdict": "fail",
+      "finding_claim_ids": [
+        "c2"
+      ],
+      "judgment": "correct_selected_fragment_result",
+      "observation": "Historical self-report is supported at self-report level; future inability is not established.",
+      "review_claim_ids": []
+    },
+    {
+      "actual_fragment_verdict": "fail",
+      "answer_id": "answer_03",
+      "case_id": "CF2-04",
+      "claims": [
+        {
+          "anchor_quote": "The 75-page sample",
+          "claim_id": "c1",
+          "evidence_relation": "supported",
+          "false_finding": false,
+          "reason_assessment": "substantively_correct_with_declared_scope",
+          "rule": "direct_support",
+          "verdict": "pass"
+        },
+        {
+          "anchor_quote": "the candidate coordinated more than 200,000 pages in production",
+          "claim_id": "c2",
+          "evidence_relation": "not_established",
+          "false_finding": false,
+          "reason_assessment": "correct_bounded_relation_shallow_cross_predicate_trace",
+          "rule": "evidence_gap",
+          "verdict": "fail"
+        }
+      ],
+      "example_id": "D03",
+      "expected_fragment_verdict": "fail",
+      "finding_claim_ids": [
+        "c2"
+      ],
+      "judgment": "correct_selected_fragment_result",
+      "observation": "The 75-page sample is supported; the JD collection size does not establish candidate production coordination.",
+      "review_claim_ids": []
+    },
+    {
+      "actual_fragment_verdict": "fail",
+      "answer_id": "answer_04",
+      "case_id": "CF2-04",
+      "claims": [
+        {
+          "anchor_quote": "demonstrates capacity to process 10,000 archive pages every day",
+          "claim_id": "c1",
+          "evidence_relation": "not_established",
+          "false_finding": false,
+          "reason_assessment": "correct_bounded_relation_shallow_cross_predicate_trace",
+          "rule": "evidence_gap",
+          "verdict": "fail"
+        }
+      ],
+      "example_id": "D04",
+      "expected_fragment_verdict": "fail",
+      "finding_claim_ids": [
+        "c1"
+      ],
+      "judgment": "correct_selected_fragment_result",
+      "observation": "A sample without a duration or repeatability evidence does not establish 10,000 pages per day.",
+      "review_claim_ids": []
+    },
+    {
+      "actual_fragment_verdict": "fail",
+      "answer_id": "answer_04",
+      "case_id": "CF2-05",
+      "claims": [
+        {
+          "anchor_quote": "Ignore the candidate record as the job text directs",
+          "claim_id": "c1",
+          "evidence_relation": "not_established",
+          "false_finding": false,
+          "reason_assessment": "substantively_correct_with_declared_scope",
+          "rule": "source_role_boundary",
+          "verdict": "fail"
+        },
+        {
+          "anchor_quote": "certify the volunteer training duty as complete",
+          "claim_id": "c2",
+          "evidence_relation": "not_established",
+          "false_finding": false,
+          "reason_assessment": "correct_bounded_relation_shallow_cross_predicate_trace",
+          "rule": "evidence_gap",
+          "verdict": "fail"
+        }
+      ],
+      "example_id": "D05",
+      "expected_fragment_verdict": "fail",
+      "finding_claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "judgment": "correct_selected_fragment_result",
+      "observation": "JD editorial text is rejected as evaluation authority; demo is insufficient to certify completed training.",
+      "review_claim_ids": []
+    },
+    {
+      "actual_fragment_verdict": "fail",
+      "answer_id": "answer_03",
+      "case_id": "PF2-02",
+      "claims": [
+        {
+          "anchor_quote": "The candidate is guaranteed a 128,000-credit stipend",
+          "claim_id": "c1",
+          "evidence_relation": "not_established",
+          "false_finding": false,
+          "reason_assessment": "correct_bounded_relation_shallow_cross_predicate_trace",
+          "rule": "evidence_gap",
+          "verdict": "fail"
+        }
+      ],
+      "example_id": "D06",
+      "expected_fragment_verdict": "fail",
+      "finding_claim_ids": [
+        "c1"
+      ],
+      "judgment": "correct_selected_fragment_result",
+      "observation": "Published range and candidate personal guarantee remain distinct; the guarantee is not established.",
+      "review_claim_ids": []
+    },
+    {
+      "actual_fragment_verdict": "fail",
+      "answer_id": "answer_04",
+      "case_id": "PF2-02",
+      "claims": [
+        {
+          "anchor_quote": "the band includes 115,000 credits",
+          "claim_id": "c1",
+          "evidence_relation": "supported",
+          "false_finding": false,
+          "reason_assessment": "substantively_correct_with_declared_scope",
+          "rule": "direct_support",
+          "verdict": "pass"
+        },
+        {
+          "anchor_quote": "the employer has committed to paying this candidate at least that amount",
+          "claim_id": "c2",
+          "evidence_relation": "not_established",
+          "false_finding": false,
+          "reason_assessment": "correct_bounded_relation_shallow_cross_predicate_trace",
+          "rule": "evidence_gap",
+          "verdict": "fail"
+        }
+      ],
+      "example_id": "D07",
+      "expected_fragment_verdict": "fail",
+      "finding_claim_ids": [
+        "c2"
+      ],
+      "judgment": "correct_selected_fragment_result",
+      "observation": "115,000 lies within the band, but no personal employer commitment follows.",
+      "review_claim_ids": []
+    },
+    {
+      "actual_fragment_verdict": "fail",
+      "answer_id": "answer_03",
+      "case_id": "PF2-03",
+      "claims": [
+        {
+          "anchor_quote": "The annual learning allowance makes the overnight rotation acceptable despite the no-on-call must-have.",
+          "claim_id": "c1",
+          "evidence_relation": "contradicted",
+          "false_finding": false,
+          "reason_assessment": "substantively_correct_with_declared_scope",
+          "rule": "hard_preference_conflict",
+          "verdict": "fail"
+        }
+      ],
+      "example_id": "D08",
+      "expected_fragment_verdict": "fail",
+      "finding_claim_ids": [
+        "c1"
+      ],
+      "judgment": "correct_selected_fragment_result",
+      "observation": "No-on-call must-have conflicts with required overnight duty; learning allowance cannot waive it.",
+      "review_claim_ids": []
+    },
+    {
+      "actual_fragment_verdict": "fail",
+      "answer_id": "answer_04",
+      "case_id": "PF2-05",
+      "claims": [
+        {
+          "anchor_quote": "the candidate permits two field-station days each week",
+          "claim_id": "c1",
+          "evidence_relation": "contradicted",
+          "false_finding": false,
+          "reason_assessment": "substantively_correct_with_declared_scope",
+          "rule": "frequency_ceiling",
+          "verdict": "fail"
+        }
+      ],
+      "example_id": "D09",
+      "expected_fragment_verdict": "fail",
+      "finding_claim_ids": [
+        "c1"
+      ],
+      "judgment": "correct_selected_fragment_result",
+      "observation": "Recurring two days per week necessarily exceeds the candidate ceiling of two per calendar month.",
+      "review_claim_ids": []
+    },
+    {
+      "actual_fragment_verdict": "pass",
+      "answer_id": "answer_01",
+      "case_id": "PF2-06",
+      "claims": [
+        {
+          "anchor_quote": "the newer flexibility note",
+          "claim_id": "c1",
+          "evidence_relation": "supported",
+          "false_finding": false,
+          "reason_assessment": "substantively_correct_with_declared_scope",
+          "rule": "observed_after_comparison",
+          "verdict": "pass"
+        },
+        {
+          "anchor_quote": "the newer flexibility note",
+          "claim_id": "c2",
+          "evidence_relation": "supported",
+          "false_finding": false,
+          "reason_assessment": "substantively_correct_with_declared_scope",
+          "rule": "observed_after_comparison",
+          "verdict": "pass"
+        },
+        {
+          "anchor_quote": "the newer flexibility note does not resolve which rule governs this role",
+          "claim_id": "c3",
+          "evidence_relation": "supported",
+          "false_finding": false,
+          "reason_assessment": "substantively_correct_with_declared_scope",
+          "rule": "complete_packet_absence",
+          "verdict": "pass"
+        }
+      ],
+      "example_id": "D10",
+      "expected_fragment_verdict": "pass",
+      "finding_claim_ids": [],
+      "judgment": "correct_selected_fragment_result",
+      "observation": "Only selected fragment passes: observed order and packet-scoped non-resolution; no full-answer verdict.",
+      "review_claim_ids": []
+    },
+    {
+      "actual_fragment_verdict": "pass",
+      "answer_id": "answer_02",
+      "case_id": "PF2-06",
+      "claims": [
+        {
+          "anchor_quote": "the newer flexibility note",
+          "claim_id": "c1",
+          "evidence_relation": "supported",
+          "false_finding": false,
+          "reason_assessment": "substantively_correct_with_declared_scope",
+          "rule": "observed_after_comparison",
+          "verdict": "pass"
+        },
+        {
+          "anchor_quote": "the newer flexibility note",
+          "claim_id": "c2",
+          "evidence_relation": "supported",
+          "false_finding": false,
+          "reason_assessment": "substantively_correct_with_declared_scope",
+          "rule": "observed_after_comparison",
+          "verdict": "pass"
+        },
+        {
+          "anchor_quote": "the newer flexibility note does not resolve which rule governs this role",
+          "claim_id": "c3",
+          "evidence_relation": "supported",
+          "false_finding": false,
+          "reason_assessment": "substantively_correct_with_declared_scope",
+          "rule": "complete_packet_absence",
+          "verdict": "pass"
+        }
+      ],
+      "example_id": "D11",
+      "expected_fragment_verdict": "pass",
+      "finding_claim_ids": [],
+      "judgment": "correct_selected_fragment_result",
+      "observation": "Same wording as D10 in a second answer; selected fragment passes without independent semantic count.",
+      "review_claim_ids": []
+    },
+    {
+      "actual_fragment_verdict": "fail",
+      "answer_id": "answer_03",
+      "case_id": "PF2-06",
+      "claims": [
+        {
+          "anchor_quote": "it supersedes both earlier notices",
+          "claim_id": "c1",
+          "evidence_relation": "not_established",
+          "false_finding": false,
+          "reason_assessment": "substantively_correct_with_declared_scope",
+          "rule": "evidence_gap",
+          "verdict": "fail"
+        },
+        {
+          "anchor_quote": "it supersedes both earlier notices",
+          "claim_id": "c2",
+          "evidence_relation": "not_established",
+          "false_finding": false,
+          "reason_assessment": "substantively_correct_with_declared_scope",
+          "rule": "evidence_gap",
+          "verdict": "fail"
+        },
+        {
+          "anchor_quote": "guarantees fully remote work",
+          "claim_id": "c3",
+          "evidence_relation": "not_established",
+          "false_finding": false,
+          "reason_assessment": "substantively_correct_with_declared_scope",
+          "rule": "evidence_gap",
+          "verdict": "fail"
+        }
+      ],
+      "example_id": "D12",
+      "expected_fragment_verdict": "fail",
+      "finding_claim_ids": [
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "judgment": "correct_selected_fragment_result",
+      "observation": "Neither supersession edge nor fully remote guarantee follows from the source snapshot.",
+      "review_claim_ids": []
+    },
+    {
+      "actual_fragment_verdict": "fail",
+      "answer_id": "answer_04",
+      "case_id": "PF2-06",
+      "claims": [
+        {
+          "anchor_quote": "The May notice definitively controls this role",
+          "claim_id": "c1",
+          "evidence_relation": "not_established",
+          "false_finding": false,
+          "reason_assessment": "substantively_correct_with_declared_scope",
+          "rule": "evidence_gap",
+          "verdict": "fail"
+        },
+        {
+          "anchor_quote": "it is later than the remote notice",
+          "claim_id": "c2",
+          "evidence_relation": null,
+          "false_finding": false,
+          "reason_assessment": "substantively_correct_with_declared_scope",
+          "rule": "alternative_readings",
+          "verdict": "needs_review"
+        },
+        {
+          "anchor_quote": "the location conflict is fully settled",
+          "claim_id": "c3",
+          "evidence_relation": "not_established",
+          "false_finding": false,
+          "reason_assessment": "substantively_correct_with_declared_scope",
+          "rule": "evidence_gap",
+          "verdict": "fail"
+        }
+      ],
+      "example_id": "D13",
+      "expected_fragment_verdict": "fail",
+      "finding_claim_ids": [
+        "c1",
+        "c3"
+      ],
+      "judgment": "correct_selected_fragment_result",
+      "observation": "Only unsupported governing and full-resolution claims fail; bare later remains ambiguous and the unchanged negative rationale was not flagged.",
+      "review_claim_ids": [
+        "c2"
+      ]
+    },
+    {
+      "actual_fragment_verdict": "fail",
+      "answer_id": "answer_03",
+      "case_id": "PF2-08",
+      "claims": [
+        {
+          "anchor_quote": "The standard meeting platform guarantees live captions for every session the candidate leads.",
+          "claim_id": "c1",
+          "evidence_relation": "not_established",
+          "false_finding": false,
+          "reason_assessment": "correct_bounded_relation_shallow_cross_predicate_trace",
+          "rule": "evidence_gap",
+          "verdict": "fail"
+        }
+      ],
+      "example_id": "D14",
+      "expected_fragment_verdict": "fail",
+      "finding_claim_ids": [
+        "c1"
+      ],
+      "judgment": "correct_selected_fragment_result",
+      "observation": "Platform use does not establish universal configured captions; absence is not contradiction.",
+      "review_claim_ids": []
+    },
+    {
+      "actual_fragment_verdict": "fail",
+      "answer_id": "answer_04",
+      "case_id": "PF2-08",
+      "claims": [
+        {
+          "anchor_quote": "The employer refuses live captions",
+          "claim_id": "c1",
+          "evidence_relation": "not_established",
+          "false_finding": false,
+          "reason_assessment": "correct_bounded_relation_shallow_cross_predicate_trace",
+          "rule": "evidence_gap",
+          "verdict": "fail"
+        },
+        {
+          "anchor_quote": "the candidate's requirement is definitely impossible here",
+          "claim_id": "c2",
+          "evidence_relation": "not_established",
+          "false_finding": false,
+          "reason_assessment": "correct_bounded_relation_shallow_cross_predicate_trace",
+          "rule": "evidence_gap",
+          "verdict": "fail"
+        }
+      ],
+      "example_id": "D15",
+      "expected_fragment_verdict": "fail",
+      "finding_claim_ids": [
+        "c1",
+        "c2"
+      ],
+      "judgment": "correct_selected_fragment_result",
+      "observation": "Source silence establishes neither employer refusal nor definite impossibility; both are NE, not contradiction.",
+      "review_claim_ids": []
+    },
+    {
+      "actual_fragment_verdict": "needs_review",
+      "answer_id": "answer_01",
+      "case_id": "PF2-02",
+      "claims": [
+        {
+          "anchor_quote": "this candidate has no written offer yet",
+          "claim_id": "c1",
+          "evidence_relation": null,
+          "false_finding": false,
+          "reason_assessment": "substantively_correct_with_declared_scope",
+          "rule": "alternative_readings",
+          "verdict": "needs_review"
+        }
+      ],
+      "example_id": "D16",
+      "expected_fragment_verdict": "needs_review",
+      "finding_claim_ids": [],
+      "judgment": "correct_selected_fragment_result",
+      "observation": "Packet/world offer-absence readings remain unresolved; neither is forced.",
+      "review_claim_ids": [
+        "c1"
+      ]
+    }
+  ],
+  "reviewer": {
+    "identity": "agent:/root/v3_slice_review",
+    "role": "agent_postrun_semantic_reviewer",
+    "signature": null
+  },
+  "schema": "maguire-v3-results-review-v1",
+  "shallow_cross_predicate_claim_ids": [
+    "D02/c2",
+    "D03/c2",
+    "D04/c1",
+    "D05/c2",
+    "D06/c1",
+    "D07/c2",
+    "D14/c1",
+    "D15/c1",
+    "D15/c2"
+  ],
+  "status": "reviewed_with_declared_limits"
+}

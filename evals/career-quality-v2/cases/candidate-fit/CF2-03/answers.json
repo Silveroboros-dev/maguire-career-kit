@@ -1,0 +1,181 @@
+{
+  "schema": "maguire-quality-answers-v1",
+  "case_id": "CF2-03",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "assessments": [
+        {
+          "target_id": "jd_1",
+          "label": "contradicted",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Minimum: hands-on use of a signal monitoring console within the last two years."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "I last used a signal monitoring console in 2021; I have not used one since then."
+            }
+          ],
+          "rationale": "The candidate's stated last console use was in 2021, outside the job's two-year minimum as of October 2026."
+        },
+        {
+          "target_id": "jd_2",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Monitor incoming satellite signal alerts during assigned shifts and escalate anomalies."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "I last used a signal monitoring console in 2021; I have not used one since then."
+            }
+          ],
+          "rationale": "The old console experience gives context, but the supplied facts do not show current shift monitoring or inability to perform it later."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "The explicit recent-use minimum is unmet; future alert-monitoring ability remains unassessed.",
+        "next_step": "Ask whether the employer accepts an updated practical demonstration in place of the stated minimum."
+      },
+      "limitations": [
+        "The console history is self-reported.",
+        "A current exercise would not retroactively satisfy a past-use minimum."
+      ]
+    },
+    {
+      "answer_id": "answer_02",
+      "assessments": [
+        {
+          "target_id": "jd_1",
+          "label": "contradicted",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Minimum: hands-on use of a signal monitoring console within the last two years."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "I last used a signal monitoring console in 2021; I have not used one since then."
+            }
+          ],
+          "rationale": "The candidate's stated last console use was in 2021, outside the job's two-year minimum as of October 2026."
+        },
+        {
+          "target_id": "jd_2",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Monitor incoming satellite signal alerts during assigned shifts and escalate anomalies."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "I last used a signal monitoring console in 2021; I have not used one since then."
+            }
+          ],
+          "rationale": "The old console experience gives context, but the supplied facts do not show current shift monitoring or inability to perform it later."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "The 2021 date is a real eligibility problem, while the later monitoring duty cannot be predicted from that date alone.",
+        "next_step": "Clarify the minimum with the employer before investing in a practice exercise."
+      },
+      "limitations": [
+        "No recent console work is in this supplied record."
+      ]
+    },
+    {
+      "answer_id": "answer_03",
+      "assessments": [
+        {
+          "target_id": "jd_1",
+          "label": "contradicted",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Minimum: hands-on use of a signal monitoring console within the last two years."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "I last used a signal monitoring console in 2021; I have not used one since then."
+            }
+          ],
+          "rationale": "The candidate's stated last console use was in 2021, outside the job's two-year minimum as of October 2026."
+        },
+        {
+          "target_id": "jd_2",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Monitor incoming satellite signal alerts during assigned shifts and escalate anomalies."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "I last used a signal monitoring console in 2021; I have not used one since then."
+            }
+          ],
+          "rationale": "The old console experience gives context, but the supplied facts do not show current shift monitoring or inability to perform it later."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "The recent-use minimum is unmet, which proves the candidate cannot monitor future satellite alerts.",
+        "next_step": "Ask whether the employer accepts an updated practical demonstration in place of the stated minimum."
+      },
+      "limitations": [
+        "The console history is self-reported.",
+        "A current exercise would not retroactively satisfy a past-use minimum."
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "assessments": [
+        {
+          "target_id": "jd_1",
+          "label": "contradicted",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Minimum: hands-on use of a signal monitoring console within the last two years."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "I last used a signal monitoring console in 2021; I have not used one since then."
+            }
+          ],
+          "rationale": "The candidate's stated last console use was in 2021, outside the job's two-year minimum as of October 2026."
+        },
+        {
+          "target_id": "jd_2",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Monitor incoming satellite signal alerts during assigned shifts and escalate anomalies."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "I last used a signal monitoring console in 2021; I have not used one since then."
+            }
+          ],
+          "rationale": "Because the last console use was in 2021, the candidate will be unable to escalate alerts on an assigned shift."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "The explicit recent-use minimum is unmet; future alert-monitoring ability remains unassessed.",
+        "next_step": "Ask whether the employer accepts an updated practical demonstration in place of the stated minimum."
+      },
+      "limitations": [
+        "The console history is self-reported.",
+        "A current exercise would not retroactively satisfy a past-use minimum."
+      ]
+    }
+  ]
+}

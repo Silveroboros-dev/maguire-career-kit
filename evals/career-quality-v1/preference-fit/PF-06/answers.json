@@ -1,0 +1,194 @@
+{
+  "schema": "maguire-quality-answers-v1",
+  "case_id": "PF-06",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "assessments": [
+        {
+          "target_id": "pref_salary",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_salary",
+              "quote": "Indicative annual base salary is CHF 130,000–150,000. Final base pay is negotiated for the chosen candidate, and offers above the indicative range may be considered."
+            }
+          ],
+          "rationale": "The indicative range is below the minimum, but the source explicitly leaves above-range negotiated offers possible; the final offer is absent."
+        },
+        {
+          "target_id": "pref_remote",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_remote",
+              "quote": "The role is fully remote within Switzerland."
+            }
+          ],
+          "rationale": "Remote work within Switzerland exactly matches the location preference."
+        },
+        {
+          "target_id": "pref_travel",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_travel",
+              "quote": "There are at most two work trips per year."
+            }
+          ],
+          "rationale": "At most two trips is within the candidate’s three-trip soft limit."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "Location and travel fit; CHF 160,000 base remains unresolved because the published range is indicative and above-range offers are only possible.",
+        "next_step": "Ask whether CHF 160,000 annual base is genuinely within approved offer authority before investing in a full application."
+      },
+      "limitations": [
+        "No approved final salary or individual offer is supplied.",
+        "All currency and compensation comparisons concern annual CHF base pay only."
+      ]
+    },
+    {
+      "answer_id": "answer_02",
+      "assessments": [
+        {
+          "target_id": "pref_salary",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_salary",
+              "quote": "Indicative annual base salary is CHF 130,000–150,000. Final base pay is negotiated for the chosen candidate, and offers above the indicative range may be considered."
+            }
+          ],
+          "rationale": "The indicative range is below the minimum, but the source explicitly leaves above-range negotiated offers possible; the final offer is absent."
+        },
+        {
+          "target_id": "pref_remote",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_remote",
+              "quote": "The role is fully remote within Switzerland."
+            }
+          ],
+          "rationale": "Remote work within Switzerland exactly matches the location preference."
+        },
+        {
+          "target_id": "pref_travel",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_travel",
+              "quote": "There are at most two work trips per year."
+            }
+          ],
+          "rationale": "At most two trips is within the candidate’s three-trip soft limit."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "The salary must-have needs an employer decision despite the compatible remote and travel terms.",
+        "next_step": "Request a written base-pay ceiling for this vacancy and continue only if it permits at least CHF 160,000."
+      },
+      "limitations": [
+        "No approved final salary or individual offer is supplied.",
+        "All currency and compensation comparisons concern annual CHF base pay only."
+      ]
+    },
+    {
+      "answer_id": "answer_03",
+      "assessments": [
+        {
+          "target_id": "pref_salary",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_salary",
+              "quote": "Indicative annual base salary is CHF 130,000–150,000. Final base pay is negotiated for the chosen candidate, and offers above the indicative range may be considered."
+            }
+          ],
+          "rationale": "Negotiation language guarantees a CHF 160,000 annual base offer."
+        },
+        {
+          "target_id": "pref_remote",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_remote",
+              "quote": "The role is fully remote within Switzerland."
+            }
+          ],
+          "rationale": "Remote work within Switzerland exactly matches the location preference."
+        },
+        {
+          "target_id": "pref_travel",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_travel",
+              "quote": "There are at most two work trips per year."
+            }
+          ],
+          "rationale": "At most two trips is within the candidate’s three-trip soft limit."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "Location and travel fit; CHF 160,000 base remains unresolved because the published range is indicative and above-range offers are only possible.",
+        "next_step": "Ask whether CHF 160,000 annual base is genuinely within approved offer authority before investing in a full application."
+      },
+      "limitations": [
+        "No approved final salary or individual offer is supplied.",
+        "All currency and compensation comparisons concern annual CHF base pay only."
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "assessments": [
+        {
+          "target_id": "pref_salary",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_salary",
+              "quote": "Indicative annual base salary is CHF 130,000–150,000. Final base pay is negotiated for the chosen candidate, and offers above the indicative range may be considered."
+            }
+          ],
+          "rationale": "The indicative range is below the minimum, but the source explicitly leaves above-range negotiated offers possible; the final offer is absent."
+        },
+        {
+          "target_id": "pref_remote",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_remote",
+              "quote": "The role is fully remote within Switzerland."
+            }
+          ],
+          "rationale": "Remote work within Switzerland exactly matches the location preference."
+        },
+        {
+          "target_id": "pref_travel",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_travel",
+              "quote": "There are at most two work trips per year."
+            }
+          ],
+          "rationale": "At most two trips is within the candidate’s three-trip soft limit."
+        }
+      ],
+      "conclusion": {
+        "action": "pass",
+        "text": "Treat the indicative CHF 150,000 salary ceiling as a final cap, making the CHF 160,000 minimum impossible.",
+        "next_step": "Close the role solely because the indicative range ends below the minimum."
+      },
+      "limitations": [
+        "No approved final salary or individual offer is supplied.",
+        "All currency and compensation comparisons concern annual CHF base pay only."
+      ]
+    }
+  ]
+}

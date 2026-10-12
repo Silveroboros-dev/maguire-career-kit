@@ -1,0 +1,77 @@
+{
+  "schema": "maguire-v5-new-author-attestation",
+  "family": "preference-fit",
+  "author": "Codex subagent /root/v5h_preference_author (GPT-6 family; exact variant not exposed)",
+  "human_approved": false,
+  "checker_code_seen": false,
+  "previous_cases_seen": false,
+  "predictions_seen": false,
+  "allowed_files_read": [
+    "AGENTS.md",
+    "README.md",
+    "CREDITS.md",
+    "evals/career-quality-v5-new-cases/AUTHORING.md",
+    "evals/career-quality-v5-new-cases/FROZEN_SCHEMA.md",
+    "evals/career-quality-v5-new-cases/authoring/preference-fit.py",
+    "evals/career-quality-v5-new-cases/raw/preference-fit.json",
+    "evals/career-quality-v5-new-cases/normalized/preference-fit.json",
+    "evals/career-quality-v5-new-cases/gold/preference-fit.json",
+    "evals/career-quality-v5-new-cases/authoring/preference-history/gold-before-blind-review.json",
+    "evals/career-quality-v5-new-cases/authoring/preference-history/normalized-after-blind-review-before-fidelity.json",
+    "evals/career-quality-v5-new-cases/authoring/preference-history/normalized-before-blind-review.json",
+    "evals/career-quality-v5-new-cases/authoring/preference-history/raw-before-PF04-revision.json",
+    "evals/career-quality-v5-new-cases/authoring/preference-fit-attestation.json"
+  ],
+  "files_authored": [
+    {
+      "path": "authoring/preference-fit.py",
+      "bytes": 35767,
+      "sha256": "b1bcd27fe078e301deddcb3f1a2fdf78b5db039d47256409771888695da7e97a"
+    },
+    {
+      "path": "raw/preference-fit.json",
+      "bytes": 16985,
+      "sha256": "0229c08bc04fb1d33a213fc09787c3a4317bec4182760f4aa57cadf4c14c155d"
+    },
+    {
+      "path": "normalized/preference-fit.json",
+      "bytes": 53365,
+      "sha256": "7773f5b6af2e58f6012881ec3d3ac871727f2e67d2d5ef1df979c8d2005c925b"
+    },
+    {
+      "path": "gold/preference-fit.json",
+      "bytes": 5139,
+      "sha256": "a2b16c25e95dffc028e3da50d51f4bcf53cb37434ea2886054ac29fa62ab0355"
+    },
+    {
+      "path": "authoring/preference-history/gold-before-blind-review.json",
+      "bytes": 5179,
+      "sha256": "52997518d8141cb1c89f78e71369b6a0f16c02cfd0648bffdd6875bd6fa89128"
+    },
+    {
+      "path": "authoring/preference-history/normalized-after-blind-review-before-fidelity.json",
+      "bytes": 52811,
+      "sha256": "4f33e1a73c844bfd96365ae89117a7cf4b4c864e51daaf86bf3ea84ff02b6c29"
+    },
+    {
+      "path": "authoring/preference-history/normalized-before-blind-review.json",
+      "bytes": 50427,
+      "sha256": "5e841efd68f98af73a303995a6ef790114431a1a1b9c154bbe709172cb65de0b"
+    },
+    {
+      "path": "authoring/preference-history/raw-before-PF04-revision.json",
+      "bytes": 16985,
+      "sha256": "0229c08bc04fb1d33a213fc09787c3a4317bec4182760f4aa57cadf4c14c155d"
+    }
+  ],
+  "composition_notes": "Twenty hand-authored fictional cases: 13 pass, 6 fail, 1 review after blind semantic review corrected PF04. Cases combine budgets and category, onboarding and approval, duty windows, permission caps, pending decisions, conflicting terms, role scope, supersession, stipend modality, schedules, source status, and accessibility timing.",
+  "review_corrections": [
+    "PF04: blind raw-only reviewer found conditional possibility supported; changed gold needs_review to pass and preserved conditional stance/approval contingency in normalization without changing raw.",
+    "PF09: added an explicit negative fact for no approved allowance amount.",
+    "PF12: split candidate qualification and role requirement into separately anchored claims; raw answer unchanged.",
+    "PF16: changed unknown stipend lower bound from zero to null.",
+    "PF20: aligned preference predicate with live_captions; split current unavailability, pending procurement, and absence of promised date into separate claims/facts; raw answer unchanged.",
+    "PF06, PF11, PF15: retained every-Sunday frequency, role-only scope, and required evening duty in source normalization."
+  ],
+  "limitations": "The prescribed 12/6/2 mix becomes 13/6/1 because PF04 is semantically pass; no raw text or gold truth was altered merely to meet a quota. No checker, predecessor cases, predictions, API, or network used. Attestation cannot hash itself without recursion."
+}

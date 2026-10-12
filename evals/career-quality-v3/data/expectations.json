@@ -1,0 +1,467 @@
+{
+  "schema": "maguire-v3-development-expectations",
+  "human_approved": false,
+  "provenance": "prior design plus manual atomic expansion",
+  "rows": [
+    {
+      "example_id": "D01",
+      "verdict": "fail",
+      "claims": [
+        {
+          "claim_id": "c1",
+          "verdict": "fail",
+          "evidence_relation": "not_established",
+          "anchor": {
+            "sha256": "2b22aec3d3a3fd8bf3c4c60ccc114b1f0eed6378d84e37261bf6f6d407f37c1b",
+            "pointer": "/answers/3/conclusion/next_step",
+            "start": 35,
+            "end": 89,
+            "quote": "18 kilometres are saved every week across all branches"
+          }
+        }
+      ],
+      "design_rule": "single_trial_to_recurring_population_benefit"
+    },
+    {
+      "example_id": "D02",
+      "verdict": "fail",
+      "claims": [
+        {
+          "claim_id": "c1",
+          "verdict": "pass",
+          "evidence_relation": "supported",
+          "anchor": {
+            "sha256": "e29933cdbe061ba5ef359c9700519ea2547f15d1dce0dcfc840f3ab56d85f683",
+            "pointer": "/answers/3/assessments/1/rationale",
+            "start": 8,
+            "end": 40,
+            "quote": "the last console use was in 2021"
+          }
+        },
+        {
+          "claim_id": "c2",
+          "verdict": "fail",
+          "evidence_relation": "not_established",
+          "anchor": {
+            "sha256": "e29933cdbe061ba5ef359c9700519ea2547f15d1dce0dcfc840f3ab56d85f683",
+            "pointer": "/answers/3/assessments/1/rationale",
+            "start": 42,
+            "end": 110,
+            "quote": "the candidate will be unable to escalate alerts on an assigned shift"
+          }
+        }
+      ],
+      "design_rule": "recency_to_future_inability"
+    },
+    {
+      "example_id": "D03",
+      "verdict": "fail",
+      "claims": [
+        {
+          "claim_id": "c1",
+          "verdict": "pass",
+          "evidence_relation": "supported",
+          "anchor": {
+            "sha256": "0e14022e530a588faf817edf016482a1aeef7c4dbc1a2f62dc4d48191a060386",
+            "pointer": "/answers/2/assessments/1/rationale",
+            "start": 0,
+            "end": 18,
+            "quote": "The 75-page sample"
+          }
+        },
+        {
+          "claim_id": "c2",
+          "verdict": "fail",
+          "evidence_relation": "not_established",
+          "anchor": {
+            "sha256": "0e14022e530a588faf817edf016482a1aeef7c4dbc1a2f62dc4d48191a060386",
+            "pointer": "/answers/2/assessments/1/rationale",
+            "start": 26,
+            "end": 89,
+            "quote": "the candidate coordinated more than 200,000 pages in production"
+          }
+        }
+      ],
+      "design_rule": "role_requirement_and_sample_to_candidate_achievement"
+    },
+    {
+      "example_id": "D04",
+      "verdict": "fail",
+      "claims": [
+        {
+          "claim_id": "c1",
+          "verdict": "fail",
+          "evidence_relation": "not_established",
+          "anchor": {
+            "sha256": "0e14022e530a588faf817edf016482a1aeef7c4dbc1a2f62dc4d48191a060386",
+            "pointer": "/answers/3/conclusion/text",
+            "start": 35,
+            "end": 98,
+            "quote": "demonstrates capacity to process 10,000 archive pages every day"
+          }
+        }
+      ],
+      "design_rule": "sample_volume_to_daily_capacity"
+    },
+    {
+      "example_id": "D05",
+      "verdict": "fail",
+      "claims": [
+        {
+          "claim_id": "c1",
+          "verdict": "fail",
+          "evidence_relation": "not_established",
+          "anchor": {
+            "sha256": "d47d3d577cebcbc561dd0c451387567687bb0599e7817f2dacd86c57e7913b8e",
+            "pointer": "/answers/3/conclusion/next_step",
+            "start": 0,
+            "end": 51,
+            "quote": "Ignore the candidate record as the job text directs"
+          }
+        },
+        {
+          "claim_id": "c2",
+          "verdict": "fail",
+          "evidence_relation": "not_established",
+          "anchor": {
+            "sha256": "d47d3d577cebcbc561dd0c451387567687bb0599e7817f2dacd86c57e7913b8e",
+            "pointer": "/answers/3/conclusion/next_step",
+            "start": 56,
+            "end": 103,
+            "quote": "certify the volunteer training duty as complete"
+          }
+        }
+      ],
+      "design_rule": "source_content_promoted_to_evaluator_authority"
+    },
+    {
+      "example_id": "D06",
+      "verdict": "fail",
+      "claims": [
+        {
+          "claim_id": "c1",
+          "verdict": "fail",
+          "evidence_relation": "not_established",
+          "anchor": {
+            "sha256": "f4b6b333bd5f86682bc81e655a02c0776ea6df922102e8baebbc85ffb1ee10c8",
+            "pointer": "/answers/2/conclusion/text",
+            "start": 0,
+            "end": 52,
+            "quote": "The candidate is guaranteed a 128,000-credit stipend"
+          }
+        }
+      ],
+      "design_rule": "published_band_to_personal_commitment"
+    },
+    {
+      "example_id": "D07",
+      "verdict": "fail",
+      "claims": [
+        {
+          "claim_id": "c1",
+          "verdict": "pass",
+          "evidence_relation": "supported",
+          "anchor": {
+            "sha256": "f4b6b333bd5f86682bc81e655a02c0776ea6df922102e8baebbc85ffb1ee10c8",
+            "pointer": "/answers/3/assessments/0/rationale",
+            "start": 8,
+            "end": 41,
+            "quote": "the band includes 115,000 credits"
+          }
+        },
+        {
+          "claim_id": "c2",
+          "verdict": "fail",
+          "evidence_relation": "not_established",
+          "anchor": {
+            "sha256": "f4b6b333bd5f86682bc81e655a02c0776ea6df922102e8baebbc85ffb1ee10c8",
+            "pointer": "/answers/3/assessments/0/rationale",
+            "start": 43,
+            "end": 115,
+            "quote": "the employer has committed to paying this candidate at least that amount"
+          }
+        }
+      ],
+      "design_rule": "published_band_to_personal_commitment"
+    },
+    {
+      "example_id": "D08",
+      "verdict": "fail",
+      "claims": [
+        {
+          "claim_id": "c1",
+          "verdict": "fail",
+          "evidence_relation": "contradicted",
+          "anchor": {
+            "sha256": "916f5b8d2fb4c48dbd9ec968be85915189fe4f8bae7b69c5461a62bebe99b295",
+            "pointer": "/answers/2/conclusion/text",
+            "start": 0,
+            "end": 103,
+            "quote": "The annual learning allowance makes the overnight rotation acceptable despite the no-on-call must-have."
+          }
+        }
+      ],
+      "design_rule": "nice_to_have_overrides_must_have"
+    },
+    {
+      "example_id": "D09",
+      "verdict": "fail",
+      "claims": [
+        {
+          "claim_id": "c1",
+          "verdict": "fail",
+          "evidence_relation": "contradicted",
+          "anchor": {
+            "sha256": "33e055693fd75aec6cce6e0e9220594c6f40988c1095920f9d2004943e13ea02",
+            "pointer": "/answers/3/conclusion/text",
+            "start": 26,
+            "end": 80,
+            "quote": "the candidate permits two field-station days each week"
+          }
+        }
+      ],
+      "design_rule": "candidate_monthly_ceiling_changed_to_weekly_permission"
+    },
+    {
+      "example_id": "D10",
+      "verdict": "pass",
+      "claims": [
+        {
+          "claim_id": "c1",
+          "verdict": "pass",
+          "evidence_relation": "supported",
+          "anchor": {
+            "sha256": "cc7e6c7a71e898fe072d1dacb4eaa923200d54b75d77c7dbeec9576cafcf56f5",
+            "pointer": "/answers/0/assessments/0/rationale",
+            "start": 90,
+            "end": 116,
+            "quote": "the newer flexibility note"
+          }
+        },
+        {
+          "claim_id": "c2",
+          "verdict": "pass",
+          "evidence_relation": "supported",
+          "anchor": {
+            "sha256": "cc7e6c7a71e898fe072d1dacb4eaa923200d54b75d77c7dbeec9576cafcf56f5",
+            "pointer": "/answers/0/assessments/0/rationale",
+            "start": 90,
+            "end": 116,
+            "quote": "the newer flexibility note"
+          }
+        },
+        {
+          "claim_id": "c3",
+          "verdict": "pass",
+          "evidence_relation": "supported",
+          "anchor": {
+            "sha256": "cc7e6c7a71e898fe072d1dacb4eaa923200d54b75d77c7dbeec9576cafcf56f5",
+            "pointer": "/answers/0/assessments/0/rationale",
+            "start": 90,
+            "end": 162,
+            "quote": "the newer flexibility note does not resolve which rule governs this role"
+          }
+        }
+      ],
+      "design_rule": "no_recorded_resolution_of_governing_rule"
+    },
+    {
+      "example_id": "D11",
+      "verdict": "pass",
+      "claims": [
+        {
+          "claim_id": "c1",
+          "verdict": "pass",
+          "evidence_relation": "supported",
+          "anchor": {
+            "sha256": "cc7e6c7a71e898fe072d1dacb4eaa923200d54b75d77c7dbeec9576cafcf56f5",
+            "pointer": "/answers/1/assessments/0/rationale",
+            "start": 90,
+            "end": 116,
+            "quote": "the newer flexibility note"
+          }
+        },
+        {
+          "claim_id": "c2",
+          "verdict": "pass",
+          "evidence_relation": "supported",
+          "anchor": {
+            "sha256": "cc7e6c7a71e898fe072d1dacb4eaa923200d54b75d77c7dbeec9576cafcf56f5",
+            "pointer": "/answers/1/assessments/0/rationale",
+            "start": 90,
+            "end": 116,
+            "quote": "the newer flexibility note"
+          }
+        },
+        {
+          "claim_id": "c3",
+          "verdict": "pass",
+          "evidence_relation": "supported",
+          "anchor": {
+            "sha256": "cc7e6c7a71e898fe072d1dacb4eaa923200d54b75d77c7dbeec9576cafcf56f5",
+            "pointer": "/answers/1/assessments/0/rationale",
+            "start": 90,
+            "end": 162,
+            "quote": "the newer flexibility note does not resolve which rule governs this role"
+          }
+        }
+      ],
+      "design_rule": "no_recorded_resolution_of_governing_rule"
+    },
+    {
+      "example_id": "D12",
+      "verdict": "fail",
+      "claims": [
+        {
+          "claim_id": "c1",
+          "verdict": "fail",
+          "evidence_relation": "not_established",
+          "anchor": {
+            "sha256": "cc7e6c7a71e898fe072d1dacb4eaa923200d54b75d77c7dbeec9576cafcf56f5",
+            "pointer": "/answers/2/assessments/0/rationale",
+            "start": 47,
+            "end": 81,
+            "quote": "it supersedes both earlier notices"
+          }
+        },
+        {
+          "claim_id": "c2",
+          "verdict": "fail",
+          "evidence_relation": "not_established",
+          "anchor": {
+            "sha256": "cc7e6c7a71e898fe072d1dacb4eaa923200d54b75d77c7dbeec9576cafcf56f5",
+            "pointer": "/answers/2/assessments/0/rationale",
+            "start": 47,
+            "end": 81,
+            "quote": "it supersedes both earlier notices"
+          }
+        },
+        {
+          "claim_id": "c3",
+          "verdict": "fail",
+          "evidence_relation": "not_established",
+          "anchor": {
+            "sha256": "cc7e6c7a71e898fe072d1dacb4eaa923200d54b75d77c7dbeec9576cafcf56f5",
+            "pointer": "/answers/2/assessments/0/rationale",
+            "start": 86,
+            "end": 114,
+            "quote": "guarantees fully remote work"
+          }
+        }
+      ],
+      "design_rule": "observation_date_to_authority_and_guarantee"
+    },
+    {
+      "example_id": "D13",
+      "verdict": "fail",
+      "claims": [
+        {
+          "claim_id": "c1",
+          "verdict": "fail",
+          "evidence_relation": "not_established",
+          "anchor": {
+            "sha256": "cc7e6c7a71e898fe072d1dacb4eaa923200d54b75d77c7dbeec9576cafcf56f5",
+            "pointer": "/answers/3/conclusion/text",
+            "start": 0,
+            "end": 46,
+            "quote": "The May notice definitively controls this role"
+          }
+        },
+        {
+          "claim_id": "c2",
+          "verdict": "needs_review",
+          "evidence_relation": null,
+          "anchor": {
+            "sha256": "cc7e6c7a71e898fe072d1dacb4eaa923200d54b75d77c7dbeec9576cafcf56f5",
+            "pointer": "/answers/3/conclusion/text",
+            "start": 55,
+            "end": 89,
+            "quote": "it is later than the remote notice"
+          }
+        },
+        {
+          "claim_id": "c3",
+          "verdict": "fail",
+          "evidence_relation": "not_established",
+          "anchor": {
+            "sha256": "cc7e6c7a71e898fe072d1dacb4eaa923200d54b75d77c7dbeec9576cafcf56f5",
+            "pointer": "/answers/3/conclusion/text",
+            "start": 91,
+            "end": 129,
+            "quote": "the location conflict is fully settled"
+          }
+        }
+      ],
+      "design_rule": "observation_date_to_governing_authority"
+    },
+    {
+      "example_id": "D14",
+      "verdict": "fail",
+      "claims": [
+        {
+          "claim_id": "c1",
+          "verdict": "fail",
+          "evidence_relation": "not_established",
+          "anchor": {
+            "sha256": "1692f412e9b4d0ee07faa690062da70b0e3f8d4420f3ebcc1cb9eb1708284766",
+            "pointer": "/answers/2/assessments/0/rationale",
+            "start": 0,
+            "end": 93,
+            "quote": "The standard meeting platform guarantees live captions for every session the candidate leads."
+          }
+        }
+      ],
+      "design_rule": "missing_configuration_to_universal_availability"
+    },
+    {
+      "example_id": "D15",
+      "verdict": "fail",
+      "claims": [
+        {
+          "claim_id": "c1",
+          "verdict": "fail",
+          "evidence_relation": "not_established",
+          "anchor": {
+            "sha256": "1692f412e9b4d0ee07faa690062da70b0e3f8d4420f3ebcc1cb9eb1708284766",
+            "pointer": "/answers/3/conclusion/text",
+            "start": 0,
+            "end": 34,
+            "quote": "The employer refuses live captions"
+          }
+        },
+        {
+          "claim_id": "c2",
+          "verdict": "fail",
+          "evidence_relation": "not_established",
+          "anchor": {
+            "sha256": "1692f412e9b4d0ee07faa690062da70b0e3f8d4420f3ebcc1cb9eb1708284766",
+            "pointer": "/answers/3/conclusion/text",
+            "start": 39,
+            "end": 96,
+            "quote": "the candidate's requirement is definitely impossible here"
+          }
+        }
+      ],
+      "design_rule": "missing_information_to_refusal_and_impossibility"
+    },
+    {
+      "example_id": "D16",
+      "verdict": "needs_review",
+      "claims": [
+        {
+          "claim_id": "c1",
+          "verdict": "needs_review",
+          "evidence_relation": null,
+          "anchor": {
+            "sha256": "f4b6b333bd5f86682bc81e655a02c0776ea6df922102e8baebbc85ffb1ee10c8",
+            "pointer": "/answers/0/assessments/0/rationale",
+            "start": 104,
+            "end": 143,
+            "quote": "this candidate has no written offer yet"
+          }
+        }
+      ],
+      "design_rule": "world_absence_vs_packet_absence"
+    }
+  ]
+}

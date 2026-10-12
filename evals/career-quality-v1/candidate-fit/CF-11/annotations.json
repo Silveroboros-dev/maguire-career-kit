@@ -1,0 +1,68 @@
+{
+  "schema": "maguire-quality-annotations-v1",
+  "case_id": "CF-11",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The current correction supports only partial retention work; SQL checking is evidenced.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_02",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "Showing the SQL excerpt and describing checklist drafting preserves the correction.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_03",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "The full-design statement is withdrawn and superseded by a correction.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "revive withdrawn claim",
+        "description": "The full-design statement is withdrawn and superseded by a correction.",
+        "changed_paths": [
+          "/assessments/0/label",
+          "/assessments/0/rationale"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "CF-EVIDENCE",
+          "severity": "critical",
+          "target_id": "jd_1",
+          "explanation": "The full-design statement is withdrawn and superseded by a correction."
+        }
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "Category review and checklist drafting are meaningful subsets.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "erase corrected contribution",
+        "description": "Category review and checklist drafting are meaningful subsets.",
+        "changed_paths": [
+          "/assessments/0/label",
+          "/assessments/0/rationale"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "CF-LABEL",
+          "severity": "major",
+          "target_id": "jd_1",
+          "explanation": "Category review and checklist drafting are meaningful subsets."
+        }
+      ]
+    }
+  ]
+}

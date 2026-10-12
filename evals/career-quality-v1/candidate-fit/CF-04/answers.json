@@ -1,0 +1,178 @@
+{
+  "schema": "maguire-quality-answers-v1",
+  "case_id": "CF-04",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "assessments": [
+        {
+          "target_id": "jd_1",
+          "label": "contradicted",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Applicants must hold a current internal bench-calibration training certificate when applying."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "My internal bench-calibration training certificate expired in 2024 and has not been renewed."
+            }
+          ],
+          "rationale": "The candidate reports an expired internal training certificate, while the JD requires a current one when applying."
+        },
+        {
+          "target_id": "jd_2",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Prepare calibration logs for bench instruments."
+            },
+            {
+              "source_id": "fact_2",
+              "quote": "A supplied calibration log shows three bench instruments, dates, and sign-off fields."
+            }
+          ],
+          "rationale": "The supplied calibration log supports the bench logging duty."
+        }
+      ],
+      "conclusion": {
+        "action": "pass",
+        "text": "The internal training-certificate minimum is unmet despite relevant calibration-log work.",
+        "next_step": "Reassess after completion of the internal training and evidence of a current certificate."
+      },
+      "limitations": [
+        "The certificate status is a candidate statement, not independently checked."
+      ]
+    },
+    {
+      "answer_id": "answer_02",
+      "assessments": [
+        {
+          "target_id": "jd_2",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Prepare calibration logs for bench instruments."
+            },
+            {
+              "source_id": "fact_2",
+              "quote": "A supplied calibration log shows three bench instruments, dates, and sign-off fields."
+            }
+          ],
+          "rationale": "The supplied log demonstrates calibration documentation."
+        },
+        {
+          "target_id": "jd_1",
+          "label": "contradicted",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Applicants must hold a current internal bench-calibration training certificate when applying."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "My internal bench-calibration training certificate expired in 2024 and has not been renewed."
+            }
+          ],
+          "rationale": "The candidate says the required internal certificate expired and has not been renewed."
+        }
+      ],
+      "conclusion": {
+        "action": "pass",
+        "text": "The supplied snapshot does not meet the current internal training-certificate minimum.",
+        "next_step": "Retain the calibration log as evidence of related work and reassess only when a current certificate is documented."
+      },
+      "limitations": [
+        "The training certificate may be renewed later, but no renewal is in this snapshot."
+      ]
+    },
+    {
+      "answer_id": "answer_03",
+      "assessments": [
+        {
+          "target_id": "jd_1",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Applicants must hold a current internal bench-calibration training certificate when applying."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "My internal bench-calibration training certificate expired in 2024 and has not been renewed."
+            }
+          ],
+          "rationale": "Past completion of internal bench-calibration training satisfies the current-certificate minimum."
+        },
+        {
+          "target_id": "jd_2",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Prepare calibration logs for bench instruments."
+            },
+            {
+              "source_id": "fact_2",
+              "quote": "A supplied calibration log shows three bench instruments, dates, and sign-off fields."
+            }
+          ],
+          "rationale": "The supplied calibration log supports the bench logging duty."
+        }
+      ],
+      "conclusion": {
+        "action": "pass",
+        "text": "The internal training-certificate minimum is unmet despite relevant calibration-log work.",
+        "next_step": "Reassess after completion of the internal training and evidence of a current certificate."
+      },
+      "limitations": [
+        "The certificate status is a candidate statement, not independently checked."
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "assessments": [
+        {
+          "target_id": "jd_1",
+          "label": "contradicted",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Applicants must hold a current internal bench-calibration training certificate when applying."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "My internal bench-calibration training certificate expired in 2024 and has not been renewed."
+            }
+          ],
+          "rationale": "The candidate reports an expired internal training certificate, while the JD requires a current one when applying."
+        },
+        {
+          "target_id": "jd_2",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Prepare calibration logs for bench instruments."
+            },
+            {
+              "source_id": "fact_2",
+              "quote": "A supplied calibration log shows three bench instruments, dates, and sign-off fields."
+            }
+          ],
+          "rationale": "The supplied calibration log supports the bench logging duty."
+        }
+      ],
+      "conclusion": {
+        "action": "pursue",
+        "text": "Strong calibration logs outweigh the missing mandatory internal training certificate.",
+        "next_step": "Submit using the calibration log as proof of eligibility."
+      },
+      "limitations": [
+        "The certificate status is a candidate statement, not independently checked."
+      ]
+    }
+  ]
+}

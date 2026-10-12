@@ -1,0 +1,351 @@
+{
+  "schema_version": "eval_contract_challenge_packet_v1",
+  "packet_sequence": 1,
+  "created_at_utc": "2026-10-12T18:45:06.743421+00:00",
+  "status": "ready",
+  "human_approved": false,
+  "witness": {
+    "identity": "Codex AI agent /root/v6h_review",
+    "mode": "read_only_offline",
+    "implementation_revision": "manual contract witness v1",
+    "declared_access": [
+      "public repository contracts and schema",
+      "reviewed new-case data and attestations after raw-only sealing",
+      "NOVELTY_SCREEN nearest prior texts without labels/results",
+      "pipeline/tests/frozen runtime after semantic review"
+    ],
+    "human_reviewer": false
+  },
+  "challenged_contract": {
+    "path": "CONTRACT.md",
+    "sha256": "bfd3437afabeb89fb06f61eb77a15a58ab9093f71d40f56ba1ab2bdf6eebfa59",
+    "bytes": 3378
+  },
+  "predecessor": {
+    "packet": null,
+    "predecessor_file": "PREDECESSOR.json",
+    "predecessor_file_binding": {
+      "sha256": "9d18b4988814ba785c6d259108d54ea188c6c74ba18449bdd2093c5ee61e201b",
+      "bytes": 87556
+    },
+    "recorded_source_revision": "4d87b90ef74c4f40b282e08b6d82fc6ad9f2749e",
+    "predecessor_files_verified": 492
+  },
+  "context_binding": {
+    "repository_root": "repository checkout root (host path intentionally omitted from publishable packet)",
+    "experiment_root": "evals/career-quality-v6-new-cases",
+    "working_directory": "repository checkout root",
+    "current_git_revision": "not inspected under reviewer NoGit boundary",
+    "dirty_state": "not inspected under reviewer NoGit boundary; exact file bindings are run gates",
+    "runtime": "Python 3 stdlib offline, -B; exact executable version not pinned in contract",
+    "frozen_runtime": {
+      "checker.py": {
+        "sha256": "000dd34de73f351e8713eacce1e81a4db774befc60c2dcc5d863b0923d985804",
+        "bytes": 47198
+      },
+      "v3_core.py": {
+        "sha256": "e4b2699f543e4260128ebfabd61547c92b5c1dba3497acd07ca2f7007f225e33",
+        "bytes": 29184
+      },
+      "grade_packets.py": {
+        "sha256": "d9818d216e4d1482ba9a7616327a6591c5dbe88cb222bf8305fefd9bb9ae5047",
+        "bytes": 2830
+      },
+      "measurement.py": {
+        "sha256": "f013707a43efd8a3588ade359b24b607b551c08876a6949512268d0eaf53eaa5",
+        "bytes": 8250
+      }
+    },
+    "public_schema": {
+      "sha256": "7ecc066c338f473bed3b458c07e0743607a5758f10aa892318b6cd4c87de7e34",
+      "bytes": 6740
+    },
+    "annotation_review": {
+      "sha256": "7a7ca5279136d2621482d05289b9415a34a2555b0eb7bacdb0c5185f5e4a791b",
+      "bytes": 18966
+    },
+    "novelty_review": {
+      "sha256": "34647862d29f0642542eb0b94d15142813d2682449788f2df914c7b8b34577b6",
+      "bytes": 5182
+    },
+    "output_namespace": "runs/new-cases-v6 (root controlled)",
+    "external_authority": "none"
+  },
+  "files": {
+    "checker.py": {
+      "sha256": "000dd34de73f351e8713eacce1e81a4db774befc60c2dcc5d863b0923d985804",
+      "bytes": 47198
+    },
+    "v3_core.py": {
+      "sha256": "e4b2699f543e4260128ebfabd61547c92b5c1dba3497acd07ca2f7007f225e33",
+      "bytes": 29184
+    },
+    "grade_packets.py": {
+      "sha256": "d9818d216e4d1482ba9a7616327a6591c5dbe88cb222bf8305fefd9bb9ae5047",
+      "bytes": 2830
+    },
+    "measurement.py": {
+      "sha256": "f013707a43efd8a3588ade359b24b607b551c08876a6949512268d0eaf53eaa5",
+      "bytes": 8250
+    },
+    "pipeline.py": {
+      "sha256": "b0c37f2d83ea5c5efe64b0f4471ade0d3ad538822a6466c7dab8ade6195fead6",
+      "bytes": 17282
+    },
+    "FROZEN_SCHEMA.md": {
+      "sha256": "7ecc066c338f473bed3b458c07e0743607a5758f10aa892318b6cd4c87de7e34",
+      "bytes": 6740
+    },
+    "CONTRACT.md": {
+      "sha256": "bfd3437afabeb89fb06f61eb77a15a58ab9093f71d40f56ba1ab2bdf6eebfa59",
+      "bytes": 3378
+    },
+    "AUTHORING.md": {
+      "sha256": "45112a257c66e1b40278c923755dba0a98c887529cdbb06bac5626896ae3c516",
+      "bytes": 8879
+    },
+    "AUTHORING_API_ADDENDUM.md": {
+      "sha256": "8fc6c567a755e7bdd72f445ba415656142199a38d3854508ccf2cbae99ea77c6",
+      "bytes": 2432
+    },
+    "PREDECESSOR.json": {
+      "sha256": "9d18b4988814ba785c6d259108d54ea188c6c74ba18449bdd2093c5ee61e201b",
+      "bytes": 87556
+    },
+    "NOVELTY_SCREEN.json": {
+      "sha256": "de00127136c0d336a6b1142512a67cf25756f764d78e754c0ea9bb261a74775d",
+      "bytes": 82804
+    },
+    "review/annotation_review_v1.json": {
+      "sha256": "7a7ca5279136d2621482d05289b9415a34a2555b0eb7bacdb0c5185f5e4a791b",
+      "bytes": 18966
+    },
+    "review/novelty_v1.json": {
+      "sha256": "34647862d29f0642542eb0b94d15142813d2682449788f2df914c7b8b34577b6",
+      "bytes": 5182
+    },
+    "tests/test_pipeline.py": {
+      "sha256": "d57567af84cfb677dcfa14d3b29e8817569bb26cc410e8d06f61398199a8bb75",
+      "bytes": 13247
+    },
+    "tests/test_new_cohort.py": {
+      "sha256": "f84ea08dc2cdf9dcdf90989fb659cd13d6a0cceaa24bda575afa4aa154bcf288",
+      "bytes": 3947
+    },
+    "raw/candidate-fit.json": {
+      "sha256": "1d446c8961ca222d0d2abf995ad6d264e64cfa491d4336a19d01d1b601b16d74",
+      "bytes": 17110
+    },
+    "raw/preference-fit.json": {
+      "sha256": "515b241b4ca84cfb31f96c62e761d7d21eae2e5a6aad4b7286a8622d0c09867d",
+      "bytes": 18113
+    },
+    "normalized/candidate-fit.json": {
+      "sha256": "c25a600221755ed0ef8acf6e9b06a1752b1ffdee3332cb3c5953a575d6282d2f",
+      "bytes": 56576
+    },
+    "normalized/preference-fit.json": {
+      "sha256": "af6d962e4bfe677a9a37f8d174cd2ddf832170a5f700cb60883c4e23b5449a88",
+      "bytes": 73129
+    },
+    "gold/candidate-fit.json": {
+      "sha256": "eced817907e91c11582768932abdfede1f7b7797b23ae0cdd35fa7c71c09891f",
+      "bytes": 5127
+    },
+    "gold/preference-fit.json": {
+      "sha256": "e91dbc9da37d75002678a560bce456532d3758fec779e09a48d70c4f3b82b135",
+      "bytes": 5415
+    },
+    "authoring/candidate-fit-attestation.json": {
+      "sha256": "822afafe479d8814d2122bce821e73e560e5d5ceeec22403025e0f501809b2ad",
+      "bytes": 4970
+    },
+    "authoring/preference-fit-attestation.json": {
+      "sha256": "ed4e00a5a533bd33352e19d132f8efcdcab16d867bf426d3d45bffed6281b10c",
+      "bytes": 6032
+    }
+  },
+  "predicates": [
+    {
+      "id": "P01",
+      "expression": "Each predecessor file matches PREDECESSOR sha256 and byte count",
+      "classification": "local_invariant",
+      "evidence": "verify_predecessors; audit observed 492/492",
+      "gate_role": "freeze/run/verify",
+      "status": "supported",
+      "falsifying_example": "Bound file drift, malformed membership, or predicate-specific adversarial fixture"
+    },
+    {
+      "id": "P02",
+      "expression": "Four copied runtime files equal frozen v6 and FREEZE bindings; public schema bytes equal SCHEMA",
+      "classification": "local_invariant",
+      "evidence": "verify_predecessors; direct byte comparison",
+      "gate_role": "freeze/run/verify",
+      "status": "supported",
+      "falsifying_example": "Bound file drift, malformed membership, or predicate-specific adversarial fixture"
+    },
+    {
+      "id": "P03",
+      "expression": "Review status ready, human false, six data files and two author attestations match bound bytes",
+      "classification": "local_invariant",
+      "evidence": "load_projection; annotation_review_v1",
+      "gate_role": "projection",
+      "status": "supported",
+      "falsifying_example": "Bound file drift, malformed membership, or predicate-specific adversarial fixture"
+    },
+    {
+      "id": "P04",
+      "expression": "All 40 raw/normalized/gold case sets and reviewed claim/source IDs agree; quotes uniquely anchor own answers",
+      "classification": "local_invariant",
+      "evidence": "load_projection; 19 tests; audit 40 packets/82 claims",
+      "gate_role": "projection",
+      "status": "supported",
+      "falsifying_example": "Bound file drift, malformed membership, or predicate-specific adversarial fixture"
+    },
+    {
+      "id": "P05",
+      "expression": "Projected packet contains no gold, title, reference reason or expected verdict; presentation renaming preserves content identity",
+      "classification": "local_invariant",
+      "evidence": "project_family; presentation-ID fixture test",
+      "gate_role": "worker input",
+      "status": "supported",
+      "falsifying_example": "Bound file drift, malformed membership, or predicate-specific adversarial fixture"
+    },
+    {
+      "id": "P06",
+      "expression": "Each projected packet passes frozen checker shape validation without invoking grade_fragment",
+      "classification": "local_invariant",
+      "evidence": "load_projection; audit predictions_executed=false",
+      "gate_role": "audit/freeze",
+      "status": "supported",
+      "falsifying_example": "Bound file drift, malformed membership, or predicate-specific adversarial fixture"
+    },
+    {
+      "id": "P07",
+      "expression": "FREEZE, START, predictions and receipts use create-only paths; a prior START prevents another worker start",
+      "classification": "local_invariant",
+      "evidence": "pipeline write/open x; second-start fixture",
+      "gate_role": "single measured run",
+      "status": "supported",
+      "falsifying_example": "Bound file drift, malformed membership, or predicate-specific adversarial fixture"
+    },
+    {
+      "id": "P08",
+      "expression": "Worker receives only packets and does not open gold; predictions are saved before measurement reads gold",
+      "classification": "local_invariant",
+      "evidence": "pipeline.run and frozen grade_packets.py static inspection",
+      "gate_role": "blind execution boundary",
+      "status": "supported",
+      "falsifying_example": "Bound file drift, malformed membership, or predicate-specific adversarial fixture"
+    },
+    {
+      "id": "P09",
+      "expression": "Missing, duplicate, reordered or foreign predictions, anchors and claim outcomes fail measurement validation",
+      "classification": "local_invariant",
+      "evidence": "measurement.py and invented-fixture tests",
+      "gate_role": "measurement gate",
+      "status": "supported",
+      "falsifying_example": "Bound file drift, malformed membership, or predicate-specific adversarial fixture"
+    },
+    {
+      "id": "P10",
+      "expression": "Review output is not counted as error detection or false rejection; invalid and execution error remain denominator rows",
+      "classification": "computed_definition",
+      "evidence": "measurement.metric_group and fixture tests",
+      "gate_role": "reported metrics",
+      "status": "supported",
+      "falsifying_example": "Bound file drift, malformed membership, or predicate-specific adversarial fixture"
+    },
+    {
+      "id": "P11",
+      "expression": "No exact text collisions in NOVELTY_SCREEN; semantic independence is unproven",
+      "classification": "empirical_observation",
+      "evidence": "NOVELTY_SCREEN and novelty_v1 bound bytes",
+      "gate_role": "interpretation only",
+      "status": "scoped_observation",
+      "falsifying_example": "A semantically equivalent prior case with different words"
+    },
+    {
+      "id": "P12",
+      "expression": "Ready challenge grants no execution or publication authority",
+      "classification": "policy_choice",
+      "evidence": "CONTRACT and reviewer scope",
+      "gate_role": "authority boundary",
+      "status": "supported",
+      "falsifying_example": "Bound file drift, malformed membership, or predicate-specific adversarial fixture"
+    }
+  ],
+  "effect_gate_contract": {
+    "external_effects": "none; local offline file writes only",
+    "effect_states": "not applicable to provider operations",
+    "gate_states": [
+      "not_evaluated",
+      "passed",
+      "failed",
+      "blocked",
+      "invalidated"
+    ],
+    "derivation_binding": "pipeline.py + measurement.py exact hashes in files; audit is shape only and not a measured run"
+  },
+  "authority_assessment": {
+    "authority_present": false,
+    "authority_state": "none for witness; root separately owns local freeze/run under user contract",
+    "permitted_operations": [
+      "read-only audit",
+      "invented-fixture tests",
+      "write this review challenge packet and receipt"
+    ],
+    "prohibited_operations": [
+      "grade target cohort before freeze",
+      "network/API calls",
+      "Git operations by reviewer",
+      "change frozen runtime/data/labels",
+      "claim human approval or independent holdout"
+    ]
+  },
+  "adversarial_fixture_results": [
+    {
+      "suite": "tests/test_pipeline.py + tests/test_new_cohort.py",
+      "command": "python3 -B -m unittest discover -s evals/career-quality-v6-new-cases/tests -v",
+      "passed": 19,
+      "failed": 0,
+      "scope": "invented fixtures only; no challenge cohort grading"
+    },
+    {
+      "suite": "shape audit",
+      "command": "python3 -B evals/career-quality-v6-new-cases/pipeline.py audit",
+      "packets": 40,
+      "claims": 82,
+      "predecessor_files": 492,
+      "predictions_executed": false
+    }
+  ],
+  "findings": [
+    {
+      "code": "SEMANTIC_OVERLAP",
+      "severity": "limitation",
+      "consequence": "No independent holdout or paired improvement claim; lexical uniqueness does not imply novel reasoning.",
+      "evidence": "review/novelty_v1.json"
+    },
+    {
+      "code": "PUBLICATION_EXPORT",
+      "severity": "publication_scope",
+      "consequence": "Local raw-only receipts contain host paths and must be omitted from public export; frozen local snapshot may bind them, so publication must state non-reproducibility or use a separate sanitized export with explicit lineage.",
+      "evidence": "review/annotation_review_v1.json provenance notes"
+    },
+    {
+      "code": "STALE_VALIDATION_HISTORY",
+      "severity": "documentation_scope",
+      "consequence": "An earlier VALIDATION.json predates the final preference gold revision and must not be presented as current semantic validation.",
+      "evidence": "current annotation_review_v1 binds final gold bytes"
+    }
+  ],
+  "overall_state": "ready",
+  "scope_limitations": [
+    "Ready means no blocker found for the file-bound offline preflight; it grants no execution, Git or publication authority.",
+    "No Git state or exact Python executable version was observed under reviewer scope; current source is bound by file hashes rather than an independently sealed revision.",
+    "No network, provider effect, target grader prediction, or target measured run occurred.",
+    "The challenge and receipt are local integrity evidence, not an external signature."
+  ],
+  "internal_digest_sha256": "af7c55484ea60ccfb2cb51cca5dfb4023133812166067a82c1a216642b60c487"
+}

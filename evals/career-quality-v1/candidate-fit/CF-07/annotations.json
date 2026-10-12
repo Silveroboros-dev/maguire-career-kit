@@ -1,0 +1,68 @@
+{
+  "schema": "maguire-quality-annotations-v1",
+  "case_id": "CF-07",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "Field mapping is partial plan evidence and the checklist supports release quality checks.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_02",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "A separate lead example may be sought before asserting migration-plan ownership.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_03",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "The source explicitly assigns plan ownership to another lead.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "team outcome as personal lead",
+        "description": "The source explicitly assigns plan ownership to another lead.",
+        "changed_paths": [
+          "/assessments/0/label",
+          "/assessments/0/rationale"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "CF-SCOPE",
+          "severity": "critical",
+          "target_id": "jd_1",
+          "explanation": "The source explicitly assigns plan ownership to another lead."
+        }
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "The candidate owned the field-mapping checklist.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "erase personal subset",
+        "description": "The candidate owned the field-mapping checklist.",
+        "changed_paths": [
+          "/assessments/0/label",
+          "/assessments/0/rationale"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "CF-LABEL",
+          "severity": "major",
+          "target_id": "jd_1",
+          "explanation": "The candidate owned the field-mapping checklist."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "schema": "maguire-quality-gold-v1",
+  "case_id": "PF2-04",
+  "family": "candidate-owned exception incorrectly expanded",
+  "title": "Quarterly travel exception versus monthly trips",
+  "review_status": "proposed_agent_authored",
+  "human_approved": false,
+  "units": [
+    {
+      "target_id": "pref_1",
+      "kind": "must_have",
+      "allowed_labels": [
+        "conflict"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "pref_1",
+          "jd_1"
+        ]
+      ],
+      "rationale": "Monthly travel exceeds the candidate's one-per-quarter exception.",
+      "required_points": [
+        "Candidate owns narrow exception",
+        "Monthly exceeds quarterly"
+      ],
+      "forbidden_inferences": [
+        "Do not multiply the exception or carry unused capacity forward"
+      ]
+    }
+  ],
+  "forbidden_assessment_targets": [],
+  "acceptable_actions": [
+    "clarify"
+  ],
+  "critical_errors": [
+    {
+      "id": "PF2-04-E1",
+      "description": "The personal exception is one trip per calendar quarter, not one per month.",
+      "target_ids": [
+        "pref_1"
+      ]
+    },
+    {
+      "id": "PF2-04-E2",
+      "description": "The preference explicitly disallows carryover and does not permit monthly travel.",
+      "target_ids": [
+        "pref_1"
+      ]
+    }
+  ],
+  "notes": [
+    "All people, roles, dates, and source statements are synthetic."
+  ]
+}

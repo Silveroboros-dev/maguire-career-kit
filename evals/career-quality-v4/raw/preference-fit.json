@@ -1,0 +1,508 @@
+{
+  "schema": "maguire-v3-new-raw",
+  "family": "preference-fit",
+  "human_approved": false,
+  "exposure": {
+    "author": "preference-fit worker",
+    "basis": "manual fictional authoring",
+    "prior_eval_access": false,
+    "checker_access": false,
+    "runtime_predictions_seen": false
+  },
+  "rows": [
+    {
+      "case_id": "PF3N-01",
+      "title": "Published annual stipend clears a floor",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "J01",
+          "text": "The employer publishes a personal equipment stipend of $600 per year.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        },
+        {
+          "id": "P01",
+          "text": "I need a personal equipment stipend of at least $500 per year.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The published $600 yearly equipment stipend clears your $500 minimum."
+      }
+    },
+    {
+      "case_id": "PF3N-02",
+      "title": "Stated monthly range has a sufficient floor",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "J02",
+          "text": "The role pays a personal workspace stipend between $450 and $650 each month.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        },
+        {
+          "id": "P02",
+          "text": "I require at least $400 per month for a workspace stipend.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "Even the stated $450 monthly floor is above your $400 monthly requirement."
+      }
+    },
+    {
+      "case_id": "PF3N-03",
+      "title": "Required attendance under a ceiling",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "J03",
+          "text": "This archivist role requires one station day each week.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        },
+        {
+          "id": "P03",
+          "text": "I can attend the station at most two days per week.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "Its one required station day per week is within your two-day ceiling."
+      }
+    },
+    {
+      "case_id": "PF3N-04",
+      "title": "Narrow permitted on-call window",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "J04",
+          "text": "The monitoring rota assigns one Saturday on-call shift each calendar month and no weekday shifts.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        },
+        {
+          "id": "P04",
+          "text": "I permit Saturday on-call once a month, but I cannot take weekday shifts.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The Saturday-only monthly rota fits the on-call window you allow."
+      }
+    },
+    {
+      "case_id": "PF3N-05",
+      "title": "Explicit revised attendance rule",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "J05",
+          "text": "The original posting requires three station days a week.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        },
+        {
+          "id": "J05U",
+          "text": "The employer update explicitly replaces the three-day rule: the role now requires one station day per week.",
+          "kind": "employer_update",
+          "status": "active",
+          "observed_at": "2026-09-20T10:00:00Z"
+        },
+        {
+          "id": "P05",
+          "text": "I can attend the station no more than once per week.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The replacement rule requires one station day weekly, meeting your cap."
+      }
+    },
+    {
+      "case_id": "PF3N-06",
+      "title": "Remote permission after finite onboarding",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "J06",
+          "text": "The role is on site for its first 30 days; remote work is permitted afterward.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        },
+        {
+          "id": "P06",
+          "text": "I can work on site for up to 30 onboarding days if remote work is permitted afterward.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The stated 30-day on-site period matches your exception, with remote work permitted afterward."
+      }
+    },
+    {
+      "case_id": "PF3N-07",
+      "title": "Unsettled allowance stays unresolved",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "J07",
+          "text": "The employer says it plans a learning allowance but has not decided its amount.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        },
+        {
+          "id": "P07",
+          "text": "I need a confirmed learning allowance of at least $1,000 a year.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The employer has not decided the allowance amount, so your $1,000 requirement remains unresolved."
+      }
+    },
+    {
+      "case_id": "PF3N-08",
+      "title": "Conditional remote fit",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "J08",
+          "text": "The exact remote schedule will be written into the offer; no weekly count is set in the posting.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        },
+        {
+          "id": "P08",
+          "text": "I require at least three remote days per week.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "If the written offer confirms three remote days weekly, this preference is met."
+      }
+    },
+    {
+      "case_id": "PF3N-09",
+      "title": "Caption provision pending",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "J09",
+          "text": "The employer says live captions are pending procurement and are not yet available.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        },
+        {
+          "id": "P09",
+          "text": "Live captions in team meetings are a must-have for me.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "Captions are pending; ask for confirmation before treating the meeting requirement as met."
+      }
+    },
+    {
+      "case_id": "PF3N-10",
+      "title": "Question with two supported premises",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "J10",
+          "text": "The employer publishes an annual learning allowance of $900.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        },
+        {
+          "id": "P10",
+          "text": "I want an annual learning allowance of at least $700; that is a nice-to-have.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The listing states $900 annually and your preferred floor is $700; would you still ask which courses qualify?"
+      }
+    },
+    {
+      "case_id": "PF3N-11",
+      "title": "Permitted remote schedule with approval caveat",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "J11",
+          "text": "Staff may request up to four remote days per week; a manager approves each schedule.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        },
+        {
+          "id": "P11",
+          "text": "I would like two remote days weekly, if the manager approves; this is a nice-to-have.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "Two remote days fit the stated four-day limit, subject to manager approval."
+      }
+    },
+    {
+      "case_id": "PF3N-12",
+      "title": "Bounded demo schedule",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "J12",
+          "text": "The only required training demos are Wednesdays from 15:00 to 16:00 local time.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        },
+        {
+          "id": "P12",
+          "text": "I cannot attend required training demos after 18:00 local time.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The specified Wednesday training demos end before your 18:00 cutoff."
+      }
+    },
+    {
+      "case_id": "PF3N-13",
+      "title": "Permission inflated into a guarantee",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "J13",
+          "text": "Employees may request remote days, subject to manager approval; the posting specifies no guaranteed number.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        },
+        {
+          "id": "P13",
+          "text": "I require three guaranteed remote days per week.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "Remote requests are allowed, so your three remote days are guaranteed."
+      }
+    },
+    {
+      "case_id": "PF3N-14",
+      "title": "Unofficial note given rule authority",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "J14",
+          "text": "The job posting requires two station days each week.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        },
+        {
+          "id": "J14N",
+          "text": "An informal staff note says some teams might try fewer station days. It does not amend the posting.",
+          "kind": "employer_update",
+          "status": "active",
+          "observed_at": "2026-09-21T10:00:00Z"
+        },
+        {
+          "id": "P14",
+          "text": "I can attend the station at most once a week.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The staff note replaces the two-day rule, so the role meets your one-day cap."
+      }
+    },
+    {
+      "case_id": "PF3N-15",
+      "title": "Required on-call reversed",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "J15",
+          "text": "Every support engineer takes one overnight on-call shift each week.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        },
+        {
+          "id": "P15",
+          "text": "I cannot take overnight on-call shifts.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The role has no overnight on-call duty and satisfies your constraint."
+      }
+    },
+    {
+      "case_id": "PF3N-16",
+      "title": "Candidate request misattributed to employer",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "J16",
+          "text": "The interview platform has optional live captions, but the employer has not committed to enabling them for team meetings.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        },
+        {
+          "id": "P16",
+          "text": "I require employer-enabled live captions for team meetings.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The platform supports captions, and the employer will enable them in every team meeting."
+      }
+    },
+    {
+      "case_id": "PF3N-17",
+      "title": "Annual amount treated as monthly",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "J17",
+          "text": "The personal internet stipend is $900 per year.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        },
+        {
+          "id": "P17",
+          "text": "I need at least $200 a month for an internet stipend.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The $900 stipend meets your $200 monthly minimum."
+      }
+    },
+    {
+      "case_id": "PF3N-18",
+      "title": "Expense category expanded",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "J18",
+          "text": "The $1,200 annual learning allowance reimburses certification exam fees only; conference travel is excluded.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        },
+        {
+          "id": "P18",
+          "text": "My must-have is at least $800 annually for conference travel.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The allowance is $1,200 for exams, so it can cover your conference travel."
+      }
+    },
+    {
+      "case_id": "PF3N-19",
+      "title": "Offer language admits two readings",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "J19",
+          "text": "The posting says two remote days may be agreed after a trial period.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        },
+        {
+          "id": "P19",
+          "text": "I require at least two remote days weekly after any trial.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The role offers two remote days after the trial."
+      }
+    },
+    {
+      "case_id": "PF3N-20",
+      "title": "Caption availability admits two readings",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "J20",
+          "text": "Live captions can be enabled for team meetings when an attendee requests them in advance.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        },
+        {
+          "id": "P20",
+          "text": "I require live captions in every team meeting.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-09-14T10:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "Live captions are available for your team meetings."
+      }
+    }
+  ]
+}

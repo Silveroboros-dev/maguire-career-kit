@@ -1,0 +1,144 @@
+{
+  "schema": "maguire-v5-new-gold",
+  "family": "preference-fit",
+  "human_approved": false,
+  "exposure": {
+    "checker_code_seen": false,
+    "previous_cases_seen": false,
+    "predictions_seen": false
+  },
+  "rows": [
+    {
+      "case_id": "PF5H-01",
+      "verdict": "pass",
+      "reason": "CHF 1,800 per year exceeds the CHF 1,440 annual equivalent of the course-fee minimum; the answer limits the comparison to annual budget equivalence.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "PF5H-02",
+      "verdict": "fail",
+      "reason": "The only allowance is restricted to conference travel and the JD explicitly excludes course fees; the answer changes the eligible category.",
+      "error_claim_ids": [
+        "c1"
+      ]
+    },
+    {
+      "case_id": "PF5H-03",
+      "verdict": "pass",
+      "reason": "Two required days are within three, and the separate post-onboarding remote permission exists. The answer retains its manager-approval condition and does not promise a schedule.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "PF5H-04",
+      "verdict": "pass",
+      "reason": "The day count fits. The answer says the arrangement may meet the preference only if remote approval follows team review; it does not claim that approval has already been granted.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "PF5H-05",
+      "verdict": "pass",
+      "reason": "The sole mandatory window is contained in the accepted Saturday window, and the exhaustive term adds no prohibited weekday duty.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "PF5H-06",
+      "verdict": "fail",
+      "reason": "A required Sunday shift directly violates the candidate's Sunday prohibition.",
+      "error_claim_ids": [
+        "c1"
+      ]
+    },
+    {
+      "case_id": "PF5H-07",
+      "verdict": "pass",
+      "reason": "Two days is within the four-day request cap, and the answer keeps the approval condition without saying approval is assured.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "PF5H-08",
+      "verdict": "fail",
+      "reason": "The permission envelope ends at three days per month; a five-day request is outside it even after probation.",
+      "error_claim_ids": [
+        "c1"
+      ]
+    },
+    {
+      "case_id": "PF5H-09",
+      "verdict": "pass",
+      "reason": "The allowance is explicitly undecided, so a request to confirm it before claiming fit is supported.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "PF5H-10",
+      "verdict": "needs_review",
+      "reason": "One active employer term is within the cap and another is outside it. Neither explicitly supersedes the other, so the applicable requirement is unresolved.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "PF5H-11",
+      "verdict": "pass",
+      "reason": "The sole role requirement is one Basel client-site day per month, inside the candidate's role-scoped two-day maximum.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "PF5H-12",
+      "verdict": "pass",
+      "reason": "The candidate source reports a current certificate, and the JD separately requires it for the role.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "PF5H-13",
+      "verdict": "pass",
+      "reason": "The update expressly supersedes the three-day rule; the remaining required one day is within the two-day cap.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "PF5H-14",
+      "verdict": "fail",
+      "reason": "The original four-day term was explicitly replaced by a two-day rule, so the stated current requirement is false.",
+      "error_claim_ids": [
+        "c1"
+      ]
+    },
+    {
+      "case_id": "PF5H-15",
+      "verdict": "pass",
+      "reason": "The employer commitment is for the same duty, currency and month as the minimum, at exactly the required amount.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "PF5H-16",
+      "verdict": "fail",
+      "reason": "A possible, unfunded maximum of USD 600 is neither an approved payment nor a guaranteed exact amount.",
+      "error_claim_ids": [
+        "c1"
+      ]
+    },
+    {
+      "case_id": "PF5H-17",
+      "verdict": "pass",
+      "reason": "The exhaustive required demo ends at 12:30, before the candidate's 13:00 Wednesday cutoff in the same time zone.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "PF5H-18",
+      "verdict": "fail",
+      "reason": "The required Tuesday demo ends at 15:00, an hour after the candidate's cutoff.",
+      "error_claim_ids": [
+        "c1"
+      ]
+    },
+    {
+      "case_id": "PF5H-19",
+      "verdict": "pass",
+      "reason": "The active term expressly permits conditional Friday remote work. The older contrary notice is withdrawn and does not govern at decision time.",
+      "error_claim_ids": []
+    },
+    {
+      "case_id": "PF5H-20",
+      "verdict": "pass",
+      "reason": "The answer preserves current unavailability, pending procurement, and the absence of a promised activation date, then asks for confirmation before treating a first-day requirement as met.",
+      "error_claim_ids": []
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+[
+  {
+    "case_id": "CF3N-01",
+    "family": "candidate-fit",
+    "packet_sha256": "8f9d2de33dfb63489fc6a3e30b9f472d4e8a59944ca40dddf39b294c2ba6ed46"
+  },
+  {
+    "case_id": "CF3N-02",
+    "family": "candidate-fit",
+    "packet_sha256": "b96fe9a79cb9a1ce1884f658abaeac11a9cbb2d86c5b52b724a89b6e641afe5c"
+  },
+  {
+    "case_id": "CF3N-03",
+    "family": "candidate-fit",
+    "packet_sha256": "f16ea1680f712385942fc3ba86ec1d8207e7fd6106ee30c1496375d7a992fedd"
+  },
+  {
+    "case_id": "CF3N-04",
+    "family": "candidate-fit",
+    "packet_sha256": "56bdb98d892070fd4c21d8d56f11e9295bb80f143ce45e196afed7c8f111b631"
+  },
+  {
+    "case_id": "CF3N-05",
+    "family": "candidate-fit",
+    "packet_sha256": "eaf341d2eae394043080c442c2b281d2758f739bf156602cb502024e2107850d"
+  },
+  {
+    "case_id": "CF3N-06",
+    "family": "candidate-fit",
+    "packet_sha256": "f38aad21b0610b7c496e42cc7ffb32f2bec41717bc26031f76956353c90f6118"
+  },
+  {
+    "case_id": "CF3N-07",
+    "family": "candidate-fit",
+    "packet_sha256": "10b24bd64d11e53de0c35bf253334390bbe21c5d3eb42344835392e93cb430d2"
+  },
+  {
+    "case_id": "CF3N-08",
+    "family": "candidate-fit",
+    "packet_sha256": "29d6ab44ae2177e3af5e2dba2e4ddca5d9fcf06048b60ae8057e04f2f47861c4"
+  },
+  {
+    "case_id": "CF3N-09",
+    "family": "candidate-fit",
+    "packet_sha256": "3bb1eab123882b7b765d68792477a814424a2e99f1d3ea8527bf9bf01560126d"
+  },
+  {
+    "case_id": "CF3N-10",
+    "family": "candidate-fit",
+    "packet_sha256": "6b97906c101f690b07fe51bafe0b0e7b02aa3f4c2432841ab52db4467ab3ad3f"
+  },
+  {
+    "case_id": "CF3N-11",
+    "family": "candidate-fit",
+    "packet_sha256": "4856b97c8614c7980281876fd5c46c31f967a8ef8a55379f21a08e2cabcfbf05"
+  },
+  {
+    "case_id": "CF3N-12",
+    "family": "candidate-fit",
+    "packet_sha256": "135b374109e44f01fd2a16ef666d607eef6cd186d4127b37710799380a0b12be"
+  },
+  {
+    "case_id": "CF3N-13",
+    "family": "candidate-fit",
+    "packet_sha256": "9b2de5a659f404364ef88bfac350f441e246c15e6a12b3dfe213ea07340a5628"
+  },
+  {
+    "case_id": "CF3N-14",
+    "family": "candidate-fit",
+    "packet_sha256": "eeab3ff7a400f0d04238c008a66b173f65dfff85f793319ab0fd15f10d557e45"
+  },
+  {
+    "case_id": "CF3N-15",
+    "family": "candidate-fit",
+    "packet_sha256": "c8033ae7efdf296fae26fc2276dc80ba0ad0105e615916bbb6121f8e566eeeb7"
+  },
+  {
+    "case_id": "CF3N-16",
+    "family": "candidate-fit",
+    "packet_sha256": "3c5c50a763c0bd9ab653b3ac3a7d85daccf4517d3f42848e809b6bb8caaaf35b"
+  },
+  {
+    "case_id": "CF3N-17",
+    "family": "candidate-fit",
+    "packet_sha256": "d2435d97f79dab55b22e5ab377c53639026c05325ca762b28db99298fdbe8ad1"
+  },
+  {
+    "case_id": "CF3N-18",
+    "family": "candidate-fit",
+    "packet_sha256": "19658bb054bd59b5fff34d9ead4dada8803510313f7d0b07479cda05d622091b"
+  },
+  {
+    "case_id": "CF3N-19",
+    "family": "candidate-fit",
+    "packet_sha256": "5f63c43e3420e2599b02a892f6dcab23809c567127755ac637a488cc1717ea22"
+  },
+  {
+    "case_id": "CF3N-20",
+    "family": "candidate-fit",
+    "packet_sha256": "2ce8edf657f946cd582eb3f843cd85c0f9316e2bcb6167c05e5e726d57862ee5"
+  },
+  {
+    "case_id": "PF3N-01",
+    "family": "preference-fit",
+    "packet_sha256": "f0ce5fa9ea64d26f761214c1ebf22e7053f1251472286f956c3e1edf1200f71c"
+  },
+  {
+    "case_id": "PF3N-02",
+    "family": "preference-fit",
+    "packet_sha256": "6d5581b80f37f9e0579c31acd203a9a335693f4be3ad141b1eb2eece13bd665a"
+  },
+  {
+    "case_id": "PF3N-03",
+    "family": "preference-fit",
+    "packet_sha256": "d33362855465c966db0d6a505f35025ebf8760a1e1bffa3cf4079158db377e99"
+  },
+  {
+    "case_id": "PF3N-04",
+    "family": "preference-fit",
+    "packet_sha256": "0dc8a5013290d4632aff42b8f78125dc652cbb39826f9e2beb2d83ed19f7b087"
+  },
+  {
+    "case_id": "PF3N-05",
+    "family": "preference-fit",
+    "packet_sha256": "5e4776f20b5678c91cfe9c364cb760f84c83a977e318221bc05fd6a95c60ca75"
+  },
+  {
+    "case_id": "PF3N-06",
+    "family": "preference-fit",
+    "packet_sha256": "0fcfcaf8cd7846a5187cb130b66546f360a94b3772b38c724ee3d71202167d37"
+  },
+  {
+    "case_id": "PF3N-07",
+    "family": "preference-fit",
+    "packet_sha256": "9797bd69cf3bea198621698b0e50893c2151e7553f787c02990ca418f2dc0b0a"
+  },
+  {
+    "case_id": "PF3N-08",
+    "family": "preference-fit",
+    "packet_sha256": "d1fa1835b8648802642f83a4f0b5d3c6eb48938887ec4f922f1764133dd0444f"
+  },
+  {
+    "case_id": "PF3N-09",
+    "family": "preference-fit",
+    "packet_sha256": "a027c32ba69ede253c9a5e5307dd5270701d65c479b5a3151d7792de6b7802c8"
+  },
+  {
+    "case_id": "PF3N-10",
+    "family": "preference-fit",
+    "packet_sha256": "15c00ae7226bc3156f7e36c6639136a92a0f1e7d062054ce1e16e341c209da85"
+  },
+  {
+    "case_id": "PF3N-11",
+    "family": "preference-fit",
+    "packet_sha256": "31ed04c32d3ea6960ce08e43db8c2f13f249b511089366912c6b9188f54c2ca3"
+  },
+  {
+    "case_id": "PF3N-12",
+    "family": "preference-fit",
+    "packet_sha256": "482633d9064e6a878fa1c23d0e6bff19eba81e0b450055c64e0e71087dbaf34e"
+  },
+  {
+    "case_id": "PF3N-13",
+    "family": "preference-fit",
+    "packet_sha256": "f064c59779b064dbff375e6ace6f6773da4d190640d381486009735b080816ed"
+  },
+  {
+    "case_id": "PF3N-14",
+    "family": "preference-fit",
+    "packet_sha256": "37c18b277568194e974a4b944f889b6393585e03feefb6d1d47bfbd2667203ee"
+  },
+  {
+    "case_id": "PF3N-15",
+    "family": "preference-fit",
+    "packet_sha256": "773e5eb02a23c799a96dc57eec4e32ce328e2cabfacba5647058d16673edd4c5"
+  },
+  {
+    "case_id": "PF3N-16",
+    "family": "preference-fit",
+    "packet_sha256": "abf46d7e9a3d0ec39d57e3822be2bcbd757a2b60ec07d7418463f58b5a77f0ca"
+  },
+  {
+    "case_id": "PF3N-17",
+    "family": "preference-fit",
+    "packet_sha256": "cea23d8aa9b872b8300ba0368596d167a1cac8c07c20a2fee3e94cdb9cf013d5"
+  },
+  {
+    "case_id": "PF3N-18",
+    "family": "preference-fit",
+    "packet_sha256": "c5f768d343b2e8bd222c10eaf565fdd131d018f72a39c8afedd1bde345d9cde3"
+  },
+  {
+    "case_id": "PF3N-19",
+    "family": "preference-fit",
+    "packet_sha256": "878cb74ca36654d9ec90b292ce0e0d3618519204f0619a739bf87381d20466c7"
+  },
+  {
+    "case_id": "PF3N-20",
+    "family": "preference-fit",
+    "packet_sha256": "98c43d9b8fc07bfe7867b4e448c507a80f8bf0c5239f78a4f7c0bac451814004"
+  }
+]

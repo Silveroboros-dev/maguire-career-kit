@@ -1,0 +1,209 @@
+{
+  "schema": "maguire-v5-new-raw-judgments-v3",
+  "family": "candidate-fit",
+  "human_approved": false,
+  "review_stage": "raw_only_blind",
+  "raw_file": {
+    "path": "raw/candidate-fit.json",
+    "sha256": "8ddcce7a7a0cdc9e9986dbc68eec5b4b436dc31b5b6cbda02d786f3a041404b5",
+    "bytes": 15635
+  },
+  "read_attestation": {
+    "files_read_before_saving_judgments": [
+      "AGENTS.md",
+      "README.md",
+      "CREDITS.md",
+      "evals/career-quality-v5-new-cases/AUTHORING.md",
+      "evals/career-quality-v5-new-cases/FROZEN_SCHEMA.md",
+      "evals/career-quality-v5-new-cases/raw/candidate-fit.json"
+    ],
+    "checker_code_seen": false,
+    "tests_seen": false,
+    "previous_cases_seen": false,
+    "normalized_seen": false,
+    "gold_seen": false,
+    "authoring_helper_seen": false,
+    "predictions_seen": false,
+    "note": "Version 3 follows unchanged versions 1 and 2. Nine candidate-family raw cases were replaced for taxonomy before checker predictions or changed normalization/gold were read: CF5H-03, 05, 08, 09, 10, 13, 14, 16, 18. The other 11 raw cases and their judgments are unchanged. Version 2 bound SHA256 f14edd1549245510e196b3d79f850b3d6bcc7901816d0a8e3cf047e56b36ddee (14891 bytes); version 3 binds the new 15635-byte raw file."
+  },
+  "judgments": [
+    {
+      "case_id": "CF5H-01",
+      "verdict": "pass",
+      "reason": "January 2024 to March 2025 exceeds one year, and the same source explicitly records weekly handoffs.",
+      "faulty_quotes": [],
+      "ambiguous_readings": [],
+      "coverage_comment": "Both duration of ledger work and handoff frequency are material."
+    },
+    {
+      "case_id": "CF5H-02",
+      "verdict": "fail",
+      "reason": "The source permits shadowing and explicitly says Mara did not present either demo; the answer attributes two presentations to her.",
+      "faulty_quotes": [
+        "Mara presented two customer demos during the April 2025 pilot."
+      ],
+      "ambiguous_readings": [],
+      "coverage_comment": "Keep the permission to shadow distinct from observed presenting."
+    },
+    {
+      "case_id": "CF5H-03",
+      "verdict": "pass",
+      "reason": "Mara facilitated four post-incident reviews, documented follow-up owners, and the role requires that facilitation.",
+      "faulty_quotes": [],
+      "ambiguous_readings": [],
+      "coverage_comment": "Cover count, candidate facilitation, owner documentation, and role requirement."
+    },
+    {
+      "case_id": "CF5H-04",
+      "verdict": "pass",
+      "reason": "Eighteen triaged alerts establish that triage occurred; three escalations and the six-week pilot context are explicit.",
+      "faulty_quotes": [],
+      "ambiguous_readings": [],
+      "coverage_comment": "Do not lose the distinction between triage and escalation."
+    },
+    {
+      "case_id": "CF5H-05",
+      "verdict": "needs_review",
+      "reason": "The record proves recorded-interview caption QA and explicitly denies live caption operation. Whether that QA experience is transferable to live operation is an evaluative judgment not settled by the sources.",
+      "faulty_quotes": [],
+      "ambiguous_readings": [
+        "Transferable means relevant adjacent skill despite no live operation.",
+        "Transferable means sufficient operational readiness for this live-caption requirement, which is unestablished."
+      ],
+      "coverage_comment": "Preserve recorded versus live context and the absence of live-operation experience."
+    },
+    {
+      "case_id": "CF5H-06",
+      "verdict": "fail",
+      "reason": "The three-day permission belonged to a former employer in 2023. This role explicitly permits zero current remote days.",
+      "faulty_quotes": [
+        "This role currently permits Mara to work remotely three days a week."
+      ],
+      "ambiguous_readings": [],
+      "coverage_comment": "Entity, employment period, and current zero-day rule are all decisive."
+    },
+    {
+      "case_id": "CF5H-07",
+      "verdict": "pass",
+      "reason": "Using OCR to review scans for indexing supports OCR indexing experience, and the source explicitly denies an OCR training certificate.",
+      "faulty_quotes": [],
+      "ambiguous_readings": [],
+      "coverage_comment": "Experience and formal certification are separate claims."
+    },
+    {
+      "case_id": "CF5H-08",
+      "verdict": "pass",
+      "reason": "Three pilot vendor cutovers under engineering signoff and the role requirement for cutover coordination are explicit.",
+      "faulty_quotes": [],
+      "ambiguous_readings": [],
+      "coverage_comment": "Engineering signoff limits Mara’s authority; the answer preserves it."
+    },
+    {
+      "case_id": "CF5H-09",
+      "verdict": "fail",
+      "reason": "An internal security awareness course does not confer CISSP. The source explicitly says Mara has not earned that certification.",
+      "faulty_quotes": [
+        "Mara holds the CISSP certification required by the role."
+      ],
+      "ambiguous_readings": [],
+      "coverage_comment": "The role requirement is true, but candidate credential possession is false."
+    },
+    {
+      "case_id": "CF5H-10",
+      "verdict": "pass",
+      "reason": "Mara escalated two severity-one alerts during the pilot, the incident lead made final decisions, and the role requires escalation experience.",
+      "faulty_quotes": [],
+      "ambiguous_readings": [],
+      "coverage_comment": "Cover count and severity, escalation recipient, decision boundary, pilot, and role requirement."
+    },
+    {
+      "case_id": "CF5H-11",
+      "verdict": "pass",
+      "reason": "The role does not require production Kubernetes experience, and Mara's recorded use is confined to a personal lab with explicit absence of production operation.",
+      "faulty_quotes": [],
+      "ambiguous_readings": [],
+      "coverage_comment": "Preserve role requirement and candidate experience separately."
+    },
+    {
+      "case_id": "CF5H-12",
+      "verdict": "fail",
+      "reason": "The source says only two of five boxes were processed by September 2025 and the other three remained unprocessed.",
+      "faulty_quotes": [
+        "Mara processed all five boxes in the legal archive by September 2025."
+      ],
+      "ambiguous_readings": [],
+      "coverage_comment": "The universal quantifier and total count cause the error."
+    },
+    {
+      "case_id": "CF5H-13",
+      "verdict": "needs_review",
+      "reason": "Two active candidate-fact sources conflict directly on who drafted the same 2025 API migration plan; neither is withdrawn or designated a correction.",
+      "faulty_quotes": [],
+      "ambiguous_readings": [
+        "The first source is accurate: Mara personally drafted the plan.",
+        "The second source is accurate: Mara only reviewed the plan and Jo drafted it."
+      ],
+      "coverage_comment": "Do not select a source by order or wording alone; preserve Jo’s authorship alternative."
+    },
+    {
+      "case_id": "CF5H-14",
+      "verdict": "pass",
+      "reason": "Mara wrote three bilingual French/English onboarding guides, and the role requires bilingual written guides. The answer does not claim live onboarding.",
+      "faulty_quotes": [],
+      "ambiguous_readings": [],
+      "coverage_comment": "Preserve written-guide modality and the source’s explicit live-session exclusion."
+    },
+    {
+      "case_id": "CF5H-15",
+      "verdict": "fail",
+      "reason": "The 30% improvement belongs to the team. The source expressly withholds individual attribution, while the answer credits Mara with the whole reduction.",
+      "faulty_quotes": [
+        "Mara cut mean triage time by 30% that quarter."
+      ],
+      "ambiguous_readings": [],
+      "coverage_comment": "Candidate ticket tagging and team outcome must remain distinct."
+    },
+    {
+      "case_id": "CF5H-16",
+      "verdict": "pass",
+      "reason": "Mara wrote rollback plans for three internal pilot deployments, and the role requires rollback-plan documentation. The answer stays within pilot scope.",
+      "faulty_quotes": [],
+      "ambiguous_readings": [],
+      "coverage_comment": "The production-use exclusion is material to avoid upgrading pilot work."
+    },
+    {
+      "case_id": "CF5H-17",
+      "verdict": "pass",
+      "reason": "The active correction says Mara completed the course in May 2025 and did not take the exam; the old certification claim is withdrawn.",
+      "faulty_quotes": [],
+      "ambiguous_readings": [],
+      "coverage_comment": "Keep course completion separate from certification and ignore the withdrawn claim."
+    },
+    {
+      "case_id": "CF5H-18",
+      "verdict": "fail",
+      "reason": "The source explicitly says Mara has not queried a production customer database; sandbox SQL on synthetic data is different.",
+      "faulty_quotes": [
+        "Mara has queried production customer databases with SQL"
+      ],
+      "ambiguous_readings": [],
+      "coverage_comment": "The role requirement is a true premise, but the claimed candidate production experience is false."
+    },
+    {
+      "case_id": "CF5H-19",
+      "verdict": "pass",
+      "reason": "Mara handled onboarding sessions in both French and English, and the role explicitly requires bilingual client onboarding.",
+      "faulty_quotes": [],
+      "ambiguous_readings": [],
+      "coverage_comment": "Two candidate language experiences and the employer requirement are material."
+    },
+    {
+      "case_id": "CF5H-20",
+      "verdict": "pass",
+      "reason": "Mara wrote a pilot runbook and trained three operators; the role asks for both forms of work. The answer stays within pilot scope.",
+      "faulty_quotes": [],
+      "ambiguous_readings": [],
+      "coverage_comment": "Keep the pilot versus production boundary and two requested skills visible."
+    }
+  ]
+}

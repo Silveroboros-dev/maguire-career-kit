@@ -1,0 +1,190 @@
+{
+  "schema": "maguire-quality-answers-v1",
+  "case_id": "PF-05",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "assessments": [
+        {
+          "target_id": "pref_travel",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_travel",
+              "quote": "Travel may reach 20% of working time. Every trip is scheduled at least four weeks in advance."
+            }
+          ],
+          "rationale": "The job reaches the candidate’s explicit 20% exception and meets its four-week notice condition."
+        },
+        {
+          "target_id": "pref_remote",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_location",
+              "quote": "The role is home-based with no required office days."
+            }
+          ],
+          "rationale": "Home-based with no required office days meets the hard location requirement."
+        },
+        {
+          "target_id": "pref_learning",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_growth",
+              "quote": "The employer mentions growth opportunities but specifies no training budget or learning time."
+            }
+          ],
+          "rationale": "Generic growth opportunities do not establish monthly protected learning time."
+        }
+      ],
+      "conclusion": {
+        "action": "pursue",
+        "text": "The explicit travel exception covers the 20% requirement with four weeks notice, and the role has no office days.",
+        "next_step": "Pursue the role and ask in the first conversation whether monthly learning time exists."
+      },
+      "limitations": [
+        "Actual travel patterns and learning practice have not been observed."
+      ]
+    },
+    {
+      "answer_id": "answer_02",
+      "assessments": [
+        {
+          "target_id": "pref_travel",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_travel",
+              "quote": "Travel may reach 20% of working time. Every trip is scheduled at least four weeks in advance."
+            }
+          ],
+          "rationale": "The job reaches the candidate’s explicit 20% exception and meets its four-week notice condition."
+        },
+        {
+          "target_id": "pref_remote",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_location",
+              "quote": "The role is home-based with no required office days."
+            }
+          ],
+          "rationale": "Home-based with no required office days meets the hard location requirement."
+        },
+        {
+          "target_id": "pref_learning",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_growth",
+              "quote": "The employer mentions growth opportunities but specifies no training budget or learning time."
+            }
+          ],
+          "rationale": "Generic growth opportunities do not establish monthly protected learning time."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "Both hard conditions are supported; the remaining learning preference needs a concrete answer.",
+        "next_step": "Ask about protected monthly learning time while keeping the travel notice condition visible in the assessment."
+      },
+      "limitations": [
+        "Actual travel patterns and learning practice have not been observed."
+      ]
+    },
+    {
+      "answer_id": "answer_03",
+      "assessments": [
+        {
+          "target_id": "pref_travel",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_travel",
+              "quote": "Travel may reach 20% of working time. Every trip is scheduled at least four weeks in advance."
+            }
+          ],
+          "rationale": "The job reaches the candidate’s explicit 20% exception and meets its four-week notice condition."
+        },
+        {
+          "target_id": "pref_remote",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_location",
+              "quote": "The role is home-based with no required office days."
+            }
+          ],
+          "rationale": "Home-based with no required office days meets the hard location requirement."
+        },
+        {
+          "target_id": "pref_learning",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_growth",
+              "quote": "The employer mentions growth opportunities but specifies no training budget or learning time."
+            }
+          ],
+          "rationale": "Growth opportunities guarantee the protected monthly learning time requested."
+        }
+      ],
+      "conclusion": {
+        "action": "pursue",
+        "text": "The explicit travel exception covers the 20% requirement with four weeks notice, and the role has no office days.",
+        "next_step": "Pursue the role and ask in the first conversation whether monthly learning time exists."
+      },
+      "limitations": [
+        "Actual travel patterns and learning practice have not been observed."
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "assessments": [
+        {
+          "target_id": "pref_travel",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_travel",
+              "quote": "Travel may reach 20% of working time. Every trip is scheduled at least four weeks in advance."
+            }
+          ],
+          "rationale": "The job reaches the candidate’s explicit 20% exception and meets its four-week notice condition."
+        },
+        {
+          "target_id": "pref_remote",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_location",
+              "quote": "The role is home-based with no required office days."
+            }
+          ],
+          "rationale": "Home-based with no required office days meets the hard location requirement."
+        },
+        {
+          "target_id": "pref_learning",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_growth",
+              "quote": "The employer mentions growth opportunities but specifies no training budget or learning time."
+            }
+          ],
+          "rationale": "Generic growth opportunities do not establish monthly protected learning time."
+        }
+      ],
+      "conclusion": {
+        "action": "pass",
+        "text": "Decline because 20% travel always violates a 10% ceiling.",
+        "next_step": "Close the role without applying the candidate’s recorded exception."
+      },
+      "limitations": [
+        "Actual travel patterns and learning practice have not been observed."
+      ]
+    }
+  ]
+}

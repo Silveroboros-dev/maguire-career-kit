@@ -1,0 +1,55 @@
+{
+  "schema": "maguire-v3-local-run-receipt",
+  "created_at": "2026-10-12T14:31:20.101761+00:00",
+  "freeze": {
+    "sha256": "21c7b9c5b554d047e38c2cfd5cb21713ee969b5e0264af4cc6f0aa111307108a",
+    "bytes": 3229
+  },
+  "scope": "selected_fragments",
+  "files": {
+    "RESULTS.md": {
+      "sha256": "b103e1cca25baee539050e33705b3c821a4499883de3f872d52d34aa5e5d737f",
+      "bytes": 3307
+    },
+    "execution.json": {
+      "sha256": "4c293cdc48882cc1d8248e126f34ca526c0e24dd061f5d1278322b4fbc755cf2",
+      "bytes": 749
+    },
+    "mapping.json": {
+      "sha256": "9ef12ee60ca6bdc3471a21408c79c1fe490c287d745eede4125d60d4d912eac7",
+      "bytes": 2835
+    },
+    "measurement.json": {
+      "sha256": "d7da669f1aaf908564e217e3da9553979bb0ec8bcfdfe0ce282386e8be87e24e",
+      "bytes": 20200
+    },
+    "packets.jsonl": {
+      "sha256": "42c039d49cd38675ee02ecb5e027d21244eeb93d6edb5b5d9711bb81754d547c",
+      "bytes": 53890
+    },
+    "predictions.jsonl": {
+      "sha256": "86f1fa5d4fa3c94f92bd4c3e61bffd09a10aba587cad3dd5c127e65d60336034",
+      "bytes": 34200
+    }
+  },
+  "fragments": 16,
+  "packet_sha256_order": [
+    "297f35fe878cc955b29a0d747cc37f7b0018b9ffac38a9aab6ed63dee96afa65",
+    "ccf3278778125d8e8266ccfebc270d72d85973eb1b7e155389864fe4d12eb7e5",
+    "8c9cd230e72233c8af1b746294f16aea4195fd288a0521a4f4880bc9ce9b798d",
+    "f9280bf05aaf4f71eb45fea7439a2b0213d989e784047adced7fb2428b3980c5",
+    "d93e9b36d322c8be4894712a261d7619b44a3efbf304efe346710554a2b58a94",
+    "90862d02eac27ad64b171303a4f33c9cae3be1569e2689f993af431a4b5d7fa4",
+    "8d1546bea3795813c21fa3cd55f2692a978d5cf9bd3d2f0458e620217da1ebba",
+    "1862583d435f02314470a3ba056f75374c0d346e059b9c763a700dcea8abe973",
+    "7da2b37d51cf7b0672da25a7e23f2274f6c4fc08121745cf050dcfccd862c359",
+    "21bfcab1b0e5743b6055ee55b97f72b01d498e021d43a30c6eaa5c0cfa4b49f5",
+    "376064f724c3fefbf89b9e93fa4600025160285cb485e303e143d7513b2f31af",
+    "b712ac9a291660c1ba524c9cf6d4f358c5778b13fcf25235fbe50e66d2085f4c",
+    "8153e419bff9f1906eccc6b3826c7f2b96305fb6899d38e2531fcd3d979ef367",
+    "6dc5585b0a67b17f0a7b4f984caec920b9e34ddf33942e32c8d406b811795f5b",
+    "b1e4a8b9e4492bb17dfb6c4bdd9c66605b65dac60faccd01e25123ec7792977c",
+    "0f5ad10cf2aac0611d896ee1c40d1de94d4cdc19e2bc59325be81c6db9042dfe"
+  ],
+  "authority": "offline_only_no_external_calls_no_git_writes"
+}

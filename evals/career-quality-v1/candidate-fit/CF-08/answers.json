@@ -1,0 +1,181 @@
+{
+  "schema": "maguire-quality-answers-v1",
+  "case_id": "CF-08",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "assessments": [
+        {
+          "target_id": "jd_1",
+          "label": "contradicted",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Applicants must have completed a paid accessibility audit within the last 18 months."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "I have completed only one paid accessibility audit, 26 months before this decision date."
+            }
+          ],
+          "rationale": "The only paid audit is dated 26 months ago, beyond the explicit 18-month minimum."
+        },
+        {
+          "target_id": "jd_2",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Write clear remediation tickets for interface issues."
+            },
+            {
+              "source_id": "fact_2",
+              "quote": "I wrote remediation tickets for keyboard navigation and contrast issues during that audit."
+            }
+          ],
+          "rationale": "The candidate reports keyboard and contrast remediation tickets."
+        }
+      ],
+      "conclusion": {
+        "action": "pass",
+        "text": "The explicit recent-audit minimum is unmet, though ticket writing is evidenced.",
+        "next_step": "Reassess only if a new qualifying paid audit is completed and documented."
+      },
+      "limitations": [
+        "The older audit does not establish inability to audit in the future.",
+        "The only-audit statement is self-reported."
+      ]
+    },
+    {
+      "answer_id": "answer_02",
+      "assessments": [
+        {
+          "target_id": "jd_2",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Write clear remediation tickets for interface issues."
+            },
+            {
+              "source_id": "fact_2",
+              "quote": "I wrote remediation tickets for keyboard navigation and contrast issues during that audit."
+            }
+          ],
+          "rationale": "The candidate describes ticket writing for two concrete issue types."
+        },
+        {
+          "target_id": "jd_1",
+          "label": "contradicted",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Applicants must have completed a paid accessibility audit within the last 18 months."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "I have completed only one paid accessibility audit, 26 months before this decision date."
+            }
+          ],
+          "rationale": "Twenty-six months is outside the required eighteen-month history window; this is a recency finding only."
+        }
+      ],
+      "conclusion": {
+        "action": "pass",
+        "text": "The candidate’s only paid accessibility audit falls outside the explicit eighteen-month window; ticket writing remains relevant evidence.",
+        "next_step": "Reassess if a qualifying recent paid audit is later completed and documented."
+      },
+      "limitations": [
+        "An older audit does not prove inability to conduct a future audit."
+      ]
+    },
+    {
+      "answer_id": "answer_03",
+      "assessments": [
+        {
+          "target_id": "jd_1",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Applicants must have completed a paid accessibility audit within the last 18 months."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "I have completed only one paid accessibility audit, 26 months before this decision date."
+            }
+          ],
+          "rationale": "The audit 26 months ago satisfies the last-18-month requirement."
+        },
+        {
+          "target_id": "jd_2",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Write clear remediation tickets for interface issues."
+            },
+            {
+              "source_id": "fact_2",
+              "quote": "I wrote remediation tickets for keyboard navigation and contrast issues during that audit."
+            }
+          ],
+          "rationale": "The candidate reports keyboard and contrast remediation tickets."
+        }
+      ],
+      "conclusion": {
+        "action": "pass",
+        "text": "The explicit recent-audit minimum is unmet, though ticket writing is evidenced.",
+        "next_step": "Reassess only if a new qualifying paid audit is completed and documented."
+      },
+      "limitations": [
+        "The older audit does not establish inability to audit in the future.",
+        "The only-audit statement is self-reported."
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "assessments": [
+        {
+          "target_id": "jd_1",
+          "label": "contradicted",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Applicants must have completed a paid accessibility audit within the last 18 months."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "I have completed only one paid accessibility audit, 26 months before this decision date."
+            }
+          ],
+          "rationale": "The only paid audit is dated 26 months ago, beyond the explicit 18-month minimum."
+        },
+        {
+          "target_id": "jd_2",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Write clear remediation tickets for interface issues."
+            },
+            {
+              "source_id": "fact_2",
+              "quote": "I wrote remediation tickets for keyboard navigation and contrast issues during that audit."
+            }
+          ],
+          "rationale": "The candidate reports keyboard and contrast remediation tickets."
+        }
+      ],
+      "conclusion": {
+        "action": "pass",
+        "text": "The candidate cannot conduct future accessibility audits because the only past audit is 26 months old.",
+        "next_step": "Reassess only if a new qualifying paid audit is completed and documented."
+      },
+      "limitations": [
+        "The older audit does not establish inability to audit in the future.",
+        "The only-audit statement is self-reported."
+      ]
+    }
+  ]
+}

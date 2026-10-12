@@ -1,0 +1,54 @@
+{
+  "schema": "maguire-quality-gold-v1",
+  "case_id": "PF2-02",
+  "family": "range or possibility turned into guaranteed offer",
+  "title": "Published stipend band versus personal offer",
+  "review_status": "proposed_agent_authored",
+  "human_approved": false,
+  "units": [
+    {
+      "target_id": "pref_1",
+      "kind": "must_have",
+      "allowed_labels": [
+        "unknown"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "pref_1",
+          "jd_1"
+        ]
+      ],
+      "rationale": "The band includes the threshold, but no personal offer amount exists in the supplied snapshot.",
+      "required_points": [
+        "Range includes threshold",
+        "Personal offer unknown"
+      ],
+      "forbidden_inferences": [
+        "Do not treat top of band as an offer"
+      ]
+    }
+  ],
+  "forbidden_assessment_targets": [],
+  "acceptable_actions": [
+    "clarify"
+  ],
+  "critical_errors": [
+    {
+      "id": "PF2-02-E1",
+      "description": "The range's maximum is not a guaranteed individual offer.",
+      "target_ids": [
+        "pref_1"
+      ]
+    },
+    {
+      "id": "PF2-02-E2",
+      "description": "An inclusive band does not establish a personal commitment.",
+      "target_ids": [
+        "pref_1"
+      ]
+    }
+  ],
+  "notes": [
+    "All people, roles, dates, and source statements are synthetic."
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "schema": "maguire-v5-new-novelty-review-v1",
+  "human_approved": false,
+  "status": "reviewed",
+  "binding": {
+    "NOVELTY_SCREEN_v2.json": {
+      "sha256": "2fcf07bc2046b6187a1bc1b1cdef012cf2bcc07db66c474a00a7c6dff12b0e1e",
+      "bytes": 86378
+    },
+    "raw/candidate-fit.json": {
+      "sha256": "8ddcce7a7a0cdc9e9986dbc68eec5b4b436dc31b5b6cbda02d786f3a041404b5",
+      "bytes": 15635
+    },
+    "raw/preference-fit.json": {
+      "sha256": "7dbdd88b9c0cbb83e23e7aacba554f0a65b175eb4dac3d861ce14a0913fdfff0",
+      "bytes": 17078
+    }
+  },
+  "screen_result": {
+    "new_records": 40,
+    "prior_records": 284,
+    "unique_prior_source_answer_texts": 202,
+    "exact_source_answer_overlaps": 0,
+    "exact_answer_overlaps": 0
+  },
+  "qualitative_findings": [
+    {
+      "cases": ["PF5H-17", "PF5H-18"],
+      "nearest_prior": "career-quality-v3-new-cases/raw/preference-fit.json#PF3N-12",
+      "assessment": "These reuse the established exhaustive training-demo schedule versus cutoff rule family. The new pair tests a before-cutoff and an after-cutoff endpoint with different weekdays and times; it is a new instance pair, not a new reasoning family."
+    },
+    {
+      "cases": ["PF5H-07", "PF5H-08"],
+      "nearest_prior": "career-quality-v3-new-cases/raw/preference-fit.json#PF3N-11",
+      "assessment": "These reuse the request-within-permission-cap rule family. The new pair combines monthly counts with manager approval and, for PF5H-08, a post-probation phase. Exact evidence and answers differ, but the core limit comparison has precedent."
+    },
+    {
+      "cases": ["PF5H-20"],
+      "nearest_prior": "career-quality-v3-new-cases/raw/preference-fit.json#PF3N-09",
+      "assessment": "Both concern pending live captions and caution before declaring a requirement met. The new case adds explicit current unavailability, no promised activation date, and a first-day need. It is a richer instance of a prior uncertainty family."
+    },
+    {
+      "cases": ["CF5H-01"],
+      "nearest_prior": "career-quality-v3-new-cases/raw/candidate-fit.json#CF3N-10",
+      "assessment": "Both use ledger work over more than a year. The new case combines duration with weekly handoff recording on distinct fictional evidence; it is not a wholly new duration inference."
+    }
+  ],
+  "overall": "The screen supports no exact reuse of source-plus-answer or answer text among the 40 cases. Several cases intentionally exercise existing reasoning families with new evidence, context, and combinations. Word overlap is a triage signal, not proof of semantic novelty or statistical independence. This reviewer did not use prior labels, outcomes, checker predictions, or grading to change the new raw cases."
+}

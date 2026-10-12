@@ -1,0 +1,19 @@
+{
+  "schema": "maguire-v5-new-cases-preflight-challenge-receipt-v1",
+  "packet": "review/challenge_packet_v1.json",
+  "packet_raw": {
+    "sha256": "2ed59d9cf459a4f6f4025a1becffe23898bfcb2f2bb74a6d0d94a75f60e8c89f",
+    "bytes": 9676
+  },
+  "packet_internal_digest_sha256": "52ad3eaf1b6cae26ab437e0f4e7cb5ebeb1f2bcc3b404d05ba900c3ae2ddb3d1",
+  "predecessor_receipt_raw": {
+    "sha256": "8315194da3da319dfd5925885c2d75362fa77049410d8e9d6066d65315b91a3b",
+    "bytes": 615
+  },
+  "predecessor_packet_raw": {
+    "sha256": "aed9f1e96ecd8e28db910b7f9a2f99ace5bd512883999c24e49bc90797d8017e",
+    "bytes": 20243
+  },
+  "predecessor_packet_internal_digest_sha256": "e7affb72747e11ec1143de34f780103fa731dfcf8e0400ac3130033c3562801c",
+  "externally_sealed": false
+}

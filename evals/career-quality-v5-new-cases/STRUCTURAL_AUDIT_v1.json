@@ -1,0 +1,49 @@
+{
+  "schema": "maguire-v5-new-structural-audit-v1",
+  "recorded_at": "2026-10-12T18:12:00.374863+00:00",
+  "phase": "before_dataset_freeze",
+  "predictions_executed": false,
+  "operation": "frozen checker.validate_packet only",
+  "review": {
+    "path": "review/annotation_review_v1.json",
+    "sha256": "b345de87cd235d7750b7af47eca2e78ccd5d3edf79a3032ebe5ae8fc736ca528",
+    "bytes": 16832
+  },
+  "input_files": {
+    "raw/candidate-fit.json": {
+      "sha256": "8ddcce7a7a0cdc9e9986dbc68eec5b4b436dc31b5b6cbda02d786f3a041404b5",
+      "bytes": 15635
+    },
+    "raw/preference-fit.json": {
+      "sha256": "7dbdd88b9c0cbb83e23e7aacba554f0a65b175eb4dac3d861ce14a0913fdfff0",
+      "bytes": 17078
+    },
+    "normalized/candidate-fit.json": {
+      "sha256": "c476e98b42c8398aa8a624c0511b72a427ae3086668ba1ed8abc813c38130135",
+      "bytes": 60878
+    },
+    "normalized/preference-fit.json": {
+      "sha256": "67c13fdf43f59d1f2d712e0c8bff5b4bf3d8b1ca630a0c44b3291fc12f3d7821",
+      "bytes": 54163
+    },
+    "gold/candidate-fit.json": {
+      "sha256": "e9da4250f0c486a4b1d0340f5a378a2c63f60d6e063f397862f828e6465c0718",
+      "bytes": 5747
+    },
+    "gold/preference-fit.json": {
+      "sha256": "a0d0d6651b581af6977d2b0e636ad8b5aea0eb72e894f9169f20a8ddc4dace94",
+      "bytes": 5203
+    }
+  },
+  "packets_examined": 40,
+  "valid_packets": 39,
+  "invalid_packets": [
+    {
+      "case_id": "CF5H-04",
+      "error": "sources[0].facts[0].time.start must be YYYY-MM",
+      "cause": "Year-only 2025 was incorrectly stored as time.start/time.end on two facts and two claim readings.",
+      "allowed_correction": "Keep the raw year as time.year; do not invent months, change raw/gold or alter checker."
+    }
+  ],
+  "disposition": "Preserve pre-correction data and review v1; require new attestation and review v2 before measured run."
+}

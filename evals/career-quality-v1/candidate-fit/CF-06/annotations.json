@@ -1,0 +1,69 @@
+{
+  "schema": "maguire-quality-annotations-v1",
+  "case_id": "CF-06",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The workbook supports ticket formulas while meeting facilitation is unknown.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_02",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The candidate may pursue with the meeting duty left unclaimed and the workbook shown.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_03",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "Missing evidence is unknown, not a counterfact or inability.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "silence as contradiction",
+        "description": "Missing evidence is unknown, not a counterfact or inability.",
+        "changed_paths": [
+          "/assessments/1/label",
+          "/assessments/1/rationale"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "CF-UNCERTAINTY",
+          "severity": "major",
+          "target_id": "jd_2",
+          "explanation": "Missing evidence is unknown, not a counterfact or inability."
+        }
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "The assessment leaves Monday meeting facilitation unknown, but the conclusion says every duty is met; missing evidence cannot be silently resolved.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "hide unknown duty",
+        "description": "The assessment leaves Monday meeting facilitation unknown, but the conclusion says every duty is met; missing evidence cannot be silently resolved.",
+        "changed_paths": [
+          "/conclusion/action",
+          "/conclusion/next_step",
+          "/conclusion/text"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "CF-UNCERTAINTY",
+          "severity": "major",
+          "target_id": "jd_2",
+          "explanation": "The assessment leaves Monday meeting facilitation unknown, but the conclusion says every duty is met; missing evidence cannot be silently resolved."
+        }
+      ]
+    }
+  ]
+}

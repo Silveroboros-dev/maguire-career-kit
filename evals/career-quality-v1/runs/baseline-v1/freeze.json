@@ -1,0 +1,87 @@
+{
+  "assurance": "rule_checks_only",
+  "authority": "Offline local grading only. No API calls, installs, commits, pushes or case edits.",
+  "created_at": "2026-10-12T13:32:51.053459+00:00",
+  "exposure": "Development data previously seen by root/authors. Runtime author did not open corpus answers/annotations; reviewer did not inspect their contents, but combined structural-test execution deserialized them. No blind-holdout claim.",
+  "external_seal": false,
+  "files": {
+    "FORMAT.md": {
+      "bytes": 6626,
+      "sha256": "d41b030079bed84b1078e3b4c0eafb80bb4e86a23e65abe015667b3987d32292"
+    },
+    "IMPLEMENTATION_CONTRACT.md": {
+      "bytes": 4234,
+      "sha256": "690e51b152dc27db0a8b46825dd970a0318dca437000b2df684996b9931dd649"
+    },
+    "MANIFEST.json": {
+      "bytes": 15185,
+      "sha256": "55d6e2da6955fb5fa795bdceb51f507a6595632b028bed6cd75dc52ab478a3e0"
+    },
+    "RUBRIC.md": {
+      "bytes": 5274,
+      "sha256": "2dcf9136270116eabd348228941e730e2de7cc4a78c6089bab3029e5ec3aec91"
+    },
+    "grade_packets.py": {
+      "bytes": 2904,
+      "sha256": "0aa99c3ac02fb7fb3775fb41ec963a0b35cf6740b22ead5646fbed88a4225fb3"
+    },
+    "graders/__init__.py": {
+      "bytes": 200,
+      "sha256": "9de1460f0c0143731663584e0a3cad2899c55a87d22575d2c5625c43c8bca041"
+    },
+    "graders/candidate.py": {
+      "bytes": 6565,
+      "sha256": "2ec01bebcc5245d7c6eb40d28a776cd8cdf7cb17fc6d3a5bfb733b6111af0166"
+    },
+    "graders/preference.py": {
+      "bytes": 3981,
+      "sha256": "e52b1b97a683cf43827629cb90fab47680bdb1a15fe843c7e64e3bd40bb45573"
+    },
+    "graders/shared.py": {
+      "bytes": 15562,
+      "sha256": "327cc95a72f8cf72e24a6a94e46862363958f728174e26ae03b09dad9eb1a1e8"
+    },
+    "measure.py": {
+      "bytes": 13224,
+      "sha256": "cc6c233b3acc6aee717d8d1cffd5e6670a2dfb253f956b8cc23c3f776b43fd8b"
+    },
+    "review/grader_code_review_v1.json": {
+      "bytes": 5409,
+      "sha256": "445ca295dc3588ad633601ed2a910862d25b3d23327bd2837cbdd62f3306e32d"
+    },
+    "run_offline.py": {
+      "bytes": 11611,
+      "sha256": "f775fa45302257cc58946931a919658ecbe09a34a2c377497a649bcad1bb4475"
+    },
+    "tests/test_dataset.py": {
+      "bytes": 5339,
+      "sha256": "0046de289505517b289d27fc24bff20d6d81900d049adcd18b0b316468f4a50f"
+    },
+    "tests/test_grader_boundaries.py": {
+      "bytes": 21618,
+      "sha256": "bd3448dec2189477ca087ac89172eb444daecccc13757b8554aadf3dc671a99f"
+    },
+    "tests/test_graders.py": {
+      "bytes": 10349,
+      "sha256": "e2800026e8686e0345ddce99937431bf030934774cdc46b39668200d921f56f4"
+    },
+    "tests/test_pipeline.py": {
+      "bytes": 7173,
+      "sha256": "46b48bd04187e10e4fcba0c49004bbb68a1ac859767e7c0418a648d32ac90f2a"
+    },
+    "validate_dataset.py": {
+      "bytes": 18632,
+      "sha256": "b4d1907f58eed98a84ce6514cf4f83951b7171e266f10c5f7b87be7a9f7caca0"
+    }
+  },
+  "git": {
+    "branch": "codex/offline-maguire-grader",
+    "head": "4d87b90ef74c4f40b282e08b6d82fc6ad9f2749e",
+    "staged_diff_names": "",
+    "tracked_diff_names": ""
+  },
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "python": "3.9.6 (default, Jan  9 2026, 11:03:41) \n[Clang 17.0.0 (clang-1700.6.4.2)]",
+  "schema": "maguire-grader-code-freeze-v1",
+  "shuffle_seed": "maguire-rule-baseline-2026-10-12-v1"
+}

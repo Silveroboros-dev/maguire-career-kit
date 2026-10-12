@@ -1,0 +1,43 @@
+{
+  "schema": "maguire-v5-run-receipt",
+  "completed_at": "2026-10-12T17:53:48.145168+00:00",
+  "freeze": {
+    "sha256": "4c8b491f939d19ddc4de3107d60bf09099b16416d773deea2d5a59d207d5cecb",
+    "bytes": 13367
+  },
+  "start": {
+    "sha256": "d511e7bc288f1924cd9e2783577499fa79e3a807b198669a751e5c75c72a0445",
+    "bytes": 3634
+  },
+  "predecessor_files": 347,
+  "artifacts": {
+    "REPORT.md": {
+      "sha256": "f13541eef8964ea740e294579d1f4e42a683fd161685271a9122274fa52b5eae",
+      "bytes": 2958
+    },
+    "comparison.json": {
+      "sha256": "fe0de79d410667f3302aa0b50f8b548373dda5dbd9b1ef1c604611198e28f834",
+      "bytes": 11064
+    },
+    "execution.json": {
+      "sha256": "d3cabc76a8c310a257998e1640a65af6096d4ac8463e50032077e8c55ec8877b",
+      "bytes": 617
+    },
+    "mapping.json": {
+      "sha256": "b972e593a7843b48d985dabe3434dcfc649be8a407696c25bd903007efad0f12",
+      "bytes": 6183
+    },
+    "measurement.json": {
+      "sha256": "4f4e36347b16f838ed5a819e63ca966c19d3d89396aaa2245dc194cae6a7ef31",
+      "bytes": 105546
+    },
+    "packets.jsonl": {
+      "sha256": "ff1105c16009967097d7270dbe1c7ff9176179575a7b4ce77cddf030206b912a",
+      "bytes": 108723
+    },
+    "predictions.jsonl": {
+      "sha256": "4e7df4492d60fb8cb28565223e29b9ac75316b7a28894a772abe6a599d287d1c",
+      "bytes": 70045
+    }
+  }
+}

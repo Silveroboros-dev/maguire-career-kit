@@ -1,0 +1,38 @@
+{
+  "schema": "maguire-v6-new-preflight",
+  "human_approved": false,
+  "harness_tests": 19,
+  "command": "python3 -B -m unittest discover -s evals/career-quality-v6-new-cases/tests -v",
+  "shape_checked_packets": 40,
+  "claims": 82,
+  "shape_errors": [],
+  "predictions_executed": false,
+  "predecessor_files_unchanged": 492,
+  "files": {
+    "raw/candidate-fit.json": {
+      "sha256": "1d446c8961ca222d0d2abf995ad6d264e64cfa491d4336a19d01d1b601b16d74",
+      "bytes": 17110
+    },
+    "raw/preference-fit.json": {
+      "sha256": "515b241b4ca84cfb31f96c62e761d7d21eae2e5a6aad4b7286a8622d0c09867d",
+      "bytes": 18113
+    },
+    "normalized/candidate-fit.json": {
+      "sha256": "c25a600221755ed0ef8acf6e9b06a1752b1ffdee3332cb3c5953a575d6282d2f",
+      "bytes": 56576
+    },
+    "normalized/preference-fit.json": {
+      "sha256": "af6d962e4bfe677a9a37f8d174cd2ddf832170a5f700cb60883c4e23b5449a88",
+      "bytes": 73129
+    },
+    "gold/candidate-fit.json": {
+      "sha256": "eced817907e91c11582768932abdfede1f7b7797b23ae0cdd35fa7c71c09891f",
+      "bytes": 5127
+    },
+    "gold/preference-fit.json": {
+      "sha256": "7637174136a5966b2de78684b0bc249a6ce031f93f5f977f8322874214fbd75f",
+      "bytes": 5440
+    }
+  },
+  "limit": "Shape audit does not certify semantic fidelity; separate reviewer owns annotation receipt."
+}

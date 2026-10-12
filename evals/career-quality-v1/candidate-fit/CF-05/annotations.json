@@ -1,0 +1,68 @@
+{
+  "schema": "maguire-quality-annotations-v1",
+  "case_id": "CF-05",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The candidate covers two audit-package parts and receipt tracking, without final sign-off.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_02",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "Clarifying prior sign-off expectations is reasonable with the candidate’s partial package contribution.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_03",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "The source assigns final sign-off to the controller.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "full ownership inflation",
+        "description": "The source assigns final sign-off to the controller.",
+        "changed_paths": [
+          "/assessments/0/label",
+          "/assessments/0/rationale"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "CF-LABEL",
+          "severity": "critical",
+          "target_id": "jd_1",
+          "explanation": "The source assigns final sign-off to the controller."
+        }
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "The candidate reports reconciliation and commentary, a meaningful subset.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "erase subset",
+        "description": "The candidate reports reconciliation and commentary, a meaningful subset.",
+        "changed_paths": [
+          "/assessments/0/label",
+          "/assessments/0/rationale"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "CF-LABEL",
+          "severity": "major",
+          "target_id": "jd_1",
+          "explanation": "The candidate reports reconciliation and commentary, a meaningful subset."
+        }
+      ]
+    }
+  ]
+}

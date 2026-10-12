@@ -65,6 +65,14 @@ python3 scripts/build_release.py v0.1.3 /absolute/path/to/release-output --relea
 
 The build requires Git and a clean source checkout. It reads committed files, writes outside this repository, and never packages the Site pages or candidate records. There is no hosted job-search API, payment service, automatic update channel, or published installable plugin in this package.
 
+## Offline evaluation research
+
+The [career-quality experiments](evals/README.md) contain two offline graders,
+fictional test cases and preserved v1–v6 results for evidence fidelity and
+preference fit. They are experimental tools outside the installer and releases;
+manual source normalization and review remain necessary. See the public
+verification command and limitations in the evaluation README.
+
 ## License and credits
 
 Released under [MIT](LICENSE). See [credits](CREDITS.md) for the career-ops project that helped inform the workflow.

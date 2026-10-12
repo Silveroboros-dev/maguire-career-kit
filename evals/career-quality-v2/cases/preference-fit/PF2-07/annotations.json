@@ -1,0 +1,66 @@
+{
+  "schema": "maguire-quality-annotations-v1",
+  "case_id": "PF2-07",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The assessment keeps the stated evidence and its limits in scope.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_02",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The independent acceptable conclusion preserves the same substantive constraints.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_03",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "Another team's practice cannot establish this person's written contractual term.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "team practice to personal guarantee",
+        "description": "Another team's practice cannot establish this person's written contractual term.",
+        "changed_paths": [
+          "/assessments/0/rationale"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "PF-EVIDENCE",
+          "severity": "major",
+          "target_id": "pref_1",
+          "explanation": "Another team's practice cannot establish this person's written contractual term."
+        }
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "The only permission cited is a current local practice for the Helsinki design team.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "local to global permission",
+        "description": "The only permission cited is a current local practice for the Helsinki design team.",
+        "changed_paths": [
+          "/conclusion/text"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "PF-UNKNOWN",
+          "severity": "major",
+          "target_id": "pref_1",
+          "explanation": "The only permission cited is a current local practice for the Helsinki design team."
+        }
+      ]
+    }
+  ]
+}

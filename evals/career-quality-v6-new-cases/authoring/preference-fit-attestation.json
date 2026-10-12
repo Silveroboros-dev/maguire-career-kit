@@ -1,0 +1,92 @@
+{
+  "schema": "maguire-v6-new-author-attestation",
+  "family": "preference-fit",
+  "author": "Codex subagent /root/v6h_preference_author",
+  "model": "GPT-6 family; exact subagent model identifier not exposed",
+  "human_approved": false,
+  "checker_code_seen": false,
+  "previous_cases_seen": false,
+  "predictions_seen": false,
+  "allowed_files_read": [
+    "AGENTS.md",
+    "README.md",
+    "CREDITS.md",
+    "evals/career-quality-v6-new-cases/AUTHORING.md",
+    "evals/career-quality-v6-new-cases/FROZEN_SCHEMA.md",
+    "evals/career-quality-v6-new-cases/AUTHORING_API_ADDENDUM.md",
+    "evals/career-quality-v6-new-cases/raw/preference-fit.json",
+    "evals/career-quality-v6-new-cases/normalized/preference-fit.json",
+    "evals/career-quality-v6-new-cases/gold/preference-fit.json",
+    "evals/career-quality-v6-new-cases/authoring/preference-fit.py",
+    "evals/career-quality-v6-new-cases/authoring/preference-fit-normalize.py",
+    "evals/career-quality-v6-new-cases/authoring/preference-fit-pre-fidelity-normalized.json",
+    "evals/career-quality-v6-new-cases/authoring/preference-fit-pre-fidelity-gold.json",
+    "evals/career-quality-v6-new-cases/authoring/preference-fit-pre-fidelity-attestation.json",
+    "evals/career-quality-v6-new-cases/authoring/preference-fit-pre-adjudication-gold.json",
+    "evals/career-quality-v6-new-cases/authoring/preference-fit-pre-adjudication-attestation.json"
+  ],
+  "files_authored": {
+    "raw/preference-fit.json": {
+      "sha256": "515b241b4ca84cfb31f96c62e761d7d21eae2e5a6aad4b7286a8622d0c09867d",
+      "bytes": 18113
+    },
+    "normalized/preference-fit.json": {
+      "sha256": "af6d962e4bfe677a9a37f8d174cd2ddf832170a5f700cb60883c4e23b5449a88",
+      "bytes": 73129
+    },
+    "gold/preference-fit.json": {
+      "sha256": "e91dbc9da37d75002678a560bce456532d3758fec779e09a48d70c4f3b82b135",
+      "bytes": 5415
+    },
+    "authoring/preference-fit.py": {
+      "sha256": "91c1bb8c99191151f8adbf786580da00f61037dcedfaece8d6f6895d3c09b4ec",
+      "bytes": 10357
+    },
+    "authoring/preference-fit-normalize.py": {
+      "sha256": "d13f29187f0cb2baff2a72b57fb6d743813c6d6e15dfbb9b571eaa8c838fb29d",
+      "bytes": 29677
+    },
+    "authoring/preference-fit-initial-raw.json": {
+      "sha256": "515b241b4ca84cfb31f96c62e761d7d21eae2e5a6aad4b7286a8622d0c09867d",
+      "bytes": 18113
+    },
+    "authoring/preference-fit-initial-normalized.json": {
+      "sha256": "b7665129d80e3aa1b5147d3720d51f3d8e5164c71db709b6ff721947fdfd1a4a",
+      "bytes": 62452
+    },
+    "authoring/preference-fit-pre-fidelity-normalized.json": {
+      "sha256": "3438fde25a161819a91b575169122d001a2a51ab683dfc9d061c53f64b2e236d",
+      "bytes": 71427
+    },
+    "authoring/preference-fit-pre-fidelity-gold.json": {
+      "sha256": "3397f9bfcd57e552e8337246d606f16093bff74d7e51dc6313c5d8c397288d20",
+      "bytes": 5349
+    },
+    "authoring/preference-fit-pre-fidelity-attestation.json": {
+      "sha256": "4982925262fcbd7bfc10ec1b78e724203012a61554f4cdab4618455e2cd5c440",
+      "bytes": 3674
+    },
+    "authoring/preference-fit-pre-adjudication-gold.json": {
+      "sha256": "7637174136a5966b2de78684b0bc249a6ce031f93f5f977f8322874214fbd75f",
+      "bytes": 5440
+    },
+    "authoring/preference-fit-pre-adjudication-attestation.json": {
+      "sha256": "07d5065741660980786a71f5f7b6a036cb23def94396972dce1d5e671c98ee6b",
+      "bytes": 5044
+    }
+  },
+  "composition_notes": "Twenty manually authored fictional preference/offer cases. Nineteen have multiple claims (45 total); 11 derived conclusions use public typed checks. Combinations cover timing, phase, exhaustive schedules, conditional permission, source authority, withdrawn drafts, explicit supersession, money periods, and competing active sources.",
+  "revision_notes": [
+    "The first raw version is preserved byte-identically in authoring/preference-fit-initial-raw.json; final raw was never revised after reviewer handoff.",
+    "The first normalized transcription is preserved in authoring/preference-fit-initial-normalized.json. Public structural addendum then enabled typed checks and a source-fidelity refinement; no checker predictions or prior cases informed revisions.",
+    "Before grading, PF6H-05 gold was changed from needs_review to pass because its answer carefully states that conflicting active terms leave the current rule unresolved. The answer and source text were not changed.",
+    "After phase-two reviewer fidelity feedback and before grading, PF6H-13 source and gold rationale were corrected to distinguish team approval from the answer’s unsupported manager attribution; PF6H-16 c3 now keeps role permission and candidate acceptance; PF6H-19 c2 now keeps direct Saturday and Sunday employer terms. Prior normalized, gold, and attestation bytes are preserved under authoring/preference-fit-pre-fidelity-*.json. Raw text and verdict classes did not change.",
+    "Final pre-freeze adjudication changed PF6H-13 gold from needs_review to fail with c1 as the error: the answer asserts a manager as decision maker without source support. Raw and normalized bytes are unchanged; prior gold and attestation are preserved under authoring/preference-fit-pre-adjudication-*.json. No checker predictions were used."
+  ],
+  "limitations": [
+    "Semantic gold is author judgment and has no human approval. It contains 13 pass and 7 fail, with no needs_review: PF6H-05 is a supported cautious statement, while PF6H-13 includes an unsupported concrete manager-authority claim. Semantic labels take precedence over the target quota.",
+    "The public contract does not support every qualitative or conditional assessment as a typed check; these remain faithful packet readings with check:null.",
+    "The attestation omits its own hash because self-hashing would be recursive.",
+    "A file inventory listed prior-family filenames, but no prior case content, checker code, predictions, or tests were read. Targeted phase-two reviewer fidelity feedback was received; the reviewer judgments file was not opened."
+  ]
+}

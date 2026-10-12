@@ -1,0 +1,178 @@
+{
+  "schema": "maguire-quality-answers-v1",
+  "case_id": "CF-10",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "assessments": [
+        {
+          "target_id": "jd_1",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Maintain a Python data pipeline that cleans daily sensor readings."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "I maintained a Python pipeline that cleaned daily sensor readings for a fictional monitoring project."
+            }
+          ],
+          "rationale": "The candidate reports maintaining a Python cleaning pipeline."
+        },
+        {
+          "target_id": "jd_2",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Document validation rules for the operations team."
+            },
+            {
+              "source_id": "fact_2",
+              "quote": "A supplied operations note lists missing-value and range validation rules."
+            }
+          ],
+          "rationale": "The supplied operations note lists validation rules."
+        }
+      ],
+      "conclusion": {
+        "action": "pursue",
+        "text": "Both explicit JD duties have relevant evidence; the JD supplies no degree minimum.",
+        "next_step": "Use the pipeline account and operations note, without adding an unstated degree gate."
+      },
+      "limitations": [
+        "The pipeline account is self-reported."
+      ]
+    },
+    {
+      "answer_id": "answer_02",
+      "assessments": [
+        {
+          "target_id": "jd_2",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Document validation rules for the operations team."
+            },
+            {
+              "source_id": "fact_2",
+              "quote": "A supplied operations note lists missing-value and range validation rules."
+            }
+          ],
+          "rationale": "The note covers missing-value and range rules."
+        },
+        {
+          "target_id": "jd_1",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Maintain a Python data pipeline that cleans daily sensor readings."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "I maintained a Python pipeline that cleaned daily sensor readings for a fictional monitoring project."
+            }
+          ],
+          "rationale": "The reported Python maintenance addresses daily sensor cleaning."
+        }
+      ],
+      "conclusion": {
+        "action": "show_existing_evidence",
+        "text": "The stated duties align with supplied evidence.",
+        "next_step": "Show the existing operations note and describe the pipeline work accurately."
+      },
+      "limitations": [
+        "No claim about degree eligibility is needed because none is stated."
+      ]
+    },
+    {
+      "answer_id": "answer_03",
+      "assessments": [
+        {
+          "target_id": "jd_1",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Maintain a Python data pipeline that cleans daily sensor readings."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "I maintained a Python pipeline that cleaned daily sensor readings for a fictional monitoring project."
+            }
+          ],
+          "rationale": "The candidate reports maintaining a Python cleaning pipeline."
+        },
+        {
+          "target_id": "jd_2",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Document validation rules for the operations team."
+            },
+            {
+              "source_id": "fact_2",
+              "quote": "A supplied operations note lists missing-value and range validation rules."
+            }
+          ],
+          "rationale": "The supplied operations note lists validation rules."
+        }
+      ],
+      "conclusion": {
+        "action": "pass",
+        "text": "The candidate cannot qualify because this role requires a university degree.",
+        "next_step": "Do not apply."
+      },
+      "limitations": [
+        "The pipeline account is self-reported."
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "assessments": [
+        {
+          "target_id": "jd_1",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_1",
+              "quote": "Maintain a Python data pipeline that cleans daily sensor readings."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "I maintained a Python pipeline that cleaned daily sensor readings for a fictional monitoring project."
+            }
+          ],
+          "rationale": "The candidate ran the Python pipeline at millions of records per day."
+        },
+        {
+          "target_id": "jd_2",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "Document validation rules for the operations team."
+            },
+            {
+              "source_id": "fact_2",
+              "quote": "A supplied operations note lists missing-value and range validation rules."
+            }
+          ],
+          "rationale": "The supplied operations note lists validation rules."
+        }
+      ],
+      "conclusion": {
+        "action": "pursue",
+        "text": "Both explicit JD duties have relevant evidence; the JD supplies no degree minimum.",
+        "next_step": "Use the pipeline account and operations note, without adding an unstated degree gate."
+      },
+      "limitations": [
+        "The pipeline account is self-reported."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1757 @@
+{
+  "schema": "maguire-v6-new-cases-overlap-screen-v1",
+  "human_approved": false,
+  "comparison_files": {
+    "career-quality-v1/candidate-fit/CF-01/input.json": {
+      "sha256": "ee59d26568a20de321f09dc73f2dbbd4dc6b21c148b7d7ce501d7eefd7164a55",
+      "bytes": 1567
+    },
+    "career-quality-v1/candidate-fit/CF-01/answers.json": {
+      "sha256": "acb9ddb24232f4436ea9ee16f6ec443d5a85053b85d9fd05c6ba679ee9add453",
+      "bytes": 6824
+    },
+    "career-quality-v1/candidate-fit/CF-02/input.json": {
+      "sha256": "e42872b09903251908d179538a0871678b557e1deb23dc2b310eed2f9b9d0bef",
+      "bytes": 1597
+    },
+    "career-quality-v1/candidate-fit/CF-02/answers.json": {
+      "sha256": "cb6d9cc118c39682d065ce0dbd8c87dc6b4b4b95007dc5d00e7fecf91252a3b6",
+      "bytes": 7000
+    },
+    "career-quality-v1/candidate-fit/CF-03/input.json": {
+      "sha256": "f48b4c811993ee0f471bd66df01a0f9c487765aef20eed2d2b3f12dd161bc260",
+      "bytes": 1751
+    },
+    "career-quality-v1/candidate-fit/CF-03/answers.json": {
+      "sha256": "2ae8001fdd9eb4fcde04b981d722022e71edddb59f1ca625a49090600ee283e1",
+      "bytes": 6356
+    },
+    "career-quality-v1/candidate-fit/CF-04/input.json": {
+      "sha256": "aa101cad0bd3c3f2b36a9db8a60dc8d2c4ae64dfc1e0436adb51657dc25c8fb0",
+      "bytes": 1541
+    },
+    "career-quality-v1/candidate-fit/CF-04/answers.json": {
+      "sha256": "41c3b80cf0518c1f8d04b326ac08066479a19f8a1b95cc2ea7c40279fe77182b",
+      "bytes": 6520
+    },
+    "career-quality-v1/candidate-fit/CF-05/input.json": {
+      "sha256": "c800c2d1b61501e0b87acba650974685d90529bbbc10116fe75a2494e736c115",
+      "bytes": 1605
+    },
+    "career-quality-v1/candidate-fit/CF-05/answers.json": {
+      "sha256": "dca35493068b143f01c121d3ee260489ebdea7d7c39fc02b48460b82619d2844",
+      "bytes": 6637
+    },
+    "career-quality-v1/candidate-fit/CF-06/input.json": {
+      "sha256": "4ef3fc87abbdf916fe86779a972c708783ef20c96f8ec05b0cbf8aee2cfa1eb5",
+      "bytes": 1244
+    },
+    "career-quality-v1/candidate-fit/CF-06/answers.json": {
+      "sha256": "c10c403326b23ebc2aa0e15d8fb8f412f5c35b992e7c727ebedec338621ed59a",
+      "bytes": 5368
+    },
+    "career-quality-v1/candidate-fit/CF-07/input.json": {
+      "sha256": "ab28316bfe4e96137b6dabcfcbb59412db602ea989db032ccbd362c9f0d1bf5a",
+      "bytes": 1644
+    },
+    "career-quality-v1/candidate-fit/CF-07/answers.json": {
+      "sha256": "eeffc51bcfd5e4781fe646dc71f1f638913ed30a847f5feb28a219e34080a578",
+      "bytes": 6656
+    },
+    "career-quality-v1/candidate-fit/CF-08/input.json": {
+      "sha256": "54218b31d2ace2e66083145fd020f012e586bf39f543cdd7b4e2a7896c3309a9",
+      "bytes": 1528
+    },
+    "career-quality-v1/candidate-fit/CF-08/answers.json": {
+      "sha256": "3cc99b2d5bff723c85f8f256aefeffecc6c63a01e2bbe770f861ffca15ea5122",
+      "bytes": 6572
+    },
+    "career-quality-v1/candidate-fit/CF-09/input.json": {
+      "sha256": "bdb63cc03bf35719ef7b8527840858d41fee6a8c18b772366b27188a6a379501",
+      "bytes": 1510
+    },
+    "career-quality-v1/candidate-fit/CF-09/answers.json": {
+      "sha256": "77f2ceb332dd2d3af782d253c211780d00e9854ddba29f6b29e935b53e889090",
+      "bytes": 6587
+    },
+    "career-quality-v1/candidate-fit/CF-10/input.json": {
+      "sha256": "e1e05900350571f7ec3a769a54d5c348816e96d363a2d665025765c13a714132",
+      "bytes": 1743
+    },
+    "career-quality-v1/candidate-fit/CF-10/answers.json": {
+      "sha256": "0e1b1cb6f3727541f344f622ec0e5ad8445d8504c2a9157fffb81e757a7584ac",
+      "bytes": 5956
+    },
+    "career-quality-v1/candidate-fit/CF-11/input.json": {
+      "sha256": "13dfbe63c7d6d8c7d86691330bc566073a68311b569c31f2a6b86334d812437d",
+      "bytes": 1899
+    },
+    "career-quality-v1/candidate-fit/CF-11/answers.json": {
+      "sha256": "b55569555add70c124f011654b2f3d61b561d2710656058af262818d64f7a121",
+      "bytes": 6612
+    },
+    "career-quality-v1/candidate-fit/CF-12/input.json": {
+      "sha256": "840d80b5eef48a35ad19395a682fe53057447b53ca216e480646d68b1ae3e58d",
+      "bytes": 1789
+    },
+    "career-quality-v1/candidate-fit/CF-12/answers.json": {
+      "sha256": "4e8a84edfebc14d829448b49c9d230fa90b8e398f4d9d55c500aa3ecb28b27f2",
+      "bytes": 5853
+    },
+    "career-quality-v1/preference-fit/PF-01/input.json": {
+      "sha256": "5277ac9d334213fea9486f4a51903be850babc366ae9f57844228feee3c0c3c5",
+      "bytes": 2124
+    },
+    "career-quality-v1/preference-fit/PF-01/answers.json": {
+      "sha256": "2f4c7630a8f784f5f67128eaf4928f03d26ef68bed8857e537952d9f3ae415b1",
+      "bytes": 7247
+    },
+    "career-quality-v1/preference-fit/PF-02/input.json": {
+      "sha256": "5064d994255d776cf6cc749b8c248451e2138ba636dd11755d19fb6047a9d048",
+      "bytes": 1877
+    },
+    "career-quality-v1/preference-fit/PF-02/answers.json": {
+      "sha256": "b4c701d795db09d7142856bd5d481f453dbbb82338ed3869d9c2c943c6c8ddbe",
+      "bytes": 7859
+    },
+    "career-quality-v1/preference-fit/PF-03/input.json": {
+      "sha256": "aa34979bb82a19ee53b8042dc6cf257c33c465be663591d5d306d0a5938959cd",
+      "bytes": 1925
+    },
+    "career-quality-v1/preference-fit/PF-03/answers.json": {
+      "sha256": "07462bb3b4427b16ecd5977e76aa3b7cd173deb43c0666d950cc22ddf0bd9ab7",
+      "bytes": 6239
+    },
+    "career-quality-v1/preference-fit/PF-04/input.json": {
+      "sha256": "8de732356a0e11cd91d3db04410bb4bfe62727f01664a0d32bc7d786d4db9328",
+      "bytes": 1980
+    },
+    "career-quality-v1/preference-fit/PF-04/answers.json": {
+      "sha256": "d13238ff42a2f7625ebe3fa1cb27e5755da2579c7c5f0c9d7dda0d788df1844b",
+      "bytes": 6330
+    },
+    "career-quality-v1/preference-fit/PF-05/input.json": {
+      "sha256": "41753f678a97c684c3963f962b3092dff32948bcd3615dd107ed3096349630aa",
+      "bytes": 2050
+    },
+    "career-quality-v1/preference-fit/PF-05/answers.json": {
+      "sha256": "4a8b11604b5b4090d3bd101e971eef40e90765a6461b6d4ba671abbcf4a97a0f",
+      "bytes": 6898
+    },
+    "career-quality-v1/preference-fit/PF-06/input.json": {
+      "sha256": "b38737395dcd58fd91af7c17067308535582922148e2a9d83821a79cac9cdd57",
+      "bytes": 1958
+    },
+    "career-quality-v1/preference-fit/PF-06/answers.json": {
+      "sha256": "2212196987c816750b310c956a775dff200fe4ca35416ee32ded8913b009e9f6",
+      "bytes": 7465
+    },
+    "career-quality-v1/preference-fit/PF-07/input.json": {
+      "sha256": "1a8de8cc0584b73fc125b41cd83311dced562279ea8732a65f4f1e3645e25aa2",
+      "bytes": 2041
+    },
+    "career-quality-v1/preference-fit/PF-07/answers.json": {
+      "sha256": "2b92b6ef0ae881a2a40ab45112f39377cf90f7e121b800e5e80e34fb91a6ce4c",
+      "bytes": 7244
+    },
+    "career-quality-v1/preference-fit/PF-08/input.json": {
+      "sha256": "f59787bbf9d4c7999f4188ea02378f4d205251e3d6df31396a1ae247f51da556",
+      "bytes": 1998
+    },
+    "career-quality-v1/preference-fit/PF-08/answers.json": {
+      "sha256": "06889ca69187af4dc1c7c155b07e4304277b82ac3382d86d1ae9eed237e69257",
+      "bytes": 6252
+    },
+    "career-quality-v1/preference-fit/PF-09/input.json": {
+      "sha256": "75a337e665a3efff679d598c312b42807c7d5505ef8244eca213bff5a7a570ae",
+      "bytes": 1860
+    },
+    "career-quality-v1/preference-fit/PF-09/answers.json": {
+      "sha256": "a165976c290c7bf0e10be1a00462c8e7560bc80680293cfddd0e9a59278aa754",
+      "bytes": 8022
+    },
+    "career-quality-v1/preference-fit/PF-10/input.json": {
+      "sha256": "68940dc08190c3b7247a9415962be4f507fc5f1ab81fa6eef91172316416f5a8",
+      "bytes": 2031
+    },
+    "career-quality-v1/preference-fit/PF-10/answers.json": {
+      "sha256": "8ac78f58b5d3a8e700dc015faa03aad5f6010f24374d2ea8886b34d6991333d5",
+      "bytes": 7399
+    },
+    "career-quality-v1/preference-fit/PF-11/input.json": {
+      "sha256": "f4aeee3b36e074cbf48198aca071863118b437baf0d51f7a0f8094560302fd3c",
+      "bytes": 2059
+    },
+    "career-quality-v1/preference-fit/PF-11/answers.json": {
+      "sha256": "4c7b6296aa70003ef6f1f89b6d67105fd306f2d3f3716f859cf599a75681d956",
+      "bytes": 7211
+    },
+    "career-quality-v1/preference-fit/PF-12/input.json": {
+      "sha256": "77bb9aeaa8a9e78978ec67b1b6797dcd2a8661fb26b9d52bf6a8dc85fcfcac58",
+      "bytes": 2250
+    },
+    "career-quality-v1/preference-fit/PF-12/answers.json": {
+      "sha256": "cceb7c14f69738ef5e2b93afa4a1766464de174a1e13038811796f0ef078c795",
+      "bytes": 7308
+    },
+    "career-quality-v2/cases/candidate-fit/CF2-01/input.json": {
+      "sha256": "35077caac489ee83a76a6ff6864334572af8350c18875c4fc993553cef657cb9",
+      "bytes": 1498
+    },
+    "career-quality-v2/cases/candidate-fit/CF2-01/answers.json": {
+      "sha256": "2b22aec3d3a3fd8bf3c4c60ccc114b1f0eed6378d84e37261bf6f6d407f37c1b",
+      "bytes": 6756
+    },
+    "career-quality-v2/cases/candidate-fit/CF2-02/input.json": {
+      "sha256": "66cc7531b386edd6aa11e19ef6786b3d356a8e56770e7ff84eda0b747c9830fa",
+      "bytes": 1258
+    },
+    "career-quality-v2/cases/candidate-fit/CF2-02/answers.json": {
+      "sha256": "d7e2acbe7be02f84313b8324e6329a07da1825f809be4654982bba8c9653827d",
+      "bytes": 6372
+    },
+    "career-quality-v2/cases/candidate-fit/CF2-03/input.json": {
+      "sha256": "6605067dd2483b7d2dead63855d9d0ad21ef998dfdad974cf601d2595098901a",
+      "bytes": 1226
+    },
+    "career-quality-v2/cases/candidate-fit/CF2-03/answers.json": {
+      "sha256": "e29933cdbe061ba5ef359c9700519ea2547f15d1dce0dcfc840f3ab56d85f683",
+      "bytes": 7036
+    },
+    "career-quality-v2/cases/candidate-fit/CF2-04/input.json": {
+      "sha256": "8e6cee235934ed348d62855e14167b36419e585caddb39df19486e7479abf5c6",
+      "bytes": 1237
+    },
+    "career-quality-v2/cases/candidate-fit/CF2-04/answers.json": {
+      "sha256": "0e14022e530a588faf817edf016482a1aeef7c4dbc1a2f62dc4d48191a060386",
+      "bytes": 7079
+    },
+    "career-quality-v2/cases/candidate-fit/CF2-05/input.json": {
+      "sha256": "67d220a9fadde269054783d01d657ae716c1b4eb7379c7461e24adcd13df8dc8",
+      "bytes": 1614
+    },
+    "career-quality-v2/cases/candidate-fit/CF2-05/answers.json": {
+      "sha256": "d47d3d577cebcbc561dd0c451387567687bb0599e7817f2dacd86c57e7913b8e",
+      "bytes": 7545
+    },
+    "career-quality-v2/cases/preference-fit/PF2-01/input.json": {
+      "sha256": "f79de2d67b59f8d151dc2d50a57f74b304491df1b09a13a6dcdd1d2bf4e48174",
+      "bytes": 1158
+    },
+    "career-quality-v2/cases/preference-fit/PF2-01/answers.json": {
+      "sha256": "ac8b5af32be8006c72443c157e38fb44335923647d54fdb1fabc54ece66bb4bf",
+      "bytes": 4880
+    },
+    "career-quality-v2/cases/preference-fit/PF2-02/input.json": {
+      "sha256": "2993964d486d78d7e1078d326190507c3a4f9f91ea20ae78c78670022ea49dd9",
+      "bytes": 1004
+    },
+    "career-quality-v2/cases/preference-fit/PF2-02/answers.json": {
+      "sha256": "f4b6b333bd5f86682bc81e655a02c0776ea6df922102e8baebbc85ffb1ee10c8",
+      "bytes": 4643
+    },
+    "career-quality-v2/cases/preference-fit/PF2-03/input.json": {
+      "sha256": "c6061d8e7410dfd4956ceb958448186ade6946208d4238385e69d898d7e1b62d",
+      "bytes": 1362
+    },
+    "career-quality-v2/cases/preference-fit/PF2-03/answers.json": {
+      "sha256": "916f5b8d2fb4c48dbd9ec968be85915189fe4f8bae7b69c5461a62bebe99b295",
+      "bytes": 6126
+    },
+    "career-quality-v2/cases/preference-fit/PF2-04/input.json": {
+      "sha256": "8def118af07730b2e9faee94b908f04076f0ed7c40a96eaad4295ae012490b70",
+      "bytes": 1010
+    },
+    "career-quality-v2/cases/preference-fit/PF2-04/answers.json": {
+      "sha256": "de32687d3a359894679658cb2e496b56d5ae0eb18a1780bb2e200beb18708032",
+      "bytes": 4431
+    },
+    "career-quality-v2/cases/preference-fit/PF2-05/input.json": {
+      "sha256": "210cea6448d197cb02f33a1367b0d9dc8bfa5bfe899e32c31e3681476d178b19",
+      "bytes": 929
+    },
+    "career-quality-v2/cases/preference-fit/PF2-05/answers.json": {
+      "sha256": "33e055693fd75aec6cce6e0e9220594c6f40988c1095920f9d2004943e13ea02",
+      "bytes": 4173
+    },
+    "career-quality-v2/cases/preference-fit/PF2-06/input.json": {
+      "sha256": "198f566cda3a6736287050b5a0401f4d5bd5c8d4d6b2fac126baac4e0503c35c",
+      "bytes": 1384
+    },
+    "career-quality-v2/cases/preference-fit/PF2-06/answers.json": {
+      "sha256": "cc7e6c7a71e898fe072d1dacb4eaa923200d54b75d77c7dbeec9576cafcf56f5",
+      "bytes": 5794
+    },
+    "career-quality-v2/cases/preference-fit/PF2-07/input.json": {
+      "sha256": "2abded680837b627e8b877c9a056b7290c3919a7a09ac295df3523393fa101cf",
+      "bytes": 1199
+    },
+    "career-quality-v2/cases/preference-fit/PF2-07/answers.json": {
+      "sha256": "d3b05753d80ba5fc021eeccd7b7c6f3ce1799b2102af4ddc95ef1863cddb5377",
+      "bytes": 5167
+    },
+    "career-quality-v2/cases/preference-fit/PF2-08/input.json": {
+      "sha256": "856ca35ea7aefe50bce7c616b1f7a42abf2af76d059a959938131335e3c74995",
+      "bytes": 931
+    },
+    "career-quality-v2/cases/preference-fit/PF2-08/answers.json": {
+      "sha256": "1692f412e9b4d0ee07faa690062da70b0e3f8d4420f3ebcc1cb9eb1708284766",
+      "bytes": 4334
+    },
+    "career-quality-v3/data/normalizations.json": {
+      "sha256": "20aa3184169539ff29ae2591b90e3e70c3e5aab45e30885d435b7db40c040328",
+      "bytes": 105901
+    },
+    "career-quality-v3-new-cases/raw/candidate-fit.json": {
+      "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+      "bytes": 14213
+    },
+    "career-quality-v3-new-cases/raw/preference-fit.json": {
+      "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+      "bytes": 16476
+    },
+    "career-quality-v4/raw/candidate-fit.json": {
+      "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+      "bytes": 14213
+    },
+    "career-quality-v4/raw/preference-fit.json": {
+      "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+      "bytes": 16476
+    },
+    "career-quality-v5/raw/candidate-fit.json": {
+      "sha256": "5954676c877f361d11f9efe3b6fb2725267f4790aee38d90b7781484d8a9888b",
+      "bytes": 14213
+    },
+    "career-quality-v5/raw/preference-fit.json": {
+      "sha256": "4d4fd0d96b1a3844733946fd5d03105b87b67e9f1c11c015fa436179bd846746",
+      "bytes": 16476
+    },
+    "career-quality-v5-new-cases/raw/candidate-fit.json": {
+      "sha256": "8ddcce7a7a0cdc9e9986dbc68eec5b4b436dc31b5b6cbda02d786f3a041404b5",
+      "bytes": 15635
+    },
+    "career-quality-v5-new-cases/raw/preference-fit.json": {
+      "sha256": "7dbdd88b9c0cbb83e23e7aacba554f0a65b175eb4dac3d861ce14a0913fdfff0",
+      "bytes": 17078
+    },
+    "career-quality-v6/raw/candidate-fit.json": {
+      "sha256": "8ddcce7a7a0cdc9e9986dbc68eec5b4b436dc31b5b6cbda02d786f3a041404b5",
+      "bytes": 15635
+    },
+    "career-quality-v6/raw/preference-fit.json": {
+      "sha256": "7dbdd88b9c0cbb83e23e7aacba554f0a65b175eb4dac3d861ce14a0913fdfff0",
+      "bytes": 17078
+    }
+  },
+  "new_raw_files": {
+    "raw/candidate-fit.json": {
+      "sha256": "1d446c8961ca222d0d2abf995ad6d264e64cfa491d4336a19d01d1b601b16d74",
+      "bytes": 17110
+    },
+    "raw/preference-fit.json": {
+      "sha256": "515b241b4ca84cfb31f96c62e761d7d21eae2e5a6aad4b7286a8622d0c09867d",
+      "bytes": 18113
+    }
+  },
+  "prior_records": 364,
+  "unique_prior_source_answer_texts": 242,
+  "rows": [
+    {
+      "case_id": "CF6H-01",
+      "text_sha256": "cc9a60f7087047c10fb6752a26b0ef58b17a03034cbfddd5a2d78616f9131bb2",
+      "exact_source_answer_overlap": false,
+      "exact_answer_overlap": false,
+      "nearest": [
+        {
+          "ref": "career-quality-v5-new-cases/raw/candidate-fit.json#CF5H-03",
+          "word_jaccard": 0.24324,
+          "sources": [
+            "Between March and August 2025, Mara facilitated four post-incident reviews for the municipal data service and documented the follow-up owners.",
+            "This role requires facilitation of post-incident reviews."
+          ],
+          "answer": "Mara facilitated four post-incident reviews and documented their follow-up owners. The role requires post-incident review facilitation."
+        },
+        {
+          "ref": "career-quality-v5-new-cases/raw/candidate-fit.json#CF5H-16",
+          "word_jaccard": 0.15,
+          "sources": [
+            "Mara wrote rollback plans for three internal pilot deployments; none of the plans were used in production.",
+            "This role requires documenting deployment rollback plans."
+          ],
+          "answer": "Mara has written rollback plans for three internal pilots. The role requires rollback-plan documentation."
+        },
+        {
+          "ref": "career-quality-v5-new-cases/raw/preference-fit.json#PF5H-04",
+          "word_jaccard": 0.14583,
+          "sources": [
+            "Onboarding requires two station days.",
+            "After onboarding, remote work may be approved following a team review; no approval has been issued.",
+            "I can do up to three station days if remote work is available after onboarding."
+          ],
+          "answer": "The onboarding arrangement may meet my preference if remote approval follows the team review."
+        }
+      ]
+    },
+    {
+      "case_id": "CF6H-02",
+      "text_sha256": "50e0314f4bcdfd10732be1bc31f36e5333434322fed9e80e4aa20f22ebb50d37",
+      "exact_source_answer_overlap": false,
+      "exact_answer_overlap": false,
+      "nearest": [
+        {
+          "ref": "career-quality-v5-new-cases/raw/candidate-fit.json#CF5H-15",
+          "word_jaccard": 0.29268,
+          "sources": [
+            "As one of six analysts, Mara tagged support tickets. The team reduced mean triage time by 30% that quarter; the report attributed no portion of the reduction to an individual."
+          ],
+          "answer": "Mara cut mean triage time by 30% that quarter."
+        },
+        {
+          "ref": "career-quality-v3-new-cases/raw/candidate-fit.json#CF3N-15",
+          "word_jaccard": 0.16667,
+          "sources": [
+            "Our four-person archive team processed 60 folders. My individual role was maintaining the transfer ledger; I did not process the folders myself."
+          ],
+          "answer": "The team processed 60 folders, and I personally processed those 60 folders."
+        },
+        {
+          "ref": "career-quality-v3-new-cases/raw/candidate-fit.json#CF3N-03",
+          "word_jaccard": 0.16,
+          "sources": [
+            "I report triaging monitoring alerts and escalating unresolved alerts to the duty engineer on weekday shifts in 2025.",
+            "The vacancy requires alert triage and escalation to a duty engineer during weekday operations."
+          ],
+          "answer": "My reported weekday alert triage and escalation is directly relevant to the role’s weekday escalation requirement."
+        }
+      ]
+    },
+    {
+      "case_id": "CF6H-03",
+      "text_sha256": "5e258ed40647f69a98310ca5d9deb0c2a90bd4a4b9b5a5278c0026b751e09da9",
+      "exact_source_answer_overlap": false,
+      "exact_answer_overlap": false,
+      "nearest": [
+        {
+          "ref": "career-quality-v5-new-cases/raw/candidate-fit.json#CF5H-09",
+          "word_jaccard": 0.20588,
+          "sources": [
+            "Mara completed an internal security awareness course and has not earned CISSP certification.",
+            "This role requires CISSP certification."
+          ],
+          "answer": "Mara holds the CISSP certification required by the role."
+        },
+        {
+          "ref": "career-quality-v5-new-cases/raw/candidate-fit.json#CF5H-16",
+          "word_jaccard": 0.175,
+          "sources": [
+            "Mara wrote rollback plans for three internal pilot deployments; none of the plans were used in production.",
+            "This role requires documenting deployment rollback plans."
+          ],
+          "answer": "Mara has written rollback plans for three internal pilots. The role requires rollback-plan documentation."
+        },
+        {
+          "ref": "career-quality-v5-new-cases/raw/candidate-fit.json#CF5H-20",
+          "word_jaccard": 0.175,
+          "sources": [
+            "Mara wrote a runbook for a one-month pilot and trained three operators on it. The runbook was not used in production.",
+            "The role asks for runbook writing and operator training."
+          ],
+          "answer": "Mara wrote a pilot runbook and trained three operators on it; the role calls for runbook writing and operator training."
+        }
+      ]
+    },
+    {
+      "case_id": "CF6H-04",
+      "text_sha256": "e161f869df7f7940e96d190d85342d8cdebbb259fac00108f34c7d955f5b0fb0",
+      "exact_source_answer_overlap": false,
+      "exact_answer_overlap": false,
+      "nearest": [
+        {
+          "ref": "career-quality-v5-new-cases/raw/candidate-fit.json#CF5H-18",
+          "word_jaccard": 0.31429,
+          "sources": [
+            "Mara ran SQL queries on synthetic data in a sandbox; she has not queried a production customer database.",
+            "This role requires production customer database query experience."
+          ],
+          "answer": "Mara has queried production customer databases with SQL, as the role requires."
+        },
+        {
+          "ref": "career-quality-v5-new-cases/raw/candidate-fit.json#CF5H-11",
+          "word_jaccard": 0.17949,
+          "sources": [
+            "Mara only ran Kubernetes in a personal lab for four weeks and has not operated it in production.",
+            "Production Kubernetes experience is not required for this role."
+          ],
+          "answer": "The role does not require production Kubernetes experience, and Mara has only used it in a personal lab."
+        },
+        {
+          "ref": "career-quality-v3-new-cases/raw/candidate-fit.json#CF3N-05",
+          "word_jaccard": 0.15,
+          "sources": [
+            "I tried OCR on three small invoice batches in a sandbox. The trial was not deployed to the production intake."
+          ],
+          "answer": "I can cite a three-batch sandbox OCR trial, while leaving production OCR experience unclaimed."
+        }
+      ]
+    },
+    {
+      "case_id": "CF6H-05",
+      "text_sha256": "93195c168d4a8bac130a8a6031f96bbd3d6e5da42362aa23f02cce2f96cb1ee0",
+      "exact_source_answer_overlap": false,
+      "exact_answer_overlap": false,
+      "nearest": [
+        {
+          "ref": "career-quality-v5-new-cases/raw/candidate-fit.json#CF5H-19",
+          "word_jaccard": 0.2,
+          "sources": [
+            "In 2025, Mara handled four client onboarding sessions: two in French and two in English.",
+            "Bilingual client onboarding is required for this role."
+          ],
+          "answer": "Mara has handled onboarding in both French and English, and the role requires bilingual onboarding."
+        },
+        {
+          "ref": "career-quality-v5-new-cases/raw/preference-fit.json#PF5H-11",
+          "word_jaccard": 0.16327,
+          "sources": [
+            "This role requires one client-site day each calendar month in Basel, and no other travel.",
+            "For this role I accept up to two Basel client-site days per calendar month."
+          ],
+          "answer": "This role's one Basel client-site day per month stays within my two-day monthly cap for this role."
+        },
+        {
+          "ref": "career-quality-v5-new-cases/raw/candidate-fit.json#CF5H-10",
+          "word_jaccard": 0.16279,
+          "sources": [
+            "During the 2025 service pilot, Mara escalated two severity-one alerts to the incident lead; the lead made the final incident decisions.",
+            "This role requires incident escalation experience."
+          ],
+          "answer": "Mara escalated two severity-one alerts to an incident lead during the pilot, while the lead made final decisions. The role requires incident escalation experience."
+        }
+      ]
+    },
+    {
+      "case_id": "CF6H-06",
+      "text_sha256": "7dc9a7552c1d9aafbbb3e65c5d22d5d845d8dec6906c52d4107e9ac81ea9313b",
+      "exact_source_answer_overlap": false,
+      "exact_answer_overlap": false,
+      "nearest": [
+        {
+          "ref": "career-quality-v3-new-cases/raw/candidate-fit.json#CF3N-13",
+          "word_jaccard": 0.2,
+          "sources": [
+            "I attended two vendor safety demonstrations in 2025. I did not take the trainer certification assessment."
+          ],
+          "answer": "I attended two vendor safety demonstrations and earned the vendor safety trainer certificate."
+        },
+        {
+          "ref": "career-quality-v5-new-cases/raw/candidate-fit.json#CF5H-20",
+          "word_jaccard": 0.18421,
+          "sources": [
+            "Mara wrote a runbook for a one-month pilot and trained three operators on it. The runbook was not used in production.",
+            "The role asks for runbook writing and operator training."
+          ],
+          "answer": "Mara wrote a pilot runbook and trained three operators on it; the role calls for runbook writing and operator training."
+        },
+        {
+          "ref": "career-quality-v5-new-cases/raw/candidate-fit.json#CF5H-09",
+          "word_jaccard": 0.18182,
+          "sources": [
+            "Mara completed an internal security awareness course and has not earned CISSP certification.",
+            "This role requires CISSP certification."
+          ],
+          "answer": "Mara holds the CISSP certification required by the role."
+        }
+      ]
+    },
+    {
+      "case_id": "CF6H-07",
+      "text_sha256": "ccce3aee5c9cedf60558dcd9db279c46a6352da8ed7b4e5eee06f0f8b801d984",
+      "exact_source_answer_overlap": false,
+      "exact_answer_overlap": false,
+      "nearest": [
+        {
+          "ref": "career-quality-v5-new-cases/raw/candidate-fit.json#CF5H-20",
+          "word_jaccard": 0.20455,
+          "sources": [
+            "Mara wrote a runbook for a one-month pilot and trained three operators on it. The runbook was not used in production.",
+            "The role asks for runbook writing and operator training."
+          ],
+          "answer": "Mara wrote a pilot runbook and trained three operators on it; the role calls for runbook writing and operator training."
+        },
+        {
+          "ref": "career-quality-v3-new-cases/raw/candidate-fit.json#CF3N-11",
+          "word_jaccard": 0.20408,
+          "sources": [
+            "A supervisor-signed log records that I gave four live equipment training demos to new operators in March 2025.",
+            "The role requires live demonstrations of equipment use to new operators."
+          ],
+          "answer": "The signed log is enough to support saying I have delivered live equipment demos to new operators, a task this role requires."
+        },
+        {
+          "ref": "career-quality-v3-new-cases/raw/candidate-fit.json#CF3N-10",
+          "word_jaccard": 0.18367,
+          "sources": [
+            "I kept the equipment checkout ledger from January 2023 through June 2024, recording handovers but not approving purchases."
+          ],
+          "answer": "I maintained the checkout ledger for more than a year and recorded handovers; I should not present that as purchase approval authority."
+        }
+      ]
+    },
+    {
+      "case_id": "CF6H-08",
+      "text_sha256": "a811db79e8341c0774c1aa3b6d3b366d70296fafb9210dcc534a7c28e3ce8c02",
+      "exact_source_answer_overlap": false,
+      "exact_answer_overlap": false,
+      "nearest": [
+        {
+          "ref": "career-quality-v3-new-cases/raw/candidate-fit.json#CF3N-15",
+          "word_jaccard": 0.15152,
+          "sources": [
+            "Our four-person archive team processed 60 folders. My individual role was maintaining the transfer ledger; I did not process the folders myself."
+          ],
+          "answer": "The team processed 60 folders, and I personally processed those 60 folders."
+        },
+        {
+          "ref": "career-quality-v5-new-cases/raw/candidate-fit.json#CF5H-10",
+          "word_jaccard": 0.15152,
+          "sources": [
+            "During the 2025 service pilot, Mara escalated two severity-one alerts to the incident lead; the lead made the final incident decisions.",
+            "This role requires incident escalation experience."
+          ],
+          "answer": "Mara escalated two severity-one alerts to an incident lead during the pilot, while the lead made final decisions. The role requires incident escalation experience."
+        },
+        {
+          "ref": "career-quality-v3-new-cases/raw/candidate-fit.json#CF3N-02",
+          "word_jaccard": 0.14706,
+          "sources": [
+            "I report using 12 dispatch consoles during a 2024 migration and personally indexing 26 archive cartons in that migration."
+          ],
+          "answer": "In the 2024 migration, I used more than ten dispatch consoles and personally indexed at least twenty archive cartons."
+        }
+      ]
+    },
+    {
+      "case_id": "CF6H-09",
+      "text_sha256": "452d016c0f5b80dc8588bde2fb0565e62495a3da0e437fc624d485f094b4657a",
+      "exact_source_answer_overlap": false,
+      "exact_answer_overlap": false,
+      "nearest": [
+        {
+          "ref": "career-quality-v3-new-cases/raw/candidate-fit.json#CF3N-13",
+          "word_jaccard": 0.17857,
+          "sources": [
+            "I attended two vendor safety demonstrations in 2025. I did not take the trainer certification assessment."
+          ],
+          "answer": "I attended two vendor safety demonstrations and earned the vendor safety trainer certificate."
+        },
+        {
+          "ref": "career-quality-v5-new-cases/raw/candidate-fit.json#CF5H-16",
+          "word_jaccard": 0.16667,
+          "sources": [
+            "Mara wrote rollback plans for three internal pilot deployments; none of the plans were used in production.",
+            "This role requires documenting deployment rollback plans."
+          ],
+          "answer": "Mara has written rollback plans for three internal pilots. The role requires rollback-plan documentation."
+        },
+        {
+          "ref": "career-quality-v3/data/normalizations.json#D14",
+          "word_jaccard": 0.15152,
+          "sources": [
+            "Facilitators lead live training sessions and use the employer's standard meeting platform.",
+            "I require live captions for every training session I lead."
+          ],
+          "answer": "The standard meeting platform guarantees live captions for every session the candidate leads."
+        }
+      ]
+    },
+    {
+      "case_id": "CF6H-10",
+      "text_sha256": "85e54343b40ac85f0b3344be5de8246ee702865bde66d2c376d5bd78bd982f02",
+      "exact_source_answer_overlap": false,
+      "exact_answer_overlap": false,
+      "nearest": [
+        {
+          "ref": "career-quality-v3-new-cases/raw/candidate-fit.json#CF3N-11",
+          "word_jaccard": 0.19512,
+          "sources": [
+            "A supervisor-signed log records that I gave four live equipment training demos to new operators in March 2025.",
+            "The role requires live demonstrations of equipment use to new operators."
+          ],
+          "answer": "The signed log is enough to support saying I have delivered live equipment demos to new operators, a task this role requires."
+        },
+        {
+          "ref": "career-quality-v3-new-cases/raw/candidate-fit.json#CF3N-05",
+          "word_jaccard": 0.19444,
+          "sources": [
+            "I tried OCR on three small invoice batches in a sandbox. The trial was not deployed to the production intake."
+          ],
+          "answer": "I can cite a three-batch sandbox OCR trial, while leaving production OCR experience unclaimed."
+        },
+        {
+          "ref": "career-quality-v5-new-cases/raw/candidate-fit.json#CF5H-11",
+          "word_jaccard": 0.19444,
+          "sources": [
+            "Mara only ran Kubernetes in a personal lab for four weeks and has not operated it in production.",
+            "Production Kubernetes experience is not required for this role."
+          ],
+          "answer": "The role does not require production Kubernetes experience, and Mara has only used it in a personal lab."
+        }
+      ]
+    },
+    {
+      "case_id": "CF6H-11",
+      "text_sha256": "46bd0f9e0a71e81257fed947edcad1261f5876235328c31b659b75d502b87411",
+      "exact_source_answer_overlap": false,
+      "exact_answer_overlap": false,
+      "nearest": [
+        {
+          "ref": "career-quality-v5-new-cases/raw/candidate-fit.json#CF5H-20",
+          "word_jaccard": 0.32432,
+          "sources": [
+            "Mara wrote a runbook for a one-month pilot and trained three operators on it. The runbook was not used in production.",
+            "The role asks for runbook writing and operator training."
+          ],
+          "answer": "Mara wrote a pilot runbook and trained three operators on it; the role calls for runbook writing and operator training."
+        },
+        {
+          "ref": "career-quality-v3-new-cases/raw/candidate-fit.json#CF3N-14",
+          "word_jaccard": 0.18919,
+          "sources": [
+            "I used OCR in a trial on 14 handwritten forms; the larger 240-form collection was not processed."
+          ],
+          "answer": "I used OCR on handwritten forms and validated the method across all 240 forms."
+        },
+        {
+          "ref": "career-quality-v3-new-cases/raw/candidate-fit.json#CF3N-03",
+          "word_jaccard": 0.17021,
+          "sources": [
+            "I report triaging monitoring alerts and escalating unresolved alerts to the duty engineer on weekday shifts in 2025.",
+            "The vacancy requires alert triage and escalation to a duty engineer during weekday operations."
+          ],
+          "answer": "My reported weekday alert triage and escalation is directly relevant to the role’s weekday escalation requirement."
+        }
+      ]
+    },
+    {
+      "case_id": "CF6H-12",
+      "text_sha256": "d7773fbd5c26d7cc521b109d96842f3fe75b7da059d9b9b485e4a64111d28ca7",
+      "exact_source_answer_overlap": false,
+      "exact_answer_overlap": false,
+      "nearest": [
+        {
+          "ref": "career-quality-v5-new-cases/raw/candidate-fit.json#CF5H-18",
+          "word_jaccard": 0.14634,
+          "sources": [
+            "Mara ran SQL queries on synthetic data in a sandbox; she has not queried a production customer database.",
+            "This role requires production customer database query experience."
+          ],
+          "answer": "Mara has queried production customer databases with SQL, as the role requires."
+        },
+        {
+          "ref": "career-quality-v2/cases/preference-fit/PF2-05/answers.json#answer_03",
+          "word_jaccard": 0.14545,
+          "sources": [
+            "The scheduler works at the wetland station on two weekdays every week.",
+            "I can work at a field station on no more than two weekdays per calendar month."
+          ],
+          "answer": "The role requires two station days per calendar month, exactly matching the candidate's monthly ceiling.\nThe stated station schedule exceeds the candidate's monthly maximum.\nAsk whether two station days per calendar month are feasible for this specific role."
+        },
+        {
+          "ref": "career-quality-v5-new-cases/raw/candidate-fit.json#CF5H-01",
+          "word_jaccard": 0.14286,
+          "sources": [
+            "From January 2024 through March 2025, Mara maintained the archive migration ledger and recorded weekly handoffs for the archive team."
+          ],
+          "answer": "Mara maintained the archive migration ledger for over a year and recorded weekly handoffs."
+        }
+      ]
+    },
+    {
+      "case_id": "CF6H-13",
+      "text_sha256": "6d1de99330f8da6caa8ab3bc3aecb313cade8b720a3aa29a5a29385153dd06d9",
+      "exact_source_answer_overlap": false,
+      "exact_answer_overlap": false,
+      "nearest": [
+        {
+          "ref": "career-quality-v3-new-cases/raw/candidate-fit.json#CF3N-18",
+          "word_jaccard": 0.17308,
+          "sources": [
+            "I can operate the meeting platform, but I cannot provide live captions and do not have a captioning service.",
+            "The vacancy requires the facilitator to provide live captions in all public sessions."
+          ],
+          "answer": "I can run the meeting platform, and I already meet its live-caption requirement for public sessions."
+        },
+        {
+          "ref": "career-quality-v3/data/normalizations.json#D02",
+          "word_jaccard": 0.16949,
+          "sources": [
+            "Minimum: hands-on use of a signal monitoring console within the last two years.",
+            "Monitor incoming satellite signal alerts during assigned shifts and escalate anomalies.",
+            "I last used a signal monitoring console in 2021; I have not used one since then."
+          ],
+          "answer": "Because the last console use was in 2021, the candidate will be unable to escalate alerts on an assigned shift."
+        },
+        {
+          "ref": "career-quality-v5-new-cases/raw/candidate-fit.json#CF5H-17",
+          "word_jaccard": 0.15556,
+          "sources": [
+            "An old draft says Mara was certified in data privacy in May 2025.",
+            "Correction: Mara completed the vendor's data privacy course in May 2025 but did not take the certification exam."
+          ],
+          "answer": "Mara completed the data privacy course in May 2025; she did not take the certification exam."
+        }
+      ]
+    },
+    {
+      "case_id": "CF6H-14",
+      "text_sha256": "ebe52452996c16fbe9c1ae5013d32f341480727c5a04b9290e73794b47fb2d0c",
+      "exact_source_answer_overlap": false,
+      "exact_answer_overlap": false,
+      "nearest": [
+        {
+          "ref": "career-quality-v3-new-cases/raw/candidate-fit.json#CF3N-03",
+          "word_jaccard": 0.38462,
+          "sources": [
+            "I report triaging monitoring alerts and escalating unresolved alerts to the duty engineer on weekday shifts in 2025.",
+            "The vacancy requires alert triage and escalation to a duty engineer during weekday operations."
+          ],
+          "answer": "My reported weekday alert triage and escalation is directly relevant to the role’s weekday escalation requirement."
+        },
+        {
+          "ref": "career-quality-v5-new-cases/raw/candidate-fit.json#CF5H-04",
+          "word_jaccard": 0.28125,
+          "sources": [
+            "In a six-week service pilot in 2025, Mara triaged 18 alerts and escalated three of them to the SRE team."
+          ],
+          "answer": "Mara triaged alerts and escalated three to the SRE team during the six-week service pilot."
+        },
+        {
+          "ref": "career-quality-v5-new-cases/raw/candidate-fit.json#CF5H-10",
+          "word_jaccard": 0.25,
+          "sources": [
+            "During the 2025 service pilot, Mara escalated two severity-one alerts to the incident lead; the lead made the final incident decisions.",
+            "This role requires incident escalation experience."
+          ],
+          "answer": "Mara escalated two severity-one alerts to an incident lead during the pilot, while the lead made final decisions. The role requires incident escalation experience."
+        }
+      ]
+    },
+    {
+      "case_id": "CF6H-15",
+      "text_sha256": "27dfef43f876f44e083c01705cf3938e1bb5545c9ea4825877cf693442f271df",
+      "exact_source_answer_overlap": false,
+      "exact_answer_overlap": false,
+      "nearest": [
+        {
+          "ref": "career-quality-v3-new-cases/raw/candidate-fit.json#CF3N-11",
+          "word_jaccard": 0.21277,
+          "sources": [
+            "A supervisor-signed log records that I gave four live equipment training demos to new operators in March 2025.",
+            "The role requires live demonstrations of equipment use to new operators."
+          ],
+          "answer": "The signed log is enough to support saying I have delivered live equipment demos to new operators, a task this role requires."
+        },
+        {
+          "ref": "career-quality-v5-new-cases/raw/candidate-fit.json#CF5H-02",
+          "word_jaccard": 0.15789,
+          "sources": [
+            "During the April 2025 pilot, Mara was permitted to shadow two customer demos; she did not present either demo."
+          ],
+          "answer": "Mara presented two customer demos during the April 2025 pilot."
+        },
+        {
+          "ref": "career-quality-v5-new-cases/raw/preference-fit.json#PF5H-18",
+          "word_jaccard": 0.15789,
+          "sources": [
+            "The only required training demo is Tuesday 13:00–15:00 role-local time.",
+            "I cannot attend Tuesday training demos after 14:00 role-local time."
+          ],
+          "answer": "The required Tuesday demo ends before my 14:00 cutoff."
+        }
+      ]
+    },
+    {
+      "case_id": "CF6H-16",
+      "text_sha256": "ab8463fb72dd01fab37565cfc5e0c62828f63450a50d4274300112547048cf01",
+      "exact_source_answer_overlap": false,
+      "exact_answer_overlap": false,
+      "nearest": [
+        {
+          "ref": "career-quality-v3-new-cases/raw/candidate-fit.json#CF3N-13",
+          "word_jaccard": 0.18421,
+          "sources": [
+            "I attended two vendor safety demonstrations in 2025. I did not take the trainer certification assessment."
+          ],
+          "answer": "I attended two vendor safety demonstrations and earned the vendor safety trainer certificate."
+        },
+        {
+          "ref": "career-quality-v3-new-cases/raw/candidate-fit.json#CF3N-06",
+          "word_jaccard": 0.16,
+          "sources": [
+            "I hold a vendor-issued safety trainer certificate and report delivering six equipment training demos in 2025."
+          ],
+          "answer": "The vendor certificate supports listing me as a certified safety trainer; my own record supports saying I gave at least five equipment demos in 2025."
+        },
+        {
+          "ref": "career-quality-v5-new-cases/raw/candidate-fit.json#CF5H-17",
+          "word_jaccard": 0.15556,
+          "sources": [
+            "An old draft says Mara was certified in data privacy in May 2025.",
+            "Correction: Mara completed the vendor's data privacy course in May 2025 but did not take the certification exam."
+          ],
+          "answer": "Mara completed the data privacy course in May 2025; she did not take the certification exam."
+        }
+      ]
+    },
+    {
+      "case_id": "CF6H-17",
+      "text_sha256": "2baed2cf7e6046f6df52e6d304fe0712046330bab6655cb07c59ff12359662be",
+      "exact_source_answer_overlap": false,
+      "exact_answer_overlap": false,
+      "nearest": [
+        {
+          "ref": "career-quality-v3-new-cases/raw/candidate-fit.json#CF3N-13",
+          "word_jaccard": 0.2069,
+          "sources": [
+            "I attended two vendor safety demonstrations in 2025. I did not take the trainer certification assessment."
+          ],
+          "answer": "I attended two vendor safety demonstrations and earned the vendor safety trainer certificate."
+        },
+        {
+          "ref": "career-quality-v3-new-cases/raw/preference-fit.json#PF3N-16",
+          "word_jaccard": 0.18421,
+          "sources": [
+            "The interview platform has optional live captions, but the employer has not committed to enabling them for team meetings.",
+            "I require employer-enabled live captions for team meetings."
+          ],
+          "answer": "The platform supports captions, and the employer will enable them in every team meeting."
+        },
+        {
+          "ref": "career-quality-v3/data/normalizations.json#D03",
+          "word_jaccard": 0.16327,
+          "sources": [
+            "Build an OCR quality-check workflow for scanned archive pages.",
+            "Coordinate processing of a 200,000-page archive collection.",
+            "I built an OCR error checklist, scheduled two reviewers, and applied it to a 75-page sample of handwritten catalog cards."
+          ],
+          "answer": "The 75-page sample proves the candidate coordinated more than 200,000 pages in production."
+        }
+      ]
+    },
+    {
+      "case_id": "CF6H-18",
+      "text_sha256": "0998b015e1d79e83a6cf2ce43a6a2d3ad65b0df690edbace2296ead980e86ec2",
+      "exact_source_answer_overlap": false,
+      "exact_answer_overlap": false,
+      "nearest": [
+        {
+          "ref": "career-quality-v5-new-cases/raw/candidate-fit.json#CF5H-20",
+          "word_jaccard": 0.225,
+          "sources": [
+            "Mara wrote a runbook for a one-month pilot and trained three operators on it. The runbook was not used in production.",
+            "The role asks for runbook writing and operator training."
+          ],
+          "answer": "Mara wrote a pilot runbook and trained three operators on it; the role calls for runbook writing and operator training."
+        },
+        {
+          "ref": "career-quality-v5-new-cases/raw/candidate-fit.json#CF5H-04",
+          "word_jaccard": 0.2,
+          "sources": [
+            "In a six-week service pilot in 2025, Mara triaged 18 alerts and escalated three of them to the SRE team."
+          ],
+          "answer": "Mara triaged alerts and escalated three to the SRE team during the six-week service pilot."
+        },
+        {
+          "ref": "career-quality-v5-new-cases/raw/candidate-fit.json#CF5H-16",
+          "word_jaccard": 0.19512,
+          "sources": [
+            "Mara wrote rollback plans for three internal pilot deployments; none of the plans were used in production.",
+            "This role requires documenting deployment rollback plans."
+          ],
+          "answer": "Mara has written rollback plans for three internal pilots. The role requires rollback-plan documentation."
+        }
+      ]
+    },
+    {
+      "case_id": "CF6H-19",
+      "text_sha256": "adf53d98ed3e892966da2da806acc93d443e60dd8f75ce42d0cdaf43ecfe603a",
+      "exact_source_answer_overlap": false,
+      "exact_answer_overlap": false,
+      "nearest": [
+        {
+          "ref": "career-quality-v3-new-cases/raw/candidate-fit.json#CF3N-09",
+          "word_jaccard": 0.18421,
+          "sources": [
+            "My 2024 rota shows I covered two weekends of on-call support in each calendar quarter of that year."
+          ],
+          "answer": "The 2024 rota establishes at least one on-call support weekend per quarter, without establishing a current rota."
+        },
+        {
+          "ref": "career-quality-v3/data/normalizations.json#D02",
+          "word_jaccard": 0.18367,
+          "sources": [
+            "Minimum: hands-on use of a signal monitoring console within the last two years.",
+            "Monitor incoming satellite signal alerts during assigned shifts and escalate anomalies.",
+            "I last used a signal monitoring console in 2021; I have not used one since then."
+          ],
+          "answer": "Because the last console use was in 2021, the candidate will be unable to escalate alerts on an assigned shift."
+        },
+        {
+          "ref": "career-quality-v3-new-cases/raw/candidate-fit.json#CF3N-13",
+          "word_jaccard": 0.17241,
+          "sources": [
+            "I attended two vendor safety demonstrations in 2025. I did not take the trainer certification assessment."
+          ],
+          "answer": "I attended two vendor safety demonstrations and earned the vendor safety trainer certificate."
+        }
+      ]
+    },
+    {
+      "case_id": "CF6H-20",
+      "text_sha256": "20481766afcebb607e55ca60ac594607d6d3eb82366e697074d73956554663df",
+      "exact_source_answer_overlap": false,
+      "exact_answer_overlap": false,
+      "nearest": [
+        {
+          "ref": "career-quality-v3-new-cases/raw/candidate-fit.json#CF3N-15",
+          "word_jaccard": 0.22581,
+          "sources": [
+            "Our four-person archive team processed 60 folders. My individual role was maintaining the transfer ledger; I did not process the folders myself."
+          ],
+          "answer": "The team processed 60 folders, and I personally processed those 60 folders."
+        },
+        {
+          "ref": "career-quality-v3-new-cases/raw/candidate-fit.json#CF3N-13",
+          "word_jaccard": 0.18519,
+          "sources": [
+            "I attended two vendor safety demonstrations in 2025. I did not take the trainer certification assessment."
+          ],
+          "answer": "I attended two vendor safety demonstrations and earned the vendor safety trainer certificate."
+        },
+        {
+          "ref": "career-quality-v5-new-cases/raw/candidate-fit.json#CF5H-04",
+          "word_jaccard": 0.17241,
+          "sources": [
+            "In a six-week service pilot in 2025, Mara triaged 18 alerts and escalated three of them to the SRE team."
+          ],
+          "answer": "Mara triaged alerts and escalated three to the SRE team during the six-week service pilot."
+        }
+      ]
+    },
+    {
+      "case_id": "PF6H-01",
+      "text_sha256": "5353bca6a95867193f8d25d2c307ac2d71fac64f25f92da23bf31ec50c9c563b",
+      "exact_source_answer_overlap": false,
+      "exact_answer_overlap": false,
+      "nearest": [
+        {
+          "ref": "career-quality-v3-new-cases/raw/preference-fit.json#PF3N-06",
+          "word_jaccard": 0.27083,
+          "sources": [
+            "The role is on site for its first 30 days; remote work is permitted afterward.",
+            "I can work on site for up to 30 onboarding days if remote work is permitted afterward."
+          ],
+          "answer": "The stated 30-day on-site period matches your exception, with remote work permitted afterward."
+        },
+        {
+          "ref": "career-quality-v5-new-cases/raw/candidate-fit.json#CF5H-06",
+          "word_jaccard": 0.21818,
+          "sources": [
+            "In 2023, Mara's former employer permitted three remote-work days per week; that employment ended in December 2023.",
+            "This role currently requires office attendance on all five weekdays and permits no remote-work days."
+          ],
+          "answer": "This role currently permits Mara to work remotely three days a week."
+        },
+        {
+          "ref": "career-quality-v3-new-cases/raw/preference-fit.json#PF3N-03",
+          "word_jaccard": 0.20408,
+          "sources": [
+            "This archivist role requires one station day each week.",
+            "I can attend the station at most two days per week."
+          ],
+          "answer": "Its one required station day per week is within your two-day ceiling."
+        }
+      ]
+    },
+    {
+      "case_id": "PF6H-02",
+      "text_sha256": "4bc6c5c51ad06c9258bafe885f8420074f9dee637c3205556cfe5d1271187879",
+      "exact_source_answer_overlap": false,
+      "exact_answer_overlap": false,
+      "nearest": [
+        {
+          "ref": "career-quality-v5-new-cases/raw/preference-fit.json#PF5H-01",
+          "word_jaccard": 0.44118,
+          "sources": [
+            "The role provides CHF 1,800 per calendar year for course fees.",
+            "I need at least CHF 120 per calendar month for course fees."
+          ],
+          "answer": "The course-fee allowance meets my CHF 120 monthly minimum on an annual-budget basis."
+        },
+        {
+          "ref": "career-quality-v3-new-cases/raw/preference-fit.json#PF3N-01",
+          "word_jaccard": 0.35484,
+          "sources": [
+            "The employer publishes a personal equipment stipend of $600 per year.",
+            "I need a personal equipment stipend of at least $500 per year."
+          ],
+          "answer": "The published $600 yearly equipment stipend clears your $500 minimum."
+        },
+        {
+          "ref": "career-quality-v3-new-cases/raw/preference-fit.json#PF3N-17",
+          "word_jaccard": 0.35484,
+          "sources": [
+            "The personal internet stipend is $900 per year.",
+            "I need at least $200 a month for an internet stipend."
+          ],
+          "answer": "The $900 stipend meets your $200 monthly minimum."
+        }
+      ]
+    },
+    {
+      "case_id": "PF6H-03",
+      "text_sha256": "52fa32522a20f498c780b1fb6d9e35bdaaf1bf099818335e662320c6965dd877",
+      "exact_source_answer_overlap": false,
+      "exact_answer_overlap": false,
+      "nearest": [
+        {
+          "ref": "career-quality-v5-new-cases/raw/preference-fit.json#PF5H-05",
+          "word_jaccard": 0.28571,
+          "sources": [
+            "The only on-call shift is Saturday 11:00–13:00, role-local time.",
+            "I accept Saturday on-call work from 10:00–14:00 role-local time, but no weekday on-call work."
+          ],
+          "answer": "The Saturday 11:00–13:00 on-call shift is inside my Saturday window and adds no weekday duty."
+        },
+        {
+          "ref": "career-quality-v5-new-cases/raw/preference-fit.json#PF5H-06",
+          "word_jaccard": 0.26,
+          "sources": [
+            "The role requires on-call coverage every Sunday 11:00–13:00 local time.",
+            "I cannot take Sunday on-call duty at any hour."
+          ],
+          "answer": "The mandatory Sunday shift fits my no-Sunday rule."
+        },
+        {
+          "ref": "career-quality-v3-new-cases/raw/preference-fit.json#PF3N-04",
+          "word_jaccard": 0.25455,
+          "sources": [
+            "The monitoring rota assigns one Saturday on-call shift each calendar month and no weekday shifts.",
+            "I permit Saturday on-call once a month, but I cannot take weekday shifts."
+          ],
+          "answer": "The Saturday-only monthly rota fits the on-call window you allow."
+        }
+      ]
+    },
+    {
+      "case_id": "PF6H-04",
+      "text_sha256": "7d3d4f73c1004cce12d051faba3c8d75927779f59a67e8aea4bbeb787d5d6aec",
+      "exact_source_answer_overlap": false,
+      "exact_answer_overlap": false,
+      "nearest": [
+        {
+          "ref": "career-quality-v5-new-cases/raw/preference-fit.json#PF5H-14",
+          "word_jaccard": 0.23684,
+          "sources": [
+            "The original role sheet required four onboarding station days.",
+            "This update replaces the original onboarding rule: two station days are now required."
+          ],
+          "answer": "Four station days remain mandatory in the current onboarding rule."
+        },
+        {
+          "ref": "career-quality-v5-new-cases/raw/candidate-fit.json#CF5H-19",
+          "word_jaccard": 0.17073,
+          "sources": [
+            "In 2025, Mara handled four client onboarding sessions: two in French and two in English.",
+            "Bilingual client onboarding is required for this role."
+          ],
+          "answer": "Mara has handled onboarding in both French and English, and the role requires bilingual onboarding."
+        },
+        {
+          "ref": "career-quality-v5-new-cases/raw/preference-fit.json#PF5H-04",
+          "word_jaccard": 0.16981,
+          "sources": [
+            "Onboarding requires two station days.",
+            "After onboarding, remote work may be approved following a team review; no approval has been issued.",
+            "I can do up to three station days if remote work is available after onboarding."
+          ],
+          "answer": "The onboarding arrangement may meet my preference if remote approval follows the team review."
+        }
+      ]
+    },
+    {
+      "case_id": "PF6H-05",
+      "text_sha256": "57366af314e2dfc67fba393a9ec2f57dc739b0380e60c8e0b3d3c40dbc83ff99",
+      "exact_source_answer_overlap": false,
+      "exact_answer_overlap": false,
+      "nearest": [
+        {
+          "ref": "career-quality-v3-new-cases/raw/preference-fit.json#PF3N-14",
+          "word_jaccard": 0.25397,
+          "sources": [
+            "The job posting requires two station days each week.",
+            "An informal staff note says some teams might try fewer station days. It does not amend the posting.",
+            "I can attend the station at most once a week."
+          ],
+          "answer": "The staff note replaces the two-day rule, so the role meets your one-day cap."
+        },
+        {
+          "ref": "career-quality-v3-new-cases/raw/preference-fit.json#PF3N-03",
+          "word_jaccard": 0.23077,
+          "sources": [
+            "This archivist role requires one station day each week.",
+            "I can attend the station at most two days per week."
+          ],
+          "answer": "Its one required station day per week is within your two-day ceiling."
+        },
+        {
+          "ref": "career-quality-v5-new-cases/raw/preference-fit.json#PF5H-04",
+          "word_jaccard": 0.22951,
+          "sources": [
+            "Onboarding requires two station days.",
+            "After onboarding, remote work may be approved following a team review; no approval has been issued.",
+            "I can do up to three station days if remote work is available after onboarding."
+          ],
+          "answer": "The onboarding arrangement may meet my preference if remote approval follows the team review."
+        }
+      ]
+    },
+    {
+      "case_id": "PF6H-06",
+      "text_sha256": "da77bcb66e55872aee1cb68a12ef527c935a9a40c3b5b870ad4c93545c7b3ef2",
+      "exact_source_answer_overlap": false,
+      "exact_answer_overlap": false,
+      "nearest": [
+        {
+          "ref": "career-quality-v5-new-cases/raw/preference-fit.json#PF5H-15",
+          "word_jaccard": 0.27273,
+          "sources": [
+            "For required evening on-call duty, the employer will pay a USD 400 stipend each calendar month.",
+            "For evening on-call duty I require at least USD 400 per calendar month."
+          ],
+          "answer": "The committed USD 400 monthly evening on-call stipend meets my USD 400 monthly minimum."
+        },
+        {
+          "ref": "career-quality-v3-new-cases/raw/preference-fit.json#PF3N-17",
+          "word_jaccard": 0.25641,
+          "sources": [
+            "The personal internet stipend is $900 per year.",
+            "I need at least $200 a month for an internet stipend."
+          ],
+          "answer": "The $900 stipend meets your $200 monthly minimum."
+        },
+        {
+          "ref": "career-quality-v5-new-cases/raw/preference-fit.json#PF5H-01",
+          "word_jaccard": 0.24444,
+          "sources": [
+            "The role provides CHF 1,800 per calendar year for course fees.",
+            "I need at least CHF 120 per calendar month for course fees."
+          ],
+          "answer": "The course-fee allowance meets my CHF 120 monthly minimum on an annual-budget basis."
+        }
+      ]
+    },
+    {
+      "case_id": "PF6H-07",
+      "text_sha256": "6c7b55e07b977deed09802ad555b4edfe7596e51c6da5e6e72e7e9191bbafe2e",
+      "exact_source_answer_overlap": false,
+      "exact_answer_overlap": false,
+      "nearest": [
+        {
+          "ref": "career-quality-v5-new-cases/raw/preference-fit.json#PF5H-18",
+          "word_jaccard": 0.53333,
+          "sources": [
+            "The only required training demo is Tuesday 13:00–15:00 role-local time.",
+            "I cannot attend Tuesday training demos after 14:00 role-local time."
+          ],
+          "answer": "The required Tuesday demo ends before my 14:00 cutoff."
+        },
+        {
+          "ref": "career-quality-v5-new-cases/raw/preference-fit.json#PF5H-17",
+          "word_jaccard": 0.45455,
+          "sources": [
+            "The only required training demo is on Wednesday 09:00–12:30 role-local time.",
+            "I cannot attend training demos after 13:00 on Wednesdays, role-local time."
+          ],
+          "answer": "The only required Wednesday demo finishes before my 13:00 cutoff."
+        },
+        {
+          "ref": "career-quality-v3-new-cases/raw/preference-fit.json#PF3N-12",
+          "word_jaccard": 0.26316,
+          "sources": [
+            "The only required training demos are Wednesdays from 15:00 to 16:00 local time.",
+            "I cannot attend required training demos after 18:00 local time."
+          ],
+          "answer": "The specified Wednesday training demos end before your 18:00 cutoff."
+        }
+      ]
+    },
+    {
+      "case_id": "PF6H-08",
+      "text_sha256": "d9b4c320e6aad68e6472e22f0a858ca6613eb271c077ec69a6e96562c1cded7e",
+      "exact_source_answer_overlap": false,
+      "exact_answer_overlap": false,
+      "nearest": [
+        {
+          "ref": "career-quality-v5-new-cases/raw/preference-fit.json#PF5H-01",
+          "word_jaccard": 0.3125,
+          "sources": [
+            "The role provides CHF 1,800 per calendar year for course fees.",
+            "I need at least CHF 120 per calendar month for course fees."
+          ],
+          "answer": "The course-fee allowance meets my CHF 120 monthly minimum on an annual-budget basis."
+        },
+        {
+          "ref": "career-quality-v3-new-cases/raw/preference-fit.json#PF3N-17",
+          "word_jaccard": 0.27273,
+          "sources": [
+            "The personal internet stipend is $900 per year.",
+            "I need at least $200 a month for an internet stipend."
+          ],
+          "answer": "The $900 stipend meets your $200 monthly minimum."
+        },
+        {
+          "ref": "career-quality-v5-new-cases/raw/preference-fit.json#PF5H-12",
+          "word_jaccard": 0.24,
+          "sources": [
+            "After the three-month probation period, the role provides four paid learning hours per calendar month for leadership courses.",
+            "After probation, I need at least three paid learning hours per calendar month for leadership courses."
+          ],
+          "answer": "After probation, the four paid leadership-learning hours per month meet my three-hour minimum."
+        }
+      ]
+    },
+    {
+      "case_id": "PF6H-09",
+      "text_sha256": "a29f5a0b47af577d6f02cba98ca90e78da571abab22313ca3a5ae620f01e3f3a",
+      "exact_source_answer_overlap": false,
+      "exact_answer_overlap": false,
+      "nearest": [
+        {
+          "ref": "career-quality-v5-new-cases/raw/preference-fit.json#PF5H-20",
+          "word_jaccard": 0.34694,
+          "sources": [
+            "Live captions are not available now; procurement is pending, with no activation date promised.",
+            "I need live captions in work meetings from my first day."
+          ],
+          "answer": "Live captions are unavailable now, while procurement is pending without a promised activation date. Confirm availability before assuming my first-day caption requirement is met."
+        },
+        {
+          "ref": "career-quality-v3-new-cases/raw/preference-fit.json#PF3N-20",
+          "word_jaccard": 0.28571,
+          "sources": [
+            "Live captions can be enabled for team meetings when an attendee requests them in advance.",
+            "I require live captions in every team meeting."
+          ],
+          "answer": "Live captions are available for your team meetings."
+        },
+        {
+          "ref": "career-quality-v3-new-cases/raw/preference-fit.json#PF3N-16",
+          "word_jaccard": 0.28261,
+          "sources": [
+            "The interview platform has optional live captions, but the employer has not committed to enabling them for team meetings.",
+            "I require employer-enabled live captions for team meetings."
+          ],
+          "answer": "The platform supports captions, and the employer will enable them in every team meeting."
+        }
+      ]
+    },
+    {
+      "case_id": "PF6H-10",
+      "text_sha256": "18a6f21d96ad84bcf766756d18b71de3d731fa76f4322026b09391ba1ce56a4f",
+      "exact_source_answer_overlap": false,
+      "exact_answer_overlap": false,
+      "nearest": [
+        {
+          "ref": "career-quality-v5-new-cases/raw/preference-fit.json#PF5H-06",
+          "word_jaccard": 0.21951,
+          "sources": [
+            "The role requires on-call coverage every Sunday 11:00–13:00 local time.",
+            "I cannot take Sunday on-call duty at any hour."
+          ],
+          "answer": "The mandatory Sunday shift fits my no-Sunday rule."
+        },
+        {
+          "ref": "career-quality-v5-new-cases/raw/preference-fit.json#PF5H-11",
+          "word_jaccard": 0.1875,
+          "sources": [
+            "This role requires one client-site day each calendar month in Basel, and no other travel.",
+            "For this role I accept up to two Basel client-site days per calendar month."
+          ],
+          "answer": "This role's one Basel client-site day per month stays within my two-day monthly cap for this role."
+        },
+        {
+          "ref": "career-quality-v2/cases/preference-fit/PF2-04/answers.json#answer_04",
+          "word_jaccard": 0.17143,
+          "sources": [
+            "The liaison makes one overnight trip to a partner gallery each month.",
+            "I can take at most one overnight work trip per calendar quarter, with no carryover."
+          ],
+          "answer": "One overnight trip each month means roughly three in a calendar quarter; the candidate permits only one, without carryover.\nThe candidate can bank unused quarterly travel allowances and spend them on the role's monthly trips, so the pattern fits.\nAsk whether the role can truly be staffed with no more than one overnight trip per calendar quarter."
+        }
+      ]
+    },
+    {
+      "case_id": "PF6H-11",
+      "text_sha256": "23f9e2dc958ea2110a84cf7fe2dddf5922e158fcf796f6f934f9540fe75cc11c",
+      "exact_source_answer_overlap": false,
+      "exact_answer_overlap": false,
+      "nearest": [
+        {
+          "ref": "career-quality-v3-new-cases/raw/preference-fit.json#PF3N-03",
+          "word_jaccard": 0.5,
+          "sources": [
+            "This archivist role requires one station day each week.",
+            "I can attend the station at most two days per week."
+          ],
+          "answer": "Its one required station day per week is within your two-day ceiling."
+        },
+        {
+          "ref": "career-quality-v5-new-cases/raw/preference-fit.json#PF5H-10",
+          "word_jaccard": 0.42105,
+          "sources": [
+            "The role sheet requires three station days during onboarding.",
+            "The recruiter sheet requires five station days during onboarding; it does not state that it replaces the role sheet.",
+            "I can attend at most four station days in onboarding."
+          ],
+          "answer": "The station-attendance requirement fits my four-day cap."
+        },
+        {
+          "ref": "career-quality-v3-new-cases/raw/preference-fit.json#PF3N-05",
+          "word_jaccard": 0.34146,
+          "sources": [
+            "The original posting requires three station days a week.",
+            "The employer update explicitly replaces the three-day rule: the role now requires one station day per week.",
+            "I can attend the station no more than once per week."
+          ],
+          "answer": "The replacement rule requires one station day weekly, meeting your cap."
+        }
+      ]
+    },
+    {
+      "case_id": "PF6H-12",
+      "text_sha256": "178cfaf032d69350ed46f51681a67d5f16b8087e8df420b026c050eab436fc87",
+      "exact_source_answer_overlap": false,
+      "exact_answer_overlap": false,
+      "nearest": [
+        {
+          "ref": "career-quality-v3-new-cases/raw/preference-fit.json#PF3N-11",
+          "word_jaccard": 0.19149,
+          "sources": [
+            "Staff may request up to four remote days per week; a manager approves each schedule.",
+            "I would like two remote days weekly, if the manager approves; this is a nice-to-have."
+          ],
+          "answer": "Two remote days fit the stated four-day limit, subject to manager approval."
+        },
+        {
+          "ref": "career-quality-v5-new-cases/raw/preference-fit.json#PF5H-07",
+          "word_jaccard": 0.19048,
+          "sources": [
+            "Employees may request up to four remote days per calendar month with manager approval.",
+            "I would request two remote days per calendar month, subject to manager approval."
+          ],
+          "answer": "A request for two remote days a month is within the stated four-day limit, subject to manager approval."
+        },
+        {
+          "ref": "career-quality-v1/preference-fit/PF-10/answers.json#answer_04",
+          "word_jaccard": 0.1831,
+          "sources": [
+            "The role is fully remote, with no office days.",
+            "Correction for this vacancy: the previous fully remote term is withdrawn. This role requires two office days per week.",
+            "The role is a four-day, 32-hour working week.",
+            "I require zero mandatory office days.",
+            "I require a four-day, 32-hour working week.",
+            "I prefer no more than two work trips per year."
+          ],
+          "answer": "The explicit correction supersedes the remote source and imposes two office days.\nThe role states exactly the candidate’s four-day, 32-hour schedule.\nNeither applicable term specifies the annual number of work trips.\nApply using the withdrawn remote description as the current term.\nBuild the role package around zero required office days."
+        }
+      ]
+    },
+    {
+      "case_id": "PF6H-13",
+      "text_sha256": "16b1d301609ba0929cd2e1ba639592b5923b465e3799a4ff27f547484e1101fa",
+      "exact_source_answer_overlap": false,
+      "exact_answer_overlap": false,
+      "nearest": [
+        {
+          "ref": "career-quality-v5-new-cases/raw/preference-fit.json#PF5H-04",
+          "word_jaccard": 0.26415,
+          "sources": [
+            "Onboarding requires two station days.",
+            "After onboarding, remote work may be approved following a team review; no approval has been issued.",
+            "I can do up to three station days if remote work is available after onboarding."
+          ],
+          "answer": "The onboarding arrangement may meet my preference if remote approval follows the team review."
+        },
+        {
+          "ref": "career-quality-v5-new-cases/raw/preference-fit.json#PF5H-03",
+          "word_jaccard": 0.21818,
+          "sources": [
+            "New hires must attend the station for two days during onboarding.",
+            "After onboarding, remote work is permitted with manager approval.",
+            "I can attend at most three onboarding days and need remote work afterward; manager approval is acceptable."
+          ],
+          "answer": "The two required station days fit my three-day onboarding cap, with remote work permitted afterward subject to manager approval."
+        },
+        {
+          "ref": "career-quality-v5-new-cases/raw/preference-fit.json#PF5H-07",
+          "word_jaccard": 0.20833,
+          "sources": [
+            "Employees may request up to four remote days per calendar month with manager approval.",
+            "I would request two remote days per calendar month, subject to manager approval."
+          ],
+          "answer": "A request for two remote days a month is within the stated four-day limit, subject to manager approval."
+        }
+      ]
+    },
+    {
+      "case_id": "PF6H-14",
+      "text_sha256": "ea21bd2cc7278d05746305950bf7179b3093b8ecb94d168424e977314b082215",
+      "exact_source_answer_overlap": false,
+      "exact_answer_overlap": false,
+      "nearest": [
+        {
+          "ref": "career-quality-v3-new-cases/raw/preference-fit.json#PF3N-17",
+          "word_jaccard": 0.32353,
+          "sources": [
+            "The personal internet stipend is $900 per year.",
+            "I need at least $200 a month for an internet stipend."
+          ],
+          "answer": "The $900 stipend meets your $200 monthly minimum."
+        },
+        {
+          "ref": "career-quality-v5-new-cases/raw/preference-fit.json#PF5H-01",
+          "word_jaccard": 0.3,
+          "sources": [
+            "The role provides CHF 1,800 per calendar year for course fees.",
+            "I need at least CHF 120 per calendar month for course fees."
+          ],
+          "answer": "The course-fee allowance meets my CHF 120 monthly minimum on an annual-budget basis."
+        },
+        {
+          "ref": "career-quality-v5-new-cases/raw/preference-fit.json#PF5H-15",
+          "word_jaccard": 0.3,
+          "sources": [
+            "For required evening on-call duty, the employer will pay a USD 400 stipend each calendar month.",
+            "For evening on-call duty I require at least USD 400 per calendar month."
+          ],
+          "answer": "The committed USD 400 monthly evening on-call stipend meets my USD 400 monthly minimum."
+        }
+      ]
+    },
+    {
+      "case_id": "PF6H-15",
+      "text_sha256": "ee96fd7fcb33c5e4555137775b58031b385a2da65ad5ab8fb54c55a7447e9e57",
+      "exact_source_answer_overlap": false,
+      "exact_answer_overlap": false,
+      "nearest": [
+        {
+          "ref": "career-quality-v3-new-cases/raw/preference-fit.json#PF3N-03",
+          "word_jaccard": 0.36111,
+          "sources": [
+            "This archivist role requires one station day each week.",
+            "I can attend the station at most two days per week."
+          ],
+          "answer": "Its one required station day per week is within your two-day ceiling."
+        },
+        {
+          "ref": "career-quality-v5-new-cases/raw/preference-fit.json#PF5H-11",
+          "word_jaccard": 0.34146,
+          "sources": [
+            "This role requires one client-site day each calendar month in Basel, and no other travel.",
+            "For this role I accept up to two Basel client-site days per calendar month."
+          ],
+          "answer": "This role's one Basel client-site day per month stays within my two-day monthly cap for this role."
+        },
+        {
+          "ref": "career-quality-v5-new-cases/raw/preference-fit.json#PF5H-08",
+          "word_jaccard": 0.25581,
+          "sources": [
+            "Staff may request up to three remote days per calendar month after probation, with manager approval.",
+            "After probation I need to request five remote days each calendar month, subject to approval."
+          ],
+          "answer": "My five-day monthly request is within the post-probation limit."
+        }
+      ]
+    },
+    {
+      "case_id": "PF6H-16",
+      "text_sha256": "4050cb4d3901b68aa928039292db0bb3512d7082166d7326933c6f8545133f73",
+      "exact_source_answer_overlap": false,
+      "exact_answer_overlap": false,
+      "nearest": [
+        {
+          "ref": "career-quality-v5-new-cases/raw/preference-fit.json#PF5H-03",
+          "word_jaccard": 0.35417,
+          "sources": [
+            "New hires must attend the station for two days during onboarding.",
+            "After onboarding, remote work is permitted with manager approval.",
+            "I can attend at most three onboarding days and need remote work afterward; manager approval is acceptable."
+          ],
+          "answer": "The two required station days fit my three-day onboarding cap, with remote work permitted afterward subject to manager approval."
+        },
+        {
+          "ref": "career-quality-v5-new-cases/raw/preference-fit.json#PF5H-04",
+          "word_jaccard": 0.27451,
+          "sources": [
+            "Onboarding requires two station days.",
+            "After onboarding, remote work may be approved following a team review; no approval has been issued.",
+            "I can do up to three station days if remote work is available after onboarding."
+          ],
+          "answer": "The onboarding arrangement may meet my preference if remote approval follows the team review."
+        },
+        {
+          "ref": "career-quality-v3-new-cases/raw/preference-fit.json#PF3N-06",
+          "word_jaccard": 0.27273,
+          "sources": [
+            "The role is on site for its first 30 days; remote work is permitted afterward.",
+            "I can work on site for up to 30 onboarding days if remote work is permitted afterward."
+          ],
+          "answer": "The stated 30-day on-site period matches your exception, with remote work permitted afterward."
+        }
+      ]
+    },
+    {
+      "case_id": "PF6H-17",
+      "text_sha256": "0429a82ddb782df91f4bba29eb58d3a90b02f9b08608cecc083b19e7d11c13b5",
+      "exact_source_answer_overlap": false,
+      "exact_answer_overlap": false,
+      "nearest": [
+        {
+          "ref": "career-quality-v5-new-cases/raw/preference-fit.json#PF5H-10",
+          "word_jaccard": 0.32653,
+          "sources": [
+            "The role sheet requires three station days during onboarding.",
+            "The recruiter sheet requires five station days during onboarding; it does not state that it replaces the role sheet.",
+            "I can attend at most four station days in onboarding."
+          ],
+          "answer": "The station-attendance requirement fits my four-day cap."
+        },
+        {
+          "ref": "career-quality-v3-new-cases/raw/preference-fit.json#PF3N-03",
+          "word_jaccard": 0.28261,
+          "sources": [
+            "This archivist role requires one station day each week.",
+            "I can attend the station at most two days per week."
+          ],
+          "answer": "Its one required station day per week is within your two-day ceiling."
+        },
+        {
+          "ref": "career-quality-v5-new-cases/raw/preference-fit.json#PF5H-13",
+          "word_jaccard": 0.28,
+          "sources": [
+            "The earlier role sheet required three station days during onboarding.",
+            "This signed update replaces the earlier role sheet's onboarding rule: one station day is required.",
+            "I can do no more than two station days during onboarding."
+          ],
+          "answer": "The signed one-day onboarding rule fits my two-day cap."
+        }
+      ]
+    },
+    {
+      "case_id": "PF6H-18",
+      "text_sha256": "0687ed9b89c24043324c8501d487fe7e437a2874be522fd5d3124b6e231b0315",
+      "exact_source_answer_overlap": false,
+      "exact_answer_overlap": false,
+      "nearest": [
+        {
+          "ref": "career-quality-v5-new-cases/raw/preference-fit.json#PF5H-11",
+          "word_jaccard": 0.21739,
+          "sources": [
+            "This role requires one client-site day each calendar month in Basel, and no other travel.",
+            "For this role I accept up to two Basel client-site days per calendar month."
+          ],
+          "answer": "This role's one Basel client-site day per month stays within my two-day monthly cap for this role."
+        },
+        {
+          "ref": "career-quality-v3-new-cases/raw/preference-fit.json#PF3N-02",
+          "word_jaccard": 0.18605,
+          "sources": [
+            "The role pays a personal workspace stipend between $450 and $650 each month.",
+            "I require at least $400 per month for a workspace stipend."
+          ],
+          "answer": "Even the stated $450 monthly floor is above your $400 monthly requirement."
+        },
+        {
+          "ref": "career-quality-v5-new-cases/raw/preference-fit.json#PF5H-16",
+          "word_jaccard": 0.18605,
+          "sources": [
+            "A project-funded stipend may pay up to USD 600 per calendar month for on-call work; funding has not been approved."
+          ],
+          "answer": "The role guarantees a USD 600 monthly on-call stipend."
+        }
+      ]
+    },
+    {
+      "case_id": "PF6H-19",
+      "text_sha256": "0c07745ec8664e04940d609caf2e32beaeffd17bf28c848625a088199259a098",
+      "exact_source_answer_overlap": false,
+      "exact_answer_overlap": false,
+      "nearest": [
+        {
+          "ref": "career-quality-v5-new-cases/raw/preference-fit.json#PF5H-05",
+          "word_jaccard": 0.25,
+          "sources": [
+            "The only on-call shift is Saturday 11:00–13:00, role-local time.",
+            "I accept Saturday on-call work from 10:00–14:00 role-local time, but no weekday on-call work."
+          ],
+          "answer": "The Saturday 11:00–13:00 on-call shift is inside my Saturday window and adds no weekday duty."
+        },
+        {
+          "ref": "career-quality-v5-new-cases/raw/preference-fit.json#PF5H-17",
+          "word_jaccard": 0.23256,
+          "sources": [
+            "The only required training demo is on Wednesday 09:00–12:30 role-local time.",
+            "I cannot attend training demos after 13:00 on Wednesdays, role-local time."
+          ],
+          "answer": "The only required Wednesday demo finishes before my 13:00 cutoff."
+        },
+        {
+          "ref": "career-quality-v5-new-cases/raw/preference-fit.json#PF5H-06",
+          "word_jaccard": 0.22222,
+          "sources": [
+            "The role requires on-call coverage every Sunday 11:00–13:00 local time.",
+            "I cannot take Sunday on-call duty at any hour."
+          ],
+          "answer": "The mandatory Sunday shift fits my no-Sunday rule."
+        }
+      ]
+    },
+    {
+      "case_id": "PF6H-20",
+      "text_sha256": "8a9978ffabb9f7c086babe5e9918852fbe477e2b63d64c215fe5d3ed13c51d23",
+      "exact_source_answer_overlap": false,
+      "exact_answer_overlap": false,
+      "nearest": [
+        {
+          "ref": "career-quality-v2/cases/preference-fit/PF2-02/answers.json#answer_04",
+          "word_jaccard": 0.18919,
+          "sources": [
+            "The residency stipend ranges from 82,000 to 128,000 credits depending on placement and experience; individual amounts are set after selection.",
+            "I need a personal written offer of at least 115,000 credits before accepting."
+          ],
+          "answer": "Because the band includes 115,000 credits, the employer has committed to paying this candidate at least that amount.\nThe stipend may meet the threshold, but personal compatibility is not yet known.\nAsk how placement determines the amount and wait for a written personal offer before acceptance."
+        },
+        {
+          "ref": "career-quality-v2/cases/preference-fit/PF2-08/answers.json#answer_02",
+          "word_jaccard": 0.18571,
+          "sources": [
+            "Facilitators lead live training sessions and use the employer's standard meeting platform.",
+            "I require live captions for every training session I lead."
+          ],
+          "answer": "A standard meeting platform is named, but the posting does not state whether live captions are enabled for all sessions.\nThis role may be workable if every session has live captions; the current posting cannot decide that.\nAsk the employer to demonstrate caption availability in the actual training workflow."
+        },
+        {
+          "ref": "career-quality-v3/data/normalizations.json#D07",
+          "word_jaccard": 0.17742,
+          "sources": [
+            "The residency stipend ranges from 82,000 to 128,000 credits depending on placement and experience; individual amounts are set after selection.",
+            "I need a personal written offer of at least 115,000 credits before accepting."
+          ],
+          "answer": "Because the band includes 115,000 credits, the employer has committed to paying this candidate at least that amount."
+        }
+      ]
+    }
+  ],
+  "limits": "No labels or outcomes read. Exact/word overlap only; shared reasoning families and semantic overlap require review. New text does not prove statistical independence."
+}

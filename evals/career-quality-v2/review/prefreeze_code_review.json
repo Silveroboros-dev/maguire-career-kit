@@ -1,0 +1,88 @@
+{
+  "blocking_findings": [],
+  "checks": [
+    {
+      "command": "python3 -B -m unittest discover -s evals/career-quality-v2/tests -p test_boundaries.py -v",
+      "errors": 0,
+      "failures": 0,
+      "tests": 18
+    },
+    {
+      "coverage": "grader source, runtime-author tests, projection, prefreeze/data-freeze ordering, prediction-to-annotation separation, local receipt verification",
+      "method": "read_only_code_review"
+    }
+  ],
+  "created_at": "2026-10-12T13:48:35.159373+00:00",
+  "exposure": {
+    "assurance": "Reviewer self-attestation in a shared workspace; procedural separation, not independently enforced blindness.",
+    "reviewer_ran_new_corpus_grader": false,
+    "reviewer_read_new_answers_or_annotations": false,
+    "reviewer_read_new_author_script": false,
+    "reviewer_read_new_predictions_or_results": false,
+    "reviewer_read_new_v2_case_files": false,
+    "reviewer_read_v1_contract_rubric_and_runtime": true,
+    "reviewer_read_v1_known_materials": true
+  },
+  "limits": [
+    "Proposed v1 labels and declared v2 defect families were known during development. These checks are not an independent holdout or human adjudication.",
+    "The prefreeze review does not establish performance on the unopened new v2 corpus."
+  ],
+  "observations": [
+    "Invented negative checks cover quantified conclusions, blanket qualification, recency versus future ability, spelled scale, source directive adoption, and eight preference meaning families; close positive controls cover supported quantities and employer exceptions.",
+    "Grade results remain bounded deterministic rule checks. Passing does not certify semantic faithfulness of unrestricted prose.",
+    "Predictions are persisted before measurement opens annotations; packet identity and exact joins are checked. The root comparison pipeline is local drift evidence, without an external seal."
+  ],
+  "review_scope": "Offline pure grader and comparison pipeline code review, with independently invented boundary fixtures.",
+  "reviewed_files": {
+    "CONTRACT.md": {
+      "bytes": 5703,
+      "sha256": "ecd428d373ece4581896584b45b074d2c2f19ba5f3f2265591d41cabd3ad468c"
+    },
+    "PREDECESSOR.json": {
+      "bytes": 21086,
+      "sha256": "3a6fa8e6464ea06f9f4b78c890b99f533a23f514f448bc0e9cf2af974316c160"
+    },
+    "grade_packets.py": {
+      "bytes": 2904,
+      "sha256": "0aa99c3ac02fb7fb3775fb41ec963a0b35cf6740b22ead5646fbed88a4225fb3"
+    },
+    "graders/__init__.py": {
+      "bytes": 200,
+      "sha256": "9de1460f0c0143731663584e0a3cad2899c55a87d22575d2c5625c43c8bca041"
+    },
+    "graders/candidate.py": {
+      "bytes": 12802,
+      "sha256": "8123f1f2324dd350d14c78eda08c69714f844c09bbdb7c7d6819188babe35805"
+    },
+    "graders/preference.py": {
+      "bytes": 14068,
+      "sha256": "154e692db97d2b9b30c53a65d477008a6d41048917312031fb7adf78cdd694d0"
+    },
+    "graders/shared.py": {
+      "bytes": 15562,
+      "sha256": "327cc95a72f8cf72e24a6a94e46862363958f728174e26ae03b09dad9eb1a1e8"
+    },
+    "legacy.py": {
+      "bytes": 515,
+      "sha256": "5bb6403565bfa870a092bdca05a07966d46c6d390f8b9294e4e56fc57a83e258"
+    },
+    "pipeline.py": {
+      "bytes": 16972,
+      "sha256": "261df680648d0d582ab93d636697311fb8dea4ef521c14b59cb211c973cc04ad"
+    },
+    "tests/test_boundaries.py": {
+      "bytes": 15235,
+      "sha256": "54a863d5297887622fb9c1d92224fec894b817cc363b16166eae8bb3f3f3d9e6"
+    },
+    "tests/test_pipeline.py": {
+      "bytes": 4844,
+      "sha256": "36495bcee75dc582e841e87046e82821c714d6a0715dcdbb51b8450cd03f53f4"
+    },
+    "tests/test_rules.py": {
+      "bytes": 4394,
+      "sha256": "4f756a371b3e0743dbf038968de5ea1a9beba613f1f4464c473836450843135d"
+    }
+  },
+  "schema": "maguire-quality-v2-prefreeze-code-review-v1",
+  "status": "ready"
+}

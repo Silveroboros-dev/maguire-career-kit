@@ -1,0 +1,30 @@
+{
+  "schema": "maguire-quality-candidate-cross-review-v3",
+  "reviewer_model": "gpt-6-sol",
+  "review_effort": "high",
+  "human_review": false,
+  "read_only": true,
+  "scope_case_ids": [
+    "CF-08"
+  ],
+  "previous_review": "review/preference_author_reviews_candidate_v2.json",
+  "previous_review_sha256": "f8d1a295013d12578c20d7f1cef7db6dca084617f7bf2dfeb13a664e7db861eb",
+  "root_repair_receipt": "review/root_repairs_v1.json",
+  "root_repair_receipt_sha256": "da510c77d67f398b4f6e8b338a67c10f638b0776d0ee8fd49fc045d1f9193cd5",
+  "current_cf08_file_sha256": {
+    "candidate-fit/CF-08/input.json": "54218b31d2ace2e66083145fd020f012e586bf39f543cdd7b4e2a7896c3309a9",
+    "candidate-fit/CF-08/gold.json": "7dfd868e0741a5e9c3ad3aed804defd765e2fdb75e85613c51d127e1eedb9338",
+    "candidate-fit/CF-08/answers.json": "3cc99b2d5bff723c85f8f256aefeffecc6c63a01e2bbe770f861ffca15ea5122",
+    "candidate-fit/CF-08/annotations.json": "026328d09215d21d5e446a19ed71d6823484b24f7fc018082dbb1ecbf931c4be"
+  },
+  "rechecked_finding": {
+    "case_id": "CF-08",
+    "answer_id": "answer_03",
+    "previous_issue": "The negative answer had an unrelated next-step difference in addition to its false label/rationale.",
+    "status": "resolved",
+    "evidence": "answer_03 conclusion now exactly equals answer_01 conclusion. Its only recursive differences are /assessments/0/label and /assessments/0/rationale, matching annotation.changed_paths. The false supported label for a 26-month-old audit against an 18-month minimum remains the single intended defect."
+  },
+  "new_findings": [],
+  "unresolved_blockers": [],
+  "review_limit": "Focused read-only check of CF-08 only; no full dataset re-review or human approval."
+}

@@ -1,0 +1,66 @@
+{
+  "schema": "maguire-quality-annotations-v1",
+  "case_id": "CF2-01",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The assessment keeps the stated evidence and its limits in scope.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_02",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The independent acceptable conclusion preserves the same substantive constraints.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_03",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "A one-week distance log does not support an annual fuel-bill percentage.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "invent quantified outcome",
+        "description": "A one-week distance log does not support an annual fuel-bill percentage.",
+        "changed_paths": [
+          "/conclusion/text"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "CF-EVIDENCE",
+          "severity": "major",
+          "target_id": "jd_1",
+          "explanation": "A one-week distance log does not support an annual fuel-bill percentage."
+        }
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "A single four-branch trial week cannot establish recurring network-wide savings.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "promote trial metric",
+        "description": "A single four-branch trial week cannot establish recurring network-wide savings.",
+        "changed_paths": [
+          "/conclusion/next_step"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "CF-UNCERTAINTY",
+          "severity": "major",
+          "target_id": "jd_1",
+          "explanation": "A single four-branch trial week cannot establish recurring network-wide savings."
+        }
+      ]
+    }
+  ]
+}

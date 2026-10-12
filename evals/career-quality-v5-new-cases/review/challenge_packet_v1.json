@@ -1,0 +1,225 @@
+{
+  "schema": "maguire-v5-new-cases-preflight-challenge-v1",
+  "packet_sequence": 1,
+  "status": "ready",
+  "overall_state": "ready_for_single_offline_measured_run",
+  "created_at_utc": "2026-10-12T18:13:15.507689+00:00",
+  "human_approved": false,
+  "witness": "separate AI reviewer; semantic raw judgments sealed before checker access",
+  "challenged_contract": "CONTRACT.md; frozen v5 runtime on 40 new manually normalized fictional fragments",
+  "predecessor": {
+    "path": "../career-quality-v5/review/challenge_receipt_v1.json",
+    "receipt_raw": {
+      "sha256": "8315194da3da319dfd5925885c2d75362fa77049410d8e9d6066d65315b91a3b",
+      "bytes": 615
+    },
+    "packet_raw": {
+      "sha256": "aed9f1e96ecd8e28db910b7f9a2f99ace5bd512883999c24e49bc90797d8017e",
+      "bytes": 20243
+    },
+    "packet_internal_digest_sha256": "e7affb72747e11ec1143de34f780103fa731dfcf8e0400ac3130033c3562801c",
+    "new_predecessor_manifest": {
+      "sha256": "bf1a0fe1cd1976065f7f1c3db5c2cf1477cdee16a9d40e6febed94144b8bdcf2",
+      "bytes": 68064
+    },
+    "bound_files_verified": 385
+  },
+  "files": {
+    "checker.py": {
+      "sha256": "c712f128cf7dd3a43252ed13abf18b04d5d26a53b72930231fcd0dce9414ebf6",
+      "bytes": 36834
+    },
+    "v3_core.py": {
+      "sha256": "e4b2699f543e4260128ebfabd61547c92b5c1dba3497acd07ca2f7007f225e33",
+      "bytes": 29184
+    },
+    "grade_packets.py": {
+      "sha256": "a175d27be88dc1b912af6288c0c84c4ce65034542dd1b0b95d310f5c08abce81",
+      "bytes": 2825
+    },
+    "measurement.py": {
+      "sha256": "ca092a89b8fb4099ad5c3b7869d124c4305693b55031a1832dc900c676192bb1",
+      "bytes": 8244
+    },
+    "pipeline.py": {
+      "sha256": "2d6a3966559d9b01355720e815c2cab7ac002bce28e1690170663f641741f5eb",
+      "bytes": 17282
+    },
+    "FROZEN_SCHEMA.md": {
+      "sha256": "2f7f15adaa608574cd88359eddd0e21d7ef43a7bc819cf51a46de37730cb22ab",
+      "bytes": 10254
+    },
+    "CONTRACT.md": {
+      "sha256": "5cf71131978225d4a38bc7fec468da270e303ac3ebe4647a5641195b871fa9af",
+      "bytes": 5135
+    },
+    "AUTHORING.md": {
+      "sha256": "8a07ec0de4e4dbda6814f3b72e5e9a977cd5e9a268b114aa5d1ec0f9f193650c",
+      "bytes": 6566
+    },
+    "PREDECESSOR.json": {
+      "sha256": "bf1a0fe1cd1976065f7f1c3db5c2cf1477cdee16a9d40e6febed94144b8bdcf2",
+      "bytes": 68064
+    },
+    "README.md": {
+      "sha256": "1ce55a06ca4ff33ddd575d662b3ff3b1bda964cdf28da87810f4c82338c264f4",
+      "bytes": 2580
+    },
+    "tests/test_pipeline.py": {
+      "sha256": "05797cc528d6db88aaa3d74cba5733e6c8b144f1c97be2ebb24dd0e153909e3f",
+      "bytes": 13247
+    },
+    "tests/test_new_cohort.py": {
+      "sha256": "8d1a33466ded0145c19b5bd60362aa2d058eeaedc9666cf1cb1737d94e390d30",
+      "bytes": 3947
+    },
+    "review/annotation_review_v1.json": {
+      "sha256": "b345de87cd235d7750b7af47eca2e78ccd5d3edf79a3032ebe5ae8fc736ca528",
+      "bytes": 16832
+    },
+    "review/annotation_review_v2.json": {
+      "sha256": "08aa2efd2f52d0d8feda58884be48f8a74a753bb31fc226c9d88aee26d27cc0d",
+      "bytes": 17658
+    },
+    "review/novelty_v1.json": {
+      "sha256": "5b0677d024555ca45703598d6d8a6aacfbadae5198823d6144de49097534eca0",
+      "bytes": 2718
+    },
+    "NOVELTY_SCREEN_v2.json": {
+      "sha256": "2fcf07bc2046b6187a1bc1b1cdef012cf2bcc07db66c474a00a7c6dff12b0e1e",
+      "bytes": 86378
+    },
+    "STRUCTURAL_AUDIT_v1.json": {
+      "sha256": "102f03f3dc88e45750a332479aa1cd59e341febc591ea1c7715c38abf1a7e6ef",
+      "bytes": 1840
+    },
+    "raw/candidate-fit.json": {
+      "sha256": "8ddcce7a7a0cdc9e9986dbc68eec5b4b436dc31b5b6cbda02d786f3a041404b5",
+      "bytes": 15635
+    },
+    "raw/preference-fit.json": {
+      "sha256": "7dbdd88b9c0cbb83e23e7aacba554f0a65b175eb4dac3d861ce14a0913fdfff0",
+      "bytes": 17078
+    },
+    "normalized/candidate-fit.json": {
+      "sha256": "db3457cf314f3cf5e59b26ebeb6da17707ccfa256c4b8a1d00dd9cbb35df05eb",
+      "bytes": 60750
+    },
+    "normalized/preference-fit.json": {
+      "sha256": "67c13fdf43f59d1f2d712e0c8bff5b4bf3d8b1ca630a0c44b3291fc12f3d7821",
+      "bytes": 54163
+    },
+    "gold/candidate-fit.json": {
+      "sha256": "e9da4250f0c486a4b1d0340f5a378a2c63f60d6e063f397862f828e6465c0718",
+      "bytes": 5747
+    },
+    "gold/preference-fit.json": {
+      "sha256": "a0d0d6651b581af6977d2b0e636ad8b5aea0eb72e894f9169f20a8ddc4dace94",
+      "bytes": 5203
+    },
+    "authoring/candidate-fit-attestation.json": {
+      "sha256": "5a91bc22bd83a698aa98d96d8f5b95c4b4a94396da0d15ae10b72d963d4060d0",
+      "bytes": 6247
+    },
+    "authoring/preference-fit-attestation.json": {
+      "sha256": "16106cffff1bb82df786617a157969a40001c61eac0474f148db93d0cad6d7c6",
+      "bytes": 5977
+    }
+  },
+  "predicate_inventory": [
+    {
+      "id": "runtime_identity",
+      "check": "Four copied runtime files match frozen career-quality-v5 and its FREEZE.json bindings byte for byte.",
+      "falsifier": "one copied runtime byte differs",
+      "status": "supported"
+    },
+    {
+      "id": "predecessor_integrity",
+      "check": "All 385 PREDECESSOR.json file bindings match current bytes, including previous freeze, reviews and runs.",
+      "falsifier": "one historical file differs",
+      "status": "supported"
+    },
+    {
+      "id": "blind_semantic_lineage",
+      "check": "Versioned raw-only AI judgments precede changed normalized/gold reads; annotation_review_v2 binds final files and retains v1 plus the failed structural audit.",
+      "falsifier": "raw hash mismatch, missing case, or unrecorded correction",
+      "status": "supported"
+    },
+    {
+      "id": "anonymous_projection",
+      "check": "Worker packet contains schema, grader, decision time, anchored sources, claims and coverage, while case ID, title, gold, author reasons and expected label remain in parent mapping/metadata.",
+      "falsifier": "expected label or case ID reaches grade_packets.py",
+      "status": "supported"
+    },
+    {
+      "id": "single_start_and_artifact_identity",
+      "check": "FREEZE and START use exclusive creation; run output directory cannot preexist; packets, mapping, predictions, measurement, report and receipt are hash-bound and verified without rerunning checker.",
+      "falsifier": "second start executes worker or a changed artifact verifies",
+      "status": "supported"
+    },
+    {
+      "id": "accounting",
+      "check": "Measurement keeps 40 ordered packet predictions, all three gold classes plus invalid outcomes, execution errors, ambiguous forced decisions and intended faulty-claim localization.",
+      "falsifier": "missing/foreign prediction or wrong-clause rejection receives localization credit",
+      "status": "supported"
+    },
+    {
+      "id": "offline_execution",
+      "check": "The frozen worker rejects socket/process operations globally and file/process operations during grade_fragment; synthetic tests do not run the new cohort.",
+      "falsifier": "worker makes network/process call or reads gold during grading",
+      "status": "supported"
+    }
+  ],
+  "adversarial_fixture_results": [
+    {
+      "command": "python3 -B -m unittest discover -s evals/career-quality-v5-new-cases/tests -v",
+      "tests": 19,
+      "passed": 19,
+      "failed": 0,
+      "scope": "synthetic projection, runtime drift, second-start and measurement-tamper fixtures; no cohort grading"
+    },
+    {
+      "command": "python3 -B evals/career-quality-v5-new-cases/pipeline.py audit --review review/annotation_review_v2.json",
+      "packets": 40,
+      "claims": 61,
+      "predecessor_files": 385,
+      "predictions_executed": false,
+      "scope": "shape and projection only"
+    },
+    {
+      "check": "STRUCTURAL_AUDIT_v1 retained pre-correction CF5H-04 YYYY-MM failure and corrected v2 changed only four year-only time objects to time.year=2025",
+      "predictions_executed": false
+    },
+    {
+      "check": "prior v5 challenge receipt raw and internal digest recomputed",
+      "receipt_matches": true
+    }
+  ],
+  "authority_assessment": {
+    "local_offline_evaluation_user_authorized": true,
+    "challenge_grants_authority": false,
+    "external_effect_authority_present": false,
+    "network_calls_executed": 0,
+    "cohort_predictions_executed_before_freeze": false,
+    "permitted_next_action": "Root may freeze and run exactly one local offline measured evaluation under existing user authorization, with --review review/annotation_review_v2.json.",
+    "prohibited_operations": [
+      "API/network",
+      "dependency installation",
+      "Git writes/commit/push",
+      "grader tuning",
+      "claim of human approval or statistical independence"
+    ]
+  },
+  "findings": [],
+  "scope_limitations": [
+    "Ready means no scoped execution blocker found; it does not predict checker quality.",
+    "The cases and normalization are agent-authored; review is by a separate AI agent, not a human-approved or statistically independent holdout.",
+    "Preference gold is 13 pass, 6 fail, 1 needs_review because PF5H-04 is a supported conditional statement; this deviates from the 12/6/2 target and remains disclosed.",
+    "Several new cases are new instances of prior reasoning families; novelty_v1.json records overlap limits.",
+    "Checker support for conditional and qualitative assertions may yield review rather than semantic pass; measured outcomes must be reported unchanged.",
+    "Audit validates packet shape and projection only; no 40-case checker predictions were run in this challenge.",
+    "Local hashes are integrity metadata in a shared mutable directory, not external signatures or OS isolation."
+  ],
+  "notification_keys": [],
+  "internal_digest_sha256": "52ad3eaf1b6cae26ab437e0f4e7cb5ebeb1f2bcc3b404d05ba900c3ae2ddb3d1"
+}

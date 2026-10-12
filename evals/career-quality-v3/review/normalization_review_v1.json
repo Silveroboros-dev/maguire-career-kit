@@ -1,0 +1,266 @@
+{
+  "bindings": {
+    "data/expectations.json": "93d8f9742cb349e0666b394a4d024655730d44207377b0e70b5438ed80142893",
+    "data/normalizations.json": "9c77a4c584c59e2631c59fab066fd8e9cadcd7fb766144149ee1f640d0035ab9",
+    "data/source_files.json": "20650bd70e77127dea3a62f80458e1955b826757b0d874658477d06fe8cc6265"
+  },
+  "exposure": {
+    "claim": "agent review of manually normalized selected fragments only",
+    "independent_holdout": false,
+    "known_development_examples": true,
+    "seen_checker_predictions": false,
+    "seen_design_traces_and_intended_outcomes": true,
+    "seen_expectation_contents_during_this_review": false
+  },
+  "findings": [
+    {
+      "code": "candidate_evidence_level",
+      "examples": [
+        "D01",
+        "D03",
+        "D04"
+      ],
+      "observation": "First-person candidate facts are normalized as observation in D01 fact_1 and CF2-04 fact_1, while comparable first-person facts retain self_report. This upgrades the source evidence level.",
+      "requested_correction": "Use self_report for these source propositions and preserve that level in supported-claim explanations.",
+      "severity": "needs_change"
+    },
+    {
+      "code": "sample_application_overstated",
+      "examples": [
+        "D03",
+        "D04"
+      ],
+      "observation": "CF2-04 says a checklist was applied to a 75-page sample; candidate/archive_processing/archive_pages with count 75, and D03 c1 as candidate processing, can overstate coordination of archive processing.",
+      "requested_correction": "Represent the sample/checklist application narrowly; keep the more-than-200000 production claim separate and unsupported.",
+      "severity": "needs_change"
+    },
+    {
+      "code": "later_observation_not_publication",
+      "examples": [
+        "D13"
+      ],
+      "observation": "D13 c2 treats bare “later than the remote notice” as an unambiguous observed_after world claim. The inputs supply observation timestamps, not publication or effective dates; the wording admits more than one reading.",
+      "requested_correction": "Retain observed-order and publication/effective-order alternatives, or mark the date premise unresolved. Do not infer governing authority from either date.",
+      "severity": "needs_change"
+    },
+    {
+      "code": "newer_reference_coverage",
+      "examples": [
+        "D10",
+        "D11"
+      ],
+      "observation": "The selected fragment includes “newer flexibility note”, but only the negative resolves atom is represented. “Newer” can be grounded in observed order only if explicitly bounded that way.",
+      "requested_correction": "Represent the observed-order reference as a separate packet-scoped atom or narrow the selected span; retain the negative resolves claim and avoid a publication-date assertion.",
+      "severity": "needs_change"
+    },
+    {
+      "code": "soft_discussion_wording",
+      "examples": [
+        "D10",
+        "D11",
+        "D12",
+        "D13"
+      ],
+      "observation": "The September source says arrangements “should be discussed with the team”; scope.requires_team_discussion=true may read as a mandatory condition stronger than the text.",
+      "requested_correction": "Use a softer discussion-advised representation or document the restricted interpretation. It must not create a governing or supersession edge.",
+      "severity": "review_note"
+    }
+  ],
+  "human_approved": false,
+  "limits": [
+    "All 16 selected source/answer anchors matched decoded JSON spans and raw file hashes at review time; this does not prove semantic completeness.",
+    "Coverage refers to listed source inventories and selected fragments, not whole answers or world facts.",
+    "The reviewer knew the intended design outcomes; this is not blind or human approval."
+  ],
+  "per_example": [
+    {
+      "anchor_binding": "verified_against_original_json",
+      "answer_id": "answer_04",
+      "case_id": "CF2-01",
+      "claim_atom_review": "needs_change",
+      "example_id": "D01",
+      "finding_codes": [
+        "candidate_evidence_level"
+      ],
+      "source_inventory": "matches_original_input_sources"
+    },
+    {
+      "anchor_binding": "verified_against_original_json",
+      "answer_id": "answer_04",
+      "case_id": "CF2-03",
+      "claim_atom_review": "acceptable_with_stated_limits",
+      "example_id": "D02",
+      "finding_codes": [],
+      "source_inventory": "matches_original_input_sources"
+    },
+    {
+      "anchor_binding": "verified_against_original_json",
+      "answer_id": "answer_03",
+      "case_id": "CF2-04",
+      "claim_atom_review": "needs_change",
+      "example_id": "D03",
+      "finding_codes": [
+        "candidate_evidence_level",
+        "sample_application_overstated"
+      ],
+      "source_inventory": "matches_original_input_sources"
+    },
+    {
+      "anchor_binding": "verified_against_original_json",
+      "answer_id": "answer_04",
+      "case_id": "CF2-04",
+      "claim_atom_review": "needs_change",
+      "example_id": "D04",
+      "finding_codes": [
+        "candidate_evidence_level",
+        "sample_application_overstated"
+      ],
+      "source_inventory": "matches_original_input_sources"
+    },
+    {
+      "anchor_binding": "verified_against_original_json",
+      "answer_id": "answer_04",
+      "case_id": "CF2-05",
+      "claim_atom_review": "acceptable_with_stated_limits",
+      "example_id": "D05",
+      "finding_codes": [],
+      "source_inventory": "matches_original_input_sources"
+    },
+    {
+      "anchor_binding": "verified_against_original_json",
+      "answer_id": "answer_03",
+      "case_id": "PF2-02",
+      "claim_atom_review": "acceptable_with_stated_limits",
+      "example_id": "D06",
+      "finding_codes": [],
+      "source_inventory": "matches_original_input_sources"
+    },
+    {
+      "anchor_binding": "verified_against_original_json",
+      "answer_id": "answer_04",
+      "case_id": "PF2-02",
+      "claim_atom_review": "acceptable_with_stated_limits",
+      "example_id": "D07",
+      "finding_codes": [],
+      "source_inventory": "matches_original_input_sources"
+    },
+    {
+      "anchor_binding": "verified_against_original_json",
+      "answer_id": "answer_03",
+      "case_id": "PF2-03",
+      "claim_atom_review": "acceptable_with_stated_limits",
+      "example_id": "D08",
+      "finding_codes": [],
+      "source_inventory": "matches_original_input_sources"
+    },
+    {
+      "anchor_binding": "verified_against_original_json",
+      "answer_id": "answer_04",
+      "case_id": "PF2-05",
+      "claim_atom_review": "acceptable_with_stated_limits",
+      "example_id": "D09",
+      "finding_codes": [],
+      "source_inventory": "matches_original_input_sources"
+    },
+    {
+      "anchor_binding": "verified_against_original_json",
+      "answer_id": "answer_01",
+      "case_id": "PF2-06",
+      "claim_atom_review": "needs_change",
+      "example_id": "D10",
+      "finding_codes": [
+        "newer_reference_coverage",
+        "soft_discussion_wording"
+      ],
+      "source_inventory": "matches_original_input_sources"
+    },
+    {
+      "anchor_binding": "verified_against_original_json",
+      "answer_id": "answer_02",
+      "case_id": "PF2-06",
+      "claim_atom_review": "needs_change",
+      "example_id": "D11",
+      "finding_codes": [
+        "newer_reference_coverage",
+        "soft_discussion_wording"
+      ],
+      "source_inventory": "matches_original_input_sources"
+    },
+    {
+      "anchor_binding": "verified_against_original_json",
+      "answer_id": "answer_03",
+      "case_id": "PF2-06",
+      "claim_atom_review": "acceptable_with_stated_limits",
+      "example_id": "D12",
+      "finding_codes": [
+        "soft_discussion_wording"
+      ],
+      "source_inventory": "matches_original_input_sources"
+    },
+    {
+      "anchor_binding": "verified_against_original_json",
+      "answer_id": "answer_04",
+      "case_id": "PF2-06",
+      "claim_atom_review": "needs_change",
+      "example_id": "D13",
+      "finding_codes": [
+        "later_observation_not_publication",
+        "soft_discussion_wording"
+      ],
+      "source_inventory": "matches_original_input_sources"
+    },
+    {
+      "anchor_binding": "verified_against_original_json",
+      "answer_id": "answer_03",
+      "case_id": "PF2-08",
+      "claim_atom_review": "acceptable_with_stated_limits",
+      "example_id": "D14",
+      "finding_codes": [],
+      "source_inventory": "matches_original_input_sources"
+    },
+    {
+      "anchor_binding": "verified_against_original_json",
+      "answer_id": "answer_04",
+      "case_id": "PF2-08",
+      "claim_atom_review": "acceptable_with_stated_limits",
+      "example_id": "D15",
+      "finding_codes": [],
+      "source_inventory": "matches_original_input_sources"
+    },
+    {
+      "anchor_binding": "verified_against_original_json",
+      "answer_id": "answer_01",
+      "case_id": "PF2-02",
+      "claim_atom_review": "acceptable_with_stated_limits",
+      "example_id": "D16",
+      "finding_codes": [],
+      "source_inventory": "matches_original_input_sources"
+    }
+  ],
+  "predecessor_review_sha256": null,
+  "reviewed_example_ids": [
+    "D01",
+    "D02",
+    "D03",
+    "D04",
+    "D05",
+    "D06",
+    "D07",
+    "D08",
+    "D09",
+    "D10",
+    "D11",
+    "D12",
+    "D13",
+    "D14",
+    "D15",
+    "D16"
+  ],
+  "reviewer": {
+    "identity": "agent:/root/v3_slice_review",
+    "role": "agent_semantic_reviewer",
+    "signature": null
+  },
+  "schema": "maguire-v3-normalization-review-v1",
+  "status": "needs_changes"
+}

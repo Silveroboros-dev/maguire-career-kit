@@ -1,0 +1,69 @@
+{
+  "schema": "maguire-quality-annotations-v1",
+  "case_id": "PF-12",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The two-day hybrid schedule fits the candidate’s explicit salary-linked alternative, and the travel cap meets the hard limit.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_02",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The candidate-owned hybrid alternative is met on the published base range; only the conference benefit is open.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_03",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "pref_location explicitly accepts two office days when annual base is at least CHF 160,000. jd_office states exactly two days and jd_salary starts at CHF 170,000, so the supported location label is aligned.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "preference_interpretation",
+        "description": "Misinterprets the location preference in Candidate-owned soft tradeoff for hybrid work.",
+        "changed_paths": [
+          "/assessments/0/label",
+          "/assessments/0/rationale"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "PF-INTERPRETATION",
+          "severity": "major",
+          "target_id": "pref_location",
+          "explanation": "pref_location explicitly accepts two office days when annual base is at least CHF 160,000. jd_office states exactly two days and jd_salary starts at CHF 170,000, so the supported location label is aligned."
+        }
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "The candidate-owned exception covers jd_office's two days because jd_salary's CHF 170,000 lower bound exceeds the CHF 160,000 condition. Passing solely for hybrid work ignores that alternative; pursue or clarify the separate conference benefit.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "incompatible_action",
+        "description": "Ignores the assessed location preference in the Candidate-owned soft tradeoff for hybrid work conclusion.",
+        "changed_paths": [
+          "/conclusion/action",
+          "/conclusion/text",
+          "/conclusion/next_step"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "PF-ACTION",
+          "severity": "major",
+          "target_id": "pref_location",
+          "explanation": "The candidate-owned exception covers jd_office's two days because jd_salary's CHF 170,000 lower bound exceeds the CHF 160,000 condition. Passing solely for hybrid work ignores that alternative; pursue or clarify the separate conference benefit."
+        }
+      ]
+    }
+  ]
+}

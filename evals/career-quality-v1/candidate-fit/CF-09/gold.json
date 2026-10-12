@@ -1,0 +1,77 @@
+{
+  "schema": "maguire-quality-gold-v1",
+  "case_id": "CF-09",
+  "family": "preferred is not minimum",
+  "title": "Preferred workshop facilitation",
+  "review_status": "proposed_agent_authored",
+  "human_approved": false,
+  "units": [
+    {
+      "target_id": "jd_1",
+      "kind": "minimum",
+      "allowed_labels": [
+        "supported"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_1",
+          "fact_1"
+        ]
+      ],
+      "rationale": "The supplied excerpt matches the required documentation duty.",
+      "required_points": [
+        "Runnable API example is shown"
+      ],
+      "forbidden_inferences": [
+        "Do not infer documentation adoption"
+      ]
+    },
+    {
+      "target_id": "jd_2",
+      "kind": "preferred",
+      "allowed_labels": [
+        "unknown"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_2",
+          "fact_2"
+        ]
+      ],
+      "rationale": "The candidate explicitly lacks prior external workshops, but this preferred future/general facilitation capability remains untested.",
+      "required_points": [
+        "No previous external workshop is reported",
+        "Future facilitation ability is unknown",
+        "This preference is not a required minimum"
+      ],
+      "forbidden_inferences": [
+        "Do not infer inability to facilitate future workshops from missing history",
+        "Do not convert a preferred duty into an eligibility gate"
+      ]
+    }
+  ],
+  "forbidden_assessment_targets": [],
+  "acceptable_actions": [
+    "pursue",
+    "show_existing_evidence"
+  ],
+  "critical_errors": [
+    {
+      "id": "CF-09-E1",
+      "description": "The JD marks workshop facilitation preferred, not required.",
+      "target_ids": [
+        "jd_2"
+      ]
+    },
+    {
+      "id": "CF-09-E2",
+      "description": "The candidate expressly reports no prior external workshop, so the answer invents facilitation history; future ability remains unknown.",
+      "target_ids": [
+        "jd_2"
+      ]
+    }
+  ],
+  "notes": [
+    "The required runnable API documentation is evidenced. Missing external workshop history is explicit, while ability to facilitate a future workshop remains unknown and preferred."
+  ]
+}

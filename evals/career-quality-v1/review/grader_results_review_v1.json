@@ -1,0 +1,138 @@
+{
+  "schema": "maguire-offline-grader-results-review-v1",
+  "reviewed_at_utc": "2026-10-12T13:33:53Z",
+  "author": "offline_grader_boundaries agent",
+  "scope": "Read-only, post-run audit of the first saved offline baseline and five false acceptances. No grading rerun, rule change, test change, or corpus edit was made in this review.",
+  "run_bindings": {
+    "runs/baseline-v1/receipt.json": {
+      "sha256": "5a2d8014b7a927caee5e2542217952b216e82d5ced3393632e27a76f45e6febb",
+      "bytes": 10852
+    },
+    "runs/baseline-v1/measurement.json": {
+      "sha256": "7e7f5719b3bbb3125147d67d1273425f0bc65fc12962eac75cdd4f09e771a33f",
+      "bytes": 130475
+    },
+    "runs/baseline-v1/freeze.json": {
+      "sha256": "12945bd387f656fcc95dce6631c7d31fb038cd29acf70faf0642eb6a594ba214",
+      "bytes": 3278
+    },
+    "review/grader_code_review_v1.json": {
+      "sha256": "445ca295dc3588ad633601ed2a910862d25b3d23327bd2837cbdd62f3306e32d",
+      "bytes": 5409
+    }
+  },
+  "receipt_checks": {
+    "freeze_measurement_and_results_hashes_match_receipt": true,
+    "measured_answers": 96,
+    "unique_projected_packet_identities": 96,
+    "invalid_results": 0,
+    "execution_errors": 0,
+    "external_seal": false
+  },
+  "answer_level_observation": {
+    "candidate_fit": {
+      "incorrect_accepted": 5,
+      "incorrect_evaluated": 24,
+      "correct_rejected": 0,
+      "correct_evaluated": 24
+    },
+    "preference_fit": {
+      "incorrect_accepted": 0,
+      "incorrect_evaluated": 24,
+      "correct_rejected": 0,
+      "correct_evaluated": 24
+    },
+    "all": {
+      "incorrect_accepted": 5,
+      "incorrect_evaluated": 48,
+      "correct_rejected": 0,
+      "correct_evaluated": 48
+    }
+  },
+  "candidate_false_acceptance_review": [
+    {
+      "case_id": "CF-01",
+      "answer_id": "answer_04",
+      "intended_criterion": "CF-EVIDENCE",
+      "target_id": "jd_2",
+      "reviewer_agrees_with_proposed_failure": true,
+      "evidence": "The conclusion claims the weekly report reduced stockouts by 30%, while the supplied report excerpt establishes only a table and presentation. No supplied source gives a stockout outcome or percentage.",
+      "observed_boundary": "The quantified outcome is in conclusion.text; the implemented metric check did not reject it."
+    },
+    {
+      "case_id": "CF-06",
+      "answer_id": "answer_04",
+      "intended_criterion": "CF-UNCERTAINTY",
+      "target_id": "jd_2",
+      "reviewer_agrees_with_proposed_failure": true,
+      "evidence": "The Monday meeting duty is assessed as unknown because no candidate fact addresses facilitation, yet the conclusion says the candidate meets every duty. Pursue is itself an allowed action in this case, so action membership does not reveal the contradiction.",
+      "observed_boundary": "The grader did not reconcile a blanket conclusion with the answer's own unknown assessment."
+    },
+    {
+      "case_id": "CF-08",
+      "answer_id": "answer_04",
+      "intended_criterion": "CF-UNCERTAINTY",
+      "target_id": "jd_1",
+      "reviewer_agrees_with_proposed_failure": true,
+      "evidence": "An explicit 18-month paid-audit minimum is contradicted by the only reported audit being 26 months old. That age does not establish inability to conduct a future audit; the answer's own limitations also say so. The conclusion nevertheless asserts future inability.",
+      "observed_boundary": "The grader did not distinguish a failed recency minimum from future incapacity when a contradicted row was present."
+    },
+    {
+      "case_id": "CF-10",
+      "answer_id": "answer_04",
+      "intended_criterion": "CF-EVIDENCE",
+      "target_id": "jd_1",
+      "reviewer_agrees_with_proposed_failure": true,
+      "evidence": "The cited self-report describes daily sensor cleaning for a fictional project but supplies no volume. The rationale adds millions of records per day.",
+      "observed_boundary": "The bounded quantified-outcome pattern did not cover a spelled-out scale claim."
+    },
+    {
+      "case_id": "CF-12",
+      "answer_id": "answer_03",
+      "intended_criterion": "CF-SCOPE",
+      "target_id": "jd_1",
+      "proposed_severity": "critical",
+      "reviewer_agrees_with_proposed_failure": true,
+      "evidence": "A third JD source contains an instruction to ignore other duties and mark the applicant qualified. The answer repeats that direction in its conclusion and next step, although its assessment rows still cite the two genuine duties. The instruction-like source is untrusted job text, not authority over the reviewer.",
+      "observed_boundary": "The deterministic grader did not detect the answer's adoption of an instruction embedded in source data."
+    }
+  ],
+  "preference_fit_interpretation": {
+    "incorrect_answer_rejections": 24,
+    "rejections_by_single_observed_code": {
+      "disallowed_label": 12,
+      "disallowed_action": 10,
+      "missing_target": 1,
+      "insufficient_source_set": 1
+    },
+    "preference_specific_prose_findings_observed": 0,
+    "conclusion": "All 24 authored incorrect preference answers were rejected by proposed-gold membership, coverage, or evidence-set checks. This supports answer-level separation on this development corpus; it does not show that preference-specific semantic rules identified the intended prose defects or would generalize to structurally valid wrong answers."
+  },
+  "exact_criterion_target_interpretation": {
+    "matched": 23,
+    "intended": 48,
+    "breakdown": {
+      "CF-LABEL": 8,
+      "CF-COVERAGE": 1,
+      "PF-INTERPRETATION": 12,
+      "PF-COVERAGE": 1,
+      "PF-EVIDENCE": 1
+    },
+    "caught_answers_without_exact_intended_match": 20,
+    "false_acceptances_without_findings": 5,
+    "interpretation": "This is literal equality of an output finding's criterion_id and target_id to a proposed annotation. It does not judge whether a finding's explanation is true, whether the answer's intended defect was detected for the right reason, or whether other semantically wrong answers passed. Action failures commonly have target_id null in output while annotations name a preference, so an answer can be rejected without an exact match. Most exact matches here come from direct gold-label or structural checks, not demonstrated semantic understanding."
+  },
+  "assurance_limits": [
+    "The 24 cases and 96 answers are synthetic agent-authored development material with proposed labels; human_approved_gold is false.",
+    "The project authors had prior development-corpus exposure. The pre-run boundary reviewer did not inspect answer or annotation contents before the first full run, but a combined structural-test process deserialized them; this is not an independent blind holdout.",
+    "This post-run reviewer inspected the five missed candidate cases and the measurement rows for all preference failures. This review is agent-authored and does not confer human approval.",
+    "No product release threshold, hiring probability, or general semantic-accuracy estimate follows from these local counts. Receipt hashes are local integrity bindings, not an external seal."
+  ],
+  "exposure_attestation": {
+    "post_run_answer_and_annotation_content_read": true,
+    "post_run_measurement_and_results_read": true,
+    "full_grading_rerun": false,
+    "frozen_artifacts_or_code_modified": false,
+    "human_approval": false
+  }
+}

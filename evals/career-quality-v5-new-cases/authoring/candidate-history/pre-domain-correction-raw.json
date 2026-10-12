@@ -1,0 +1,443 @@
+{
+  "schema": "maguire-v5-new-raw",
+  "family": "candidate-fit",
+  "human_approved": false,
+  "exposure": {
+    "checker_code_seen": false,
+    "previous_cases_seen": false,
+    "predictions_seen": false
+  },
+  "rows": [
+    {
+      "case_id": "CF5H-01",
+      "title": "Ledger continuity",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF5H-01-s1",
+          "text": "From January 2024 through March 2025, Mara maintained the archive migration ledger and recorded weekly handoffs for the archive team.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "Mara maintained the archive migration ledger for over a year and recorded weekly handoffs."
+      }
+    },
+    {
+      "case_id": "CF5H-02",
+      "title": "Shadowing versus presenting",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF5H-02-s1",
+          "text": "During the April 2025 pilot, Mara was permitted to shadow two customer demos; she did not present either demo.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "Mara presented two customer demos during the April 2025 pilot."
+      }
+    },
+    {
+      "case_id": "CF5H-03",
+      "title": "Weeknight on-call boundary",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF5H-03-s1",
+          "text": "This role has no mandatory weekday-night on-call duty.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "CF5H-03-s2",
+          "text": "Mara will not accept mandatory weekday-night on-call duty.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The role has no mandatory weekday-night on-call duty, and Mara will not accept it."
+      }
+    },
+    {
+      "case_id": "CF5H-04",
+      "title": "Pilot alert handling",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF5H-04-s1",
+          "text": "In a six-week service pilot in 2025, Mara triaged 18 alerts and escalated three of them to the SRE team.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "Mara triaged alerts and escalated three to the SRE team during the six-week service pilot."
+      }
+    },
+    {
+      "case_id": "CF5H-05",
+      "title": "Remote flexibility unresolved",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF5H-05-s1",
+          "text": "Two remote days per week would be ideal for Mara, although she can consider fewer for a compelling role.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "CF5H-05-s2",
+          "text": "This role normally permits one remote day per week; exceptions may be considered case by case.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The one-day remote arrangement fits Mara's flexibility."
+      }
+    },
+    {
+      "case_id": "CF5H-06",
+      "title": "Historical remote permission",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF5H-06-s1",
+          "text": "In 2023, Mara's former employer permitted three remote-work days per week; that employment ended in December 2023.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "CF5H-06-s2",
+          "text": "This role currently requires office attendance on all five weekdays and permits no remote-work days.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "This role currently permits Mara to work remotely three days a week."
+      }
+    },
+    {
+      "case_id": "CF5H-07",
+      "title": "OCR experience and certificate",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF5H-07-s1",
+          "text": "Mara used OCR to review scans for indexing during the June–August 2025 pilot. She has not earned an OCR training certificate.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "Mara has OCR indexing experience, but no OCR training certificate."
+      }
+    },
+    {
+      "case_id": "CF5H-08",
+      "title": "Relocation stipend budget",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF5H-08-s1",
+          "text": "This role commits to a relocation stipend budget of CHF 14,400 per calendar year.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "CF5H-08-s2",
+          "text": "Mara's minimum acceptable relocation stipend budget is CHF 1,000 per calendar month.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The relocation stipend budget meets Mara's stated minimum."
+      }
+    },
+    {
+      "case_id": "CF5H-09",
+      "title": "Allowance versus salary",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF5H-09-s1",
+          "text": "The role offers a CHF 2,000 learning allowance per calendar year, separate from base salary.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The role offers CHF 2,000 a year in base salary."
+      }
+    },
+    {
+      "case_id": "CF5H-10",
+      "title": "Conditional remote request",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF5H-10-s1",
+          "text": "Employees may request up to two remote-work days per calendar month with manager approval.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "CF5H-10-s2",
+          "text": "Mara wants to request one remote-work day per calendar month, subject to manager approval.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "Mara's one-day-per-month remote-work request is within the stated limit, subject to manager approval."
+      }
+    },
+    {
+      "case_id": "CF5H-11",
+      "title": "Lab versus production",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF5H-11-s1",
+          "text": "Mara only ran Kubernetes in a personal lab for four weeks and has not operated it in production.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "CF5H-11-s2",
+          "text": "Production Kubernetes experience is not required for this role.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The role does not require production Kubernetes experience, and Mara has only used it in a personal lab."
+      }
+    },
+    {
+      "case_id": "CF5H-12",
+      "title": "Partial archive processing",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF5H-12-s1",
+          "text": "By September 2025, Mara processed two of the five boxes in the legal archive; the remaining three were unprocessed.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "Mara processed all five boxes in the legal archive by September 2025."
+      }
+    },
+    {
+      "case_id": "CF5H-13",
+      "title": "Conflicting Saturday terms",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF5H-13-s1",
+          "text": "The rota requires Saturday coverage every other week.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "CF5H-13-s2",
+          "text": "Saturday coverage is optional for this role.",
+          "kind": "employer_update",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "Saturday coverage is optional for this role."
+      }
+    },
+    {
+      "case_id": "CF5H-14",
+      "title": "Interview captions",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF5H-14-s1",
+          "text": "All interviews for this role run on Meet with live captions enabled.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "CF5H-14-s2",
+          "text": "Mara needs live captions for interviews.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "Interviews for the role use Meet with live captions enabled, and Mara needs captions for interviews."
+      }
+    },
+    {
+      "case_id": "CF5H-15",
+      "title": "Team outcome attribution",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF5H-15-s1",
+          "text": "As one of six analysts, Mara tagged support tickets. The team reduced mean triage time by 30% that quarter; the report attributed no portion of the reduction to an individual.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "Mara cut mean triage time by 30% that quarter."
+      }
+    },
+    {
+      "case_id": "CF5H-16",
+      "title": "Explicit attendance replacement",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF5H-16-s1",
+          "text": "The original role notice requires onsite attendance four days per week.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "CF5H-16-s2",
+          "text": "This update replaces the original onsite rule. The role now requires onsite attendance two days per week.",
+          "kind": "employer_update",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "CF5H-16-s3",
+          "text": "Mara can attend onsite at most two days per week.",
+          "kind": "preference",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The updated two-day onsite requirement fits Mara's maximum."
+      }
+    },
+    {
+      "case_id": "CF5H-17",
+      "title": "Corrected course record",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF5H-17-s1",
+          "text": "An old draft says Mara was certified in data privacy in May 2025.",
+          "kind": "candidate_fact",
+          "status": "withdrawn",
+          "observed_at": "2025-05-30T12:00:00Z"
+        },
+        {
+          "id": "CF5H-17-s2",
+          "text": "Correction: Mara completed the vendor's data privacy course in May 2025 but did not take the certification exam.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "Mara completed the data privacy course in May 2025; she did not take the certification exam."
+      }
+    },
+    {
+      "case_id": "CF5H-18",
+      "title": "Swap request versus guarantee",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF5H-18-s1",
+          "text": "Assigned weekend on-call shifts are mandatory unless an approved swap is accepted. Staff may ask a teammate to swap, but acceptance is not guaranteed.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "The role guarantees Mara a weekend on-call-free schedule."
+      }
+    },
+    {
+      "case_id": "CF5H-19",
+      "title": "Bilingual onboarding",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF5H-19-s1",
+          "text": "In 2025, Mara handled four client onboarding sessions: two in French and two in English.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "CF5H-19-s2",
+          "text": "Bilingual client onboarding is required for this role.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "Mara has handled onboarding in both French and English, and the role requires bilingual onboarding."
+      }
+    },
+    {
+      "case_id": "CF5H-20",
+      "title": "Pilot runbook and training",
+      "decision_at": "2026-10-12T12:00:00Z",
+      "sources": [
+        {
+          "id": "CF5H-20-s1",
+          "text": "Mara wrote a runbook for a one-month pilot and trained three operators on it. The runbook was not used in production.",
+          "kind": "candidate_fact",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        },
+        {
+          "id": "CF5H-20-s2",
+          "text": "The role asks for runbook writing and operator training.",
+          "kind": "job_description",
+          "status": "active",
+          "observed_at": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "answer": {
+        "text": "Mara wrote a pilot runbook and trained three operators on it; the role calls for runbook writing and operator training."
+      }
+    }
+  ]
+}

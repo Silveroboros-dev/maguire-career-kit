@@ -1,0 +1,91 @@
+{
+  "schema": "maguire-quality-gold-v1",
+  "case_id": "PF-06",
+  "family": "salary_range_negotiation_unknown",
+  "title": "Indicative salary range leaves negotiated minimum unresolved",
+  "review_status": "proposed_agent_authored",
+  "human_approved": false,
+  "units": [
+    {
+      "target_id": "pref_salary",
+      "kind": "compensation",
+      "allowed_labels": [
+        "unknown"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_salary"
+        ]
+      ],
+      "rationale": "The indicative range is below the minimum, but the source explicitly leaves above-range negotiated offers possible; the final offer is absent.",
+      "required_points": [
+        "CHF 160,000 is above the indicative CHF 150,000 ceiling.",
+        "Above-range offers may be considered."
+      ],
+      "forbidden_inferences": [
+        "Do not assert a CHF 160,000 offer is available or impossible."
+      ]
+    },
+    {
+      "target_id": "pref_remote",
+      "kind": "work_arrangement",
+      "allowed_labels": [
+        "aligned"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_remote"
+        ]
+      ],
+      "rationale": "Remote work within Switzerland exactly matches the location preference.",
+      "required_points": [
+        "Fully remote work in Switzerland is stated."
+      ],
+      "forbidden_inferences": [
+        "Do not infer permission outside Switzerland."
+      ]
+    },
+    {
+      "target_id": "pref_travel",
+      "kind": "travel",
+      "allowed_labels": [
+        "aligned"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_travel"
+        ]
+      ],
+      "rationale": "At most two trips is within the candidate’s three-trip soft limit.",
+      "required_points": [
+        "The role caps travel at two trips per year."
+      ],
+      "forbidden_inferences": [
+        "Do not infer zero travel."
+      ]
+    }
+  ],
+  "forbidden_assessment_targets": [],
+  "acceptable_actions": [
+    "clarify"
+  ],
+  "critical_errors": [
+    {
+      "id": "PF-06-interpretation",
+      "description": "Misreads Indicative salary range leaves negotiated minimum unresolved: the salary preference or its cited role term.",
+      "target_ids": [
+        "pref_salary"
+      ]
+    },
+    {
+      "id": "PF-06-action",
+      "description": "Treating the indicative CHF 150,000 ceiling as a final cap falsely converts an unknown CHF 160,000 minimum to conflict.",
+      "target_ids": [
+        "pref_salary"
+      ]
+    }
+  ],
+  "notes": [
+    "The quoted range and candidate minimum use the same currency, units and pay component; legal and tax claims are out of scope."
+  ]
+}

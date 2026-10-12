@@ -1,0 +1,75 @@
+{
+  "schema": "maguire-quality-gold-v1",
+  "case_id": "CF-05",
+  "family": "partial compound duty",
+  "title": "Partial ownership of audit package",
+  "review_status": "proposed_agent_authored",
+  "human_approved": false,
+  "units": [
+    {
+      "target_id": "jd_1",
+      "kind": "compound_duty",
+      "allowed_labels": [
+        "partial"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_1",
+          "fact_1"
+        ]
+      ],
+      "rationale": "Two meaningful parts are reported, but final sign-off belonged to the controller.",
+      "required_points": [
+        "Reconciliation and commentary are supported",
+        "Final sign-off is not candidate-owned"
+      ],
+      "forbidden_inferences": [
+        "Do not collapse the compound duty into full ownership"
+      ]
+    },
+    {
+      "target_id": "jd_2",
+      "kind": "duty",
+      "allowed_labels": [
+        "supported"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_2",
+          "fact_2"
+        ]
+      ],
+      "rationale": "The ledger excerpt shows reference maintenance.",
+      "required_points": [
+        "Receipt references are recorded"
+      ],
+      "forbidden_inferences": [
+        "Do not infer audit approval authority"
+      ]
+    }
+  ],
+  "forbidden_assessment_targets": [],
+  "acceptable_actions": [
+    "clarify",
+    "pursue"
+  ],
+  "critical_errors": [
+    {
+      "id": "CF-05-E1",
+      "description": "The source assigns final sign-off to the controller.",
+      "target_ids": [
+        "jd_1"
+      ]
+    },
+    {
+      "id": "CF-05-E2",
+      "description": "The candidate reports reconciliation and commentary, a meaningful subset.",
+      "target_ids": [
+        "jd_1"
+      ]
+    }
+  ],
+  "notes": [
+    "Reconciliation and commentary are meaningful parts of the audit package, but the controller retained final sign-off."
+  ]
+}

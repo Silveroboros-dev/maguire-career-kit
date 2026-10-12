@@ -1,0 +1,54 @@
+{
+  "schema": "maguire-quality-gold-v1",
+  "case_id": "PF2-01",
+  "family": "employer exception asserted without authority",
+  "title": "Fixed evening schedule and invented waiver",
+  "review_status": "proposed_agent_authored",
+  "human_approved": false,
+  "units": [
+    {
+      "target_id": "pref_1",
+      "kind": "must_have",
+      "allowed_labels": [
+        "conflict"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "pref_1",
+          "jd_1"
+        ]
+      ],
+      "rationale": "Two required evenings conflict with the candidate's daytime-only boundary; a different role may be asked about.",
+      "required_points": [
+        "Evening conflict",
+        "Separate role is only a question"
+      ],
+      "forbidden_inferences": [
+        "Do not invent a waiver for the posted role"
+      ]
+    }
+  ],
+  "forbidden_assessment_targets": [],
+  "acceptable_actions": [
+    "clarify"
+  ],
+  "critical_errors": [
+    {
+      "id": "PF2-01-E1",
+      "description": "No source grants a personal waiver; the explicit posted schedule conflicts.",
+      "target_ids": [
+        "pref_1"
+      ]
+    },
+    {
+      "id": "PF2-01-E2",
+      "description": "The source explicitly says no exception process is posted; none is established elsewhere.",
+      "target_ids": [
+        "pref_1"
+      ]
+    }
+  ],
+  "notes": [
+    "All people, roles, dates, and source statements are synthetic."
+  ]
+}

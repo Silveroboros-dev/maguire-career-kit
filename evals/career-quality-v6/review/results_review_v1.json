@@ -1,0 +1,781 @@
+{
+  "schema": "maguire-v6-results-review-v1",
+  "status": "complete",
+  "created_at_utc": "2026-10-12T18:29:37.308386+00:00",
+  "human_approved": false,
+  "reviewer": "independent AI semantic reviewer",
+  "predictions_seen_after_freeze": true,
+  "checker_rerun_for_review": false,
+  "files": {
+    "FREEZE.json": {
+      "sha256": "15ba489de271266bde85ea12fb70929b548b70e0ce785320c62054cf86338e57",
+      "bytes": 17256
+    },
+    "START.json": {
+      "sha256": "ddd2607d411dbb8cbabee327b73eab6b2d897debe2e761cbbb0bfc457e51f1ef",
+      "bytes": 3634
+    },
+    "runs/regression-v6/RECEIPT.json": {
+      "sha256": "e06d9cd8a00866d8a0a8c86303d2a6693570116f27b07c1190e1b1f6835c659b",
+      "bytes": 1329
+    },
+    "runs/regression-v6/predictions.jsonl": {
+      "sha256": "2a0d0046c10372f38c82fe1553f1a14c3f108c4cecf9d758e8faba2b75ea84e9",
+      "bytes": 58134
+    },
+    "runs/regression-v6/measurement.json": {
+      "sha256": "f704a33072bc775cdf4428977de2032e4f1b7e2541ba7500c4dad76526257b55",
+      "bytes": 90188
+    },
+    "runs/regression-v6/comparison.json": {
+      "sha256": "83714c1cd68c5e042a5c047839f1bbe785fa93e407c568cb716b3a806ac3eb15",
+      "bytes": 14503
+    },
+    "raw/candidate-fit.json": {
+      "sha256": "8ddcce7a7a0cdc9e9986dbc68eec5b4b436dc31b5b6cbda02d786f3a041404b5",
+      "bytes": 15635
+    },
+    "raw/preference-fit.json": {
+      "sha256": "7dbdd88b9c0cbb83e23e7aacba554f0a65b175eb4dac3d861ce14a0913fdfff0",
+      "bytes": 17078
+    },
+    "normalized/candidate-fit.json": {
+      "sha256": "5ff8dea2ea5c5e2d2040329e5c2366d1f9bcf334d27688cde905dd9bec6ff460",
+      "bytes": 60806
+    },
+    "normalized/preference-fit.json": {
+      "sha256": "dd7d54a3620e93c051e5f0d20c1f340fd85b19f2d2f4556c540686a02cf771ed",
+      "bytes": 54254
+    },
+    "gold/candidate-fit.json": {
+      "sha256": "e9da4250f0c486a4b1d0340f5a378a2c63f60d6e063f397862f828e6465c0718",
+      "bytes": 5747
+    },
+    "gold/preference-fit.json": {
+      "sha256": "a0d0d6651b581af6977d2b0e636ad8b5aea0eb72e894f9169f20a8ddc4dace94",
+      "bytes": 5203
+    }
+  },
+  "summary": {
+    "cases": 40,
+    "claims": 61,
+    "gold_pass": 25,
+    "gold_fail": 12,
+    "gold_needs_review": 3,
+    "actual_pass": 24,
+    "actual_fail": 12,
+    "actual_needs_review": 4,
+    "invalid": 0,
+    "execution_errors": 0,
+    "missed_accepted_errors": 0,
+    "false_rejections": 0,
+    "ambiguous_forced_decisions": 0,
+    "intended_faulty_claims_flagged": 12,
+    "intended_faulty_claims_total": 12,
+    "wrong_clause_only_rejections": 0,
+    "extra_failed_claims_in_bad_fragments": 0,
+    "changed_v5_to_v6": 20,
+    "changed_good_review_to_pass": 15,
+    "changed_bad_review_to_fail": 5
+  },
+  "nonpass_cases": [
+    {
+      "case_id": "CF5H-02",
+      "gold": "fail",
+      "actual": "fail",
+      "intended_error_claim_ids": [
+        "c1"
+      ],
+      "failed_claim_ids": [
+        "c1"
+      ],
+      "review_claim_ids": [],
+      "localized_error_claim_ids": [
+        "c1"
+      ],
+      "other_failed_claim_ids": [],
+      "claim_rules": [
+        {
+          "claim_id": "c1",
+          "verdict": "fail",
+          "rule": "event_nonoccurrence",
+          "explanation": "An explicit denial of the event contradicts the asserted positive count.",
+          "evidence_ids": [
+            "CF5H-02-s1"
+          ]
+        }
+      ],
+      "review_note": "Explicit denial of presentation refutes claimed presentations; shadowing permission is not occurrence.",
+      "explanation_detail": "specific"
+    },
+    {
+      "case_id": "CF5H-05",
+      "gold": "needs_review",
+      "actual": "needs_review",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "review_claim_ids": [
+        "c1"
+      ],
+      "localized_error_claim_ids": [],
+      "other_failed_claim_ids": [],
+      "claim_rules": [
+        {
+          "claim_id": "c1",
+          "verdict": "needs_review",
+          "rule": "unknown_predicate",
+          "explanation": "Predicate has no registered comparison rule.",
+          "evidence_ids": []
+        }
+      ],
+      "review_note": "Transferability remains a qualitative judgment; unknown_predicate abstains, but gives only a generic cause.",
+      "explanation_detail": "generic"
+    },
+    {
+      "case_id": "CF5H-06",
+      "gold": "fail",
+      "actual": "fail",
+      "intended_error_claim_ids": [
+        "c1"
+      ],
+      "failed_claim_ids": [
+        "c1"
+      ],
+      "review_claim_ids": [],
+      "localized_error_claim_ids": [
+        "c1"
+      ],
+      "other_failed_claim_ids": [],
+      "claim_rules": [
+        {
+          "claim_id": "c1",
+          "verdict": "fail",
+          "rule": "evidence_gap",
+          "explanation": "Available evidence does not establish the asserted proposition: role / remote_work / work_location.",
+          "evidence_ids": [
+            "CF5H-06-s1",
+            "CF5H-06-s2"
+          ]
+        }
+      ],
+      "review_note": "Former employer permission cannot authorize this current role; current zero-day source is retained.",
+      "explanation_detail": "generic"
+    },
+    {
+      "case_id": "CF5H-09",
+      "gold": "fail",
+      "actual": "fail",
+      "intended_error_claim_ids": [
+        "c1"
+      ],
+      "failed_claim_ids": [
+        "c1"
+      ],
+      "review_claim_ids": [],
+      "localized_error_claim_ids": [
+        "c1"
+      ],
+      "other_failed_claim_ids": [],
+      "claim_rules": [
+        {
+          "claim_id": "c1",
+          "verdict": "fail",
+          "rule": "opposite_polarity",
+          "explanation": "Applicable evidence states the opposite polarity.",
+          "evidence_ids": [
+            "CF5H-09-s1",
+            "CF5H-09-s2"
+          ]
+        },
+        {
+          "claim_id": "c2",
+          "verdict": "pass",
+          "rule": "direct_support",
+          "explanation": "Direct support found.",
+          "evidence_ids": [
+            "CF5H-09-s2",
+            "CF5H-09-s1"
+          ]
+        }
+      ],
+      "review_note": "Candidate source expressly denies CISSP while the role requires it; only c1 fails.",
+      "explanation_detail": "specific"
+    },
+    {
+      "case_id": "CF5H-12",
+      "gold": "fail",
+      "actual": "fail",
+      "intended_error_claim_ids": [
+        "c1"
+      ],
+      "failed_claim_ids": [
+        "c1"
+      ],
+      "review_claim_ids": [],
+      "localized_error_claim_ids": [
+        "c1"
+      ],
+      "other_failed_claim_ids": [],
+      "claim_rules": [
+        {
+          "claim_id": "c1",
+          "verdict": "fail",
+          "rule": "evidence_gap",
+          "explanation": "Available evidence does not establish the asserted proposition: candidate / archive_processing / legal archive boxes.",
+          "evidence_ids": [
+            "CF5H-12-s1"
+          ]
+        }
+      ],
+      "review_note": "Two processed out of five, with three unprocessed, refute all five; generic evidence-gap text omits the arithmetic.",
+      "explanation_detail": "generic"
+    },
+    {
+      "case_id": "CF5H-13",
+      "gold": "needs_review",
+      "actual": "needs_review",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "review_claim_ids": [
+        "c1"
+      ],
+      "localized_error_claim_ids": [],
+      "other_failed_claim_ids": [],
+      "claim_rules": [
+        {
+          "claim_id": "c1",
+          "verdict": "needs_review",
+          "rule": "authorship_conflict",
+          "explanation": "Eligible sources disagree about the candidate's authorship of this plan.",
+          "evidence_ids": [
+            "CF5H-13-s1",
+            "CF5H-13-s2"
+          ]
+        }
+      ],
+      "review_note": "Opposing active authorship statements are both cited; neither is selected by order.",
+      "explanation_detail": "specific"
+    },
+    {
+      "case_id": "CF5H-15",
+      "gold": "fail",
+      "actual": "fail",
+      "intended_error_claim_ids": [
+        "c1"
+      ],
+      "failed_claim_ids": [
+        "c1"
+      ],
+      "review_claim_ids": [],
+      "localized_error_claim_ids": [
+        "c1"
+      ],
+      "other_failed_claim_ids": [],
+      "claim_rules": [
+        {
+          "claim_id": "c1",
+          "verdict": "fail",
+          "rule": "evidence_gap",
+          "explanation": "Available evidence does not establish the asserted proposition: candidate / triage_time_reduction / mean triage time.",
+          "evidence_ids": [
+            "CF5H-15-s1"
+          ]
+        }
+      ],
+      "review_note": "Thirty percent belongs to team and report assigns no individual share; rule is a generic evidence gap.",
+      "explanation_detail": "generic"
+    },
+    {
+      "case_id": "CF5H-18",
+      "gold": "fail",
+      "actual": "fail",
+      "intended_error_claim_ids": [
+        "c1"
+      ],
+      "failed_claim_ids": [
+        "c1"
+      ],
+      "review_claim_ids": [],
+      "localized_error_claim_ids": [
+        "c1"
+      ],
+      "other_failed_claim_ids": [],
+      "claim_rules": [
+        {
+          "claim_id": "c1",
+          "verdict": "fail",
+          "rule": "opposite_polarity",
+          "explanation": "Applicable evidence states the opposite polarity.",
+          "evidence_ids": [
+            "CF5H-18-s1",
+            "CF5H-18-s2"
+          ]
+        },
+        {
+          "claim_id": "c2",
+          "verdict": "pass",
+          "rule": "direct_support",
+          "explanation": "Direct support found.",
+          "evidence_ids": [
+            "CF5H-18-s2",
+            "CF5H-18-s1"
+          ]
+        }
+      ],
+      "review_note": "Production customer query is explicitly denied; role requirement c2 passes separately.",
+      "explanation_detail": "specific"
+    },
+    {
+      "case_id": "PF5H-02",
+      "gold": "fail",
+      "actual": "fail",
+      "intended_error_claim_ids": [
+        "c1"
+      ],
+      "failed_claim_ids": [
+        "c1"
+      ],
+      "review_claim_ids": [],
+      "localized_error_claim_ids": [
+        "c1"
+      ],
+      "other_failed_claim_ids": [],
+      "claim_rules": [
+        {
+          "claim_id": "c1",
+          "verdict": "fail",
+          "rule": "evidence_gap",
+          "explanation": "Available evidence does not establish the asserted proposition: role / learning_allowance / course_fees.",
+          "evidence_ids": [
+            "s1",
+            "s2"
+          ]
+        }
+      ],
+      "review_note": "Only conference travel is funded; course fees explicitly excluded. Evidence-gap text omits category cause.",
+      "explanation_detail": "generic"
+    },
+    {
+      "case_id": "PF5H-04",
+      "gold": "pass",
+      "actual": "needs_review",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "review_claim_ids": [
+        "c1"
+      ],
+      "localized_error_claim_ids": [],
+      "other_failed_claim_ids": [],
+      "claim_rules": [
+        {
+          "claim_id": "c1",
+          "verdict": "needs_review",
+          "rule": "operation_stance",
+          "explanation": "The operation requires an asserted proposition or advice.",
+          "evidence_ids": [
+            "s1",
+            "s2",
+            "s3"
+          ]
+        }
+      ],
+      "review_note": "Correct conditional answer remains deferred by stated stance boundary; no false rejection.",
+      "explanation_detail": "specific"
+    },
+    {
+      "case_id": "PF5H-06",
+      "gold": "fail",
+      "actual": "fail",
+      "intended_error_claim_ids": [
+        "c1"
+      ],
+      "failed_claim_ids": [
+        "c1"
+      ],
+      "review_claim_ids": [],
+      "localized_error_claim_ids": [
+        "c1"
+      ],
+      "other_failed_claim_ids": [],
+      "claim_rules": [
+        {
+          "claim_id": "c1",
+          "verdict": "fail",
+          "rule": "additional_restriction",
+          "explanation": "Other active terms on this property change the constraint assessment.",
+          "evidence_ids": [
+            "s1",
+            "s2"
+          ]
+        }
+      ],
+      "review_note": "Mandatory Sunday window conflicts with all-Sunday ban. Additional-restriction rule identifies conflict, but explanation is broad.",
+      "explanation_detail": "generic"
+    },
+    {
+      "case_id": "PF5H-08",
+      "gold": "fail",
+      "actual": "fail",
+      "intended_error_claim_ids": [
+        "c1"
+      ],
+      "failed_claim_ids": [
+        "c1"
+      ],
+      "review_claim_ids": [],
+      "localized_error_claim_ids": [
+        "c1"
+      ],
+      "other_failed_claim_ids": [],
+      "claim_rules": [
+        {
+          "claim_id": "c1",
+          "verdict": "fail",
+          "rule": "permission_envelope",
+          "explanation": "Requested interval compared with the explicit permission ceiling; grant is not inferred.",
+          "evidence_ids": [
+            "s1",
+            "s2"
+          ]
+        }
+      ],
+      "review_note": "Five requested days exceed explicit three-day monthly permission ceiling.",
+      "explanation_detail": "specific"
+    },
+    {
+      "case_id": "PF5H-10",
+      "gold": "needs_review",
+      "actual": "needs_review",
+      "intended_error_claim_ids": [],
+      "failed_claim_ids": [],
+      "review_claim_ids": [
+        "c1"
+      ],
+      "localized_error_claim_ids": [],
+      "other_failed_claim_ids": [],
+      "claim_rules": [
+        {
+          "claim_id": "c1",
+          "verdict": "needs_review",
+          "rule": "competing_terms",
+          "explanation": "Another active term or explicit supersession changes the selected evidence.",
+          "evidence_ids": [
+            "s1",
+            "s3",
+            "s2"
+          ]
+        }
+      ],
+      "review_note": "Three- and five-day active terms compete without replacement; both employer sources cited.",
+      "explanation_detail": "specific"
+    },
+    {
+      "case_id": "PF5H-14",
+      "gold": "fail",
+      "actual": "fail",
+      "intended_error_claim_ids": [
+        "c1"
+      ],
+      "failed_claim_ids": [
+        "c1"
+      ],
+      "review_claim_ids": [],
+      "localized_error_claim_ids": [
+        "c1"
+      ],
+      "other_failed_claim_ids": [],
+      "claim_rules": [
+        {
+          "claim_id": "c1",
+          "verdict": "fail",
+          "rule": "evidence_gap",
+          "explanation": "Available evidence does not establish the asserted proposition: role / station_attendance / onboarding.",
+          "evidence_ids": [
+            "s1",
+            "s2"
+          ]
+        }
+      ],
+      "review_note": "Four-day rule is superseded by two-day update; generic evidence gap does not name supersession.",
+      "explanation_detail": "generic"
+    },
+    {
+      "case_id": "PF5H-16",
+      "gold": "fail",
+      "actual": "fail",
+      "intended_error_claim_ids": [
+        "c1"
+      ],
+      "failed_claim_ids": [
+        "c1"
+      ],
+      "review_claim_ids": [],
+      "localized_error_claim_ids": [
+        "c1"
+      ],
+      "other_failed_claim_ids": [],
+      "claim_rules": [
+        {
+          "claim_id": "c1",
+          "verdict": "fail",
+          "rule": "evidence_gap",
+          "explanation": "Available evidence does not establish the asserted proposition: role / stipend / on_call_compensation.",
+          "evidence_ids": [
+            "s1"
+          ]
+        }
+      ],
+      "review_note": "Possible unfunded maximum cannot establish guaranteed exact payment; generic gap omits those words.",
+      "explanation_detail": "generic"
+    },
+    {
+      "case_id": "PF5H-18",
+      "gold": "fail",
+      "actual": "fail",
+      "intended_error_claim_ids": [
+        "c1"
+      ],
+      "failed_claim_ids": [
+        "c1"
+      ],
+      "review_claim_ids": [],
+      "localized_error_claim_ids": [
+        "c1"
+      ],
+      "other_failed_claim_ids": [],
+      "claim_rules": [
+        {
+          "claim_id": "c1",
+          "verdict": "fail",
+          "rule": "schedule_cutoff",
+          "explanation": "The exhaustive schedule extends beyond the prohibited cutoff.",
+          "evidence_ids": [
+            "s1",
+            "s2"
+          ]
+        }
+      ],
+      "review_note": "Demo ends at 15:00 after 14:00 cutoff; schedule_cutoff identifies the decisive time.",
+      "explanation_detail": "specific"
+    }
+  ],
+  "changed_outcomes": [
+    {
+      "case_id": "CF5H-01",
+      "family": "candidate-fit",
+      "case_content_sha256": "e1fce2954a18e912ff843a6673acf9c5f64bf84982ffe09cb6fe3755ad60d672",
+      "expected": "pass",
+      "v5": "needs_review",
+      "v6": "pass",
+      "v5_localized": [],
+      "v6_localized": []
+    },
+    {
+      "case_id": "CF5H-02",
+      "family": "candidate-fit",
+      "case_content_sha256": "11308a1818411cc44991287d5be91b624ccd12634a5755b2839df35423d1c675",
+      "expected": "fail",
+      "v5": "needs_review",
+      "v6": "fail",
+      "v5_localized": [],
+      "v6_localized": [
+        "c1"
+      ]
+    },
+    {
+      "case_id": "CF5H-03",
+      "family": "candidate-fit",
+      "case_content_sha256": "bb7c9f19e4e8942bbe7491c8388460da5677b3caff3938af53e5968fc82b308f",
+      "expected": "pass",
+      "v5": "needs_review",
+      "v6": "pass",
+      "v5_localized": [],
+      "v6_localized": []
+    },
+    {
+      "case_id": "CF5H-08",
+      "family": "candidate-fit",
+      "case_content_sha256": "668436210aa3499bb5682887fab952b2f3e9d36788eeb04683c56998aaeb6bc7",
+      "expected": "pass",
+      "v5": "needs_review",
+      "v6": "pass",
+      "v5_localized": [],
+      "v6_localized": []
+    },
+    {
+      "case_id": "CF5H-11",
+      "family": "candidate-fit",
+      "case_content_sha256": "ac6dcb21e08a22288f8fa781932a50266d3e3b077fb1a6f2cd4212a9b3f17f92",
+      "expected": "pass",
+      "v5": "needs_review",
+      "v6": "pass",
+      "v5_localized": [],
+      "v6_localized": []
+    },
+    {
+      "case_id": "CF5H-14",
+      "family": "candidate-fit",
+      "case_content_sha256": "951c1564a74bf4c58c3f65b1da4808d618b262227ee8576df5dd8e37e9eeca7f",
+      "expected": "pass",
+      "v5": "needs_review",
+      "v6": "pass",
+      "v5_localized": [],
+      "v6_localized": []
+    },
+    {
+      "case_id": "CF5H-15",
+      "family": "candidate-fit",
+      "case_content_sha256": "abdb474d4f0e2fafb0f80974ec9649e4f5fd95809a37ae2a4030f1c51ce023dc",
+      "expected": "fail",
+      "v5": "needs_review",
+      "v6": "fail",
+      "v5_localized": [],
+      "v6_localized": [
+        "c1"
+      ]
+    },
+    {
+      "case_id": "CF5H-16",
+      "family": "candidate-fit",
+      "case_content_sha256": "af79c2e3ffee89759fdf66faf18b87bd7fce8da10f3e2147fa06a39e07210713",
+      "expected": "pass",
+      "v5": "needs_review",
+      "v6": "pass",
+      "v5_localized": [],
+      "v6_localized": []
+    },
+    {
+      "case_id": "CF5H-17",
+      "family": "candidate-fit",
+      "case_content_sha256": "3e6b79e16d74d7a1ad4d660ff8e9f7f95d34c6a33af16315843ca32c4ef52c9b",
+      "expected": "pass",
+      "v5": "needs_review",
+      "v6": "pass",
+      "v5_localized": [],
+      "v6_localized": []
+    },
+    {
+      "case_id": "CF5H-18",
+      "family": "candidate-fit",
+      "case_content_sha256": "7e5eee8458b3fa2522441c95fae6d73c7801f6aea3d754ecf9b8df368d933673",
+      "expected": "fail",
+      "v5": "needs_review",
+      "v6": "fail",
+      "v5_localized": [],
+      "v6_localized": [
+        "c1"
+      ]
+    },
+    {
+      "case_id": "CF5H-19",
+      "family": "candidate-fit",
+      "case_content_sha256": "0161d67bbfb9864451bce10cff80a48d43985a80a0aa4e72b3b7de56ee9b372f",
+      "expected": "pass",
+      "v5": "needs_review",
+      "v6": "pass",
+      "v5_localized": [],
+      "v6_localized": []
+    },
+    {
+      "case_id": "CF5H-20",
+      "family": "candidate-fit",
+      "case_content_sha256": "7e55ad915bc58067e302c5044695a33826ebdd5ab8f78cfe77373e8fcd8197b4",
+      "expected": "pass",
+      "v5": "needs_review",
+      "v6": "pass",
+      "v5_localized": [],
+      "v6_localized": []
+    },
+    {
+      "case_id": "PF5H-03",
+      "family": "preference-fit",
+      "case_content_sha256": "f99b6146dbf24392e39b923cfe2932bc4762118ac38ca6e11646d3d37b7dc451",
+      "expected": "pass",
+      "v5": "needs_review",
+      "v6": "pass",
+      "v5_localized": [],
+      "v6_localized": []
+    },
+    {
+      "case_id": "PF5H-05",
+      "family": "preference-fit",
+      "case_content_sha256": "fd7e06be3996a1492e8d44d2b8d5072af81f6399162d7130656396b2beb13e58",
+      "expected": "pass",
+      "v5": "needs_review",
+      "v6": "pass",
+      "v5_localized": [],
+      "v6_localized": []
+    },
+    {
+      "case_id": "PF5H-06",
+      "family": "preference-fit",
+      "case_content_sha256": "f038c9409f3d3753920d86e7454403df5fd34b0604d21316b3c6f846e8fd7fed",
+      "expected": "fail",
+      "v5": "needs_review",
+      "v6": "fail",
+      "v5_localized": [],
+      "v6_localized": [
+        "c1"
+      ]
+    },
+    {
+      "case_id": "PF5H-09",
+      "family": "preference-fit",
+      "case_content_sha256": "2c26c87e1e3597269d77de5847beb06e2a4269cd2e407bcee355e6329a73040e",
+      "expected": "pass",
+      "v5": "needs_review",
+      "v6": "pass",
+      "v5_localized": [],
+      "v6_localized": []
+    },
+    {
+      "case_id": "PF5H-11",
+      "family": "preference-fit",
+      "case_content_sha256": "44f856eb70c9a5427379b1b26431723ff016ffc514ad1f5e4ca93e7791e60106",
+      "expected": "pass",
+      "v5": "needs_review",
+      "v6": "pass",
+      "v5_localized": [],
+      "v6_localized": []
+    },
+    {
+      "case_id": "PF5H-17",
+      "family": "preference-fit",
+      "case_content_sha256": "a5edeffd1ecf03d77e6c2c3fbc923ebbe4f3b9225b42d1660a56a53293a0f347",
+      "expected": "pass",
+      "v5": "needs_review",
+      "v6": "pass",
+      "v5_localized": [],
+      "v6_localized": []
+    },
+    {
+      "case_id": "PF5H-18",
+      "family": "preference-fit",
+      "case_content_sha256": "f7c2ab21b707f8bd00dbea60d2799b7035172f1d48c2eede6a0a88bdea93b268",
+      "expected": "fail",
+      "v5": "needs_review",
+      "v6": "fail",
+      "v5_localized": [],
+      "v6_localized": [
+        "c1"
+      ]
+    },
+    {
+      "case_id": "PF5H-20",
+      "family": "preference-fit",
+      "case_content_sha256": "8d13cb97864b9f9576de473da08f06d268c81aea1b656fabc56e395f4b366b6e",
+      "expected": "pass",
+      "v5": "needs_review",
+      "v6": "pass",
+      "v5_localized": [],
+      "v6_localized": []
+    }
+  ],
+  "assessment": {
+    "outcome_alignment": "All 12 rejected fragments fail their intended faulty claim and no other claim. The three gold-ambiguous fragments remain review. PF5H-04 is the sole gold-pass deferral, under the unchanged conditional-stance boundary.",
+    "explanation_limit": "Seven of the 12 failure messages are broad evidence-gap/additional-restriction descriptions; cited sources and axes support the failure but the message alone does not state every causal qualifier. Localization credit does not prove explanatory quality.",
+    "no_masking": "All 25 gold-pass fragments avoid fail; no bad fragment is rejected only for another clause. Review is neither acceptance nor detected error.",
+    "comparison_scope": "The 20 changed outcomes are paired on unchanged canonical source/answer content. This is exposed development regression evidence, not generalization."
+  },
+  "attestation": "I examined saved results, claim-level rules, evidence IDs, raw answers/sources and unchanged gold for every rejected or deferred case, and each changed v5-to-v6 outcome. I did not call the checker on target packets or modify frozen artifacts."
+}

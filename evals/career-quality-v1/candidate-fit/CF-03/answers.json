@@ -1,0 +1,178 @@
+{
+  "schema": "maguire-quality-answers-v1",
+  "case_id": "CF-03",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "assessments": [
+        {
+          "target_id": "jd_2",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "The engineer will maintain release checklists and participate in incident reviews."
+            },
+            {
+              "source_id": "fact_2",
+              "quote": "I have not participated in an incident review or maintained a release checklist."
+            }
+          ],
+          "rationale": "The candidate reports no prior checklist or review work; future ability is still unknown."
+        },
+        {
+          "target_id": "jd_3",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_3",
+              "quote": "The engineer will write Python scripts to check event payloads."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "I wrote Python scripts that checked event payload fields in a local test harness."
+            }
+          ],
+          "rationale": "The candidate reports writing Python payload checks in a local harness."
+        }
+      ],
+      "conclusion": {
+        "action": "pursue",
+        "text": "The entry waiver permits consideration and the Python duty has evidence; operational duties need evaluation.",
+        "next_step": "Prepare a release-checklist exercise to test the open skill before presenting it as experience."
+      },
+      "limitations": [
+        "The Python work is self-reported and local."
+      ]
+    },
+    {
+      "answer_id": "answer_02",
+      "assessments": [
+        {
+          "target_id": "jd_3",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_3",
+              "quote": "The engineer will write Python scripts to check event payloads."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "I wrote Python scripts that checked event payload fields in a local test harness."
+            }
+          ],
+          "rationale": "The local harness supports the Python scripting duty within that scope."
+        },
+        {
+          "target_id": "jd_2",
+          "label": "unknown",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "The engineer will maintain release checklists and participate in incident reviews."
+            },
+            {
+              "source_id": "fact_2",
+              "quote": "I have not participated in an incident review or maintained a release checklist."
+            }
+          ],
+          "rationale": "No past incident-review example is supplied."
+        }
+      ],
+      "conclusion": {
+        "action": "verify_skill",
+        "text": "The waived entry history and future operational duty need separate treatment.",
+        "next_step": "Use an incident-review scenario to assess the operational skill."
+      },
+      "limitations": [
+        "A simulation does not establish past production experience."
+      ]
+    },
+    {
+      "answer_id": "answer_03",
+      "assessments": [
+        {
+          "target_id": "jd_2",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "The engineer will maintain release checklists and participate in incident reviews."
+            },
+            {
+              "source_id": "fact_2",
+              "quote": "I have not participated in an incident review or maintained a release checklist."
+            }
+          ],
+          "rationale": "Because previous deployment is waived, the candidate already meets the checklist and incident-review skill."
+        },
+        {
+          "target_id": "jd_3",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_3",
+              "quote": "The engineer will write Python scripts to check event payloads."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "I wrote Python scripts that checked event payload fields in a local test harness."
+            }
+          ],
+          "rationale": "The candidate reports writing Python payload checks in a local harness."
+        }
+      ],
+      "conclusion": {
+        "action": "pursue",
+        "text": "The entry waiver permits consideration and the Python duty has evidence; operational duties need evaluation.",
+        "next_step": "Prepare a release-checklist exercise to test the open skill before presenting it as experience."
+      },
+      "limitations": [
+        "The Python work is self-reported and local."
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "assessments": [
+        {
+          "target_id": "jd_2",
+          "label": "contradicted",
+          "evidence": [
+            {
+              "source_id": "jd_2",
+              "quote": "The engineer will maintain release checklists and participate in incident reviews."
+            },
+            {
+              "source_id": "fact_2",
+              "quote": "I have not participated in an incident review or maintained a release checklist."
+            }
+          ],
+          "rationale": "No prior incident review means the candidate cannot participate in one."
+        },
+        {
+          "target_id": "jd_3",
+          "label": "supported",
+          "evidence": [
+            {
+              "source_id": "jd_3",
+              "quote": "The engineer will write Python scripts to check event payloads."
+            },
+            {
+              "source_id": "fact_1",
+              "quote": "I wrote Python scripts that checked event payload fields in a local test harness."
+            }
+          ],
+          "rationale": "The candidate reports writing Python payload checks in a local harness."
+        }
+      ],
+      "conclusion": {
+        "action": "pursue",
+        "text": "The entry waiver permits consideration and the Python duty has evidence; operational duties need evaluation.",
+        "next_step": "Prepare a release-checklist exercise to test the open skill before presenting it as experience."
+      },
+      "limitations": [
+        "The Python work is self-reported and local."
+      ]
+    }
+  ]
+}

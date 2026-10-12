@@ -1,0 +1,190 @@
+{
+  "schema": "maguire-quality-answers-v1",
+  "case_id": "PF-08",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "assessments": [
+        {
+          "target_id": "pref_remote",
+          "label": "conflict",
+          "evidence": [
+            {
+              "source_id": "jd_office",
+              "quote": "All employees in this role work on site four days each week."
+            }
+          ],
+          "rationale": "Four on-site days violate the zero-office must-have."
+        },
+        {
+          "target_id": "pref_learning",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_benefits",
+              "quote": "Benefits include an annual learning allowance and subsidized public transport."
+            }
+          ],
+          "rationale": "The stated allowance satisfies the soft learning preference."
+        },
+        {
+          "target_id": "pref_salary",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_salary",
+              "quote": "Annual base salary is CHF 175,000–190,000."
+            }
+          ],
+          "rationale": "The base range begins above the soft CHF 170,000 target."
+        }
+      ],
+      "conclusion": {
+        "action": "pass",
+        "text": "The salary and learning allowance are attractive, but four mandatory on-site days violate the remote must-have.",
+        "next_step": "Record a pass under the published office policy."
+      },
+      "limitations": [
+        "No approved remote exception is in the supplied evidence."
+      ]
+    },
+    {
+      "answer_id": "answer_02",
+      "assessments": [
+        {
+          "target_id": "pref_remote",
+          "label": "conflict",
+          "evidence": [
+            {
+              "source_id": "jd_office",
+              "quote": "All employees in this role work on site four days each week."
+            }
+          ],
+          "rationale": "Four on-site days violate the zero-office must-have."
+        },
+        {
+          "target_id": "pref_learning",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_benefits",
+              "quote": "Benefits include an annual learning allowance and subsidized public transport."
+            }
+          ],
+          "rationale": "The stated allowance satisfies the soft learning preference."
+        },
+        {
+          "target_id": "pref_salary",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_salary",
+              "quote": "Annual base salary is CHF 175,000–190,000."
+            }
+          ],
+          "rationale": "The base range begins above the soft CHF 170,000 target."
+        }
+      ],
+      "conclusion": {
+        "action": "clarify",
+        "text": "The published role conflicts with the remote must-have, and the candidate allows one documented-exception check.",
+        "next_step": "Ask once whether a zero-office exception is approved for this position; otherwise close it."
+      },
+      "limitations": [
+        "No approved remote exception is in the supplied evidence."
+      ]
+    },
+    {
+      "answer_id": "answer_03",
+      "assessments": [
+        {
+          "target_id": "pref_remote",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_office",
+              "quote": "All employees in this role work on site four days each week."
+            }
+          ],
+          "rationale": "The strong pay and learning allowance compensate for the office requirement."
+        },
+        {
+          "target_id": "pref_learning",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_benefits",
+              "quote": "Benefits include an annual learning allowance and subsidized public transport."
+            }
+          ],
+          "rationale": "The stated allowance satisfies the soft learning preference."
+        },
+        {
+          "target_id": "pref_salary",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_salary",
+              "quote": "Annual base salary is CHF 175,000–190,000."
+            }
+          ],
+          "rationale": "The base range begins above the soft CHF 170,000 target."
+        }
+      ],
+      "conclusion": {
+        "action": "pass",
+        "text": "The salary and learning allowance are attractive, but four mandatory on-site days violate the remote must-have.",
+        "next_step": "Record a pass under the published office policy."
+      },
+      "limitations": [
+        "No approved remote exception is in the supplied evidence."
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "assessments": [
+        {
+          "target_id": "pref_remote",
+          "label": "conflict",
+          "evidence": [
+            {
+              "source_id": "jd_office",
+              "quote": "All employees in this role work on site four days each week."
+            }
+          ],
+          "rationale": "Four on-site days violate the zero-office must-have."
+        },
+        {
+          "target_id": "pref_learning",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_benefits",
+              "quote": "Benefits include an annual learning allowance and subsidized public transport."
+            }
+          ],
+          "rationale": "The stated allowance satisfies the soft learning preference."
+        },
+        {
+          "target_id": "pref_salary",
+          "label": "aligned",
+          "evidence": [
+            {
+              "source_id": "jd_salary",
+              "quote": "Annual base salary is CHF 175,000–190,000."
+            }
+          ],
+          "rationale": "The base range begins above the soft CHF 170,000 target."
+        }
+      ],
+      "conclusion": {
+        "action": "pursue",
+        "text": "Apply because the two attractive soft terms outweigh four mandatory on-site days.",
+        "next_step": "Prepare the application under the published office schedule."
+      },
+      "limitations": [
+        "No approved remote exception is in the supplied evidence."
+      ]
+    }
+  ]
+}

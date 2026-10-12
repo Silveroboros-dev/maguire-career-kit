@@ -1,0 +1,91 @@
+{
+  "schema": "maguire-quality-gold-v1",
+  "case_id": "PF-04",
+  "family": "office_frequency_threshold",
+  "title": "Two office days exceed a one-day ceiling",
+  "review_status": "proposed_agent_authored",
+  "human_approved": false,
+  "units": [
+    {
+      "target_id": "pref_office",
+      "kind": "work_arrangement",
+      "allowed_labels": [
+        "conflict"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_office"
+        ]
+      ],
+      "rationale": "Two fixed days exceed the candidate’s maximum of one.",
+      "required_points": [
+        "Two required office days exceed one allowed day."
+      ],
+      "forbidden_inferences": [
+        "Do not assume the three home days make the office threshold acceptable."
+      ]
+    },
+    {
+      "target_id": "pref_hours",
+      "kind": "schedule",
+      "allowed_labels": [
+        "aligned"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_hours"
+        ]
+      ],
+      "rationale": "The stated weekly hours and day count exactly match the candidate.",
+      "required_points": [
+        "The role states 32 hours across four days."
+      ],
+      "forbidden_inferences": [
+        "Do not infer freedom to choose which four days."
+      ]
+    },
+    {
+      "target_id": "pref_conference",
+      "kind": "benefit",
+      "allowed_labels": [
+        "aligned"
+      ],
+      "acceptable_evidence_sets": [
+        [
+          "jd_budget"
+        ]
+      ],
+      "rationale": "The explicit budget meets the soft conference preference.",
+      "required_points": [
+        "An annual CHF 1,500 conference budget is provided."
+      ],
+      "forbidden_inferences": [
+        "Do not let a benefit cancel a schedule conflict."
+      ]
+    }
+  ],
+  "forbidden_assessment_targets": [],
+  "acceptable_actions": [
+    "clarify",
+    "pass"
+  ],
+  "critical_errors": [
+    {
+      "id": "PF-04-interpretation",
+      "description": "Misreads Two office days exceed a one-day ceiling: the office preference or its cited role term.",
+      "target_ids": [
+        "pref_office"
+      ]
+    },
+    {
+      "id": "PF-04-action",
+      "description": "For Two office days exceed a one-day ceiling, takes a next step inconsistent with the supported office result.",
+      "target_ids": [
+        "pref_office"
+      ]
+    }
+  ],
+  "notes": [
+    "A candidate-authorized inquiry does not turn the published office term into alignment."
+  ]
+}

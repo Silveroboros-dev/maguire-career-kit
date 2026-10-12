@@ -1,0 +1,2037 @@
+{
+  "schema": "maguire-v6-new-normalized",
+  "family": "candidate-fit",
+  "human_approved": false,
+  "exposure": {
+    "checker_code_seen": false,
+    "previous_cases_seen": false,
+    "predictions_seen": false
+  },
+  "rows": [
+    {
+      "case_id": "CF6H-01",
+      "sources": [
+        {
+          "id": "s1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "incident_review_facilitation",
+              "object": "museum systems team",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "contribution": "personal"
+              },
+              "time": {
+                "year": 2025,
+                "month": "2025-05"
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "review",
+                "lower": 3,
+                "upper": 3,
+                "per": null
+              }
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "facts": [
+            {
+              "subject": "operations analyst role",
+              "predicate": "incident_review_facilitation",
+              "object": "incident reviews",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "I personally facilitated three incident reviews for the museum systems team in May 2025",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "incident_review_facilitation",
+              "object": "museum systems team",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "contribution": "personal"
+              },
+              "time": {
+                "year": 2025,
+                "month": "2025-05"
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "review",
+                "lower": 3,
+                "upper": 3,
+                "per": null
+              }
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "The role requires incident review facilitation",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "operations analyst role",
+              "predicate": "incident_review_facilitation",
+              "object": "incident reviews",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF6H-02",
+      "sources": [
+        {
+          "id": "s1",
+          "facts": [
+            {
+              "subject": "support team",
+              "predicate": "triage_time_reduction",
+              "object": "median alert triage time",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "year": 2025
+              },
+              "measure": {
+                "kind": "rate",
+                "unit": "percent",
+                "lower": 20,
+                "upper": 20,
+                "per": null
+              }
+            },
+            {
+              "subject": "record",
+              "predicate": "personal_attribution",
+              "object": "triage time reduction",
+              "polarity": "negative",
+              "modality": "record_assessment",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "year": 2025
+              },
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "runbook_writing",
+              "object": "team alert runbook",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "contribution": "personal"
+              },
+              "time": {
+                "year": 2025
+              },
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "I wrote the alert runbook in 2025",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "runbook_writing",
+              "object": "team alert runbook",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "contribution": "personal"
+              },
+              "time": {
+                "year": 2025
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "personally reduced median alert triage time by 20%",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "triage_time_reduction",
+              "object": "median alert triage time",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "contribution": "personal"
+              },
+              "time": {
+                "year": 2025
+              },
+              "measure": {
+                "kind": "rate",
+                "unit": "percent",
+                "lower": 20,
+                "upper": 20,
+                "per": null
+              }
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF6H-03",
+      "sources": [
+        {
+          "id": "s1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "course_completion",
+              "object": "accessibility testing course",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "month": "2025-03"
+              },
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "guide_writing",
+              "object": "internal accessibility testing guide",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "audience": "internal"
+              },
+              "time": {
+                "month": "2025-04"
+              },
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "facts": [
+            {
+              "subject": "quality analyst role",
+              "predicate": "accessibility_documentation",
+              "object": "accessibility testing documentation",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "I completed an accessibility testing course in March 2025",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "course_completion",
+              "object": "accessibility testing course",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "month": "2025-03"
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "wrote an internal accessibility testing guide in April 2025",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "guide_writing",
+              "object": "internal accessibility testing guide",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "audience": "internal"
+              },
+              "time": {
+                "month": "2025-04"
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF6H-04",
+      "sources": [
+        {
+          "id": "s1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "sql_query",
+              "object": "inventory dataset",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "environment": "sandbox"
+              },
+              "time": {
+                "month": "2025-06"
+              },
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "facts": [
+            {
+              "subject": "data coordinator role",
+              "predicate": "sql_query",
+              "object": "SQL query experience",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "I ran SQL queries against a sandbox inventory dataset in June 2025",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "sql_query",
+              "object": "inventory dataset",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "environment": "sandbox"
+              },
+              "time": {
+                "month": "2025-06"
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "The role asks for SQL query experience",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "data coordinator role",
+              "predicate": "sql_query",
+              "object": "SQL query experience",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF6H-05",
+      "sources": [
+        {
+          "id": "s1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "client_onboarding",
+              "object": "two calls",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "activity": "shadowing"
+              },
+              "time": {
+                "year": 2025
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "call",
+                "lower": 2,
+                "upper": 2,
+                "per": null
+              }
+            },
+            {
+              "subject": "candidate",
+              "predicate": "handoff_recording",
+              "object": "subsequent notes",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "year": 2025
+              },
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "facts": [
+            {
+              "subject": "client success lead role",
+              "predicate": "client_onboarding",
+              "object": "onboarding calls",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {
+                "activity": "independent_leadership"
+              },
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "I shadowed two client onboarding calls",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "client_onboarding",
+              "object": "two calls",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "activity": "shadowing"
+              },
+              "time": {
+                "year": 2025
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "call",
+                "lower": 2,
+                "upper": 2,
+                "per": null
+              }
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "authored their handoff notes",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "handoff_recording",
+              "object": "subsequent notes",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "year": 2025
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c3",
+          "quote": "That experience may be relevant to leading onboarding calls independently",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "fit_relevance",
+              "object": "leading onboarding calls independently",
+              "polarity": "positive",
+              "modality": "possibility",
+              "epistemic_scope": "packet",
+              "scope": {
+                "basis": "shadowing_and_handoff_notes"
+              },
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF6H-06",
+      "sources": [
+        {
+          "id": "s1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "course_completion",
+              "object": "rail-safety operator course",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "year": 2024
+              },
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "certification_exam",
+              "object": "rail-safety operator exam",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "result": "passed"
+              },
+              "time": {
+                "year": 2024
+              },
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "s3",
+          "facts": [
+            {
+              "subject": "rail operations role",
+              "predicate": "training_certification",
+              "object": "course and exam",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "I completed the rail-safety operator course",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "course_completion",
+              "object": "rail-safety operator course",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "year": 2024
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "passed its certification exam in 2024",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "certification_exam",
+              "object": "rail-safety operator exam",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "result": "passed"
+              },
+              "time": {
+                "year": 2024
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF6H-07",
+      "sources": [
+        {
+          "id": "s1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "demo_presentation",
+              "object": "product demo",
+              "polarity": "positive",
+              "modality": "permission",
+              "epistemic_scope": "world",
+              "scope": {
+                "venue": "team meeting"
+              },
+              "time": {
+                "month": "2025-06"
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "demo",
+                "lower": 1,
+                "upper": 1,
+                "per": null
+              }
+            },
+            {
+              "subject": "record",
+              "predicate": "delivered_demo_evidence",
+              "object": "team product demo",
+              "polarity": "negative",
+              "modality": "record_assessment",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "month": "2025-06"
+              },
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "facts": [
+            {
+              "subject": "product trainer role",
+              "predicate": "demo_presentation",
+              "object": "delivered demos",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "I was permitted to present a product demo in June 2025",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "demo_presentation",
+              "object": "product demo",
+              "polarity": "positive",
+              "modality": "permission",
+              "epistemic_scope": "world",
+              "scope": {
+                "venue": "team meeting"
+              },
+              "time": {
+                "month": "2025-06"
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "demo",
+                "lower": 1,
+                "upper": 1,
+                "per": null
+              }
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "delivered that demo to the team",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "demo_presentation",
+              "object": "product demo",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "venue": "team meeting"
+              },
+              "time": {
+                "month": "2025-06"
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "demo",
+                "lower": 1,
+                "upper": 1,
+                "per": null
+              }
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF6H-08",
+      "sources": [
+        {
+          "id": "s1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "archive_processing",
+              "object": "archive records",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "method": "manual",
+                "project": "catalog migration"
+              },
+              "time": {
+                "year": 2025
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "record",
+                "lower": 150,
+                "upper": 150,
+                "per": null
+              }
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "facts": [
+            {
+              "subject": "archivist role",
+              "predicate": "archive_processing",
+              "object": "archive records",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "I manually processed 150 archive records during the 2025 catalog migration",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "archive_processing",
+              "object": "archive records",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "method": "manual",
+                "project": "catalog migration"
+              },
+              "time": {
+                "year": 2025
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "record",
+                "lower": 150,
+                "upper": 150,
+                "per": null
+              }
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "The role requires archive processing experience",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "archivist role",
+              "predicate": "archive_processing",
+              "object": "archive records",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF6H-09",
+      "sources": [
+        {
+          "id": "s1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "rollback_plan_writing",
+              "object": "East Depot vendor cutover",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "year": 2025
+              },
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "cutover_observation",
+              "object": "East Depot vendor cutover",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "year": 2025
+              },
+              "measure": null
+            },
+            {
+              "subject": "candidate",
+              "predicate": "vendor_cutover_coordination",
+              "object": "East Depot vendor cutover",
+              "polarity": "negative",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "year": 2025
+              },
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "I wrote the rollback plan for the East Depot vendor cutover",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "rollback_plan_writing",
+              "object": "East Depot vendor cutover",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "year": 2025
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "observed the cutover in 2025",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "cutover_observation",
+              "object": "East Depot vendor cutover",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "year": 2025
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF6H-10",
+      "sources": [
+        {
+          "id": "s1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "kubernetes_use",
+              "object": "practice service deployment",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "environment": "sandbox"
+              },
+              "time": {
+                "year": 2023
+              },
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "facts": [
+            {
+              "subject": "infrastructure role",
+              "predicate": "kubernetes_use",
+              "object": "Kubernetes",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {
+                "environment": "production"
+              },
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "I used Kubernetes in production in 2023 to deploy a service",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "kubernetes_use",
+              "object": "service deployment",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "environment": "production"
+              },
+              "time": {
+                "year": 2023
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF6H-11",
+      "sources": [
+        {
+          "id": "s1",
+          "facts": [
+            {
+              "subject": "candidate and colleague",
+              "predicate": "operator_training",
+              "object": "depot operators on new intake form",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "contribution": "joint"
+              },
+              "time": {
+                "month": "2025-07"
+              },
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "facts": [
+            {
+              "subject": "operations educator role",
+              "predicate": "operator_training",
+              "object": "operators",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "I jointly trained depot operators on the new intake form in July 2025",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate and colleague",
+              "predicate": "operator_training",
+              "object": "depot operators on new intake form",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "contribution": "joint"
+              },
+              "time": {
+                "month": "2025-07"
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF6H-12",
+      "sources": [
+        {
+          "id": "s1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "sql_query",
+              "object": "monthly warehouse reports",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "frequency": "monthly"
+              },
+              "time": {
+                "start": "2022-01",
+                "end": "2024-04"
+              },
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "facts": [
+            {
+              "subject": "reporting specialist role",
+              "predicate": "sql_query",
+              "object": "previous SQL query work",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "I used SQL queries for monthly warehouse reports from January 2022 through April 2024",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "sql_query",
+              "object": "monthly warehouse reports",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "frequency": "monthly"
+              },
+              "time": {
+                "start": "2022-01",
+                "end": "2024-04"
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF6H-13",
+      "sources": [
+        {
+          "id": "s1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "guide_writing",
+              "object": "public incident response guide",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "audience": "public"
+              },
+              "time": {},
+              "measure": null
+            },
+            {
+              "subject": "draft",
+              "predicate": "author_field_accuracy",
+              "object": "public incident response guide",
+              "polarity": "negative",
+              "modality": "record_assessment",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "plan_review",
+              "object": "internal incident response plan",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "audience": "internal"
+              },
+              "time": {
+                "year": 2025
+              },
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "I reviewed an internal incident response plan in 2025",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "plan_review",
+              "object": "internal incident response plan",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "audience": "internal"
+              },
+              "time": {
+                "year": 2025
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "wrote the public incident response guide",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "guide_writing",
+              "object": "public incident response guide",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "audience": "public"
+              },
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF6H-14",
+      "sources": [
+        {
+          "id": "s1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "alert_triage",
+              "object": "incoming alerts",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "phase": "pilot"
+              },
+              "time": {
+                "year": 2025
+              },
+              "measure": null
+            },
+            {
+              "subject": "candidate",
+              "predicate": "alert_escalation",
+              "object": "severe alerts to duty engineer",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "phase": "pilot"
+              },
+              "time": {
+                "year": 2025
+              },
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "facts": [
+            {
+              "subject": "monitoring role",
+              "predicate": "alert_triage",
+              "object": "alerts",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            },
+            {
+              "subject": "monitoring role",
+              "predicate": "alert_escalation",
+              "object": "alerts",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "During the 2025 pilot, I triaged incoming alerts",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "alert_triage",
+              "object": "incoming alerts",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "phase": "pilot"
+              },
+              "time": {
+                "year": 2025
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "escalated severe ones to the duty engineer",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "alert_escalation",
+              "object": "severe alerts to duty engineer",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "phase": "pilot"
+              },
+              "time": {
+                "year": 2025
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF6H-15",
+      "sources": [
+        {
+          "id": "s1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "training_demo",
+              "object": "internal staff",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "audience": "internal"
+              },
+              "time": {
+                "year": 2025
+              },
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "facts": [
+            {
+              "subject": "solutions consultant role",
+              "predicate": "demo_presentation",
+              "object": "customer-facing product demos",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {
+                "audience": "customer"
+              },
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "I presented a training demo to internal staff in 2025",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "training_demo",
+              "object": "internal staff",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "audience": "internal"
+              },
+              "time": {
+                "year": 2025
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "That practice could prepare me for customer-facing product demos",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "fit_relevance",
+              "object": "customer-facing product demos",
+              "polarity": "positive",
+              "modality": "possibility",
+              "epistemic_scope": "packet",
+              "scope": {
+                "basis": "internal_training_demo"
+              },
+              "time": {},
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF6H-16",
+      "sources": [
+        {
+          "id": "s1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "certification_exam",
+              "object": "flood-response exam",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "result": "passed"
+              },
+              "time": {
+                "month": "2025-08"
+              },
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "certificate_status",
+              "object": "flood-response certificate",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "status": "pending"
+              },
+              "time": {
+                "month": "2025-09"
+              },
+              "measure": null
+            },
+            {
+              "subject": "issuing body",
+              "predicate": "certificate_issuance",
+              "object": "candidate flood-response certificate",
+              "polarity": "negative",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "month": "2025-09"
+              },
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "I passed the flood-response certification exam in August 2025",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "certification_exam",
+              "object": "flood-response exam",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "result": "passed"
+              },
+              "time": {
+                "month": "2025-08"
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "my certificate was still pending in September 2025",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "certificate_status",
+              "object": "flood-response certificate",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "status": "pending"
+              },
+              "time": {
+                "month": "2025-09"
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF6H-17",
+      "sources": [
+        {
+          "id": "s1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "checklist_documentation",
+              "object": "vendor cutover checklist",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "year": 2025
+              },
+              "measure": null
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "facts": [
+            {
+              "subject": "procurement team",
+              "predicate": "vendor_cutover_coordination",
+              "object": "vendor cutover",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "year": 2025
+              },
+              "measure": null
+            },
+            {
+              "subject": "record",
+              "predicate": "personal_attribution",
+              "object": "vendor cutover coordination",
+              "polarity": "negative",
+              "modality": "record_assessment",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "year": 2025
+              },
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "I documented the vendor cutover checklist",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "checklist_documentation",
+              "object": "vendor cutover checklist",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "year": 2025
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "coordinated the vendor cutover in 2025",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "vendor_cutover_coordination",
+              "object": "vendor cutover",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "year": 2025
+              },
+              "measure": null
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF6H-18",
+      "sources": [
+        {
+          "id": "s1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "tool_building",
+              "object": "intake tool",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "phase": "internal pilot",
+                "duration": "three weeks"
+              },
+              "time": {
+                "year": 2025
+              },
+              "measure": null
+            },
+            {
+              "subject": "intake tool",
+              "predicate": "pilot_use",
+              "object": "staff",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "phase": "internal pilot",
+                "duration": "three weeks"
+              },
+              "time": {
+                "year": 2025
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "staff",
+                "lower": 30,
+                "upper": 30,
+                "per": null
+              }
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "facts": [
+            {
+              "subject": "service designer role",
+              "predicate": "internal_tool_delivery",
+              "object": "internal tool",
+              "polarity": "positive",
+              "modality": "requirement",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {},
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "I built an intake tool used by 30 staff in a three-week internal pilot in 2025",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "tool_building",
+              "object": "intake tool",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "phase": "internal pilot",
+                "duration": "three weeks"
+              },
+              "time": {
+                "year": 2025
+              },
+              "measure": null
+            },
+            {
+              "subject": "intake tool",
+              "predicate": "pilot_use",
+              "object": "staff",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "phase": "internal pilot",
+                "duration": "three weeks"
+              },
+              "time": {
+                "year": 2025
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "staff",
+                "lower": 30,
+                "upper": 30,
+                "per": null
+              }
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF6H-19",
+      "sources": [
+        {
+          "id": "s1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "guide_writing",
+              "object": "operator guides",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "year": 2024
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "guide",
+                "lower": 2,
+                "upper": 2,
+                "per": null
+              }
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "facts": [
+            {
+              "subject": "peer",
+              "predicate": "guide_review",
+              "object": "one operator guide",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "phase": "before publication"
+              },
+              "time": {
+                "year": 2024
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "guide",
+                "lower": 1,
+                "upper": 1,
+                "per": null
+              }
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "I authored two operator guides in 2024",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "guide_writing",
+              "object": "operator guides",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "year": 2024
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "guide",
+                "lower": 2,
+                "upper": 2,
+                "per": null
+              }
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "a peer reviewed one before publication",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "peer",
+              "predicate": "guide_review",
+              "object": "one operator guide",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "phase": "before publication"
+              },
+              "time": {
+                "year": 2024
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "guide",
+                "lower": 1,
+                "upper": 1,
+                "per": null
+              }
+            }
+          ],
+          "check": null
+        }
+      ]
+    },
+    {
+      "case_id": "CF6H-20",
+      "sources": [
+        {
+          "id": "s1",
+          "facts": [
+            {
+              "subject": "candidate",
+              "predicate": "incident_handling",
+              "object": "service incidents",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "contribution": "personal"
+              },
+              "time": {
+                "year": 2024
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "incident",
+                "lower": 12,
+                "upper": 12,
+                "per": null
+              }
+            }
+          ]
+        },
+        {
+          "id": "s2",
+          "facts": [
+            {
+              "subject": "service team",
+              "predicate": "incident_handling",
+              "object": "service incidents",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "year": 2025
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "incident",
+                "lower": 18,
+                "upper": 18,
+                "per": null
+              }
+            },
+            {
+              "subject": "record",
+              "predicate": "personal_attribution",
+              "object": "2025 service incidents",
+              "polarity": "negative",
+              "modality": "record_assessment",
+              "epistemic_scope": "world",
+              "scope": {},
+              "time": {
+                "year": 2025
+              },
+              "measure": null
+            }
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "quote": "I personally handled 12 service incidents in 2024",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "incident_handling",
+              "object": "service incidents",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "contribution": "personal"
+              },
+              "time": {
+                "year": 2024
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "incident",
+                "lower": 12,
+                "upper": 12,
+                "per": null
+              }
+            }
+          ],
+          "check": null
+        },
+        {
+          "id": "c2",
+          "quote": "personally handled 18 service incidents in 2025",
+          "stance": "asserted",
+          "readings": [
+            {
+              "subject": "candidate",
+              "predicate": "incident_handling",
+              "object": "service incidents",
+              "polarity": "positive",
+              "modality": "observation",
+              "epistemic_scope": "world",
+              "scope": {
+                "contribution": "personal"
+              },
+              "time": {
+                "year": 2025
+              },
+              "measure": {
+                "kind": "count",
+                "unit": "incident",
+                "lower": 18,
+                "upper": 18,
+                "per": null
+              }
+            }
+          ],
+          "check": null
+        }
+      ]
+    }
+  ]
+}

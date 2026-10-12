@@ -1,0 +1,66 @@
+{
+  "schema": "maguire-quality-annotations-v1",
+  "case_id": "CF2-03",
+  "answers": [
+    {
+      "answer_id": "answer_01",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The assessment keeps the stated evidence and its limits in scope.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_02",
+      "expected_verdict": "pass",
+      "citation_integrity": "pass",
+      "reason": "The independent acceptable conclusion preserves the same substantive constraints.",
+      "mutation": null,
+      "expected_findings": []
+    },
+    {
+      "answer_id": "answer_03",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "A failed past-use minimum does not establish inability to perform a future duty.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "recency to permanent incapacity",
+        "description": "A failed past-use minimum does not establish inability to perform a future duty.",
+        "changed_paths": [
+          "/conclusion/text"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "CF-LABEL",
+          "severity": "major",
+          "target_id": "jd_2",
+          "explanation": "A failed past-use minimum does not establish inability to perform a future duty."
+        }
+      ]
+    },
+    {
+      "answer_id": "answer_04",
+      "expected_verdict": "fail",
+      "citation_integrity": "pass",
+      "reason": "The old date supports a recency conflict, not a forecast of incapacity.",
+      "mutation": {
+        "base_answer_id": "answer_01",
+        "category": "recency to future inability",
+        "description": "The old date supports a recency conflict, not a forecast of incapacity.",
+        "changed_paths": [
+          "/assessments/1/rationale"
+        ]
+      },
+      "expected_findings": [
+        {
+          "criterion_id": "CF-SCOPE",
+          "severity": "major",
+          "target_id": "jd_2",
+          "explanation": "The old date supports a recency conflict, not a forecast of incapacity."
+        }
+      ]
+    }
+  ]
+}
