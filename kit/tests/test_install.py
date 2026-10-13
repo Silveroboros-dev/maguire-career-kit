@@ -1,6 +1,7 @@
 """Behavioral checks for safe local installation and update."""
 
 import hashlib
+import json
 from pathlib import Path
 import shutil
 import subprocess
@@ -17,6 +18,101 @@ def sha(path):
 
 
 class InstallTest(unittest.TestCase):
+    def test_portable_nested_download_preserves_candidate_records_without_agents_access(self):
+        with tempfile.TemporaryDirectory(prefix="maguire-kit-test-") as root:
+            root = Path(root)
+            workspace = root / "candidate"
+            source = workspace / ".maguire/download/release"
+            shutil.copytree(KIT, source, ignore=shutil.ignore_patterns(".DS_Store", "__pycache__"))
+            # A candidate Git repository above a downloaded release is not the
+            # kit's source repository.
+            (workspace / ".git").mkdir()
+            cv = workspace / "originals/CV.md"
+            jd = workspace / "applications/role-1/job.md"
+            cv.parent.mkdir()
+            jd.parent.mkdir(parents=True)
+            cv.write_text("Synthetic candidate CV\n", encoding="utf-8")
+            jd.write_text("Synthetic job description\n", encoding="utf-8")
+            agents = workspace / "AGENTS.md"
+            agents.write_text("Candidate project rules\n", encoding="utf-8")
+            protected = root / "protected-agents"
+            protected.mkdir()
+            marker = protected / "marker"
+            marker.write_text("unchanged\n", encoding="utf-8")
+            (workspace / ".agents").symlink_to(protected, target_is_directory=True)
+            before = {path: sha(path) for path in (cv, jd, agents, marker)}
+
+            command = [sys.executable, str(source / "install.py"), "--portable", str(workspace)]
+            first = subprocess.run(command, check=True, capture_output=True, text=True)
+            self.assertIn("PORTABLE: Ask your agent to read", first.stdout)
+            self.assertIn(".maguire/kit/skills/maguire-career-pilot/SKILL.md", first.stdout)
+            self.assertIn("PRESERVED AGENTS.md", first.stdout)
+            self.assertTrue((workspace / ".maguire/kit/skills/maguire-career-pilot/SKILL.md").is_file())
+            self.assertTrue((workspace / ".maguire/kit/graders/jd-fit.md").is_file())
+            self.assertTrue((workspace / ".maguire/kit/graders/employer-fit.md").is_file())
+            self.assertEqual(list(protected.iterdir()), [marker])
+            self.assertEqual({path: sha(path) for path in before}, before)
+            manifest = json.loads((workspace / ".maguire/kit/manifest.json").read_text())
+            self.assertNotIn(".agents/skills/maguire-career-pilot/SKILL.md", manifest["files"])
+
+            canonical = workspace / ".maguire/kit/skills/maguire-career-pilot/SKILL.md"
+            canonical.write_text(canonical.read_text() + "\nLocal candidate instruction.\n")
+            second = subprocess.run(command, check=True, capture_output=True, text=True)
+            self.assertIn("PRESERVED .maguire/kit/skills/maguire-career-pilot/SKILL.md", second.stdout)
+            self.assertIn("Local candidate instruction.", canonical.read_text())
+            self.assertEqual(len(list(canonical.parent.glob("SKILL.md.maguire-incoming-*"))), 1)
+            self.assertEqual({path: sha(path) for path in before}, before)
+            self.assertEqual(list(protected.iterdir()), [marker])
+
+    def test_normal_and_portable_reruns_share_canonical_skill(self):
+        with tempfile.TemporaryDirectory(prefix="maguire-kit-test-") as root:
+            root = Path(root)
+            source = root / "source"
+            workspace = root / "candidate"
+            shutil.copytree(KIT, source, ignore=shutil.ignore_patterns(".DS_Store", "__pycache__"))
+
+            def install(*options):
+                return subprocess.run(
+                    [sys.executable, str(source / "install.py"), *options, str(workspace)],
+                    check=True, capture_output=True, text=True,
+                ).stdout
+
+            install("--portable")
+            normal = install()
+            self.assertIn("INSTALLED .agents/skills/maguire-career-pilot/SKILL.md", normal)
+            canonical = workspace / ".maguire/kit/skills/maguire-career-pilot/SKILL.md"
+            discoverable = workspace / ".agents/skills/maguire-career-pilot/SKILL.md"
+            self.assertEqual(sha(canonical), sha(discoverable))
+            self.assertIn("'installed': 0", install("--portable"))
+            self.assertIn("'installed': 0", install())
+
+    def test_rejects_workspace_in_source_repo_and_source_in_managed_destination(self):
+        with tempfile.TemporaryDirectory(prefix="maguire-kit-test-") as root:
+            root = Path(root)
+            repo = root / "source-repo"
+            source = repo / "kit"
+            shutil.copytree(KIT, source, ignore=shutil.ignore_patterns(".DS_Store", "__pycache__"))
+            (repo / ".git").mkdir()
+            workspace = repo / "private-candidate"
+            result = subprocess.run(
+                [sys.executable, str(source / "install.py"), str(workspace)],
+                capture_output=True, text=True,
+            )
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("source repository", result.stderr)
+            self.assertFalse(workspace.exists())
+
+            workspace = root / "candidate"
+            overlapping = workspace / ".maguire/kit/download"
+            shutil.copytree(KIT, overlapping, ignore=shutil.ignore_patterns(".DS_Store", "__pycache__"))
+            result = subprocess.run(
+                [sys.executable, str(overlapping / "install.py"), "--portable", str(workspace)],
+                capture_output=True, text=True,
+            )
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("overlaps an installer-managed path", result.stderr)
+            self.assertFalse((workspace / ".maguire/kit/manifest.json").exists())
+
     def test_incomplete_kit_never_creates_or_changes_a_workspace(self):
         # Entire directories, individual templates and core instructions must
         # all fail before any write, including when updating an existing install.

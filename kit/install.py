@@ -41,6 +41,8 @@ REQUIRED_GRADERS = (
     "TEMPORAL_CHANGES.md",
     "source-manifest.json",
     "grade.py",
+    "review.py",
+    "REVIEW_FORMAT.md",
     "grade_packets.py",
     "checker.py",
     "temporal.py",
@@ -52,14 +54,18 @@ def digest(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
 
 
-def managed_files() -> dict[Path, Path]:
+def managed_files(portable: bool = False) -> dict[Path, Path]:
     files = {
         Path("AGENTS.md"): KIT / "AGENTS.md",
         Path(".maguire/kit/AGENTS.md"): KIT / "AGENTS.md",
         Path(".maguire/kit/README.md"): KIT / "README.md",
-        Path(".agents/skills/maguire-career-pilot/SKILL.md"):
+        Path(".maguire/kit/skills/maguire-career-pilot/SKILL.md"):
             KIT / "skills/maguire-career-pilot/SKILL.md",
     }
+    if not portable:
+        files[Path(".agents/skills/maguire-career-pilot/SKILL.md")] = (
+            KIT / "skills/maguire-career-pilot/SKILL.md"
+        )
     for relative in REQUIRED_TEMPLATES:
         files[Path(".maguire/kit/templates") / relative] = KIT / "templates" / relative
     for relative in REQUIRED_GRADERS:
@@ -96,20 +102,34 @@ def atomic_write(path: Path, data: bytes) -> None:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--portable", action="store_true",
+        help="Install the complete kit without writing .agents; read the skill explicitly",
+    )
     parser.add_argument("workspace", type=Path, help="Candidate-owned folder")
     args = parser.parse_args()
     workspace = args.workspace.expanduser().resolve()
-    if workspace == KIT or KIT in workspace.parents or workspace in KIT.parents:
-        parser.error("Choose a separate candidate-owned workspace, outside the kit source")
-    source_repo = next((parent for parent in KIT.parents if (parent / ".git").exists()), None)
+    if workspace == KIT or KIT in workspace.parents:
+        parser.error("Choose a candidate workspace outside the kit source")
+    # A release may be extracted under <workspace>/.maguire/download. Only the
+    # actual source checkout's root (not a candidate repository above that
+    # download) imposes a repository-wide exclusion.
+    source_repo = KIT.parent if KIT.name == "kit" and (KIT.parent / ".git").exists() else None
     if source_repo and (workspace == source_repo or source_repo in workspace.parents):
         parser.error("Candidate workspace must be outside the kit's source repository")
+    if workspace in KIT.parents:
+        managed_roots = (
+            workspace / ".maguire/kit",
+            workspace / ".agents/skills/maguire-career-pilot",
+        )
+        if any(root == KIT or root in KIT.parents for root in managed_roots):
+            parser.error("Kit source overlaps an installer-managed path")
     if workspace.exists() and not workspace.is_dir():
         parser.error("Workspace path is not a directory")
 
     # Read the complete required payload before creating or changing a workspace.
     # A missing directory must not turn into a successful zero-template install.
-    sources = managed_files()
+    sources = managed_files(portable=args.portable)
     source_data = {}
     try:
         for relative, source in sources.items():
@@ -193,8 +213,12 @@ def main() -> int:
     manifest = {"format": 1, "files": new_hashes}
     atomic_write(manifest_path, (json.dumps(manifest, indent=2, sort_keys=True) + "\n").encode())
     print(f"Result: {counts}")
+    skill_path = ".maguire/kit/skills/maguire-career-pilot/SKILL.md"
     if (workspace / "AGENTS.md").read_bytes() != source_data[Path("AGENTS.md")]:
-        print("Root AGENTS.md differs. Add a reference to .maguire/kit/README.md manually.")
+        print(f"Root AGENTS.md differs. Add a reference to .maguire/kit/README.md and {skill_path} manually.")
+    if args.portable:
+        print(f"PORTABLE: Ask your agent to read .maguire/kit/README.md, .maguire/kit/AGENTS.md, and {skill_path} explicitly.")
+        print("PORTABLE: Automatic skill discovery is not guaranteed in this layout.")
     print("User CVs, bank, preferences, applications, and submitted records were not visited.")
     return 0
 

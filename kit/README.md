@@ -1,10 +1,10 @@
-# Maguire Career Kit — file-based v0.1.4
+# Maguire Career Kit — file-based v0.1.5
 
-This kit helps a candidate maintain a private career workspace and prepare truthful, reviewable applications. It includes the `maguire-career-pilot` skill; there is no second CV master or application ledger. The kit contains instructions and blank templates. Your career documents and records belong in **your own workspace**, outside the kit source and outside the kit source repository.
+This kit helps a candidate maintain a private career workspace and prepare truthful, reviewable applications. It includes the `maguire-career-pilot` skill; there is no second CV master or application ledger. The kit contains instructions and blank templates. Your career documents and records belong in **your own workspace**, outside the kit source and outside the kit source repository. A downloaded release may live in a disjoint `.maguire/download/` subfolder of that workspace; it is distribution material, never candidate evidence.
 
 The current version uses Markdown files and Python's standard library for the optional local installer. It needs no account connection, API, model integration, database, or paid service. The agent helps draft and organize; the candidate decides what is true, what can be shared, and what to send.
 
-Release v0.1.4 adds separate JD-fit and employer/role-fit rubrics plus optional v8 normalized-claim checks. It includes `LICENSE` and `CREDITS.md` at the extracted archive root. The [GitHub repository](https://github.com/Silveroboros-dev/maguire-career-kit) owns the kit source from v0.1.1 onward; the website is a separate project distributing released copies. The [GitHub release](https://github.com/Silveroboros-dev/maguire-career-kit/releases/tag/v0.1.4) includes the ZIP, checksum and detached manifest binding each file to its source commit. Older releases are retained as historical versions.
+Release v0.1.5 adds a sandbox-compatible portable installation and saved, source-bound review records for the existing JD-fit and employer/role-fit rubrics. The optional v8 normalized-claim checker is unchanged. It includes `LICENSE` and `CREDITS.md` at the extracted archive root. The [GitHub repository](https://github.com/Silveroboros-dev/maguire-career-kit) owns the kit source from v0.1.1 onward; the website is a separate project distributing released copies. The [GitHub release](https://github.com/Silveroboros-dev/maguire-career-kit/releases/tag/v0.1.5) includes the ZIP, checksum and detached manifest binding each file to its source commit. Older releases are retained as historical versions.
 
 ## How your career workspace fits together
 
@@ -26,14 +26,24 @@ Keeping these records together gives your agent career evidence and preferences 
 
 ## Choose an installation path
 
-### Codex with a local folder — locally tested path
+### Codex with a local folder
 
-1. Download and extract the complete release ZIP, or clone the source repository, separate from your private career folder. Keep your existing CVs where they are. Choose the folder that will be your private career workspace. If it already has `AGENTS.md`, a CV index, or an application register, keep them.
-2. In a terminal, change to the directory containing `install.py`: `maguire-career-kit-v0.1.4/` for the extracted release, or `maguire-career-kit/kit/` for a repository clone. Run `python3 install.py /absolute/path/to/your-career-folder`. This installs instructions, templates, grader rubrics and optional checker files; it does not run the checker. The script refuses to use the kit source or its source repository as the workspace. It reads all required instructions, reference templates and grader payload before creating or changing your workspace; an incomplete or unreadable kit fails without writing workspace files.
-3. Open your career folder as the **primary** Codex project. Codex discovers root `AGENTS.md` and `.agents/skills/` in a primary project, according to [OpenAI's project](https://learn.chatgpt.com/docs/projects?surface=app) and [skills](https://learn.chatgpt.com/docs/build-skills) documentation. If you already had a root `AGENTS.md`, the installer preserves it: add `For career work, read .maguire/kit/README.md and .maguire/kit/AGENTS.md; use .agents/skills/maguire-career-pilot/SKILL.md.` to that file after reviewing it. You can also explicitly ask Codex to read those files in the first prompt.
-4. Use the first-run prompt below. Review the resulting source choices and every personal claim before drafting for an employer.
+Use **portable installation** inside an agent sandbox or whenever `.agents` is protected. It installs the complete kit, including the canonical skill, under `.maguire/kit/`; it does not write to `.agents` or require broader permissions.
 
-If Python is unavailable, manually copy this `README.md` to `<workspace>/.maguire/kit/README.md`, `AGENTS.md` to `<workspace>/.maguire/kit/AGENTS.md`, `templates/` to `<workspace>/.maguire/kit/templates/`, `graders/` to `<workspace>/.maguire/kit/graders/`, and the skill to `<workspace>/.agents/skills/maguire-career-pilot/SKILL.md`. Copy `AGENTS.md` to the workspace root only if no root file exists; otherwise add the reference from step 3 to the existing file. Never replace existing files blindly. The script is the tested update path. Keep the source kit folder so you can compare a later version with your installed instructions.
+1. Download the pinned ZIP, verify its published SHA-256, inspect the installer, and extract the release. In a single-folder sandbox you can use `.maguire/download/` inside the candidate workspace. Do not extract over `.maguire/kit/` or existing candidate records.
+2. From the candidate workspace, for an extracted v0.1.5 release at the following path, run:
+
+   ```sh
+   python3 .maguire/download/maguire-career-kit-v0.1.5/install.py --portable .
+   ```
+
+   If the kit is in a separate folder, pass its actual installer path and your actual workspace path instead. The installer checks the complete payload and refuses overlapping source/managed paths. Your workspace cannot be the kit source or a folder inside its source repository.
+3. Explicitly read `.maguire/kit/README.md`, `.maguire/kit/AGENTS.md`, and `.maguire/kit/skills/maguire-career-pilot/SKILL.md`. Portable installation is complete local installation with explicit instruction loading; it does not claim automatic skill discovery. If root `AGENTS.md` already exists, preserve it and use the explicit paths. Resolve any reported `PRESERVED` instruction conflicts before assuming new instructions are active.
+4. Perform the requested task using the smallest input set. For one supplied CV and JD, assess that role; adopting an entire archive first is unnecessary. Save the original assessment and both rubric reviews as described in [Saved rubric reviews](#saved-rubric-reviews).
+
+For a normal terminal where `.agents` is writable, `python3 install.py /absolute/path/to/your-career-folder` also installs the discoverable skill copy at `.agents/skills/maguire-career-pilot/SKILL.md`. Both layouts have the same canonical skill and graders. Check actual discovery in the running client; a successful file copy does not prove persistence in another chat. Use `--portable` rather than bypassing a sandbox's permission boundary.
+
+If Python is unavailable, manually copy this `README.md`, `AGENTS.md`, `templates/`, `graders/`, and `skills/` into `<workspace>/.maguire/kit/`, preserving their relative paths. Copy `AGENTS.md` to the workspace root only when absent; never replace existing files blindly. Explicitly read the canonical skill path above. A failed copy is an incomplete installation, not a successful fallback. The script is the tested update path.
 
 ### ChatGPT Work
 
@@ -48,7 +58,7 @@ The local installer and complete synthetic scenario have been exercised with fil
 
 The kit is also usable as reference material with an agent that can read Markdown. The Python installer is optional and places files in a Codex-oriented layout; running it does **not** prove that another client will discover or follow those files. Do not run it merely to use a cloud chat. First choose which career files the candidate permits the agent to read and where the candidate wants durable records saved.
 
-- **Local agent with access to the chosen career folder:** give it this README, `AGENTS.md`, the `maguire-career-pilot` skill, and only the templates needed for the task. If you use the installer after inspecting it, explicitly ask the agent to read `.maguire/kit/README.md`, `.maguire/kit/AGENTS.md`, and `.agents/skills/maguire-career-pilot/SKILL.md`. Check its actual file access and output paths. Preserve an existing project instruction file rather than replacing it.
+- **Local agent with access to the chosen career folder:** give it this README, `AGENTS.md`, the `maguire-career-pilot` skill, and only the templates needed for the task. If you use the installer after inspecting it, explicitly ask the agent to read `.maguire/kit/README.md`, `.maguire/kit/AGENTS.md`, and `.maguire/kit/skills/maguire-career-pilot/SKILL.md`. Check its actual file access and output paths. Preserve an existing project instruction file rather than replacing it.
 - **Cloud agent without access to that folder:** provide those same instructions, both fit rubrics and candidate-approved CV/JD material by direct link or attachment. Have the agent return named Markdown records. Save reviewed records in a location the candidate controls, such as a private local folder, approved cloud storage, or downloaded files. Record the exact path or URL and check that a fresh session can read the saved records. If the agent cannot save there, download the files yourself and provide them again next time. A chat transcript or temporary runtime is not the career bank.
 
 For local coding agents, project-instruction discovery varies. These are optional pointers to the **same** kit rules, not new career masters or files that the installer promises to create:
@@ -69,8 +79,8 @@ Neutral first request for a cloud agent, after providing the kit instructions an
 
 | Path in your workspace | Ownership |
 | --- | --- |
-| `.maguire/kit/README.md`, `.maguire/kit/AGENTS.md`, `.maguire/kit/templates/`, `.maguire/kit/graders/` | Kit-managed reference files |
-| `.agents/skills/maguire-career-pilot/SKILL.md` | Kit-managed skill copy |
+| `.maguire/kit/README.md`, `.maguire/kit/AGENTS.md`, `.maguire/kit/templates/`, `.maguire/kit/graders/`, `.maguire/kit/skills/` | Kit-managed reference files and canonical skill |
+| `.agents/skills/maguire-career-pilot/SKILL.md` | Optional discoverable copy in normal installation; untouched by `--portable` |
 | Root `AGENTS.md` | Created only when absent; updated only if unchanged from the previous install |
 | Root README/career map, CV originals/masters, `cv-index.md`, `data/`, `applications/` | Candidate-owned; never read or written by the installer |
 
@@ -78,7 +88,7 @@ The installer stores hashes of its managed copies in `.maguire/kit/manifest.json
 
 ## If you do not have a career archive yet
 
-1. Choose a private folder outside the kit and its source repository. You may pass a new, nonexistent path to `install.py`; it creates the folder and installs the kit instructions. For Work Cloud, create a private project or another candidate-controlled place to retain the files instead of assuming access to a local folder.
+1. Choose a private folder outside the kit and its source repository; a disjoint downloaded release can be stored under `.maguire/download/` as described above. You may pass a new, nonexistent path to `install.py`; it creates the folder and installs the kit instructions. For Work Cloud, create a private project or another candidate-controlled place to retain the files instead of assuming access to a local folder.
 2. If you have CVs or career notes elsewhere, copy the files you want to use into an `originals/` folder without deleting or rewriting the source files. Keep each file's original location or cloud master link in your notes. If you have no CV yet, leave `originals/` empty; do not invent a CV master or career facts.
 3. Open the new folder as the primary Codex project, or provide the kit files to Work as described above. Ask the agent to create `workspace-map.md`, `cv-index.md`, `data/experience.md`, `data/preferences.md`, and `data/applications.md` from the blank templates. Remove template placeholder rows; record only supplied facts and use `Unknown` for missing information. The experience bank is not a CV master. Create an `applications/` role folder only when there is a real role to track.
 4. Review the proposed CV master, source links, facts, and preferences. If there is no editable CV yet, keep the master selection unresolved and add one only after you choose or create it. Then use the same archive for new stories, JDs, drafts, and dated decisions.
@@ -91,7 +101,7 @@ First prompt for an empty archive:
 
 Paste this into Codex in the primary career folder, or into Work after providing the kit files and the candidate-approved source documents:
 
-> Read the Maguire Career Kit README, AGENTS rules, and `maguire-career-pilot` skill. Adopt this career workspace in place. Inspect existing CVs, project notes, preferences, indexes, and application records without moving or rewriting originals. Exclude `.maguire/kit`, `.agents/skills`, and synthetic examples from the candidate-document inventory. Tell me which editable CV master is supported by evidence for each variant, and mark uncertain choices `Unknown`. Use an existing bank/index/register if present; otherwise create the missing records from kit templates. Create or update a short workspace map naming authoritative paths. Distinguish candidate-supplied statements from independently checked facts. Show me the proposed authority choices and unresolved conflicts before using any claim in an external draft. Do not send or publish anything.
+> Read the Maguire Career Kit README, AGENTS rules, and `maguire-career-pilot` skill. Adopt this career workspace in place. Inspect existing CVs, project notes, preferences, indexes, and application records without moving or rewriting originals. Exclude `.maguire/kit`, `.maguire/download`, `.agents/skills`, and synthetic examples from the candidate-document inventory. Tell me which editable CV master is supported by evidence for each variant, and mark uncertain choices `Unknown`. Use an existing bank/index/register if present; otherwise create the missing records from kit templates. Create or update a short workspace map naming authoritative paths. Distinguish candidate-supplied statements from independently checked facts. Show me the proposed authority choices and unresolved conflicts before using any claim in an external draft. Do not send or publish anything.
 
 Expected records (adapt names to an existing workspace instead of creating duplicates):
 
@@ -122,6 +132,30 @@ After installation, the agent reads `.maguire/kit/graders/jd-fit.md` and `.magui
 A binding owner decision governs action. It is not evidence that a JD matches the decision or budget. If you already deferred or stopped, no extra document, investigation, reminder or exercise is required. A material new fact may be shown for your reconsideration without automatically reopening work.
 
 The [offline checker guide](graders/README.md) explains the optional Python tool. It checks reviewed, manually normalized claims in `candidate_fit` or `preference_fit` mode. A successful command is not a positive fit judgment. Preserve `needs_review`, failed claims and scope limits; the candidate still decides. Mobile/cloud use can apply the agent rubrics without running Python, but that does not constitute a checker run.
+
+## Saved rubric reviews
+
+For every local one-JD assessment, preserve the first complete answer **before reviewing or editing it**. The installed standard-library helper saves bytes and checks record structure and bindings; the agent or human still performs the semantic review.
+
+After writing the initial assessment (for example `RESULT.md`), run:
+
+```sh
+python3 .maguire/kit/graders/review.py init --assessment RESULT.md --cv inputs/CV.pdf --jd inputs/JD.txt --output reviews/role-001
+```
+
+Use actual approved source paths and a fresh bundle name for the role/run. Add `--preferences PATH` only when an explicit approved preferences document was supplied. No preferences file is required merely to assess a role; identify actual missing preferences from the supplied content, not the filename layout.
+
+The bundle contains an unchanged original assessment, source snapshots/bindings and two **pending** review drafts. Read each rubric and the original answer, then fill `jd-fit.draft.json` and `employer-fit.draft.json` separately. Retain the generated bindings; record reviewer, method, review status, meaningful coverage/findings with source and answer evidence, summary, and unresolved questions. `reviewed` means the review was performed, not that the answer is correct. Genuine missing preferences can yield employer `needs_review` with an explicit reason. Do not fabricate preference evidence to complete a row.
+
+If corrections are warranted, keep the original snapshot and revise the working answer. Finalize the two completed review records:
+
+```sh
+python3 .maguire/kit/graders/review.py finalize --bundle reviews/role-001 --revised RESULT.md
+```
+
+Omit `--revised` when the answer was not changed. Finalization preserves separate `jd-fit.review.json` and `employer-fit.review.json`, plus a receipt binding them to the original answer and source bytes. Missing/pending reviews or mismatched bytes fail; existing finalized results are never overwritten. The receipt proves saved records and checked identity, **not** semantic correctness, candidate acceptance, independent review, or a hiring probability. Record whether the reviewer is the same agent. See [REVIEW_FORMAT.md](graders/REVIEW_FORMAT.md).
+
+Without Python/local filesystem access, return the original answer and two separately named review records following the same format; state the storage and hash-verification limits. Do not claim that helper validation or the optional v8 checker ran.
 
 ## Boundaries and checks
 

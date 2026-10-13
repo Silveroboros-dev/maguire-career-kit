@@ -1,6 +1,6 @@
 # Employer fit: role terms against candidate preferences
 
-Rubric: `maguire-employer-fit.1`. Distributed in Career Kit v0.1.4.
+Rubric: `maguire-employer-fit.1`. Distributed in Career Kit v0.1.5.
 
 **Question:** How do the role and employer terms actually supplied in the JD compare with each explicit candidate preference? Review the JD snapshot and candidate-approved preference text. Do not invent culture, flexibility, sponsorship, team practice, or compensation terms that the source does not state.
 
@@ -11,3 +11,5 @@ Rubric: `maguire-employer-fit.1`. Distributed in Career Kit v0.1.4.
 5. Review action utility separately. A genuine open decision may justify a cheap, bounded check; a binding defer/stop permits no current work. Suggesting employer contact does not execute it. Preserve the owner's permitted channel, budget, return condition and actual chosen/performed action as separate records.
 
 Record the raw answer digest, JD/preference IDs, complete preference inventory, evidence, materiality and reviewer rationale. The optional v8 `preference_fit` checker consumes reviewed normalized claims; `needs_review` requires judgment and its result is not an automatic whole-answer PASS. Do not convert this fit review into an interview forecast or probability of employer acceptance.
+
+For local use, preserve the original answer with `review.py init` before this review. Save this rubric's result separately, then finalize both reviews with `review.py finalize`; see [review record format](REVIEW_FORMAT.md). Label agent self-review explicitly and retain unresolved findings.

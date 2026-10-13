@@ -2,6 +2,12 @@
 
 Read [jd-fit.md](jd-fit.md) to review **candidate evidence against JD requirements** and [employer-fit.md](employer-fit.md) to review **JD role terms against explicit candidate preferences**. These are two named human/agent review rubrics. They require the original JD, approved candidate facts/preferences, the exact Maguire answer, and cited source spans. Record a finding for every material requirement or supplied preference; retain unknowns and the original answer. An assessment is a reviewer judgment, not a calibrated match score or hiring probability.
 
+## Save each rubric review
+
+Use [review.py and its record format](REVIEW_FORMAT.md) to snapshot the original assessment and supplied sources before review. Fill the two separate draft records using the rubrics above, then finalize them into `jd-fit.review.json`, `employer-fit.review.json` and a source-bound receipt. `needs_review` is a retained result, not a failed file save; it must explain the unresolved information. `reviewed` means the reviewer completed the review and can include adverse findings. It is not a semantic PASS. This helper uses Python 3.9+ standard library and does not call models or perform semantic grading. See the [complete local workflow](../README.md#saved-rubric-reviews).
+
+## Optional normalized-claim checker
+
 The bundled Python v8 runtime checks **manually normalized atomic claims**, one fragment at a time. It does not extract claims from prose, decide whether an inventory is complete, score whole answers, or automatically resolve `needs_review`. `pass` applies only to the declared normalized fragment and coverage. A reviewer must check normalization, source completeness, materiality, and unresolved claims before accepting advice. Keep the raw answer and its digest next to the normalized packet. The runtime reports a canonical packet hash; it does not bind the original answer unless the operator records that link separately.
 
 Both modes use the same frozen v8 checker bytes. Prepare JSON Lines rows shaped as `{"packet_sha256":"<SHA-256 of canonical packet>","packet":{...}}` using [SCHEMA.md](SCHEMA.md) and [V7_SCHEMA.md](V7_SCHEMA.md). The packet's `grader` must be `candidate_fit` for `jd-fit` or `preference_fit` for `employer-fit`. Hash canonical JSON with sorted keys, UTF-8, no ASCII escaping, no spaces, and no NaN. Keep exact source/answer quotes and coverage metadata; do not infer a complete packet from a single quote.

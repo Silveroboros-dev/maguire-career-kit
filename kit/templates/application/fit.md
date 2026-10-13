@@ -46,7 +46,19 @@ Return condition, if the owner supplied one: `<condition, or none>`
 
 An existing defer/stop permits no work now. A new material fact may be shown for reconsideration without automatically reopening work. Do not manufacture investigations, documents, reminders or exercises.
 
-## Evidence review
+## Evidence review records
+
+Original assessment snapshot and SHA-256: `<review bundle/assessment.original and bound digest>`
+
+JD-fit review: `<bundle/jd-fit.review.json; reviewer/method/status>`
+
+Employer-fit review: `<bundle/employer-fit.review.json; reviewer/method/status>`
+
+Record receipt and optional revised assessment: `<bundle/receipt.json; revised path or none>`
+
+Create the original snapshot with `graders/review.py init` before reviewing or editing this assessment; finalize both completed review drafts as described in the installed README. Keep review records separate from the working assessment. A saved review is not semantic certification.
+
+## Evidence review findings
 
 Material omissions / unsupported or overstated claims / unresolved contradictions: `<findings or none>`
 

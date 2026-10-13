@@ -4,7 +4,7 @@ Turn your career experience into a reusable evidence bank. Assess a job against 
 
 This is a small, file-based kit for your own agent and private workspace: instructions, blank templates, synthetic examples, and an optional Python installer. You review the claims and decide what to send.
 
-[Maguire Agent](https://maguire-agent.silveroboros.chatgpt.site/) · [Download v0.1.4](https://github.com/Silveroboros-dev/maguire-career-kit/releases/tag/v0.1.4) · [Full setup guide](kit/README.md) · [Worked example](kit/examples/end-to-end/README.md)
+[Maguire Agent](https://maguire-agent.silveroboros.chatgpt.site/) · [Download v0.1.5](https://github.com/Silveroboros-dev/maguire-career-kit/releases/tag/v0.1.5) · [Full setup guide](kit/README.md) · [Worked example](kit/examples/end-to-end/README.md)
 
 ## Your career workspace
 
@@ -17,7 +17,7 @@ For each role, Maguire applies two separate agent rubrics:
 - **JD fit:** your documented experience against the role's material requirements.
 - **Employer/role fit:** the stated role terms against your goals, preferences and hard constraints.
 
-Both include sources, gaps and unknowns. A strong result on one side does not erase a blocker on the other. Your decision remains yours, including deferring or stopping with no extra work.
+Both include sources, gaps and unknowns. Local assessments preserve the original answer and separate source-bound rubric review records with the [review helper](kit/README.md#saved-rubric-reviews). A strong result on one side does not erase a blocker on the other. Your decision remains yours, including deferring or stopping with no extra work.
 
 The release includes the existing v8 offline claim checker in two modes for optional evidence checking. It requires explicitly normalized claims and reviewed source anchors; it does not automatically understand a CV or certify a whole answer. Unsupported cases remain `needs_review`. See the [grader guide](kit/graders/README.md).
 
@@ -28,8 +28,10 @@ Download or clone this source repository, keeping it separate from your private 
 ```sh
 git clone https://github.com/Silveroboros-dev/maguire-career-kit.git
 cd maguire-career-kit
-python3 kit/install.py /absolute/path/to/your-private-career-folder
+python3 kit/install.py --portable /absolute/path/to/your-private-career-folder
 ```
+
+Portable mode installs the complete kit under `.maguire/kit/` and explicitly loads its canonical skill without writing to protected `.agents` paths. Omit `--portable` in an ordinary terminal if a discoverable skill copy is wanted. Downloaded releases may be stored in a disjoint `.maguire/download/` folder inside the private workspace.
 
 Open that career folder as your primary Codex project. Follow the [first-run instructions](kit/README.md#first-run-adopt-the-existing-folder) to adopt an existing archive, or the [empty-archive instructions](kit/README.md#if-you-do-not-have-a-career-archive-yet) to begin with the documents and stories you have.
 
@@ -63,7 +65,7 @@ Run the installer checks from the repository root:
 python3 -m unittest discover -s kit/tests -v
 ```
 
-The current release is v0.1.4. It adds two separate fit rubrics and the existing v8 claim checker with an explicit manual normalization/review boundary. The workflow respects owner defer/stop and separates execution policy from employer evidence. Earlier records remain readable; the installer preserves local edits and candidate-owned data.
+The current release is v0.1.5. It adds two separate fit rubrics and the existing v8 claim checker with an explicit manual normalization/review boundary. The workflow respects owner defer/stop and separates execution policy from employer evidence. Earlier records remain readable; the installer preserves local edits and candidate-owned data.
 
 From v0.1.1 onward, this repository is the authoritative kit source. The former Commerce copy is a historical baseline. The Maguire website is a separate project: it hosts the customer journey and copies of released artifacts. Its page sources are not included here. Report improvements through GitHub issues or pull requests.
 
@@ -72,7 +74,7 @@ Release ZIPs include the kit README and installer at the top level, plus `LICENS
 To reproduce a release from its committed tag:
 
 ```sh
-python3 scripts/build_release.py v0.1.4 /absolute/path/to/release-output --release-date 2026-10-13
+python3 scripts/build_release.py v0.1.5 /absolute/path/to/release-output --release-date 2026-10-13
 ```
 
 The build requires Git and a clean source checkout. It reads committed files, writes outside this repository, and never packages the Site pages or candidate records. There is no hosted job-search API, payment service, automatic update channel, or published installable plugin in this package.
