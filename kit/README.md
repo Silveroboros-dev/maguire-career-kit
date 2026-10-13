@@ -1,10 +1,10 @@
-# Maguire Career Kit — file-based v0.1.5
+# Maguire Career Kit — file-based v0.1.6
 
 This kit helps a candidate maintain a private career workspace and prepare truthful, reviewable applications. It includes the `maguire-career-pilot` skill; there is no second CV master or application ledger. The kit contains instructions and blank templates. Your career documents and records belong in **your own workspace**, outside the kit source and outside the kit source repository. A downloaded release may live in a disjoint `.maguire/download/` subfolder of that workspace; it is distribution material, never candidate evidence.
 
 The current version uses Markdown files and Python's standard library for the optional local installer. It needs no account connection, API, model integration, database, or paid service. The agent helps draft and organize; the candidate decides what is true, what can be shared, and what to send.
 
-Release v0.1.5 adds a sandbox-compatible portable installation and saved, source-bound review records for the existing JD-fit and employer/role-fit rubrics. The optional v8 normalized-claim checker is unchanged. It includes `LICENSE` and `CREDITS.md` at the extracted archive root. The [GitHub repository](https://github.com/Silveroboros-dev/maguire-career-kit) owns the kit source from v0.1.1 onward; the website is a separate project distributing released copies. The [GitHub release](https://github.com/Silveroboros-dev/maguire-career-kit/releases/tag/v0.1.5) includes the ZIP, checksum and detached manifest binding each file to its source commit. Older releases are retained as historical versions.
+Release v0.1.6 makes separate 0–5 half-point judgments and ranges standard for JD fit and employer/role fit, with version .2 review records. Portable installation and source-bound review records remain available. The optional v8 normalized-claim checker is unchanged. It includes `LICENSE` and `CREDITS.md` at the extracted archive root. The [GitHub repository](https://github.com/Silveroboros-dev/maguire-career-kit) owns the kit source from v0.1.1 onward; the website is a separate project distributing released copies. The [GitHub release](https://github.com/Silveroboros-dev/maguire-career-kit/releases/tag/v0.1.6) includes the ZIP, checksum and detached manifest binding each file to its source commit. Older releases are retained as historical versions.
 
 ## How your career workspace fits together
 
@@ -31,10 +31,10 @@ Keeping these records together gives your agent career evidence and preferences 
 Use **portable installation** inside an agent sandbox or whenever `.agents` is protected. It installs the complete kit, including the canonical skill, under `.maguire/kit/`; it does not write to `.agents` or require broader permissions.
 
 1. Download the pinned ZIP, verify its published SHA-256, inspect the installer, and extract the release. In a single-folder sandbox you can use `.maguire/download/` inside the candidate workspace. Do not extract over `.maguire/kit/` or existing candidate records.
-2. From the candidate workspace, for an extracted v0.1.5 release at the following path, run:
+2. From the candidate workspace, for an extracted v0.1.6 release at the following path, run:
 
    ```sh
-   python3 .maguire/download/maguire-career-kit-v0.1.5/install.py --portable .
+   python3 .maguire/download/maguire-career-kit-v0.1.6/install.py --portable .
    ```
 
    If the kit is in a separate folder, pass its actual installer path and your actual workspace path instead. The installer checks the complete payload and refuses overlapping source/managed paths. Your workspace cannot be the kit source or a folder inside its source repository.
@@ -127,7 +127,7 @@ The source kit's `examples/` directory contains synthetic pilot illustrations an
 
 ## The two grader paths
 
-After installation, the agent reads `.maguire/kit/graders/jd-fit.md` and `.maguire/kit/graders/employer-fit.md`. Keep their results in separate sections of the role's `fit.md`. The candidate's latest CV and approved bank facts inform JD fit; explicit career goals and constraints inform employer/role fit. Unstated company culture, hiring flexibility and team conditions remain unknown.
+After installation, the agent reads `.maguire/kit/graders/jd-fit.md` and `.maguire/kit/graders/employer-fit.md`. Keep their results in separate sections of the role's `fit.md`. The candidate's latest CV and approved bank facts inform JD fit; explicit career goals and constraints inform employer/role fit, even when those goals are in the CV or bank rather than a separate preference file. Every assessable axis receives its own 0–5 half-point score, low–high judgment range, cited rationale and material unknowns by default. The range is not statistical confidence. Only a genuinely absent required source or candidate goal permits unscored `needs_review` with the missing input named. Never invent a 2.5 fallback, average axes or infer hiring probability. Keep confirmed hard conflicts visible. Unstated company culture, hiring flexibility and team conditions remain unknown.
 
 A binding owner decision governs action. It is not evidence that a JD matches the decision or budget. If you already deferred or stopped, no extra document, investigation, reminder or exercise is required. A material new fact may be shown for your reconsideration without automatically reopening work.
 
@@ -143,9 +143,9 @@ After writing the initial assessment (for example `RESULT.md`), run:
 python3 .maguire/kit/graders/review.py init --assessment RESULT.md --cv inputs/CV.pdf --jd inputs/JD.txt --output reviews/role-001
 ```
 
-Use actual approved source paths and a fresh bundle name for the role/run. Add `--preferences PATH` only when an explicit approved preferences document was supplied. No preferences file is required merely to assess a role; identify actual missing preferences from the supplied content, not the filename layout.
+Use actual approved source paths and a fresh bundle name for the role/run. Add `--bank PATH` when an approved career bank is a separate source, and `--preferences PATH` when explicit preferences are a separate source. Either can contain candidate facts and goals. No preferences file is required merely to assess a role; identify actual missing preferences from the supplied content, not the filename layout.
 
-The bundle contains an unchanged original assessment, source snapshots/bindings and two **pending** review drafts. Read each rubric and the original answer, then fill `jd-fit.draft.json` and `employer-fit.draft.json` separately. Retain the generated bindings; record reviewer, method, review status, meaningful coverage/findings with source and answer evidence, summary, and unresolved questions. `reviewed` means the review was performed, not that the answer is correct. Genuine missing preferences can yield employer `needs_review` with an explicit reason. Do not fabricate preference evidence to complete a row.
+The bundle contains an unchanged original assessment, source snapshots/bindings and two **pending** review drafts. Read each rubric and the original answer, then fill `jd-fit.draft.json` and `employer-fit.draft.json` separately. Retain the generated bindings; record reviewer, method, review status, meaningful coverage/findings with source and answer evidence, separate score/range/rationale, summary, and unresolved questions. `reviewed` means the review was performed, not that the answer is correct. Genuinely absent candidate goals/preferences across all supplied approved text can yield unscored employer `needs_review` with an explicit missing input. New bundles use schema `.2`; finalized `.1` records remain readable, while old pending bundles require a fresh `.2` bundle before finalization. Do not fabricate preference evidence to complete a row.
 
 If corrections are warranted, keep the original snapshot and revise the working answer. Finalize the two completed review records:
 

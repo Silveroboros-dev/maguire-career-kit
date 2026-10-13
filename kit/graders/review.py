@@ -7,16 +7,19 @@ This records reviewer judgments; it does not run or replace either rubric.
 import argparse
 import hashlib
 import json
+import math
 import os
 from pathlib import Path
 import sys
 
 
-SCHEMA = "maguire-fit-review.1"
+SCHEMA = "maguire-fit-review.2"
+LEGACY_SCHEMA = "maguire-fit-review.1"
 RUBRICS = {"jd-fit": "maguire-jd-fit.1",
            "employer-fit": "maguire-employer-fit.1"}
 SNAPSHOTS = {"assessment": "assessment.original", "cv": "cv.source",
-             "jd": "jd.source", "preferences": "preferences.source"}
+             "jd": "jd.source", "bank": "bank.source",
+             "preferences": "preferences.source"}
 VERDICTS = {"jd-fit": {"supported", "partial", "unknown", "contradicted"},
             "employer-fit": {"aligned", "conflict", "unknown"}}
 
@@ -65,15 +68,20 @@ def initial_draft(mode, bindings):
     return {"schema": SCHEMA, "rubric_id": RUBRICS[mode],
             "bindings": bindings, "reviewer": "", "method": "",
             "status": "pending", "summary": "", "coverage": [], "findings": [],
+            "score": {"status": "pending", "value": None, "range": None,
+                      "rationale": "", "missing_input": ""},
             "needs_review_reason": ""}
 
 
 def init(args):
     output = Path(args.output)
-    inputs = {"assessment": Path(args.assessment), "cv": Path(args.cv),
-              "jd": Path(args.jd)}
+    inputs = {"assessment": Path(args.assessment), "jd": Path(args.jd)}
+    if args.cv:
+        inputs["cv"] = Path(args.cv)
     if args.preferences:
         inputs["preferences"] = Path(args.preferences)
+    if args.bank:
+        inputs["bank"] = Path(args.bank)
     data = {name: read_bytes(path) for name, path in inputs.items()}
     if not data["assessment"]:
         raise ReviewError("assessment is empty")
@@ -114,6 +122,8 @@ def require_text(value, field):
 
 def verify_manifest(bundle):
     manifest = read_json(bundle / "manifest.json")
+    if isinstance(manifest, dict) and manifest.get("schema") == LEGACY_SCHEMA:
+        raise ReviewError("legacy .1 bundle is read-only; keep its finalized records, or init a new .2 bundle from the original sources")
     if not isinstance(manifest, dict) or manifest.get("schema") != SCHEMA:
         raise ReviewError("invalid bundle manifest schema")
     bindings = manifest.get("bindings")
@@ -127,7 +137,7 @@ def verify_manifest(bundle):
     contents = {}
     for name, filename in snapshots.items():
         expected = SNAPSHOTS[name] if filename is not None else None
-        if filename != expected or (name != "preferences" and expected is None):
+        if filename != expected or (name not in {"cv", "bank", "preferences"} and expected is None):
             raise ReviewError("invalid {} snapshot name".format(name))
         digest = bindings[name + "_sha256"]
         path = bundle / SNAPSHOTS[name]
@@ -182,21 +192,55 @@ def verify_finding(finding, mode, coverage, contents, index):
     if not evidence:
         raise ReviewError("{} needs source evidence".format(label))
     source_ids = {item["source"] for item in evidence}
-    allowed_sources = {"jd", "cv"} if mode == "jd-fit" else {"jd", "cv", "preferences"}
+    allowed_sources = {"jd", "cv", "bank"} if mode == "jd-fit" else {"jd", "cv", "bank", "preferences"}
     if not source_ids <= allowed_sources:
         raise ReviewError("{} has evidence outside rubric sources".format(label))
     if finding["verdict"] != "unknown":
-        if mode == "jd-fit" and not {"jd", "cv"} <= source_ids:
-            raise ReviewError("{} needs both JD and CV evidence".format(label))
+        if mode == "jd-fit" and ("jd" not in source_ids or
+                                 not source_ids.intersection({"cv", "bank"})):
+            raise ReviewError("{} needs both JD and CV/bank evidence".format(label))
         if mode == "employer-fit" and ("jd" not in source_ids or
-                                       not source_ids.intersection({"cv", "preferences"})):
+                                       not source_ids.intersection({"cv", "bank", "preferences"})):
             raise ReviewError("{} needs JD and candidate preference evidence".format(label))
+
+
+def valid_point(value):
+    return (type(value) in (int, float) and 0 <= value <= 5 and
+            math.isfinite(value) and value * 2 == int(value * 2))
+
+
+def verify_score(score, mode, review_status, contents):
+    if not isinstance(score, dict) or set(score) != {
+            "status", "value", "range", "rationale", "missing_input"}:
+        raise ReviewError("{} score has invalid fields".format(mode))
+    if score["status"] == "scored":
+        if review_status != "reviewed":
+            raise ReviewError("{} scored result needs reviewed status".format(mode))
+        if not valid_point(score["value"]):
+            raise ReviewError("{} score value must be a 0-5 half-point".format(mode))
+        interval = score["range"]
+        if not isinstance(interval, dict) or set(interval) != {"low", "high"} or \
+                not valid_point(interval["low"]) or not valid_point(interval["high"]) or \
+                not interval["low"] <= score["value"] <= interval["high"]:
+            raise ReviewError("{} score range must contain value within 0-5 in half-points".format(mode))
+        require_text(score["rationale"], mode + " score rationale")
+        if score["missing_input"] != "":
+            raise ReviewError("{} scored result cannot retain missing_input".format(mode))
+    elif score["status"] == "needs_review":
+        if review_status != "needs_review" or score["value"] is not None or score["range"] is not None:
+            raise ReviewError("{} unscored result needs needs_review status and null value/range".format(mode))
+        if mode == "jd-fit" and (contents.get("cv") or contents.get("bank")):
+            raise ReviewError("jd-fit unscored result requires absent candidate source")
+        require_text(score["rationale"], mode + " score rationale")
+        require_text(score["missing_input"], mode + " score missing_input")
+    else:
+        raise ReviewError("{} score is pending or has invalid status".format(mode))
 
 
 def verify_review(review, mode, bindings, contents):
     if not isinstance(review, dict) or set(review) != {
             "schema", "rubric_id", "bindings", "reviewer", "method", "status",
-            "summary", "coverage", "findings", "needs_review_reason"}:
+            "summary", "coverage", "findings", "score", "needs_review_reason"}:
         raise ReviewError("{} draft has invalid fields".format(mode))
     if review["schema"] != SCHEMA or review["rubric_id"] != RUBRICS[mode]:
         raise ReviewError("{} draft has wrong schema or rubric ID".format(mode))
@@ -208,6 +252,7 @@ def verify_review(review, mode, bindings, contents):
     if not isinstance(review["method"], str) or review["method"] not in {"human", "agent", "human_and_agent"}:
         raise ReviewError("{} has invalid review method".format(mode))
     require_text(review["summary"], mode + " summary")
+    verify_score(review["score"], mode, review["status"], contents)
     reason = review["needs_review_reason"]
     if not isinstance(reason, str):
         raise ReviewError("{} needs_review_reason must be text".format(mode))
@@ -280,9 +325,11 @@ def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     commands = parser.add_subparsers(dest="command", required=True)
     start = commands.add_parser("init", help="snapshot inputs and create two pending review drafts")
-    for flag in ("assessment", "cv", "jd", "output"):
+    for flag in ("assessment", "jd", "output"):
         start.add_argument("--" + flag, required=True)
+    start.add_argument("--cv", help="candidate-approved CV source, if available")
     start.add_argument("--preferences", help="candidate-approved preference source, if available")
+    start.add_argument("--bank", help="candidate-approved career bank source, if available")
     finish = commands.add_parser("finalize", help="validate both drafts and save separate reviews")
     finish.add_argument("--bundle", required=True)
     finish.add_argument("--revised", help="optional revised answer to preserve beside original")

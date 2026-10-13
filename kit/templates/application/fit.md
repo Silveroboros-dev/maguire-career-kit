@@ -14,6 +14,14 @@ Assessment date: `<YYYY-MM-DD>`
 
 How well does the candidate's documented evidence support the stated work?
 
+**JD-fit score (required):** `<0–5 in 0.5 steps, or needs_review only if essential candidate source is absent>`
+
+**Judgment range:** `<low–high, each 0–5 in 0.5 steps and containing the score; or unscored>`
+
+**Score rationale and sources:** `<cite material requirements, supported evidence, gaps, and unknowns; explain the range>`
+
+**If unscored, missing input:** `<name the genuinely absent source and why the axis cannot be assessed>`
+
 | Material duty or qualification | Essential / qualification / nice-to-have | Exact JD source and quote | Candidate claim/source and quote | Supported / partial / unknown / contradicted | Reason, concrete gap and scope limit |
 | --- | --- | --- | --- | --- | --- |
 |  |  |  |  | `unknown` |  |
@@ -24,11 +32,19 @@ Keep personal contribution, leadership, reference/prototype work, production ope
 
 How well do the known role terms support the candidate's explicit goals and constraints?
 
+**Employer-fit score (required):** `<0–5 in 0.5 steps, or needs_review only if candidate goals/preferences are genuinely absent>`
+
+**Judgment range:** `<low–high, each 0–5 in 0.5 steps and containing the score; or unscored>`
+
+**Score rationale and sources:** `<cite candidate goals, role terms, conflicts, and unknowns; explain the range>`
+
+**If unscored, missing input:** `<name the genuinely absent goals/preferences and why the axis cannot be assessed>`
+
 | Goal, preference or constraint | Must-have / nice-to-have | Candidate source/date | Role term: exact source and quote | Aligned / conflict / unknown | Tradeoff or missing information |
 | --- | --- | --- | --- | --- | --- |
 |  |  |  |  | `unknown` |  |
 
-Keep hard blockers visible. Company culture, actual team conditions and hiring flexibility remain unknown when the supplied sources do not establish them. Owner decisions and action budgets govern execution; they are not employer terms or proof of JD alignment. Never average these two sections into a match percentage.
+Keep hard blockers visible beside the score; a confirmed hard constraint cannot be averaged away. Company culture, actual team conditions and hiring flexibility remain unknown when the supplied sources do not establish them. Owner decisions and action budgets govern execution; they are not employer terms or proof of JD alignment. Never average these two scores into a single match value or hiring probability. A judgment range expresses plausible readings of the supplied evidence, not statistical confidence.
 
 ## Decision and action
 

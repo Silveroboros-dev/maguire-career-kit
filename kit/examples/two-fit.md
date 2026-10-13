@@ -21,6 +21,8 @@ Everything below is fictional and authored, not a model result, user test or liv
 | Production ownership, desirable | `jd_2`, `fact_1` | unknown | No production evidence; this is not a mandatory exclusion. |
 | SQL, a plus | `jd_2` | unknown | No supplied SQL evidence; do not invent either proficiency or inability. |
 
+**JD-fit score: 3/5; judgment range: 2.5–3.5.** The personally built Python reference work and stakeholder delivery support material duties. Production operation is desirable but unproven, and the scope of AI delivery with stakeholders is partial. This range is a reviewer judgment about the supplied facts, not statistical confidence.
+
 ## Employer and role fit
 
 | Preference | Role evidence | Assessment |
@@ -28,6 +30,8 @@ Everything below is fictional and authored, not a model result, user test or liv
 | Direct customer-facing delivery | `pref_1`, "internal-only" in `jd_1` | conflict with a stated hard constraint |
 | Zurich hybrid / travel | `pref_2`, `jd_3` | aligned |
 | Salary, culture, actual team conditions | no relevant supplied facts | unknown |
+
+**Employer-fit score: 0/5; judgment range: 0–0.5.** The internal-only duty in `jd_1` directly conflicts with the must-have customer-facing goal in `pref_1`; `jd_3` aligns on location and travel but does not remove that hard conflict. The narrow range reflects the explicit role wording, not a probability.
 
 ## Decision
 
