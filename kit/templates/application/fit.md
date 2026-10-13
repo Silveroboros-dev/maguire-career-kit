@@ -1,19 +1,57 @@
-# Evidence-grounded fit assessment
+# Two-sided fit assessment
 
 Application ID: `<APP-...>`
 
-JD snapshot: `job.md`
+JD snapshot / source / capture date: `<job.md, source, date>`
 
-Bank / preferences reviewed: `<paths and date>`
+Selected CV / approved bank facts / preferences: `<paths, versions, date>`
+
+Rubrics: `.maguire/kit/graders/jd-fit.md` and `.maguire/kit/graders/employer-fit.md`
 
 Assessment date: `<YYYY-MM-DD>`
 
-Decision: `pursue / hold / decline / candidate decision pending`
+## JD fit
 
-Reason: `<brief, evidence-based>`
+How well does the candidate's documented evidence support the stated work?
 
-| Material JD requirement | Bank claim/source ID or preference | Assessment: supported, partial, gap, unknown | Reason and scope limit | Verification question / next action |
-| --- | --- | --- | --- | --- |
-|  |  | `unknown` |  |  |
+| Material duty or qualification | Essential / qualification / nice-to-have | Exact JD source and quote | Candidate claim/source and quote | Supported / partial / unknown / contradicted | Reason, concrete gap and scope limit |
+| --- | --- | --- | --- | --- | --- |
+|  |  |  |  | `unknown` |  |
 
-Separate must-have qualifications from candidate preferences. Do not invent proficiency, people management, sales, measured impact, eligibility, or job availability. This is an advisory analysis, not a hiring probability or ATS score.
+Keep personal contribution, leadership, reference/prototype work, production operation and measured adoption distinct. Missing evidence is not proof of missing ability. Contradicted requires actual conflicting evidence. Do not silently strengthen tenure or make a preferred tool mandatory.
+
+## Employer and role fit
+
+How well do the known role terms support the candidate's explicit goals and constraints?
+
+| Goal, preference or constraint | Must-have / nice-to-have | Candidate source/date | Role term: exact source and quote | Aligned / conflict / unknown | Tradeoff or missing information |
+| --- | --- | --- | --- | --- | --- |
+|  |  |  |  | `unknown` |  |
+
+Keep hard blockers visible. Company culture, actual team conditions and hiring flexibility remain unknown when the supplied sources do not establish them. Owner decisions and action budgets govern execution; they are not employer terms or proof of JD alignment. Never average these two sections into a match percentage.
+
+## Decision and action
+
+Advisory recommendation: `pursue / hold / decline / insufficient information`
+
+Reason and decisive evidence: `<brief>`
+
+Candidate's actual decision and date: `<pending, or explicit owner decision>`
+
+Current next action: `<one bounded useful step, or none>`
+
+If a step is useful: `<prerequisite, deliverable, estimated effort, what result changes the decision>`
+
+Return condition, if the owner supplied one: `<condition, or none>`
+
+An existing defer/stop permits no work now. A new material fact may be shown for reconsideration without automatically reopening work. Do not manufacture investigations, documents, reminders or exercises.
+
+## Evidence review
+
+Material omissions / unsupported or overstated claims / unresolved contradictions: `<findings or none>`
+
+Review method and reviewer: `<agent/human rubric review; optional normalized checker run or not run>`
+
+Optional checker: `<packet and raw-answer digests, result paths, pass/fail/needs_review/invalid by fragment, review still needed>`
+
+Preserve the exact original answer and distinguish factual review from candidate usefulness and hiring outcomes. A valid quote or a completed checker command does not certify the whole assessment. This is advisory, not a hiring probability or ATS score.

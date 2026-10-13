@@ -4,11 +4,22 @@ Turn your career experience into a reusable evidence bank. Assess a job against 
 
 This is a small, file-based kit for your own agent and private workspace: instructions, blank templates, synthetic examples, and an optional Python installer. You review the claims and decide what to send.
 
-[Maguire Agent](https://maguire-agent.silveroboros.chatgpt.site/) · [Download v0.1.3](https://github.com/Silveroboros-dev/maguire-career-kit/releases/tag/v0.1.3) · [Full setup guide](kit/README.md) · [Worked example](kit/examples/end-to-end/README.md)
+[Maguire Agent](https://maguire-agent.silveroboros.chatgpt.site/) · [Download v0.1.4](https://github.com/Silveroboros-dev/maguire-career-kit/releases/tag/v0.1.4) · [Full setup guide](kit/README.md) · [Worked example](kit/examples/end-to-end/README.md)
 
 ## Your career workspace
 
 One private workspace holds three connected parts: your CV versions, a bank of career stories and evidence, and records for each role you assess. Preferences and a single application register connect them. Your agent can compare a role's requirements with examples from across your career and reuse those records for the next application. See the [record map and ownership rules](kit/README.md#how-your-career-workspace-fits-together).
+
+## Two fit assessments
+
+For each role, Maguire applies two separate agent rubrics:
+
+- **JD fit:** your documented experience against the role's material requirements.
+- **Employer/role fit:** the stated role terms against your goals, preferences and hard constraints.
+
+Both include sources, gaps and unknowns. A strong result on one side does not erase a blocker on the other. Your decision remains yours, including deferring or stopping with no extra work.
+
+The release includes the existing v8 offline claim checker in two modes for optional evidence checking. It requires explicitly normalized claims and reviewed source anchors; it does not automatically understand a CV or certify a whole answer. Unsupported cases remain `needs_review`. See the [grader guide](kit/graders/README.md).
 
 ## Start on a computer
 
@@ -22,24 +33,25 @@ python3 kit/install.py /absolute/path/to/your-private-career-folder
 
 Open that career folder as your primary Codex project. Follow the [first-run instructions](kit/README.md#first-run-adopt-the-existing-folder) to adopt an existing archive, or the [empty-archive instructions](kit/README.md#if-you-do-not-have-a-career-archive-yet) to begin with the documents and stories you have.
 
-The installer copies instructions and blank reference templates. It does not import your CV, create career facts, submit applications, or connect accounts. It preserves conflicting local edits and leaves an incoming copy for review.
+The installer copies instructions, blank reference templates, both grader rubrics and the optional offline Python checker. It does not run the checker during installation. It does not import your CV, create career facts, submit applications, or connect accounts. It preserves conflicting local edits and leaves an incoming copy for review.
 
 ## Start on a phone
 
-Follow the [mobile guide](https://maguire-agent.silveroboros.chatgpt.site/kit/#mobile). If ChatGPT Work Cloud is available to you, provide the kit instructions and the documents you choose in a private project. Start with one CV and one job description; ask for a fit assessment and a reviewable draft. Save the resulting records and verify that a new task can read them.
+Follow the [mobile guide](https://maguire-agent.silveroboros.chatgpt.site/kit/#mobile). If ChatGPT Work Cloud is available to you, provide the kit instructions, both fit rubrics and the documents you choose in a private project. Start with one CV and one job description; ask for a fit assessment and a reviewable draft. Save the resulting records and verify that a new task can read them.
 
 This is a manual route, not an installed mobile plugin. Work persistence and independent phone onboarding still need testing. Cloud use means the files you provide are processed by that platform; a private cloud project is not storage on your phone.
 
 ## Other agents
 
-Use the [manual local or cloud path](kit/README.md#other-agents). Give the agent the kit README, workspace rules, skill, and only the templates and career files needed for the task. A cloud agent without access to your career folder must return named records for you to save in a location you control. The optional installer does not guarantee that another client discovers the Codex-oriented files; check the client's actual project instructions and storage before relying on continuity. No other-agent onboarding has been independently tested.
+Use the [manual local or cloud path](kit/README.md#other-agents). Give the agent the kit README, workspace rules, skill, both fit rubrics, and only the templates and career files needed for the task. A cloud agent without access to your career folder must return named records for you to save in a location you control. The optional installer does not guarantee that another client discovers the Codex-oriented files; check the client's actual project instructions and storage before relying on continuity. No other-agent onboarding has been independently tested.
 
 ## What is included
 
 - `kit/skills/`: the career-workspace workflow.
 - `kit/templates/`: blank bank, CV index, preferences, application and submission records.
 - `kit/examples/`: fictional candidate scenarios, explicitly separated from real records.
-- `kit/install.py` and `kit/tests/`: standard-library installer and preservation checks.
+- `kit/graders/`: JD-fit and employer-fit rubrics, optional offline v8 claim checks, source bindings and fictional examples.
+- `kit/install.py` and `kit/tests/`: standard-library installer, grader and preservation checks.
 
 Keep real CVs, identity documents, client information, credentials and applications outside this repository. Do not upload them in issues or pull requests. Fit judgments are advisory; the kit does not promise interviews, an ATS bypass, or hiring probabilities.
 
@@ -51,7 +63,7 @@ Run the installer checks from the repository root:
 python3 -m unittest discover -s kit/tests -v
 ```
 
-The current release is v0.1.3. It adds a manual path for agents beyond Codex and Work, including storage and instruction-discovery checks. Installer code, templates and the skill are unchanged from v0.1.1. The installer reads all required instructions and templates before creating or changing a workspace; ZIPs include the license and are bound to a source commit and tag. Older released bytes remain unchanged.
+The current release is v0.1.4. It adds two separate fit rubrics and the existing v8 claim checker with an explicit manual normalization/review boundary. The workflow respects owner defer/stop and separates execution policy from employer evidence. Earlier records remain readable; the installer preserves local edits and candidate-owned data.
 
 From v0.1.1 onward, this repository is the authoritative kit source. The former Commerce copy is a historical baseline. The Maguire website is a separate project: it hosts the customer journey and copies of released artifacts. Its page sources are not included here. Report improvements through GitHub issues or pull requests.
 
@@ -60,7 +72,7 @@ Release ZIPs include the kit README and installer at the top level, plus `LICENS
 To reproduce a release from its committed tag:
 
 ```sh
-python3 scripts/build_release.py v0.1.3 /absolute/path/to/release-output --release-date 2026-10-07
+python3 scripts/build_release.py v0.1.4 /absolute/path/to/release-output --release-date 2026-10-13
 ```
 
 The build requires Git and a clean source checkout. It reads committed files, writes outside this repository, and never packages the Site pages or candidate records. There is no hosted job-search API, payment service, automatic update channel, or published installable plugin in this package.

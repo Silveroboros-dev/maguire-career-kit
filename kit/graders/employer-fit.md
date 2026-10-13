@@ -1,5 +1,7 @@
 # Employer fit: role terms against candidate preferences
 
+Rubric: `maguire-employer-fit.1`. Distributed in Career Kit v0.1.4.
+
 **Question:** How do the role and employer terms actually supplied in the JD compare with each explicit candidate preference? Review the JD snapshot and candidate-approved preference text. Do not invent culture, flexibility, sponsorship, team practice, or compensation terms that the source does not state.
 
 1. Inventory every supplied preference and its priority. For each, cite the exact preference and relevant JD term, then record **aligned**, **conflict**, or **unknown**. Aligned/conflict requires a JD term that bears on that preference. JD silence means unknown, even when the candidate's preference is strong. State the consequence of a must-have conflict separately from a nice-to-have tradeoff; unknown employer flexibility remains unknown.
