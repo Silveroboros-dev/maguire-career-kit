@@ -1,0 +1,54 @@
+{
+  "files": [
+    {
+      "bundled_path": "checker.py",
+      "bytes": 63141,
+      "sha256": "5c924dc9dc8905fa639a0f8567da05adfd7b873c28de5eb8cebe4256307224c9",
+      "source_relative_path": "evals/career-quality-v8/checker.py"
+    },
+    {
+      "bundled_path": "temporal.py",
+      "bytes": 10573,
+      "sha256": "4b105120899f5fd3d4b789e9959d8915fc6df6c82ce4ab76c80262f37841ca32",
+      "source_relative_path": "evals/career-quality-v8/temporal.py"
+    },
+    {
+      "bundled_path": "v3_core.py",
+      "bytes": 29184,
+      "sha256": "e4b2699f543e4260128ebfabd61547c92b5c1dba3497acd07ca2f7007f225e33",
+      "source_relative_path": "evals/career-quality-v8/v3_core.py"
+    },
+    {
+      "bundled_path": "grade_packets.py",
+      "bytes": 2830,
+      "sha256": "d769fe7f8086c39484b5e9320cf2ce4d6bd4e6d3072be0c1fdc839d00db87d0f",
+      "source_relative_path": "evals/career-quality-v8/grade_packets.py"
+    },
+    {
+      "bundled_path": "SCHEMA.md",
+      "bytes": 3958,
+      "sha256": "dd6c2a2d5c952e33d5a0d6dd6aea441479624b4e8a99d27e3b52da873717bb33",
+      "source_relative_path": "evals/career-quality-v8/SCHEMA.md"
+    },
+    {
+      "bundled_path": "V7_SCHEMA.md",
+      "bytes": 6714,
+      "sha256": "85e3442a9bf07441167a64bd3d7de15336d47feeaf8be800785918c543f18dc0",
+      "source_relative_path": "evals/career-quality-v8/V7_SCHEMA.md"
+    },
+    {
+      "bundled_path": "TEMPORAL_CHANGES.md",
+      "bytes": 2123,
+      "sha256": "e56079f6aca1ec3907189586ca8992a0837e5109bcd7c23578e7a64f36f33a77",
+      "source_relative_path": "evals/career-quality-v8/TEMPORAL_CHANGES.md"
+    }
+  ],
+  "format": "maguire-kit-grader-sources-v1",
+  "limits": [
+    "Copied runtime and schema notes only; no evaluation corpus, gold or private records",
+    "v8 grades manually normalized fragments, not raw answers or semantic quality",
+    "Candidate-fit and preference-fit rubrics are kit guidance, not claims of autonomous validation"
+  ],
+  "runtime_version": "maguire-claim-packet-v8",
+  "source_project": "maguire-career-kit"
+}

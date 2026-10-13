@@ -31,6 +31,20 @@ REQUIRED_TEMPLATES = (
     "story.md",
     "workspace-map.md",
 )
+REQUIRED_GRADERS = (
+    "README.md",
+    "jd-fit.md",
+    "employer-fit.md",
+    "SCHEMA.md",
+    "V7_SCHEMA.md",
+    "TEMPORAL_CHANGES.md",
+    "source-manifest.json",
+    "grade.py",
+    "grade_packets.py",
+    "checker.py",
+    "temporal.py",
+    "v3_core.py",
+)
 
 
 def digest(data: bytes) -> str:
@@ -47,6 +61,8 @@ def managed_files() -> dict[Path, Path]:
     }
     for relative in REQUIRED_TEMPLATES:
         files[Path(".maguire/kit/templates") / relative] = KIT / "templates" / relative
+    for relative in REQUIRED_GRADERS:
+        files[Path(".maguire/kit/graders") / relative] = KIT / "graders" / relative
     return files
 
 

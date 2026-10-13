@@ -21,7 +21,10 @@ class InstallTest(unittest.TestCase):
         # Entire directories, individual templates and core instructions must
         # all fail before any write, including when updating an existing install.
         for missing in ("templates", "templates/workspace-map.md", "README.md",
-                        "AGENTS.md", "skills/maguire-career-pilot/SKILL.md"):
+                        "AGENTS.md", "skills/maguire-career-pilot/SKILL.md",
+                        "graders", "graders/jd-fit.md", "graders/employer-fit.md",
+                        "graders/checker.py", "graders/grade.py",
+                        "graders/source-manifest.json"):
             for existing in (False, True):
                 with self.subTest(missing=missing, existing=existing):
                     with tempfile.TemporaryDirectory(prefix="maguire-kit-test-") as root:
@@ -103,6 +106,8 @@ class InstallTest(unittest.TestCase):
             self.assertEqual(existing_agents.read_text(), "My own project rules\n")
             self.assertTrue((workspace / ".maguire/kit/README.md").is_file())
             self.assertTrue((workspace / ".agents/skills/maguire-career-pilot/SKILL.md").is_file())
+            self.assertTrue((workspace / ".maguire/kit/graders/jd-fit.md").is_file())
+            self.assertTrue((workspace / ".maguire/kit/graders/employer-fit.md").is_file())
             self.assertFalse((workspace / ".maguire/kit/examples").exists())
 
             # New kit instructions update when the installed copy is untouched.
@@ -111,11 +116,15 @@ class InstallTest(unittest.TestCase):
             )
             skill = workspace / ".agents/skills/maguire-career-pilot/SKILL.md"
             skill.write_text(skill.read_text() + "\nMy local customization.\n", encoding="utf-8")
+            grader = workspace / ".maguire/kit/graders/jd-fit.md"
+            grader.write_text(grader.read_text() + "\nMy local review note.\n", encoding="utf-8")
             second = install()
             self.assertIn("UPDATED .maguire/kit/README.md", second)
             self.assertIn("PRESERVED .agents/skills/maguire-career-pilot/SKILL.md", second)
             self.assertIn("Test kit revision.", (workspace / ".maguire/kit/README.md").read_text())
             self.assertIn("My local customization.", skill.read_text())
+            self.assertIn("PRESERVED .maguire/kit/graders/jd-fit.md", second)
+            self.assertIn("My local review note.", grader.read_text())
             incoming = list(skill.parent.glob("SKILL.md.maguire-incoming-*"))
             self.assertEqual(len(incoming), 1)
 
