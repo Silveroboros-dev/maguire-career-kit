@@ -36,6 +36,7 @@ REQUIRED_GRADERS = (
     "jd-fit.md",
     "employer-fit.md",
     "SCHEMA.md",
+    "PACKET_FORMAT.md",
     "V7_SCHEMA.md",
     "TEMPORAL_CHANGES.md",
     "source-manifest.json",

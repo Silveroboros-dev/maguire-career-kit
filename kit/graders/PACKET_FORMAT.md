@@ -1,0 +1,13 @@
+# Exact v8 fragment packet fields
+
+The worker accepts one JSON object per JSON Lines row: `{"packet_sha256": SHA256, "packet": PACKET}`. `packet_sha256` hashes the canonical UTF-8 JSON of `PACKET` (sorted keys, compact separators, `ensure_ascii=False`, `allow_nan=False`). Duplicate packet hashes in one input are rejected. The output repeats this hash and includes `result` and `execution_error`. The checker itself neither reads original prose nor verifies that an agent's normalization covers the answer.
+
+`PACKET` has exactly: `schema="maguire-claim-packet-v8"`, `grader="candidate_fit"|"preference_fit"`, timezone-aware ISO `decision_at`, arrays `sources` and nonempty `claims`, and `coverage`.
+
+- Each source has exactly `id`, `kind` (`candidate_fact`, `job_description`, `employer_update`, or `preference`), `status` (`active` or `withdrawn`), `observed_at` (ISO timestamp with timezone, or null), `anchor`, and `facts` (array of typed propositions).
+- Each claim has exactly `id`, `anchor`, `stance`, nonempty `readings` (alternative readings of one atomic claim), and `check` (null for a direct claim, otherwise a supported typed operation). Source and claim IDs must be unique across the packet.
+- Each proposition has exactly `subject`, `predicate`, `object`, `polarity`, `modality`, `epistemic_scope`, `scope`, `time`, and `measure`. `scope` and `time` are dimension objects. `measure` is null or an object with exactly `kind`, `unit`, `lower`, `upper`, `per`. The runtime owns the allowed modalities, dimension values, period and operation rules; inspect [V7_SCHEMA.md](V7_SCHEMA.md), [SCHEMA.md](SCHEMA.md), and the pinned source code for the exact accepted set.
+- Each anchor has exactly `sha256`, `pointer`, `start`, `end`, `quote`. Offsets count Unicode code points; `end-start` must equal the quote length. The packet validator checks shape, not whether this quote really came from the separately held raw source or answer. The operator must check that linkage.
+- Coverage has exactly `scope="fragment"`, `status="agent_reviewed"|"unreviewed"`, booleans `source_inventory_complete` and `fragment_complete`, and canonical `source_sha256`/`claims_sha256` for the packet's arrays. These are declarations that a reviewer must substantiate. A fragment result is not a whole-answer verdict.
+
+The fictional [JD fit](examples/jd-fit.jsonl) and [employer fit](examples/employer-fit.jsonl) JSONL files show one supported and one contradicted normalized claim each. They contain no user data. They do not teach automatic atom extraction or prove checker validity on real career advice. Unsupported predicates and unresolved semantics retain `needs_review`; do not convert that state into PASS or FAIL without a separate review.

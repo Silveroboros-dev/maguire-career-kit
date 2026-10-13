@@ -39,6 +39,31 @@ def packet(grader):
 
 
 class InstalledGradersTest(unittest.TestCase):
+    def test_registered_claims_pass_and_fail_in_both_installed_modes(self):
+        with tempfile.TemporaryDirectory(prefix="maguire-graders-") as temporary:
+            workspace = Path(temporary) / "candidate"
+            subprocess.run([sys.executable, str(KIT / "install.py"), str(workspace)],
+                           check=True, capture_output=True)
+            cli = workspace / ".maguire/kit/graders/grade.py"
+            for mode in ("jd-fit", "employer-fit"):
+                with self.subTest(mode=mode):
+                    example = KIT / "graders/examples" / (mode + ".jsonl")
+                    output = workspace / (mode + "-known-results.jsonl")
+                    result = subprocess.run([sys.executable, str(cli), "--mode", mode,
+                                             "--packets", str(example), "--predictions", str(output)],
+                                            capture_output=True, text=True)
+                    self.assertEqual(result.returncode, 0, result.stderr)
+                    inputs = [json.loads(line) for line in example.read_text().splitlines()]
+                    predictions = [json.loads(line) for line in output.read_text().splitlines()]
+                    self.assertEqual(len(predictions), 2)
+                    self.assertEqual([row["result"]["verdict"] for row in predictions],
+                                     ["pass", "fail"])
+                    self.assertEqual([row["packet_sha256"] for row in predictions],
+                                     [row["packet_sha256"] for row in inputs])
+                    self.assertEqual([row["result"]["whole_answer_verdict"] for row in predictions],
+                                     [None, None])
+                    self.assertEqual([row["execution_error"] for row in predictions], [None, None])
+
     def test_both_modes_preserve_identity_and_unknown_predicate(self):
         with tempfile.TemporaryDirectory(prefix="maguire-graders-") as temporary:
             workspace = Path(temporary) / "candidate"
@@ -77,6 +102,23 @@ class InstalledGradersTest(unittest.TestCase):
                                      "--predictions", str(output_path)], capture_output=True, text=True)
             self.assertNotEqual(result.returncode, 0)
             self.assertIn("does not match selected mode", result.stderr)
+            self.assertFalse(output_path.exists())
+
+    def test_tampered_packet_digest_fails_before_output_creation(self):
+        with tempfile.TemporaryDirectory(prefix="maguire-graders-") as temporary:
+            workspace = Path(temporary) / "candidate"
+            subprocess.run([sys.executable, str(KIT / "install.py"), str(workspace)],
+                           check=True, capture_output=True)
+            original = json.loads((KIT / "graders/examples/jd-fit.jsonl").read_text().splitlines()[0])
+            original["packet"]["claims"][0]["anchor"]["quote"] = "Altered answer"
+            input_path = workspace / "tampered.jsonl"
+            output_path = workspace / "tampered-results.jsonl"
+            input_path.write_text(json.dumps(original) + "\n")
+            result = subprocess.run([sys.executable, str(workspace / ".maguire/kit/graders/grade.py"),
+                                     "--mode", "jd-fit", "--packets", str(input_path),
+                                     "--predictions", str(output_path)], capture_output=True, text=True)
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("packet identity invalid", result.stderr)
             self.assertFalse(output_path.exists())
 
     def test_source_manifest_matches_copied_runtime(self):

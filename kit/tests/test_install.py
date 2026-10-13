@@ -23,7 +23,7 @@ class InstallTest(unittest.TestCase):
         for missing in ("templates", "templates/workspace-map.md", "README.md",
                         "AGENTS.md", "skills/maguire-career-pilot/SKILL.md",
                         "graders", "graders/jd-fit.md", "graders/employer-fit.md",
-                        "graders/checker.py", "graders/grade.py",
+                        "graders/checker.py", "graders/grade.py", "graders/PACKET_FORMAT.md",
                         "graders/source-manifest.json"):
             for existing in (False, True):
                 with self.subTest(missing=missing, existing=existing):

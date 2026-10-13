@@ -6,6 +6,8 @@ The bundled Python v8 runtime checks **manually normalized atomic claims**, one 
 
 Both modes use the same frozen v8 checker bytes. Prepare JSON Lines rows shaped as `{"packet_sha256":"<SHA-256 of canonical packet>","packet":{...}}` using [SCHEMA.md](SCHEMA.md) and [V7_SCHEMA.md](V7_SCHEMA.md). The packet's `grader` must be `candidate_fit` for `jd-fit` or `preference_fit` for `employer-fit`. Hash canonical JSON with sorted keys, UTF-8, no ASCII escaping, no spaces, and no NaN. Keep exact source/answer quotes and coverage metadata; do not infer a complete packet from a single quote.
 
+[PACKET_FORMAT.md](PACKET_FORMAT.md) gives the exact packet fields inherited by v8. The source kit also includes two **fictional development examples** in `graders/examples/`; they are not installed as candidate data. Their result `pass` or `fail` is limited to each declared normalized fragment, never a complete career decision.
+
 From an installed candidate workspace, using Python 3.9+ standard library only:
 
 ```sh
@@ -14,3 +16,10 @@ python3 .maguire/kit/graders/grade.py --mode employer-fit --packets employer-pac
 ```
 
 Output files are create-only. The CLI rejects a mismatched mode or malformed envelope before creating output. It preserves the v8 `packet_sha256`, result and `execution_error` envelope. Packet contents are career data: keep them in the candidate workspace, not the kit source or a public repository. This bundle contains only the runtime, rubrics, and schema notes; it contains no eval corpus, expected labels, or private material. [source-manifest.json](source-manifest.json) records the copied runtime bytes.
+
+From the **kit source** to inspect the fictional examples (choose unused output paths):
+
+```sh
+python3 kit/graders/grade.py --mode jd-fit --packets kit/graders/examples/jd-fit.jsonl --predictions /tmp/maguire-jd-example-results.jsonl
+python3 kit/graders/grade.py --mode employer-fit --packets kit/graders/examples/employer-fit.jsonl --predictions /tmp/maguire-employer-example-results.jsonl
+```
