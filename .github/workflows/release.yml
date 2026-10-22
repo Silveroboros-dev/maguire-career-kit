@@ -4,6 +4,14 @@ on:
   push:
     tags:
       - 'v*'
+    branches:
+      - 'release/v*'
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: Existing immutable vMAJOR.MINOR.PATCH tag to publish
+        required: true
+        type: string
 
 permissions:
   contents: write
@@ -17,26 +25,28 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     env:
-      RELEASE_TAG: ${{ github.ref_name }}
-      RELEASE_OUTPUT: ${{ runner.temp }}/maguire-release
+      RELEASE_REF: ${{ inputs.release_tag || github.ref_name }}
       GH_REPO: ${{ github.repository }}
       GH_TOKEN: ${{ github.token }}
     steps:
-      - name: Check out the tagged source
-        uses: actions/checkout@v4
-        with:
-          ref: ${{ github.ref }}
-          fetch-depth: 0
-          persist-credentials: true
-
-      - name: Validate the release tag
+      - name: Resolve and validate the release tag
         shell: bash
         run: |
           set -euo pipefail
-          if [[ ! "$RELEASE_TAG" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+          release_tag="${RELEASE_REF#release/}"
+          if [[ ! "$release_tag" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
             echo 'Expected a vMAJOR.MINOR.PATCH release tag.' >&2
             exit 1
           fi
+          printf 'RELEASE_TAG=%s\n' "$release_tag" >> "$GITHUB_ENV"
+          printf 'RELEASE_OUTPUT=%s/maguire-release\n' "$RUNNER_TEMP" >> "$GITHUB_ENV"
+
+      - name: Check out the tagged source
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.RELEASE_TAG }}
+          fetch-depth: 0
+          persist-credentials: true
 
       - name: Run the synthetic test suite
         run: python3 -m unittest discover -s kit/tests -v

@@ -86,7 +86,7 @@ python3 scripts/build_release.py v0.1.7 /absolute/path/to/release-output --relea
 
 The build requires Git and a clean source checkout. It reads committed files, writes outside this repository, and never packages the Site pages or candidate records. There is no hosted job-search API, payment service, automatic update channel, or published installable plugin in this package.
 
-Pushing a new `vMAJOR.MINOR.PATCH` tag runs the repository's release workflow: it tests the tagged source, builds the ZIP, checksum and manifest, uploads all three to a draft GitHub Release, then publishes after checking the complete asset set. Existing releases are preserved. The separate Site must receive the same generated files and updated download links.
+Pushing a new `vMAJOR.MINOR.PATCH` tag runs the repository's release workflow: it tests the tagged source, builds the ZIP, checksum and manifest, uploads all three to a draft GitHub Release, then publishes after checking the complete asset set. An existing immutable tag can also be published by selecting it in the manual workflow, or pushing the release workflow to `release/vMAJOR.MINOR.PATCH`; the build still checks out the named tag. Existing releases are preserved. The separate Site must receive the same generated files and updated download links.
 
 ## License and credits
 
