@@ -1,12 +1,12 @@
-# Maguire Career Kit — file-based workspace
+# Maguire Career Kit v0.1.7 — file-based workspace
 
 This kit helps a candidate maintain a private career workspace and prepare truthful, reviewable applications. It includes the `maguire-career-pilot` skill; there is no second CV master or application ledger. The kit contains instructions and blank templates. Your career documents and records belong in **your own workspace**, outside the kit source and outside the kit source repository. A downloaded release may live in a disjoint `.maguire/download/` subfolder of that workspace; it is distribution material, never candidate evidence.
 
-The kit uses Markdown files and Python's standard library for the optional local installer and workflow helpers. It needs no account connection, API, model integration, database, or paid service. Local Git uses the installed Git executable. Document export uses local Pandoc and, for PDF, LibreOffice/`soffice`; the installer does not install these programs. The agent helps draft and organize; the candidate decides what is true, what can be shared, and what to send.
+The kit uses Markdown files and Python's standard library for the optional local installer and workflow helpers. It needs no account connection, API, model integration, database, or paid service. Local Git uses the installed Git executable. For document export, the agent reuses a suitable available tool or follows the skill's free-converter setup cheat sheet for Pandoc and LibreOffice/`soffice`; the kit installer itself only copies files. The agent helps draft and organize; the candidate decides what is true, what can be shared, and what to send.
 
-Release v0.1.6 makes separate 0–5 half-point judgments and ranges standard for JD fit and employer/role fit, with version .2 review records. Portable installation and source-bound review records remain available. The optional v8 normalized-claim checker is unchanged. It includes `LICENSE` and `CREDITS.md` at the extracted archive root. The [GitHub repository](https://github.com/Silveroboros-dev/maguire-career-kit) owns the kit source from v0.1.1 onward; the website is a separate project distributing released copies. The [GitHub release](https://github.com/Silveroboros-dev/maguire-career-kit/releases/tag/v0.1.6) includes the ZIP, checksum and detached manifest binding each file to its source commit. Older releases are retained as historical versions.
+Release v0.1.7 adds Git checkpoints in the actual career folder, DOCX/PDF export using the existing resume's design, a free-converter setup cheat sheet, and bounded application-register operations. The Git helper reuses a repository rooted in that folder or initializes one there; Git on a cloud host does not create a local copy on your computer. The separate 0–5 half-point fit judgments and ranges, version .2 saved reviews, and portable installation introduced in earlier releases remain available. The optional v8 normalized-claim checker is unchanged. The release includes `LICENSE` and `CREDITS.md` at the extracted archive root. The [GitHub repository](https://github.com/Silveroboros-dev/maguire-career-kit) owns the kit source from v0.1.1 onward; the website is a separate project distributing released copies. The [GitHub release](https://github.com/Silveroboros-dev/maguire-career-kit/releases/tag/v0.1.7) includes the ZIP, checksum and detached manifest binding each file to its source commit. Older releases are retained as historical versions.
 
-**Unreleased source additions:** local Git checkpoints, design-reference DOCX/PDF export, and bounded operations on the existing Markdown application register. Install this source version to use them; they have not been added to the published v0.1.6 ZIP or website. See [Local tools](#local-tools).
+All three helpers are included in both the release ZIP and source installation. See [Local tools](#local-tools).
 
 ## How your career workspace fits together
 
@@ -33,17 +33,17 @@ Keeping these records together gives your agent career evidence and preferences 
 Use **portable installation** inside an agent sandbox or whenever `.agents` is protected. It installs the complete kit, including the canonical skill, under `.maguire/kit/`; it does not write to `.agents` or require broader permissions.
 
 1. Download the pinned ZIP, verify its published SHA-256, inspect the installer, and extract the release. In a single-folder sandbox you can use `.maguire/download/` inside the candidate workspace. Do not extract over `.maguire/kit/` or existing candidate records.
-2. From the candidate workspace, for an extracted v0.1.6 release at the following path, run (this published version does not include the unreleased local tools):
+2. From the candidate workspace, for an extracted v0.1.7 release at the following path, run:
 
    ```sh
-   python3 .maguire/download/maguire-career-kit-v0.1.6/install.py --portable .
+   python3 .maguire/download/maguire-career-kit-v0.1.7/install.py --portable .
    ```
 
-   For the source version with local tools, run `python3 /absolute/path/to/maguire-career-kit/kit/install.py --portable .` instead. If the kit is in a separate folder, pass its actual installer path and your actual workspace path. The installer checks the complete payload and refuses overlapping source/managed paths. Your workspace cannot be the kit source or a folder inside its source repository.
+   The extracted ZIP places `install.py` at its root. For a source checkout, run `python3 /absolute/path/to/maguire-career-kit/kit/install.py --portable .` instead. If the kit is in a separate folder, pass its actual installer path and your actual workspace path. Both routes install the same helpers. The installer checks the complete payload and refuses overlapping source/managed paths. Your workspace cannot be the kit source or a folder inside its source repository.
 3. Explicitly read `.maguire/kit/README.md`, `.maguire/kit/AGENTS.md`, and `.maguire/kit/skills/maguire-career-pilot/SKILL.md`. Portable installation is complete local installation with explicit instruction loading; it does not claim automatic skill discovery. If root `AGENTS.md` already exists, preserve it and use the explicit paths. Resolve any reported `PRESERVED` instruction conflicts before assuming new instructions are active.
-4. With the source version, follow [Local tools](#local-tools) to establish Git history, check export capabilities, and use the register helper. Perform the requested task using the smallest input set. For one supplied CV and JD, assess that role; adopting an entire archive first is unnecessary. Save the original assessment and both rubric reviews as described in [Saved rubric reviews](#saved-rubric-reviews).
+4. Follow [Local tools](#local-tools) to establish Git history, check export capabilities, and use the register helper. Perform the requested task using the smallest input set. For one supplied CV and JD, assess that role; adopting an entire archive first is unnecessary. Save the original assessment and both rubric reviews as described in [Saved rubric reviews](#saved-rubric-reviews).
 
-For a normal terminal where `.agents` is writable, `python3 install.py /absolute/path/to/your-career-folder` also installs the discoverable skill copy at `.agents/skills/maguire-career-pilot/SKILL.md`. Both layouts have the same canonical skill and graders. Check actual discovery in the running client; a successful file copy does not prove persistence in another chat. Use `--portable` rather than bypassing a sandbox's permission boundary.
+For a normal terminal where `.agents` is writable, omit `--portable`: from the extracted ZIP root run `python3 install.py /absolute/path/to/your-career-folder`, or from the source repository root run `python3 kit/install.py /absolute/path/to/your-career-folder`. This also installs the discoverable skill copy at `.agents/skills/maguire-career-pilot/SKILL.md`. Both layouts have the same canonical skill, graders and tools. Check actual discovery in the running client; a successful file copy does not prove persistence in another chat. Use `--portable` rather than bypassing a sandbox's permission boundary.
 
 If Python is unavailable, manually copy this `README.md`, `AGENTS.md`, `templates/`, `graders/`, `skills/`, and `tools/` into `<workspace>/.maguire/kit/`, preserving their relative paths. The Python helpers cannot run without Python; retain their task instructions for an available local workflow. Copy `AGENTS.md` to the workspace root only when absent; never replace existing files blindly. Explicitly read the canonical skill path above. A failed copy is an incomplete installation, not a successful fallback. The script is the tested update path.
 
@@ -129,7 +129,7 @@ The source kit's `examples/` directory contains synthetic pilot illustrations an
 
 ## Local tools
 
-The source version installs these helpers in both normal and portable mode. Read only the guide for the current task; do not load all tool documentation or the full application register into every prompt.
+Release v0.1.7 installs these helpers in both normal and portable mode, from either the ZIP or a source checkout. Read only the guide for the current task; do not load all tool documentation or the full application register into every prompt.
 
 | Task | Installed helper | Requirements and guide |
 | --- | --- | --- |

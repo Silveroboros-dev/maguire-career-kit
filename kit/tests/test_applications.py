@@ -3,6 +3,7 @@
 import importlib.util
 import json
 from pathlib import Path
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -260,6 +261,24 @@ class ApplicationToolTests(unittest.TestCase):
         self.assertEqual(path.read_bytes(), original)
         with self.assertRaises(APPLICATIONS.RegisterError):
             APPLICATIONS.check_candidate_target(ROOT / "templates/data/applications.md")
+
+    def test_extracted_release_reference_is_preserved(self):
+        release = self.root / "maguire-career-kit-v0.1.7"
+        helper = release / "tools/applications.py"
+        helper.parent.mkdir(parents=True)
+        shutil.copy2(TOOL, helper)
+        template = release / "templates/data/applications.md"
+        template.parent.mkdir(parents=True)
+        original = APPLICATIONS.initial_register()
+        template.write_bytes(original)
+        result = subprocess.run(
+            [sys.executable, str(helper), "--register", str(template), "add", "--id", "APP-001",
+             "--role", "Synthetic", "--date", "2026-10-22", "--provenance", "test"],
+            capture_output=True, text=True,
+        )
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("outside the kit payload", result.stderr)
+        self.assertEqual(template.read_bytes(), original)
 
     def test_new_cell_whitespace_is_normalized_consistently(self):
         self.init()

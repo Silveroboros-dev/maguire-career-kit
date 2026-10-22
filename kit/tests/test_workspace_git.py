@@ -9,8 +9,9 @@ import tempfile
 import unittest
 
 
-ROOT = Path(__file__).resolve().parents[2]
-HELPER = ROOT / "kit/tools/workspace_git.py"
+KIT = Path(__file__).resolve().parents[1]
+ROOT = KIT.parent
+HELPER = KIT / "tools/workspace_git.py"
 
 
 @unittest.skipUnless(shutil.which("git"), "Git is required")
@@ -96,7 +97,10 @@ class WorkspaceGitTests(unittest.TestCase):
         self.assertFalse((self.workspace / ".git").exists())
 
     def test_source_repository_and_payload_rejected(self):
-        for path in (ROOT, ROOT / "kit", ROOT / "kit/templates"):
+        paths = [KIT, KIT / "templates"]
+        if KIT.name == "kit" and (ROOT / ".git").exists():
+            paths.append(ROOT)
+        for path in paths:
             result = self.run_helper("init", workspace=path, success=False)
             self.assertIn("outside", result["error"])
 

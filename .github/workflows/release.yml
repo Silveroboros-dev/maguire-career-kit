@@ -1,0 +1,121 @@
+name: Publish Career Kit release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: kit-release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      RELEASE_TAG: ${{ github.ref_name }}
+      RELEASE_OUTPUT: ${{ runner.temp }}/maguire-release
+      GH_REPO: ${{ github.repository }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: Check out the tagged source
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Validate the release tag
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ ! "$RELEASE_TAG" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo 'Expected a vMAJOR.MINOR.PATCH release tag.' >&2
+            exit 1
+          fi
+
+      - name: Run the synthetic test suite
+        run: python3 -m unittest discover -s kit/tests -v
+
+      - name: Build immutable release artifacts from Git
+        shell: bash
+        run: |
+          set -euo pipefail
+          release_date="$(git show -s --format=%cs "${RELEASE_TAG}^{commit}")"
+          python3 scripts/build_release.py "$RELEASE_TAG" "$RELEASE_OUTPUT" --release-date "$release_date"
+          (
+            cd "$RELEASE_OUTPUT"
+            sha256sum --check "maguire-career-kit-${RELEASE_TAG}.zip.sha256"
+          )
+
+      - name: Refuse to replace an existing release
+        shell: bash
+        run: |
+          set -euo pipefail
+          # A successful read is required: authentication/network errors must not
+          # be mistaken for an absent release. Include drafts and all pages.
+          gh api --paginate "repos/${GH_REPO}/releases?per_page=100" --jq '.[].tag_name' > "$RUNNER_TEMP/existing-release-tags.txt"
+          python3 - "$RELEASE_TAG" "$RUNNER_TEMP/existing-release-tags.txt" <<'PY'
+          from pathlib import Path
+          import sys
+          if sys.argv[1] in Path(sys.argv[2]).read_text().splitlines():
+              raise SystemExit("A release or draft already exists for this tag; inspect it manually. Nothing will be overwritten.")
+          PY
+
+      - name: Prepare release notes
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat > "$RUNNER_TEMP/maguire-release-notes.md" <<'NOTES'
+          Maguire Career Kit adds three local workflow tools:
+
+          - Git checkpoints in the candidate's actual career folder, with explicit file selection and preservation of existing repository rules.
+          - Markdown-to-DOCX/PDF export using an existing resume as a design reference, with layout and text inspection before use.
+          - Bounded queries and updates to the single application register, so the agent does not need to load the whole register into context.
+
+          The agent reuses suitable document tools already available. Free Pandoc and LibreOffice setup instructions are included for the fallback converters; no paid service or extra account is required. The installer copies the helpers and instructions without installing converter packages or changing candidate records.
+
+          Career records belong in the candidate's separate workspace. Git in a cloud runtime is history in that runtime, not a local copy on the candidate's computer. The kit retains separate JD-fit and employer-fit assessments and candidate control over sending applications.
+
+          The automated synthetic suite runs on Ubuntu. Converter-dependent checks run only when those tools are available; this release does not claim verified onboarding on every platform or cloud persistence.
+
+          Download the ZIP, checksum and detached source manifest together. The manifest binds every packaged file to the tagged source commit.
+          NOTES
+
+      - name: Upload the complete release as a draft
+        shell: bash
+        run: |
+          set -euo pipefail
+          artifact_base="$RELEASE_OUTPUT/maguire-career-kit-${RELEASE_TAG}"
+          gh release create "$RELEASE_TAG" \
+            "${artifact_base}.zip" \
+            "${artifact_base}.zip.sha256" \
+            "${artifact_base}.manifest.json" \
+            --repo "$GH_REPO" \
+            --verify-tag \
+            --draft \
+            --title "Maguire Career Kit ${RELEASE_TAG}" \
+            --notes-file "$RUNNER_TEMP/maguire-release-notes.md"
+          # Failed uploads leave a draft. Reruns stop instead of clobbering it.
+
+      - name: Verify asset names and publish
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh release view "$RELEASE_TAG" --repo "$GH_REPO" --json assets > "$RUNNER_TEMP/release-assets.json"
+          python3 - "$RELEASE_TAG" "$RUNNER_TEMP/release-assets.json" <<'PY'
+          import json
+          from pathlib import Path
+          import sys
+          base = "maguire-career-kit-" + sys.argv[1]
+          expected = {base + ".zip", base + ".zip.sha256", base + ".manifest.json"}
+          assets = json.loads(Path(sys.argv[2]).read_text())["assets"]
+          names = [asset["name"] for asset in assets]
+          if len(names) != 3 or set(names) != expected:
+              raise SystemExit("Release asset set is incomplete or unexpected; leaving the draft unpublished.")
+          PY
+          gh release edit "$RELEASE_TAG" --repo "$GH_REPO" --draft=false

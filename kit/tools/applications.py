@@ -259,6 +259,8 @@ def check_candidate_target(path: Path):
         if (first, second) in ((".maguire", "kit"), (".maguire", "download"), (".agents", "skills")):
             raise RegisterError("Choose the candidate-owned register, outside managed kit/download/skill files")
     kit = Path(__file__).resolve().parents[1]
+    if path == kit or kit in path.parents:
+        raise RegisterError("Choose a candidate register outside the kit payload and its reference templates")
     if kit.name == "kit" and (kit.parent / ".git").exists():
         source = kit.parent
         if path == source or source in path.parents:

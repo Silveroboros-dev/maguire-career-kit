@@ -4,9 +4,9 @@ Turn your career experience into a reusable evidence bank. Assess a job against 
 
 This is a small, file-based kit for your own agent and private workspace: instructions, blank templates, synthetic examples, and an optional Python installer. You review the claims and decide what to send.
 
-This source checkout also includes local Git checkpoints, Markdown-to-DOCX/PDF export using an existing resume's design, and a tool that queries and updates the application register without loading it all into agent context. These additions are **unreleased**; the v0.1.6 download below is unchanged. Python helpers use the standard library; Git and document conversion use the local programs described in the [setup guide](kit/README.md#local-tools).
+Release v0.1.7 includes Git checkpoints in your actual career folder, Markdown-to-DOCX/PDF export using an existing resume's design, and a tool that queries and updates the application register without loading it all into agent context. The Git helper reuses a repository rooted in that folder or initializes one there; Git in a cloud runtime is not a local copy on your computer. Python helpers use the standard library. The agent reuses available document tools or follows the [free export setup instructions](kit/tools/EXPORT.md#install-the-free-fallback-when-needed) for missing Pandoc/LibreOffice converters.
 
-[Maguire Agent](https://maguire-agent.silveroboros.chatgpt.site/) · [Download v0.1.6](https://github.com/Silveroboros-dev/maguire-career-kit/releases/tag/v0.1.6) · [Full setup guide](kit/README.md) · [Worked example](kit/examples/end-to-end/README.md)
+[Maguire Agent](https://maguire-agent.silveroboros.chatgpt.site/) · [Download v0.1.7](https://github.com/Silveroboros-dev/maguire-career-kit/releases/tag/v0.1.7) · [Full setup guide](kit/README.md) · [Worked example](kit/examples/end-to-end/README.md)
 
 ## Your career workspace
 
@@ -25,19 +25,21 @@ The release includes the existing v8 offline claim checker in two modes for opti
 
 ## Start on a computer
 
-Download or clone this source repository, keeping it separate from your private career folder. With Python 3.9 or later, run:
+Clone the release source, keeping it separate from your private career folder. With Python 3.9 or later, run:
 
 ```sh
-git clone https://github.com/Silveroboros-dev/maguire-career-kit.git
+git clone --branch v0.1.7 https://github.com/Silveroboros-dev/maguire-career-kit.git
 cd maguire-career-kit
 python3 kit/install.py --portable /absolute/path/to/your-private-career-folder
 ```
+
+For the extracted release ZIP instead, run `python3 install.py --portable /absolute/path/to/your-private-career-folder` from the extracted `maguire-career-kit-v0.1.7/` directory. The ZIP places `install.py` at its root; the source repository keeps it under `kit/`.
 
 Portable mode installs the complete kit under `.maguire/kit/` and explicitly loads its canonical skill without writing to protected `.agents` paths. Omit `--portable` in an ordinary terminal if a discoverable skill copy is wanted. Downloaded releases may be stored in a disjoint `.maguire/download/` folder inside the private workspace.
 
 Open that career folder as your primary Codex project. Follow the [first-run instructions](kit/README.md#first-run-adopt-the-existing-folder) to adopt an existing archive, or the [empty-archive instructions](kit/README.md#if-you-do-not-have-a-career-archive-yet) to begin with the documents and stories you have.
 
-The source installer copies instructions, blank reference templates, both grader rubrics, the optional offline Python checker and local workflow tools. It does not execute those tools during installation. On first local onboarding the agent sets up Git in your career folder, uses your existing resume as the design reference, and operates on the one application register through the helper. It does not import your CV, create career facts, submit applications, or connect accounts during installation. It preserves conflicting local edits and leaves an incoming copy for review.
+The installer copies instructions, blank reference templates, both grader rubrics, the optional offline Python checker and local workflow tools. It does not execute those tools during installation. On first local onboarding the agent sets up or reuses Git in your career folder, uses your existing resume as the design reference, and operates on the one application register through the helper. It does not import your CV, create career facts, submit applications, or connect accounts during installation. It preserves conflicting local edits and leaves an incoming copy for review.
 
 ## Start on a phone
 
@@ -68,21 +70,23 @@ Run the installer checks from the repository root:
 python3 -m unittest discover -s kit/tests -v
 ```
 
-The current release is v0.1.6. It requires separate numeric JD-fit and employer-fit judgments in ordinary one-JD assessments and version .2 saved review records. The optional v8 claim checker is unchanged and retains its explicit manual normalization/review boundary. The workflow respects owner defer/stop and separates execution policy from employer evidence. Earlier records remain readable; the installer preserves local edits and candidate-owned data.
+The current release is v0.1.7. It adds local Git control, resume-reference DOCX/PDF export with a free-converter setup cheat sheet, and bounded application-register operations. It retains the separate numeric JD-fit and employer-fit judgments and version .2 saved review records introduced in v0.1.6. The optional v8 claim checker is unchanged and retains its explicit manual normalization/review boundary. The workflow respects owner defer/stop and separates execution policy from employer evidence. Earlier records remain readable; the installer preserves local edits and candidate-owned data.
 
-Unreleased source changes add the three local workflow tools above. The installer copies them in normal and portable modes; it still leaves candidate records untouched and installs no converter packages. Export needs Pandoc for DOCX and LibreOffice/`soffice` for PDF. The [export guide](kit/tools/EXPORT.md) separates file conversion from layout/text inspection and candidate approval.
+The installer copies all three local workflow tools in normal and portable modes; it leaves candidate records untouched and installs no converter packages. When export is requested, the agent first uses suitable available tools without a new purchase. Otherwise it follows the skill's setup cheat sheet to install missing free Pandoc for DOCX and LibreOffice/`soffice` for PDF, then verifies a sample export. The [export guide](kit/tools/EXPORT.md) separates file conversion from layout/text inspection and candidate approval.
 
 From v0.1.1 onward, this repository is the authoritative kit source. The former Commerce copy is a historical baseline. The Maguire website is a separate project: it hosts the customer journey and copies of released artifacts. Its page sources are not included here. Report improvements through GitHub issues or pull requests.
 
-Release ZIPs include the kit README and installer at the top level, plus `LICENSE` and `CREDITS.md`. GitHub Releases and the Site distribute the same ZIP and detached manifest. The manifest records the full source commit, tag, original path and hash of each file, and archive hash. Compare the commit and assets on GitHub; a checksum hosted beside a ZIP proves matching bytes, not an independent signature of origin.
+Release ZIPs include the kit README and installer at the top level, plus `LICENSE` and `CREDITS.md`. GitHub Releases provide the ZIP and detached manifest; the separate Site distributes copies of released artifacts and may need synchronization after a release. The manifest records the full source commit, tag, original path and hash of each file, and archive hash. Compare the commit and assets on GitHub; a checksum hosted beside a ZIP proves matching bytes, not an independent signature of origin.
 
 To reproduce a release from its committed tag:
 
 ```sh
-python3 scripts/build_release.py v0.1.6 /absolute/path/to/release-output --release-date 2026-10-13
+python3 scripts/build_release.py v0.1.7 /absolute/path/to/release-output --release-date 2026-10-22
 ```
 
 The build requires Git and a clean source checkout. It reads committed files, writes outside this repository, and never packages the Site pages or candidate records. There is no hosted job-search API, payment service, automatic update channel, or published installable plugin in this package.
+
+Pushing a new `vMAJOR.MINOR.PATCH` tag runs the repository's release workflow: it tests the tagged source, builds the ZIP, checksum and manifest, uploads all three to a draft GitHub Release, then publishes after checking the complete asset set. Existing releases are preserved. The separate Site must receive the same generated files and updated download links.
 
 ## License and credits
 
