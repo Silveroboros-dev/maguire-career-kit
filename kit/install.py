@@ -48,6 +48,14 @@ REQUIRED_GRADERS = (
     "temporal.py",
     "v3_core.py",
 )
+REQUIRED_TOOLS = (
+    "workspace_git.py",
+    "GIT.md",
+    "export.py",
+    "EXPORT.md",
+    "applications.py",
+    "APPLICATIONS.md",
+)
 
 
 def digest(data: bytes) -> str:
@@ -70,6 +78,8 @@ def managed_files(portable: bool = False) -> dict[Path, Path]:
         files[Path(".maguire/kit/templates") / relative] = KIT / "templates" / relative
     for relative in REQUIRED_GRADERS:
         files[Path(".maguire/kit/graders") / relative] = KIT / "graders" / relative
+    for relative in REQUIRED_TOOLS:
+        files[Path(".maguire/kit/tools") / relative] = KIT / "tools" / relative
     return files
 
 
@@ -219,6 +229,8 @@ def main() -> int:
     if args.portable:
         print(f"PORTABLE: Ask your agent to read .maguire/kit/README.md, .maguire/kit/AGENTS.md, and {skill_path} explicitly.")
         print("PORTABLE: Automatic skill discovery is not guaranteed in this layout.")
+    print("Local tools installed: Git checkpoints, DOCX/PDF export, and bounded application-register operations.")
+    print("The installer did not run these tools, initialize Git, or install export dependencies; see .maguire/kit/tools/.")
     print("User CVs, bank, preferences, applications, and submitted records were not visited.")
     return 0
 

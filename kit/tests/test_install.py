@@ -18,6 +18,38 @@ def sha(path):
 
 
 class InstallTest(unittest.TestCase):
+    def test_installed_tools_work_without_installer_mutating_candidate_records(self):
+        with tempfile.TemporaryDirectory(prefix="maguire-kit-test-") as root:
+            workspace = Path(root) / "candidate"
+            workspace.mkdir()
+            original = workspace / "CV.md"
+            original.write_text("Fictional candidate original, unchanged\n", encoding="utf-8")
+            register = workspace / "data/applications.md"
+            register.parent.mkdir()
+            register.write_bytes((KIT / "templates/data/applications.md").read_bytes())
+            before = {path: path.read_bytes() for path in (original, register)}
+            install = [sys.executable, str(KIT / "install.py"), "--portable", str(workspace)]
+            subprocess.run(install, check=True, capture_output=True)
+            self.assertFalse((workspace / ".git").exists())
+            self.assertFalse((workspace / ".agents").exists())
+            self.assertEqual({path: path.read_bytes() for path in before}, before)
+            tools = workspace / ".maguire/kit/tools"
+            for filename in ("workspace_git.py", "GIT.md", "export.py", "EXPORT.md",
+                             "applications.py", "APPLICATIONS.md"):
+                self.assertEqual((tools / filename).read_bytes(), (KIT / "tools" / filename).read_bytes())
+            command = [sys.executable, str(tools / "applications.py"), "--register", str(register)]
+            empty = subprocess.run(command + ["list", "--limit", "1"],
+                                   check=True, capture_output=True, text=True)
+            self.assertEqual(json.loads(empty.stdout)["records"], [])
+            subprocess.run(command + ["add", "--id", "APP-001", "--role", "Fictional role",
+                                      "--date", "2026-10-21", "--provenance", "Synthetic fixture"],
+                           check=True, capture_output=True)
+            filled = register.read_bytes()
+            subprocess.run(install, check=True, capture_output=True)
+            self.assertEqual(register.read_bytes(), filled)
+            self.assertEqual(original.read_bytes(), before[original])
+            self.assertFalse((workspace / ".git").exists())
+
     def test_portable_nested_download_preserves_candidate_records_without_agents_access(self):
         with tempfile.TemporaryDirectory(prefix="maguire-kit-test-") as root:
             root = Path(root)
@@ -120,7 +152,9 @@ class InstallTest(unittest.TestCase):
                         "AGENTS.md", "skills/maguire-career-pilot/SKILL.md",
                         "graders", "graders/jd-fit.md", "graders/employer-fit.md",
                         "graders/checker.py", "graders/grade.py", "graders/PACKET_FORMAT.md",
-                        "graders/source-manifest.json"):
+                        "graders/source-manifest.json", "tools", "tools/workspace_git.py",
+                        "tools/applications.py", "tools/export.py", "tools/GIT.md",
+                        "tools/EXPORT.md", "tools/APPLICATIONS.md"):
             for existing in (False, True):
                 with self.subTest(missing=missing, existing=existing):
                     with tempfile.TemporaryDirectory(prefix="maguire-kit-test-") as root:
@@ -214,6 +248,12 @@ class InstallTest(unittest.TestCase):
             skill.write_text(skill.read_text() + "\nMy local customization.\n", encoding="utf-8")
             grader = workspace / ".maguire/kit/graders/jd-fit.md"
             grader.write_text(grader.read_text() + "\nMy local review note.\n", encoding="utf-8")
+            tool = workspace / ".maguire/kit/tools/applications.py"
+            tool.write_text(tool.read_text() + "\n# My local customization.\n", encoding="utf-8")
+            (source / "tools/applications.py").write_text(
+                (source / "tools/applications.py").read_text() + "\n# New kit revision.\n",
+                encoding="utf-8",
+            )
             second = install()
             self.assertIn("UPDATED .maguire/kit/README.md", second)
             self.assertIn("PRESERVED .agents/skills/maguire-career-pilot/SKILL.md", second)
@@ -221,6 +261,10 @@ class InstallTest(unittest.TestCase):
             self.assertIn("My local customization.", skill.read_text())
             self.assertIn("PRESERVED .maguire/kit/graders/jd-fit.md", second)
             self.assertIn("My local review note.", grader.read_text())
+            self.assertIn("PRESERVED .maguire/kit/tools/applications.py", second)
+            self.assertIn("My local customization.", tool.read_text())
+            self.assertNotIn("New kit revision.", tool.read_text())
+            self.assertEqual(len(list(tool.parent.glob("applications.py.maguire-incoming-*"))), 1)
             incoming = list(skill.parent.glob("SKILL.md.maguire-incoming-*"))
             self.assertEqual(len(incoming), 1)
 

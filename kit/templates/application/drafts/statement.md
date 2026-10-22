@@ -8,6 +8,10 @@ JD snapshot: `../job.md`
 
 Review state: `draft / candidate-reviewed`
 
+Employer-facing content source: `<separate clean Markdown derivative, for example drafts/statement-content.md>`
+
+Exports and inspection: `<requested DOCX/PDF paths; layout check; text check; candidate approval>`
+
 ## Draft text
 
 `<Candidate-supported text only. No invented achievements or employer facts.>`
@@ -21,3 +25,5 @@ Review state: `draft / candidate-reviewed`
 ## Open questions and next action
 
 - `<...>`
+
+This is an internal review record. Export only the separate employer-facing text, without metadata, the evidence map or open questions, following the installed `tools/EXPORT.md` workflow.

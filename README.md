@@ -4,6 +4,8 @@ Turn your career experience into a reusable evidence bank. Assess a job against 
 
 This is a small, file-based kit for your own agent and private workspace: instructions, blank templates, synthetic examples, and an optional Python installer. You review the claims and decide what to send.
 
+This source checkout also includes local Git checkpoints, Markdown-to-DOCX/PDF export using an existing resume's design, and a tool that queries and updates the application register without loading it all into agent context. These additions are **unreleased**; the v0.1.6 download below is unchanged. Python helpers use the standard library; Git and document conversion use the local programs described in the [setup guide](kit/README.md#local-tools).
+
 [Maguire Agent](https://maguire-agent.silveroboros.chatgpt.site/) · [Download v0.1.6](https://github.com/Silveroboros-dev/maguire-career-kit/releases/tag/v0.1.6) · [Full setup guide](kit/README.md) · [Worked example](kit/examples/end-to-end/README.md)
 
 ## Your career workspace
@@ -35,7 +37,7 @@ Portable mode installs the complete kit under `.maguire/kit/` and explicitly loa
 
 Open that career folder as your primary Codex project. Follow the [first-run instructions](kit/README.md#first-run-adopt-the-existing-folder) to adopt an existing archive, or the [empty-archive instructions](kit/README.md#if-you-do-not-have-a-career-archive-yet) to begin with the documents and stories you have.
 
-The installer copies instructions, blank reference templates, both grader rubrics and the optional offline Python checker. It does not run the checker during installation. It does not import your CV, create career facts, submit applications, or connect accounts. It preserves conflicting local edits and leaves an incoming copy for review.
+The source installer copies instructions, blank reference templates, both grader rubrics, the optional offline Python checker and local workflow tools. It does not execute those tools during installation. On first local onboarding the agent sets up Git in your career folder, uses your existing resume as the design reference, and operates on the one application register through the helper. It does not import your CV, create career facts, submit applications, or connect accounts during installation. It preserves conflicting local edits and leaves an incoming copy for review.
 
 ## Start on a phone
 
@@ -53,6 +55,7 @@ Use the [manual local or cloud path](kit/README.md#other-agents). Give the agent
 - `kit/templates/`: blank bank, CV index, preferences, application and submission records.
 - `kit/examples/`: fictional candidate scenarios, explicitly separated from real records.
 - `kit/graders/`: JD-fit and employer-fit rubrics, optional offline v8 claim checks, source bindings and fictional examples.
+- `kit/tools/`: local Git control, DOCX/PDF export and bounded application-register operations, with task-specific instructions.
 - `kit/install.py` and `kit/tests/`: standard-library installer, grader and preservation checks.
 
 Keep real CVs, identity documents, client information, credentials and applications outside this repository. Do not upload them in issues or pull requests. Fit judgments are advisory; the kit does not promise interviews, an ATS bypass, or hiring probabilities.
@@ -66,6 +69,8 @@ python3 -m unittest discover -s kit/tests -v
 ```
 
 The current release is v0.1.6. It requires separate numeric JD-fit and employer-fit judgments in ordinary one-JD assessments and version .2 saved review records. The optional v8 claim checker is unchanged and retains its explicit manual normalization/review boundary. The workflow respects owner defer/stop and separates execution policy from employer evidence. Earlier records remain readable; the installer preserves local edits and candidate-owned data.
+
+Unreleased source changes add the three local workflow tools above. The installer copies them in normal and portable modes; it still leaves candidate records untouched and installs no converter packages. Export needs Pandoc for DOCX and LibreOffice/`soffice` for PDF. The [export guide](kit/tools/EXPORT.md) separates file conversion from layout/text inspection and candidate approval.
 
 From v0.1.1 onward, this repository is the authoritative kit source. The former Commerce copy is a historical baseline. The Maguire website is a separate project: it hosts the customer journey and copies of released artifacts. Its page sources are not included here. Report improvements through GitHub issues or pull requests.
 
