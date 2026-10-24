@@ -8,6 +8,7 @@ import subprocess
 import sys
 import tempfile
 import unittest
+from unittest import mock
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -190,6 +191,27 @@ class ApplicationToolTests(unittest.TestCase):
         self.cli("init", ok=False)
         self.assertFalse((self.root / "new.md").exists())
 
+    def test_atomic_create_and_update_without_fchmod(self):
+        initial = APPLICATIONS.initial_register()
+        updated = initial + b"\nSynthetic update\n"
+        with mock.patch.dict(APPLICATIONS.os.__dict__):
+            APPLICATIONS.os.__dict__.pop("fchmod", None)
+            APPLICATIONS.write_atomic(self.register, None, initial)
+            self.assertEqual(self.register.read_bytes(), initial)
+            APPLICATIONS.write_atomic(self.register, initial, updated)
+        self.assertEqual(self.register.read_bytes(), updated)
+        self.assertFalse(list(self.root.glob(".applications-*")))
+
+    def test_fchmod_permission_error_preserves_register_and_cleans_temporary(self):
+        original = APPLICATIONS.initial_register()
+        self.register.write_bytes(original)
+        with mock.patch.object(APPLICATIONS.os, "fchmod", create=True,
+                               side_effect=PermissionError("Synthetic permission denial")):
+            with self.assertRaises(PermissionError):
+                APPLICATIONS.write_atomic(self.register, original, original + b"\nUpdate\n")
+        self.assertEqual(self.register.read_bytes(), original)
+        self.assertFalse(list(self.root.glob(".applications-*")))
+
     def test_noncooperating_change_detected_before_atomic_replace(self):
         self.init()
         before = self.register.read_bytes()
@@ -291,12 +313,13 @@ class ApplicationToolTests(unittest.TestCase):
         self.init()
         self.add("APP-001", "--status", "draft")
         self.register.chmod(0o640)
+        expected_mode = self.register.stat().st_mode & 0o777
         before = self.register.read_bytes()
         result = self.cli("update", "--id", "APP-001", "--status", "draft", "--date", "2026-10-21", "--provenance", "Candidate decision in test")
         self.assertFalse(result["changed"])
         self.assertEqual(self.register.read_bytes(), before)
         self.cli("update", "--id", "APP-001", "--status", "reviewed", "--date", "2026-10-22", "--provenance", "Candidate reviewed synthetic draft")
-        self.assertEqual(self.register.stat().st_mode & 0o777, 0o640)
+        self.assertEqual(self.register.stat().st_mode & 0o777, expected_mode)
 
 
 if __name__ == "__main__":

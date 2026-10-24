@@ -224,7 +224,10 @@ def write_atomic(path: Path, original: bytes | None, data: bytes):
     try:
         with tempfile.NamedTemporaryFile(dir=path.parent, prefix=".applications-", delete=False) as stream:
             temporary = Path(stream.name)
-            os.fchmod(stream.fileno(), mode)
+            # Windows has no fchmod; retain the temporary file's inherited ACL
+            # there rather than trying to translate POSIX permission bits.
+            if hasattr(os, "fchmod"):
+                os.fchmod(stream.fileno(), mode)
             stream.write(data)
             stream.flush()
             os.fsync(stream.fileno())
